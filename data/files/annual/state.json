@@ -12574,6 +12574,20 @@
 "why": "no figure passed the checks"
 },
 "khi:SSGC:2009": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:SSGC:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SSGC:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
 }
 }
