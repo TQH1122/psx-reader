@@ -667,6 +667,23 @@ def read_one(job, readers, sc, work):
 
 
 # ---------------------------------------------------------------- run
+def recheck(ext):
+    """apply checks added after a report was read (EPS against profit and paid up capital, 1 Nov 2026) to saved reads"""
+    for k, v in ext.items():
+        if v.get("by") != "ai" or v.get("rechecked") == 1:
+            continue
+        rows = v.get("C" if v.get("cons") else "S") or {}
+        for y, r in rows.items():
+            prof = r.get("ni", r.get("pat"))
+            if "eps" in r and prof is not None and r.get("paidup", 0) > 0 and abs(r["eps"]) > 0.05:
+                faces = [r["face"]] if r.get("face") else [10, 5, 1, 2, 2.5, 100]
+                if not any(abs(prof / (r["paidup"] / f) - r["eps"]) <= max(0.06, abs(r["eps"]) * 0.10) for f in faces):
+                    for f in ("pat", "ni", "nci", "eps", "pbt", "tax", "paidup", "face", "shares"):
+                        r.pop(f, None)
+                    v.setdefault("dropped", []).append(f"{y}: EPS does not match profit and paid up capital (re-checked)")
+        v["rechecked"] = 1
+
+
 def estimate(sc, longrows, cat, docs, state, by_tk, imp):
     """how many reports the whole plan still needs, simulating that each report covers its two years and a
     summary as long as the company's earlier summaries (6 years if none yet)"""
@@ -697,6 +714,7 @@ def main():
     sc = screener()
     longrows = load_rows("long")
     ext = jl(EXTRACTS, {}) or {}
+    recheck(ext)
     by_tk = {}
     for d in ext.values():
         if d.get("ticker") and not d.get("skip"):
