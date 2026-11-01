@@ -258,6 +258,27 @@ def psx_docs():
 
 
 # ---------------------------------------------------------------- planning
+RECHECK = set()  # (ticker, year) the tracker's audit left empty because sources disagree: read that year's report
+
+
+def load_recheck():
+    """the audit's re-read list from his locked tracker site, signed in with SITE_PASSWORD (an Actions secret);
+    tickers and years only. An empty set when the secret is missing or the site cannot be reached."""
+    pw = os.environ.get("SITE_PASSWORD")
+    if not pw:
+        return set()
+    import hashlib
+    cookie = "psx_auth=" + hashlib.sha256(("psx-tracker:" + pw).encode()).hexdigest()
+    try:
+        p = subprocess.run(["curl", "-s", "-m", "60", "-H", "Cookie: " + cookie, "-w", "\n%{http_code}",
+                            "https://psx-tracker.pages.dev/db/market/recheck.json"], capture_output=True, text=True, timeout=90)
+        body, _, code = p.stdout.rpartition("\n")
+        d = R.jload(body) if code == "200" else None
+    except Exception:
+        d = None
+    return {(str(t), int(y)) for t, y in (d or {}).get("recheck", []) if str(y).isdigit()}
+
+
 def covered(tk, longrows, extracts):
     """years that already hold a checked profit figure on the company's basis: the long history (profit and equity),
     report statements, and multi year summary years on the same basis (one summary page gives 6 to 10 years)"""
@@ -275,7 +296,7 @@ def covered(tk, longrows, extracts):
             if ok:
                 cov |= {int(y) for y, row in (sm.get("years") or {}).items()
                         if str(y).isdigit() and isinstance(row, dict) and (row.get("ni") is not None or row.get("pat") is not None)}
-    return cov
+    return cov - {y for t, y in RECHECK if t == tk}
 
 
 def candidates(tk, cat, docs):
@@ -295,7 +316,7 @@ def next_job(tk, sc, longrows, cat, docs, state, extracts, imp):
         return None
     cov = covered(tk, longrows, extracts)
     group = (longrows.get(tk) or {}).get("basis") == "group"
-    tier = 0 if tk in imp else (1 if group else 2)
+    tier = 0 if tk in imp or any(t == tk for t, _ in RECHECK) else (1 if group else 2)
     ys = sorted(cands, reverse=True)
     for y in ys:
         st = state.get(f"{cands[y][0]}:{tk}:{y}") or {}
@@ -846,6 +867,8 @@ def main():
         if d.get("ticker") and not d.get("skip"):
             by_tk.setdefault(d["ticker"], []).append(d)
     state = jl(os.path.join(AN, "state.json"), {}) or {}
+    RECHECK.update(load_recheck())
+    print(f"audit: {len(RECHECK)} company years to settle by re-reading their reports", flush=True)
     cat = khi_catalogue(sc)
     docs = psx_docs()
     jobs, imp = plan(sc, longrows, cat, docs, state, by_tk)
