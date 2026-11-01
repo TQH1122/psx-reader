@@ -14,11 +14,6 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:UBL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
 "khi:POL:2024": {
 "at": "2026-11-01",
 "tries": 2,
@@ -28,16 +23,6 @@
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:PTC:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:LUCK:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:PSO:2025": {
 "at": "2026-11-01",
@@ -49,41 +34,6 @@
 "tries": 2,
 "why": "not annual accounts: Company name not found in the provided pages"
 },
-"khi:PTC:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:UBL:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:BAHL:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FABL:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:HUBC:2026": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: HUBCO"
-},
-"khi:LUCK:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"psx:SYS:2026": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Dadex Eternit Limited"
-},
 "khi:FABL:2020": {
 "at": "2026-11-01",
 "tries": 2,
@@ -93,36 +43,6 @@
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:ENGROH:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Dawood Hercules Corporation Limited"
-},
-"khi:FFC:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ATRL:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:HUBC:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: HUBCO"
-},
-"khi:HBL:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FABL:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: UNKNOWN"
 },
 "khi:HBL:2016": {
 "at": "2026-11-01",
@@ -134,85 +54,15 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:ENGROH:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Dawood Hercules Corporation Limited"
-},
-"khi:PNSC:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: PNSC"
-},
-"khi:PSO:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:LUCK:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:LUCK:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not provided"
-},
-"khi:MTL:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MTL:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Annual Report 2019"
-},
 "khi:MTL:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:MCB:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unconsolidated Profit and Loss Account"
-},
-"khi:BAHL:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: not stated"
-},
-"khi:LUCK:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not printed in provided pages"
-},
-"khi:PTC:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:ISIL:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unity Foods Limited"
-},
-"khi:FFC:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
 "khi:POL:2019": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: company name not found in provided pages"
-},
-"khi:MCB:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: A Calculated Life"
 },
 "khi:BAHL:2017": {
 "at": "2026-11-01",
@@ -223,31 +73,6 @@
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:FATIMA:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:LUCK:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ILP:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:POL:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown"
-},
-"khi:FFC:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
 },
 "khi:MTL:2015": {
 "at": "2026-11-01",
@@ -304,100 +129,30 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:ILP:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ATRL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: The Attack Oil Company Limited"
-},
-"khi:POL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: POL"
-},
-"khi:PNSC:2010": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
 "khi:PNSC:2006": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:PNSC:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ATRL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown"
-},
-"khi:ISIL:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not provided"
 },
 "khi:BAFL:2020": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: The provided page (page 110, Note 1 and 2) contains only the 'Status and Nature "
 },
-"khi:EFERT:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
 "khi:BAFL:2007": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:MTL:2010": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
 },
 "khi:MTL:2006": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:MCB:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:MCB:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:BAHL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not printed on provided pages"
-},
-"khi:DGKC:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: DGKC"
-},
 "khi:DGKC:2018": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:BAHL:2010": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
 },
 "khi:DGKC:2017": {
 "at": "2026-11-01",
@@ -414,11 +169,6 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:FABL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
-},
 "khi:FABL:2004": {
 "at": "2026-11-01",
 "tries": 2,
@@ -434,20 +184,10 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:BAHL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
 "khi:DGKC:2012": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not on KHI Stocks (404)"
-},
-"khi:FABL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
 },
 "khi:DGKC:2011": {
 "at": "2026-11-01",
@@ -459,716 +199,73 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:FABL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:DGKC:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:LCI:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ICI Pakistan Limited"
-},
-"khi:UBL:2010": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:PNSC:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not printed in provided pages"
-},
-"khi:MTL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
 "khi:PNSC:2002": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: company name not found in provided pages"
-},
-"khi:MTL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:UBL:2005": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: insufficient data to identify company name and required summary figures"
 },
-"khi:FABL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:PNSC:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
-},
-"khi:HBL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 8
-},
-"khi:LUCK:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 13
-},
-"khi:HUBC:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: HUBCO"
-},
-"khi:UBL:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 10
-},
-"khi:FATIMA:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
-"khi:FABL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
-},
-"khi:MCB:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:BAHL:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
-"khi:FFC:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:FABL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
-},
-"khi:FATIMA:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
-"khi:PTC:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:FABL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:ENGROH:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:HBL:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 42
-},
-"khi:FABL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:FABL:2007": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
 "khi:FABL:2006": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:POL:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 27
-},
-"khi:FFC:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
 "khi:HUBC:2023": {
 "at": "2026-11-01"
-},
-"khi:ATRL:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:FATIMA:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:ATRL:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ARL"
-},
-"khi:ISIL:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:FFC:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 35
-},
-"khi:FATIMA:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:ISIL:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:ISIL:2021": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:MTL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
-"khi:MTL:2014": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:LUCK:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:ATRL:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: glorious past... promising future"
-},
-"khi:SYS:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 38
-},
-"khi:POL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:LUCK:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:MARI:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:HBL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:ATRL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 29
-},
-"khi:FFC:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:MARI:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
-"khi:ISIL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 39
-},
-"khi:UBL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 27
-},
-"khi:POL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:FFC:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:MARI:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 19
-},
-"khi:HBL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 35
-},
-"khi:POL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:HBL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 38
-},
-"khi:MARI:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 6
-},
-"khi:ILP:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 27
-},
 "khi:ILP:2021": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not on KHI Stocks (404)"
-},
-"khi:MARI:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 0
-},
-"khi:HBL:2010": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:ILP:2020": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:HBL:2009": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:ILP:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:SYS:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
-},
-"khi:MTL:2009": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:SYS:2020": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:DCR:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 10
-},
-"khi:DCR:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:DCR:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
-"khi:DCR:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 10
-},
-"khi:LCI:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 40
-},
-"khi:BAHL:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 42
-},
-"khi:LCI:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 33
-},
-"khi:ISIL:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Pak Leather Crafts Limited"
-},
-"khi:ISIL:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
 },
 "khi:ISIL:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:BAHL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
 "khi:ISIL:2015": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:POL:2010": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:ISIL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ISIL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:POL:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Attock Oil & Gas Company Limited"
-},
-"khi:PTC:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
-"khi:PSO:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Hascol Petroleum Limited"
-},
-"khi:PTC:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
 },
 "khi:PTC:2018": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: required financial statement pages not provided"
 },
-"khi:MCB:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:MTL:2005": {
-"at": "2026-11-01",
-"done": true,
-"n": 11
-},
-"khi:MCB:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
-"khi:DGKC:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:ISIL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: "
-},
-"khi:DCR:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:ISIL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ISIL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MCB:2020": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:IBFL:2026": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SRVI:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:ATRL:2011": {
-"at": "2026-11-01",
-"done": true,
-"n": 8
-},
-"khi:IBFL:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:ATRL:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:MARI:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 25
-},
-"khi:MLCF:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 40
-},
-"khi:CNERGY:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:CNERGY:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
 "khi:MARI:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: No financial statements or summary pages provided in the text"
-},
-"khi:BAHL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:SYS:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: System Limited"
-},
-"khi:CNERGY:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:PNSC:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 46
-},
-"khi:BAHL:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:MLCF:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:LCI:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ICI Pakistan Limited"
-},
-"khi:PSO:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Sui Southern Gas Company Limited"
-},
-"khi:MLCF:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
 },
 "khi:LCI:2020": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "file too large"
 },
-"khi:PSO:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:LCI:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ICI Pakistan Limited"
-},
-"khi:MLCF:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:CNERGY:2020": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BYCO PETROLEUM PAKISTAN LIMITED"
-},
-"khi:PNSC:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:CNERGY:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BYCO PETROLEUM PAKISTAN LIMITED"
-},
-"khi:LCI:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ICI Pakistan Limited"
-},
 "khi:CNERGY:2018": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:CNERGY:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:CNERGY:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PNSC:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:PTC:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:BAFL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 37
-},
-"khi:PNSC:2000": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
-"khi:DCR:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
 },
 "khi:DCR:2015": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:NATF:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
 "khi:PTC:2015": {
-"at": "2026-11-01"
-},
-"khi:UBL:2019": {
 "at": "2026-11-01",
 "done": true,
-"n": 0
-},
-"khi:SRVI:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 38
-},
-"khi:UBL:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:UBL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 4
-},
-"khi:MARI:2014": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Pakistan Oilfields Limited"
+"n": 10
 },
 "khi:MARI:2010": {
 "at": "2026-11-01",
@@ -1180,155 +277,10 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:DGKC:2005": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:POL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:DGKC:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PKGS:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:POL:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:DGKC:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:DGKC:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:KTML:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:LCI:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ICI Pakistan Limited"
-},
-"khi:AHCL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:EFERT:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:NATF:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Interloop Limited"
-},
-"khi:AHCL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 0
-},
-"khi:NATF:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:NATF:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:NATF:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PKGS:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:LCI:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ICI Pakistan Limited"
-},
-"khi:KTML:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 40
-},
-"khi:NATF:2020": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PSO:2020": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Pakistan Refinery Limited"
-},
-"khi:PSO:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:KTML:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:BAHL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:PSO:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
-},
 "khi:PSO:2017": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:BAHL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:LCI:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ICI Pakistan Limited"
-},
-"khi:CNERGY:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unconsolidated"
-},
-"khi:EFERT:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
 },
 "khi:CNERGY:2010": {
 "at": "2026-11-01",
@@ -1345,70 +297,10 @@
 "tries": 2,
 "why": "not annual accounts: Primary financial statements not present in the provided pages"
 },
-"khi:LCI:2010": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ICI Pakistan Ltd"
-},
 "khi:LCI:2009": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:POL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:POL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: The Attock Oil Company Limited"
-},
-"khi:LCI:2007": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ICI Pakistan Ltd"
-},
-"khi:LCI:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:KTML:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 33
-},
-"khi:LCI:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:LCI:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:KTML:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 40
-},
-"khi:UBL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:IBFL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 27
-},
-"khi:KTML:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 35
 },
 "khi:KTML:2009": {
 "at": "2026-11-01",
@@ -1418,170 +310,15 @@
 "khi:UBL:2009": {
 "at": "2026-11-01"
 },
-"khi:NATF:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Buxly Paints Limited"
-},
-"khi:MARI:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:JVDC:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 27
-},
-"khi:MARI:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MARI:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MARI:2003": {
-"at": "2026-11-01",
-"done": true,
-"n": 9
-},
 "khi:MARI:2001": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:EFERT:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 33
-},
-"khi:AIRLINK:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 6
-},
-"khi:EFERT:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 31
-},
-"khi:AHCL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 0
-},
-"khi:KTML:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Pakistan Stock Exchange Company"
-},
-"khi:MLCF:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:KTML:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:AHCL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:KTML:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MLCF:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:KTML:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SEARL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 42
-},
-"khi:CNERGY:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated explicitly on these pages"
-},
-"khi:SEARL:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SRVI:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:CNERGY:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
-},
-"khi:PSO:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:SRVI:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:MLCF:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 31
-},
-"khi:NML:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
 "khi:NML:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:PKGS:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:PSO:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:NATF:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Company Name"
-},
-"khi:NATF:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:KTML:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:NATF:2016": {
 "at": "2026-11-01",
@@ -1598,21 +335,6 @@
 "tries": 2,
 "why": "file too large"
 },
-"khi:JDWS:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: PLC"
-},
-"khi:AIRLINK:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:SYS:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
 "khi:SYS:2016": {
 "at": "2026-11-01",
 "tries": 2,
@@ -1622,11 +344,6 @@
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: Not the annual accounts statements or summary pages required for extraction."
-},
-"khi:SEARL:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: company name"
 },
 "khi:NML:2009": {
 "at": "2026-11-01",
@@ -1638,175 +355,25 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:AIRLINK:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:NML:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PKGS:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 27
-},
 "khi:THCCL:2025": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:NML:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:PKGS:2017": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: pages provided are not the annual accounts of a company"
 },
-"khi:THALL:2026": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:PKGS:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:POL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Attock Oil Company Limited"
-},
 "khi:PKGS:2015": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:PKGS:2007": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:HINOON:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 38
-},
-"khi:SRVI:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 39
-},
-"khi:PSO:2010": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:SAPT:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:SRVI:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 10
-},
-"khi:CNERGY:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
-},
-"khi:HINOON:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
 "khi:CNERGY:2003": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: Insufficient information to identify company name and required statement pages"
-},
-"khi:SAPT:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:NATF:2008": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:SEARL:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: UNCONSOLIDATED"
-},
-"khi:JVDC:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:SEARL:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown"
-},
-"khi:SAPT:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
-"khi:JVDC:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 6
-},
-"khi:SEARL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
-"khi:NATF:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:NATF:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SAPT:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:AGP:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:THALL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 42
-},
-"khi:AGP:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ASCEND"
-},
-"khi:PSO:2008": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
 },
 "khi:PSO:2007": {
 "at": "2026-11-01",
@@ -1828,728 +395,73 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:IBFL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
 "khi:CNERGY:2002": {
 "at": "2026-11-01"
-},
-"khi:IBFL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:IBFL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 1
-},
-"khi:ACPL:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 35
-},
-"khi:MLCF:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 31
-},
-"khi:IBFL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:MLCF:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:IBFL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
-"khi:THALL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 31
 },
 "khi:THALL:2021": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:MLCF:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 21
-},
-"khi:THCCL:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 33
-},
-"khi:MCB:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:MCB:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:THCCL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:THCCL:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 4
-},
-"khi:THCCL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:THCCL:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:THALL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 35
-},
-"khi:THALL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:ACPL:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 33
-},
-"khi:THALL:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:THALL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
 "khi:THALL:2009": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:SRVI:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 19
-},
-"khi:PKGS:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
-"khi:NML:2003": {
-"at": "2026-11-01",
-"done": true,
-"n": 3
-},
-"khi:NATF:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
-},
-"khi:THALL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:JVDC:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 31
-},
-"khi:NATF:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:THALL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PKGS:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:JDWS:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: PLC"
-},
-"khi:NML:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:THALL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:NATF:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: company name exactly as printed"
-},
-"khi:SAPT:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 40
-},
-"khi:NICL:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
-},
-"khi:NICL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
-"khi:JDWS:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:NICL:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ACPL:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:IBFL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: N/A"
-},
-"khi:IBFL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:PAEL:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:PAEL:2018": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:PAEL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:NICL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:PAEL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PAEL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown"
-},
-"khi:PAEL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:BAFL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
-"khi:ACPL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 0
-},
-"khi:ACPL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:BAFL:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:ACPL:2012": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
 "khi:ACPL:2010": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:BAFL:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ACPL:2009": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
 },
 "khi:BAFL:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "year end not readable"
 },
-"khi:ACPL:2008": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:ACPL:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ACPL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:JVDC:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:BAFL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 27
-},
-"khi:SRVI:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
 "khi:SRVI:2004": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not on KHI Stocks (404)"
-},
-"khi:JVDC:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:BAFL:2010": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:SRVI:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MLCF:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:BAFL:2009": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:BAFL:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:BAFL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SAPT:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 40
-},
-"khi:HINOON:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 42
-},
-"khi:JDWS:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:SHFA:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 11
-},
-"khi:SAPT:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:EPCL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 25
-},
-"khi:JDWS:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:EPCL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:EPCL:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SHFA:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 11
-},
-"khi:SHFA:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:EPCL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:MLCF:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:MLCF:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MLCF:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SHFA:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 17
 },
 "khi:SHFA:2018": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:JDWS:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
 "khi:SHFA:2017": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:JDWS:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:JDWS:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:NICL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 15
-},
-"khi:NICL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 6
 },
 "khi:NICL:2017": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: required financial statement pages not provided"
 },
-"khi:MCB:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:NICL:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:GAL:2026": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSC"
-},
-"khi:MCB:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:PKGS:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:GAL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 33
-},
-"khi:BIPL:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:AICL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 6
-},
-"khi:AICL:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
-"khi:BIPL:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:AICL:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:AGL:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Al-Ghazi Tractors Limited"
-},
-"khi:GAL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 40
-},
-"khi:AGP:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: The Searle Company Limited"
-},
 "khi:AGL:2024": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:AGP:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 11
-},
-"khi:AGL:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:AICL:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: WTO-OP"
-},
-"khi:EPCL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 25
 },
 "khi:EPCL:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:PSX:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 29
-},
-"khi:AGL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 6
-},
-"khi:AICL:2020": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:EPCL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
 "khi:AICL:2019": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:PSX:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
 "khi:PSX:2018": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:BIPL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
-"khi:SFL:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:ACPL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Pakcem Limited"
-},
-"khi:JVDC:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 29
-},
-"khi:MLCF:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Pakistan Stock Exchange Company"
-},
-"khi:SAPT:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:EFUG:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:SHFA:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:JDWS:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:NICL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:DLL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 37
-},
-"khi:AICL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 6
-},
-"khi:GAL:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 39
-},
-"khi:IGIHL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:AGP:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 33
-},
-"khi:AGL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:BIPL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:HINOON:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 40
 },
 "khi:GLAXO:2015": {
 "at": "2026-11-01",
@@ -2581,30 +493,10 @@
 "tries": 2,
 "why": "not on KHI Stocks (404)"
 },
-"khi:UPFL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 31
-},
 "khi:FLYNG:2025": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:KAPCO:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:KEL:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PAKRI:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
 },
 "khi:FLYNG:2024": {
 "at": "2026-11-01",
@@ -2617,92 +509,9 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "khi:ICL:2005": {
-"at": "2026-11-01"
-},
-"khi:KEL:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SNGP:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
-"khi:NRL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:PTL:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:GADT:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:JGICL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:PAEL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:BWCL:2015": {
 "at": "2026-11-01",
 "done": true,
 "n": 28
-},
-"khi:KEL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ATLH:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:SNGP:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 9
-},
-"khi:BWCL:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:FLYNG:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:GADT:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:PTL:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ATLH:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
-"khi:KEL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
 },
 "khi:BWCL:2007": {
 "at": "2026-11-01",
@@ -2714,70 +523,10 @@
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:POWER:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:GADT:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:NRL:2008": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:AKDSL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 19
-},
 "khi:DNCC:2025": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:PAEL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:BWCL:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:GADT:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:KEL:2003": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
-"khi:FLYNG:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:POWER:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:NRL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PTL:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:NRL:2004": {
 "at": "2026-11-01",
@@ -2787,88 +536,13 @@
 "khi:INDU:2026": {
 "at": "2026-11-01"
 },
-"khi:GADT:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
 "khi:FML:2006": {
 "at": "2026-11-01"
-},
-"khi:PAEL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 35
-},
-"khi:POWER:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:GVGL:2026": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FLYNG:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:DFML:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:FLYNG:2008": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:NRL:2003": {
-"at": "2026-11-01",
-"done": true,
-"n": 6
-},
-"khi:DFML:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:GVGL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:IGIL:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 8
-},
-"khi:GVGL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:GVGL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FECTC:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 41
-},
-"khi:UDPL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 25
-},
-"khi:SNGP:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
 },
 "psx:DNCC:2019": {
 "at": "2026-11-01"
@@ -2877,11 +551,6 @@
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:UDPL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "psx:PACE:2026": {
 "at": "2026-11-01",
@@ -2892,16 +561,6 @@
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:JGICL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
-},
-"khi:PRET:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 48
 },
 "khi:JGICL:2006": {
 "at": "2026-11-01",
@@ -2928,115 +587,20 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:PACE:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:ALAC:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
 "khi:ALAC:2005": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not on KHI Stocks (404)"
-},
-"khi:PACE:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:BWCL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Pakistan International Air Lines"
 },
 "khi:PACE:2018": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:CLOV:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:PACE:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:CLOV:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FECTC:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 37
-},
 "khi:FECTC:2008": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:ALAC:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
-},
-"khi:CLOV:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SNGP:2005": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
-"khi:FECTC:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:SNGP:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FECTC:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown Company"
-},
-"khi:ALAC:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
-},
-"khi:SHEZ:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown Company"
-},
-"khi:BTL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:SHEZ:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FZCM:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: ANNUAL REPORT 2025"
 },
 "khi:BTL:2006": {
 "at": "2026-11-01",
@@ -3048,85 +612,15 @@
 "tries": 2,
 "why": "not annual accounts: Provided page is notes to financial statements (page 8), not the financial state"
 },
-"khi:BTL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
 "khi:PACE:2015": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:SHEZ:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: PLC"
-},
-"khi:BTL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PACE:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
 "khi:DSL:2023": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:PAKRI:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:PAKRI:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:SHEZ:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: PLS"
-},
-"khi:SHEZ:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:DFML:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Printed"
-},
-"khi:SHEZ:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unnamed"
-},
-"khi:ATLH:2004": {
-"at": "2026-11-01",
-"done": true,
-"n": 25
-},
-"khi:KAPCO:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown (not printed on provided page)"
-},
-"khi:FLYNG:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:KAPCO:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:ZIL:2006": {
 "at": "2026-11-01"
@@ -3136,215 +630,20 @@
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:GVGL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:BWCL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Pakistan Stock Exchange Company"
-},
 "khi:HICL:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: company name not found in provided pages"
-},
-"khi:POML:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 17
-},
-"khi:BWCL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
-},
-"khi:HICL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:POML:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:BWCL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:ITTEFAQ:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MRNS:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:MRNS:2007": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:MERIT:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Century Paper & Board Mills Limited"
-},
-"khi:BTL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
-},
-"khi:MERIT:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FECTC:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
-},
-"khi:FECTC:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FECTC:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:POWER:2005": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:PAKRI:2003": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
 },
 "khi:ICIBL:2009": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:SMCPL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:ICIBL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 10
-},
-"khi:MDTL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:FDPL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 31
-},
-"khi:JSIL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 0
-},
-"khi:MDTL:2009": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
-"khi:SPCL:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:ITTEFAQ:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:ACPL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:DFML:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
-},
-"khi:DFML:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:DFML:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FDPL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 25
-},
-"khi:MRNS:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:DSL:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:ATLH:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
 "khi:FDPL:2015": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "year end not readable"
-},
-"khi:DSL:2008": {
-"at": "2026-11-01",
-"done": true,
-"n": 19
-},
-"khi:PRET:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:PRET:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PRET:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PINL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 13
 },
 "khi:PINL:2004": {
 "at": "2026-11-01",
@@ -3371,31 +670,6 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:JDWS:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:POML:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:JVDC:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:HINOON:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:JDWS:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
 "khi:HINOON:2006": {
 "at": "2026-11-01",
 "tries": 2,
@@ -3406,210 +680,25 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:JVDC:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
 "khi:HINOON:2004": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:JDWS:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:JVDC:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:JDWS:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MRNS:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:SPL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:JSIL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
 },
 "khi:JSIL:2007": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:AGP:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 6
-},
-"khi:SPL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:DLL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 37
-},
-"khi:DLL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:IGIHL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 29
-},
-"khi:DLL:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:PSEL:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 27
-},
-"khi:NICL:2006": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:NICL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:PSEL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 4
-},
-"khi:DLL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 15
-},
-"khi:SAPT:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:HICL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
-},
-"khi:HICL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:GAL:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:AICL:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
 "khi:GAL:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:PSEL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 10
-},
-"khi:MERIT:2008": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Century Paper & Board Mills Limited"
-},
-"khi:DLL:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:FZCM:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
-"khi:AICL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:DLL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 15
-},
 "khi:DLL:2009": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:ACPL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:MERIT:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Specified"
-},
-"khi:AICL:2010": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:MERIT:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: company name not stated"
-},
-"khi:GAL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:POML:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
-},
-"khi:MERIT:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
-},
-"khi:PSEL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 35
 },
 "khi:SHFA:2015": {
 "at": "2026-11-01",
@@ -3621,95 +710,20 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:POML:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
 "khi:SHFA:2009": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:DLL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:PSEL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:DLL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:AGL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:SHFA:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:BIPL:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:AGL:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "file too large"
 },
-"khi:SHFA:2005": {
-"at": "2026-11-01",
-"done": true,
-"n": 4
-},
-"khi:SHFA:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:BIPL:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SHFA:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
 "khi:BIPL:2017": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:SPCL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:SPCL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:BIPL:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:EFUG:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 0
 },
 "khi:BIPL:2015": {
 "at": "2026-11-01",
@@ -3731,301 +745,49 @@
 "tries": 2,
 "why": "not on KHI Stocks (404)"
 },
-"khi:BTL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:NICL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:EFUG:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:HINOON:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:SFL:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
 "khi:SFL:2022": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:AICL:2009": {
-"at": "2026-11-01",
-"done": true,
-"n": 21
-},
-"khi:EFUG:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:ACPL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:AMTEX:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:EFUG:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 1
-},
-"khi:JSBL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
 },
 "khi:JSBL:2019": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:PIBTL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 27
-},
-"khi:AICL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:EFUG:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:PIBTL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
 "khi:FDPL:2007": {
-"at": "2026-11-01"
-},
-"khi:AICL:2005": {
 "at": "2026-11-01",
 "tries": 2,
-"why": "company name does not match: BSS"
-},
-"khi:PIBTL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 13
-},
-"khi:AICL:2004": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
-},
-"khi:SFL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
-"khi:SFL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
+"rev": 3,
+"why": "company name does not match: Dawood Capital Management Limited (names AKDCL)"
 },
 "khi:SSGC:2025": {
 "at": "2026-11-01"
-},
-"khi:PIBTL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:INIL:2026": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:AHCL:2017": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:AHCL:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 7
-},
-"khi:GAL:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
 "khi:AHCL:2009": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:AICL:2002": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:PIBTL:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 21
-},
-"khi:IGIHL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:AHCL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:PIBTL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 17
-},
-"khi:PIBTL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
-},
-"khi:HINOON:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:AGL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:HINOON:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:HASCOL:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:JSCL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:IMS:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: S E C U R I T I E S L T D"
 },
 "khi:IMS:2024": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:PSEL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 29
-},
 "khi:PSEL:2010": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:PSEL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:IMS:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: EFG Hermes"
-},
-"khi:NICL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:JSBL:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BankIslami Pakistan Limited"
-},
-"khi:IGIHL:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:HASCOL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 15
-},
-"khi:EFUG:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 4
-},
-"khi:NICL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FEROZ:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 41
-},
 "khi:IGIHL:2018": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: The provided page contains only notes and business status information, not finan"
-},
-"khi:JSBL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 13
-},
-"khi:IMS:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: EFG Hermes"
-},
-"khi:GATM:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 13
-},
-"khi:JSBL:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 8
-},
-"khi:JSBL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 3
 },
 "khi:JSBL:2010": {
 "at": "2026-11-01",
@@ -4037,203 +799,8 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:EFUG:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:EFUG:2010": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
-},
-"khi:SPCL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:HASCOL:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: INSPIRING ENERGY"
-},
-"khi:AICL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:HASCOL:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SIEM:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 30
-},
 "khi:IMS:2021": {
 "at": "2026-11-01"
-},
-"khi:SAPT:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:GAL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:HASCOL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 19
-},
-"khi:HASCOL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"psx:SML:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:HASCOL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:IGIHL:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 31
-},
-"khi:IGIHL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 21
-},
-"psx:SML:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 38
-},
-"khi:FEROZ:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 29
-},
-"khi:IGIHL:2010": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:FEROZ:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:IGIHL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:IGIHL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
-},
-"khi:AHCL:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
-},
-"khi:INIL:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:AHCL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: N/A"
-},
-"khi:FZCM:2005": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:FZCM:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:AHCL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown"
-},
-"khi:AHCL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MACTER:2026": {
-"at": "2026-11-01",
-"done": true,
-"n": 42
-},
-"khi:SAPT:2003": {
-"at": "2026-11-01",
-"done": true,
-"n": 10
-},
-"khi:SAPT:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SIEM:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:ENGROH:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 29
-},
-"khi:SFL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:AVN:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 11
-},
-"khi:SFL:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SFL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:FZCM:2002": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:FZCM:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:HUMNL:2025": {
 "at": "2026-11-01",
@@ -4249,11 +816,6 @@
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:MACTER:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 40
 },
 "khi:HUMNL:2022": {
 "at": "2026-11-01",
@@ -4275,105 +837,10 @@
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:MACTER:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:SIEM:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
 "khi:SIEM:2019": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:JSCL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:SIEM:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:NCL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 33
-},
-"khi:JSCL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 13
-},
-"khi:GATM:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:MACTER:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:JSCL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 15
-},
-"khi:EFUG:2005": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:NCL:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 36
-},
-"khi:JSCL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:JSCL:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
-},
-"khi:FEROZ:2016": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: The Searle Company Limited"
-},
-"khi:NCL:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 38
-},
-"khi:FEROZ:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:HUMNL:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 0
-},
-"khi:INIL:2024": {
-"at": "2026-11-01",
-"done": true,
-"n": 38
-},
-"khi:FEROZ:2009": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "no figure passed the checks"
 },
 "khi:FEROZ:2007": {
 "at": "2026-11-01",
@@ -4385,145 +852,15 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:CPHL:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
 "khi:FEROZ:2005": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:FEROZ:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:MACTER:2018": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:FEROZ:2002": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:HUMNL:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:CPHL:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown"
-},
-"khi:FEROZ:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:CPHL:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:AHCL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:HUMNL:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 0
-},
 "khi:GATI:2025": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
-},
-"khi:MACTER:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 9
-},
-"khi:HUMNL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 20
-},
-"khi:TPLT:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:CPHL:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not Stated"
-},
-"khi:HUMNL:2006": {
-"at": "2026-11-01",
-"done": true,
-"n": 16
-},
-"khi:TPLT:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:CPHL:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:CPHL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 8
-},
-"khi:SML:2021": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:GAL:2003": {
-"at": "2026-11-01",
-"done": true,
-"n": 22
-},
-"khi:SML:2019": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:IDYM:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:GAL:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SML:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown"
-},
-"khi:AVN:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 38
-},
-"khi:IDYM:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 24
 },
 "khi:TPL:2024": {
 "at": "2026-11-01"
@@ -4532,16 +869,6 @@
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:AVN:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:SIEM:2016": {
-"at": "2026-11-01",
-"done": true,
-"n": 25
 },
 "khi:SIEM:2010": {
 "at": "2026-11-01",
@@ -4568,170 +895,25 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:AVN:2020": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown Company"
-},
-"khi:SIEM:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:IDYM:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 12
-},
-"khi:SIEM:2003": {
-"at": "2026-11-01",
-"done": true,
-"n": 18
-},
-"khi:IDYM:2015": {
-"at": "2026-11-01",
-"done": true,
-"n": 8
-},
-"khi:EFUG:2003": {
-"at": "2026-11-01",
-"done": true,
-"n": 14
-},
-"khi:AVN:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 26
-},
-"khi:EFUG:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: BSS"
-},
-"khi:IDYM:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:CSAP:2025": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:INIL:2022": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:SIEM:2001": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Not stated"
-},
-"khi:NCL:2019": {
-"at": "2026-11-01",
-"done": true,
-"n": 34
-},
-"khi:AVN:2017": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: not stated"
-},
 "khi:AVN:2016": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:CSAP:2024": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
 },
 "khi:AVN:2015": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "not annual accounts: required financial statement pages (profit & loss, balance sheet, cash flow) not"
 },
-"khi:HTL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"psx:IMAGE:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 2
-},
-"khi:INIL:2020": {
-"at": "2026-11-01",
-"done": true,
-"n": 25
-},
 "psx:IMAGE:2022": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "scanned report (left for later, OCR too slow)"
 },
-"khi:GATM:2023": {
-"at": "2026-11-01",
-"done": true,
-"n": 29
-},
-"khi:TREET:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 23
-},
-"khi:INIL:2018": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:GATM:2021": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:TREET:2023": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:JSCL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: TRG Pakistan Limited"
-},
-"khi:INIL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 32
-},
-"khi:JSCL:2007": {
-"at": "2026-11-01",
-"done": true,
-"n": 9
-},
 "khi:JSCL:2006": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:TREET:2022": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Company Name Not Provided"
-},
-"khi:JSCL:2004": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
-},
-"khi:INIL:2015": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: what it is"
 },
 "khi:INIL:2010": {
 "at": "2026-11-01",
@@ -4743,94 +925,4235 @@
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:NCL:2017": {
-"at": "2026-11-01",
-"done": true,
-"n": 37
-},
 "khi:INIL:2008": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
-},
-"khi:JSCL:2003": {
-"at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: unknown"
 },
 "khi:NCL:2015": {
 "at": "2026-11-01",
 "tries": 2,
 "why": "no statement pages found"
 },
-"khi:NCL:2006": {
+"khi:NETSOL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:ATLH:2007": {
 "at": "2026-11-01",
 "done": true,
-"n": 24
+"n": 28
 },
-"khi:INIL:2007": {
+"khi:BWCL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:UPFL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:AKDSL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 19
+},
+"khi:KEL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ACPL:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:PAKRI:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PAEL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:KAPCO:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:SNGP:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:ATLH:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:POWER:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:JGICL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:BWCL:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NRL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:FLYNG:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:ACPL:2024": {
 "at": "2026-11-01",
 "done": true,
 "n": 33
 },
-"khi:TREET:2021": {
+"khi:SBL:2005": {
+"at": "2026-11-01"
+},
+"khi:FZCM:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:KAPCO:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PAEL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:POWER:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:JGICL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:NRL:2008": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:KEL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SNGP:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 9
+},
+"khi:GADT:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:FLYNG:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FZCM:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:ATLH:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 25
+},
+"khi:ACPL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:PAKRI:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:NRL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:POWER:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:BWCL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:PAEL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:GADT:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:PTL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:KAPCO:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SNGP:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:ATLH:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:FZCM:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:POWER:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:BWCL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan International Air Lines (names INIL)"
+},
+"khi:KEL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PAEL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:PAKRI:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GADT:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ACPL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:NRL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:FZCM:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SNGP:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:PAEL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FLYNG:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:BTL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:GVGL:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DFML:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SNGP:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PAKRI:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Adamjee Insurance Company Limited (names AGIC)"
+},
+"khi:FLYNG:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:BWCL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan Stock Exchange Company (names DOMF)"
+},
+"khi:GADT:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BTL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PTL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:KEL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:FZCM:2002": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:PAEL:2002": {
+"at": "2026-11-01",
+"done": true,
+"n": 25
+},
+"khi:MRNS:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:FZCM:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:KEL:2003": {
 "at": "2026-11-01",
 "done": true,
 "n": 16
 },
-"khi:HTL:2024": {
+"khi:FECTC:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 41
+},
+"khi:PRET:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 48
+},
+"khi:PAEL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BWCL:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GVGL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:GADT:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DFML:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:IGIL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:MRNS:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BTL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:UDPL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 25
+},
+"khi:FECTC:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:PRET:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:PTL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DFML:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:GVGL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:UDPL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ALAC:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:PRET:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FECTC:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:BWCL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PACE:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:CLOV:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:DFML:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:SPL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:FECTC:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:BTL:2002": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:MRNS:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:ALAC:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:IGIL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GVGL:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CLOV:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PACE:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:DFML:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BTL:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:SHEZ:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PRET:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SPL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:ALAC:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:FECTC:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:MRNS:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:AGTL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:JSIL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:DSL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:ACPL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:PACE:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FECTC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HICL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GVGL:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:MERIT:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Century Paper & Board Mills Limited (names CENI)"
+},
+"khi:CLOV:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:POML:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 17
+},
+"khi:ACPL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DSL:2008": {
+"at": "2026-11-01",
+"done": true,
+"n": 19
+},
+"khi:JSIL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:MDTL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:SHEZ:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AMTEX:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:POML:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ICIBL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:SMCPL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:HICL:2002": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:PACE:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FECTC:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MDTL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:FDPL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:PINL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 13
+},
+"khi:HICL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ACPL:2012": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:SPCL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ITTEFAQ:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MERIT:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SHEZ:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:FDPL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 25
+},
+"khi:ACPL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:FFC:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:POML:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:MCB:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:SHEZ:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:LUCK:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AGTL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:MARI:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:ACPL:2008": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:POML:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SPCL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:FFC:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:MERIT:2008": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Century Paper & Board Mills Limited (names CENI)"
+},
+"khi:UBL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:ENGROH:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MCB:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:ITTEFAQ:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:ACPL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SPCL:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:SHEZ:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:HBL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:AGTL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MARI:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:FFC:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:UBL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:MCB:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:LUCK:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 13
+},
+"khi:FATIMA:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:MERIT:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:FDPL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 7
+},
+"khi:STPL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:POL:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:EFERT:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:UBL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:HBL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:FFC:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MARI:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 19
+},
+"khi:ACPL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:LUCK:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:MERIT:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:FATIMA:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:ENGROH:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:STPL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:POL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:UBL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:AGTL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:FDPL:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BAFL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:MARI:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:HBL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:MCB:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ENGROH:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"khi:PTC:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ICL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:POL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:ACPL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:FATIMA:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:UBL:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FFC:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:STPL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MARI:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:BAFL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:EFERT:2019": {
+"at": "2026-11-01"
+},
+"khi:FATIMA:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:ACPL:2002": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:POL:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BAHL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MARI:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 25
+},
+"khi:HBL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:PSO:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ENGROH:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:MCB:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:BAFL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:UBL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:FABL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:FFC:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MARI:2014": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:LUCK:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ILP:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ISIL:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:FATIMA:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HBL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "year end not readable"
+},
+"khi:BAFL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:UBL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:POL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:MARI:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MCB:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FABL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:PTC:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BAHL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 42
+},
+"khi:FFC:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:LUCK:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"psx:SYS:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Dadex Eternit Limited (names DADX)"
+},
+"khi:FABL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:PSO:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Hascol Petroleum Limited (names APL)"
+},
+"khi:ATRL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:BAFL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:MARI:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BAHL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:HBL:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:POL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:ISIL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FFC:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PTC:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:LUCK:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BAFL:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HBL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:FABL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:POL:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:ILP:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BAHL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:PSO:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Sui Southern Gas Company Limited (names SNGP)"
+},
+"khi:MARI:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ATRL:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:POL:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Attock Oil & Gas Company Limited (names ACPL)"
+},
+"khi:FABL:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SYS:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:BAFL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:MTL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PTC:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:MARI:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 9
+},
+"khi:SYS:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:BAFL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:ILP:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:ATRL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:POL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:ISIL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FABL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PSO:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BAFL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SYS:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:PTC:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:ILP:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MLCF:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:POL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Attock Petroleum Limited (names ACPL)"
+},
+"khi:ATRL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:PTC:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SYS:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:ATRL:2011": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:FABL:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MLCF:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:ISIL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PSO:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:POL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DCR:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:ATRL:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ILP:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:MTL:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not annual accounts: The provided page is from the Directors' Report and does not contain the financi"
+},
+"khi:PSO:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:PTC:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:DCR:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:MLCF:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:SRVI:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:POL:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: The Attock Oil Company Limited (names ACPL)"
+},
+"khi:PSO:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:ISIL:2020": {
 "at": "2026-11-01",
 "done": true,
 "n": 39
 },
-"khi:NCL:2004": {
+"khi:LCI:2026": {
 "at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Unknown"
+"done": true,
+"n": 40
 },
-"khi:PSEL:2004": {
+"khi:DCR:2022": {
 "at": "2026-11-01",
 "done": true,
 "n": 16
 },
-"khi:NCL:2003": {
+"khi:MTL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:SRVI:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:PSO:2015": {
 "at": "2026-11-01",
 "tries": 2,
-"why": "company name does not match: unknown"
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ISIL:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pak Leather Crafts Limited (names GOC)"
+},
+"khi:MLCF:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:POL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Attock Oil Company Limited (names ACPL)"
+},
+"khi:DCR:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:LCI:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:SRVI:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 41
+},
+"khi:MTL:2014": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:DCR:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:PTC:2011": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SRVI:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:PSO:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:DCR:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:MTL:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SRVI:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 39
+},
+"khi:PSO:2008": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ISIL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IBFL:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SRVI:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:MTL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:DGKC:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MLCF:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:PTC:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MTL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:SRVI:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 19
+},
+"khi:CNERGY:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:IBFL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SRVI:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:ISIL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MLCF:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:SRVI:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CNERGY:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ISIL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MTL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NATF:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DGKC:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PTC:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MLCF:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:IBFL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:ISIL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:CNERGY:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:DGKC:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MLCF:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:ISIL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IBFL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:NATF:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 42
+},
+"khi:MLCF:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CNERGY:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: BYCO PETROLEUM PAKISTAN LIMITED (names APL)"
+},
+"khi:NATF:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DGKC:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:IBFL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:MLCF:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:DGKC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IBFL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 1
+},
+"khi:PKGS:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:IBFL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:MLCF:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:NATF:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IBFL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MLCF:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DGKC:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PTC:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:CNERGY:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: BYCO PETROLEUM PAKISTAN LIMITED (names APL)"
+},
+"khi:DGKC:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MLCF:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IBFL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:MTL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PTC:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IBFL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NATF:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:UBL:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CNERGY:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MLCF:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan Stock Exchange Company (names DOMF)"
+},
+"khi:PKGS:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:AHCL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:KTML:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:NATF:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Buxly Paints Limited (names BERG)"
+},
+"khi:CNERGY:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PKGS:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:JDWS:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:HINOON:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:AHCL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:KTML:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:PKGS:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:HINOON:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:AHCL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:NATF:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:CNERGY:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:JDWS:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:PKGS:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:KTML:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:NATF:2008": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:CNERGY:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:HINOON:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 42
+},
+"khi:AHCL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:NATF:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:PKGS:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JDWS:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:CNERGY:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:HINOON:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:AHCL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 7
+},
+"khi:NATF:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JDWS:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HINOON:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:PKGS:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:AHCL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:HINOON:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:AHCL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 17
+},
+"khi:PKGS:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NATF:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:HINOON:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AHCL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:JDWS:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:NATF:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:AHCL:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:PKGS:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:KTML:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:NML:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:JDWS:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:JVDC:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:SEARL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 42
+},
+"khi:AIRLINK:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:NML:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JDWS:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:KTML:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:JVDC:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:SEARL:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:KTML:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:NML:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JDWS:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:AIRLINK:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:JVDC:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:JDWS:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:KTML:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan Stock Exchange Company (names DOMF)"
+},
+"khi:JVDC:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:NML:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 3
+},
+"khi:HUBC:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:SEARL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:JVDC:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:KTML:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NML:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AIRLINK:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JDWS:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AGP:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:SEARL:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MCB:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:HUBC:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:JVDC:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:AGP:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:MCB:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:JDWS:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:KTML:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SEARL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JVDC:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:AGP:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:MCB:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:THALL:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:THCCL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:KTML:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JDWS:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JVDC:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:JVDC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:THCCL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:MCB:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AGP:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:HUBC:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SAPT:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:THCCL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:KTML:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JVDC:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DLL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:ENGROH:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"khi:THALL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 42
+},
+"khi:THCCL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DLL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:SAPT:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AGP:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:AICL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:THALL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:DLL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:IGIHL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:PSX:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:THCCL:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AICL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DLL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:HUBC:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:THALL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:IGIHL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:PSX:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:DLL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 15
+},
+"khi:THALL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:PSEL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:SAPT:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IGIHL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:NICL:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:DLL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:THALL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:HUBC:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PSEL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:AICL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IGIHL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:DLL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 15
+},
+"khi:THALL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NICL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:PSEL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:SAPT:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DLL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:IGIHL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:PSEL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:AICL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:DLL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NICL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "year end not readable"
+},
+"khi:THALL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:IGIHL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:PSEL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:IGIHL:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:THALL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AICL:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PSEL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:GAL:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:ATRL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:IGIHL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PSEL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:THALL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SAPT:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:NICL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:IGIHL:2002": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:GAL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:PNSC:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:ATRL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SAPT:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:HUBC:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AICL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:PSEL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:NICL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 15
+},
+"khi:SHFA:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:EPCL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 25
+},
+"khi:GAL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:SAPT:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
 },
 "khi:PSEL:2002": {
 "at": "2026-11-01",
 "tries": 2,
+"rev": 3,
 "why": "no figure passed the checks"
 },
-"khi:GATI:2024": {
+"khi:AICL:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NICL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:SHFA:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:EPCL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:GAL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 39
+},
+"khi:SAPT:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:AGL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Al-Ghazi Tractors Limited (names AGTL)"
+},
+"khi:NICL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:EPCL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SHFA:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:GAL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PSEL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SAPT:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:AICL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:LUCK:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:HUBC:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BIPL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SAPT:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:NICL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:AICL:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:SHFA:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 17
+},
+"khi:LUCK:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AGL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SAPT:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:EPCL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:EFUG:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:NICL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:AICL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:SHFA:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:SAPT:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HUBC:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:EPCL:2018": {
 "at": "2026-11-01",
 "done": true,
 "n": 25
+},
+"khi:NICL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:EFUG:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:AICL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:BIPL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SHFA:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:SFL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PNSC:2023": {
+"at": "2026-11-01"
+},
+"khi:AGL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:NICL:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GAL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AICL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 13
+},
+"khi:FABL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:EPCL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SHFA:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:EFUG:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PIBTL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:JSBL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:AGL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:SHFA:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PIBTL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:SFL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:IMS:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:JSBL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:HUBC:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:FABL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:BIPL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:AGL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:MCB:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:PIBTL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 13
+},
+"khi:SFL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:EFUG:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JSBL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:IMS:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: EFG Hermes (names EFGH)"
+},
+"khi:SHFA:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BIPL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:GAL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:SFL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PIBTL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:JSBL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 3
+},
+"khi:AGL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:GAL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:PIBTL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:BIPL:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HASCOL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GAL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:JSCL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:IMS:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: EFG Hermes (names EFGH)"
+},
+"khi:INIL:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SFL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:PIBTL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 17
+},
+"khi:GAL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:EFUG:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 1
+},
+"khi:PIBTL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:SFL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JSCL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:FABL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BIPL:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MCB:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:EFUG:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:HASCOL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 15
+},
+"khi:ENGROH:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"khi:JSCL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 13
+},
+"khi:FEROZ:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 41
+},
+"khi:GATM:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 13
+},
+"khi:HASCOL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: INSPIRING ENERGY (names ALTN)"
+},
+"khi:EFUG:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:CPHL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:JSCL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 15
+},
+"khi:SIEM:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:BAHL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:INIL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:FEROZ:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:ASL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:GATM:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:EFUG:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:BIPL:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CPHL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SIEM:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:JSCL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:FEROZ:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GATM:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:EFUG:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BAHL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HASCOL:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SIEM:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:JSCL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:ENGROH:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"khi:ASL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:GATM:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HUBC:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:CPHL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 9
+},
+"khi:JSCL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:FEROZ:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:EFUG:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:SIEM:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:CPHL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:JSCL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 9
+},
+"khi:EFUG:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:HASCOL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 19
+},
+"khi:FEROZ:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HUBC:2008": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:BAHL:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SIEM:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 25
+},
+"khi:EFUG:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JSCL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ENGROH:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
 },
 "khi:NETSOL:2025": {
 "at": "2026-11-01",
 "done": true,
 "n": 29
 },
-"khi:TREET:2019": {
+"khi:GATM:2020": {
 "at": "2026-11-01",
-"tries": 2,
-"why": "company name does not match: Institute of Arts Society and Culture"
+"done": true,
+"n": 34
 },
-"khi:NETSOL:2023": {
+"khi:HASCOL:2017": {
 "at": "2026-11-01",
-"tries": 2,
-"why": "scanned report (left for later, OCR too slow)"
+"done": true,
+"n": 32
 },
-"khi:PSEL:2001": {
+"khi:SIEM:2004": {
 "at": "2026-11-01",
 "tries": 2,
+"rev": 3,
 "why": "no figure passed the checks"
+},
+"psx:SML:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:MACTER:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 42
 },
 "khi:NETSOL:2022": {
 "at": "2026-11-01",
-"tries": 1,
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FEROZ:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JSCL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BAHL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:AVN:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:HASCOL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:MACTER:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:SIEM:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"psx:SML:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:NETSOL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not on KHI Stocks (404)"
+},
+"khi:AVN:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:SIEM:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:FEROZ:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NCL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:GATM:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MACTER:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:ENGROH:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Dawood Hercules Corporation limited (names DAWH)"
+},
+"khi:SML:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:TREET:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:AVN:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NETSOL:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HUMNL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:MACTER:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:SML:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FEROZ:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TREET:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NCL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:HUMNL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:BAHL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:LCI:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:MACTER:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:GATI:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:AVN:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PTC:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:HUMNL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:BAHL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:LCI:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:FEROZ:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GATM:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "year end not readable"
+},
+"khi:NCL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:SML:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:TREET:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:NETSOL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:GATI:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Ghani Global Holdings Limited (names ENGROH)"
+},
+"khi:TPLT:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HUMNL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:LCI:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 44
+},
+"khi:ENGROH:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Dawood Hercules Chemicals Ltd (names DAWH)"
+},
+"khi:MACTER:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 9
+},
+"khi:NCL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:AVN:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:LCI:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:NETSOL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:TREET:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IDYM:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:TPLP:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:HUMNL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:NCL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:AVN:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:LCI:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:IDYM:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:GATI:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:TPLT:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NCL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:AICL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:GGL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 42
+},
+"khi:ASL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:LCI:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:ENGROH:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TREET:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 3
+},
+"khi:IDYM:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:TPLP:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NCL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:AICL:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:INIL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:LCI:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PREMA:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:NCL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GGL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TPLP:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "file too large"
+},
+"khi:IDYM:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:CSAP:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:INIL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:TPLT:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:NETSOL:2016": {
+"at": "2026-11-01"
+},
+"khi:IDYM:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:LCI:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GATI:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:INIL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GATM:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:DOL:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:HTL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:TREET:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"psx:IMAGE:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:MFL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 42
+},
+"khi:LCI:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DOL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:GGL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CSAP:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
 "why": "no figure passed the checks"
 },
 "psx:IMAGE:2021": {
@@ -4838,84 +5161,2070 @@
 "done": true,
 "n": 32
 },
-"khi:INIL:2005": {
-"at": "2026-11-01",
-"tries": 1,
-"why": "company name does not match: Not stated"
-},
-"khi:HTL:2022": {
+"khi:INIL:2007": {
 "at": "2026-11-01",
 "done": true,
-"n": 28
+"n": 38
+},
+"khi:HTL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 39
+},
+"khi:INIL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
 },
 "khi:AGIL:2026": {
 "at": "2026-11-01",
 "done": true,
 "n": 24
 },
-"khi:TPLP:2025": {
+"khi:HTL:2022": {
 "at": "2026-11-01",
 "done": true,
-"n": 23
+"n": 32
 },
-"khi:MFL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 42
-},
-"khi:ENGROH:2021": {
-"at": "2026-11-01",
-"tries": 1,
-"why": "company name does not match: BSS"
-},
-"khi:ASL:2025": {
-"at": "2026-11-01",
-"done": true,
-"n": 28
-},
-"khi:TPLT:2023": {
+"khi:CSAP:2023": {
 "at": "2026-11-01",
 "done": true,
 "n": 10
 },
-"khi:PREMA:2025": {
+"khi:TREET:2015": {
 "at": "2026-11-01",
 "done": true,
-"n": 28
+"n": 39
 },
-"khi:SML:2017": {
+"khi:GGL:2021": {
 "at": "2026-11-01",
-"tries": 1,
-"why": "company name does not match: Not stated"
+"done": true,
+"n": 4
 },
-"khi:CSAP:2023": {
+"khi:GGL:2019": {
 "at": "2026-11-01",
-"tries": 1,
-"why": "company name does not match: Not stated"
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
 },
-"khi:DOL:2026": {
+"khi:GATM:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:TREET:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: IGI Insurance Limited (names AGIC)"
+},
+"khi:GATM:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GATI:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:HTL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:TREET:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:HTL:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:TREET:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:HTL:2018": {
 "at": "2026-11-01",
 "done": true,
 "n": 36
 },
-"khi:GATM:2020": {
+"khi:HTL:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:GATM:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:STL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:INIL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:INIL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SML:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SML:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SML:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Crescent Textile Mills Limited (names AATM)"
+},
+"khi:HTL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:TREET:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:ANL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:TPLT:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan Stock Exchange Limited (names DOMF)"
+},
+"khi:ASL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:ANL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:ANL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:ASL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ANL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:ANL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:AGIL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:ANL:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:STL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 25
+},
+"khi:STL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:ENGROH:2003": {
 "at": "2026-11-01",
 "done": true,
 "n": 28
 },
-"khi:GGL:2025": {
+"khi:AGIL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IMAGE:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Tri-Star Polyester Limited (names FTSM)"
+},
+"khi:MFFL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Mitchells.com.pk (names CNERGY)"
+},
+"khi:GGL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:ENGROH:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:EXIDE:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:PREMA:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:ANL:2017": {
+"at": "2026-11-01"
+},
+"khi:GATI:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:AGIL:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:GGL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GATI:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:SYM:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:DOL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:SPWL:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Sui Northern Gas Pipelines Limited (names SNGP)"
+},
+"khi:GATI:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:DOL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:EXIDE:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:DOL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:GATI:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not annual accounts: required financial statement pages (profit & loss, balance sheet, cash flow, sum"
+},
+"khi:EXIDE:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DOL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:DOL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:GATI:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:CSAP:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:DOL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 7
+},
+"khi:MFFL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Mitchells.com.pk (names CNERGY)"
+},
+"khi:CSAP:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:CSAP:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:CSAP:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:CSAP:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MFFL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:STL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:EXIDE:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:SML:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:EXIDE:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MFFL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SML:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TELE:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:EXIDE:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TELE:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:TELE:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:TELE:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:TELE:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:TELE:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:TELE:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:EXIDE:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not annual accounts: Required financial statement pages (profit & loss, balance sheet, cash flow) not"
+},
+"khi:TELE:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:OCTOPUS:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:HUBC:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:AGIL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:TELE:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HUBC:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AGIL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:TELE:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:HUBC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:EXIDE:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:TELE:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:TELE:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:SYM:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TELE:2008": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:EXIDE:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TELE:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:TELE:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:TELE:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:EXIDE:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FCSC:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:IMAGE:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Tri-Star Polyester Limited (names FTSM)"
+},
+"khi:EXIDE:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IMAGE:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FCSC:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:IMAGE:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not on KHI Stocks (404)"
+},
+"khi:ALTN:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:RPL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MFL:2023": {
 "at": "2026-11-01",
 "done": true,
 "n": 42
 },
-"khi:TREET:2018": {
+"khi:MFL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not on KHI Stocks (404)"
+},
+"khi:DWSM:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MFL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:DWSM:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MFL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:LOADS:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:ALTN:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:CSAP:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:LOADS:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:RPL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:GATI:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:LOADS:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:RPL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 17
+},
+"khi:RPL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:ALTN:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:PREMA:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:ALTN:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:SEL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 5
+},
+"khi:OGDC:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:OGDC:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:OGDC:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:PREMA:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:OGDC:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:SEL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:SEL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:MEBL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PREMA:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:DWSM:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "year end not readable"
+},
+"khi:SEL:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ALTN:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:SPWL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:BERG:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:SPWL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BERG:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:BERG:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:BERG:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:MEBL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:WAVES:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:WAVES:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:MEBL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AGIL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan Stock Exchange Company (names DOMF)"
+},
+"khi:WAVES:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:WAVES:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:PPL:2008": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:PPL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:BERG:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:BERG:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:BERG:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:BERG:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:DWSM:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:AGIL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:DWSM:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DWSM:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:OCTOPUS:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:CSIL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:TPLP:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: The Pakistan Hotels Developers Limited (names PHDL)"
+},
+"khi:AGIL:2001": {
+"at": "2026-11-01"
+},
+"khi:ALTN:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:OCTOPUS:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CSIL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:PAKT:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:TPLP:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:WAVES:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 13
+},
+"khi:PAKT:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CSIL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:PREMA:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"psx:FCSC:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NBP:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NBP:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:WAVES:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:NBP:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:NBP:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:NBP:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NBP:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:GATI:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:WAVES:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 40
+},
+"khi:WAVES:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 15
+},
+"khi:STL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:WAVES:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SCBPL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 9
+},
+"khi:SCBPL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:ABL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:AKBL:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:AKBL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:CSIL:2019": {
+"at": "2026-11-01"
+},
+"khi:MFFL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:AKBL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NESTLE:2006": {
+"at": "2026-11-01"
+},
+"khi:PIAHCLA:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:MFFL:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"psx:FCSC:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:PIAHCLA:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PAKT:2002": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:HMB:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:MFFL:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"psx:FCSC:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 27
+},
+"khi:BERG:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:HMB:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Askari Commercial Bank Limited (names ABL)"
+},
+"khi:HMB:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:MFFL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FCSC:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Worldcall Telecom Limited (names WTL)"
+},
+"khi:BOP:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MFFL:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:OCTOPUS:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:SEL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:BERG:2003": {
+"at": "2026-11-01"
+},
+"khi:SAZEW:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 25
+},
+"khi:SPWL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 17
+},
+"khi:BOP:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PPL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 4
+},
+"khi:COLG:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ALTN:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:RPL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 44
+},
+"khi:SPWL:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Sui Northern Gas Pipelines Limited (names SNGP)"
+},
+"khi:RMPL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:SEL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:ALTN:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:RMPL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ALTN:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SEL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:SPWL:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:RMPL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SEL:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:RPL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:SEL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:RPL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CSAP:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:HALEON:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:RMPL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:BOP:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BOP:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BOP:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SEL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:BML:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:FCCL:2026": {
 "at": "2026-11-01",
 "done": true,
 "n": 42
 },
-"khi:GATI:2022": {
+"khi:APL:2007": {
+"at": "2026-11-01"
+},
+"khi:AKBL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:BML:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:KOHC:2026": {
+"at": "2026-11-01"
+},
+"khi:AKBL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ABOT:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:PIOC:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ABOT:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PIOC:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ABOT:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DWSM:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:PIOC:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DWSM:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DWSM:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SPWL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Attock Petroleum Limited (names ACPL)"
+},
+"khi:DWSM:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:CHCC:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:COLG:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:CHCC:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 21
+},
+"khi:HPL:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:HPL:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:CHCC:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:RMPL:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:CHCC:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CHCC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GHGL:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:CHCC:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GHGL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 9
+},
+"khi:TPLP:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:TPLP:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:CHCC:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GHGL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MFFL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Not stated explicitly in the provided text snippets, but bas (names HACC)"
+},
+"khi:LOTCHEM:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:WAFI:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GHGL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:LOTCHEM:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:GHGL:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HMB:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 29
+},
+"khi:ALTN:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:WAFI:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan State Oil Company Limited (names OGDC)"
+},
+"khi:WAFI:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:ALTN:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ISL:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BOK:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not on KHI Stocks (404)"
+},
+"khi:BOK:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not on KHI Stocks (404)"
+},
+"khi:WAFI:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:CSAP:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:FCCL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan Stock Exchange company (names DOMF)"
+},
+"khi:SAZEW:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:SAZEW:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:HCAR:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:HCAR:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TRG:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:TRG:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:HPL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: sanofi-aventis Pakistan limited (names SAPL)"
+},
+"khi:HCAR:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:FCCL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:MUREB:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PSYL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:MUREB:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:SAZEW:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:MFFL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:MUREB:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:COLG:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SAZEW:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:COLG:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:SAZEW:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:SGF:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:SNBL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:SNBL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"psx:STYLERS:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:TSML:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:STYLERS:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:TSML:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:TGL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:TSML:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TGL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BML:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:NCPL:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:NCPL:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:BML:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:MFFL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:WAFI:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan State Oil Company Limited (names OGDC)"
+},
+"khi:MFFL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:BML:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no statement pages found"
+},
+"khi:PABC:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:WAFI:2002": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:KPUS:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:GHNI:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 39
+},
+"khi:EWIC:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:KPUS:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:EWIC:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 5
+},
+"khi:EWIC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:WAFI:2001": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:FCCL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Pakistan Stock Exchange (names DOMF)"
+},
+"khi:SITC:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:SPWL:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Attock Petroleum Limited (names ACPL)"
+},
+"khi:SITC:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SITC:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SITC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:JLICL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 19
+},
+"khi:SGF:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:ARPL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:TICL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TICL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:PSYL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:PSYL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:PSYL:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "company name does not match: Sui Southern Gas Company (names SNGP)"
+},
+"khi:AABS:2007": {
 "at": "2026-11-01",
 "tries": 1,
-"why": "company name does not match: Ghani Global Holdings Limited"
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PAKOXY:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 48
+},
+"khi:MFFL:2002": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:TICL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:STL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:HPL:2004": {
+"at": "2026-11-01",
+"tries": 1,
+"rev": 3,
+"why": "company name does not match: AVENTIS PHARMA LIMITED (names CPHL)"
+},
+"khi:ARPL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:SPWL:2015": {
+"at": "2026-11-01",
+"tries": 1,
+"rev": 3,
+"why": "company name does not match: Attock Petroleum Limited (names ACPL)"
+},
+"khi:TPLI:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 0
+},
+"khi:GWLC:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:FCCL:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 19
+},
+"khi:JLICL:2004": {
+"at": "2026-11-01",
+"tries": 1,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PIOC:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:PRL:2026": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:GHNI:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:TGL:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:SNBL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
 }
 }
