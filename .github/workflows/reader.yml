@@ -9,6 +9,7 @@ on:
     paths: ['.github/run-now']
 permissions:
   contents: write
+  actions: write   # lets a productive run start the next one at once
 concurrency:
   group: reader
   cancel-in-progress: false
@@ -44,3 +45,11 @@ jobs:
           git commit -q -m "Reader: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M')"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
           exit 1
+      - name: Keep going while reports are being read
+        # a run that read something starts the next straight away (GitHub's hourly schedule can lag);
+        # a run that read nothing (free allowances spent for the day) waits for the hourly schedule
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if tail -n 1 data/files/annual/log.txt | grep -qE "done: read [1-9]"; then gh workflow run reader.yml --ref main; fi
