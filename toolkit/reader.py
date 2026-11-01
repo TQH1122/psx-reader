@@ -242,9 +242,30 @@ def openrouter_free():
     return ([m for m in prefer if m in free] + rest)[:5]
 
 
+def openrouter_paid(key):
+    """Paid OpenRouter models (prepaid credit, so spending can never pass what was loaded). Used only while more than
+    OPENROUTER_RESERVE dollars (default 0.5) remain; two makers so every figure is confirmed by two different makers,
+    a third maker settles disagreements."""
+    code, body = http("https://openrouter.ai/api/v1/credits", headers={"authorization": f"Bearer {key}"}, timeout=40)
+    d = (jload(body) or {}).get("data") or {}
+    left = float(d.get("total_credits") or 0) - float(d.get("total_usage") or 0) if code == 200 else 0.0
+    if left <= float(os.environ.get("OPENROUTER_RESERVE") or 0.5):
+        print(f"openrouter: paid models off (credit left ${left:.2f})", flush=True)
+        return []
+    print(f"openrouter: paid models on (credit left ${left:.2f})", flush=True)
+    models = ["openai/gpt-oss-120b", "google/gemini-2.5-flash-lite", "qwen/qwen3-235b-a22b-2507", "deepseek/deepseek-chat-v3.1"]
+    rs = openai_readers("openrouter", "https://openrouter.ai/api/v1", key, models, 0.2,
+                        extra={"reasoning": {"effort": "low"}, "max_tokens": 8000})
+    for r in rs:
+        r.paid = True
+    return rs
+
+
 def panel():
     E = os.environ.get
     rs = []
+    if E("OPENROUTER_API_KEY") and E("OPENROUTER_PAID"):
+        rs += openrouter_paid(E("OPENROUTER_API_KEY"))
     if E("GEMINI_API_KEY"):
         rs += gemini_readers(E("GEMINI_API_KEY"))
     if E("GROQ_API_KEY"):

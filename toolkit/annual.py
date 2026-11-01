@@ -700,9 +700,11 @@ def main():
     def work(job, k):
         w = tempfile.mkdtemp(prefix="ar_")
         try:
-            # spread the reports over the models: each worker starts its model search at a different place
-            n = len(readers)
-            order = readers[k % n:] + readers[:k % n]
+            # paid models first (fast, no daily limit), spread between workers; then the free ones, also spread
+            paid = [r for r in readers if getattr(r, "paid", False)]
+            free = [r for r in readers if not getattr(r, "paid", False)]
+            rot = lambda L: L[k % len(L):] + L[:k % len(L)] if L else []
+            order = (paid if len(paid) < 3 else paid[:2] + rot(paid[2:])) + rot(free)
             return read_one(job, order, sc, w)
         except Exception as e:  # one bad report never stops the run
             return {"skip": f"error: {type(e).__name__}: {str(e)[:80]}"}
