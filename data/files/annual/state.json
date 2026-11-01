@@ -773,7 +773,10 @@
 "why": "company name does not match: Dawood Capital Management Limited (names AKDCL)"
 },
 "khi:SSGC:2025": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
 },
 "khi:AHCL:2017": {
 "at": "2026-11-01",
@@ -10136,7 +10139,10 @@
 "n": 24
 },
 "khi:CCM:2002": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
 },
 "khi:SHDT:2021": {
 "at": "2026-11-01",
@@ -12500,6 +12506,15 @@
 "n": 16
 },
 "khi:ALNRS:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not annual accounts: company name not found"
+},
+"khi:ALNRS:2002": {
+"at": "2026-11-01"
+},
+"khi:SSGC:2024": {
 "at": "2026-11-01"
 }
 }
