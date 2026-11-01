@@ -877,7 +877,9 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "khi:TPL:2024": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 17
 },
 "khi:IDYM:2021": {
 "at": "2026-11-01",
@@ -2057,7 +2059,10 @@
 "n": 23
 },
 "khi:EFERT:2019": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
 },
 "khi:FATIMA:2017": {
 "at": "2026-11-01",
@@ -8492,7 +8497,9 @@
 "n": 8
 },
 "khi:KOSM:2007": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 12
 },
 "khi:OLPL:2024": {
 "at": "2026-11-01",
@@ -10344,7 +10351,10 @@
 "why": "no figure passed the checks"
 },
 "khi:RUBY:2002": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not annual accounts: company name not found in provided pages"
 },
 "khi:PPP:2005": {
 "at": "2026-11-01",
@@ -11545,7 +11555,10 @@
 "n": 29
 },
 "khi:GIL:2006": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
 },
 "khi:CJPL:2003": {
 "at": "2026-11-01",
@@ -11976,7 +11989,9 @@
 "why": "no figure passed the checks"
 },
 "khi:AMSL:2005": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 16
 },
 "khi:SLCL:2003": {
 "at": "2026-11-01",
@@ -12285,5 +12300,56 @@
 "at": "2026-11-01",
 "done": true,
 "n": 33
+},
+"khi:TPL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:TPL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not on KHI Stocks (404)"
+},
+"khi:EFERT:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:EFERT:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:KOSM:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 22
+},
+"khi:EFERT:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:KOSM:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 23
+},
+"khi:KOSM:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:TPL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 46
+},
+"khi:TPL:2018": {
+"at": "2026-11-01"
 }
 }
