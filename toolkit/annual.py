@@ -135,6 +135,8 @@ def curl(url, out=None, data=None, timeout=240):
     except subprocess.TimeoutExpired:
         return 0, ""
     if out:
+        if p.returncode != 0:  # cut off part way (slow link from GitHub to Pakistan): a broken file, not a 200
+            return 0, f"curl {p.returncode}"
         return int(p.stdout[-3:] or 0) if p.stdout[-3:].isdigit() else 0, ""
     code = p.stdout[-3:]
     return (int(code) if code.isdigit() else 0), p.stdout[:-3]
@@ -321,7 +323,10 @@ def get_pages(jid, src, url, work):
     """download one report and keep its key pages -> (pages text, prep info) or (None, reason)"""
     pdf = os.path.join(work, "r.pdf")
     if src == "khi":
-        code, _ = curl(url + ".pdf", pdf, timeout=300)
+        for _ in range(2):  # one retry: downloads from Pakistan sometimes stall
+            code, _ = curl(url + ".pdf", pdf, timeout=600)
+            if code in (200, 404):
+                break
         ok = code == 200 and os.path.exists(pdf) and open(pdf, "rb").read(5) == b"%PDF-"
         if not ok:
             code, _ = curl(url + ".html", os.path.join(work, "r.html"), timeout=120)
@@ -330,12 +335,18 @@ def get_pages(jid, src, url, work):
             pdf = os.path.join(work, "r.txt")
             html_to_pages(os.path.join(work, "r.html"), pdf)
     else:
-        code, _ = curl(url, pdf, timeout=300)
+        for _ in range(2):
+            code, _ = curl(url, pdf, timeout=600)
+            if code in (200, 404):
+                break
         if code != 200 or open(pdf, "rb").read(5) != b"%PDF-":
             return None, f"PSX download failed ({code})"
     if pdf.endswith(".pdf") and os.path.getsize(pdf) > 80e6:
         return None, "file too large"
     if pdf.endswith(".pdf"):
+        info0 = subprocess.run(["pdfinfo", pdf], capture_output=True, text=True, errors="ignore")
+        if info0.returncode != 0 or not re.search(r"Pages:\s+\d+", info0.stdout):
+            return None, "broken PDF (download incomplete); tried again next run"
         # a scanned report (no text layer) needs every page OCRed, which costs 10 or more GitHub minutes: left for later
         t = subprocess.run(["pdftotext", "-layout", pdf, "-"], capture_output=True, text=True, errors="ignore").stdout.split("\f")
         textp = sum(1 for x in t if len(x.strip()) > 200)
@@ -727,7 +738,7 @@ def main():
                     waiting += 1
                     continue  # the models were busy: this company waits for the next run
                 else:
-                    st["tries"] = 2 if "scanned" in res["skip"] else st.get("tries", 0) + 1
+                    st["tries"] = 2 if res["skip"].startswith("scanned") else st.get("tries", 0) + 1
                     st["why"] = res["skip"]
                     skipped += 1
                 nxt = next_job(tk, sc, longrows, cat, docs, state, by_tk.get(tk, []), imp)

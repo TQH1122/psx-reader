@@ -199,8 +199,9 @@ def gemini_readers(key):
         return code, out
     # the best full Flash reads first; lite models and older Flash models check (each has its own daily quota)
     order = full + lite  # models outside the free plan answer "limit 0" at once and are left out for the day
-    return [Reader("gemini", n, 6.5 if "lite" not in n else 4.5, call) for n in order] + \
-        [Reader("gemma", n, 4, call) for n in gemma]
+    # Gemma was tried on 1 Nov 2026 and left out: the 26b model answered empty after about three minutes on every
+    # report and the 31b model returned errors, which only held the workers up
+    return [Reader("gemini", n, 6.5 if "lite" not in n else 4.5, call) for n in order]
 
 
 def openai_readers(svc, base, key, prefer, gap, listing=True, extra=None):
