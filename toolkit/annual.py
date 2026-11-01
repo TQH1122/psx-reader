@@ -158,6 +158,20 @@ def name_ok(printed, listed):
     return bool(a and b) and len(a & b) / min(len(a), len(b)) >= 0.5
 
 
+def name_ok2(printed, listed, pages):
+    """the model's company name matches the listed name, or is its initials (PNSC, HUBCO), or most words of the listed
+    name are printed on the pages themselves (models sometimes answer "unknown" or a short name)"""
+    if name_ok(printed, listed):
+        return True
+    lt = toks(listed)
+    words = [w for w in re.sub(r"[^a-z ]", " ", (listed or "").lower()).split() if w not in ("limited", "ltd", "the", "of", "and", "co")]
+    p = re.sub(r"[^a-z]", "", (printed or "").lower())
+    if p and len(p) >= 3 and (p == "".join(w[0] for w in words) or "".join(words).startswith(p)):
+        return True
+    head = re.sub(r"[^a-z0-9 ]", " ", pages.lower())
+    return bool(lt) and sum(1 for w in lt if re.search(r"\b" + re.escape(w) + r"\b", head)) / len(lt) >= 0.75
+
+
 # ---------------------------------------------------------------- what the tracker already holds
 def load_rows(prefix):
     out = {}
@@ -523,12 +537,16 @@ def checks(rows, kind, ocr):
         prof = r.get("ni", r.get("pat"))
         if "eps" in r and prof is not None and abs(prof) > 1 and r["eps"] and (r["eps"] > 0) != (prof > 0):
             drop(("eps",), "EPS and profit have opposite signs")
-        if "paidup" in r and "face" in r and r["face"] > 0:
-            sh = r["paidup"] / r["face"]
-            if "eps" in r and prof is not None and abs(r["eps"]) > 0.05 and abs(prof / sh - r["eps"]) > max(0.06, abs(r["eps"]) * 0.06):
-                drop(("paidup", "face"), "profit per share on year end shares differs from EPS (share issue in the year)")
-            elif "eps" in r:
-                good |= {"eps", "paidup", "face"}
+        # EPS must match profit and the paid up capital (face value 10 unless printed; 5, 1, 2, 2.5 or 100 also tried).
+        # Catches a model copying a part profit (ATRL 2015: refinery operations Rs 405m, not total profit Rs 1,814m)
+        # and a wrong EPS; a share issue in the year can also trip it, and then the year is left out (a gap, not an error).
+        if "eps" in r and prof is not None and "paidup" in r and r["paidup"] > 0 and abs(r["eps"]) > 0.05:
+            faces = [r["face"]] if r.get("face") else [10, 5, 1, 2, 2.5, 100]
+            if any(abs(prof / (r["paidup"] / f) - r["eps"]) <= max(0.06, abs(r["eps"]) * 0.10) for f in faces):
+                good |= {"eps", "paidup", "face", "ni", "pat"}
+            else:
+                drop(("pat", "ni", "nci", "eps", "pbt", "tax", "paidup", "face"),
+                     "EPS does not match profit and paid up capital")
         for k in ("rev", "ni", "pat", "eq", "assets", "cfo"):
             if k in r and abs(r[k]) > 5e6:
                 drop((k,), "looks like a unit error")
@@ -596,7 +614,7 @@ def read_one(job, readers, sc, work):
     fs = [facts(j, nums, cons, sumb) for j in firsts]
     ok, bad = agree(fs)
     company = next((j.get("company") for j in firsts if j.get("company")), "")
-    if not name_ok(company, sc[tk].get("n")):
+    if not name_ok2(company, sc[tk].get("n"), pages):
         return {"skip": f"company name does not match: {company[:60]}"}
     fye = next((j.get("fye") for j in firsts if re.fullmatch(r"(19|20)\d\d-\d\d", str(j.get("fye") or ""))), None)
     fy = int(fye[:4]) if fye else None
