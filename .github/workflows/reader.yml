@@ -36,7 +36,9 @@ jobs:
           CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
           OPENROUTER_PAID: '1'          # his prepaid $10 (1 Nov 2026): paid models first, free ones as extra checkers
           OPENROUTER_RESERVE: '0.5'     # paid models stop when $0.50 is left
-        run: python3 toolkit/annual.py --minutes 50 --workers 18 | tee -a data/files/annual/log.txt
+        run: |
+          if [ "$(head -n1 .github/run-now)" = diag ] && [ "${{ github.event_name }}" = push ]; then python3 toolkit/diag.py; exit 0; fi
+          python3 toolkit/annual.py --minutes 50 --workers 18 | tee -a data/files/annual/log.txt
       - name: Save
         if: always()
         run: |
