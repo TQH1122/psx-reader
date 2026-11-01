@@ -700,11 +700,16 @@ def main():
     def work(job, k):
         w = tempfile.mkdtemp(prefix="ar_")
         try:
-            # paid models first (fast, no daily limit), spread between workers; then the free ones, also spread
+            # two separate teams (his rule, 1 Nov 2026): every third report goes to the free models alone, the rest to
+            # the paid models alone, so free models never wait behind paid ones and paid credit is never spent on
+            # checking a free read. With no paid models left (credit at the reserve), every report goes to the free team.
             paid = [r for r in readers if getattr(r, "paid", False)]
             free = [r for r in readers if not getattr(r, "paid", False)]
             rot = lambda L: L[k % len(L):] + L[:k % len(L)] if L else []
-            order = (paid if len(paid) < 3 else paid[:2] + rot(paid[2:])) + rot(free)
+            if paid and (k % 3 or not any(not r.out for r in free)):
+                order = paid[:2] + rot(paid[2:])
+            else:
+                order = rot(free)
             return read_one(job, order, sc, w)
         except Exception as e:  # one bad report never stops the run
             return {"skip": f"error: {type(e).__name__}: {str(e)[:80]}"}
