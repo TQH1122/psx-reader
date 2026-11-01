@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: command -v pdftotext && command -v tesseract || sudo apt-get install -y -q poppler-utils tesseract-ocr
+      - run: command -v pdftotext && command -v tesseract || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils tesseract-ocr; }
       - name: Read annual reports
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
