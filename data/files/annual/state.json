@@ -98,7 +98,9 @@
 "n": 36
 },
 "khi:ILP:2026": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"why": "not annual accounts: Company name not found in the provided pages"
 },
 "khi:PTC:2024": {
 "at": "2026-11-01",
@@ -156,7 +158,9 @@
 "why": "company name does not match: unknown"
 },
 "psx:SYS:2026": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Dadex Eternit Limited"
 },
 "khi:FABL:2022": {
 "at": "2026-11-01",
@@ -189,7 +193,9 @@
 "n": 42
 },
 "khi:UBL:2024": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 27
 },
 "khi:FFC:2019": {
 "at": "2026-11-01",
@@ -273,7 +279,9 @@
 "n": 32
 },
 "khi:MARI:2024": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 36
 },
 "khi:LUCK:2004": {
 "at": "2026-11-01",
@@ -341,16 +349,18 @@
 "n": 38
 },
 "khi:DCR:2022": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 18
 },
 "khi:MCB:2017": {
 "at": "2026-11-01",
-"tries": 1,
+"tries": 2,
 "why": "company name does not match: Unconsolidated Profit and Loss Account"
 },
 "khi:BAHL:2018": {
 "at": "2026-11-01",
-"tries": 1,
+"tries": 2,
 "why": "company name does not match: not stated"
 },
 "khi:FATIMA:2023": {
@@ -364,13 +374,19 @@
 "n": 40
 },
 "khi:EFERT:2025": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 40
 },
 "khi:LUCK:2002": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Not printed in provided pages"
 },
 "khi:BAFL:2024": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 32
 },
 "khi:LCI:2026": {
 "at": "2026-11-01",
@@ -378,7 +394,9 @@
 "n": 42
 },
 "khi:FABL:2015": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 8
 },
 "khi:MLCF:2026": {
 "at": "2026-11-01",
@@ -394,6 +412,513 @@
 "at": "2026-11-01"
 },
 "khi:ISIL:2024": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Unity Foods Limited"
+},
+"khi:FFC:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:POL:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:FATIMA:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:MCB:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: A Calculated Life"
+},
+"khi:BAHL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:BAHL:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:FATIMA:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:LUCK:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:FFC:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 44
+},
+"khi:ATRL:2011": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:ILP:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:POL:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Unknown"
+},
+"khi:FFC:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no figure passed the checks"
+},
+"khi:MTL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:MCB:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:ATRL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 18
+},
+"khi:FFC:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:MCB:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:ATRL:2008": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:FFC:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:ATRL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:MCB:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:ATRL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:FFC:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:ATRL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:FFC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:PNSC:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 52
+},
+"khi:ILP:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:POL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:ATRL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: The Attack Oil Company Limited"
+},
+"khi:POL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: POL"
+},
+"khi:PNSC:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 48
+},
+"khi:PNSC:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no figure passed the checks"
+},
+"khi:PNSC:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:BAFL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:PNSC:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:ATRL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Unknown"
+},
+"khi:ISIL:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Not provided"
+},
+"khi:BAFL:2020": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "not annual accounts: The provided page (page 110, Note 1 and 2) contains only the 'Status and Nature "
+},
+"khi:SRVI:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:BAFL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 37
+},
+"khi:BAFL:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 3
+},
+"khi:EFERT:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no figure passed the checks"
+},
+"khi:BAFL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 2
+},
+"khi:BAFL:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:MTL:2014": {
+"at": "2026-11-01",
+"done": true,
+"n": 41
+},
+"khi:MCB:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:MTL:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: what it is"
+},
+"khi:BAFL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:MTL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:MTL:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:MCB:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no figure passed the checks"
+},
+"khi:MCB:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:BAHL:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Not printed on provided pages"
+},
+"khi:DGKC:2023": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: DGKC"
+},
+"khi:UBL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 42
+},
+"khi:HUBC:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 24
+},
+"khi:DGKC:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:MARI:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 33
+},
+"khi:FABL:2007": {
+"at": "2026-11-01",
+"done": true,
+"n": 11
+},
+"khi:BAHL:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: what it is"
+},
+"khi:DGKC:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:BAHL:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:BAHL:2007": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:MARI:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 16
+},
+"khi:UBL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 26
+},
+"khi:POL:2010": {
+"at": "2026-11-01",
+"done": true,
+"n": 10
+},
+"khi:UBL:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 6
+},
+"khi:FABL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: BSS"
+},
+"khi:FABL:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:DGKC:2016": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "not annual accounts: Provided page is accounting policies note (IFRS standards and basis of measureme"
+},
+"khi:BAHL:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 35
+},
+"khi:MARI:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:DGKC:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:MLCF:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 46
+},
+"khi:SYS:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 48
+},
+"khi:LCI:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 48
+},
+"khi:BAHL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:DGKC:2012": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "not on KHI Stocks (404)"
+},
+"khi:UBL:2016": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:FABL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: BSS"
+},
+"khi:DGKC:2011": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:DGKC:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no statement pages found"
+},
+"khi:FABL:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:DGKC:2009": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no figure passed the checks"
+},
+"khi:SRVI:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 46
+},
+"khi:UBL:2015": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:MTL:2005": {
+"at": "2026-11-01",
+"done": true,
+"n": 17
+},
+"khi:LCI:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: ICI Pakistan Limited"
+},
+"khi:ISIL:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 50
+},
+"khi:UBL:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "no figure passed the checks"
+},
+"khi:PNSC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Not printed in provided pages"
+},
+"khi:MTL:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:DGKC:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:PNSC:2002": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:UBL:2009": {
+"at": "2026-11-01",
+"done": true,
+"n": 8
+},
+"khi:MTL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
+},
+"khi:UBL:2005": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "not annual accounts: insufficient data to identify company name and required summary figures"
+},
+"khi:FABL:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Not stated"
+},
+"khi:PNSC:2001": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: Not Stated"
+},
+"khi:ISIL:2020": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
 }
 }
