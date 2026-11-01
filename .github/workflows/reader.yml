@@ -38,7 +38,8 @@ jobs:
           OPENROUTER_RESERVE: '0.5'     # paid models stop when $0.50 is left
         run: |
           if [ "$(head -n1 .github/run-now)" = diag ] && [ "${{ github.event_name }}" = push ]; then python3 toolkit/diag.py; exit 0; fi
-          python3 toolkit/annual.py --minutes 50 --workers 18 | tee -a data/files/annual/log.txt
+          m=50; [ "$(head -n1 .github/run-now)" = short ] && [ "${{ github.event_name }}" = push ] && m=8
+          python3 toolkit/annual.py --minutes $m --workers 18 | tee -a data/files/annual/log.txt
       - name: Save
         if: always()
         run: |

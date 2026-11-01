@@ -53,6 +53,9 @@ RAW = os.path.join(AN, "reads")
 EXTRACTS = os.path.join(FILES, "report_extracts.json")
 MINUTES, MAXN, PLAN = float(opt("--minutes", 25)), int(opt("--max", 100000)), "--plan" in A
 WORKERS = int(opt("--workers", 6))  # reports read at the same time
+# Page picking at once: on GitHub's 4 core machines, twelve page pickings at the same time all stalled past 15 minutes
+# (each takes about 10 seconds alone), so only a few run at once; downloads and model calls stay fully parallel.
+PREP = threading.Semaphore(int(opt("--prep", 2)))
 KHI = "https://www.khistocks.com"
 UA = "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Mobile Safari/537.36"
 
@@ -343,6 +346,11 @@ def get_pages(jid, src, url, work):
             return None, f"PSX download failed ({code})"
     if pdf.endswith(".pdf") and os.path.getsize(pdf) > 80e6:
         return None, "file too large"
+    with PREP:
+        return _pages(pdf, work)
+
+
+def _pages(pdf, work):
     if pdf.endswith(".pdf"):
         info0 = subprocess.run(["pdfinfo", pdf], capture_output=True, text=True, errors="ignore")
         if info0.returncode != 0 or not re.search(r"Pages:\s+\d+", info0.stdout):
@@ -354,8 +362,11 @@ def get_pages(jid, src, url, work):
             return None, "scanned report (left for later, OCR too slow)"
     out = os.path.join(work, "bundle.txt")
     try:
+        t0 = time.time()
         p = subprocess.run([sys.executable, os.path.join(ROOT, "toolkit", "lib", "prep.py"), pdf, out],
-                           capture_output=True, text=True, timeout=600, cwd=work)
+                           capture_output=True, text=True, timeout=600, cwd=work,
+                           env=dict(os.environ, OMP_THREAD_LIMIT="1"))  # OCR: one core each
+        print(f"pages {os.path.basename(work)} {round(time.time() - t0)}s", flush=True)
     except subprocess.TimeoutExpired:
         return None, "page picking took too long (scanned report)"
     info = R.jload((p.stdout or "").strip().splitlines()[-1] if p.stdout.strip() else "") or {}
