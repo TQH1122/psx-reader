@@ -1,0 +1,45 @@
+# PSX report reader: free AI models read listed companies' public annual reports, around the clock.
+# Public repository, so GitHub's robot minutes are free and unlimited. Keys live in Settings, Secrets (never in files).
+name: Report reader
+on:
+  schedule:
+    - cron: '23 * * * *'      # every hour; a run lasts up to 50 minutes, so reading is nearly continuous
+  workflow_dispatch:
+  push:
+    paths: ['.github/run-now']
+permissions:
+  contents: write
+concurrency:
+  group: reader
+  cancel-in-progress: false
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: command -v pdftotext && command -v tesseract || sudo apt-get install -y -q poppler-utils tesseract-ocr
+      - name: Read annual reports
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
+        run: python3 toolkit/annual.py --minutes 50 --workers 6 | tee -a data/files/annual/log.txt
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          tail -n 300 data/files/annual/log.txt > l && mv l data/files/annual/log.txt
+          git add data
+          git diff --cached --quiet && { echo "nothing changed"; exit 0; }
+          git commit -q -m "Reader: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M')"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          exit 1

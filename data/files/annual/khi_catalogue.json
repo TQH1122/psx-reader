@@ -1,0 +1,7226 @@
+{
+"asOf": "2026-11-01",
+"n": 463,
+"co": {
+"TSMF": {
+"id": "39",
+"name": "Tri-Star Mutual Fund Limited",
+"years": [
+2003
+]
+},
+"FANM": {
+"id": "41",
+"name": "First Al-Noor Modaraba",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2021,
+2022
+]
+},
+"BFMOD": {
+"id": "44",
+"name": "B.F. Modaraba",
+"years": [
+2002,
+2003,
+2005,
+2006
+]
+},
+"FCONM": {
+"id": "47",
+"name": "First Constellation Modaraba",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"FECM": {
+"id": "51",
+"name": "First Elite Capital Modaraba",
+"years": [
+2003
+]
+},
+"FEM": {
+"id": "52",
+"name": "First Equity Modaraba",
+"years": [
+2003,
+2005,
+2006
+]
+},
+"FFLM": {
+"id": "54",
+"name": "First Fidelity Leasing Modaraba",
+"years": [
+2003,
+2005,
+2006
+]
+},
+"FHAM": {
+"id": "59",
+"name": "First Habib Modaraba",
+"years": [
+2000,
+2001,
+2003,
+2004,
+2005,
+2006,
+2007,
+2010,
+2021,
+2022
+]
+},
+"FIBLM": {
+"id": "61",
+"name": "First IBL Modaraba",
+"years": [
+2003,
+2005,
+2006
+]
+},
+"FIMM": {
+"id": "63",
+"name": "First Imrooz Modaraba",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2021,
+2022
+]
+},
+"PIM": {
+"id": "66",
+"name": "Popular Islamic Modaraba",
+"years": [
+2002,
+2003
+]
+},
+"FPRM": {
+"id": "73",
+"name": "First Paramount Modaraba",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2007
+]
+},
+"WASL": {
+"id": "76",
+"name": "Wasl Mobility Modaraba",
+"years": [
+2002,
+2003,
+2004
+]
+},
+"FPJM": {
+"id": "79",
+"name": "First Punjab Modaraba",
+"years": [
+2001,
+2002,
+2003,
+2007
+]
+},
+"FTSM": {
+"id": "82",
+"name": "First Tri-Star Modaraba",
+"years": [
+2005,
+2006,
+2007
+]
+},
+"TRSM": {
+"id": "84",
+"name": "Trust Modaraba",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007
+]
+},
+"UCAPM": {
+"id": "86",
+"name": "Unicap Modaraba",
+"years": [
+2003,
+2006,
+2007
+]
+},
+"ARMG": {
+"id": "95",
+"name": "ARM Green Industries Limited",
+"years": [
+2002,
+2003,
+2006,
+2007
+]
+},
+"ENGL": {
+"id": "98",
+"name": "English Leasing Limited",
+"years": [
+2003,
+2007
+]
+},
+"GRYL": {
+"id": "105",
+"name": "Grays Leasing Limited",
+"years": [
+2003,
+2007
+]
+},
+"OLPL": {
+"id": "113",
+"name": "OLP Financial Services Pakistan Limited",
+"years": [
+2003,
+2004,
+2006,
+2007,
+2009,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2024,
+2025,
+2026
+]
+},
+"PGLC": {
+"id": "119",
+"name": "Pak-Gulf Leasing Company Limited",
+"years": [
+2002,
+2003,
+2006,
+2007,
+2022
+]
+},
+"SLCL": {
+"id": "124",
+"name": "Security Leasing Corporation Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"SPCL": {
+"id": "126",
+"name": "Saudi Pak Consultancy Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2009
+]
+},
+"AMSL": {
+"id": "131",
+"name": "Al-Mal Securities & Services Limited",
+"years": [
+2005,
+2006,
+2007
+]
+},
+"AKBL": {
+"id": "135",
+"name": "Askari Bank Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"BAHL": {
+"id": "138",
+"name": "Bank AL Habib Limited",
+"years": [
+2001,
+2002,
+2003,
+2006,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"BOP": {
+"id": "140",
+"name": "The Bank of Punjab",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"JSCL": {
+"id": "141",
+"name": "Jahangir Siddiqui & Co. Ltd.",
+"years": [
+2003,
+2004,
+2006,
+2007,
+2015,
+2016,
+2018,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ESBL": {
+"id": "148",
+"name": "Escorts Investment Bank Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"FABL": {
+"id": "149",
+"name": "Faysal Bank Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FCSC": {
+"id": "153",
+"name": "First Capital Securities Corporation",
+"years": [
+2009,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HMB": {
+"id": "165",
+"name": "Habib Metropolitan Bank Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MCB": {
+"id": "166",
+"name": "MCB Bank Limited",
+"years": [
+2001,
+2003,
+2004,
+2005,
+2007,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PRIB": {
+"id": "176",
+"name": "Prudential Investment Bank Limited",
+"years": [
+2003
+]
+},
+"SIBL": {
+"id": "180",
+"name": "Security Investment Bank Limited",
+"years": [
+2003,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"SNBL": {
+"id": "181",
+"name": "Soneri Bank Limited",
+"years": [
+2003,
+2004,
+2006,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TSBL": {
+"id": "182",
+"name": "Trust Securities & Brokerage Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023
+]
+},
+"TRIBL": {
+"id": "183",
+"name": "Trust Investment Bank Limited",
+"years": [
+2006,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017
+]
+},
+"AICL": {
+"id": "187",
+"name": "Adamjee Insurance Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"IGIL": {
+"id": "188",
+"name": "IGI Life Insurance Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ASIC": {
+"id": "191",
+"name": "Asia Insurance Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AGIC": {
+"id": "194",
+"name": "Askari General Insurance Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"BIIC": {
+"id": "196",
+"name": "Business & Industrial Insurance Co Limited",
+"years": [
+2003,
+2004,
+2005
+]
+},
+"CENI": {
+"id": "198",
+"name": "Century Insurance Company Limited",
+"years": [
+2003,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2024,
+2025
+]
+},
+"CSIL": {
+"id": "200",
+"name": "Crescent Star Insurance Limited",
+"years": [
+2001,
+2002,
+2003,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"EFUG": {
+"id": "205",
+"name": "EFU General Insurance Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"EFUL": {
+"id": "206",
+"name": "EFU Life Assurance Limited",
+"years": [
+2003,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2022,
+2023,
+2024,
+2025
+]
+},
+"EWIC": {
+"id": "209",
+"name": "East West Insurance Company Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HICL": {
+"id": "210",
+"name": "Habib Insurance Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"IGIHL": {
+"id": "212",
+"name": "IGI Holdings Limited",
+"years": [
+2002,
+2003,
+2010,
+2015,
+2016,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ALAC": {
+"id": "214",
+"name": "Askari Life Assurance Company Limited",
+"years": [
+2003,
+2004,
+2005,
+2007,
+2015,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"JGICL": {
+"id": "216",
+"name": "Jubilee General Insurance Limited",
+"years": [
+2003,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PKGI": {
+"id": "220",
+"name": "The Pakistan General Insurance Co. Ltd.",
+"years": [
+2003,
+2004,
+2006,
+2015,
+2016
+]
+},
+"PRIC": {
+"id": "231",
+"name": "Progressive Insurance Company Limited",
+"years": [
+2003,
+2004,
+2006,
+2007
+]
+},
+"STL": {
+"id": "232",
+"name": "Supernet Technologies Limited",
+"years": [
+2003,
+2005,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"RICL": {
+"id": "233",
+"name": "Reliance Insurance Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"SHNI": {
+"id": "234",
+"name": "Shaheen Insurance Company Limited",
+"years": [
+2003,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"SSIC": {
+"id": "237",
+"name": "Silver Star Insurance Company Limited",
+"years": [
+2003,
+2004,
+2006
+]
+},
+"UNIC": {
+"id": "241",
+"name": "The United Insurance Company",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"UVIC": {
+"id": "242",
+"name": "The Universal Insurance Company Limited",
+"years": [
+2002,
+2003,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"AHTM": {
+"id": "246",
+"name": "Ahmad Hassan Textile Mills Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2007
+]
+},
+"AATM": {
+"id": "252",
+"name": "Ali Asghar Textile Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006
+]
+},
+"AWTX": {
+"id": "253",
+"name": "Allawasaya Tex. & Finishing Mills Ltd",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007
+]
+},
+"ASTM": {
+"id": "263",
+"name": "Asim Textile Mills Limited",
+"years": [
+2003,
+2006,
+2007
+]
+},
+"BHAT": {
+"id": "270",
+"name": "Bhanero Textile Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ZUMA": {
+"id": "271",
+"name": "Zuma Resources Limited",
+"years": [
+2002,
+2003,
+2005,
+2006
+]
+},
+"BTL": {
+"id": "274",
+"name": "Blessed Textiles Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"QTECH": {
+"id": "277",
+"name": "Quantum Data Technologies Limited",
+"years": [
+2003,
+2006
+]
+},
+"GVGL": {
+"id": "282",
+"name": "Ghani Value Glass Limited",
+"years": [
+2001,
+2002,
+2003,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"TPLL": {
+"id": "287",
+"name": "TPL Life Insurance Limited",
+"years": [
+2003,
+2006,
+2007
+]
+},
+"DKTM": {
+"id": "289",
+"name": "Dewan Khalid Textile Mills Limited",
+"years": [
+2003
+]
+},
+"DMTM": {
+"id": "290",
+"name": "Dewan Mushtaq Textile Mills Limited",
+"years": [
+2003,
+2007
+]
+},
+"DWTM": {
+"id": "291",
+"name": "Dewan Textile Mills Limited",
+"years": [
+2003,
+2005,
+2007
+]
+},
+"DINT": {
+"id": "292",
+"name": "Din Textile Mills Limited",
+"years": [
+2003,
+2006,
+2007,
+2008
+]
+},
+"ELCM": {
+"id": "294",
+"name": "Elahi Cotton Mills Limited",
+"years": [
+2003
+]
+},
+"ELSM": {
+"id": "295",
+"name": "Ellcot Spinning Mills Limited",
+"years": [
+2002,
+2003,
+2006,
+2007
+]
+},
+"FASM": {
+"id": "297",
+"name": "Faisal Spinning Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007
+]
+},
+"FAEL": {
+"id": "299",
+"name": "Fatima Enterprises Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007
+]
+},
+"FZCM": {
+"id": "304",
+"name": "Fazal Cloth Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2007,
+2024,
+2025
+]
+},
+"GADT": {
+"id": "308",
+"name": "Gadoon Textile Mills Limited",
+"years": [
+2002,
+2003,
+2004,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"GLOT": {
+"id": "310",
+"name": "Globe Textile Mills Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2024
+]
+},
+"GUSM": {
+"id": "312",
+"name": "Gulistan Spinning Mills Limited",
+"years": [
+2003,
+2005
+]
+},
+"GUTM": {
+"id": "313",
+"name": "Gulistan Textile Mills Limited",
+"years": [
+2005
+]
+},
+"GSPM": {
+"id": "314",
+"name": "Gulshan Spinning Mills Limited",
+"years": [
+2005,
+2006
+]
+},
+"HMIM": {
+"id": "315",
+"name": "Haji Mohammad Ismail Mills Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"HAJT": {
+"id": "316",
+"name": "Hajra Textile Mills Limited",
+"years": [
+2003,
+2005,
+2006
+]
+},
+"IDEAL": {
+"id": "319",
+"name": "Ideal Dynamics Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"IDRT": {
+"id": "320",
+"name": "Idrees Textile Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006
+]
+},
+"ZAHID": {
+"id": "321",
+"name": "Zahidjee Textile Mills Limited",
+"years": [
+2006
+]
+},
+"IDYM": {
+"id": "322",
+"name": "Indus Dyeing & Manufacturing Co. Limited",
+"years": [
+2003,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"JDMT": {
+"id": "331",
+"name": "Janana De Malucho Textile Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2006
+]
+},
+"KSTM": {
+"id": "336",
+"name": "Khalid Siraj Textile Mills Limited",
+"years": [
+2003,
+2005,
+2006
+]
+},
+"ARCTM": {
+"id": "337",
+"name": "Arctic Textile Mills Limited",
+"years": [
+2005
+]
+},
+"KOHTM": {
+"id": "338",
+"name": "Kohat Textile Mills Limited",
+"years": [
+2002,
+2003,
+2005,
+2006
+]
+},
+"KOSM": {
+"id": "340",
+"name": "Kohinoor Spinning Mills Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2021
+]
+},
+"LIVEN": {
+"id": "346",
+"name": "Liven Pharma Limited",
+"years": [
+2003,
+2005
+]
+},
+"MQTM": {
+"id": "348",
+"name": "Maqbool Textile Mills Limited",
+"years": [
+2002,
+2003,
+2005,
+2007
+]
+},
+"NATM": {
+"id": "355",
+"name": "Nadeem Textile Mills Limited",
+"years": [
+2003,
+2006,
+2007
+]
+},
+"NAGC": {
+"id": "356",
+"name": "Nagina Cotton Mills Limited",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2007,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"NCML": {
+"id": "358",
+"name": "Nazir Cotton Mills Limited",
+"years": [
+2003,
+2007
+]
+},
+"NCL": {
+"id": "359",
+"name": "Nishat Chunian Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"OML": {
+"id": "363",
+"name": "Olympia Mills Limited",
+"years": [
+2002,
+2005,
+2006
+]
+},
+"PASM": {
+"id": "366",
+"name": "Paramount Spinning Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005
+]
+},
+"PRET": {
+"id": "367",
+"name": "Premium Textile Mills Limited",
+"years": [
+2003,
+2005,
+2006,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"QUET": {
+"id": "369",
+"name": "Quetta Textile Mills Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"BECO": {
+"id": "370",
+"name": "Beco Steel Limited",
+"years": [
+2003,
+2006,
+2007
+]
+},
+"RUBY": {
+"id": "374",
+"name": "Ruby Textile Mills Limited",
+"years": [
+2002,
+2003,
+2005,
+2007
+]
+},
+"SAIF": {
+"id": "377",
+"name": "Saif Textile Mills Limited",
+"years": [
+2005,
+2006
+]
+},
+"SLYT": {
+"id": "383",
+"name": "Sally Textile Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005
+]
+},
+"SNAI": {
+"id": "385",
+"name": "Sana Industries Limited",
+"years": [
+2003,
+2004,
+2006,
+2007
+]
+},
+"SAPT": {
+"id": "386",
+"name": "Sapphire Textile Mills Limited",
+"years": [
+2001,
+2003,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SSML": {
+"id": "390",
+"name": "Saritow Spinning Mills Limited",
+"years": [
+2003,
+2006,
+2007
+]
+},
+"SERT": {
+"id": "392",
+"name": "Service Industries Textiles Limited",
+"years": [
+2003,
+2006
+]
+},
+"SHDT": {
+"id": "394",
+"name": "Shadab Textile Mills Limited",
+"years": [
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SHCM": {
+"id": "395",
+"name": "Shadman Cotton Mills Limited",
+"years": [
+2005,
+2006
+]
+},
+"SZTM": {
+"id": "398",
+"name": "Shahzad Textile Mills Limited",
+"years": [
+2004,
+2005
+]
+},
+"SUTM": {
+"id": "403",
+"name": "Sunrays Textile Mills Limited",
+"years": [
+2005,
+2007,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TATM": {
+"id": "408",
+"name": "Tata Textile Mills Limited",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2007,
+2009
+]
+},
+"TAJT": {
+"id": "410",
+"name": "Taj Textile Mills Limited",
+"years": [
+2004,
+2005,
+2006
+]
+},
+"ASHT": {
+"id": "420",
+"name": "Ashfaq Textile Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2006
+]
+},
+"ICCI": {
+"id": "426",
+"name": "ICC Industries Limited",
+"years": [
+2003,
+2004,
+2005,
+2006
+]
+},
+"FML": {
+"id": "432",
+"name": "Feroze1888 Mills Limited",
+"years": [
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PRWM": {
+"id": "437",
+"name": "Prosperity Weaving Mills Limited",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2007,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"REWM": {
+"id": "438",
+"name": "Reliance Weaving Mills Limited",
+"years": [
+2001,
+2003,
+2005
+]
+},
+"STJT": {
+"id": "445",
+"name": "Shahtaj Textile Limited",
+"years": [
+2003,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"YOUW": {
+"id": "447",
+"name": "Yousaf Weaving Mills Limited",
+"years": [
+2003,
+2004,
+2005,
+2006
+]
+},
+"ADMM": {
+"id": "451",
+"name": "Artistic Denim Mills Limited",
+"years": [
+2004,
+2005,
+2006,
+2007,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ARUJ": {
+"id": "452",
+"name": "Aruj Industries Limited",
+"years": [
+2003,
+2005,
+2006,
+2024
+]
+},
+"CRTM": {
+"id": "463",
+"name": "The Crescent Textile Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2023
+]
+},
+"DLL": {
+"id": "465",
+"name": "Dawood Lawrencepur Limited",
+"years": [
+2005,
+2006,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FSWL": {
+"id": "466",
+"name": "Fateh Sports Wear Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"FTHM": {
+"id": "467",
+"name": "Fateh Textile Mills Limited",
+"years": [
+2001,
+2005,
+2007
+]
+},
+"GFIL": {
+"id": "468",
+"name": "Ghazi Fabrics International Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005
+]
+},
+"GATM": {
+"id": "469",
+"name": "Gul Ahmed Textile Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"HAEL": {
+"id": "470",
+"name": "Hala Enterprises Limited",
+"years": [
+2005
+]
+},
+"HATM": {
+"id": "471",
+"name": "Hamid Textile Mills Limited",
+"years": [
+2006
+]
+},
+"HUSI": {
+"id": "472",
+"name": "Husein Industries Limited",
+"years": [
+2003,
+2005,
+2007
+]
+},
+"INKL": {
+"id": "473",
+"name": "International Knitwear Limited",
+"years": [
+2007,
+2008
+]
+},
+"ANTM": {
+"id": "474",
+"name": "AN Textile Mills Limited",
+"years": [
+2003,
+2007
+]
+},
+"KHYT": {
+"id": "477",
+"name": "Khyber Textile Mills Limited",
+"years": [
+2006
+]
+},
+"KOIL": {
+"id": "478",
+"name": "Kohinoor Industries Limited",
+"years": [
+2003,
+2004,
+2007
+]
+},
+"KTML": {
+"id": "479",
+"name": "Kohinoor Textile Mills Limited",
+"years": [
+2001,
+2003,
+2004,
+2005,
+2006,
+2009,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"ANL": {
+"id": "480",
+"name": "Azgard Nine Limited",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MEHT": {
+"id": "482",
+"name": "Mehmood Textile Mills Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2007
+]
+},
+"CLVL": {
+"id": "484",
+"name": "Cordoba Logistics & Ventures Limited",
+"years": [
+2002,
+2003,
+2005
+]
+},
+"MFTM": {
+"id": "486",
+"name": "Mohammad Farooq Textile Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005
+]
+},
+"MUBT": {
+"id": "487",
+"name": "Mubarak Textile Mills Limited",
+"years": [
+2003
+]
+},
+"NINA": {
+"id": "491",
+"name": "Nina Industries Limited",
+"years": [
+2004,
+2006,
+2007
+]
+},
+"NML": {
+"id": "492",
+"name": "Nishat Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"REDCO": {
+"id": "494",
+"name": "Redco Textiles Limited",
+"years": [
+2005,
+2006
+]
+},
+"SFAT": {
+"id": "495",
+"name": "Safa Textiles Limited",
+"years": [
+2002,
+2004,
+2005,
+2006
+]
+},
+"SFL": {
+"id": "496",
+"name": "Sapphire Fibres Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2007,
+2022,
+2023,
+2024,
+2025
+]
+},
+"STML": {
+"id": "500",
+"name": "Shams Textile Mills Limited",
+"years": [
+2003,
+2006,
+2023
+]
+},
+"SURC": {
+"id": "502",
+"name": "Suraj Cotton Mills Limited",
+"years": [
+2006,
+2007
+]
+},
+"TOWL": {
+"id": "507",
+"name": "Towellers Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006
+]
+},
+"USMT": {
+"id": "508",
+"name": "Usman Textile Mills Limited",
+"years": [
+2007
+]
+},
+"ITANZ": {
+"id": "509",
+"name": "Itanz Technologies Limited",
+"years": [
+2001,
+2002,
+2003,
+2006,
+2007
+]
+},
+"MSOT": {
+"id": "511",
+"name": "Masood Textile Mills Limited",
+"years": [
+2005,
+2006,
+2007
+]
+},
+"BNWM": {
+"id": "514",
+"name": "Bannu Woollen Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AASM": {
+"id": "521",
+"name": "Al-Abid Silk Mills Limited",
+"years": [
+2001,
+2002,
+2003
+]
+},
+"DSFL": {
+"id": "523",
+"name": "Dewan Salman Fibre Limited",
+"years": [
+2001,
+2002,
+2003,
+2006,
+2007,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"GATI": {
+"id": "526",
+"name": "Gatron (Industries) Limited",
+"years": [
+2003,
+2005,
+2006,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"IBFL": {
+"id": "527",
+"name": "Ibrahim Fibres Limited",
+"years": [
+2003,
+2004,
+2005,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2026
+]
+},
+"NSRM": {
+"id": "533",
+"name": "The National Silk & Rayon Mills Limited",
+"years": [
+2005,
+2006,
+2007
+]
+},
+"PSYL": {
+"id": "535",
+"name": "Pakistan Synthetics Limited",
+"years": [
+2002,
+2003,
+2005,
+2006
+]
+},
+"RUPL": {
+"id": "539",
+"name": "Rupali Polyester Limited",
+"years": [
+2005,
+2006,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"IMAGE": {
+"id": "543",
+"name": "Image Pakistan Limited",
+"years": [
+2001,
+2002,
+2003,
+2004
+]
+},
+"CJPL": {
+"id": "547",
+"name": "Crescent Jute Products Limited",
+"years": [
+2001,
+2002,
+2003,
+2006,
+2007
+]
+},
+"SUHJ": {
+"id": "551",
+"name": "Suhail Jute Mills Limited",
+"years": [
+2003,
+2005,
+2007
+]
+},
+"THALL": {
+"id": "552",
+"name": "Thal Limited",
+"years": [
+2003,
+2004,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"ADAMS": {
+"id": "554",
+"name": "Adam Sugar Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007
+]
+},
+"AABS": {
+"id": "556",
+"name": "Al-Abbas Sugar Mills Limited",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2007,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AGSML": {
+"id": "557",
+"name": "Abdullah Shah Ghazi Sugar Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006
+]
+},
+"ALNRS": {
+"id": "558",
+"name": "Al-Noor Sugar Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2023
+]
+},
+"ANSM": {
+"id": "559",
+"name": "Ansari Sugar Mills Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2021
+]
+},
+"BAFS": {
+"id": "560",
+"name": "Baba Farid Sugar Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007
+]
+},
+"CHAS": {
+"id": "562",
+"name": "Chashma Sugar Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007
+]
+},
+"CCM": {
+"id": "563",
+"name": "Crescent Cotton Mills Limited",
+"years": [
+2002,
+2003
+]
+},
+"DWSM": {
+"id": "564",
+"name": "Dewan Sugar Mills Limited",
+"years": [
+2001,
+2003,
+2005,
+2006,
+2007,
+2009,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"FRSM": {
+"id": "565",
+"name": "Faran Sugar Mills Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HABSM": {
+"id": "569",
+"name": "Habib Sugar Mills Limited",
+"years": [
+2002,
+2003,
+2004,
+2006,
+2007,
+2020,
+2021,
+2022,
+2023,
+2025
+]
+},
+"HRPL": {
+"id": "570",
+"name": "Habib Rice Product Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HWQS": {
+"id": "571",
+"name": "Haseeb Waqas Sugar Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2007
+]
+},
+"JDWS": {
+"id": "575",
+"name": "JDW Sugar Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007,
+2009,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"KPUS": {
+"id": "576",
+"name": "Khairpur Sugar Mills Limited",
+"years": [
+2003,
+2007
+]
+},
+"JSML": {
+"id": "577",
+"name": "Jauharabad Sugar Mills Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"MRNS": {
+"id": "578",
+"name": "Mehran Sugar Mills Limited",
+"years": [
+2005,
+2006,
+2007,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MIRKS": {
+"id": "580",
+"name": "Mirpurkhas Sugar Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007,
+2010,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"NONS": {
+"id": "582",
+"name": "Noon Sugar Mills Limited",
+"years": [
+2006
+]
+},
+"PMRS": {
+"id": "584",
+"name": "The Premier Sugar Mills",
+"years": [
+2000,
+2001,
+2002,
+2003,
+2007
+]
+},
+"SKRS": {
+"id": "585",
+"name": "Sakrand Sugar Mills Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007,
+2019,
+2021,
+2022,
+2023,
+2024
+]
+},
+"SANSM": {
+"id": "586",
+"name": "Sanghar Sugar Mills Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2006,
+2007
+]
+},
+"SHJS": {
+"id": "587",
+"name": "Shahtaj Sugar Mills Limited",
+"years": [
+2003,
+2006,
+2007,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SHSML": {
+"id": "588",
+"name": "Shahmurad Sugar Mills Limited",
+"years": [
+2003,
+2005,
+2006,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SML": {
+"id": "589",
+"name": "Shakarganj Limited",
+"years": [
+2004,
+2005,
+2006,
+2007,
+2009,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2024
+]
+},
+"TSML": {
+"id": "591",
+"name": "Tandlianwala Sugar Mills Limited",
+"years": [
+2003,
+2004,
+2006
+]
+},
+"TICL": {
+"id": "592",
+"name": "The Thal Industries Corporation Limited",
+"years": [
+2002,
+2003,
+2006,
+2007,
+2023
+]
+},
+"BWCL": {
+"id": "596",
+"name": "Bestway Cement Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"CHCC": {
+"id": "598",
+"name": "Cherat Cement Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"DBCI": {
+"id": "599",
+"name": "Dadabhoy Cement Industries Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006
+]
+},
+"DADX": {
+"id": "601",
+"name": "Dadex Eternit Limited",
+"years": [
+2002,
+2005,
+2006,
+2007,
+2022,
+2023,
+2024
+]
+},
+"DNCC": {
+"id": "602",
+"name": "Dandot Cement Company Limited",
+"years": [
+2003,
+2004,
+2006,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"DGKC": {
+"id": "604",
+"name": "D.G. Khan Cement Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2009,
+2010,
+2011,
+2012,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FCCL": {
+"id": "606",
+"name": "Fauji Cement Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"FECTC": {
+"id": "607",
+"name": "Fecto Cement Limited",
+"years": [
+2001,
+2003,
+2004,
+2005,
+2006,
+2007,
+2008,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"GWLC": {
+"id": "608",
+"name": "Gharibwal Cement Limited",
+"years": [
+2003,
+2007,
+2008,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"JVDC": {
+"id": "609",
+"name": "Javedan Corporation Limited",
+"years": [
+2002,
+2003,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"KOHC": {
+"id": "610",
+"name": "Kohat Cement Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"LUCK": {
+"id": "611",
+"name": "Lucky Cement Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2010,
+2012,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MLCF": {
+"id": "612",
+"name": "Maple Leaf Cement Factory Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"PIOC": {
+"id": "618",
+"name": "Pioneer Cement Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"ZELP": {
+"id": "620",
+"name": "Zeal Pak Cement Factory Limited",
+"years": [
+2004,
+2005,
+2006,
+2007,
+2009
+]
+},
+"KHTC": {
+"id": "621",
+"name": "Khyber Tobacco Company Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2018,
+2020,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PAKT": {
+"id": "623",
+"name": "Pakistan Tobacco Company Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ALTN": {
+"id": "628",
+"name": "Altern Energy Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ATRL": {
+"id": "629",
+"name": "Attock Refinery Limited",
+"years": [
+2001,
+2003,
+2004,
+2005,
+2006,
+2008,
+2009,
+2010,
+2011,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"HUBC": {
+"id": "638",
+"name": "The Hub Power Company Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007,
+2008,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"KEL": {
+"id": "639",
+"name": "K-Electric Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2009,
+2010,
+2011,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"KOHE": {
+"id": "640",
+"name": "Kohinoor Energy Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"KOHP": {
+"id": "642",
+"name": "Kohinoor Power Company Limited",
+"years": [
+2003,
+2004
+]
+},
+"MARI": {
+"id": "644",
+"name": "Mari Energies Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2009,
+2010,
+2014,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"NRL": {
+"id": "645",
+"name": "National Refinery Limited",
+"years": [
+2003,
+2004,
+2005,
+2008,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"POL": {
+"id": "646",
+"name": "Pakistan Oilfields Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2006,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"PRL": {
+"id": "647",
+"name": "Pakistan Refinery Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007,
+2008,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"PSO": {
+"id": "648",
+"name": "Pakistan State Oil Company Limited",
+"years": [
+2003,
+2004,
+2005,
+2007,
+2008,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"CWHC": {
+"id": "649",
+"name": "Crestwell Healthcare Limited",
+"years": [
+2001,
+2002,
+2003,
+2006
+]
+},
+"BPL": {
+"id": "650",
+"name": "Burshane LPG (Pakistan) Limited",
+"years": [
+2005,
+2006,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2024,
+2025,
+2026
+]
+},
+"WAFI": {
+"id": "651",
+"name": "Wafi Energy Pakistan Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SEL": {
+"id": "652",
+"name": "Sitara Energy Limited",
+"years": [
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SSGC": {
+"id": "653",
+"name": "Sui Southern Gas Company Limited",
+"years": [
+2004,
+2005,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SNGP": {
+"id": "655",
+"name": "Sui Northern Gas Pipelines Limited",
+"years": [
+2004,
+2005,
+2006,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"BCL": {
+"id": "658",
+"name": "Bolan Castings Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2007
+]
+},
+"CSAP": {
+"id": "659",
+"name": "Crescent Steel & Allied Products Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HSPI": {
+"id": "662",
+"name": "Huffaz Seamless Pipe Industries Limited",
+"years": [
+2003,
+2006,
+2007,
+2009,
+2022
+]
+},
+"INIL": {
+"id": "663",
+"name": "International Industries Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2008,
+2009,
+2010,
+2015,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"KSBP": {
+"id": "664",
+"name": "KSB Pumps Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2021,
+2022,
+2023,
+2024
+]
+},
+"MSCL": {
+"id": "665",
+"name": "Metropolitan Steel Corporation Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"SAZEW": {
+"id": "669",
+"name": "Sazgar Engineering Works Limited",
+"years": [
+2003,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"AGIL": {
+"id": "671",
+"name": "Agriauto Industries Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"AGTL": {
+"id": "672",
+"name": "Al-Ghazi Tractors Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"ATBA": {
+"id": "675",
+"name": "Atlas Battery Limited",
+"years": [
+2001,
+2002,
+2005,
+2006,
+2007,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"ATLH": {
+"id": "676",
+"name": "Atlas Honda Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"BWHL": {
+"id": "678",
+"name": "Baluchistan Wheels Limited",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2008,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"BELA": {
+"id": "679",
+"name": "Bela Automotives Limited",
+"years": [
+2003,
+2005
+]
+},
+"DFML": {
+"id": "681",
+"name": "Dewan Farooque Motors Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"EXIDE": {
+"id": "682",
+"name": "Exide Pakistan Limited",
+"years": [
+2002,
+2003,
+2005,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"GTYR": {
+"id": "683",
+"name": "Ghandhara Tyre & Rubber Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2026
+]
+},
+"GHNI": {
+"id": "684",
+"name": "Ghandhara Industries Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"GAL": {
+"id": "686",
+"name": "Ghandhara Automobiles Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"HINO": {
+"id": "687",
+"name": "Hinopak Motors Limited",
+"years": [
+2003,
+2004,
+2005,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"HCAR": {
+"id": "688",
+"name": "Honda Atlas Cars (Pakistan) Limited",
+"years": [
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"INDU": {
+"id": "689",
+"name": "Indus Motor Company Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"MTL": {
+"id": "690",
+"name": "Millat Tractors Limited",
+"years": [
+2001,
+2003,
+2005,
+2006,
+2009,
+2010,
+2014,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PCAL": {
+"id": "702",
+"name": "Pakistan Cables Limited",
+"years": [
+2003,
+2005,
+2006,
+2009,
+2010,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2026
+]
+},
+"PAEL": {
+"id": "704",
+"name": "Pak Elektron Limited",
+"years": [
+2001,
+2002,
+2003,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"WAVES": {
+"id": "711",
+"name": "Waves Corporation Limited",
+"years": [
+2003,
+2004,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"SIEM": {
+"id": "712",
+"name": "Siemens (Pakistan) Engineering",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2009,
+2010,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PNSC": {
+"id": "713",
+"name": "Pakistan National Shipping Corporation",
+"years": [
+2000,
+2001,
+2002,
+2003,
+2005,
+2006,
+2010,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PAKD": {
+"id": "714",
+"name": "Pak Datacom Limited",
+"years": [
+2003,
+2004,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PTC": {
+"id": "717",
+"name": "Pakistan Telecommunication Company Ltd",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2009,
+2010,
+2011,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TELE": {
+"id": "718",
+"name": "Telecard Limited",
+"years": [
+2005,
+2006,
+2007,
+2008,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ABOT": {
+"id": "721",
+"name": "Abbott Laboratories (Pakistan) Limited",
+"years": [
+2003,
+2005,
+2007,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"BAPL": {
+"id": "724",
+"name": "Bawany Air Products Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007
+]
+},
+"BIFO": {
+"id": "725",
+"name": "Biafo Industries Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"BERG": {
+"id": "726",
+"name": "Berger Paints Pakistan Limited",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"BUXL": {
+"id": "728",
+"name": "Buxly Paints Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007,
+2008,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ARPL": {
+"id": "730",
+"name": "Archroma Pakistan Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"COLG": {
+"id": "731",
+"name": "Colgate-Palmolive (Pakistan) Limited",
+"years": [
+2003,
+2005,
+2006,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"DAAG": {
+"id": "733",
+"name": "Data Agro Limited",
+"years": [
+2003,
+2006
+]
+},
+"ENGROH": {
+"id": "734",
+"name": "Engro Holdings Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FFC": {
+"id": "738",
+"name": "Fauji Fertilizer Company Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FEROZ": {
+"id": "739",
+"name": "Ferozsons Laboratories Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HINOON": {
+"id": "741",
+"name": "Highnoon Laboratories Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"LCI": {
+"id": "743",
+"name": "Lucky Core Industries Limited",
+"years": [
+2003,
+2004,
+2005,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"LPGL": {
+"id": "748",
+"name": "Leiner Pak Gelatine Limited",
+"years": [
+2002,
+2003,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020
+]
+},
+"OTSU": {
+"id": "749",
+"name": "Otsuka Pakistan Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"LOTCHEM": {
+"id": "751",
+"name": "Lotte Chemical Pakistan Limited",
+"years": [
+2003,
+2004,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"NICL": {
+"id": "753",
+"name": "Nimir Industrial Chemicals Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"PAKOXY": {
+"id": "756",
+"name": "Pakistan Oxygen Limited",
+"years": [
+2003,
+2004,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"NRSL": {
+"id": "757",
+"name": "Nimir Resins Limited",
+"years": [
+2002,
+2003,
+2004,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"SARC": {
+"id": "763",
+"name": "Sardar Chemical Industries Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2007,
+2014,
+2016,
+2017,
+2018,
+2019,
+2020
+]
+},
+"SEARL": {
+"id": "764",
+"name": "The Searle Company Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SHCI": {
+"id": "765",
+"name": "Shaffi Chemical Industries Limited",
+"years": [
+2003,
+2005
+]
+},
+"SITC": {
+"id": "767",
+"name": "Sitara Chemical Industries Limited",
+"years": [
+2003,
+2004,
+2005,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"WAHN": {
+"id": "769",
+"name": "Wah Noble Chemicals Limited",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"CEPB": {
+"id": "777",
+"name": "Century Paper & Board Mills Limited",
+"years": [
+2002,
+2004,
+2006,
+2008,
+2009,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"CPPL": {
+"id": "778",
+"name": "Cherat Packaging Limited",
+"years": [
+2003,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"CFL": {
+"id": "779",
+"name": "Crescent Fibres Limited",
+"years": [
+2002,
+2003,
+2005,
+2006,
+2007
+]
+},
+"DBSL": {
+"id": "780",
+"name": "Dadabhoy Sack Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"MERIT": {
+"id": "781",
+"name": "Merit Packaging Limited",
+"years": [
+2001,
+2002,
+2003,
+2008,
+2017,
+2018,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PKGS": {
+"id": "782",
+"name": "Packages Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PPP": {
+"id": "783",
+"name": "Pakistan Paper Products Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"SEPL": {
+"id": "785",
+"name": "Security Papers Limited",
+"years": [
+2002,
+2003,
+2006,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"POML": {
+"id": "795",
+"name": "Punjab Oil Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2016,
+2017,
+2018,
+2019,
+2020,
+2022,
+2024,
+2025
+]
+},
+"SSOM": {
+"id": "796",
+"name": "S.S.Oil Mills Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2023
+]
+},
+"GAMON": {
+"id": "801",
+"name": "Gammon Pakistan Limited",
+"years": [
+2005,
+2006
+]
+},
+"BATA": {
+"id": "805",
+"name": "Bata Pakistan Limited",
+"years": [
+2001,
+2003,
+2004,
+2006,
+2007,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FIL": {
+"id": "806",
+"name": "Fateh Industries Limited",
+"years": [
+2002,
+2003,
+2005,
+2006
+]
+},
+"LEUL": {
+"id": "808",
+"name": "Leather Up Limited",
+"years": [
+2006,
+2007
+]
+},
+"PAKL": {
+"id": "810",
+"name": "Pak Leather Crafts Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"CLOV": {
+"id": "815",
+"name": "Clover Pakistan Limited",
+"years": [
+2004,
+2005,
+2006,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"GIL": {
+"id": "816",
+"name": "Good Luck Industries Ltd.",
+"years": [
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ISIL": {
+"id": "819",
+"name": "Ismail Industries Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"NESTLE": {
+"id": "823",
+"name": "Nestle Pakistan Limited",
+"years": [
+2002,
+2003,
+2004,
+2006,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MFFL": {
+"id": "824",
+"name": "Mitchells Fruit Farms Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MUREB": {
+"id": "826",
+"name": "Murree Brewery Company Limited",
+"years": [
+2005,
+2006,
+2007,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"NATF": {
+"id": "827",
+"name": "National Foods Limited",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2007,
+2008,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"QUICE": {
+"id": "831",
+"name": "Quice Food Industries Limited",
+"years": [
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"RMPL": {
+"id": "833",
+"name": "Rafhan Maize Products Company Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SHEZ": {
+"id": "834",
+"name": "Shezan International Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"EMCO": {
+"id": "837",
+"name": "Emco Industries Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007,
+2023,
+2024,
+2025
+]
+},
+"FRCL": {
+"id": "840",
+"name": "Frontier Ceramics Limited",
+"years": [
+2003,
+2005,
+2006,
+2007
+]
+},
+"GHGL": {
+"id": "841",
+"name": "Ghani Glass Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"KCL": {
+"id": "843",
+"name": "Karam Ceramics Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TGL": {
+"id": "845",
+"name": "Tariq Glass Industries Limited",
+"years": [
+2003,
+2006,
+2007,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"STCL": {
+"id": "848",
+"name": "Shabbir Tiles & Ceramics Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2006,
+2008,
+2014,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AKGL": {
+"id": "850",
+"name": "Al-Khair Gadoon Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2007,
+2008
+]
+},
+"ARPAK": {
+"id": "851",
+"name": "Arpak International Investments Ltd.",
+"years": [
+2003,
+2005,
+2007
+]
+},
+"DIIL": {
+"id": "852",
+"name": "Diamond Industries Limited",
+"years": [
+2002,
+2003
+]
+},
+"GOC": {
+"id": "856",
+"name": "GOC (Pak) Limited.",
+"years": [
+2001,
+2002,
+2003,
+2005,
+2006,
+2008,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"MWMP": {
+"id": "858",
+"name": "Mandviwala Mauser Plastic Industries",
+"years": [
+2003,
+2004
+]
+},
+"PHDL": {
+"id": "860",
+"name": "Pakistan Hotels Developers Limited",
+"years": [
+2002,
+2003,
+2006,
+2007,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PSEL": {
+"id": "864",
+"name": "Pakistan Services Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2010,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"AKDHL": {
+"id": "866",
+"name": "AKD Hospitality Limited",
+"years": [
+2003,
+2005,
+2006
+]
+},
+"SHFA": {
+"id": "867",
+"name": "Shifa International Hospitals Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TREET": {
+"id": "873",
+"name": "Treet Corporation Limited",
+"years": [
+2001,
+2002,
+2003,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TRIPF": {
+"id": "874",
+"name": "Tri-Pack Films Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007,
+2010,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"UDPL": {
+"id": "877",
+"name": "United Distributors Pakistan Limited",
+"years": [
+2005,
+2006,
+2007
+]
+},
+"HAFL": {
+"id": "917",
+"name": "Hafiz Limited",
+"years": [
+2005,
+2007,
+2023
+]
+},
+"BNL": {
+"id": "920",
+"name": "Bunnys Limited",
+"years": [
+2003,
+2005,
+2006
+]
+},
+"PPVC": {
+"id": "937",
+"name": "Pakistan PVC Limited",
+"years": [
+2003,
+2005,
+2006,
+2007,
+2024
+]
+},
+"NBP": {
+"id": "984",
+"name": "National Bank of Pakistan",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MEBL": {
+"id": "1055",
+"name": "Meezan Bank Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ACPL": {
+"id": "1077",
+"name": "Attock Cement Pakistan Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2006,
+2008,
+2009,
+2010,
+2011,
+2012,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"CNERGY": {
+"id": "1079",
+"name": "Cnergyico PK Limited",
+"years": [
+2002,
+2003,
+2004,
+2005,
+2006,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"DYNO": {
+"id": "1094",
+"name": "Dynea Pakistan Limited",
+"years": [
+2003,
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"ZIL": {
+"id": "1095",
+"name": "ZIL Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SRVI": {
+"id": "1096",
+"name": "Service Industries Limited",
+"years": [
+2003,
+2004,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PAKRI": {
+"id": "1126",
+"name": "Pakistan Reinsurance Company Limited",
+"years": [
+2003,
+2005,
+2007,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ICL": {
+"id": "1138",
+"name": "Ittehad Chemicals Limted",
+"years": [
+2003,
+2004,
+2005,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HPL": {
+"id": "1140",
+"name": "Hoechst Pakistan Limited",
+"years": [
+2003,
+2004,
+2005,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2026
+]
+},
+"GLAXO": {
+"id": "1141",
+"name": "GlaxoSmithKline Pakistan Limited",
+"years": [
+2002,
+2003,
+2004,
+2006,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TRG": {
+"id": "1142",
+"name": "TRG Pakistan Limited",
+"years": [
+2005,
+2006,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PICT": {
+"id": "1186",
+"name": "Pakistan International Container",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"OGDC": {
+"id": "1197",
+"name": "Oil & Gas Development Company Limited",
+"years": [
+2004,
+2005,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"FNBM": {
+"id": "1217",
+"name": "First National Bank Modaraba",
+"years": [
+2006
+]
+},
+"ECOP": {
+"id": "1220",
+"name": "Ecopack Limited",
+"years": [
+2003,
+2005,
+2006
+]
+},
+"JLICL": {
+"id": "1227",
+"name": "Jubilee Life Insurance Company Limited",
+"years": [
+2003,
+2004,
+2005,
+2006,
+2015,
+2016,
+2017,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FDPL": {
+"id": "1243",
+"name": "First Dawood Properties Limited",
+"years": [
+2002,
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MACFL": {
+"id": "1246",
+"name": "MACPAC Films Limited",
+"years": [
+2005,
+2006,
+2007,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SBL": {
+"id": "1249",
+"name": "Samba Bank Limited",
+"years": [
+2004,
+2005,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"BAFL": {
+"id": "1253",
+"name": "Bank Alfalah Limited",
+"years": [
+2004,
+2005,
+2006,
+2007,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"OLPM": {
+"id": "1258",
+"name": "OLP Modaraba Limited",
+"years": [
+2004,
+2005,
+2021,
+2022
+]
+},
+"HIFA": {
+"id": "1269",
+"name": "HBL Investment Fund",
+"years": [
+2005,
+2006
+]
+},
+"PPL": {
+"id": "1272",
+"name": "Pakistan Petroleum Limited",
+"years": [
+2004,
+2005,
+2006,
+2007,
+2008,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HGFA": {
+"id": "1279",
+"name": "HBL Growth Fund",
+"years": [
+2005,
+2006,
+2009
+]
+},
+"DWAE": {
+"id": "1294",
+"name": "Dewan Automotive Engineering Limited",
+"years": [
+2004,
+2005,
+2006,
+2008
+]
+},
+"FNEL": {
+"id": "1297",
+"name": "First National Equities Limited",
+"years": [
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"JUBS": {
+"id": "1322",
+"name": "Jubilee Spinning & Weaving Mills Ltd.",
+"years": [
+2006
+]
+},
+"AMBL": {
+"id": "1333",
+"name": "Apna Microfinance Bank Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021
+]
+},
+"JSGCL": {
+"id": "1336",
+"name": "JS Global Capital Limited",
+"years": [
+2006,
+2007,
+2014,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"KAPCO": {
+"id": "1340",
+"name": "Kot Addu Power Company Limited",
+"years": [
+2005,
+2006,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"APL": {
+"id": "1343",
+"name": "Attock Petroleum Limited",
+"years": [
+2005,
+2006,
+2007,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"DCL": {
+"id": "1352",
+"name": "Dewan Cement Limited",
+"years": [
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"DFSM": {
+"id": "1359",
+"name": "Dewan Farooque Spinning Mills Limited",
+"years": [
+2005,
+2006,
+2007
+]
+},
+"UBL": {
+"id": "1369",
+"name": "United Bank Limited",
+"years": [
+2005,
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HUMNL": {
+"id": "1378",
+"name": "Hum Network Limited",
+"years": [
+2006,
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"CHBL": {
+"id": "1380",
+"name": "Chenab Limited",
+"years": [
+2006,
+2007
+]
+},
+"ZTL": {
+"id": "1390",
+"name": "Zephyr Textiles Limited",
+"years": [
+2005,
+2006,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"ABL": {
+"id": "1391",
+"name": "Allied Bank Limited",
+"years": [
+2005,
+2006,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"WTL": {
+"id": "1392",
+"name": "Worldcall Telecom Limited",
+"years": [
+2005,
+2006,
+2007,
+2008,
+2009,
+2010,
+2014,
+2015,
+2016,
+2017,
+2018,
+2019,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"NETSOL": {
+"id": "1394",
+"name": "NetSol Technologies Limited",
+"years": [
+2005,
+2010,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"STPL": {
+"id": "1404",
+"name": "Siddiqsons Tin Plate Limited",
+"years": [
+2006,
+2007,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"BOK": {
+"id": "1416",
+"name": "The Bank of Khyber",
+"years": [
+2005,
+2006,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"BIPL": {
+"id": "1421",
+"name": "BankIslami Pakistan Limited",
+"years": [
+2006,
+2007,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ATIL": {
+"id": "1428",
+"name": "Atlas Insurance Limited",
+"years": [
+2005,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"UBDL": {
+"id": "1438",
+"name": "United Brands Limited",
+"years": [
+2006,
+2007
+]
+},
+"PIL": {
+"id": "1446",
+"name": "PICIC Insurance Limited",
+"years": [
+2009
+]
+},
+"PACE": {
+"id": "1460",
+"name": "Pace (Pakistan) Limited",
+"years": [
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"JSBL": {
+"id": "1469",
+"name": "JS Bank Limited",
+"years": [
+2007,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"NMFL": {
+"id": "1473",
+"name": "Nirala MSR Foods Limited",
+"years": [
+2007
+]
+},
+"SCBPL": {
+"id": "1476",
+"name": "Standard Chartered Bank (Pak) Ltd",
+"years": [
+2006,
+2007,
+2009,
+2010,
+2011,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PASL": {
+"id": "1478",
+"name": "Pervez Ahmed Consultancy Services Ltd.",
+"years": [
+2007,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020
+]
+},
+"SPL": {
+"id": "1487",
+"name": "Sitara Peroxide Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"KML": {
+"id": "1489",
+"name": "Kohinoor Mills Limited",
+"years": [
+2007,
+2016,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PINL": {
+"id": "1496",
+"name": "Premier Insurance Limited",
+"years": [
+2002,
+2003,
+2004,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"UPFL": {
+"id": "1504",
+"name": "Unilever Pakistan Foods Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"JSIL": {
+"id": "1508",
+"name": "JS Investments Limited",
+"years": [
+2007,
+2009,
+2014,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HBL": {
+"id": "1510",
+"name": "Habib Bank Limited",
+"years": [
+2009,
+2010,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"DSL": {
+"id": "1511",
+"name": "Dost Steels Limited",
+"years": [
+2008,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"ICIBL": {
+"id": "1519",
+"name": "Invest Capital Investment Bank Limited",
+"years": [
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"BML": {
+"id": "1521",
+"name": "Bank Makramah Limited",
+"years": [
+2010,
+2015,
+2016,
+2017,
+2018,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"IMS": {
+"id": "1531",
+"name": "Intermarket Securities Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"THCCL": {
+"id": "1532",
+"name": "Thatta Cement Company Limited",
+"years": [
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"DEL": {
+"id": "1533",
+"name": "Dawood Equities Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"EPCL": {
+"id": "1543",
+"name": "Engro Polymer & Chemicals Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AKDSL": {
+"id": "1545",
+"name": "AKD Securities Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FCIBL": {
+"id": "1548",
+"name": "First Credit and Investment Bank Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"DOL": {
+"id": "1551",
+"name": "Descon Oxychem Limited",
+"years": [
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"MCBIM": {
+"id": "1555",
+"name": "MCB Investment Management Limited",
+"years": [
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MDTL": {
+"id": "1565",
+"name": "Media Times Limited",
+"years": [
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"IBLHL": {
+"id": "1590",
+"name": "IBL HealthCare Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"NPL": {
+"id": "1599",
+"name": "Nishat Power Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"NCPL": {
+"id": "1601",
+"name": "Nishat Chunian Power Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"GGL": {
+"id": "1604",
+"name": "Ghani Global Holdings Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FATIMA": {
+"id": "1608",
+"name": "Fatima Fertilizer Company Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SMCPL": {
+"id": "1611",
+"name": "Safe Mix Concrete Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AGL": {
+"id": "1618",
+"name": "Agritech Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AMTEX": {
+"id": "1619",
+"name": "Amtex Limited",
+"years": [
+2022,
+2023,
+2024
+]
+},
+"ISL": {
+"id": "1641",
+"name": "International Steels Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"PKGP": {
+"id": "1648",
+"name": "Pakgen Power Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"FCEPL": {
+"id": "1649",
+"name": "Frieslandcampina Engro Pakistan Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TPLI": {
+"id": "1652",
+"name": "TPL Insurance Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"NEXT": {
+"id": "1661",
+"name": "Next Capital Limited",
+"years": [
+2023
+]
+},
+"TPL": {
+"id": "1664",
+"name": "TPL Corp Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024
+]
+},
+"ASL": {
+"id": "1667",
+"name": "Aisha Steel Mills Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"LPL": {
+"id": "1682",
+"name": "Lalpir Power Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PIBTL": {
+"id": "1691",
+"name": "Pakistan International Bulk Terminal",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"EFERT": {
+"id": "1693",
+"name": "Engro Fertilizers Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AVN": {
+"id": "1699",
+"name": "Avanceon Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HASCOL": {
+"id": "1704",
+"name": "Hascol Petroleum Limited",
+"years": [
+2015,
+2017,
+2018,
+2019,
+2021,
+2022,
+2023,
+2024
+]
+},
+"EPQL": {
+"id": "1715",
+"name": "Engro Powergen Qadirpur Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SPWL": {
+"id": "1722",
+"name": "Saif Power Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2026
+]
+},
+"SYS": {
+"id": "1726",
+"name": "Systems Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SPEL": {
+"id": "1727",
+"name": "SPEL Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"GGGL": {
+"id": "1736",
+"name": "Ghani Global Glass Limited",
+"years": [
+2021,
+2022,
+2023,
+2024
+]
+},
+"DCR": {
+"id": "1738",
+"name": "Dolmen City REIT",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"ASTL": {
+"id": "1754",
+"name": "Amreli Steels Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HTL": {
+"id": "1767",
+"name": "Hi-Tech Lubricants Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TPLP": {
+"id": "1772",
+"name": "TPL Properties Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"LOADS": {
+"id": "1776",
+"name": "Loads Limited",
+"years": [
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"RPL": {
+"id": "1783",
+"name": "Roshan Packages Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"HALEON": {
+"id": "1784",
+"name": "Haleon Pakistan Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PSX": {
+"id": "1796",
+"name": "Pakistan Stock Exchange Limited",
+"years": [
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"ITTEFAQ": {
+"id": "1797",
+"name": "Ittefaq Iron Industries Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"MACTER": {
+"id": "1800",
+"name": "Macter International Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"MFL": {
+"id": "1820",
+"name": "Matco Foods Limited",
+"years": [
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AGP": {
+"id": "1821",
+"name": "AGP Limited",
+"years": [
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PREMA": {
+"id": "1831",
+"name": "At-Tahur Limited",
+"years": [
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ILP": {
+"id": "1839",
+"name": "Interloop Limited",
+"years": [
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"TOMCL": {
+"id": "1861",
+"name": "The Organic Meat Company Limited",
+"years": [
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"TPLT": {
+"id": "1864",
+"name": "TPL Trakker Limited",
+"years": [
+2022,
+2023,
+2024,
+2025
+]
+},
+"AGHA": {
+"id": "1870",
+"name": "Agha Steel Ind.Ltd",
+"years": [
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PTL": {
+"id": "1884",
+"name": "Panther Tyres Ltd.",
+"years": [
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SGF": {
+"id": "1889",
+"name": "Service GlobalFootwear Limited",
+"years": [
+2021,
+2022,
+2023,
+2024,
+2026
+]
+},
+"CPHL": {
+"id": "1895",
+"name": "Citi Pharma Limited",
+"years": [
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"PABC": {
+"id": "1896",
+"name": "Pakistan Aluminium Beverage Cans Limited",
+"years": [
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AIRLINK": {
+"id": "1902",
+"name": "Air Link Communication Limited",
+"years": [
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"OCTOPUS": {
+"id": "1903",
+"name": "Octopus Digital Limited",
+"years": [
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"ALIFE": {
+"id": "1916",
+"name": "Adamjee Life Assurance Company Limited",
+"years": [
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"SYM": {
+"id": "1935",
+"name": "Symmetry Group Limited",
+"years": [
+2023,
+2024,
+2025
+]
+},
+"TBL": {
+"id": "1939",
+"name": "Treet Battery Limited",
+"years": [
+2022,
+2023,
+2024,
+2025
+]
+},
+"STYLERS": {
+"id": "1940",
+"name": "Stylers International Limited",
+"years": [
+2025
+]
+},
+"PIAHCLA": {
+"id": "1950",
+"name": "PIA Holding Company Limited",
+"years": [
+2024,
+2025
+]
+},
+"GEMMEL": {
+"id": "1955",
+"name": "Mughal Energy Limited(GEM)",
+"years": [
+2024,
+2025
+]
+},
+"PAKQATAR": {
+"id": "1979",
+"name": "Pak Qatar Family Takaful Limited",
+"years": [
+2025
+]
+},
+"PQGTL": {
+"id": "1982",
+"name": "Pak Qatar General Takaful Limited",
+"years": [
+2025
+]
+},
+"AHCL": {
+"id": "134",
+"name": "Arif Habib Corporation Limited",
+"years": [
+2001,
+2002,
+2003,
+2004,
+2005,
+2006,
+2007,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"AHL": {
+"id": "1464",
+"name": "Arif Habib Limited",
+"years": [
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"FLYNG": {
+"id": "1481",
+"name": "Flying Cement Company Limited",
+"years": [
+2007,
+2008,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025
+]
+},
+"POWER": {
+"id": "1374",
+"name": "Power Cement Limited",
+"years": [
+2005,
+2006,
+2009,
+2015,
+2016,
+2017,
+2018,
+2019,
+2020,
+2021,
+2022,
+2023,
+2024,
+2025,
+2026
+]
+},
+"WAVESAPP": {
+"id": "443",
+"name": "Waves Home Appliances Limited",
+"years": [
+2004,
+2005,
+2006,
+2007
+]
+}
+}
+}

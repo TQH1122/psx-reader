@@ -1,0 +1,27 @@
+{
+"khi:BAFL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 13
+},
+"khi:BAFL:2023": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "no figure passed the checks"
+},
+"khi:BAFL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:BAFL:2019": {
+"at": "2026-11-01",
+"done": true,
+"n": 20
+},
+"khi:BAFL:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+}
+}
