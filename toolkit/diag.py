@@ -1,29 +1,32 @@
 #!/usr/bin/env python3
-"""Timing check for page picking on GitHub (1 Nov 2026): big reports timed out there but take seconds elsewhere."""
+"""Timing check for page picking on GitHub under load (1 Nov 2026): 12 page pickings at once, as in a real run."""
 import os, subprocess, sys, tempfile, time
+from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.argv = ["annual.py"]
 import annual as A
-for jid, url in [("khi:MCB:2025", "https://www.khistocks.com/assets/annual_reports/166/2025"),
-                 ("khi:ENGROH:2025", "https://www.khistocks.com/assets/annual_reports/734/2025")]:
+urls = ["166/2025", "734/2025", "1510/2025", "1369/2025", "738/2025", "644/2026"]
+jobs = [(f"{u}#{i}", f"https://www.khistocks.com/assets/annual_reports/{u}") for i in range(2) for u in urls]
+
+
+def one(j):
+    jid, url = j
     w = tempfile.mkdtemp()
-    t = time.time()
+    t0 = time.time()
     code, msg = A.curl(url + ".pdf", w + "/r.pdf", timeout=600)
-    print(jid, "download", code, msg, os.path.getsize(w + "/r.pdf") if os.path.exists(w + "/r.pdf") else 0, round(time.time() - t), "s", flush=True)
-    t = time.time()
-    p = subprocess.run(["pdfinfo", w + "/r.pdf"], capture_output=True, text=True)
-    print(" pdfinfo", p.returncode, [l for l in p.stdout.splitlines() if l.startswith(("Pages", "Producer"))], round(time.time() - t, 1), flush=True)
-    t = time.time()
-    p = subprocess.run(["pdftotext", "-layout", w + "/r.pdf", "-"], capture_output=True, text=True, errors="ignore")
-    pages = p.stdout.split("\f")
-    print(" pdftotext", p.returncode, len(p.stdout), "chars", len(pages), "pages", sum(1 for x in pages if len(x.strip()) > 200),
-          "text pages", round(time.time() - t, 1), "s", p.stderr[-300:], flush=True)
-    t = time.time()
+    t1 = time.time()
+    t = subprocess.run(["pdftotext", "-layout", w + "/r.pdf", "-"], capture_output=True, text=True, errors="ignore").stdout
+    t2 = time.time()
     try:
         p = subprocess.run([sys.executable, os.path.join(os.path.dirname(A.__file__), "lib", "prep.py"), w + "/r.pdf", w + "/b.txt"],
                            capture_output=True, text=True, timeout=900, cwd=w)
-        print(" prep", p.returncode, round(time.time() - t), "s", p.stdout[-400:], p.stderr[-600:], flush=True)
-    except subprocess.TimeoutExpired as e:
-        print(" prep TIMEOUT after 900 s; output so far:", (e.stdout or b"")[-400:], (e.stderr or b"")[-600:], flush=True)
-    subprocess.run(["pdftotext", "-v"], capture_output=False)
-    subprocess.run(["bash", "-c", "nproc; free -g | head -2; ps aux --sort=-%cpu | head -5"])
+        r = f"prep rc {p.returncode} {p.stdout[-160:]} {p.stderr[-300:]}"
+    except subprocess.TimeoutExpired:
+        r = "prep TIMEOUT"
+    t3 = time.time()
+    return f"{jid} dl {code} {msg} {round(t1 - t0)}s, text {round(t2 - t1)}s ({t.count(chr(12))} pages), prep {round(t3 - t2)}s: {r}"
+
+
+with ThreadPoolExecutor(12) as ex:
+    for line in ex.map(one, jobs):
+        print(line, flush=True)
