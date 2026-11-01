@@ -227,5 +227,15 @@
 "at": "2026-11-01",
 "tries": 1,
 "why": "page picking took too long (scanned report)"
+},
+"khi:BAFL:2021": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:PTC:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "company name does not match: unknown"
 }
 }
