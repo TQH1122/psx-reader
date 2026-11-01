@@ -631,6 +631,19 @@ def close(a, b, tol=0.02, absmin=1.0):
     return abs(a - b) <= max(absmin, tol * max(abs(a), abs(b)))
 
 
+def eps_fits(r, prof, rows):
+    """EPS matches profit for a share count from this year's or the other column's paid up capital, or between them
+    (a bonus issue restates last year's EPS on this year's shares; a rights issue gives a weighted count in between)"""
+    caps = sorted({x["paidup"] for x in rows.values() if x.get("paidup", 0) > 0} | {r["paidup"]})
+    faces = [r["face"]] if r.get("face") else [10, 5, 1, 2, 2.5, 100]
+    implied = prof / r["eps"]
+    for f in faces:
+        lo, hi = caps[0] / f, caps[-1] / f
+        if implied > 0 and lo * 0.9 <= implied <= hi * 1.1:
+            return True
+    return False
+
+
 def checks(rows, kind, ocr):
     """drop figures that fail an identity; with OCR pages keep only figures an identity confirms"""
     dropped = []
@@ -679,8 +692,7 @@ def checks(rows, kind, ocr):
         # Catches a model copying a part profit (ATRL 2015: refinery operations Rs 405m, not total profit Rs 1,814m)
         # and a wrong EPS; a share issue in the year can also trip it, and then the year is left out (a gap, not an error).
         if "eps" in r and prof is not None and "paidup" in r and r["paidup"] > 0 and abs(r["eps"]) > 0.05:
-            faces = [r["face"]] if r.get("face") else [10, 5, 1, 2, 2.5, 100]
-            if any(abs(prof / (r["paidup"] / f) - r["eps"]) <= max(0.06, abs(r["eps"]) * 0.10) for f in faces):
+            if eps_fits(r, prof, rows):
                 good |= {"eps", "paidup", "face", "ni", "pat"}
             else:
                 drop(("pat", "ni", "nci", "eps", "pbt", "tax", "paidup", "face"),
@@ -753,8 +765,9 @@ def read_one(job, readers, sc, work):
     fs = [facts(j, nums, cons, sumb, rows) for j in firsts]
     ok, bad = agree(fs)
     company = next((j.get("company") for j in firsts if j.get("company")), "")
-    if not name_ok2(company, sc[tk].get("n"), pages):
-        return {"skip": f"company name does not match: {company[:60]}"}
+    other = next((t for t, rr in sc.items() if t != tk and name_ok(company, rr.get("n")) and not name_ok(company, sc[tk].get("n"))), None)
+    if (src != "khi" and not name_ok2(company, sc[tk].get("n"), pages)) or (other and len(toks(company)) >= 2):
+        return {"skip": f"company name does not match: {company[:60]}" + (f" (names {other})" if other else "")}
     fye = next((j.get("fye") for j in firsts if re.fullmatch(r"(19|20)\d\d-\d\d", str(j.get("fye") or ""))), None)
     fy = int(fye[:4]) if fye else None
     if not fy or str(fy) not in pages:
@@ -798,7 +811,7 @@ def read_one(job, readers, sc, work):
            ("C" if cons else "S"): st, "restated": "",
            "notes": f"read by free AI models ({', '.join(sorted(reads))[:200]}); figures kept only when two agree and the "
                     f"number is printed" + ("; OCR pages, only figures confirmed by arithmetic" if ocr else ""),
-           "src": url, "by": "ai", "v": 2, "dropped": dropped[:40], "disputed": sorted(bad)[:40]}
+           "src": url, "by": "ai", "v": 3, "dropped": dropped[:40], "disputed": sorted(bad)[:40]}
     for sb, rows in sums.items():
         if rows:
             out["SUM_C" if sb == "consolidated" else ("SUM" if "SUM" not in out else "SUM_X")] = {"basis": sb, "years": rows}
@@ -815,8 +828,7 @@ def recheck(ext):
         for y, r in rows.items():
             prof = r.get("ni", r.get("pat"))
             if "eps" in r and prof is not None and r.get("paidup", 0) > 0 and abs(r["eps"]) > 0.05:
-                faces = [r["face"]] if r.get("face") else [10, 5, 1, 2, 2.5, 100]
-                if not any(abs(prof / (r["paidup"] / f) - r["eps"]) <= max(0.06, abs(r["eps"]) * 0.10) for f in faces):
+                if not eps_fits(r, prof, rows):
                     for f in ("pat", "ni", "nci", "eps", "pbt", "tax", "paidup", "face", "shares"):
                         r.pop(f, None)
                     v.setdefault("dropped", []).append(f"{y}: EPS does not match profit and paid up capital (re-checked)")
@@ -854,11 +866,17 @@ def main():
     longrows = load_rows("long")
     ext = jl(EXTRACTS, {}) or {}
     state0 = jl(os.path.join(AN, "state.json"), {}) or {}
-    stale = [k for k, v in ext.items() if v.get("by") == "ai" and v.get("v") != 2]
-    for k in stale:  # read before the row proof rules of 1 Nov 2026: read again
+    stale = [k for k, v in ext.items() if v.get("by") == "ai" and v.get("v") != 3]
+    # older reads are checked again under the latest rules; the saved model answers are reused (same pages and prompt),
+    # so this costs no model calls
+    stale_names = [k for k, v in state0.items() if v.get("rev") != 3 and
+                   re.search(r"company name does not match|no figure passed", v.get("why") or "")]
+    for k in stale_names:
+        state0.pop(k, None)
+    for k in stale:
         ext.pop(k)
         state0.pop(k, None)
-    if stale:
+    if stale or stale_names:
         jw(state0, os.path.join(AN, "state.json"), indent=0)
         print(f"re-reading {len(stale)} reports read before the row proof rules", flush=True)
     recheck(ext)
@@ -912,7 +930,8 @@ def main():
         finally:
             subprocess.run(["rm", "-rf", w])
 
-    with ThreadPoolExecutor(WORKERS) as pool:
+    pool = ThreadPoolExecutor(WORKERS)
+    if True:  # no "with": leaving it would wait for reports still hanging after the hard stop
         while heap or busy:
             while heap and len(busy) < WORKERS and not stop():
                 job = heapq.heappop(heap)
@@ -923,7 +942,10 @@ def main():
                 started += 1
             if not busy:
                 break
-            fin, _ = fwait(list(busy), return_when=FIRST_COMPLETED)
+            if time.time() - t0 > MINUTES * 60 + 600:
+                print(f"hard stop: {len(busy)} slow reports left for the next run", flush=True)
+                break
+            fin, _ = fwait(list(busy), timeout=60, return_when=FIRST_COMPLETED)
             for f in fin:
                 job = busy.pop(f)
                 res = f.result()
@@ -942,6 +964,7 @@ def main():
                     continue  # the models were busy: this company waits for the next run
                 else:
                     st["tries"] = 2 if res["skip"].startswith("scanned") else st.get("tries", 0) + 1
+                    st["rev"] = 3
                     st["why"] = res["skip"]
                     skipped += 1
                 nxt = next_job(tk, sc, longrows, cat, docs, state, by_tk.get(tk, []), imp)
@@ -958,7 +981,9 @@ def main():
     print(f"done: read {done} annual reports, {skipped} skipped, about {left} still to read; "
           f"models used: " + ", ".join(f"{r.model} {r.n}" for r in readers if r.n)
           + (f"; resting until tomorrow: {len(spent)} models" if spent else ""))
-    return 0
+    sys.stdout.flush()
+    pool.shutdown(wait=False, cancel_futures=True)
+    os._exit(0)  # leave any report still hanging after the hard stop; everything finished is already saved
 
 
 if __name__ == "__main__":
