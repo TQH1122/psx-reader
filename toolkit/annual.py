@@ -86,6 +86,8 @@ Return only JSON in exactly this shape:
  "sum":{"basis":"consolidated|company only|not stated","unit":"unit printed on the summary page",
    "years":{"YYYY":{...fields...}}},
  "surplus_in_equity":true|false|null}
+Every field value is a pair: ["the number exactly as printed", "the row label exactly as printed on that row"], for
+example "pat":["1,814,286","Profit for the year"]. The row label is required: a figure without its label is thrown away.
 "st" is the statements (profit and loss, balance sheet, cash flow) on the basis given at the top of the pages:
 both columns, this year and the prior year. "sum" is the multi year summary page (every year column), or null if no
 such page is given. Year keys are the year in which each financial year ENDS (year ended 30 June 2024 is "2024").
@@ -97,7 +99,7 @@ Fields (leave a field out when the page does not print it):
  eps basic earnings per share; dps cash dividend per share for the year; bonus bonus shares percent for the year;
  eq total equity attributable to owners (or total shareholders' equity); surplus revaluation surplus; mi non controlling
  interest (balance sheet); assets total assets; ca total current assets; cl total current liabilities;
- debt a list of the interest bearing borrowing lines on the balance sheet face, each as {"label":"as printed","value":n}
+ debt a list of the interest bearing borrowing lines on the balance sheet face, each as ["number","label as printed"]
  (long term financing, its current portion, short term borrowings, running finance, lease liabilities and similar);
  cash cash and bank balances; sti short term investments; cfo net cash from operating activities; capex purchase of
  property, plant and equipment (fixed capital expenditure); divpaid dividends paid; paidup issued, subscribed and paid up
@@ -107,6 +109,9 @@ Fields (leave a field out when the page does not print it):
  uw underwriting result, invinc investment income; px (summary only) market price per share at year end.
 Rules:
 - Copy every number exactly as printed, digits and decimals, in the printed unit. Never add, convert, round or guess.
+- Take each figure from the row that is exactly that figure for the WHOLE company: total profit for the year (after
+  every income line, not a part such as profit from one business, one segment or continuing operations), total assets,
+  total equity. When a statement shows a part result and then a final total, use the final total.
 - A number printed in brackets is negative: write it with a minus sign. Costs and tax as printed (positive if printed plain).
 - "surplus_in_equity": true if the revaluation surplus is part of total equity on the balance sheet, false if it sits outside.
 - Use only these pages. If they are not the annual accounts of a company, return {"company":"what it is","skip":"reason"}.
@@ -420,8 +425,117 @@ def yearkey(y):
     return m.group(0) if m else None
 
 
-def convert(block, nums, per_unit=True):
-    """{year: fields as printed} -> {year: {field: value in Rs m}}, only numbers printed on the pages"""
+# what each figure's row label must (allow) and must not (ban) say; the code checks this, not the model
+LBL = {
+    "rev": (r"\b(sales|revenue|revenues|turnover)\b", r"cost of|gross|other (income|revenue)|segment"),
+    "cos": (r"cost of (sales|revenue|goods)|cost of sale", r"^$"),
+    "gp": (r"gross (profit|loss)", r"^$"),
+    "op": (r"operating (profit|loss|result)|(profit|loss) from operations", r"before tax|segment|discontinued"),
+    "fin": (r"finance (cost|costs|charges|expense)|financial charges|financial cost|mark ?up|interest expense|borrowing cost", r"income|earned"),
+    "pbt": (r"before (taxation|tax|income tax|final tax|levy|levies)", r"operations|continuing|discontinued|segment|refinery"),
+    "tax": (r"tax", r"before|after|asset|liabilit|payable|refund|paid"),
+    "pat": (r"((profit|loss|income|earnings).*(after tax|after taxation|for the year|for the period))|net (profit|loss|income)",
+            r"before|operations|continuing|discontinued|refinery|segment|comprehensive|attributable|per share|retained|"
+            r"unappropriated|transferred|brought|carried"),
+    "ni": (r"owners|equity holders|shareholders|holding company|parent", r"non ?controlling|minority|comprehensive|per share"),
+    "nci": (r"non ?controlling|minority", r"^$"),
+    "eps": (r"per share", r"dividend|book value|break ?up|market"),
+    "dps": (r"dividend", r"paid|payable|received"),
+    "bonus": (r"bonus", r"^$"),
+    "eq": (r"equity|shareholders funds|net assets|capital and reserves",
+           r"liabilities and equity|equity and liabilities|non ?controlling|minority|surplus|changes in equity|accounted"),
+    "surplus": (r"surplus", r"^$"),
+    "mi": (r"non ?controlling|minority", r"^$"),
+    "assets": (r"total assets", r"non ?current|current assets"),
+    "ca": (r"current assets", r"non ?current"),
+    "cl": (r"current liabilities", r"non ?current"),
+    "cash": (r"cash and bank|cash and cash equivalents|cash in hand|bank balances|cash at bank", r"beginning|end of|start of|net (increase|decrease)"),
+    "sti": (r"short ?term investment", r"^$"),
+    "cfo": (r"operating activities", r"investing|financing"),
+    "capex": (r"property|fixed assets|capital expenditure|capital work|operating assets", r"disposal|sale|proceeds"),
+    "divpaid": (r"dividend", r"received|income"),
+    "paidup": (r"paid ?up|share capital|issued", r"authori[sz]ed|reserve"),
+    "face": (r"each|face|par value|nominal", r"^$"),
+    "dep": (r"deposits", r"interbank|placement|lending|security deposit"),
+    "adv": (r"advances", r"against|prepayment|deposits and"),
+    "inv": (r"investments", r"income|property|associat|subsidiar"),
+    "nii": (r"net (mark ?up|interest|spread)|(mark ?up|interest).*\bnet\b", r"^$"),
+    "nonint": (r"non ?(mark ?up|interest|funded)|other income", r"expense"),
+    "prov": (r"provision|credit loss|impairment|write ?off", r"tax"),
+    "gpw": (r"gross (premium|written|contribution)", r"^$"),
+    "npr": (r"net (premium|insurance revenue|contribution)|insurance revenue", r"expense"),
+    "uw": (r"underwriting|insurance service result", r"^$"),
+    "invinc": (r"investment income", r"^$"),
+    "px": (r"market|price|quoted", r"^$"),
+    "debt": (r"borrowing|financing|loan|finance|lease|running|redeemable|sukuk|term finance|musharak|murabah|debt|certificates",
+             r"deposit|payable|creditor|deferred|income|grant|receivable"),
+}
+TOTALS = {"pat", "assets", "eq", "cfo"}  # must be the bottom matching row of its statement page
+STOPW = {"the", "and", "for", "from", "with", "year", "rupees", "note", "total", "net", "of", "to", "in", "on"}
+
+
+def norm(t):
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", (t or "").lower().replace("-", " "))).strip()
+
+
+def label_ok(field, label):
+    a, b = LBL.get(field, (r".", r"^$"))
+    l = norm(label)
+    return bool(l) and re.search(a, l) is not None and re.search(b, l) is None
+
+
+def page_rows(pages):
+    """[(page number, kind, normalised text, numbers on the row)] for every line of the pages sent"""
+    rows, pg, kind = [], 0, ""
+    for ln in pages.splitlines():
+        m = re.match(r"===== (\S+) page (\d+) =====", ln)
+        if m:
+            kind, pg = m.group(1), int(m.group(2))
+            continue
+        rows.append((pg, kind, norm(ln), R.numbers(ln)))
+    return rows
+
+
+def row_proof(field, value, label, rows):
+    """the number sits on a row whose words (with the row above, for wrapped labels) carry most of the label's words;
+    for totals the row must be the last matching row of its statement page"""
+    if rows is None:
+        return True
+    lw = [w for w in norm(label).split() if w not in STOPW and len(w) > 2] or norm(label).split()
+    if not lw:
+        return False
+    v = abs(value)
+    for i, (pg, kind, text, nums) in enumerate(rows):
+        if not any(abs(n - v) <= max(1e-9, v * 1e-9) for n in nums):
+            continue
+        ctx = text + " " + (rows[i - 1][2] if i and rows[i - 1][0] == pg else "")
+        if sum(1 for w in lw if re.search(r"\b" + re.escape(w) + r"\b", ctx)) < max(1, round(0.6 * len(lw))):
+            continue
+        # the words actually printed on the row must pass the same ban list (a model may give a tidier label than the
+        # row really has, e.g. "Profit before taxation" for "Profit before taxation from refinery operations")
+        if field in LBL and LBL[field][1] != r"^$" and re.search(LBL[field][1], text):
+            continue
+        if field in TOTALS and kind != "SUM":
+            a, b = LBL[field]
+            later = [r for r in rows[i + 1:] if r[0] == pg and r[3] and re.search(a, r[2]) and not re.search(b, r[2])]
+            if later:
+                continue  # a matching row further down the page is the real total
+        return True
+    return False
+
+
+def pair(v):
+    """a model's ["number", "label"] (or {"v":..,"label":..}) -> (number, label); a bare number has no label"""
+    if isinstance(v, (list, tuple)) and len(v) >= 2 and not isinstance(v[0], (list, dict)):
+        return R.fnum(v[0]), str(v[1] or "")
+    if isinstance(v, dict):
+        return R.fnum(v.get("v", v.get("value"))), str(v.get("label") or "")
+    return R.fnum(v), ""
+
+
+def convert(block, nums, rows=None):
+    """{year: fields as printed} -> {year: {field: value in Rs m}}. A figure is kept only when its number is printed,
+    its row label fits the figure (label rules above) and the number sits on that labelled row (row proof)."""
     out = {}
     if not isinstance(block, dict):
         return out
@@ -433,12 +547,15 @@ def convert(block, nums, per_unit=True):
         r = {}
         for k, v in row.items():
             if k == "debt" and isinstance(v, list) and f:
-                vals = [R.fnum(x.get("value")) for x in v if isinstance(x, dict)]
-                if vals and all(x is not None and R.printed(x, nums) for x in vals):
-                    r["debt"] = round(sum(abs(x) for x in vals) * f, 3)
+                items = [pair(x) for x in v]
+                if items and all(x is not None and R.printed(x, nums) and label_ok("debt", l) and row_proof("debt", x, l, rows)
+                                 for x, l in items):
+                    r["debt"] = round(sum(abs(x) for x, _ in items) * f, 3)
                 continue
-            x = R.fnum(v)
-            if x is None or not R.printed(x, nums):
+            x, label = pair(v)
+            if x is None or not R.printed(x, nums) or k not in LBL:
+                continue
+            if not label_ok(k, label) or not row_proof(k, x, label, rows):
                 continue
             if k in MONEY and f:
                 r[k] = round((abs(x) if k in POS else x) * f, 3)
@@ -455,7 +572,7 @@ def same(a, b, k):
     return abs(a - b) <= max(1e-6, abs(a) * 1e-9)  # the same printed number: exact
 
 
-def facts(j, nums, cons, sumbasis):
+def facts(j, nums, cons, sumbasis, rows=None):
     """the code decides the basis: the statements sent are all on one basis; the summary's basis comes from its page
     heading when every summary page says the same, otherwise from the model (and must then agree like any figure)"""
     if not isinstance(j, dict) or j.get("skip"):
@@ -463,13 +580,13 @@ def facts(j, nums, cons, sumbasis):
     f = {}
     st = j.get("st") or {}
     b = "C" if cons else "S"
-    for y, r in convert(st, nums).items():
+    for y, r in convert(st, nums, rows).items():
         for k, v in r.items():
             f[f"{b}|{y}|{k}"] = v
     sm = j.get("sum") or {}
     sb = str(sm.get("basis") or "").lower()
     sb = sumbasis or ("consolidated" if sb.startswith("consol") else "standalone" if sb.startswith("company") else "unclear")
-    for y, r in convert(sm, nums).items():
+    for y, r in convert(sm, nums, rows).items():
         for k, v in r.items():
             f[f"SUM:{sb}|{y}|{k}"] = v
     return f
@@ -567,6 +684,7 @@ def read_one(job, readers, sc, work):
     if len(pages) < 800:
         return {"skip": "no statement pages found"}
     nums = R.numbers(pages)
+    rows = page_rows(pages)
     sb = set()
     for m in re.finditer(r"(?ms)^===== SUM page \d+ =====\n(.{0,700})", pages):
         h = m.group(1).lower()
@@ -588,7 +706,7 @@ def read_one(job, readers, sc, work):
             reads[r.name] = {"at": date.today().isoformat(), "j": j}
 
     for _ in range(3):
-        fs = [facts(v["j"], nums, cons, sumb) for v in reads.values()]
+        fs = [facts(v["j"], nums, cons, sumb, rows) for v in reads.values()]
         ok, bad = agree(fs) if len(fs) >= 2 else ({}, set())
         want = 2 - len(reads) if len(reads) < 2 else (1 if bad and len(reads) < 3 else 0)
         free = [r for r in readers if not r.out and r.name not in reads]
@@ -611,7 +729,7 @@ def read_one(job, readers, sc, work):
     firsts = [v["j"] for v in reads.values() if isinstance(v["j"], dict)]
     if sum(1 for j in firsts if j.get("skip")) >= 2:
         return {"skip": "not annual accounts: " + str(firsts[0].get("skip"))[:80]}
-    fs = [facts(j, nums, cons, sumb) for j in firsts]
+    fs = [facts(j, nums, cons, sumb, rows) for j in firsts]
     ok, bad = agree(fs)
     company = next((j.get("company") for j in firsts if j.get("company")), "")
     if not name_ok2(company, sc[tk].get("n"), pages):
@@ -659,7 +777,7 @@ def read_one(job, readers, sc, work):
            ("C" if cons else "S"): st, "restated": "",
            "notes": f"read by free AI models ({', '.join(sorted(reads))[:200]}); figures kept only when two agree and the "
                     f"number is printed" + ("; OCR pages, only figures confirmed by arithmetic" if ocr else ""),
-           "src": url, "by": "ai", "dropped": dropped[:40], "disputed": sorted(bad)[:40]}
+           "src": url, "by": "ai", "v": 2, "dropped": dropped[:40], "disputed": sorted(bad)[:40]}
     for sb, rows in sums.items():
         if rows:
             out["SUM_C" if sb == "consolidated" else ("SUM" if "SUM" not in out else "SUM_X")] = {"basis": sb, "years": rows}
@@ -714,6 +832,14 @@ def main():
     sc = screener()
     longrows = load_rows("long")
     ext = jl(EXTRACTS, {}) or {}
+    state0 = jl(os.path.join(AN, "state.json"), {}) or {}
+    stale = [k for k, v in ext.items() if v.get("by") == "ai" and v.get("v") != 2]
+    for k in stale:  # read before the row proof rules of 1 Nov 2026: read again
+        ext.pop(k)
+        state0.pop(k, None)
+    if stale:
+        jw(state0, os.path.join(AN, "state.json"), indent=0)
+        print(f"re-reading {len(stale)} reports read before the row proof rules", flush=True)
     recheck(ext)
     by_tk = {}
     for d in ext.values():
