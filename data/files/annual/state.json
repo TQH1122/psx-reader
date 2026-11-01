@@ -12541,6 +12541,39 @@
 "n": 24
 },
 "khi:SSGC:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 38
+},
+"khi:SSGC:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SSGC:2018": {
+"at": "2026-11-01",
+"done": true,
+"n": 12
+},
+"khi:SSGC:2017": {
+"at": "2026-11-01",
+"done": true,
+"n": 34
+},
+"khi:SSGC:2015": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:SSGC:2010": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SSGC:2009": {
 "at": "2026-11-01"
 }
 }
