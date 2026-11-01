@@ -264,6 +264,9 @@ def panel():
     if E("OPENROUTER_API_KEY"):
         rs += openai_readers("openrouter", "https://openrouter.ai/api/v1", E("OPENROUTER_API_KEY"),
                              openrouter_free(), 4)
+    if E("CEREBRAS_API_KEY"):  # free plan with a large daily token allowance; models found from its list
+        rs += openai_readers("cerebras", "https://api.cerebras.ai/v1", E("CEREBRAS_API_KEY"),
+                             ["gpt-oss-120b", "qwen-3-235b-a22b-instruct-2507", "zai-glm-4.6", "llama-3.3-70b"], 3)
     if E("CF_ACCOUNT_ID") and E("CF_AI_TOKEN"):
         rs += openai_readers("cloudflare", f"https://api.cloudflare.com/client/v4/accounts/{E('CF_ACCOUNT_ID')}/ai/v1",
                              E("CF_AI_TOKEN"), ["@cf/openai/gpt-oss-120b", "@cf/meta/llama-3.3-70b-instruct-fp8-fast"],
