@@ -6,8 +6,8 @@
 },
 "khi:BAFL:2023": {
 "at": "2026-11-01",
-"tries": 1,
-"why": "no figure passed the checks"
+"tries": 2,
+"why": "page picking took too long (scanned report)"
 },
 "khi:BAFL:2019": {
 "at": "2026-11-01",
@@ -20,7 +20,9 @@
 "n": 36
 },
 "khi:FFC:2023": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 42
 },
 "khi:LUCK:2016": {
 "at": "2026-11-01",
@@ -45,5 +47,185 @@
 },
 "khi:UBL:2021": {
 "at": "2026-11-01"
+},
+"khi:LUCK:2019": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:POL:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:FATIMA:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:ENGROH:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:HBL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:HUBC:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:UBL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:FFC:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:MCB:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:MARI:2026": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:BAFL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:EFERT:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:LUCK:2018": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:ENGROH:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:FATIMA:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:POL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:MARI:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:HUBC:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:FFC:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:UBL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:HBL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:MCB:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:EFERT:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:POL:2024": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:BAFL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"why": "page picking took too long (scanned report)"
+},
+"khi:LUCK:2017": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:ENGROH:2023": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:FATIMA:2023": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:MARI:2024": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:HUBC:2024": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:POL:2023": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:HBL:2023": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:UBL:2023": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:FFC:2021": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:MCB:2023": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
+},
+"khi:EFERT:2023": {
+"at": "2026-11-01",
+"tries": 1,
+"why": "page picking took too long (scanned report)"
 }
 }
