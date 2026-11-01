@@ -3,7 +3,7 @@
 name: Report reader
 on:
   schedule:
-    - cron: '23 * * * *'      # every hour; a run lasts up to 50 minutes, so reading is nearly continuous
+    - cron: '*/20 * * * *'    # backup timer only (GitHub had not fired it once on 1 Nov 2026); each run starts the next
   workflow_dispatch:
   push:
     paths: ['.github/run-now']
@@ -24,6 +24,7 @@ jobs:
           python-version: '3.12'
       - run: command -v pdftotext && command -v tesseract || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils tesseract-ocr; }
       - name: Read annual reports
+        timeout-minutes: 75          # a stuck step is stopped so the save and restart steps still run
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -50,11 +51,14 @@ jobs:
           git commit -q -m "Reader: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M')"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
           exit 1
-      - name: Keep going while reports are being read
-        # a run that read something starts the next straight away (GitHub's hourly schedule can lag);
-        # a run that read nothing (free allowances spent for the day) waits for the hourly schedule
-        if: success()
+      - name: Start the next run (24/7)
+        # always starts the next run unless someone cancelled this one or nothing is left to read; after a run that read
+        # nothing or broke, it waits 5 minutes first so a fault cannot loop fast
+        if: ${{ !cancelled() }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if tail -n 1 data/files/annual/log.txt | grep -qE "done: read [1-9]"; then gh workflow run reader.yml --ref main; fi
+          last="$(grep 'done: read' data/files/annual/log.txt | tail -n 1)"
+          if echo "$last" | grep -q "about 0 still to read"; then echo "all read"; exit 0; fi
+          if [ "${{ job.status }}" != success ] || ! echo "$last" | grep -qE "done: read [1-9]"; then sleep 300; fi
+          for i in 1 2 3; do gh workflow run reader.yml --ref main && exit 0; sleep 30; done
