@@ -8875,7 +8875,10 @@
 "n": 30
 },
 "khi:ALNRS:2023": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
 },
 "khi:SZTM:2004": {
 "at": "2026-11-01",
@@ -11940,7 +11943,10 @@
 "why": "no figure passed the checks"
 },
 "khi:ARUJ:2005": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
 },
 "khi:FAEL:2006": {
 "at": "2026-11-01",
@@ -12469,5 +12475,19 @@
 "tries": 2,
 "rev": 3,
 "why": "company name does not match: THE GENERAL TYRE AND RUBBER COMPANY OF PAKISTAN LIMITED (names GTYR)"
+},
+"khi:ARUJ:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:ALNRS:2006": {
+"at": "2026-11-01",
+"done": true,
+"n": 14
+},
+"khi:ALNRS:2005": {
+"at": "2026-11-01"
 }
 }
