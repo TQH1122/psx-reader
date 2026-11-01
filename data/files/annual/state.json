@@ -553,7 +553,9 @@
 "why": "no statement pages found"
 },
 "psx:DNCC:2019": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"done": true,
+"n": 26
 },
 "khi:SNGP:2006": {
 "at": "2026-11-01",
@@ -12615,5 +12617,79 @@
 "tries": 2,
 "rev": 3,
 "why": "no figure passed the checks"
+},
+"khi:PCAL:2022": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:SIEM:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:BPL:2025": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:PINL:2017": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:DNCC:2006": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:NICL:2021": {
+"at": "2026-11-01",
+"done": true,
+"n": 13
+},
+"khi:MARI:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
+},
+"khi:AHCL:2024": {
+"at": "2026-11-01",
+"done": true,
+"n": 5
+},
+"khi:MARI:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 32
+},
+"khi:SEARL:2023": {
+"at": "2026-11-01",
+"done": true,
+"n": 44
+},
+"khi:DNCC:2004": {
+"at": "2026-11-01",
+"done": true,
+"n": 30
+},
+"khi:POWER:2022": {
+"at": "2026-11-01",
+"done": true,
+"n": 31
+},
+"khi:SPEL:2025": {
+"at": "2026-11-01",
+"done": true,
+"n": 36
+},
+"khi:DNCC:2003": {
+"at": "2026-11-01",
+"done": true,
+"n": 28
 }
 }
