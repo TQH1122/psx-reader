@@ -7882,7 +7882,10 @@
 "why": "no figure passed the checks"
 },
 "khi:UNIC:2005": {
-"at": "2026-11-01"
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
 },
 "khi:TATM:2002": {
 "at": "2026-11-01",
@@ -12589,5 +12592,20 @@
 "tries": 2,
 "rev": 3,
 "why": "no figure passed the checks"
+},
+"khi:UNIC:2004": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:UNIC:2003": {
+"at": "2026-11-01",
+"tries": 2,
+"rev": 3,
+"why": "no figure passed the checks"
+},
+"khi:UNIC:2002": {
+"at": "2026-11-01"
 }
 }
