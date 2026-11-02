@@ -1,5 +1,5 @@
 {
-"at": "2026-11-02 10:50",
+"at": "2026-11-02 10:57",
 "minutes": 1.1,
 "panel": [
 "openrouter:openai/gpt-oss-120b",
@@ -31,28 +31,7 @@
 [
 "google/gemini-2.5-flash-lite",
 200,
-9.6,
-6362,
-""
-],
-[
-"google/gemini-2.5-flash-lite",
-200,
-10.4,
-6362,
-""
-],
-[
-"google/gemini-2.5-flash-lite",
-200,
-9.4,
-6362,
-""
-],
-[
-"google/gemini-2.5-flash-lite",
-200,
-9.9,
+10.0,
 6362,
 ""
 ],
@@ -66,7 +45,28 @@
 [
 "google/gemini-2.5-flash-lite",
 200,
-9.5,
+9.8,
+6362,
+""
+],
+[
+"google/gemini-2.5-flash-lite",
+200,
+10.2,
+6362,
+""
+],
+[
+"google/gemini-2.5-flash-lite",
+200,
+10.8,
+6362,
+""
+],
+[
+"google/gemini-2.5-flash-lite",
+200,
+10.1,
 6362,
 ""
 ]
