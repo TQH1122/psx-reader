@@ -42,6 +42,18 @@ jobs:
           if [ "$(head -n1 .github/run-now)" = diag ] && [ "${{ github.event_name }}" = push ]; then python3 toolkit/diag.py; exit 0; fi
           m=50; [ "$(head -n1 .github/run-now)" = short ] && [ "${{ github.event_name }}" = push ] && m=8
           python3 toolkit/annual.py --minutes $m --workers 18 | tee -a data/files/annual/log.txt
+      - name: Wake the tracker robots if anything is overdue
+        # GitHub drops or delays timed runs, so after every read the reader asks his site's /api/wake, which starts
+        # the private robots when a regular job (prices, imports, weekly, monthly) is overdue. Never stops the reader.
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
+        run: |
+          [ -n "$SITE_PASSWORD" ] || { echo "no SITE_PASSWORD"; exit 0; }
+          c=$(printf 'psx-tracker:%s' "$SITE_PASSWORD" | sha256sum | cut -d' ' -f1)
+          a=$(curl -s -m 60 -H "Cookie: psx_auth=$c" https://psx-tracker.pages.dev/api/wake || echo "{\"error\":\"no answer\"}")
+          echo "$a"; mkdir -p data/files/annual; echo "$(date -u +%FT%TZ) $a" > data/files/annual/wake.txt   # the health check reads it
       - name: Save
         if: always()
         run: |
@@ -52,16 +64,6 @@ jobs:
           git commit -q -m "Reader: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M')"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
           exit 1
-      - name: Wake the tracker robots if anything is overdue
-        # GitHub drops or delays timed runs, so after every read the reader asks his site's /api/wake, which starts
-        # the private robots when a regular job (prices, imports, weekly, monthly) is overdue. Never stops the reader.
-        if: ${{ !cancelled() }}
-        env:
-          SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
-        run: |
-          [ -n "$SITE_PASSWORD" ] || { echo "no SITE_PASSWORD"; exit 0; }
-          c=$(printf 'psx-tracker:%s' "$SITE_PASSWORD" | sha256sum | cut -d' ' -f1)
-          curl -s -m 60 -H "Cookie: psx_auth=$c" https://psx-tracker.pages.dev/api/wake || true; echo
       - name: Start the next run (24/7)
         # always starts the next run unless someone cancelled this one; after a run that read nothing or broke it waits
         # 5 minutes first so a fault cannot loop fast, and with everything read it checks every 30 minutes
