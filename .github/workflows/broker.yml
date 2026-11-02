@@ -6,7 +6,7 @@
 name: Broker reader
 on:
   schedule:
-    - cron: '23 * * * *'      # every hour
+    - cron: '23,53 * * * *'   # every half hour: with the 45 minute read, reading runs almost nonstop
   workflow_dispatch:
   push:
     paths: ['.github/run-broker']
