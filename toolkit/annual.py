@@ -745,10 +745,16 @@ def read_one(job, readers, sc, work):
             failed[r.name] = date.today().isoformat()
             spent[0] += 1
 
-    for _ in range(3):
-        fs = [facts(v["j"], nums, cons, sumb, rows) for v in reads.values()]
+    # a model that answers "skip" (cannot find the company or the pages) is not a read: keep asking other makers until
+    # two real reads exist (2 Nov 2026: 658 reports were given up with one real read and one skip), unless two skip
+    usable = lambda: [v for v in reads.values() if isinstance(v.get("j"), dict) and not v["j"].get("skip")]
+    for _ in range(5):
+        okr = usable()
+        if len(reads) - len(okr) >= 2 and len(okr) < 2:
+            break
+        fs = [facts(v["j"], nums, cons, sumb, rows) for v in okr]
         ok, bad = agree(fs) if len(fs) >= 2 else ({}, set())
-        want = 2 - len(reads) if len(reads) < 2 else (1 if bad and len(reads) < 3 else 0)
+        want = 2 - len(okr) if len(okr) < 2 else (1 if bad and len(okr) < 3 else 0)
         free = [r for r in readers if not r.out and r.name not in reads and r.name not in failed]
         if want <= 0 or not free:
             break
@@ -764,11 +770,12 @@ def read_one(job, readers, sc, work):
         [t.join() for t in ts]
     rec.update({"id": jid, "tk": tk, "y": y, "url": url, "cons": cons, "ocr": ocr, "chars": len(pages)})
     jw(rec, rawp)
-    if len(reads) < 2:
-        return {"wait": "fewer than two models answered", "spent": spent[0]}
-    firsts = [v["j"] for v in reads.values() if isinstance(v["j"], dict)]
-    if sum(1 for j in firsts if j.get("skip")) >= 2:
-        return {"skip": "not annual accounts: " + str(firsts[0].get("skip"))[:80]}
+    allj = [v["j"] for v in reads.values() if isinstance(v.get("j"), dict)]
+    if sum(1 for j in allj if j.get("skip")) >= 2 and len(usable()) < 2:
+        return {"skip": "not annual accounts: " + str(next(j for j in allj if j.get("skip")).get("skip"))[:80]}
+    if len(usable()) < 2:
+        return {"wait": "fewer than two models gave a real read", "spent": spent[0]}
+    firsts = [v["j"] for v in usable()]
     fs = [facts(j, nums, cons, sumb, rows) for j in firsts]
     ok, bad = agree(fs)
     company = next((j.get("company") for j in firsts if j.get("company")), "")
@@ -948,7 +955,7 @@ def main():
     stale = [k for k, v in ext.items() if v.get("by") == "ai" and v.get("v") != 3]
     # older reads are checked again under the latest rules; the saved model answers are reused (same pages and prompt),
     # so this costs no model calls
-    stale_names = [k for k, v in state0.items() if v.get("rev") != 3 and
+    stale_names = [k for k, v in state0.items() if v.get("rev") != 4 and
                    re.search(r"company name does not match|no figure passed", v.get("why") or "")]
     for k in stale_names:
         state0.pop(k, None)
@@ -1053,7 +1060,7 @@ def main():
                         res = {"skip": "no two models gave a usable read"}
                         st["waits"] = 0
                     st["tries"] = 2 if res["skip"].startswith("scanned") else st.get("tries", 0) + 1
-                    st["rev"] = 3
+                    st["rev"] = 4
                     st["why"] = res["skip"]
                     skipped += 1
                 nxt = next_job(tk, sc, longrows, cat, docs, state, by_tk.get(tk, []), imp)
