@@ -338,11 +338,13 @@ def audit_years(tk, y, cands):
 
 def audit_due(tk, y, cands, st):
     """a report already read once that the audit wants read again (2 Nov 2026 fix: before this, a finished report was
-    never read twice, so 59 flagged years waited forever). Once per flagged year, so it can never loop: if the fresh
+    never read twice, so 59 flagged years waited forever). The re-read sets the earlier model answers aside and asks
+    two models that have not read it (read_one); the first pass that day reused saved answers, so its old "audited"
+    mark does not count. Once per flagged year, so it can never loop: if the fresh
     read still disagrees, the year stays an empty slot."""
     if not st.get("done") or st.get("tries", 0) >= 2:
         return False
-    return bool(audit_years(tk, y, cands) - set(st.get("audited") or []))
+    return bool(audit_years(tk, y, cands) - set(st.get("reread") or []))
 
 
 def audit_counts(sc, cat, docs, state):
@@ -352,7 +354,7 @@ def audit_counts(sc, cat, docs, state):
         cands = candidates(tk, cat, docs) if tk in sc else {}
         ys = [y for y in (x, x + 1) if y in cands and (y == x or x not in cands)]
         sts = [(y, state.get(f"{cands[y][0]}:{tk}:{y}") or {}) for y in ys]
-        if any(x in (st.get("audited") or []) for _, st in sts):
+        if any(x in (st.get("reread") or []) for _, st in sts):
             n["re-read"] += 1
         elif any(audit_due(tk, y, cands, st) for y, st in sts):
             n["to re-read"] += 1
@@ -794,6 +796,12 @@ def read_one(job, readers, sc, work):
     if rec.get("h") != h:  # different pages or a newer prompt: earlier reads no longer count
         rec = {"h": h}
     reads = rec.setdefault("reads", {})
+    audit = len(job) > 8
+    before = {}
+    if audit:  # an audit re-read: the earlier answers are set aside and two models that have not read it answer fresh
+        before = rec.get("reads_before") or dict(reads)
+        rec["reads_before"] = before
+        reads = rec["reads"] = {k: v for k, v in reads.items() if k not in before}
     # models that gave no usable answer for these pages are not asked again (2 Nov 2026: one model kept failing on
     # the same report every run, spending paid credit while the others were never tried)
     failed = rec.setdefault("failed", {})
@@ -819,10 +827,10 @@ def read_one(job, readers, sc, work):
         fs = [facts(v["j"], nums, cons, sumb, rows) for v in okr]
         ok, bad = agree(fs) if len(fs) >= 2 else ({}, set())
         want = 2 - len(okr) if len(okr) < 2 else (1 if bad and len(okr) < 3 else 0)
-        free = [r for r in readers if not r.out and r.name not in reads and r.name not in failed]
+        free = [r for r in readers if not r.out and r.name not in reads and r.name not in failed and r.name not in before]
         if want <= 0 or not free:
             break
-        used = {fam.get(n) for n in reads}
+        used = {fam.get(n) for n in reads} | {fam.get(n) for n in before}
         batch = []
         for _ in range(want):  # a different maker first
             fresh = [r for r in free if r not in batch and r.family() not in used | {b.family() for b in batch}]
@@ -890,6 +898,16 @@ def read_one(job, readers, sc, work):
            "notes": f"read by free AI models ({', '.join(sorted(reads))[:200]}); figures kept only when two agree and the "
                     f"number is printed" + ("; OCR pages, only figures confirmed by arithmetic" if ocr else ""),
            "src": url, "by": "ai", "v": 3, "dropped": dropped[:40], "disputed": sorted(bad)[:40]}
+    if audit:
+        # figures the fresh pair and the earlier pair agree on: four models, two separate reads. The tracker's audit
+        # then keeps the report figure even where an outside source differs (definitions and basis often differ)
+        old = [facts(v["j"], nums, cons, sumb, page_rows(pages)) for v in before.values()
+               if isinstance(v.get("j"), dict) and not v["j"].get("skip")]
+        ok_old, _ = agree(old) if len(old) >= 2 else ({}, set())
+        part = "C" if cons else "S"
+        out["confirmed"] = sorted(f"{k.split('|')[1]}|{k.split('|')[2]}" for k, v in ok.items() if k.startswith(part + "|")
+                                  and k in ok_old and same(v, ok_old[k], k.rsplit("|", 1)[1]))
+        out["notes"] += f"; audit re-read by {', '.join(sorted(reads))[:120]}, earlier read by {', '.join(sorted(before))[:120]}"
     for sb, rows in sums.items():
         if rows:
             out["SUM_C" if sb == "consolidated" else ("SUM" if "SUM" not in out else "SUM_X")] = {"basis": sb, "years": rows}
@@ -1105,7 +1123,7 @@ def main():
                 st = state.setdefault(jid, {})
                 st["at"] = date.today().isoformat()
                 if len(job) > 8 and "wait" not in res:  # an audit re-read counts once, whatever came back
-                    st["audited"] = sorted(set(st.get("audited") or []) | audit_years(tk, job[5], candidates(tk, cat, docs)))
+                    st["reread"] = sorted(set(st.get("reread") or []) | audit_years(tk, job[5], candidates(tk, cat, docs)))
                     audited_now[0] += 1
                 if "rec" in res:
                     ext[jid] = res["rec"]
