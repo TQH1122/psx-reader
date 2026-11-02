@@ -54,6 +54,19 @@ jobs:
           c=$(printf 'psx-tracker:%s' "$SITE_PASSWORD" | sha256sum | cut -d' ' -f1)
           a=$(curl -s -m 60 -H "Cookie: psx_auth=$c" https://psx-tracker.pages.dev/api/wake || echo "{\"error\":\"no answer\"}")
           echo "$a"; mkdir -p data/files/annual; echo "$(date -u +%FT%TZ) $a" > data/files/annual/wake.txt   # the health check reads it
+      - name: Start the tracker's free lane robots
+        # the tracker's daily, import, weekly and monthly jobs run in this public repository's free minutes
+        # (lane-daily.yml, lane-jobs.yml, 2 Nov 2026); each lane runs only what is due, so starting them every
+        # half hour costs nothing and never waits on GitHub's unreliable timers
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for w in lane-daily.yml lane-jobs.yml; do
+            busy=$(gh run list -w "$w" -L 5 --json status --jq '[.[]|select(.status!="completed")]|length' 2>/dev/null || echo 0)
+            [ "${busy:-0}" = 0 ] && gh workflow run "$w" --ref main && echo "started $w" || echo "$w busy or not started"
+          done
       - name: Save
         if: always()
         run: |

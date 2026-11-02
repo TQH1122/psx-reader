@@ -18,3 +18,9 @@ Output: `data/files/report_extracts.json` (checked figures, Rs million, per shar
 `.github/run-now` starts a run.
 
 `data/db/market/` holds only the list of listed companies and which years the tracker already has (no figures).
+
+## Free lane for the tracker's regular jobs (2 Nov 2026)
+`lane-daily.yml` and `lane-jobs.yml` run the PSX Tracker's daily, report import, weekly and monthly jobs here,
+where robot minutes are free. They open the private tracker repository with a hidden key, run its own scripts
+there and save straight back into it. No data, holdings or keys are kept in this repository, and the run logs
+show only one line per job.

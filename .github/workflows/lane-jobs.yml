@@ -1,0 +1,47 @@
+# The PSX Tracker's regular robot jobs in the free lane (2 Nov 2026). This public repository gets unlimited
+# robot minutes; the private psx-tracker repository only 2,000 a month. So the job checks out the private
+# repository with the hidden TRACKER_TOKEN key, runs its scripts there and saves straight back into it.
+# Nothing is kept here, and this log shows only one line per job (the full log stays in the private repository).
+# The private robots run a job themselves only if this lane leaves it undone for some hours.
+name: Tracker jobs (free lane)
+on:
+  schedule:
+    - cron: '17 */3 * * *'    # backup timer; the reader also starts this lane every half hour
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'leave empty for whatever is due, or name one job'
+        default: ''
+permissions:
+  contents: read
+concurrency:
+  group: lane-jobs
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tools
+        run: |
+          pip install -q beautifulsoup4 openpyxl > /dev/null 2>&1
+          { command -v pdftotext && command -v tesseract; } > /dev/null 2>&1 || { sudo apt-get update -q; sudo apt-get install -y -q poppler-utils tesseract-ocr; } > /dev/null 2>&1
+      - name: Run the due jobs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          python3 toolkit/lane.py jobs ${{ github.event.inputs.job }}
