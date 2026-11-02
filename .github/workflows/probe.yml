@@ -1,0 +1,15 @@
+# One off source probes started by Claude (2 Nov 2026); own queue, so it never waits behind the reader.
+name: Source probe
+on:
+  push:
+    paths: ['.github/run-probe']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 toolkit/probe.py
