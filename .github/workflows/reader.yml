@@ -16,7 +16,7 @@ concurrency:
 jobs:
   read:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120   # room for a 75 minute read plus the longest rest before the next run
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -63,16 +63,20 @@ jobs:
           c=$(printf 'psx-tracker:%s' "$SITE_PASSWORD" | sha256sum | cut -d' ' -f1)
           curl -s -m 60 -H "Cookie: psx_auth=$c" https://psx-tracker.pages.dev/api/wake || true; echo
       - name: Start the next run (24/7)
-        # always starts the next run unless someone cancelled this one or nothing is left to read; after a run that read
-        # nothing or broke, it waits 5 minutes first so a fault cannot loop fast
+        # always starts the next run unless someone cancelled this one; after a run that read nothing or broke it waits
+        # 5 minutes first so a fault cannot loop fast, and with everything read it checks every 30 minutes
         if: ${{ !cancelled() }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           last="$(grep 'done: read' data/files/annual/log.txt | tail -n 1)"
-          if echo "$last" | grep -q "about 0 still to read"; then echo "all read"; exit 0; fi
-          if [ "${{ job.status }}" != success ] || ! echo "$last" | grep -qE "done: read [1-9]"; then sleep 300; fi
-          # idle guard: three runs in a row that read nothing means only unreadable reports are left; wait 20 minutes
-          # more so the reader rests instead of spinning (the spending guard in annual.py protects the paid credit)
-          if [ "$(grep 'done: read' data/files/annual/log.txt | tail -n 3 | grep -c 'done: read 0 ')" = 3 ]; then sleep 1200; fi
+          if echo "$last" | grep -q "about 0 still to read"; then
+            # all read: never stop for good. New reports are filed every season, and each run also wakes the
+            # tracker robots, so the chain keeps going, checking every 30 minutes (free in this public repository)
+            sleep 1800
+          else
+            if [ "${{ job.status }}" != success ] || ! echo "$last" | grep -qE "done: read [1-9]"; then sleep 300; fi
+            # idle guard: three empty runs in a row means only unreadable reports are left, so rest 20 minutes more
+            if [ "$(grep 'done: read' data/files/annual/log.txt | tail -n 3 | grep -c 'done: read 0 ')" = 3 ]; then sleep 1200; fi
+          fi
           for i in 1 2 3; do gh workflow run reader.yml --ref main && exit 0; sleep 30; done
