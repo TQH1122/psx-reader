@@ -1,15 +1,3 @@
-pages ar_kr262wn7 1s
-pages ar_9pc9cgc_ 0s
-pages ar_8d2467ww 0s
-pages ar_85ej504l 0s
-pages ar_flckc46a 0s
-pages ar_jvi7t0_d 0s
-pages ar_94w4i1fc 0s
-pages ar_xo895wsr 0s
-pages ar_94a2ujd3 0s
-pages ar_8pzxekub 0s
-pages ar_11j3r5y4 0s
-pages ar_mz5ey13k 0s
 pages ar_205n8ksi 0s
 pages ar_djc_gz97 0s
 pages ar_2i6__ioc 0s
@@ -298,3 +286,15 @@ pages ar_cddkyly_ 6s
 pages ar_xpalrdrm 12s
 done: read 4 annual reports (4 audit re-reads), 0 skipped, about 11 still to read; models used: qwen/qwen3-235b-a22b-2507 1, gemini-3.5-flash 1, gemini-3.5-flash-lite 1, gemini-3.1-flash-lite 1, nvidia/nemotron-3-ultra-550b-a55b:free 2; resting until tomorrow: 3 models
 guard: this run $0.002 for 4 reports; last day $0.96 for 512; credit $2.27
+audit: 97 company years flagged: 11 to re-read, 50 re-read, 0 waiting for a first read, 36 no usable report
+openrouter: paid models on (credit left $2.27)
+pages ar_2v8_k_8p 0s
+pages ar_gnqbhm8s 1s
+pages ar_ng2ten2k 4s
+pages ar_6qamo3rz 2s
+pages ar_tx4lc2lf 6s
+pages ar_1figfaat 4s
+pages ar_2am8yxzj 9s
+pages ar__j1_hqew 0s
+done: read 2 annual reports (2 audit re-reads), 0 skipped, about 10 still to read; models used: openai/gpt-oss-120b 1, google/gemini-2.5-flash-lite 1, openai/gpt-oss-120b 1; resting until tomorrow: 7 models
+guard: this run $0.000 for 2 reports; last day $0.96 for 514; credit $2.27
