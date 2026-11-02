@@ -1,9 +1,3 @@
-pages ar_4w5jmhvu 0s
-pages ar_gr7xyjj9 0s
-pages ar_b2d2sppi 0s
-pages ar_oowhh462 0s
-pages ar_otob2sbq 0s
-pages ar_v207f8ku 0s
 pages ar_midm470w 0s
 pages ar_276ccox2 0s
 pages ar_dg5q0tmq 0s
@@ -298,3 +292,9 @@ pages ar_tvvtsiyo 6s
 pages ar__pxsznt9 13s
 done: read 1 annual reports (1 audit re-reads), 0 skipped, about 6 still to read; models used: gemini-3-flash-preview 1; resting until tomorrow: 4 models
 guard: this run $0.000 for 1 reports; last day $0.96 for 518; credit $2.27
+audit: 97 company years flagged: 6 to re-read, 55 re-read, 0 waiting for a first read, 36 no usable report
+openrouter: paid models on (credit left $2.27)
+pages ar_63tt7yfi 0s
+pages ar_wqrytlv2 13s
+done: read 0 annual reports (0 audit re-reads), 0 skipped, about 6 still to read; models used: 
+guard: this run $0.000 for 0 reports; last day $0.96 for 518; credit $2.27
