@@ -1,0 +1,44 @@
+# Broker report reading for the PSX Tracker (2 Nov 2026), moved here for the free unlimited robot minutes.
+# It opens the private psx-tracker repository with the hidden TRACKER_TOKEN key, reads the waiting broker
+# reports there and saves the checked figures straight back into the private repository. Nothing is kept
+# in this public repository, and the log shows only one summary line per run.
+# If these runs stop, the private robots take the reading back by themselves after 3 hours.
+name: Broker reader
+on:
+  schedule:
+    - cron: '23 * * * *'      # every hour
+  workflow_dispatch:
+  push:
+    paths: ['.github/run-broker']
+permissions:
+  contents: read
+concurrency:
+  group: broker
+  cancel-in-progress: false
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read waiting broker reports
+        timeout-minutes: 55
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
+        run: python3 toolkit/public_read.py 45
+      - name: Save to the private repository
+        if: always()
+        run: |
+          python3 toolkit/savegit.py "Robot: broker reading $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/readings data/db/market/readings.json data/files/robots.json
