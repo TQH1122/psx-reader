@@ -259,7 +259,7 @@ def psx_docs():
     # his other Drive annual reports (2 Nov 2026), once the PSX Library folder is shared "anyone with the link":
     # checked with one test download per run, so nothing is tried (and no attempt wasted) while it is still private
     withid = [r for r in lib if r.get("id")]
-    if withid and drive_open(withid[0]["id"]):
+    if any(drive_open(r["id"]) for r in withid[:6]):  # any one opening shows the folder is shared
         for r in withid:
             out.setdefault(r["tk"], {}).setdefault(int(r["y"]), (r["id"], DRIVE.format(r["id"])))
     return out
