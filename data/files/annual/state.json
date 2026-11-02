@@ -11654,7 +11654,7 @@
 },
 "khi:STJT:2006": {
 "at": "2026-11-02",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "not annual accounts: company name not found in provided pages"
 },
@@ -11665,7 +11665,7 @@
 },
 "khi:DADX:2023": {
 "at": "2026-11-02",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "not annual accounts: company name not found in provided pages"
 },
@@ -11673,5 +11673,533 @@
 "at": "2026-11-02",
 "done": true,
 "n": 26
+},
+"khi:BNWM:2001": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:ZUMA:2002": {
+"at": "2026-11-02",
+"done": true,
+"n": 20
+},
+"khi:LEUL:2006": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:BUXL:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Company name not printed on provided pages"
+},
+"khi:ARPAK:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 7
+},
+"khi:PAKD:2003": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:IDRT:2003": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:AKDHL:2006": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:STML:2023": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:IDRT:2001": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"drive:FHAM:2019": {
+"at": "2026-11-02",
+"done": true,
+"n": 4
+},
+"drive:SNBL:2014": {
+"at": "2026-11-02",
+"done": true,
+"n": 12
+},
+"khi:UNIC:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 7
+},
+"khi:UNIC:2001": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:NCML:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 24
+},
+"khi:FFLM:2006": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Modaraba Al-Mali (names ASC)"
+},
+"khi:ICCI:2004": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: required company name and summary pages not present in provided text"
+},
+"khi:MQTM:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 22
+},
+"khi:ARPAK:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 16
+},
+"khi:DADX:2022": {
+"at": "2026-11-02",
+"done": true,
+"n": 28
+},
+"khi:ICCI:2003": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: cannot determine company name from provided pages"
+},
+"khi:SNBL:2010": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:BUXL:2001": {
+"at": "2026-11-02",
+"done": true,
+"n": 28
+},
+"khi:KOHC:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 32
+},
+"khi:CJPL:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 19
+},
+"khi:BIFO:2026": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan Stock Exchange (names DOMF)"
+},
+"khi:FIBLM:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 6
+},
+"khi:KOHP:2003": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:STJT:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 30
+},
+"khi:NMFL:2007": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Shakarganj Food Limited (Al-Jadeed Tex) (names ASC)"
+},
+"khi:SNBL:2006": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Provided pages are risk management notes (page 5), not the primary financial sta"
+},
+"khi:GSPM:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Gulistan Textile Mills Limited (names AATM)"
+},
+"khi:FAEL:2007": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: required financial statement figures not found in provided pages"
+},
+"khi:FAEL:2006": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Fazal Textile Mills Limited (names AATM)"
+},
+"khi:FAEL:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: reason"
+},
+"khi:BIFO:2004": {
+"at": "2026-11-02",
+"done": true,
+"n": 16
+},
+"khi:QUET:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 18
+},
+"khi:BIFO:2002": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:GIL:2006": {
+"at": "2026-11-02",
+"done": true,
+"n": 16
+},
+"khi:PASM:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:BIFO:2001": {
+"at": "2026-11-02",
+"done": true,
+"n": 12
+},
+"khi:PIL:2009": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: required financial statement pages (profit and loss, balance sheet, cash flow) w"
+},
+"khi:FANM:2006": {
+"at": "2026-11-02",
+"done": true,
+"n": 20
+},
+"khi:ELCM:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 22
+},
+"khi:GUTM:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 32
+},
+"khi:SARC:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:TRSM:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 7
+},
+"khi:GLOT:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:HMIM:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:GLOT:2003": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:SLYT:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:BELA:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 24
+},
+"khi:PAKL:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 22
+},
+"khi:DMTM:2007": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: provided pages are notes to accounts, not the primary financial statements (bala"
+},
+"khi:MQTM:2002": {
+"at": "2026-11-02",
+"done": true,
+"n": 18
+},
+"khi:MFTM:2001": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:TSMF:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 8
+},
+"khi:BIIC:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:DBSL:2003": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:BFMOD:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 2
+},
+"khi:PRIB:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 4
+},
+"khi:NINA:2004": {
+"at": "2026-11-02",
+"done": true,
+"n": 19
+},
+"khi:PASM:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 29
+},
+"khi:BFMOD:2002": {
+"at": "2026-11-02",
+"done": true,
+"n": 5
+},
+"khi:PRIC:2004": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: cannot determine company name from provided pages"
+},
+"khi:PRIC:2003": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:FCONM:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Company name not printed on provided pages"
+},
+"khi:AWTX:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 30
+},
+"khi:ARUJ:2006": {
+"at": "2026-11-02",
+"done": true,
+"n": 24
+},
+"khi:SARC:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 26
+},
+"khi:PPVC:2024": {
+"at": "2026-11-02",
+"done": true,
+"n": 0
+},
+"khi:SLCL:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: First Dawood Investment Bank Limited (names ABL)"
+},
+"khi:PASM:2001": {
+"at": "2026-11-02",
+"done": true,
+"n": 20
+},
+"khi:DSFL:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 34
+},
+"khi:FCONM:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 4
+},
+"khi:KSTM:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 24
+},
+"khi:KOHC:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 20
+},
+"khi:KOHC:2001": {
+"at": "2026-11-02",
+"done": true,
+"n": 18
+},
+"khi:AASM:2001": {
+"at": "2026-11-02",
+"done": true,
+"n": 32
+},
+"khi:HMIM:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 20
+},
+"khi:HAJT:2006": {
+"at": "2026-11-02",
+"done": true,
+"n": 30
+},
+"khi:HAEL:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 4
+},
+"khi:HAJT:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:HAJT:2003": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:DADX:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 28
+},
+"drive:FHAM:2018": {
+"at": "2026-11-02"
+},
+"khi:SFAT:2006": {
+"at": "2026-11-02",
+"done": true,
+"n": 22
+},
+"khi:SARC:2001": {
+"at": "2026-11-02",
+"done": true,
+"n": 2
+},
+"khi:DKTM:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 29
+},
+"khi:PPVC:2007": {
+"at": "2026-11-02",
+"done": true,
+"n": 22
+},
+"khi:PPVC:2005": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:SFAT:2004": {
+"at": "2026-11-02",
+"done": true,
+"n": 28
+},
+"khi:ARUJ:2005": {
+"at": "2026-11-02",
+"done": true,
+"n": 22
+},
+"khi:DMTM:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 24
+},
+"khi:SLCL:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 16
+},
+"khi:DADX:2002": {
+"at": "2026-11-02",
+"done": true,
+"n": 30
+},
+"khi:SFAT:2002": {
+"at": "2026-11-02",
+"done": true,
+"n": 28
+},
+"khi:ARUJ:2003": {
+"at": "2026-11-02",
+"done": true,
+"n": 25
 }
 }
