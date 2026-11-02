@@ -1,26 +1,3 @@
-pages ar_1qux6fod 0s
-pages ar_fk6yrxfa 0s
-pages ar_4wddu9s0 0s
-pages ar_qcvged7s 3s
-pages ar_ijduqv_j 3s
-pages ar_b1bjpnoy 0s
-pages ar_fwlgivqm 0s
-pages ar_prjrtx5t 0s
-pages ar_42doop2i 0s
-pages ar_qikl948h 4s
-pages ar_w514njgk 3s
-pages ar_2u47lvjd 0s
-pages ar_g96o8ml_ 0s
-pages ar_r4s9zoa7 0s
-pages ar_j6iwe9y0 3s
-pages ar_j0gktkru 0s
-pages ar_cnwplprm 0s
-pages ar_r02z0zom 0s
-pages ar_s8f2stv1 0s
-pages ar_j7q3wlvr 0s
-pages ar_4yxj8eb_ 0s
-pages ar_6w17og34 0s
-pages ar_nfcc6xow 0s
 pages ar_rgp37xvj 0s
 pages ar_02fxjyb5 0s
 pages ar_jl0o6i7j 0s
@@ -298,3 +275,26 @@ pages ar_1awwl68x 1s
 pages ar_lsglrzrx 3s
 done: read 7 annual reports (8 audit re-reads), 1 skipped, about 24 still to read; models used: openai/gpt-oss-120b 3, gemini-3.5-flash 1, gemini-3.1-flash-lite 4, gemini-3.1-flash-lite-preview 2, openai/gpt-oss-120b 4, nvidia/nemotron-3-ultra-550b-a55b:free 3, nvidia/nemotron-3.5-super-vl:free 1, @cf/openai/gpt-oss-120b 4, @cf/meta/llama-3.3-70b-instruct-fp8-fast 4; resting until tomorrow: 14 models
 guard: this run $0.002 for 7 reports; last day $0.94 for 500; credit $2.29
+audit: 97 company years flagged: 23 to re-read, 38 re-read, 0 waiting for a first read, 36 no usable report
+openrouter: paid models on (credit left $2.29)
+pages ar_a9t_p85f 0s
+pages ar_7fobgoi9 0s
+pages ar_ubbcvw7j 0s
+pages ar_2ghie99q 6s
+pages ar_z50fm_ao 1s
+pages ar_odish13d 7s
+pages ar_gs3ow5oq 4s
+pages ar_r0mhjbcr 3s
+pages ar_i2eh3023 6s
+pages ar_r14v2jjn 10s
+pages ar_84ru8oag 6s
+pages ar_4uk3zydl 5s
+pages ar_wma0y72s 6s
+pages ar_jcx_l00o 13s
+pages ar_re83occ0 1s
+pages ar_v438thbm 2s
+pages ar_jdq2twbn 3s
+pages ar_fwvsnkm4 5s
+pages ar_cxjyi5c8 8s
+done: read 8 annual reports (8 audit re-reads), 1 skipped, about 15 still to read; models used: openai/gpt-oss-120b 3, google/gemini-2.5-flash-lite 5, qwen/qwen3-235b-a22b-2507 2, deepseek/deepseek-chat-v3.1 2, gemini-3-flash-preview 2, gemini-3.5-flash-lite 1, gemini-3.1-flash-lite 3, gemini-3.1-flash-lite-preview 2, nvidia/nemotron-3-ultra-550b-a55b:free 4, nvidia/nemotron-3.5-super-vl:free 1; resting until tomorrow: 14 models
+guard: this run $0.015 for 8 reports; last day $0.96 for 508; credit $2.27

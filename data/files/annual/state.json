@@ -1006,7 +1006,8 @@
 "n": 14,
 "audited": [
 2020
-]
+],
+"waits": 1
 },
 "khi:NRL:2025": {
 "at": "2026-11-02",
@@ -1444,11 +1445,14 @@
 "khi:AMTEX:2024": {
 "at": "2026-11-02",
 "done": true,
-"n": 26,
+"n": 22,
 "audited": [
 2024
 ],
-"waits": 1
+"waits": 1,
+"reread": [
+2024
+]
 },
 "khi:ICIBL:2007": {
 "at": "2026-11-01",
@@ -1629,8 +1633,11 @@
 "khi:STPL:2020": {
 "at": "2026-11-02",
 "done": true,
-"n": 29,
+"n": 27,
 "audited": [
+2020
+],
+"reread": [
 2020
 ]
 },
@@ -2225,8 +2232,11 @@
 "khi:AHCL:2025": {
 "at": "2026-11-02",
 "done": true,
-"n": 30,
+"n": 31,
 "audited": [
+2025
+],
+"reread": [
 2025
 ]
 },
@@ -2256,7 +2266,13 @@
 "n": 0,
 "audited": [
 2023
-]
+],
+"reread": [
+2023
+],
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: National Investment Trust Limited (names NAFL)"
 },
 "khi:KTML:2024": {
 "at": "2026-11-01",
@@ -2276,8 +2292,11 @@
 "khi:AHCL:2022": {
 "at": "2026-11-02",
 "done": true,
-"n": 0,
+"n": 6,
 "audited": [
+2022
+],
+"reread": [
 2022
 ]
 },
@@ -2319,8 +2338,11 @@
 "khi:AHCL:2021": {
 "at": "2026-11-02",
 "done": true,
-"n": 14,
+"n": 10,
 "audited": [
+2021
+],
+"reread": [
 2021
 ]
 },
@@ -2768,8 +2790,11 @@
 "khi:NICL:2022": {
 "at": "2026-11-02",
 "done": true,
-"n": 20,
+"n": 14,
 "audited": [
+2022
+],
+"reread": [
 2022
 ]
 },
@@ -8043,8 +8068,11 @@
 "khi:AHCL:2024": {
 "at": "2026-11-02",
 "done": true,
-"n": 5,
+"n": 10,
 "audited": [
+2024
+],
+"reread": [
 2024
 ]
 },
@@ -12550,6 +12578,8 @@
 },
 "khi:JSIL:2019": {
 "at": "2026-11-02",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 1
 }
 }
