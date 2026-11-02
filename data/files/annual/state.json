@@ -955,8 +955,11 @@
 "khi:AKDSL:2021": {
 "at": "2026-11-02",
 "done": true,
-"n": 19,
+"n": 17,
 "audited": [
+2021
+],
+"reread": [
 2021
 ]
 },
@@ -1129,8 +1132,11 @@
 "khi:PAEL:2020": {
 "at": "2026-11-02",
 "done": true,
-"n": 23,
+"n": 18,
 "audited": [
+2020
+],
+"reread": [
 2020
 ]
 },
@@ -1316,11 +1322,14 @@
 "khi:SPL:2023": {
 "at": "2026-11-02",
 "done": true,
-"n": 32,
+"n": 16,
 "audited": [
 2023
 ],
-"waits": 1
+"waits": 1,
+"reread": [
+2023
+]
 },
 "khi:FECTC:2005": {
 "at": "2026-11-01",
@@ -2559,8 +2568,11 @@
 "khi:THALL:2025": {
 "at": "2026-11-02",
 "done": true,
-"n": 42,
+"n": 41,
 "audited": [
+2025
+],
+"reread": [
 2025
 ]
 },
@@ -3188,7 +3200,10 @@
 "audited": [
 2025
 ],
-"waits": 1
+"waits": 1,
+"reread": [
+2025
+]
 },
 "khi:EFUG:2015": {
 "at": "2026-11-01",
@@ -8068,8 +8083,11 @@
 "khi:SPEL:2025": {
 "at": "2026-11-02",
 "done": true,
-"n": 36,
+"n": 44,
 "audited": [
+2025
+],
+"reread": [
 2025
 ]
 },
@@ -8246,7 +8264,13 @@
 "n": 11,
 "audited": [
 2017
-]
+],
+"reread": [
+2017
+],
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Sui Northern Gas Pipelines Limited (names SNGP)"
 },
 "khi:FZCM:2003": {
 "at": "2026-11-02",
@@ -8852,7 +8876,10 @@
 "audited": [
 2017
 ],
-"waits": 1
+"waits": 1,
+"reread": [
+2017
+]
 },
 "khi:LUCK:2001": {
 "at": "2026-11-02",
@@ -12520,5 +12547,9 @@
 "audited": [
 2021
 ]
+},
+"khi:JSIL:2019": {
+"at": "2026-11-02",
+"waits": 1
 }
 }
