@@ -1,6 +1,6 @@
 {
-"at": "2026-11-02 10:31",
-"minutes": 1.8,
+"at": "2026-11-02 10:37",
+"minutes": 1.1,
 "panel": [
 "openrouter:openai/gpt-oss-120b",
 "openrouter:google/gemini-2.5-flash-lite",
@@ -31,49 +31,42 @@
 [
 "google/gemini-2.5-flash-lite",
 200,
-10.7,
+10.3,
 6362,
 ""
 ],
 [
 "google/gemini-2.5-flash-lite",
 200,
-10.0,
+10.3,
 6362,
 ""
 ],
 [
 "google/gemini-2.5-flash-lite",
 200,
-9.6,
+9.0,
 6362,
 ""
 ],
 [
 "google/gemini-2.5-flash-lite",
 200,
-9.8,
+9.2,
 6362,
 ""
 ],
 [
 "google/gemini-2.5-flash-lite",
 200,
-10.4,
+9.1,
 6362,
 ""
 ],
 [
 "google/gemini-2.5-flash-lite",
-429,
-0.2,
-644,
-"{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemini-2.5-flash-lite is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\"}},\""
-],
-[
-"google/gemini-2.5-flash-lite",
 200,
-10.5,
+9.9,
 6362,
 ""
 ]
