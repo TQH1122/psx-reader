@@ -1,6 +1,6 @@
 {
-"at": "2026-11-02 22:12",
-"minutes": 11.3,
+"at": "2026-11-02 22:14",
+"minutes": 0.4,
 "panel": [
 "openrouter:openai/gpt-oss-120b",
 "openrouter:google/gemini-2.5-flash-lite",
@@ -27,97 +27,5 @@
 "cloudflare:@cf/openai/gpt-oss-120b",
 "cloudflare:@cf/meta/llama-3.3-70b-instruct-fp8-fast"
 ],
-"calls": [
-[
-"gemini-omni-1.1-flash",
-429,
-0.1,
-3174,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-omni-1.1-flash, description: Generate content input tokens per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\n* Quota exceeded for m"
-],
-[
-"gemini-3.5-flash",
-429,
-0.1,
-1651,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 9h58m26.839991765s.\",\n    "
-],
-[
-"gemini-omni-flash-preview",
-429,
-0.1,
-3174,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-omni-1.1-flash, description: Generate content input tokens per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\n* Quota exceeded for m"
-],
-[
-"gemini-3-flash-preview",
-200,
-6.5,
-4122,
-""
-],
-[
-"openai/gpt-oss-120b",
-400,
-7.1,
-202,
-"{\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n"
-],
-[
-"deepseek/deepseek-chat-v3.1",
-200,
-97.2,
-4446,
-""
-],
-[
-"qwen/qwen3-235b-a22b-2507",
-200,
-193.5,
-2026,
-""
-],
-[
-"qwen/qwen3-235b-a22b-2507",
-200,
-55.0,
-3923,
-""
-],
-[
-"nvidia/nemotron-3-ultra-550b-a55b:free",
-200,
-300.1,
-0,
-""
-],
-[
-"nvidia/nemotron-3-ultra-550b-a55b:free",
-200,
-279.4,
-4805,
-""
-],
-[
-"google/gemini-2.5-flash-lite",
-200,
-9.3,
-10941,
-""
-],
-[
-"openai/gpt-oss-120b",
-200,
-15.1,
-4008,
-""
-],
-[
-"deepseek/deepseek-chat-v3.1",
-200,
-61.4,
-4356,
-""
-]
-]
+"calls": []
 }
