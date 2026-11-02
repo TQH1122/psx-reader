@@ -250,11 +250,32 @@ def khi_catalogue(sc):
 def psx_docs():
     """annual reports in his Drive library that are PSX filings (file named by the PSX document number)"""
     out = {}
-    for r in jl(os.path.join(FILES, "library_index.json"), []) or []:
+    lib = [r for r in jl(os.path.join(FILES, "library_index.json"), []) or []
+           if r.get("kind") == "A" and r.get("tk") and r.get("y") and r.get("id")]
+    for r in lib:
         m = re.fullmatch(r"(\d{5,7})\.pdf", r.get("title") or "")
-        if m and r.get("kind") == "A" and r.get("tk") and r.get("y"):
+        if m:
             out.setdefault(r["tk"], {}).setdefault(int(r["y"]), (r["id"], f"https://dps.psx.com.pk/download/document/{m.group(1)}.pdf"))
+    # his other Drive annual reports (2 Nov 2026), once the PSX Library folder is shared "anyone with the link":
+    # checked with one test download per run, so nothing is tried (and no attempt wasted) while it is still private
+    if lib and drive_open(lib[0]["id"]):
+        for r in lib:
+            out.setdefault(r["tk"], {}).setdefault(int(r["y"]), (r["id"], DRIVE.format(r["id"])))
     return out
+
+
+DRIVE = "https://drive.usercontent.google.com/download?id={}&export=download&confirm=t"
+
+
+def drive_open(fid):
+    w = tempfile.mkdtemp()
+    try:
+        code, _ = curl(DRIVE.format(fid), os.path.join(w, "t.pdf"), timeout=120)
+        return code == 200 and open(os.path.join(w, "t.pdf"), "rb").read(5) == b"%PDF-"
+    except Exception:
+        return False
+    finally:
+        subprocess.run(["rm", "-rf", w])
 
 
 # ---------------------------------------------------------------- planning
@@ -304,7 +325,7 @@ def candidates(tk, cat, docs):
     for y in (cat.get(tk) or {}).get("years", []):
         cands[y] = ("khi", f"{KHI}/assets/annual_reports/{cat[tk]['id']}/{y}")
     for y, (fid, url) in (docs.get(tk) or {}).items():
-        cands.setdefault(y, ("psx", url))
+        cands.setdefault(y, ("psx" if "dps.psx" in url else "drive", url))
     return cands
 
 
@@ -383,7 +404,7 @@ def get_pages(jid, src, url, work):
             if code in (200, 404):
                 break
         if code != 200 or open(pdf, "rb").read(5) != b"%PDF-":
-            return None, f"PSX download failed ({code})"
+            return None, f"{'PSX' if src == 'psx' else 'Drive'} download failed ({code})"
     if pdf.endswith(".pdf") and os.path.getsize(pdf) > 80e6:
         return None, "file too large"
     with PREP:
