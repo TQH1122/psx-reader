@@ -12139,7 +12139,9 @@
 "n": 28
 },
 "drive:FHAM:2018": {
-"at": "2026-11-02"
+"at": "2026-11-02",
+"done": true,
+"n": 8
 },
 "khi:SFAT:2006": {
 "at": "2026-11-02",
@@ -12201,5 +12203,42 @@
 "at": "2026-11-02",
 "done": true,
 "n": 25
+},
+"psx:DNCC:2018": {
+"at": "2026-11-02",
+"done": true,
+"n": 9
+},
+"drive:DNCC:2014": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"drive:EMCO:2015": {
+"at": "2026-11-02",
+"done": true,
+"n": 0
+},
+"khi:EXIDE:2018": {
+"at": "2026-11-02",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Key primary financial statement pages (Balance Sheet, Profit and Loss, Cash Flow"
+},
+"khi:FHAM:2001": {
+"at": "2026-11-02",
+"done": true,
+"n": 10
+},
+"khi:FHAM:2000": {
+"at": "2026-11-02",
+"done": true,
+"n": 10
+},
+"khi:MARI:2021": {
+"at": "2026-11-02",
+"done": true,
+"n": 2
 }
 }
