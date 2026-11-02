@@ -866,6 +866,78 @@ def estimate(sc, longrows, cat, docs, state, by_tk, imp):
     return tot
 
 
+# ---- Spending guard (2 Nov 2026, his rule: paid credit and robot time must never again be spent for nothing) ----
+# Every run notes the OpenRouter credit spent and the reports saved. Paid models are switched off for a day, and his
+# phone is told, when in the last 24 hours (a) more than 10 cents went on runs that saved nothing, or (b) a saved
+# report cost over 2 cents on average (normal is about a third of a cent). The free models carry on regardless.
+GUARD = os.path.join(AN, "guard.json")
+IDLE_MAX, PER_REPORT_MAX, PAUSE_H = 0.10, 0.02, 24
+
+
+def credit_left():
+    key = os.environ.get("OPENROUTER_API_KEY")
+    if not key:
+        return None
+    code, body = R.http("https://openrouter.ai/api/v1/credits", headers={"authorization": f"Bearer {key}"}, timeout=40)
+    try:
+        d = json.loads(body).get("data") or {}
+        return float(d.get("total_credits") or 0) - float(d.get("total_usage") or 0) if code == 200 else None
+    except Exception:
+        return None
+
+
+def phone(title, text):
+    """an alert through his locked site (the public reader never holds the alert topic); never stops the run"""
+    pw = os.environ.get("SITE_PASSWORD")
+    if not pw:
+        return
+    import hashlib
+    c = "psx_auth=" + hashlib.sha256(("psx-tracker:" + pw).encode()).hexdigest()
+    subprocess.run(["curl", "-s", "-m", "60", "-H", "Cookie: " + c, "-H", "content-type: application/json",
+                    "-d", json.dumps({"title": title, "text": text}), "https://psx-tracker.pages.dev/api/wake"],
+                   capture_output=True, timeout=90)
+
+
+def guard_start():
+    g = jl(GUARD, {}) or {}
+    until = g.get("paid_off_until") or ""
+    if until > time.strftime("%Y-%m-%dT%H:%M:%S", time.gmtime()):
+        os.environ.pop("OPENROUTER_PAID", None)
+        print(f"guard: paid models paused until {until} UTC ({g.get('why')})", flush=True)
+    return credit_left() if os.environ.get("OPENROUTER_PAID") else None
+
+
+def guard_end(c0, saved):
+    if c0 is None:
+        return
+    c1 = credit_left()
+    if c1 is None:
+        return
+    g = jl(GUARD, {}) or {}
+    now = time.time()
+    log = [x for x in g.get("runs", []) if now - x["t"] < 48 * 3600]
+    log.append({"t": round(now), "spent": round(max(0.0, c0 - c1), 4), "saved": saved})
+    g["runs"] = log
+    day = [x for x in log if now - x["t"] < 24 * 3600]
+    spent, got = sum(x["spent"] for x in day), sum(x["saved"] for x in day)
+    idle = sum(x["spent"] for x in day if not x["saved"])
+    why = None
+    if idle > IDLE_MAX:
+        why = f"${idle:.2f} spent in the last day on runs that saved no report"
+    elif spent > 0.30 and spent / max(got, 1) > PER_REPORT_MAX:
+        why = f"${spent:.2f} spent for {got} reports in the last day, over 2 cents a report"
+    print(f"guard: this run ${max(0.0, c0 - c1):.3f} for {saved} reports; last day ${spent:.2f} for {got}; credit ${c1:.2f}",
+          flush=True)
+    if why:
+        g["paid_off_until"] = time.strftime("%Y-%m-%dT%H:%M:%S", time.gmtime(now + PAUSE_H * 3600))
+        g["why"] = why
+        g["runs"] = []  # a fresh count after the pause
+        print(f"guard: paid models paused for {PAUSE_H} hours: {why}", flush=True)
+        phone("PSX reader: paid models paused", f"{why}. I paused the paid models for {PAUSE_H} hours to protect your "
+              f"credit (${c1:.2f} left); the free ones keep reading. Tell Claude in the next chat.")
+    jw(g, GUARD, indent=0)
+
+
 def main():
     t0 = time.time()
     os.makedirs(RAW, exist_ok=True)
@@ -905,6 +977,7 @@ def main():
         for j in jobs[:15]:
             print("  ", j[3], j[7])
         return 0
+    c0 = guard_start()
     readers = R.panel()
     if not readers:
         print("annual: no free AI key is set (GEMINI_API_KEY); nothing read")
@@ -997,6 +1070,10 @@ def main():
     print(f"done: read {done} annual reports, {skipped} skipped, about {left} still to read; "
           f"models used: " + ", ".join(f"{r.model} {r.n}" for r in readers if r.n)
           + (f"; resting until tomorrow: {len(spent)} models" if spent else ""))
+    try:
+        guard_end(c0, done)
+    except Exception as e:  # the guard never stops the reader
+        print(f"guard: skipped ({e})", flush=True)
     sys.stdout.flush()
     pool.shutdown(wait=False, cancel_futures=True)
     os._exit(0)  # leave any report still hanging after the hard stop; everything finished is already saved

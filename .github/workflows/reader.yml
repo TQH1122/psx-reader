@@ -72,4 +72,7 @@ jobs:
           last="$(grep 'done: read' data/files/annual/log.txt | tail -n 1)"
           if echo "$last" | grep -q "about 0 still to read"; then echo "all read"; exit 0; fi
           if [ "${{ job.status }}" != success ] || ! echo "$last" | grep -qE "done: read [1-9]"; then sleep 300; fi
+          # idle guard: three runs in a row that read nothing means only unreadable reports are left; wait 20 minutes
+          # more so the reader rests instead of spinning (the spending guard in annual.py protects the paid credit)
+          if [ "$(grep 'done: read' data/files/annual/log.txt | tail -n 3 | grep -c 'done: read 0 ')" = 3 ]; then sleep 1200; fi
           for i in 1 2 3; do gh workflow run reader.yml --ref main && exit 0; sleep 30; done
