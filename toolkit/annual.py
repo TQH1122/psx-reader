@@ -730,6 +730,10 @@ def read_one(job, readers, sc, work):
     if rec.get("h") != h:  # different pages or a newer prompt: earlier reads no longer count
         rec = {"h": h}
     reads = rec.setdefault("reads", {})
+    # models that gave no usable answer for these pages are not asked again (2 Nov 2026: one model kept failing on
+    # the same report every run, spending paid credit while the others were never tried)
+    failed = rec.setdefault("failed", {})
+    spent = [0]
     prompt = PROMPT + pages
     fam = {r.name: r.family() for r in readers}
 
@@ -737,12 +741,15 @@ def read_one(job, readers, sc, work):
         j = r.ask(prompt)
         if j is not None:
             reads[r.name] = {"at": date.today().isoformat(), "j": j}
+        elif not r.out:  # it answered, but nothing usable: try another model instead
+            failed[r.name] = date.today().isoformat()
+            spent[0] += 1
 
     for _ in range(3):
         fs = [facts(v["j"], nums, cons, sumb, rows) for v in reads.values()]
         ok, bad = agree(fs) if len(fs) >= 2 else ({}, set())
         want = 2 - len(reads) if len(reads) < 2 else (1 if bad and len(reads) < 3 else 0)
-        free = [r for r in readers if not r.out and r.name not in reads]
+        free = [r for r in readers if not r.out and r.name not in reads and r.name not in failed]
         if want <= 0 or not free:
             break
         used = {fam.get(n) for n in reads}
@@ -758,7 +765,7 @@ def read_one(job, readers, sc, work):
     rec.update({"id": jid, "tk": tk, "y": y, "url": url, "cons": cons, "ocr": ocr, "chars": len(pages)})
     jw(rec, rawp)
     if len(reads) < 2:
-        return {"wait": "fewer than two models answered"}
+        return {"wait": "fewer than two models answered", "spent": spent[0]}
     firsts = [v["j"] for v in reads.values() if isinstance(v["j"], dict)]
     if sum(1 for j in firsts if j.get("skip")) >= 2:
         return {"skip": "not annual accounts: " + str(firsts[0].get("skip"))[:80]}
@@ -959,10 +966,19 @@ def main():
                     st.update(done=True, n=sum(len(v) for v in (res["rec"].get("C") or res["rec"].get("S") or {}).values()))
                     st.pop("why", None)
                     done += 1
-                elif "wait" in res:
+                elif "wait" in res and not (res.get("spent") and st.get("waits", 0) >= 2):
+                    # the models were busy: this company waits for the next run. A wait where models answered but
+                    # nothing usable came back counts, and the third such wait counts as one failed try, so a report
+                    # no model can read is dropped after a few runs instead of spending credit forever.
+                    if res.get("spent"):
+                        st["waits"] = st.get("waits", 0) + 1
                     waiting += 1
-                    continue  # the models were busy: this company waits for the next run
+                    jw(state, os.path.join(AN, "state.json"), indent=0)
+                    continue
                 else:
+                    if "wait" in res:
+                        res = {"skip": "no two models gave a usable read"}
+                        st["waits"] = 0
                     st["tries"] = 2 if res["skip"].startswith("scanned") else st.get("tries", 0) + 1
                     st["rev"] = 3
                     st["why"] = res["skip"]
