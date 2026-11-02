@@ -330,6 +330,44 @@ def candidates(tk, cat, docs):
     return cands
 
 
+def audit_years(tk, y, cands):
+    """the audit years this report settles: its own year, and last year when that year has no report of its own
+    (every report shows last year's figures beside this year's)"""
+    return {x for t, x in RECHECK if t == tk and (x == y or (x == y - 1 and x not in cands))}
+
+
+def audit_due(tk, y, cands, st):
+    """a report already read once that the audit wants read again (2 Nov 2026 fix: before this, a finished report was
+    never read twice, so 59 flagged years waited forever). Once per flagged year, so it can never loop: if the fresh
+    read still disagrees, the year stays an empty slot."""
+    if not st.get("done") or st.get("tries", 0) >= 2:
+        return False
+    return bool(audit_years(tk, y, cands) - set(st.get("audited") or []))
+
+
+def audit_counts(sc, cat, docs, state):
+    """the audit's flagged years by where they stand, so the log never repeats one number while nothing moves"""
+    n = {"to re-read": 0, "re-read": 0, "waiting for a first read": 0, "no usable report": 0}
+    for tk, x in RECHECK:
+        cands = candidates(tk, cat, docs) if tk in sc else {}
+        ys = [y for y in (x, x + 1) if y in cands and (y == x or x not in cands)]
+        sts = [(y, state.get(f"{cands[y][0]}:{tk}:{y}") or {}) for y in ys]
+        if any(x in (st.get("audited") or []) for _, st in sts):
+            n["re-read"] += 1
+        elif any(audit_due(tk, y, cands, st) for y, st in sts):
+            n["to re-read"] += 1
+        elif any(not st.get("done") and st.get("tries", 0) < 2 for _, st in sts):
+            n["waiting for a first read"] += 1
+        else:
+            n["no usable report"] += 1  # no report for that year or the next, or the report could not be read
+    return n
+
+
+def audit_summary(sc, cat, docs, state):
+    n = audit_counts(sc, cat, docs, state)
+    return f"{len(RECHECK)} company years flagged: " + ", ".join(f"{v} {k}" for k, v in n.items())
+
+
 def next_job(tk, sc, longrows, cat, docs, state, extracts, imp):
     """the one report of this company most worth reading next, or None. Newest missing year first: its statements give
     two years and its summary page often 6 to 10 more, so the next pick jumps past everything it covered."""
@@ -342,6 +380,10 @@ def next_job(tk, sc, longrows, cat, docs, state, extracts, imp):
     ys = sorted(cands, reverse=True)
     for y in ys:
         st = state.get(f"{cands[y][0]}:{tk}:{y}") or {}
+        if audit_due(tk, y, cands, st):
+            # the audit found two sources disagreeing on this year: read the report once more with fresh models
+            src, url = cands[y]
+            return (tier, -float(sc[tk].get("mc") or 0), -y, f"{src}:{tk}:{y}", tk, y, src, url, "audit")
         if st.get("done") or st.get("tries", 0) >= 2:
             cov |= {y} if st.get("done") else set()
             continue
@@ -729,7 +771,7 @@ def checks(rows, kind, ocr):
 
 # ---------------------------------------------------------------- read one report
 def read_one(job, readers, sc, work):
-    tier, _, _, jid, tk, y, src, url = job
+    tier, _, _, jid, tk, y, src, url = job[:8]
     bundle, info = get_pages(jid, src, url, work)
     if bundle is None:
         return {"skip": info}
@@ -994,9 +1036,10 @@ def main():
             by_tk.setdefault(d["ticker"], []).append(d)
     state = jl(os.path.join(AN, "state.json"), {}) or {}
     RECHECK.update(load_recheck())
-    print(f"audit: {len(RECHECK)} company years to settle by re-reading their reports", flush=True)
     cat = khi_catalogue(sc)
     docs = psx_docs()
+    print("audit: " + audit_summary(sc, cat, docs, state), flush=True)
+    audited_now = [0]
     jobs, imp = plan(sc, longrows, cat, docs, state, by_tk)
     left0 = estimate(sc, longrows, cat, docs, state, by_tk, imp)
     if PLAN:
@@ -1061,6 +1104,9 @@ def main():
                 jid, tk = job[3], job[4]
                 st = state.setdefault(jid, {})
                 st["at"] = date.today().isoformat()
+                if len(job) > 8 and "wait" not in res:  # an audit re-read counts once, whatever came back
+                    st["audited"] = sorted(set(st.get("audited") or []) | audit_years(tk, job[5], candidates(tk, cat, docs)))
+                    audited_now[0] += 1
                 if "rec" in res:
                     ext[jid] = res["rec"]
                     by_tk.setdefault(tk, []).append(res["rec"])
@@ -1095,8 +1141,8 @@ def main():
                "panel": [r.name for r in readers], "calls": R.CALLS[-400:]},
               open(os.path.join(AN, "calls.json"), "w"), indent=0)
     spent = [r for r in readers if r.out]
-    left = estimate(sc, longrows, cat, docs, state, by_tk, imp)
-    print(f"done: read {done} annual reports, {skipped} skipped, about {left} still to read; "
+    left = estimate(sc, longrows, cat, docs, state, by_tk, imp) + audit_counts(sc, cat, docs, state)["to re-read"]
+    print(f"done: read {done} annual reports ({audited_now[0]} audit re-reads), {skipped} skipped, about {left} still to read; "
           f"models used: " + ", ".join(f"{r.model} {r.n}" for r in readers if r.n)
           + (f"; resting until tomorrow: {len(spent)} models" if spent else ""))
     try:
