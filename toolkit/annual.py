@@ -251,15 +251,16 @@ def psx_docs():
     """annual reports in his Drive library that are PSX filings (file named by the PSX document number)"""
     out = {}
     lib = [r for r in jl(os.path.join(FILES, "library_index.json"), []) or []
-           if r.get("kind") == "A" and r.get("tk") and r.get("y") and r.get("id")]
+           if r.get("kind") == "A" and r.get("tk") and r.get("y")]
     for r in lib:
         m = re.fullmatch(r"(\d{5,7})\.pdf", r.get("title") or "")
         if m:
             out.setdefault(r["tk"], {}).setdefault(int(r["y"]), (r["id"], f"https://dps.psx.com.pk/download/document/{m.group(1)}.pdf"))
     # his other Drive annual reports (2 Nov 2026), once the PSX Library folder is shared "anyone with the link":
     # checked with one test download per run, so nothing is tried (and no attempt wasted) while it is still private
-    if lib and drive_open(lib[0]["id"]):
-        for r in lib:
+    withid = [r for r in lib if r.get("id")]
+    if withid and drive_open(withid[0]["id"]):
+        for r in withid:
             out.setdefault(r["tk"], {}).setdefault(int(r["y"]), (r["id"], DRIVE.format(r["id"])))
     return out
 
