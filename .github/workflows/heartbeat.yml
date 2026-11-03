@@ -31,6 +31,10 @@ jobs:
             const keyBad = r.problems.filter((p) => /answered (401|403|404)/.test(p));
             if (keyBad.length) { console.log('KEY PROBLEM: TRACKER_TOKEN needs Actions read and write on psx-reader'); process.exit(1); }
           "
+          # the restart permission is only used when a robot has stopped, so prove it now on the harmless jobs lane
+          code=$(curl -s -o /dev/null -w '%{http_code}' -X POST -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" https://api.github.com/repos/TQH1122/psx-reader/actions/workflows/lane-jobs.yml/dispatches -d '{"ref":"main"}')
+          [ "$code" = 204 ] && echo "restart permission: ok" || { echo "KEY PROBLEM: TRACKER_TOKEN cannot restart robots (GitHub answered $code). Add psx-reader with Actions read and write to it."; exit 1; }
       - name: Deploy to Cloudflare
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_DEPLOY_TOKEN || secrets.CF_AI_TOKEN }}
