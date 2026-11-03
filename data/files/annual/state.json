@@ -2836,7 +2836,14 @@
 "at": "2026-11-03",
 "done": true,
 "n": 2,
-"waits": 1
+"waits": 1,
+"reread": [
+2009,
+2010
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:PSEL:2017": {
 "at": "2026-11-01",
