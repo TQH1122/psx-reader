@@ -1,0 +1,9 @@
+# PSX robots heartbeat: a free Cloudflare Worker that runs every 30 minutes on Cloudflare's timer (not GitHub's).
+# Deployed by .github/workflows/heartbeat.yml; see worker.js for what it does.
+name = "psx-heartbeat"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+workers_dev = false   # no public address: it only runs on its timer
+
+[triggers]
+crons = ["7,37 * * * *"]   # every 30 minutes, off the busy top of the hour

@@ -1,0 +1,48 @@
+# Deploys the PSX robots heartbeat (heartbeat/worker.js) to Cloudflare as a free Worker with its own 30 minute timer,
+# then runs one check right here to prove the keys work. Runs by itself whenever the heartbeat code changes.
+name: Heartbeat deploy
+on:
+  push:
+    paths: ['heartbeat/**', '.github/workflows/heartbeat.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: heartbeat-deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: One check now, with the real keys
+        env:
+          GH_TOKEN: ${{ secrets.TRACKER_TOKEN }}
+          SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
+        run: |
+          node --input-type=module -e "
+            import { tick } from './heartbeat/worker.js';
+            const r = await tick({ GH_TOKEN: process.env.GH_TOKEN, SITE_PASSWORD: process.env.SITE_PASSWORD });
+            console.log(JSON.stringify(r, null, 1));
+            const keyBad = r.problems.filter((p) => /answered (401|403|404)/.test(p));
+            if (keyBad.length) { console.log('KEY PROBLEM: TRACKER_TOKEN needs Actions read and write on psx-reader'); process.exit(1); }
+          "
+      - name: Deploy to Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_DEPLOY_TOKEN || secrets.CF_AI_TOKEN }}
+          ACCOUNT_RAW: ${{ secrets.CF_ACCOUNT_ID }}
+          GH_TOKEN_VALUE: ${{ secrets.TRACKER_TOKEN }}
+          SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
+        run: |
+          set -o pipefail
+          export CLOUDFLARE_ACCOUNT_ID=$(printf '%s' "$ACCOUNT_RAW" | grep -oE '[0-9a-f]{32}' | head -n1)
+          [ -n "$CLOUDFLARE_ACCOUNT_ID" ] || { echo "CF_ACCOUNT_ID holds no account number"; exit 1; }
+          cd heartbeat
+          npx --yes wrangler@4 deploy 2>&1 | grep -vE "^\s*$" | tail -n 25
+          printf '%s' "$GH_TOKEN_VALUE" | npx --yes wrangler@4 secret put GH_TOKEN 2>&1 | tail -n 2
+          printf '%s' "$SITE_PASSWORD" | npx --yes wrangler@4 secret put SITE_PASSWORD 2>&1 | tail -n 2
+          npx --yes wrangler@4 deployments list 2>&1 | tail -n 6
