@@ -19954,7 +19954,9 @@
 },
 "khi:INIL:2006": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 9
 },
 "web:JVDC:2015": {
 "at": "2026-11-03",
@@ -20246,7 +20248,10 @@
 },
 "web:CSAP:2017": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Annual Report 2017"
 },
 "khi:HTL:2017": {
 "at": "2026-11-03",
@@ -20508,7 +20513,9 @@
 },
 "web:NCL:2004": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 21
 },
 "khi:MFFL:2020": {
 "at": "2026-11-03",
@@ -20555,7 +20562,10 @@
 },
 "web:ICL:2006": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Muhammad Siddique Khatri"
 },
 "web:SANSM:2018": {
 "at": "2026-11-03",
@@ -20569,7 +20579,9 @@
 },
 "web:ANL:2019": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 34
 },
 "web:ENGRO:2023": {
 "at": "2026-11-03",
@@ -20577,11 +20589,15 @@
 },
 "web:WTL:2005": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 10
 },
 "web:SEL:2019": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 28
 },
 "khi:CSIL:2002": {
 "at": "2026-11-03",
@@ -20589,15 +20605,21 @@
 },
 "web:JSCL:2007": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 24
 },
 "web:SLM:2026": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 28
 },
 "web:CHAS:2017": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 16
 },
 "web:PMPK:2025": {
 "at": "2026-11-03",
@@ -20609,7 +20631,10 @@
 },
 "web:WAVES:2014": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: HBL (names HGFA)"
 },
 "khi:PIOC:2020": {
 "at": "2026-11-03",
@@ -20641,10 +20666,755 @@
 },
 "khi:PREMA:2024": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 34
 },
 "khi:MFFL:2017": {
 "at": "2026-11-03",
+"waits": 1,
+"done": true,
+"n": 32
+},
+"web:CSAP:2016": {
+"at": "2026-11-03"
+},
+"web:CHAS:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:DHPL:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:GCIL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:ICL:2004": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:GEMSPNL:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:BBFL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SILK:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"psx:MSOT:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:NNAR:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:NNAR:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:BBFL:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:GDL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:NNAR:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts (interim statements)"
+},
+"web:BGL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:BGL:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:PREMA:2021": {
+"at": "2026-11-03"
+},
+"web:DHPL:2023": {
+"at": "2026-11-03"
+},
+"web:AKZO:2025": {
+"at": "2026-11-03"
+},
+"web:SOYASUP:2026": {
+"at": "2026-11-03"
+},
+"web:RCML:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:TISL:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:RCML:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:RCML:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:TISL:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:SPEL:2019": {
+"at": "2026-11-03"
+},
+"web:TISL:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:INIL:2004": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:CHAS:2015": {
+"at": "2026-11-03"
+},
+"web:SINDM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SINDM:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SINDM:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SINDM:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SINDM:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SINDM:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SINDM:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SINDM:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:PECO:2026": {
+"at": "2026-11-03"
+},
+"web:FTMM:2026": {
+"at": "2026-11-03"
+},
+"web:CTM:2025": {
+"at": "2026-11-03"
+},
+"web:SINDM:2018": {
+"at": "2026-11-03"
+},
+"web:GCWL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts (interim statements)"
+},
+"web:NNAR:2023": {
+"at": "2026-11-03"
+},
+"web:GEMPACRA:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:NCL:2003": {
+"at": "2026-11-03",
 "waits": 1
+},
+"web:WHALE:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:WHALE:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:ANL:2005": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:SASML:2025": {
+"at": "2026-11-03"
+},
+"web:WHALE:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"khi:INIL:2002": {
+"at": "2026-11-03"
+},
+"web:DSIL:2026": {
+"at": "2026-11-03"
+},
+"web:SEL:2017": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:GLAT:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:LSECL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"khi:SPL:2024": {
+"at": "2026-11-03"
+},
+"web:LSECL:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:JSCL:2004": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:BBFL:2024": {
+"at": "2026-11-03"
+},
+"khi:GGGL:2023": {
+"at": "2026-11-03"
+},
+"web:SGPL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:WAHDAT:2026": {
+"at": "2026-11-03"
+},
+"web:ZAL:2026": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:BFAGRO:2026": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:RCML:2013": {
+"at": "2026-11-03"
+},
+"web:JATM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JATM:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JATM:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JATM:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JATM:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JATM:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JATM:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:BGL:2007": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:IMSL:2026": {
+"at": "2026-11-03"
+},
+"web:JOPP:2023": {
+"at": "2026-11-03"
+},
+"web:TRPOL:2021": {
+"at": "2026-11-03"
+},
+"web:BRRG:2026": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:OBOY:2025": {
+"at": "2026-11-03"
+},
+"web:SRR:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SRR:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SRR:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts (interim statements)"
+},
+"web:LSECL:2024": {
+"at": "2026-11-03"
+},
+"web:SPAC1:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:SERF:2021": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:GEMBCEM:2026": {
+"at": "2026-11-03"
+},
+"web:CASH:2025": {
+"at": "2026-11-03"
+},
+"web:EWLA:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"khi:QUICE:2025": {
+"at": "2026-11-03"
+},
+"web:SRR:2023": {
+"at": "2026-11-03"
+},
+"web:HSM:2025": {
+"at": "2026-11-03"
+},
+"web:SPAC2:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:WHALE:2022": {
+"at": "2026-11-03"
+},
+"web:SPAC2:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:IML:2026": {
+"at": "2026-11-03"
+},
+"web:GEMBLUEX:2025": {
+"at": "2026-11-03",
+"waits": 1
+},
+"khi:HSPI:2022": {
+"at": "2026-11-03"
+},
+"web:MUGHALC:2026": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:786:2026": {
+"at": "2026-11-03"
+},
+"web:GLAT:2013": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:TCORP:2025": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:HACC:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ORM:2026": {
+"at": "2026-11-03"
+},
+"web:BLUEX:2025": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:LSEPL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:IDSM:2026": {
+"at": "2026-11-03"
+},
+"web:GASF:2019": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:LSEPL:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:ICCT:2026": {
+"at": "2026-11-03"
+},
+"web:EWLA:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SANE:2024": {
+"at": "2026-11-03"
+},
+"web:MODAM:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:AYTM:2019": {
+"at": "2026-11-03"
+},
+"web:EWLA:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:LSEPL:2024": {
+"at": "2026-11-03"
+},
+"web:DKL:2021": {
+"at": "2026-11-03"
+},
+"web:JPGL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:DMC:2026": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:JPGL:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2007": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2006": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:JPGL:2004": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:EWLA:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SALT:2026": {
+"at": "2026-11-03"
+},
+"web:GTECH:2022": {
+"at": "2026-11-03"
+},
+"web:ARM:2023": {
+"at": "2026-11-03"
+},
+"web:HIRAT:2024": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:DMIL:2026": {
+"at": "2026-11-03"
+},
+"web:FDIBL:2023": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:ADOS:2022": {
+"at": "2026-11-03"
+},
+"web:DCTL:2023": {
+"at": "2026-11-03"
+},
+"web:CPAL:2026": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:SPAC2:2024": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:DMTX:2026": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:ILTM:2026": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:GEMUNSL:2025": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:EWLA:2021": {
+"at": "2026-11-03"
+},
+"web:WYETH:2021": {
+"at": "2026-11-03",
+"waits": 1
+},
+"khi:UVIC:2024": {
+"at": "2026-11-03"
 }
 }
