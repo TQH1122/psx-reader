@@ -12,13 +12,14 @@ on:
     paths: ['.github/run-broker']
 permissions:
   contents: read
+  actions: write   # lets each run start the next one (GitHub fired the half hour timer only twice in 20 hours on 2 Nov 2026)
 concurrency:
   group: broker
   cancel-in-progress: false
 jobs:
   read:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 120   # room for the 45 minute read plus the longest rest before the next run
     steps:
       - uses: actions/checkout@v4
         with:
@@ -37,8 +38,22 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
-        run: python3 toolkit/public_read.py 45
+        run: |
+          set -o pipefail
+          python3 toolkit/public_read.py 45 | tee /tmp/broker_last.txt
       - name: Save to the private repository
         if: always()
         run: |
           python3 toolkit/savegit.py "Robot: broker reading $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/readings data/db/market/readings.json data/files/robots.json
+      - name: Start the next run (24/7)
+        # never waits on GitHub's timer: a run that read reports starts the next at once; after a failure it rests
+        # 10 minutes, when the free models are all resting 15 minutes, and with nothing waiting it checks every 30
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          last="$(tail -n 1 /tmp/broker_last.txt 2>/dev/null)"
+          if ! echo "$last" | grep -q "^done:"; then sleep 600
+          elif echo "$last" | grep -qE "[^0-9]0 waiting"; then sleep 1800
+          elif echo "$last" | grep -qE "^done: read 0 "; then sleep 900; fi
+          for i in 1 2 3; do gh workflow run broker.yml --ref main && exit 0; sleep 30; done
