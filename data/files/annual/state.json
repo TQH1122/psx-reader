@@ -20681,7 +20681,7 @@
 "web:IGIIL:2017": {
 "at": "2026-11-03",
 "waits": 1,
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "not annual accounts: The provided pages do not contain financial statements or a multi-year summary; "
 },
@@ -21218,7 +21218,7 @@
 },
 "web:OBOY:2025": {
 "at": "2026-11-03",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: Sui Northern Gas Pipelines Limited (names SNGP)"
 },
@@ -21293,7 +21293,7 @@
 },
 "web:WHALE:2022": {
 "at": "2026-11-03",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "no figure passed the checks"
 },
@@ -21341,7 +21341,7 @@
 },
 "web:ORM:2026": {
 "at": "2026-11-03",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: EMAN Management (Private) Limited (names DCM)"
 },
@@ -21549,7 +21549,7 @@
 },
 "khi:UVIC:2024": {
 "at": "2026-11-03",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "no figure passed the checks"
 },
@@ -21605,7 +21605,9 @@
 "n": 38
 },
 "web:IPAK:2024": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 22
 },
 "web:SOYASUP:2025": {
 "at": "2026-11-03",
@@ -21649,7 +21651,9 @@
 "why": "company name does not match: International Industries Limited (names ABSON)"
 },
 "khi:CHAS:2006": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 20
 },
 "web:PREMA:2019": {
 "at": "2026-11-03",
@@ -21688,7 +21692,10 @@
 "n": 32
 },
 "web:SASML:2024": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
 },
 "web:RCML:2012": {
 "at": "2026-11-03",
@@ -21714,7 +21721,9 @@
 "at": "2026-11-03"
 },
 "web:AKZO:2024": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 36
 },
 "khi:SPL:2022": {
 "at": "2026-11-03"
@@ -21732,7 +21741,9 @@
 "at": "2026-11-03"
 },
 "web:NAGC:2014": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 36
 },
 "web:CTM:2018": {
 "at": "2026-11-03"
@@ -21748,14 +21759,51 @@
 "n": 30
 },
 "web:NCL:2002": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 19
 },
 "web:SANSM:2015": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 40
 },
 "web:PMPK:2017": {
 "at": "2026-11-03",
 "done": true,
 "n": 5
+},
+"web:IPAK:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SASML:2023": {
+"at": "2026-11-03"
+},
+"web:AKZO:2022": {
+"at": "2026-11-03"
+},
+"web:WHALE:2021": {
+"at": "2026-11-03"
+},
+"web:SANSM:2014": {
+"at": "2026-11-03"
+},
+"web:GEMBCEM:2025": {
+"at": "2026-11-03"
+},
+"web:EWLA:2020": {
+"at": "2026-11-03"
+},
+"web:PMPK:2015": {
+"at": "2026-11-03"
+},
+"web:BGL:2006": {
+"at": "2026-11-03"
+},
+"web:TRPOL:2020": {
+"at": "2026-11-03"
 }
 }
