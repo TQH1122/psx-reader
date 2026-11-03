@@ -1,0 +1,34 @@
+# Website report finder (3 Nov 2026): finds full annual reports on the listed companies' own websites
+# (toolkit/websites.py), so the reader gets consolidated statements and years KHI Stocks lacks. Started by the
+# report reader every half hour; it only visits sites not checked in the last 14 days, so most runs end at once.
+name: Website report finder
+on:
+  workflow_dispatch:
+  push:
+    paths: ['toolkit/websites.py']
+permissions:
+  contents: write
+concurrency:
+  group: websites
+  cancel-in-progress: false
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Find annual reports on company websites
+        timeout-minutes: 58
+        run: python3 toolkit/websites.py 50
+      - name: Save
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          git add data/files/annual/web_catalogue.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -q -m "Websites: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M')"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          exit 1

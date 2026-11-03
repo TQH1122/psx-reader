@@ -63,7 +63,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          for w in lane-daily.yml lane-jobs.yml broker.yml; do   # broker added 3 Nov 2026: its own timer kept being skipped
+          for w in lane-daily.yml lane-jobs.yml broker.yml websites.yml; do   # broker added 3 Nov 2026: its own timer kept being skipped
             busy=$(gh run list -w "$w" -L 5 --json status --jq '[.[]|select(.status!="completed")]|length' 2>/dev/null || echo 0)
             [ "${busy:-0}" = 0 ] && gh workflow run "$w" --ref main && echo "started $w" || echo "$w busy or not started"
           done

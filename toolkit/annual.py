@@ -321,12 +321,25 @@ def covered(tk, longrows, extracts):
     return cov - {y for t, y in RECHECK if t == tk}
 
 
+WEB = {}       # ticker -> {year: url}: full annual reports on the companies' own websites (toolkit/websites.py)
+GROUPS = set()  # companies whose histories must be consolidated (group basis)
+STATE = {}
+
+
 def candidates(tk, cat, docs):
     cands = {}
     for y in (cat.get(tk) or {}).get("years", []):
         cands[y] = ("khi", f"{KHI}/assets/annual_reports/{cat[tk]['id']}/{y}")
     for y, (fid, url) in (docs.get(tk) or {}).items():
         cands.setdefault(y, ("psx" if "dps.psx" in url else "drive", url))
+    # the company's own website (3 Nov 2026): a full report, so it carries the consolidated statements that KHI
+    # Stocks' short extracts lack. It replaces KHI for group companies, and any source whose read failed for good
+    for y, url in (WEB.get(tk) or {}).items():
+        y = int(y)
+        cur = cands.get(y)
+        st = STATE.get(f"{cur[0]}:{tk}:{y}") or {} if cur else {}
+        if cur is None or (tk in GROUPS and cur[0] == "khi") or (not st.get("done") and st.get("tries", 0) >= 2):
+            cands[y] = ("web", url)
     return cands
 
 
@@ -449,7 +462,7 @@ def get_pages(jid, src, url, work):
             if code in (200, 404):
                 break
         if code != 200 or open(pdf, "rb").read(5) != b"%PDF-":
-            return None, f"{'PSX' if src == 'psx' else 'Drive'} download failed ({code})"
+            return None, f"{ {'psx': 'PSX', 'web': 'Company website'}.get(src, 'Drive') } download failed ({code})"
     if pdf.endswith(".pdf") and os.path.getsize(pdf) > 80e6:
         return None, "file too large"
     with PREP:
@@ -782,6 +795,12 @@ def read_one(job, readers, sc, work):
     pages = pick_pages(bundle, cons)
     if len(pages) < 800:
         return {"skip": "no statement pages found"}
+    low = pages.lower()
+    interim = r"(half[\s-]+year|six\s+months|nine\s+months|three\s+months|quarter|period)\s+ended"
+    if re.search(interim, low) and not re.search(r"year\s+ended", re.sub(interim, " ", low)):
+        # interim accounts (3 Nov 2026): company websites file half year and quarterly statements beside the annual
+        # ones, sometimes named only by month; annual statements always say "for the year ended"
+        return {"skip": "not annual accounts (interim statements)"}
     nums = R.numbers(pages)
     rows = page_rows(pages)
     sb = set()
@@ -1058,6 +1077,10 @@ def main():
             by_tk.setdefault(d["ticker"], []).append(d)
     state = jl(os.path.join(AN, "state.json"), {}) or {}
     RECHECK.update(load_recheck())
+    STATE.update(state)
+    WEB.update({t: v.get("years") or {} for t, v in ((jl(os.path.join(AN, "web_catalogue.json"), {}) or {}).get("co") or {}).items()})
+    GROUPS.update(t for t, r in longrows.items() if (r or {}).get("basis") == "group")
+    print(f"sources: company websites give {sum(len(v) for v in WEB.values())} reports for {sum(1 for v in WEB.values() if v)} companies", flush=True)
     cat = khi_catalogue(sc)
     docs = psx_docs()
     print("audit: " + audit_summary(sc, cat, docs, state), flush=True)
