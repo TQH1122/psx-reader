@@ -1,9 +1,3 @@
-pages ar_po3vnzs1 0s
-pages ar_pjmw1c70 1s
-pages ar_f3aepjdp 3s
-pages ar_xih6ijdv 0s
-pages ar_ak4ky8wy 0s
-pages ar_2qohlkgz 6s
 pages ar_6496qkrv 2s
 pages ar_g2gmg8q9 1s
 pages ar_igjq401e 1s
@@ -296,5 +290,11 @@ audit: 73 company years flagged: 4 to re-read, 33 re-read, 0 waiting for a first
 openrouter: paid models on (credit left $2.25)
 pages ar_d9o2ang4 0s
 pages ar_hayc1dfn 14s
+done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: 
+guard: this run $0.000 for 0 reports; last day $0.97 for 520; credit $2.25
+audit: 73 company years flagged: 4 to re-read, 33 re-read, 0 waiting for a first read, 36 no usable report
+openrouter: paid models on (credit left $2.25)
+pages ar_gsq3iy29 0s
+pages ar_6cl5myhg 14s
 done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: 
 guard: this run $0.000 for 0 reports; last day $0.97 for 520; credit $2.25
