@@ -21214,7 +21214,9 @@
 },
 "web:BRRG:2026": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "web:OBOY:2025": {
 "at": "2026-11-03",
@@ -21254,7 +21256,9 @@
 },
 "web:SERF:2021": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 8
 },
 "web:GEMBCEM:2026": {
 "at": "2026-11-03",
@@ -21281,7 +21285,7 @@
 },
 "web:HSM:2025": {
 "at": "2026-11-03",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: Tariq Corporation (names TCORP)"
 },
@@ -21311,7 +21315,9 @@
 },
 "web:GEMBLUEX:2025": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 32
 },
 "khi:HSPI:2022": {
 "at": "2026-11-03",
@@ -21320,7 +21326,9 @@
 },
 "web:MUGHALC:2026": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 43
 },
 "web:786:2026": {
 "at": "2026-11-03"
@@ -21597,7 +21605,10 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "web:UBDL:2014": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:PIOC:2014": {
 "at": "2026-11-03",
@@ -21661,13 +21672,19 @@
 "n": 32
 },
 "web:DHPL:2022": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
 },
 "web:SOYASUP:2021": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 5
 },
 "web:CSAP:2005": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "khi:QUICE:2022": {
 "at": "2026-11-03",
@@ -21703,7 +21720,8 @@
 "n": 30
 },
 "web:IML:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "web:LSECL:2023": {
 "at": "2026-11-03",
@@ -21712,13 +21730,20 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "khi:QUICE:2021": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:FTMM:2023": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:GGGL:2022": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "web:AKZO:2024": {
 "at": "2026-11-03",
@@ -21726,19 +21751,29 @@
 "n": 36
 },
 "khi:SPL:2022": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:LSECL:2022": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Annual Report 2022"
 },
 "web:SINDM:2016": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 6
 },
 "web:IMSL:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "web:PECO:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "web:NAGC:2014": {
 "at": "2026-11-03",
@@ -21746,7 +21781,9 @@
 "n": 36
 },
 "web:CTM:2018": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 28
 },
 "web:PIOC:2012": {
 "at": "2026-11-03",
@@ -21780,30 +21817,298 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "web:SASML:2023": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
 },
 "web:AKZO:2022": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:WHALE:2021": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: The provided pages only contain horizontal analysis percentages, not the actual "
 },
 "web:SANSM:2014": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "web:GEMBCEM:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "web:EWLA:2020": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 0
 },
 "web:PMPK:2015": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
 },
 "web:BGL:2006": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "web:TRPOL:2020": {
 "at": "2026-11-03"
+},
+"web:SASML:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:SASML:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:GEMBLUEX:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:GEMBLUEX:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:SPL:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:GEMBLUEX:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS LIMITED (names GEMUNSL)"
+},
+"web:MUGHALC:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:SINDM:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts (interim statements)"
+},
+"web:AKZO:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:QUICE:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 2
+},
+"khi:SPL:2021": {
+"at": "2026-11-03",
+"done": true,
+"n": 2
+},
+"web:MUGHALC:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:PMPK:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:WHALE:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:WHALE:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:WHALE:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:WHALE:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SASML:2020": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:LSECL:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:LSECL:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:LSECL:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:UVIC:2024": {
+"at": "2026-11-03"
+},
+"web:CTM:2014": {
+"at": "2026-11-03"
+},
+"khi:QUICE:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:IDSM:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:IDSM:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:IDSM:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:IDSM:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:IDSM:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:IDSM:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:IDSM:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:IDSM:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:OBOY:2024": {
+"at": "2026-11-03"
+},
+"web:IDSM:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:IDSM:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:HSPI:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:DHPL:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: DAWOOD HERCULES CORPORATION LIMITED (names DAWH)"
+},
+"web:AKZO:2020": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:LSECL:2018": {
+"at": "2026-11-03"
+},
+"web:HSM:2024": {
+"at": "2026-11-03"
+},
+"web:DHPL:2020": {
+"at": "2026-11-03"
+},
+"web:GEMBLUEX:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names GEMUNSL)"
+},
+"web:WHALE:2016": {
+"at": "2026-11-03"
+},
+"web:AKZO:2018": {
+"at": "2026-11-03"
+},
+"khi:SPL:2019": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:PMPK:2013": {
+"at": "2026-11-03",
+"waits": 1
+},
+"web:EWLA:2018": {
+"at": "2026-11-03"
+},
+"web:GEMBLUEX:2019": {
+"at": "2026-11-03"
+},
+"web:UBDL:2012": {
+"at": "2026-11-03",
+"waits": 1
 }
 }
