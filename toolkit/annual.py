@@ -283,22 +283,58 @@ def drive_open(fid):
 RECHECK = set()  # (ticker, year) the tracker's audit left empty because sources disagree: read that year's report
 
 
-def load_recheck():
-    """the audit's re-read list from his locked tracker site, signed in with SITE_PASSWORD (an Actions secret);
-    tickers and years only. An empty set when the secret is missing or the site cannot be reached."""
+def site_json(name):
+    """one market document from his locked tracker site, signed in with SITE_PASSWORD (an Actions secret);
+    None when the secret is missing, the document does not exist or the site cannot be reached"""
     pw = os.environ.get("SITE_PASSWORD")
     if not pw:
-        return set()
+        return None
     import hashlib
     cookie = "psx_auth=" + hashlib.sha256(("psx-tracker:" + pw).encode()).hexdigest()
     try:
         p = subprocess.run(["curl", "-s", "-m", "60", "-H", "Cookie: " + cookie, "-w", "\n%{http_code}",
-                            "https://psx-tracker.pages.dev/db/market/recheck.json"], capture_output=True, text=True, timeout=90)
+                            f"https://psx-tracker.pages.dev/db/market/{name}.json"], capture_output=True, text=True, timeout=90)
         body, _, code = p.stdout.rpartition("\n")
         d = R.jload(body) if code == "200" else None
     except Exception:
         d = None
+    return d.get("data", d) if isinstance(d, dict) else None
+
+
+def load_recheck():
+    """the audit's re-read list (and, from 3 Nov 2026, the coverage map's gap years) from his tracker site;
+    tickers and years only. An empty set when the secret is missing or the site cannot be reached."""
+    d = site_json("recheck")
     return {(str(t), int(y)) for t, y in (d or {}).get("recheck", []) if str(y).isdigit()}
+
+
+def refresh_flags():
+    """Bring the reader's picture of the tracker up to date every run (3 Nov 2026: it had been copied once on 1 Nov,
+    so the reader planned from stale years and did not know newer group companies). Only flags leave the private
+    tracker: per company its basis, years, and whether profit and equity are filled (1 or None); no figures. The
+    company list keeps name, market cap and market price, as before. Nothing changes when the site cannot be read
+    or the fresh copy looks broken (far fewer companies than the copy here)."""
+    rows = {}
+    for i in range(1, 13):
+        d = site_json(f"long_{i}")
+        if d is None:
+            break
+        rows.update(d.get("rows") or {})
+    lp = os.path.join(DB, "market", "long_1.json")
+    old = (jl(lp, {}) or {}).get("rows", {})
+    if rows and len(rows) >= 0.9 * len(old):
+        flag = lambda xs: [1 if x is not None else None for x in (xs or [])]
+        jw({"note": "Which years already hold checked profit and equity figures (1) in the tracker, so the reader skips "
+                    "them; refreshed from the tracker every run", "asOf": date.today().isoformat(),
+            "rows": {t: {"basis": r.get("basis"), "fy": r.get("fy") or [], "ni": flag(r.get("ni")), "eq": flag(r.get("eq"))}
+                     for t, r in rows.items() if isinstance(r, dict)}}, lp, indent=0)
+    sc = site_json("screener")
+    sp = os.path.join(DB, "market", "screener.json")
+    srows = (sc or {}).get("rows") or []
+    if len(srows) >= 0.9 * len((jl(sp, {}) or {}).get("rows", [])):
+        jw({"asOf": (sc or {}).get("asOf"), "note": "listed companies (name, market cap, market price) from the tracker",
+            "rows": [{"s": r.get("s"), "n": r.get("n"), "mc": r.get("mc"), "p": r.get("p")} for r in srows]}, sp, indent=0)
+    return len(rows), len(srows)
 
 
 def covered(tk, longrows, extracts):
@@ -310,7 +346,10 @@ def covered(tk, longrows, extracts):
     cov = {y for i, y in enumerate(fy) if i < len(ni) and ni[i] is not None and i < len(eq) and eq[i] is not None}
     for d in extracts:
         for b in ("C", "S"):
-            if (b == "C") == bool(d.get("cons")):
+            # a group company's year is filled only by group accounts (3 Nov 2026: company only extracts from KHI Stocks
+            # had marked 124 group years as done, so their full website reports were never read); its early company only
+            # years that the tracker accepted are already in the flags above
+            if (b == "C") == bool(d.get("cons")) and not (group and b == "S"):
                 cov |= {int(y) for y in (d.get(b) or {}) if str(y).isdigit()}
         for k in ("SUM", "SUM_C", "SUM_X"):
             sm = d.get(k) or {}
@@ -413,7 +452,7 @@ def next_job(tk, sc, longrows, cat, docs, state, extracts, imp):
 
 def plan(sc, longrows, cat, docs, state, extracts_by_tk):
     imp = important()
-    jobs = [j for tk in sorted(set(cat) | set(docs))
+    jobs = [j for tk in sorted(set(cat) | set(docs) | set(WEB))
             for j in [next_job(tk, sc, longrows, cat, docs, state, extracts_by_tk.get(tk, []), imp)] if j]
     jobs.sort()
     return jobs, imp
@@ -958,7 +997,7 @@ def estimate(sc, longrows, cat, docs, state, by_tk, imp):
     """how many reports the whole plan still needs, simulating that each report covers its two years and a
     summary as long as the company's earlier summaries (6 years if none yet)"""
     tot = 0
-    for tk in set(cat) | set(docs):
+    for tk in set(cat) | set(docs) | set(WEB):  # website only companies too (3 Nov 2026)
         if tk not in sc:
             continue
         cands = candidates(tk, cat, docs)
@@ -1053,6 +1092,8 @@ def guard_end(c0, saved):
 def main():
     t0 = time.time()
     os.makedirs(RAW, exist_ok=True)
+    nl, ns = refresh_flags()
+    print(f"tracker flags: {nl} companies with histories, {ns} listed" if nl else "tracker flags: kept the saved copy", flush=True)
     sc = screener()
     longrows = load_rows("long")
     ext = jl(EXTRACTS, {}) or {}
