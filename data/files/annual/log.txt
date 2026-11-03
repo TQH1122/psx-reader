@@ -1,32 +1,3 @@
-pages ar_gpnsu_oj 0s
-pages ar_3zwecse8 5s
-pages ar_l3fgmw8f 0s
-pages ar_zu56ac7l 2s
-pages ar_3_ctju3a 31s
-pages ar_oe0rrui_ 4s
-pages ar_pjaadvsb 3s
-pages ar_ljibkam1 0s
-pages ar_cti6zej7 0s
-pages ar_19jj5jv9 0s
-pages ar_7zdpqbqf 3s
-pages ar__ocp0tcn 0s
-pages ar_4rdmnii2 0s
-pages ar_vkyjtk76 0s
-pages ar_yrvai5y_ 1s
-pages ar_cgcz_nmg 0s
-pages ar_bljfst1r 0s
-pages ar_96vf_7sf 1s
-pages ar_pjq5p9x4 15s
-pages ar_ld1x0iws 24s
-pages ar_klc55qkl 3s
-pages ar_aofd4_8p 1s
-pages ar_33zbyc14 2s
-pages ar_flgsit7g 3s
-pages ar_3wv2z99t 6s
-pages ar_a1va5oiu 3s
-pages ar_qkfb8kio 0s
-pages ar_hw7bbg1x 2s
-pages ar_cw0ufx_q 0s
 pages ar_zepiim9g 27s
 pages ar_vlja9qcr 3s
 pages ar_qut6dapc 20s
@@ -298,3 +269,32 @@ pages ar_xalxzpz2 0s
 pages ar_8z3ghqvc 0s
 done: read 0 annual reports (0 audit re-reads), 0 skipped, about 445 still to read; models used: gemini-3.6-flash 1, gemini-3.1-flash-lite 1; resting until tomorrow: 20 models
 guard: this run $0.000 for 0 reports; last day $1.76 for 701; credit $0.50
+tracker flags: 543 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 501 company years flagged: 321 to re-read, 69 re-read, 73 waiting for a first read, 38 no usable report
+openrouter: paid models off (credit left $0.50)
+pages ar_7an5u5ry 0s
+pages ar_t5ouwsvl 0s
+pages ar_scbt5gcf 0s
+pages ar_hj57c2ll 0s
+pages ar_iq6nnhqe 0s
+pages ar_vdm7i942 0s
+pages ar_c4y2ixoy 0s
+pages ar_ae850vnh 2s
+pages ar_popv335_ 5s
+pages ar_gqkbgbyb 0s
+pages ar_7r0lkcg1 1s
+pages ar_2w94e7mk 3s
+pages ar_77dm4v57 5s
+pages ar_4_0ankja 23s
+pages ar_mgtjlznt 0s
+pages ar_o__d5z2t 9s
+pages ar_sy4pdowz 5s
+pages ar_zpa1oj3q 1s
+pages ar_lbycv5dy 6s
+pages ar_95ijtf7z 0s
+pages ar_1hh65vgo 4s
+pages ar_qii_zbtj 0s
+pages ar_93fodga9 7s
+done: read 2 annual reports (2 audit re-reads), 0 skipped, about 441 still to read; models used: gemini-3.6-flash 1, gemini-3.5-flash-lite 2, openai/gpt-oss-120b 1; resting until tomorrow: 20 models
+guard: this run $0.000 for 2 reports; last day $1.76 for 703; credit $0.50
