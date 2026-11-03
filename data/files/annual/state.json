@@ -12639,5 +12639,2915 @@
 "reread": [
 2022
 ]
+},
+"web:BTL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:UPFL:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:POWER:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:DNCC:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:DNCC:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:DNCC:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:FML:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:ICL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 12
+},
+"web:INDU:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company"
+},
+"web:FLYNG:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:GADT:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 18,
+"reread": [
+2010
+]
+},
+"web:EXIDE:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SNGP:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:PAEL:2022": {
+"at": "2026-11-03",
+"done": true,
+"n": 28,
+"reread": [
+2022
+]
+},
+"web:ICL:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 37,
+"reread": [
+2012
+]
+},
+"web:PCAL:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:AKDSL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 27
+},
+"web:SPL:2027": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:GVGL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Revenue from contracts with customers - net"
+},
+"web:EXIDE:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:PRET:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 45
+},
+"web:BTL:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BHANERO TEXTILE MILLS LIMITED (names AATM)"
+},
+"web:DSL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:EXIDE:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 6,
+"reread": [
+2018
+],
+"tries": 1,
+"rev": 4,
+"why": "not annual accounts: key financial statements (profit and loss, balance sheet, cash flow) are missing"
+},
+"web:DSL:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:PTL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:SNGP:2007": {
+"at": "2026-11-03",
+"done": true,
+"n": 16
+},
+"web:PRET:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:EXIDE:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:EXIDE:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SHEZ:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Always farm fresh"
+},
+"web:SNGP:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 16
+},
+"web:PTL:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Atlas Honda Limited (names ATBA)"
+},
+"web:ZIL:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name and other required details not found in provided pages"
+},
+"web:MERIT:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts (interim statements)"
+},
+"web:ALAC:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:FZCM:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:FZCM:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:EXIDE:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: PAKISTAN LIMITED"
+},
+"web:STPL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 25
+},
+"web:SPL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 4
+},
+"web:POWER:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:MERIT:2023": {
+"at": "2026-11-03",
+"done": true,
+"n": 22,
+"reread": [
+2023
+]
+},
+"web:DSL:2015": {
+"at": "2026-11-03",
+"done": true,
+"n": 13
+},
+"web:CLOV:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 37
+},
+"web:POML:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ITTEFAQ:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:ITTEFAQ:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:PTL:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Lotte Chemical Pakistan Limited (names GCIL)"
+},
+"web:ZIL:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Feriel Ali Mehdi"
+},
+"web:SHEZ:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Company name not printed on this page"
+},
+"web:SIEM:2023": {
+"at": "2026-11-03",
+"done": true,
+"n": 28,
+"reread": [
+2023
+]
+},
+"web:STPL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 10
+},
+"web:SMCPL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:STPL:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:DSL:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:DSL:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:PAEL:2020": {
+"at": "2026-11-03",
+"done": true,
+"n": 22,
+"reread": [
+2020
+]
+},
+"web:BTL:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BHANERO TEXTILE MILLS LIMITED (names AATM)"
+},
+"web:SPL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:DSL:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 10
+},
+"web:SMCPL:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BSS"
+},
+"web:AMTEX:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Javed Ali Peerbhoy (Private) Limited"
+},
+"web:FDPL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:UDPL:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Annual Report 2016"
+},
+"web:GLAXO:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: GSK"
+},
+"web:HBL:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:DSL:2007": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:FZCM:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Cherat Cement Company Limited (names ACPL)"
+},
+"web:UDPL:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:AMTEX:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Gul Ahmed Textile Mills Limited (names AATM)"
+},
+"web:UDPL:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:DADX:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 22
+},
+"web:MTL:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 27
+},
+"web:AMTEX:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:LCI:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ICI Pakistan Limited (names ICI)"
+},
+"web:DADX:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Company name not found in provided pages"
+},
+"web:PNSC:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:FZCM:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: unknown"
+},
+"web:ILP:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: PLC"
+},
+"web:SRVI:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:PAEL:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 8
+},
+"web:FZCM:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Fatima Energy Limited (names ALTN)"
+},
+"web:MERIT:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Iqbal Ali Lakhani"
+},
+"web:FZCM:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:CNERGY:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:DGKC:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (504)"
+},
+"web:FZCM:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ICIBL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:PKGS:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:PSO:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Attock Petroleum Limited (names ACPL)"
+},
+"web:ICIBL:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 17,
+"reread": [
+2011
+]
+},
+"web:PSO:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:PNSC:2015": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:ILP:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan Stock Exchange (names DOMF)"
+},
+"web:SIEM:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:AHCL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:DADX:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Lawrencepur Limited (names DAWH)"
+},
+"web:HICL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 8,
+"reread": [
+2016
+]
+},
+"web:PKGS:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 27
+},
+"web:AHCL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company not explicitly named in provided text"
+},
+"web:AHCL:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:ISIL:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Bawany Air Products Limited (names BAPL)"
+},
+"web:ZIL:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: company name exactly as printed"
+},
+"web:SRVI:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:ISIL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:AIRLINK:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:PKGS:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 23
+},
+"web:ZIL:2007": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:BTL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: FAISAL SPINNING MILLS LIMITED (names CLOUD)"
+},
+"web:PNSC:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 44
+},
+"web:AIRLINK:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: "
+},
+"web:ISIL:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:HINOON:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 21
+},
+"web:PSO:2024": {
+"at": "2026-11-03",
+"done": true,
+"n": 12
+},
+"web:THALL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:THALL:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ISIL:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:HINOON:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:CNERGY:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:DGKC:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (504)"
+},
+"web:DADX:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company name not explicitly stated in text extracts, but bas (names BERG)"
+},
+"web:HBL:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: PLC"
+},
+"web:LCI:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ICI Pakistan Limited (names ICI)"
+},
+"web:HINOON:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:PSO:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: The provided pages contain only horizontal and vertical percentage analysis rati"
+},
+"web:PNSC:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 42
+},
+"web:HINOON:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:ISIL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:DADX:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Sitara Chemical Industries Limited (names ABSON)"
+},
+"web:HINOON:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MTL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:CNERGY:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BYCO PETROLEUM PAKISTAN LIMITED (names APL)"
+},
+"web:PSO:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:MTL:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 9
+},
+"web:NICL:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Only horizontal and vertical analysis percentages are provided, not financial fi"
+},
+"web:HBL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 33
+},
+"web:BIPL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ILP:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Engro Corporation Limited (names EFERT)"
+},
+"web:LCI:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ICI Pakistan Limited (names ICI)"
+},
+"web:JVDC:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated explicitly on pages"
+},
+"web:MTL:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 20
+},
+"web:ISIL:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:DADX:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not Stated"
+},
+"web:FZCM:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Nishat Chunian Limited (names NCL)"
+},
+"web:MTL:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:AGL:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company"
+},
+"web:SSGC:2027": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:SSGC:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:FZCM:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:FZCM:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:FZCM:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:INIL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:DLL:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 23
+},
+"web:PKGS:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:LCI:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ICI Pakistan Limited (names ICI)"
+},
+"web:NICL:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:PIBTL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 29
+},
+"web:NICL:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:NICL:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ISIL:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:NICL:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:NICL:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JSCL:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 16
+},
+"web:JSCL:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JSCL:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:DGKC:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (504)"
+},
+"web:HASCOL:2025": {
+"at": "2026-11-03",
+"done": true,
+"n": 22
+},
+"web:BIPL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:DLL:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Fauji Fertilizer Company Limited (names FATIMA)"
+},
+"web:ZIL:2006": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Zulfeqar Industries Limited (names ABSON)"
+},
+"web:HASCOL:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: INSPIRING ENERGY (names ALTN)"
+},
+"web:SSGC:2025": {
+"at": "2026-11-03",
+"done": true,
+"n": 1
+},
+"web:INIL:2015": {
+"at": "2026-11-03",
+"done": true,
+"n": 40
+},
+"web:GATM:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ASSURED GROUP LIMITED COMPANY (names SLGL)"
+},
+"web:SSGC:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:IGIHL:2008": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:SSGC:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:SSGC:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:SSGC:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:DADX:2003": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company Name"
+},
+"web:FEROZ:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts (interim statements)"
+},
+"web:MACTER:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:NCL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 13
+},
+"web:NCL:2015": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:GATM:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: MOHOMED BASHIR"
+},
+"web:ASL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:NCL:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:HBL:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:GATM:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:HBL:2007": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:PIBTL:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 7
+},
+"web:DLL:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 33
+},
+"web:DGKC:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (504)"
+},
+"web:EFUG:2023": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:ASL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Fauji Cement Company Limited (names ACPL)"
+},
+"web:GATM:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: unknown"
+},
+"web:PIBTL:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:EFUG:2022": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:ASL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:NICL:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:PKGS:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:CPHL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:PKGS:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:TREET:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:AGL:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company Name"
+},
+"web:PKGS:2008": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:GATM:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company R"
+},
+"web:NICL:2007": {
+"at": "2026-11-03",
+"done": true,
+"n": 23
+},
+"web:CNERGY:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BYCO PETROLEUM PAKISTAN LIMITED (names APL)"
+},
+"web:JSCL:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:GATI:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 27
+},
+"web:AGL:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Fauji Fertilizer Bin Qasim Limited (names FATIMA)"
+},
+"web:GGL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:AGL:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts (interim statements)"
+},
+"web:IDYM:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 31
+},
+"web:IDYM:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:IDYM:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:JSCL:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Mobex Limited"
+},
+"web:IDYM:2006": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:AGL:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:HBL:2006": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:PREMA:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 2
+},
+"web:AGL:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:SSGC:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 40
+},
+"web:SSGC:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:DGKC:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:EFUG:2021": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:CNERGY:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JSCL:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: MCB Bank Limited (names ABL)"
+},
+"web:PREMA:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Lucky Cement Limited (names ACPL)"
+},
+"web:CSAP:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: CSAPL"
+},
+"web:CNERGY:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Byco Petroleum Pakistan Limited (names APL)"
+},
+"web:HBL:2005": {
+"at": "2026-11-03",
+"done": true,
+"n": 31
+},
+"web:LOADS:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:MFL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 16
+},
+"web:HTL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:CNERGY:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: PLC"
+},
+"web:CSAP:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Engineering Value (names CECL)"
+},
+"web:HASCOL:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Packages Limited (names PKGS)"
+},
+"web:CSAP:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:MFL:2021": {
+"at": "2026-11-03",
+"done": true,
+"n": 22
+},
+"web:MFL:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:BERG:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:NCL:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 39
+},
+"web:WAVES:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:CSAP:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:HASCOL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 29
+},
+"web:WAVES:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:WAVES:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:WAVES:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:NCL:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:HASCOL:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:ANL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Nishat Chunian Limited (names NCL)"
+},
+"web:WAVES:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Singer Pakistan Limited (names SING)"
+},
+"web:ANL:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:ANL:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:CPHL:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company Name"
+},
+"web:BIPL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:WAVES:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Singer Pakistan Limited (names SING)"
+},
+"web:ANL:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:PIAHCLA:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:STL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 37
+},
+"web:HALEON:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:ASL:2015": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:ANL:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:EFUG:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 4
+},
+"web:EFUG:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 1
+},
+"web:EFUG:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:BIPL:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: PLC"
+},
+"web:EFUG:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 1
+},
+"web:WAVES:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Singer Pakistan Limited (names SING)"
+},
+"web:ANL:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 31
+},
+"web:DLL:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:EFUG:2008": {
+"at": "2026-11-03",
+"done": true,
+"n": 2
+},
+"web:SYM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: System Limited"
+},
+"web:AGL:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: PLC"
+},
+"web:WAVES:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:SYM:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: "
+},
+"web:ANL:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 10
+},
+"web:SYM:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SYM:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:BIPL:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Unknown"
+},
+"web:BML:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BML"
+},
+"web:ANL:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 35
+},
+"web:EFUG:2006": {
+"at": "2026-11-03",
+"done": true,
+"n": 4
+},
+"web:LOTCHEM:2007": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:BIPL:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:BIPL:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (200)"
+},
+"web:CNERGY:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: PLC"
+},
+"web:GATM:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 29
+},
+"web:BML:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 5
+},
+"web:LOTCHEM:2006": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Waqar A Malik"
+},
+"web:BIPL:2007": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: N/A"
+},
+"web:LOTCHEM:2005": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:WAFI:2007": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ISL:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (200)"
+},
+"web:PKGS:2004": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:ANL:2007": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:JSCL:2006": {
+"at": "2026-11-03",
+"done": true,
+"n": 16
+},
+"web:HALEON:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: GlaxoSmithKline Consumer Healthcare Pakistan Limited (names CWHC)"
+},
+"web:PKGS:2001": {
+"at": "2026-11-03",
+"done": true,
+"n": 12
+},
+"web:HASCOL:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 12
+},
+"web:TRG:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:BML:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 15
+},
+"web:PKGS:2000": {
+"at": "2026-11-03",
+"done": true,
+"n": 13
+},
+"web:MUREB:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:NPL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:CNERGY:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:GATM:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: The Company"
+},
+"web:NPL:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: N/A"
+},
+"web:PSYL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:PSEL:2015": {
+"at": "2026-11-03",
+"done": true,
+"n": 6
+},
+"web:PIOC:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:KAPCO:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:KPUS:2024": {
+"at": "2026-11-03",
+"done": true,
+"n": 3
+},
+"web:KPUS:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ANL:2004": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:NCL:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:CNERGY:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Byco Petroleum Pakistan Limited (names APL)"
+},
+"web:FCL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 22
+},
+"web:SITC:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:NCPL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ANNUAL REPORT 2026"
+},
+"web:TICL:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: "
+},
+"web:CNERGY:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Bosicor Pakistan Limited"
+},
+"web:PSEL:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 25
+},
+"web:NCPL:2020": {
+"at": "2026-11-03",
+"done": true,
+"n": 10
+},
+"web:NCL:2007": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:KOHC:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Mughal Iron & Steel Industries Limited (names ABSON)"
+},
+"web:CNERGY:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Bosicor Pakistan Limited"
+},
+"web:NCL:2001": {
+"at": "2026-11-03",
+"done": true,
+"n": 16
+},
+"web:NCL:2000": {
+"at": "2026-11-03",
+"done": true,
+"n": 19
+},
+"web:PSEL:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 12
+},
+"web:BAPL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 20
+},
+"web:TICL:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan Sugar Mills Limited (names AABS)"
+},
+"web:ZAHID:2025": {
+"at": "2026-11-03",
+"done": true,
+"n": 2
+},
+"web:BML:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BankIslami Pakistan Limited (names BIPL)"
+},
+"web:APL:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: not stated"
+},
+"web:ASL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:ASL:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:PSEL:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Murtaza Hashwani"
+},
+"web:PSYL:2024": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:TGL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Nishat Chunian Limited (names NCL)"
+},
+"web:PKGP:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:AMBL:2022": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:MCBIM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:PSYL:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Company name not found in provided pages"
+},
+"web:TICL:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Chashma Sugar Mills Limited (names AABS)"
+},
+"web:AMBL:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: insufficient data to extract required financial figures"
+},
+"web:MSOT:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:NCPL:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 15
+},
+"web:MSOT:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:PSYL:2021": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:MSOT:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:CEPB:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:MSOT:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:MSOT:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:TGL:2008": {
+"at": "2026-11-03",
+"done": true,
+"n": 3
+},
+"web:PSYL:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 10
+},
+"web:TATM:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:BIPL:2006": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:PSYL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:GEMMEL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:AABS:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company name not explicitly stated in text provided"
+},
+"web:BIPL:2005": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: company name not provided in the given pages"
+},
+"web:SEPL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: No financial statements (statement of profit or loss, balance sheet, or cash flo"
+},
+"web:PSYL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 16
+},
+"web:TICL:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Hunza Sugar Mills Limited (names AABS)"
+},
+"web:CEPB:2006": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Lakson Tobacco Company Limited (names KHTC)"
+},
+"web:CRTM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Company name not found in provided pages"
+},
+"web:PSYL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 44
+},
+"web:ASTL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ASTL:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ASTL:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:GWLC:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:FCIBL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:BML:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:ZAHID:2023": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:TICL:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Sutlej Sugar Limited (names AABS)"
+},
+"web:BML:2007": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ATBA:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 22
+},
+"web:ZAHID:2022": {
+"at": "2026-11-03",
+"done": true,
+"n": 6
+},
+"web:FCIBL:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:TOMCL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:OTSU:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:OTSU:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:CEPB:2005": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:CRTM:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Naveed Amjad"
+},
+"web:TOMCL:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:FCIBL:2007": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:OTSU:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 35
+},
+"web:REWM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ARTOF THE TEXTILE (names AATM)"
+},
+"web:LSEVL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:TICL:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:CNERGY:2007": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Bosicor Pakistan Limited"
+},
+"web:GEMMEL:2025": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:TRIPF:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:TRIPF:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (403)"
+},
+"web:LSEVL:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:KSBP:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Not the annual accounts of a Pakistan Stock Exchange company"
+},
+"web:WAVES:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Singer Pakistan Limited (names SING)"
+},
+"web:ASTL:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:NRSL:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:AGHA:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:KSBP:2025": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:KPUS:2021": {
+"at": "2026-11-03",
+"done": true,
+"n": 6
+},
+"web:LPL:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: unknown"
+},
+"web:AGHA:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:BIFO:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Unknown"
+},
+"web:LSEVL:2024": {
+"at": "2026-11-03",
+"done": true,
+"n": 6
+},
+"web:KML:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:MEHT:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:MEHT:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:MEHT:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:MEHT:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:BECO:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 31
+},
+"web:BML:2006": {
+"at": "2026-11-03",
+"done": true,
+"n": 3
+},
+"web:QTECH:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ITANZ:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 11
+},
+"web:AGIC:2027": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:AGIC:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:MEHT:2021": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:MEHT:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:CRTM:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not Specified"
+},
+"web:JSCL:2003": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Company Name"
+},
+"web:CSAP:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pak Elektron Limited (names GEMPAPL)"
+},
+"web:BAFS:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not Stated"
+},
+"web:HGFA:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Provided pages contain only cash flow details for sub‑funds; no complete profit "
+},
+"web:TATM:2024": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:MEHT:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 2
+},
+"web:LIVEN:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:IBLHL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 39
+},
+"web:LIVEN:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:TATM:2022": {
+"at": "2026-11-03",
+"done": true,
+"n": 1
+},
+"web:FRCL:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "year end not readable"
+},
+"web:KOSM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:FASM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:FASM:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:FASM:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:FECTC:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 41
+},
+"web:BAFS:2024": {
+"at": "2026-11-03",
+"done": true,
+"n": 9
+},
+"web:MACFL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 20
+},
+"web:CSAP:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:FASM:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BHANERO TEXTILE MILLS LIMITED (names AATM)"
+},
+"web:MACFL:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Maqbool Elahi (names ELCM)"
+},
+"web:PAKQATAR:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 8
+},
+"web:ASTL:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:TATM:2021": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:BAFS:2023": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:ADMM:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 3
+},
+"web:WAVESAPP:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:BAFS:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:BAFS:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:WAVESAPP:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:BAFS:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:BAFS:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:KPUS:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:BAFS:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:WAVESAPP:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:ITANZ:2025": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:ITANZ:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ITANZ:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:KOHE:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 20
+},
+"web:ELSM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: NAGINA COTTON MILLS LTD. (names BCML)"
+},
+"web:ITANZ:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ZAHUR COTTON MILLS LIMITED (names BCML)"
+},
+"web:SUTM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: INDUS DYEING & MANUFACTURING COMPANY LIMITED (names IDYM)"
+},
+"web:SURC:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan Stock Exchange Limited (names DOMF)"
+},
+"web:SSOM:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:WAVESAPP:2022": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:CHAS:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:ELSM:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: NAGINA COTTON MILLS LTD. (names BCML)"
+},
+"web:SUTM:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: INDUS DYEING & MANUFACTURING COMPANY LIMITED (names IDYM)"
+},
+"web:WAVESAPP:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:BAPL:2024": {
+"at": "2026-11-03",
+"done": true,
+"n": 12
+},
+"web:BAPL:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:CHAS:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:WTL:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan Telecommunication Company Limited (names PTC)"
+},
+"web:BAPL:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:BAPL:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"web:GRR:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:GRR:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:GRR:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:PIM:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:WAVESAPP:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:WAVESAPP:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:WAVESAPP:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:PIM:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:MEHT:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:PIM:2017": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:BECO:2024": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:SZTM:2026": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Bannu Woollen Mills Limited (names BNWM)"
+},
+"web:MEHT:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:CSAP:2008": {
+"at": "2026-11-03",
+"done": true,
+"n": 31
+},
+"web:UBDL:2026": {
+"at": "2026-11-03",
+"done": true,
+"n": 29
+},
+"web:KPUS:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:ELSM:2024": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: NAGINA GROUP (names NAGC)"
+},
+"web:SUTM:2017": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: INDUS DYEING & MANUFACTURING COMPANY LIMITED (names IDYM)"
+},
+"web:SURC:2025": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: ANNUAL REPORT 2025"
+},
+"web:WAVESAPP:2016": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: SINGER PAKISTAN LIMITED (names SING)"
+},
+"web:FASM:2019": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: BHANERO TEXTILE MILLS LIMITED (names AATM)"
+},
+"web:CRTM:2023": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Nishat Chunian Limited (names NCL)"
+},
+"web:KCL:2026": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "not annual accounts: Only summary page provided, missing full financial statements and company name d"
+},
+"web:PAKQATAR:2013": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Dawood Wakalat Takaful Limited (names DAWH)"
+},
+"web:LSEVL:2022": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Pakistan Stock Exchange Limited (names DOMF)"
+},
+"web:WTL:2007": {
+"at": "2026-11-03",
+"done": true,
+"n": 39
+},
+"web:CHAS:2023": {
+"at": "2026-11-03",
+"done": true,
+"n": 39
 }
 }
