@@ -19022,5 +19022,507 @@
 "reread": [
 2023
 ]
+},
+"web:PAEL:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"khi:PAKRI:2025": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"khi:PAKRI:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:PAKRI:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (404)"
+},
+"khi:BAHL:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 28
+},
+"khi:FFC:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:EXIDE:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"khi:MARI:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 29
+},
+"khi:FCIBL:2020": {
+"at": "2026-11-03",
+"done": true,
+"n": 28
+},
+"khi:LUCK:2005": {
+"at": "2026-11-03",
+"done": true,
+"n": 27
+},
+"khi:MARI:2004": {
+"at": "2026-11-03",
+"done": true,
+"n": 12
+},
+"khi:MARI:2002": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"khi:BAFL:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"khi:FATIMA:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 35
+},
+"khi:FABL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Provided page is a note to financial statements (notes 37-38), not the primary f"
+},
+"khi:THALL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:PTC:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"web:HBL:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"khi:EFERT:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"drive:BAFL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 16
+},
+"khi:UBL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 27
+},
+"khi:ENGROH:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"web:SIEM:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 22
+},
+"web:PIAHCLA:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan International Airlines Corporation Limited (names ARPAK)"
+},
+"web:MTL:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"web:HUBC:2020": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"khi:LUCK:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 27
+},
+"khi:ATRL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 31
+},
+"web:PSO:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"khi:PSO:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:SYS:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: TPL Trakker Limited (names TDIL)"
+},
+"web:SYS:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:DCR:2026": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:DCR:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"khi:BAFL:2005": {
+"at": "2026-11-03",
+"done": true,
+"n": 2
+},
+"web:DCR:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts (interim statements)"
+},
+"khi:PTC:2003": {
+"at": "2026-11-03",
+"done": true,
+"n": 29
+},
+"khi:THALL:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pak Elektron Limited (names GEMPAPL)"
+},
+"web:PAEL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 40
+},
+"khi:FCIBL:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"khi:IBFL:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:ENGROH:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 4
+},
+"khi:POL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"khi:MLCF:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 29
+},
+"web:ILP:2022": {
+"at": "2026-11-03",
+"done": true,
+"n": 28
+},
+"web:DCR:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: Condensed interim financial statements of a REIT for the period ended September "
+},
+"web:ISIL:2020": {
+"at": "2026-11-03",
+"done": true,
+"n": 49
+},
+"web:CNERGY:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan Steel Mills Corporation (Ghotki) Limited (names ASL)"
+},
+"web:LCI:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ICI Pakistan Limited (names ICI)"
+},
+"web:HUBC:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:MTL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"khi:NATF:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 27
+},
+"web:DCR:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:PNSC:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 44
+},
+"khi:DGKC:2004": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"khi:FABL:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 22
+},
+"web:HBL:2008": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:SRVI:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 40
+},
+"khi:FCIBL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 31
+},
+"web:SIEM:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 25
+},
+"web:ISIL:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 14
+},
+"drive:ATRL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"khi:JDWS:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 28
+},
+"web:HINOON:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:PKGS:2006": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:CNERGY:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: PLC"
+},
+"web:LCI:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ICI Pakistan Limited (names ICI)"
+},
+"web:HUBC:2015": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:AHCL:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 33
+},
+"web:AHCL:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:AHCL:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"khi:JDWS:2006": {
+"at": "2026-11-03",
+"done": true,
+"n": 25
+},
+"web:JVDC:2018": {
+"at": "2026-11-03",
+"done": true,
+"n": 25
+},
+"khi:NATF:2007": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"khi:AHCL:2006": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"khi:DCR:2021": {
+"at": "2026-11-03",
+"done": true,
+"n": 22
+},
+"khi:AHCL:2004": {
+"at": "2026-11-03",
+"done": true,
+"n": 17
+},
+"web:LCI:2017": {
+"at": "2026-11-03"
+},
+"khi:HUBC:2007": {
+"at": "2026-11-03",
+"done": true,
+"n": 28
+},
+"web:PNSC:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 34
+},
+"web:CNERGY:2014": {
+"at": "2026-11-03"
+},
+"web:JVDC:2017": {
+"at": "2026-11-03"
+},
+"khi:NML:2017": {
+"at": "2026-11-03"
+},
+"web:ISIL:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 12
+},
+"khi:SIEM:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 28
+},
+"khi:DCR:2019": {
+"at": "2026-11-03"
+},
+"drive:MLCF:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 33
+},
+"khi:JDWS:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"khi:HUBC:2005": {
+"at": "2026-11-03"
+},
+"khi:NATF:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"khi:AHCL:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 26
+},
+"web:GHNI:2026": {
+"at": "2026-11-03"
+},
+"web:HINOON:2015": {
+"at": "2026-11-03",
+"done": true,
+"n": 36
+},
+"web:BML:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 10
+},
+"khi:DGKC:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 24
+},
+"web:PKGS:2002": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:FCIBL:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 22
+},
+"drive:KTML:2016": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Fauji Fertilizer Bin Qasim Limited (names FATIMA)"
 }
 }
