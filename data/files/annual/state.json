@@ -20524,11 +20524,15 @@
 },
 "web:UBDL:2020": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 29
 },
 "web:NAGC:2016": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "web:IGIIL:2025": {
 "at": "2026-11-03",
@@ -20569,7 +20573,9 @@
 },
 "web:SANSM:2018": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 33
 },
 "web:PIAHCLB:2025": {
 "at": "2026-11-03",
@@ -20585,7 +20591,10 @@
 },
 "web:ENGRO:2023": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:WTL:2005": {
 "at": "2026-11-03",
@@ -20601,7 +20610,9 @@
 },
 "khi:CSIL:2002": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 14
 },
 "web:JSCL:2007": {
 "at": "2026-11-03",
@@ -20623,11 +20634,16 @@
 },
 "web:PMPK:2025": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
 },
 "web:ICI:2022": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 10
 },
 "web:WAVES:2014": {
 "at": "2026-11-03",
@@ -20638,19 +20654,29 @@
 },
 "khi:PIOC:2020": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 40
 },
 "web:EFOODS:2018": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 25
 },
 "web:SELECT:2026": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "year end not readable"
 },
 "web:PIAHCLB:2024": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BSC"
 },
 "web:IGIIL:2017": {
 "at": "2026-11-03",
@@ -20658,11 +20684,16 @@
 },
 "web:SPSL:2026": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 30
 },
 "web:IPAK:2026": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:PREMA:2024": {
 "at": "2026-11-03",
@@ -20677,7 +20708,9 @@
 "n": 32
 },
 "web:CSAP:2016": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 34
 },
 "web:CHAS:2016": {
 "at": "2026-11-03",
@@ -20776,16 +20809,28 @@
 "why": "Company website download failed (404)"
 },
 "web:PREMA:2021": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:DHPL:2023": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: DAWOOD HERCULES CORPORATION LIMITED (names DAWH)"
 },
 "web:AKZO:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:SOYASUP:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ASAP Limited"
 },
 "web:RCML:2025": {
 "at": "2026-11-03",
@@ -20872,7 +20917,10 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "khi:SPEL:2019": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Synthetic Products Enterprises Limited (names FAEL)"
 },
 "web:TISL:2023": {
 "at": "2026-11-03",
@@ -20887,7 +20935,9 @@
 "why": "no figure passed the checks"
 },
 "web:CHAS:2015": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 17
 },
 "web:SINDM:2026": {
 "at": "2026-11-03",
@@ -20938,16 +20988,27 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "web:PECO:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:FTMM:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan State Oil Corporation Limited (names OGDC)"
 },
 "web:CTM:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:SINDM:2018": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 11
 },
 "web:GCWL:2026": {
 "at": "2026-11-03",
@@ -20956,7 +21017,10 @@
 "why": "not annual accounts (interim statements)"
 },
 "web:NNAR:2023": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Globe Residency REIT (names GRR)"
 },
 "web:GEMPACRA:2026": {
 "at": "2026-11-03",
@@ -20982,10 +21046,13 @@
 },
 "web:ANL:2005": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 2
 },
 "web:SASML:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: HBL PENSION HOLDINGS LIMITED (names ENGROH)"
 },
 "web:WHALE:2023": {
 "at": "2026-11-03",
@@ -20994,14 +21061,21 @@
 "why": "no statement pages found"
 },
 "khi:INIL:2002": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:DSIL:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 27
 },
 "web:SEL:2017": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 30
 },
 "web:GLAT:2014": {
 "at": "2026-11-03",
@@ -21016,7 +21090,9 @@
 "why": "no statement pages found"
 },
 "khi:SPL:2024": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 2
 },
 "web:LSECL:2025": {
 "at": "2026-11-03",
@@ -21026,13 +21102,19 @@
 },
 "web:JSCL:2004": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 16
 },
 "web:BBFL:2024": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 3
 },
 "khi:GGGL:2023": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 0
 },
 "web:SGPL:2026": {
 "at": "2026-11-03",
@@ -21041,7 +21123,9 @@
 "why": "no statement pages found"
 },
 "web:WAHDAT:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 24
 },
 "web:ZAL:2026": {
 "at": "2026-11-03",
@@ -21052,7 +21136,10 @@
 "waits": 1
 },
 "web:RCML:2013": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:JATM:2026": {
 "at": "2026-11-03",
@@ -21101,20 +21188,28 @@
 "waits": 1
 },
 "web:IMSL:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Sahre Capital (names AKDCL)"
 },
 "web:JOPP:2023": {
 "at": "2026-11-03"
 },
 "web:TRPOL:2021": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 28
 },
 "web:BRRG:2026": {
 "at": "2026-11-03",
 "waits": 1
 },
 "web:OBOY:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Sui Northern Gas Pipelines Limited (names SNGP)"
 },
 "web:SRR:2026": {
 "at": "2026-11-03",
@@ -21135,7 +21230,10 @@
 "why": "not annual accounts (interim statements)"
 },
 "web:LSECL:2024": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:SPAC1:2026": {
 "at": "2026-11-03",
@@ -21148,7 +21246,10 @@
 "waits": 1
 },
 "web:GEMBCEM:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:CASH:2025": {
 "at": "2026-11-03"
@@ -21160,13 +21261,18 @@
 "why": "file too large"
 },
 "khi:QUICE:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 22
 },
 "web:SRR:2023": {
 "at": "2026-11-03"
 },
 "web:HSM:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Tariq Corporation (names TCORP)"
 },
 "web:SPAC2:2026": {
 "at": "2026-11-03",
@@ -21175,7 +21281,10 @@
 "why": "no statement pages found"
 },
 "web:WHALE:2022": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:SPAC2:2025": {
 "at": "2026-11-03",
@@ -21184,14 +21293,19 @@
 "why": "no statement pages found"
 },
 "web:IML:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Sahre Capital (names AKDCL)"
 },
 "web:GEMBLUEX:2025": {
 "at": "2026-11-03",
 "waits": 1
 },
 "khi:HSPI:2022": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 26
 },
 "web:MUGHALC:2026": {
 "at": "2026-11-03",
@@ -21215,7 +21329,10 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "web:ORM:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: EMAN Management (Private) Limited (names DCM)"
 },
 "web:BLUEX:2025": {
 "at": "2026-11-03",
@@ -21228,7 +21345,9 @@
 "why": "no statement pages found"
 },
 "web:IDSM:2026": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 10
 },
 "web:GASF:2019": {
 "at": "2026-11-03",
@@ -21408,13 +21527,182 @@
 "waits": 1
 },
 "web:EWLA:2021": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: HBL PENSION FUND (names HGFA)"
 },
 "web:WYETH:2021": {
 "at": "2026-11-03",
 "waits": 1
 },
 "khi:UVIC:2024": {
+"at": "2026-11-03",
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:UBDL:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:PREMA:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:UBDL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 35
+},
+"web:CHAS:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:PMPK:2024": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:SANSM:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 42
+},
+"web:NAGC:2015": {
+"at": "2026-11-03"
+},
+"web:MSOT:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:UBDL:2014": {
+"at": "2026-11-03"
+},
+"web:PIOC:2014": {
+"at": "2026-11-03"
+},
+"web:IPAK:2024": {
+"at": "2026-11-03"
+},
+"web:SOYASUP:2025": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SANSM:2016": {
+"at": "2026-11-03"
+},
+"web:SOYASUP:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SOYASUP:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SOYASUP:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:CSAP:2006": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:PMPK:2018": {
+"at": "2026-11-03"
+},
+"khi:CHAS:2006": {
+"at": "2026-11-03"
+},
+"web:PREMA:2019": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:DHPL:2022": {
+"at": "2026-11-03"
+},
+"web:SOYASUP:2021": {
+"at": "2026-11-03"
+},
+"web:CSAP:2005": {
+"at": "2026-11-03"
+},
+"khi:QUICE:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:SPEL:2018": {
+"at": "2026-11-03"
+},
+"web:NNAR:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:CTM:2024": {
+"at": "2026-11-03"
+},
+"web:SASML:2024": {
+"at": "2026-11-03"
+},
+"web:RCML:2012": {
+"at": "2026-11-03"
+},
+"web:IML:2025": {
+"at": "2026-11-03"
+},
+"web:LSECL:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:QUICE:2021": {
+"at": "2026-11-03"
+},
+"web:FTMM:2023": {
+"at": "2026-11-03"
+},
+"khi:GGGL:2022": {
+"at": "2026-11-03"
+},
+"web:AKZO:2024": {
+"at": "2026-11-03"
+},
+"khi:SPL:2022": {
+"at": "2026-11-03"
+},
+"web:LSECL:2022": {
+"at": "2026-11-03"
+},
+"web:SINDM:2016": {
+"at": "2026-11-03"
+},
+"web:IMSL:2025": {
+"at": "2026-11-03"
+},
+"web:PECO:2025": {
 "at": "2026-11-03"
 }
 }
