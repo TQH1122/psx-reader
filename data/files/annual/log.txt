@@ -1,10 +1,3 @@
-pages ar_me4izrmq 1s
-pages ar_tcjt3qex 3s
-pages ar_itstr_us 3s
-pages ar_7j2854rp 1s
-pages ar_4l0l14t8 5s
-pages ar_ddvcie9v 1s
-pages ar_tvv79v4_ 1s
 pages ar_p_i0ez7_ 13s
 pages ar_pslj_k1y 7s
 pages ar_4_3e7at_ 5s
@@ -298,3 +291,10 @@ pages ar_p76qvih1 1s
 pages ar_hkuo39g3 1s
 done: read 99 annual reports (13 audit re-reads), 254 skipped, about 0 still to read; models used: openai/gpt-oss-120b 99, google/gemini-2.5-flash-lite 105, qwen/qwen3-235b-a22b-2507 34, deepseek/deepseek-chat-v3.1 30, gemini-3-flash-preview 1, gemini-3.5-flash-lite 39, gemini-3.1-flash-lite-preview 3, openai/gpt-oss-120b 1, nvidia/nemotron-3-ultra-550b-a55b:free 43, nvidia/nemotron-3.5-super-vl:free 6, xingchen-agi/xing4.0-29b-a4b:free 20; resting until tomorrow: 16 models
 guard: this run $0.294 for 99 reports; last day $2.72 for 927; credit $0.50
+sources: company websites give 3609 reports for 398 companies
+audit: 86 company years flagged: 0 to re-read, 51 re-read, 1 waiting for a first read, 34 no usable report
+openrouter: paid models on (credit left $0.50)
+pages ar_cdfrto3l 3s
+pages ar_4oms2sbe 3s
+done: read 1 annual reports (0 audit re-reads), 0 skipped, about 1 still to read; models used: openai/gpt-oss-120b 1, deepseek/deepseek-chat-v3.1 1, gemini-3.5-flash-lite 1, nvidia/nemotron-3-ultra-550b-a55b:free 1; resting until tomorrow: 9 models
+guard: this run $0.003 for 1 reports; last day $2.01 for 588; credit $0.50
