@@ -2185,7 +2185,10 @@
 "khi:MTL:2005": {
 "at": "2026-11-03",
 "done": true,
-"n": 11
+"n": 5,
+"reread": [
+2004
+]
 },
 "khi:SRVI:2007": {
 "at": "2026-11-01",
@@ -2848,7 +2851,8 @@
 "khi:ATRL:2003": {
 "at": "2026-11-03",
 "done": true,
-"n": 4
+"n": 4,
+"waits": 1
 },
 "khi:SAPT:2021": {
 "at": "2026-11-01",
@@ -3132,9 +3136,12 @@
 "n": 14
 },
 "khi:MCB:2003": {
-"at": "2026-11-01",
+"at": "2026-11-03",
 "done": true,
-"n": 8
+"n": 4,
+"reread": [
+2003
+]
 },
 "khi:PIBTL:2022": {
 "at": "2026-11-01",
@@ -7819,7 +7826,7 @@
 "n": 25
 },
 "khi:FPRM:2005": {
-"at": "2026-11-01",
+"at": "2026-11-03",
 "done": true,
 "n": 12
 },
@@ -12039,9 +12046,10 @@
 "why": "no figure passed the checks"
 },
 "khi:FIMM:2003": {
-"at": "2026-11-02",
+"at": "2026-11-03",
 "done": true,
-"n": 5
+"n": 5,
+"waits": 1
 },
 "drive:LSEFSL:2022": {
 "at": "2026-11-02",
@@ -23042,15 +23050,45 @@
 "at": "2026-11-03"
 },
 "web:BML:2016": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 10
 },
 "web:PSYL:2018": {
 "at": "2026-11-03"
 },
 "web:PKGS:2003": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "web:HBL:2009": {
+"at": "2026-11-03"
+},
+"khi:MCB:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:HASCOL:2016": {
+"at": "2026-11-03"
+},
+"web:BIPL:2009": {
+"at": "2026-11-03"
+},
+"web:SUTM:2006": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:AASM:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:IDYM:2015": {
 "at": "2026-11-03"
 }
 }
