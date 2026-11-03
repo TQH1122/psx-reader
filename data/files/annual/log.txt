@@ -1,38 +1,3 @@
-pages ar_qlbydg6v 0s
-pages ar_e0_leeh3 0s
-pages ar_hfjvbqck 0s
-pages ar_rnx3q_sy 0s
-pages ar_36mhyj_h 2s
-pages ar_otjb2cxg 0s
-pages ar_qk0e36cv 4s
-pages ar_tpbhwzya 0s
-pages ar_p79nvj99 0s
-pages ar_wxh_fcoa 0s
-pages ar_l00wpul4 0s
-pages ar_d1gl5g7v 0s
-pages ar_s9fgsf03 0s
-pages ar_hcra_az8 0s
-pages ar__787z7ow 0s
-pages ar_cdgk7fvf 0s
-pages ar_9otmdrxt 0s
-pages ar_x9r83363 0s
-pages ar_uyozmfc1 0s
-pages ar_7akr0t57 2s
-pages ar_cvt7ebdy 0s
-pages ar_dmlm69nb 0s
-pages ar_xhz9nubu 0s
-pages ar_xyo4z6dj 0s
-pages ar_71z3zt36 5s
-pages ar_nocc7hpk 0s
-pages ar_2lrpwa_5 0s
-pages ar_x86pctq6 0s
-pages ar_r13mdsj_ 19s
-pages ar_bitabsl_ 0s
-pages ar_np0mfsxf 0s
-pages ar__gc3df_n 0s
-pages ar___yiipfp 0s
-pages ar_is87enmt 0s
-pages ar_4msbibtj 0s
 pages ar_z6lera4m 0s
 pages ar_o55c740l 0s
 pages ar_82312avm 0s
@@ -298,3 +263,38 @@ pages ar_5qng4vjd 0s
 pages ar_bbb0hmfx 0s
 done: read 1 annual reports (2 audit re-reads), 4 skipped, about 480 still to read; models used: gemini-3.5-flash-lite 1, gemini-3.1-flash-lite-preview 2, xingchen-agi/xing4.0-29b-a4b:free 1, @cf/openai/gpt-oss-120b 79, @cf/meta/llama-3.3-70b-instruct-fp8-fast 71; resting until tomorrow: 17 models
 guard: this run $0.000 for 1 reports; last day $1.76 for 695; credit $0.50
+tracker flags: 538 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 546 company years flagged: 334 to re-read, 64 re-read, 103 waiting for a first read, 45 no usable report
+openrouter: paid models off (credit left $0.50)
+pages ar_2q2c04jc 0s
+pages ar_l_n0j3i5 0s
+pages ar_nicb1w1k 0s
+pages ar_vifgf5f5 4s
+pages ar_2bqxfv7a 5s
+pages ar_mq_18imz 0s
+pages ar_tnlsyrp7 0s
+pages ar_i1e1kwhk 0s
+pages ar_5btujgzw 0s
+pages ar_fve9xqnb 3s
+pages ar_2isyt5pz 0s
+pages ar_fw9jz5cg 0s
+pages ar_roypdaop 7s
+pages ar_hyxoe4uz 6s
+pages ar_lq8ka6xp 9s
+pages ar_2_0rvu7p 6s
+pages ar_imk3wm3m 6s
+pages ar_u21lefre 17s
+pages ar_thlwrmea 0s
+pages ar_kk75llxf 7s
+pages ar_3wqxoigw 2s
+pages ar_dl3vq9xz 5s
+pages ar_djf75e73 2s
+pages ar_4ds63uxb 1s
+pages ar_4vnemdgy 0s
+pages ar_fcbgrrvf 4s
+pages ar_2z6n3nod 1s
+pages ar_67qj3x1d 0s
+pages ar_55p42mb1 5s
+done: read 2 annual reports (4 audit re-reads), 2 skipped, about 476 still to read; models used: gemini-3-flash-preview 3, gemini-3.5-flash-lite 4, gemini-3.1-flash-lite 1, gemini-3.1-flash-lite-preview 1, openai/gpt-oss-120b 1; resting until tomorrow: 20 models
+guard: this run $0.000 for 2 reports; last day $1.76 for 697; credit $0.50

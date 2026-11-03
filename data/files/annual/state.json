@@ -2027,7 +2027,13 @@
 "at": "2026-11-03",
 "done": true,
 "n": 8,
-"waits": 1
+"waits": 1,
+"reread": [
+2011
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:MLCF:2024": {
 "at": "2026-11-01",
@@ -4400,7 +4406,13 @@
 "at": "2026-11-03",
 "done": true,
 "n": 2,
-"waits": 1
+"waits": 1,
+"reread": [
+2006
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:BERG:2016": {
 "at": "2026-11-01",
@@ -22722,7 +22734,10 @@
 "at": "2026-11-03",
 "done": true,
 "n": 30,
-"waits": 2
+"waits": 2,
+"reread": [
+2013
+]
 },
 "khi:PAKT:2004": {
 "at": "2026-11-03",
@@ -22868,7 +22883,10 @@
 "at": "2026-11-03",
 "waits": 1,
 "done": true,
-"n": 30
+"n": 10,
+"reread": [
+2018
+]
 },
 "web:SZTM:2009": {
 "at": "2026-11-03",
@@ -22972,5 +22990,8 @@
 "khi:SLCL:2006": {
 "at": "2026-11-03",
 "waits": 1
+},
+"khi:PPL:2005": {
+"at": "2026-11-03"
 }
 }
