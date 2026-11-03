@@ -846,6 +846,10 @@ def read_one(job, readers, sc, work):
     if sum(1 for j in allj if j.get("skip")) >= 2 and len(usable()) < 2:
         return {"skip": "not annual accounts: " + str(next(j for j in allj if j.get("skip")).get("skip"))[:80]}
     if len(usable()) < 2:
+        if audit and not [r for r in readers if r.name not in reads and r.name not in failed and r.name not in before]:
+            # every model has read or failed this report: no fresh pair can ever settle it, so close the re-read
+            # with a reason instead of retrying it every run (the year stays empty, as the audit decided)
+            return {"skip": "audit: no fresh model left to settle the disagreement"}
         return {"wait": "fewer than two models gave a real read", "spent": spent[0]}
     firsts = [v["j"] for v in usable()]
     fs = [facts(j, nums, cons, sumb, rows) for j in firsts]
@@ -1090,7 +1094,12 @@ def main():
             paid = [r for r in readers if getattr(r, "paid", False)]
             free = [r for r in readers if not getattr(r, "paid", False)]
             rot = lambda L: L[k % len(L):] + L[:k % len(L)] if L else []
-            if paid and (k % 3 or not any(not r.out for r in free)):
+            if len(job) > 8:
+                # an audit re-read needs two models that never read this report: offer every model, free ones first
+                # (3 Nov 2026: re-reads always landed in slots 1 and 2, so only the 4 paid models were ever offered;
+                # once those had all read a report, its re-read waited forever and was retried every run)
+                order = rot(free) + paid
+            elif paid and (k % 3 or not any(not r.out for r in free)):
                 order = paid[:2] + rot(paid[2:])
             else:
                 order = rot(free)
