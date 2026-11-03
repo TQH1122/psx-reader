@@ -1,9 +1,3 @@
-done: read 61 annual reports (61 audit re-reads), 0 skipped, about 0 still to read; models used: openai/gpt-oss-120b 1
-guard: this run $0.001 for 61 reports; last day $0.83 for 464; credit $2.40
-audit: 97 company years flagged: 61 to re-read, 0 re-read, 0 waiting for a first read, 36 no usable report
-openrouter: paid models on (credit left $2.40)
-pages ar__27r2at7 0s
-pages ar_otkjprxl 0s
 pages ar_s1yftya3 3s
 pages ar_bdobo8gw 5s
 pages ar_phwl5nyc 1s
@@ -296,5 +290,11 @@ audit: 73 company years flagged: 4 to re-read, 33 re-read, 0 waiting for a first
 openrouter: paid models on (credit left $2.25)
 pages ar_e0fqrzat 0s
 pages ar_u0dz4h3u 14s
+done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: 
+guard: this run $0.000 for 0 reports; last day $0.97 for 520; credit $2.25
+audit: 73 company years flagged: 4 to re-read, 33 re-read, 0 waiting for a first read, 36 no usable report
+openrouter: paid models on (credit left $2.25)
+pages ar_3hsgaakv 0s
+pages ar_mtfkysni 14s
 done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: 
 guard: this run $0.000 for 0 reports; last day $0.97 for 520; credit $2.25
