@@ -21205,7 +21205,9 @@
 "why": "company name does not match: Sahre Capital (names AKDCL)"
 },
 "web:JOPP:2023": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 30
 },
 "web:TRPOL:2021": {
 "at": "2026-11-03",
@@ -21267,7 +21269,8 @@
 "why": "no figure passed the checks"
 },
 "web:CASH:2025": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"waits": 1
 },
 "web:EWLA:2026": {
 "at": "2026-11-03",
@@ -21281,7 +21284,9 @@
 "n": 22
 },
 "web:SRR:2023": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 4
 },
 "web:HSM:2025": {
 "at": "2026-11-03",
@@ -21335,11 +21340,16 @@
 },
 "web:GLAT:2013": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
 },
 "web:TCORP:2025": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 28
 },
 "web:HACC:2021": {
 "at": "2026-11-03",
@@ -21355,7 +21365,9 @@
 },
 "web:BLUEX:2025": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 32
 },
 "web:LSEPL:2026": {
 "at": "2026-11-03",
@@ -21370,7 +21382,9 @@
 },
 "web:GASF:2019": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 12
 },
 "web:LSEPL:2025": {
 "at": "2026-11-03",
@@ -21419,7 +21433,10 @@
 },
 "web:DMC:2026": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Corporation Limited"
 },
 "web:JPGL:2016": {
 "at": "2026-11-03",
@@ -21517,7 +21534,9 @@
 },
 "web:FDIBL:2023": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 21
 },
 "web:ADOS:2022": {
 "at": "2026-11-03"
@@ -21684,7 +21703,9 @@
 },
 "web:CSAP:2005": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 35
 },
 "khi:QUICE:2022": {
 "at": "2026-11-03",
@@ -21769,7 +21790,10 @@
 },
 "web:IMSL:2025": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
 },
 "web:PECO:2025": {
 "at": "2026-11-03",
@@ -21836,11 +21860,15 @@
 },
 "web:SANSM:2014": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "web:GEMBCEM:2025": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "web:EWLA:2020": {
 "at": "2026-11-03",
@@ -21855,10 +21883,14 @@
 },
 "web:BGL:2006": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 6
 },
 "web:TRPOL:2020": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 0
 },
 "web:SASML:2022": {
 "at": "2026-11-03",
@@ -21961,7 +21993,10 @@
 },
 "web:SASML:2020": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
 },
 "web:LSECL:2021": {
 "at": "2026-11-03",
@@ -21982,10 +22017,15 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "web:UVIC:2024": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:CTM:2014": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 28
 },
 "khi:QUICE:2017": {
 "at": "2026-11-03",
@@ -22041,7 +22081,10 @@
 "why": "Company website download failed (404)"
 },
 "web:OBOY:2024": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Sui Northern Gas Pipelines Limited (names SNGP)"
 },
 "web:IDSM:2016": {
 "at": "2026-11-03",
@@ -22073,13 +22116,21 @@
 "n": 14
 },
 "web:LSECL:2018": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 6
 },
 "web:HSM:2024": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Tariq Corporation (names TCORP)"
 },
 "web:DHPL:2020": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: DAWOOD HERCULES CORPORATION LIMITED (names DAWH)"
 },
 "web:GEMBLUEX:2020": {
 "at": "2026-11-03",
@@ -22088,27 +22139,348 @@
 "why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names GEMUNSL)"
 },
 "web:WHALE:2016": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Singer Pakistan Limited (names SING)"
 },
 "web:AKZO:2018": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:SPL:2019": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 29
 },
 "web:PMPK:2013": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
 },
 "web:EWLA:2018": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"done": true,
+"n": 0
 },
 "web:GEMBLUEX:2019": {
-"at": "2026-11-03"
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names GEMUNSL)"
 },
 "web:UBDL:2012": {
 "at": "2026-11-03",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 16
+},
+"web:BLUEX:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:BLUEX:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:GLAT:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not Stated"
+},
+"web:CSAP:2004": {
+"at": "2026-11-03",
+"done": true,
+"n": 12
+},
+"web:IMSL:2024": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
+},
+"web:AKZO:2017": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:WHALE:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Singer Pakistan Limited (names SING)"
+},
+"web:DHPL:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:SANSM:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:GEMBLUEX:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names GEMUNSL)"
+},
+"web:EWLA:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JOPP:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:LSECL:2016": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:CSAP:2003": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:TCORP:2023": {
+"at": "2026-11-03",
+"done": true,
+"n": 38
+},
+"web:AKZO:2015": {
+"at": "2026-11-03",
+"done": true,
+"n": 20
+},
+"web:SASML:2019": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: not stated"
+},
+"web:SANSM:2012": {
+"at": "2026-11-03",
+"done": true,
+"n": 0
+},
+"web:PMPK:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:EWLA:2016": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:JOPP:2020": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SRR:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:CSAP:2002": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: not stated"
+},
+"web:IMSL:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not Stated"
+},
+"web:DHPL:2018": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"web:TCORP:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Husein Sugar Mills Limited (names AABS)"
+},
+"web:BLUEX:2021": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS LIMITED (names GEMUNSL)"
+},
+"web:PMPK:2011": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:WHALE:2014": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Bhanero Textile Mills Limited (names AATM)"
+},
+"web:AKZO:2013": {
+"at": "2026-11-03",
+"done": true,
+"n": 20
+},
+"web:SANSM:2010": {
+"at": "2026-11-03",
+"done": true,
+"n": 41
+},
+"web:OBOY:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:JOPP:2014": {
+"at": "2026-11-03",
+"done": true,
+"n": 10
+},
+"web:EWLA:2015": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:PMPK:2010": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:AKZO:2011": {
+"at": "2026-11-03",
+"done": true,
+"n": 32
+},
+"web:SANSM:2009": {
+"at": "2026-11-03",
+"done": true,
+"n": 30
+},
+"web:GEMBLUEX:2017": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names GEMUNSL)"
+},
+"web:HSM:2023": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Tariq Glass Industries Limited (names ABSON)"
+},
+"khi:UVIC:2023": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:JOPP:2012": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:CSAP:2001": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated in provided pages"
+},
+"web:IMSL:2022": {
+"at": "2026-11-03",
+"done": true,
+"n": 18
+},
+"web:PMPK:2009": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:OBOY:2022": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:DHPL:2017": {
+"at": "2026-11-03"
+},
+"web:TCORP:2016": {
+"at": "2026-11-03"
+},
+"web:AKZO:2009": {
+"at": "2026-11-03"
+},
+"web:WHALE:2013": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Singer Pakistan Limited (names SING)"
+},
+"web:SANSM:2008": {
+"at": "2026-11-03"
+},
+"web:UVIC:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:PMPK:2008": {
+"at": "2026-11-03",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:DMC:2025": {
+"at": "2026-11-03"
+},
+"web:IMSL:2016": {
+"at": "2026-11-03"
+},
+"web:HSM:2022": {
+"at": "2026-11-03"
+},
+"web:BLUEX:2020": {
+"at": "2026-11-03"
+},
+"web:GEMBLUEX:2016": {
+"at": "2026-11-03"
+},
+"web:JOPP:2011": {
+"at": "2026-11-03"
 }
 }
