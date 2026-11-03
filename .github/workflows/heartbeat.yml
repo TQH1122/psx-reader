@@ -36,6 +36,7 @@ jobs:
             -H "Accept: application/vnd.github+json" https://api.github.com/repos/TQH1122/psx-reader/actions/workflows/lane-jobs.yml/dispatches -d '{"ref":"main"}')
           [ "$code" = 204 ] && echo "restart permission: ok" || { echo "KEY PROBLEM: TRACKER_TOKEN cannot restart robots (GitHub answered $code). Add psx-reader with Actions read and write to it."; exit 1; }
       - name: Deploy to Cloudflare
+        if: ${{ !cancelled() }}   # install even while a key check fails, so each key is proved on its own
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_DEPLOY_TOKEN || secrets.CF_AI_TOKEN }}
           ACCOUNT_RAW: ${{ secrets.CF_ACCOUNT_ID }}
