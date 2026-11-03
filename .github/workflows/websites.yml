@@ -1,5 +1,5 @@
 # Website report finder (3 Nov 2026): finds full annual reports on the listed companies' own websites
-# (toolkit/websites.py; never PSX pages, whose terms forbid robots), so the reader gets consolidated statements and years KHI Stocks lacks. Started by the
+# (toolkit/websites.py; a PSX page only as a once per company fallback), so the reader gets consolidated statements and years KHI Stocks lacks. Started by the
 # report reader every half hour; it only visits sites not checked in the last 14 days, so most runs end at once.
 name: Website report finder
 on:

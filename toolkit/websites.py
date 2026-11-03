@@ -6,7 +6,8 @@ accounts, so group companies never got consolidated figures (625 company years),
 report online at all. This finds the full annual reports on the companies' own websites.
 
 For each listed company: its website, read from the first pages of its newest report on KHI Stocks (PSX's terms of
-use forbid robots, so PSX pages are never visited), then the site's investor, financial and
+use forbid robots; he accepted that risk on 3 Nov 2026, so each company's PSX page is read once as a fallback,
+and also gives its latest filed annual report), then the site's investor, financial and
 annual report pages (two levels at most), keeping PDF links that are plainly annual reports and reading the year
 from the link. It obeys each site's robots.txt, identifies itself honestly and waits between requests.
 A site is crawled again after 14 days; the whole sweep stops after the minutes given.
@@ -103,6 +104,36 @@ def website(tk, name, rid, years):
     return None
 
 
+PSX_LOCK, PSX_LAST = threading.Lock(), [0.0]
+
+
+def psx_page(tk):
+    """fallback when no annual report names the website (3 Nov 2026, his decision to accept PSX's terms risk): the
+    company's open PSX page, read once and kept. One page at a time, 4 seconds apart, like his other PSX robots.
+    Also returns its filed annual reports ("Transmission of Annual Report for the year ended ...")."""
+    with PSX_LOCK:
+        wait = 4 - (time.time() - PSX_LAST[0])
+        if wait > 0:
+            time.sleep(wait)
+        try:
+            _, _, s = get(f"https://dps.psx.com.pk/company/{urllib.parse.quote(tk)}")
+        except Exception:
+            return None, {}
+        finally:
+            PSX_LAST[0] = time.time()
+    m = re.search(r'WEBSITE</div>\s*<p>\s*<a href="([^"]+)"', s)
+    site = m.group(1).strip() if m else ""
+    site = None if not site or "psx.com.pk" in site else (site if site.startswith("http") else "http://" + site)
+    filed = {}
+    for r in re.findall(r"<tr[^>]*>(.*?)</tr>", s, re.S):
+        t = unescape(re.sub(r"<[^>]+>|\s+", " ", r))
+        y = re.search(r"annual report.{0,40}year ended\s+\w+\s+\d{1,2},?\s+(20\d\d)", t, re.I)
+        d = re.search(r'href="(/download/document/\d+\.pdf)"', r)
+        if y and d and not re.search(r"quarter|half|interim", t, re.I):
+            filed.setdefault(y.group(1), "https://dps.psx.com.pk" + d.group(1))
+    return site, filed
+
+
 def year_of(url, text):
     """the report's year from its link: 4 digits (2006 to next year), else 2 digits after 'annual' or 'AR'"""
     hay = f"{text} {urllib.parse.unquote(url.rsplit('/', 1)[-1])}"
@@ -189,13 +220,18 @@ def main():
         prev = co.get(tk) or {}
         k = khi.get(tk) or {}
         site = prev.get("site") or (website(tk, k.get("name", ""), k["id"], k.get("years") or []) if k.get("id") else None)
+        filed = {}
+        if not prev.get("psx"):
+            psite, filed = psx_page(tk)
+            site = site or psite
         found = crawl(tk, site, stop) if site else {}
+        found = {**filed, **found}   # the website's own copy first; PSX's filing where the site has none
         if stop() and not found:
             return   # cut off by the time limit: try this site again next run
         with lock:
             years = dict(prev.get("years") or {})
             years.update(found)   # a report found once stays known even if a later visit misses it
-            co[tk] = {"site": site, "at": now, "years": dict(sorted(years.items()))}
+            co[tk] = {"site": site, "at": now, "years": dict(sorted(years.items())), "psx": prev.get("psx") or now}
             done[0] += 1
             if done[0] % 25 == 0:
                 save(cat)
