@@ -5,7 +5,8 @@ KHI Stocks, where nearly every report read so far came from, often holds only a 
 accounts, so group companies never got consolidated figures (625 company years), and 1,915 company years had no
 report online at all. This finds the full annual reports on the companies' own websites.
 
-For each listed company: its website from its open PSX company page, then the site's investor, financial and
+For each listed company: its website, read from the first pages of its newest report on KHI Stocks (PSX's terms of
+use forbid robots, so PSX pages are never visited), then the site's investor, financial and
 annual report pages (two levels at most), keeping PDF links that are plainly annual reports and reading the year
 from the link. It obeys each site's robots.txt, identifies itself honestly and waits between requests.
 A site is crawled again after 14 days; the whole sweep stops after the minutes given.
@@ -43,19 +44,63 @@ def get(url, timeout=40, limit=3_000_000):
         return r.geturl(), ctype, r.read(limit).decode("utf-8", "ignore")
 
 
-def website(tk):
-    """the company's website as printed on its open PSX company page"""
+CAT = os.path.join(ROOT, "data", "files", "annual", "khi_catalogue.json")
+KHI = "https://www.khistocks.com/assets/annual_reports"
+NOT_SITE = re.compile(r"psx|secp|sbp|cdc|jamapunji|khistocks|brecorder|facebook|linkedin|twitter|youtube|instagram|"
+                      r"google|gmail|yahoo|hotmail|kpmg|pwc|deloitte|\bey\b|bdo|grantthornton|crowe|rsm|bakertilly|"
+                      r"famco|thk|corplink|vis|pacra|fbr|nadra|microsoft|adobe|w3", re.I)
+
+
+GENERIC = {"limited", "ltd", "company", "pakistan", "industries", "industry", "mills", "mill", "textile", "textiles",
+           "cement", "sugar", "power", "gas", "oil", "steel", "bank", "insurance", "fertilizer", "fertilizers", "refinery",
+           "motors", "chemicals", "chemical", "pharmaceuticals", "pharma", "spinning", "weaving", "corporation",
+           "holdings", "investments", "investment", "modaraba", "leasing", "energy", "foods", "paper", "board", "glass",
+           "engineering", "international", "group", "enterprises", "products", "services", "pipelines", "northern",
+           "southern", "national", "general", "united", "first", "new", "jute", "cotton", "silk", "fabrics", "synthetic"}
+
+
+def website(tk, name, rid, years):
+    """the company's website, read from the first and last pages of its newest annual report on KHI Stocks
+    (3 Nov 2026: PSX's terms forbid robots, so its company pages are not used)"""
+    import subprocess, tempfile
+    w = tempfile.mkdtemp()
     try:
-        _, _, s = get(f"https://dps.psx.com.pk/company/{urllib.parse.quote(tk)}")
-    except Exception:
-        return None
-    m = re.search(r'WEBSITE</div>\s*<p>\s*<a href="([^"]+)"', s)
-    if not m:
-        return None
-    u = m.group(1).strip()
-    if not u or "psx.com.pk" in u:
-        return None
-    return u if u.startswith("http") else "http://" + u
+        for y in sorted(years, reverse=True)[:5]:   # the newest file is often a bare extract; older full reports name the site
+            pdf = os.path.join(w, "r.pdf")
+            try:
+                req = urllib.request.Request(f"{KHI}/{rid}/{y}.pdf", headers={"User-Agent": UA})
+                with urllib.request.urlopen(req, timeout=120) as r, open(pdf, "wb") as f:
+                    f.write(r.read(60_000_000))
+            except Exception:
+                continue
+            info = subprocess.run(["pdfinfo", pdf], capture_output=True, text=True, errors="ignore").stdout
+            n = int((re.search(r"Pages:\s+(\d+)", info) or [0, 0])[1])
+            if not n:
+                continue
+            text = ""
+            for a, b in ((1, min(n, 8)), (max(1, n - 3), n)):
+                text += subprocess.run(["pdftotext", "-f", str(a), "-l", str(b), pdf, "-"], capture_output=True,
+                                       text=True, errors="ignore").stdout
+            text = re.sub(r"-\s*\n\s*", "-", text)   # "www.lucky-" at a line end, "cement.com" on the next
+            doms = [d.lower().rstrip(".") for d in re.findall(r"(?<![@\w.-])(?:https?://)?((?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:com|pk|net|org|biz|co)(?:\.pk)?)\b", text, re.I)]
+            doms = [d for d in doms if not NOT_SITE.search(d)]
+            if not doms:
+                continue
+            ws = [x for x in re.findall(r"[a-z]{2,}", name.lower()) if x not in ("the", "and", "of")]
+            key = next((x for x in ws if x not in GENERIC and len(x) >= 3), "")
+            initials = "".join(x[0] for x in ws if x not in ("limited", "ltd", "company", "co"))
+
+            def score(d):
+                label = d.removeprefix("www.").split(".")[0].replace("-", "")
+                return (bool(key) and key[:5] in label, len(initials) >= 2 and label.startswith(initials[:3]), doms.count(d))
+            best = max(set(doms), key=score)
+            sc = score(best)
+            if not (sc[0] or sc[1] or (sc[2] >= 3 and len(set(doms)) == 1)):
+                continue   # no domain plainly belongs to this company: better none than a wrong site
+            return "http://" + best
+    finally:
+        subprocess.run(["rm", "-rf", w])
+    return None
 
 
 def year_of(url, text):
@@ -129,6 +174,10 @@ def main():
     except Exception:
         cat = {"co": {}}
     co = cat.setdefault("co", {})
+    try:
+        khi = json.load(open(CAT)).get("co") or {}
+    except Exception:
+        khi = {}
     now = time.time()
     due = [t for t in tks if now - (co.get(t) or {}).get("at", 0) > REFRESH_DAYS * 86400]
     lock = threading.Lock()
@@ -138,7 +187,8 @@ def main():
         if stop():
             return
         prev = co.get(tk) or {}
-        site = prev.get("site") or website(tk)
+        k = khi.get(tk) or {}
+        site = prev.get("site") or (website(tk, k.get("name", ""), k["id"], k.get("years") or []) if k.get("id") else None)
         found = crawl(tk, site, stop) if site else {}
         if stop() and not found:
             return   # cut off by the time limit: try this site again next run

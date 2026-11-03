@@ -1,5 +1,5 @@
 # Website report finder (3 Nov 2026): finds full annual reports on the listed companies' own websites
-# (toolkit/websites.py), so the reader gets consolidated statements and years KHI Stocks lacks. Started by the
+# (toolkit/websites.py; never PSX pages, whose terms forbid robots), so the reader gets consolidated statements and years KHI Stocks lacks. Started by the
 # report reader every half hour; it only visits sites not checked in the last 14 days, so most runs end at once.
 name: Website report finder
 on:
@@ -20,6 +20,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: command -v pdftotext || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils; } > /dev/null 2>&1
       - name: Find annual reports on company websites
         timeout-minutes: 58
         run: python3 toolkit/websites.py 50
