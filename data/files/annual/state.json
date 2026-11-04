@@ -8151,9 +8151,10 @@
 "n": 28
 },
 "khi:BFMOD:2003": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
-"n": 8
+"n": 8,
+"waits": 1
 },
 "khi:DBSL:2007": {
 "at": "2026-11-01",
@@ -12163,9 +12164,15 @@
 "why": "no figure passed the checks"
 },
 "khi:NAGC:2007": {
-"at": "2026-11-02",
+"at": "2026-11-04",
 "done": true,
-"n": 4
+"n": 4,
+"reread": [
+2007
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:SHSML:2006": {
 "at": "2026-11-02",
@@ -13252,7 +13259,14 @@
 "khi:BFMOD:2005": {
 "at": "2026-11-04",
 "done": true,
-"n": 2
+"n": 2,
+"reread": [
+2004,
+2005
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:PRIB:2003": {
 "at": "2026-11-04",
@@ -15180,12 +15194,21 @@
 "web:EFUG:2011": {
 "at": "2026-11-04",
 "done": true,
-"n": 1
+"n": 1,
+"reread": [
+2011
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:EFUG:2010": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
-"n": 0
+"n": 0,
+"reread": [
+2010
+]
 },
 "web:BIPL:2012": {
 "at": "2026-11-03",
@@ -15194,9 +15217,12 @@
 "why": "company name does not match: PLC"
 },
 "web:EFUG:2009": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
-"n": 1
+"n": 1,
+"reread": [
+2009
+]
 },
 "web:WAVES:2011": {
 "at": "2026-11-03",
@@ -15215,9 +15241,15 @@
 "n": 26
 },
 "web:EFUG:2008": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
-"n": 2
+"n": 2,
+"reread": [
+2008
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:SYM:2026": {
 "at": "2026-11-03",
@@ -16823,7 +16855,8 @@
 "web:CHAS:2013": {
 "at": "2026-11-04",
 "done": true,
-"n": 23
+"n": 23,
+"waits": 1
 },
 "web:UBDL:2017": {
 "at": "2026-11-03",
@@ -21575,7 +21608,7 @@
 "n": 38
 },
 "web:EFUG:2007": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
 "n": 2
 },
@@ -23161,7 +23194,10 @@
 "web:NAGC:2014": {
 "at": "2026-11-04",
 "done": true,
-"n": 36
+"n": 21,
+"reread": [
+2013
+]
 },
 "web:CTM:2018": {
 "at": "2026-11-03",
@@ -25315,7 +25351,8 @@
 "web:BML:2011": {
 "at": "2026-11-04",
 "done": true,
-"n": 22
+"n": 22,
+"waits": 1
 },
 "web:ILTM:2025": {
 "at": "2026-11-04",
@@ -25347,7 +25384,10 @@
 "n": 16
 },
 "web:PECO:2007": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:DCTL:2020": {
 "at": "2026-11-04",
@@ -25361,30 +25401,100 @@
 "n": 0
 },
 "web:DMTX:2022": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"waits": 1
 },
 "web:DHPL:2010": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Hercules Chemicals Limited (names DAWH)"
 },
 "web:GEMUNSL:2024": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:AKZO:2004": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"done": true,
+"n": 2
 },
 "web:LSEPL:2016": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"waits": 1
 },
 "web:DCTL:2019": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: DADABHOY CEMENT INDUSTRIES LIMITED (names ABSON)"
 },
 "web:PSEL:2012": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"waits": 1
 },
 "web:UCAPM:2016": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"waits": 1
 },
 "web:ILTM:2015": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:AKZO:2003": {
+"at": "2026-11-04",
+"done": true,
+"n": 6
+},
+"web:DHPL:2009": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"web:AKZO:2001": {
+"at": "2026-11-04",
+"done": true,
+"n": 6
+},
+"web:AKZO:2000": {
+"at": "2026-11-04",
+"done": true,
+"n": 0
+},
+"web:DHPL:2008": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Hercules Chemicals Limited (names DAWH)"
+},
+"khi:NAGC:2006": {
+"at": "2026-11-04",
+"done": true,
+"n": 22
+},
+"web:DCTL:2018": {
+"at": "2026-11-04",
+"waits": 1
+},
+"web:GEMUNSL:2023": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:GEMUNSL:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:GEMUNSL:2021": {
+"at": "2026-11-04",
+"waits": 1
 }
 }
