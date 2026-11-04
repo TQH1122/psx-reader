@@ -1,13 +1,3 @@
-pages ar_l_srrosb 11s
-pages ar_zddubdk_ 2s
-pages ar_nl4ozqyy 1s
-pages ar_mn2mongt 13s
-pages ar_ab67dbl3 6s
-pages ar_t_jt2_29 7s
-pages ar_xvocxwcy 4s
-pages ar_1kla3llb 3s
-pages ar_25ot5v53 0s
-pages ar_vivsj0al 43s
 pages ar_2ieuz0f_ 5s
 pages ar_ez6i2bas 28s
 pages ar_cb58pxgv 5s
@@ -297,4 +287,14 @@ pages ar_dleu2vq3 9s
 pages ar_butelrz9 9s
 pages ar_k1j0srs_ 10s
 done: read 0 annual reports (0 audit re-reads), 0 skipped, about 11 still to read; models used: openai/gpt-oss-120b 1; resting until tomorrow: 10 models
+guard: this run $0.000 for 0 reports; last day $1.75 for 973; credit $0.50
+tracker flags: 549 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 437 company years flagged: 10 to re-read, 386 re-read, 1 waiting for a first read, 40 no usable report
+openrouter: paid models off (credit left $0.50)
+pages ar_jrosh60l 0s
+pages ar_rj_4oxo5 10s
+pages ar_0a7616yb 10s
+pages ar_0xftkmi2 12s
+done: read 0 annual reports (0 audit re-reads), 0 skipped, about 11 still to read; models used: ; resting until tomorrow: 10 models
 guard: this run $0.000 for 0 reports; last day $1.75 for 973; credit $0.50
