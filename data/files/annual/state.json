@@ -19363,9 +19363,16 @@
 "n": 11
 },
 "web:ARPAK:2009": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
-"n": 14
+"n": 14,
+"reread": [
+2008,
+2009
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:PASM:2019": {
 "at": "2026-11-03",
@@ -20073,9 +20080,15 @@
 "why": "company name does not match: Pakistan Stock Exchange (names DOMF)"
 },
 "web:FECM:2017": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
-"n": 12
+"n": 12,
+"reread": [
+2017
+],
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Crescent Modaraba Management Co. Ltd. (names AWWAL)"
 },
 "web:BFMOD:2016": {
 "at": "2026-11-03",
@@ -25573,10 +25586,16 @@
 "web:FECM:2018": {
 "at": "2026-11-04",
 "done": true,
-"n": 12
+"n": 6,
+"reread": [
+2018
+]
 },
 "web:DMTX:2021": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:ARPAK:2017": {
 "at": "2026-11-04",
@@ -25589,7 +25608,10 @@
 "n": 34
 },
 "web:GEMUNSL:2018": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:ARPAK:2016": {
 "at": "2026-11-04",
@@ -25629,6 +25651,27 @@
 "web:ARPAK:2010": {
 "at": "2026-11-04",
 "done": true,
-"n": 14
+"n": 14,
+"reread": [
+2010
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:GEMUNSL:2017": {
+"at": "2026-11-04",
+"done": true,
+"n": 0
+},
+"web:GEMUNSL:2016": {
+"at": "2026-11-04",
+"done": true,
+"n": 0
+},
+"web:FECM:2016": {
+"at": "2026-11-04",
+"done": true,
+"n": 10
 }
 }

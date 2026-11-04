@@ -1,26 +1,3 @@
-pages ar_3uys58zd 0s
-pages ar_5mfg0kwi 0s
-pages ar_wdk29kvl 0s
-pages ar_kv8r_y7h 0s
-pages ar_6pllo8pd 5s
-pages ar_6p564gup 13s
-pages ar_15smn31u 3s
-pages ar_tl2o1nxq 30s
-pages ar_8wd_93m3 20s
-pages ar_dyq7899u 4s
-pages ar_hbb2u4sf 9s
-pages ar_b4iqc0eb 3s
-pages ar_k69n0t48 9s
-pages ar__1hek9i3 33s
-pages ar_kkg2fv_8 0s
-pages ar_gf7pp6jb 4s
-pages ar_x3zs2bvv 0s
-pages ar_okrnddmj 2s
-pages ar_mcufvk9f 2s
-pages ar_amk0j3jt 9s
-pages ar_2_22forq 2s
-pages ar_bpuo6je6 2s
-pages ar_2bsqu53a 3s
 pages ar_l0fgpbvf 4s
 pages ar_d2f06it4 0s
 pages ar_3cvue7sh 3s
@@ -298,3 +275,26 @@ pages ar_ky7onolv 6s
 pages ar_ix_aw3_n 6s
 done: read 13 annual reports (3 audit re-reads), 0 skipped, about 21 still to read; models used: gemini-3.5-flash 1, gemini-3.5-flash-lite 9, gemini-3.1-flash-lite 5, gemini-3.1-flash-lite-preview 7, openai/gpt-oss-120b 1; resting until tomorrow: 18 models
 guard: this run $0.000 for 13 reports; last day $1.75 for 963; credit $0.50
+tracker flags: 548 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 435 company years flagged: 17 to re-read, 376 re-read, 3 waiting for a first read, 39 no usable report
+openrouter: paid models off (credit left $0.50)
+pages ar_vlr5eeb9 0s
+pages ar_bgygb1or 0s
+pages ar_1__bt_gg 0s
+pages ar_f79l4eb0 0s
+pages ar_zl2b28b1 0s
+pages ar_ytk0d3k5 5s
+pages ar__0kgrbmg 2s
+pages ar_os9g2um3 9s
+pages ar_x9n669ml 19s
+pages ar_vpz6eu3o 0s
+pages ar_a2xf2xu5 0s
+pages ar_exp3sxxk 3s
+pages ar_dm7dglf1 19s
+pages ar_y50fnct4 17s
+pages ar_n36u15a8 16s
+pages ar_6pc9y89s 0s
+pages ar_z0dhm3x2 0s
+done: read 4 annual reports (4 audit re-reads), 7 skipped, about 15 still to read; models used: gemini-3.5-flash-lite 4, gemini-3.1-flash-lite 3, gemini-3.1-flash-lite-preview 2, xingchen-agi/xing4.0-29b-a4b:free 10; resting until tomorrow: 16 models
+guard: this run $0.000 for 4 reports; last day $1.75 for 967; credit $0.50
