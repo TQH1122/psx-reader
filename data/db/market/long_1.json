@@ -22361,7 +22361,7 @@ null,
 null,
 1,
 1,
-1,
+null,
 1,
 null,
 null,
@@ -23134,7 +23134,8 @@ null
 2021,
 2020,
 2019,
-2018
+2018,
+2017
 ],
 "ni": [
 1,
@@ -23145,11 +23146,13 @@ null
 1,
 null,
 null,
+null,
 null
 ],
 "eq": [
 1,
 1,
+null,
 null,
 null,
 null,
@@ -26265,7 +26268,10 @@ null
 2021
 ],
 "ni": [],
-"eq": []
+"eq": [
+1,
+1
+]
 },
 "ICIBL": {
 "basis": "company only",
@@ -45979,8 +45985,8 @@ null,
 null,
 null,
 null,
-null,
-null,
+1,
+1,
 null,
 null,
 1,
@@ -53246,9 +53252,9 @@ null
 null,
 null,
 1,
-null,
-null,
-null,
+1,
+1,
+1,
 1,
 1
 ],
