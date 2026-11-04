@@ -16855,8 +16855,12 @@
 "web:CHAS:2013": {
 "at": "2026-11-04",
 "done": true,
-"n": 23,
-"waits": 1
+"n": 36,
+"waits": 1,
+"reread": [
+2012,
+2013
+]
 },
 "web:UBDL:2017": {
 "at": "2026-11-03",
@@ -17043,9 +17047,13 @@
 "why": "no figure passed the checks"
 },
 "web:UBDL:2011": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
-"n": 10
+"n": 10,
+"reread": [
+2010,
+2011
+]
 },
 "web:CRTM:2020": {
 "at": "2026-11-03",
@@ -20024,9 +20032,12 @@
 "n": 20
 },
 "web:FECM:2019": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
-"n": 12
+"n": 10,
+"reread": [
+2019
+]
 },
 "web:DBSL:2018": {
 "at": "2026-11-04",
@@ -23579,7 +23590,10 @@
 "at": "2026-11-04",
 "waits": 1,
 "done": true,
-"n": 16
+"n": 16,
+"reread": [
+2012
+]
 },
 "web:BLUEX:2023": {
 "at": "2026-11-03",
@@ -25322,7 +25336,10 @@
 "at": "2026-11-04",
 "waits": 1,
 "done": true,
-"n": 30
+"n": 29,
+"reread": [
+2024
+]
 },
 "web:CHAS:2018": {
 "at": "2026-11-04",
@@ -25335,7 +25352,10 @@
 "web:ARPAK:2019": {
 "at": "2026-11-04",
 "done": true,
-"n": 0
+"n": 0,
+"reread": [
+2019
+]
 },
 "web:PSEL:2014": {
 "at": "2026-11-04",
@@ -25346,13 +25366,22 @@
 "web:FECM:2020": {
 "at": "2026-11-04",
 "done": true,
-"n": 10
+"n": 10,
+"reread": [
+2020
+],
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Crescent Modaraba Management Company Limited (names AWWAL)"
 },
 "web:BML:2011": {
 "at": "2026-11-04",
 "done": true,
 "n": 22,
-"waits": 1
+"waits": 1,
+"reread": [
+2011
+]
 },
 "web:ILTM:2025": {
 "at": "2026-11-04",
@@ -25423,7 +25452,10 @@
 },
 "web:LSEPL:2016": {
 "at": "2026-11-04",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:DCTL:2019": {
 "at": "2026-11-04",
@@ -25433,11 +25465,15 @@
 },
 "web:PSEL:2012": {
 "at": "2026-11-04",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 8
 },
 "web:UCAPM:2016": {
 "at": "2026-11-04",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "web:ILTM:2015": {
 "at": "2026-11-04",
@@ -25495,6 +25531,18 @@
 },
 "web:GEMUNSL:2021": {
 "at": "2026-11-04",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:ARPAK:2018": {
+"at": "2026-11-04"
+},
+"web:GEMUNSL:2020": {
+"at": "2026-11-04"
+},
+"web:FECM:2018": {
+"at": "2026-11-04"
 }
 }
