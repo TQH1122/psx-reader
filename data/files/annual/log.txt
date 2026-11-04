@@ -1,13 +1,3 @@
-audit: 435 company years flagged: 17 to re-read, 376 re-read, 3 waiting for a first read, 39 no usable report
-openrouter: paid models off (credit left $0.50)
-pages ar_vlr5eeb9 0s
-pages ar_bgygb1or 0s
-pages ar_1__bt_gg 0s
-pages ar_f79l4eb0 0s
-pages ar_zl2b28b1 0s
-pages ar_ytk0d3k5 5s
-pages ar__0kgrbmg 2s
-pages ar_os9g2um3 9s
 pages ar_x9n669ml 19s
 pages ar_vpz6eu3o 0s
 pages ar_a2xf2xu5 0s
@@ -298,3 +288,13 @@ pages ar_f7sufwx1 12s
 pages ar_4s44emwo 15s
 done: read 0 annual reports (0 audit re-reads), 0 skipped, about 10 still to read; models used: ; resting until tomorrow: 8 models
 guard: this run $0.000 for 0 reports; last day $0.00 for 571; credit $0.50
+tracker flags: 549 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 434 company years flagged: 9 to re-read, 386 re-read, 1 waiting for a first read, 38 no usable report
+openrouter: paid models off (credit left $0.50)
+pages ar__rsc648n 4s
+pages ar_ibw09xts 12s
+pages ar_27qjpr5u 12s
+pages ar_wz3v3zd_ 15s
+done: read 0 annual reports (0 audit re-reads), 0 skipped, about 10 still to read; models used: ; resting until tomorrow: 8 models
+guard: this run $0.000 for 0 reports; last day $0.00 for 569; credit $0.50
