@@ -1,6 +1,6 @@
 {
-"at": "2026-11-04 04:03",
-"minutes": 2.4,
+"at": "2026-11-04 04:12",
+"minutes": 2.9,
 "panel": [
 "gemini:gemini-3.8-flash",
 "gemini:gemini-3.7-flash",
@@ -25,6 +25,62 @@
 ],
 "calls": [
 [
+"gemini-omni-1.1-flash",
+429,
+0.2,
+3171,
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-omni-1.1-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\n* Quota exceeded for metric: generativ"
+],
+[
+"gemini-omni-flash-preview",
+429,
+0.2,
+3173,
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-omni-1.1-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\n* Quota exceeded for metric: generativ"
+],
+[
+"openai/gpt-oss-120b",
+429,
+0.1,
+382,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194987, Requested 5882. Please try again in 6m15.408s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+],
+[
+"gemini-3.1-flash-lite-preview",
+429,
+0.2,
+1663,
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h50m29.404968509s.\""
+],
+[
+"google/gemma-4-31b-it:free",
+429,
+2.2,
+671,
+"{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Google AI Studio\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/feat"
+],
+[
+"google/gemma-4-31b-it:free",
+429,
+0.2,
+671,
+"{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Google AI Studio\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/feat"
+],
+[
+"openai/gpt-oss-120b",
+429,
+0.1,
+389,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194969, Requested 7496. Please try again in 17m44.879999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+],
+[
+"gemini-3.1-flash-lite",
+429,
+0.2,
+1663,
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h50m17.927329537s.\""
+],
+[
 "google/gemma-4-31b-it:free",
 429,
 0.3,
@@ -32,25 +88,25 @@
 "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Google AI Studio\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/feat"
 ],
 [
+"recursive/flint-v1.0:free",
+503,
+0.4,
+207,
+"{\"error\":{\"message\":\"Provider returned error\",\"code\":503,\"metadata\":{\"raw\":\"{\\\"error\\\":\\\"no upstreams available\\\"}\",\"provider_name\":\"Recursive\",\"is_byok\":false}},\"user_id\":\"user_3LUr3nZW85lO2G7c9LGRCzH2zKK\"}"
+],
+[
+"gemini-3.8-flash",
+429,
+0.2,
+1650,
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h50m15.60066534s.\",\n    \""
+],
+[
 "openai/gpt-oss-120b",
 429,
 0.1,
 382,
-"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196178, Requested 5211. Please try again in 10m0.048s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
-],
-[
-"gemini-omni-flash-preview",
-429,
-0.2,
-3173,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-omni-1.1-flash, description: Generate content input tokens per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\n* Quota exceeded for m"
-],
-[
-"recursive/flint-v1.0:free",
-503,
-0.1,
-207,
-"{\"error\":{\"message\":\"Provider returned error\",\"code\":503,\"metadata\":{\"raw\":\"{\\\"error\\\":\\\"no upstreams available\\\"}\",\"provider_name\":\"Recursive\",\"is_byok\":false}},\"user_id\":\"user_3LUr3nZW85lO2G7c9LGRCzH2zKK\"}"
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194950, Requested 5494. Please try again in 3m11.808s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
 "google/gemma-4-31b-it:free",
@@ -60,32 +116,18 @@
 "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Google AI Studio\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/feat"
 ],
 [
-"openai/gpt-oss-120b",
-429,
-0.1,
-388,
-"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196160, Requested 4066. Please try again in 1m37.631999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
-],
-[
 "recursive/flint-v1.0:free",
 503,
-0.1,
+0.5,
 207,
 "{\"error\":{\"message\":\"Provider returned error\",\"code\":503,\"metadata\":{\"raw\":\"{\\\"error\\\":\\\"no upstreams available\\\"}\",\"provider_name\":\"Recursive\",\"is_byok\":false}},\"user_id\":\"user_3LUr3nZW85lO2G7c9LGRCzH2zKK\"}"
-],
-[
-"gemini-omni-1.1-flash",
-429,
-0.1,
-3174,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-omni-1.1-flash, description: Generate content input tokens per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\n* Quota exceeded for m"
 ],
 [
 "openai/gpt-oss-120b",
 429,
 0.1,
 383,
-"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196141, Requested 5580. Please try again in 12m23.472s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194932, Requested 8774. Please try again in 26m40.992s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
 "google/gemma-4-31b-it:free",
@@ -97,7 +139,7 @@
 [
 "recursive/flint-v1.0:free",
 503,
-0.1,
+1.6,
 207,
 "{\"error\":{\"message\":\"Provider returned error\",\"code\":503,\"metadata\":{\"raw\":\"{\\\"error\\\":\\\"no upstreams available\\\"}\",\"provider_name\":\"Recursive\",\"is_byok\":false}},\"user_id\":\"user_3LUr3nZW85lO2G7c9LGRCzH2zKK\"}"
 ],
@@ -106,84 +148,126 @@
 429,
 0.1,
 286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (d58a0398-3c0f-4c93-afba-afd01e3d96ca)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (61046ad1-b6a3-411a-b225-df1081ad4549)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
 ],
 [
-"gemini-3.1-flash-lite-preview",
-429,
-0.1,
-1663,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h58m44.461825505s.\""
-],
-[
-"gemini-2.5-flash-lite",
-404,
-0.2,
-359,
-"{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
+"recursive/flint-v1.0:free",
+503,
+0.4,
+207,
+"{\"error\":{\"message\":\"Provider returned error\",\"code\":503,\"metadata\":{\"raw\":\"{\\\"error\\\":\\\"no upstreams available\\\"}\",\"provider_name\":\"Recursive\",\"is_byok\":false}},\"user_id\":\"user_3LUr3nZW85lO2G7c9LGRCzH2zKK\"}"
 ],
 [
 "@cf/openai/gpt-oss-120b",
 429,
 0.1,
 286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (ea72e614-9e6f-4812-974a-2eac23da453e)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (2c784859-f660-44bc-943f-c6e20026fa9f)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
 ],
 [
 "openai/gpt-oss-120b",
 429,
 0.1,
 382,
-"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196123, Requested 5226. Please try again in 9m42.768s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194913, Requested 5604. Please try again in 3m43.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
 "@cf/openai/gpt-oss-120b",
 429,
 0.1,
 286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (cd9d59da-e966-4710-a476-968e96da8e7e)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (18f36108-838a-4607-b9eb-70023ac2f3bc)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"gemini-3.8-flash",
-429,
-0.2,
-1651,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h58m35.816794361s.\",\n    "
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (f0a8c0ce-e471-4b3a-a66b-804f6be4c4db)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
 ],
 [
 "gemini-3.7-flash",
 429,
-0.2,
-1651,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h58m35.816415009s.\",\n    "
-],
-[
-"gemini-3.5-flash",
-429,
 0.1,
 1651,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h58m35.682776546s.\",\n    "
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h49m54.276926354s.\",\n    "
+],
+[
+"@cf/openai/gpt-oss-120b",
+429,
+0.1,
+286,
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (9815dc4e-4e3a-4fb7-8f95-f8df84aa6aeb)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+],
+[
+"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+429,
+0.1,
+286,
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (681c1007-10ff-4320-909e-286fa47dcaa3)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+],
+[
+"openai/gpt-oss-120b",
+400,
+6.7,
+202,
+"{\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n"
+],
+[
+"openai/gpt-oss-120b",
+429,
+0.1,
+380,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199186, Requested 4164. Please try again in 24m7.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+],
+[
+"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+429,
+0.1,
+286,
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (ba58cdda-be54-4690-aed8-3a9ba0349b5b)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+],
+[
+"gemini-2.5-flash-lite",
+404,
+0.1,
+359,
+"{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
 ],
 [
 "gemini-3.6-flash",
 429,
 0.2,
 1651,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h58m35.622540279s.\",\n    "
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h49m39.164576483s.\",\n    "
+],
+[
+"gemini-3.5-flash",
+429,
+0.2,
+1651,
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h49m38.944888175s.\",\n    "
+],
+[
+"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+429,
+0.1,
+286,
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (0ec9d915-ccf4-4024-91ad-bfd079949d84)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+],
+[
+"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+429,
+0.1,
+286,
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (0ecd7a3d-83f4-4dbe-80ee-59dccae0984f)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+],
+[
+"openai/gpt-oss-120b",
+429,
+0.1,
+389,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199167, Requested 3935. Please try again in 22m20.063999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
 "gemini-3-flash-preview",
-429,
-0.1,
-1646,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h58m35.49270493s.\",\n    \"st"
+200,
+6.6,
+5401,
+""
 ],
 [
 "gemini-2.5-flash",
@@ -193,214 +277,123 @@
 "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
 ],
 [
-"gemini-3.1-flash-lite",
+"gemini-3-flash-preview",
+429,
+0.2,
+1647,
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h49m31.155458651s.\",\n    \"s"
+],
+[
+"openai/gpt-oss-120b",
 429,
 0.1,
-1663,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h58m35.360759284s.\""
+389,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199149, Requested 7364. Please try again in 46m53.615999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+],
+[
+"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+429,
+0.1,
+286,
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (dc631333-3ef4-41f3-aaf2-a59bc8570414)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+],
+[
+"gemini-3.5-flash-lite",
+200,
+2.0,
+1697,
+""
+],
+[
+"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+429,
+0.1,
+286,
+"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (1f6f68ec-4ef4-4853-b153-62fe64d5ebc5)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
 ],
 [
 "gemini-3.5-flash-lite",
 429,
-0.1,
+0.2,
 1663,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h58m35.358423277s.\""
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h49m20.889202931s.\""
+],
+[
+"openai/gpt-oss-120b",
+429,
+0.1,
+384,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199130, Requested 9506. Please try again in 1h2m10.752s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+],
+[
+"gemini-3.5-flash-lite",
+429,
+0.2,
+1663,
+"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 3h49m16.372834578s.\""
+],
+[
+"openai/gpt-oss-120b",
+429,
+0.1,
+382,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199112, Requested 7918. Please try again in 50m36.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+],
+[
+"openai/gpt-oss-120b",
+429,
+0.1,
+389,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199093, Requested 5869. Please try again in 35m43.583999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+],
+[
+"openai/gpt-oss-120b",
+429,
+0.1,
+382,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199075, Requested 6219. Please try again in 38m7.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
 "openai/gpt-oss-120b",
 429,
 0.1,
 383,
-"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196104, Requested 7203. Please try again in 23m48.624s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
-],
-[
-"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (ca4a9ef9-828b-4551-a641-c57f56b18d1c)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (cfbba4a0-d25b-4888-9788-382e2ad54435)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (328832ab-4fbf-421c-8962-f0d9ce573dac)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (c382ff29-1973-4b32-847e-e5a0749b6f9f)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"xingchen-agi/xing4.0-29b-a4b:free",
-200,
-15.0,
-1667,
-""
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199056, Requested 9165. Please try again in 59m11.472s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
 "openai/gpt-oss-120b",
 429,
 0.1,
 383,
-"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196086, Requested 5466. Please try again in 11m10.464s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (7884c62d-864b-414e-9737-53f46b92cae3)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (17ede6de-a7d8-4ae6-bd9f-d3715c26e988)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (77731106-b3c6-48fc-a7e0-b422a3ff409d)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199038, Requested 7461. Please try again in 46m47.568s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
 "openai/gpt-oss-120b",
 429,
 0.1,
 383,
-"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196067, Requested 9267. Please try again in 38m24.288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199019, Requested 2837. Please try again in 13m21.792s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
-"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+"openai/gpt-oss-120b",
 429,
 0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (90eb1f20-a81c-48b4-9065-3585823fb467)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+382,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199001, Requested 5509. Please try again in 32m28.32s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
-"@cf/openai/gpt-oss-120b",
+"openai/gpt-oss-120b",
 429,
 0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (f6019a3b-b80c-476a-afa0-41e07a59c621)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+389,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198982, Requested 5271. Please try again in 30m37.295999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ],
 [
-"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+"openai/gpt-oss-120b",
 429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (900c2530-4881-4d9c-be68-ec1ebe393c79)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (0edd7acf-df4c-411f-bc43-03deebb2349e)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (e0689df4-6b8f-4664-934d-b6fff81cf5d5)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (161afdaf-12fe-46af-b424-4f5fd08ba299)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (126bbdec-1afc-4339-92c8-35fe761bc100)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (127ecdd6-59dd-428e-a55f-8843d3646201)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (4db473d6-28a6-4439-8201-bfdffeb019b7)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (827e3780-8d0b-49c2-b2e7-ac1c1cfa382d)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (f0d93681-ff45-4e4e-98eb-ff1e0ee92887)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (66b0f1a3-2786-4a62-a770-32705ff157f8)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (e73583ca-9a25-4ae9-916f-4d68b12a855a)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (ce6aa347-a05f-46ad-b500-840aac6279ff)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (7da71310-533d-49f0-b5ce-56a80dcba07d)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (95d0deb6-f383-404b-8c22-9cc830bee2d1)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
-],
-[
-"@cf/openai/gpt-oss-120b",
-429,
-0.1,
-286,
-"{\"errors\":[{\"message\":\"AiError: AiError: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue usage. (7810f054-c2da-4f7f-8bb8-6911811f669e)\",\"code\":4006}],\"success\":false,\"result\":{},\"messages\":[]}"
+0.3,
+389,
+"{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m6aq5rame9d90scwmk8c76x5` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198963, Requested 8785. Please try again in 55m47.135999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
 ]
 ]
 }
