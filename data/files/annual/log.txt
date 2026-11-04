@@ -1,59 +1,3 @@
-pages ar_r_dkesya 24s
-pages ar_v5zggqez 4s
-pages ar_jc4_b52r 1s
-pages ar_z5vhg_h8 0s
-pages ar_x5wqsmn2 1s
-pages ar_hthl8tte 0s
-pages ar_cgz6800b 3s
-pages ar_bjsfrqvs 0s
-pages ar_3ootdvjh 7s
-pages ar_gx4etmd_ 8s
-pages ar_kjwg2nxo 5s
-pages ar_7zm94uaz 38s
-done: read 0 annual reports (0 audit re-reads), 0 skipped, about 145 still to read; models used: xingchen-agi/xing4.0-29b-a4b:free 1; resting until tomorrow: 17 models
-guard: this run $0.000 for 0 reports; last day $1.75 for 847; credit $0.50
-tracker flags: 548 companies with histories, 754 listed
-sources: company websites give 3609 reports for 398 companies
-audit: 447 company years flagged: 116 to re-read, 269 re-read, 24 waiting for a first read, 38 no usable report
-openrouter: paid models off (credit left $0.50)
-pages ar_nhzgur36 12s
-pages ar_1r8wuegu 14s
-pages ar__xbfjjay 4s
-pages ar_2zz1i89w 3s
-pages ar_92mqwkuu 4s
-pages ar_crzr9gcm 7s
-pages ar_xy1cgmye 8s
-pages ar_n951omfe 0s
-pages ar_lugmvn7q 0s
-pages ar_w_7y9e69 0s
-pages ar_8236pkyj 1s
-pages ar_kqs4hotl 4s
-pages ar_a614cfj2 1s
-pages ar_s8_hx2c7 1s
-pages ar_qx6ws9dr 2s
-pages ar_pwdkiyr8 4s
-pages ar_f581tr6l 4s
-pages ar_m35_ej4m 11s
-pages ar_xsv5tbus 0s
-pages ar_w3tdmkjn 1s
-pages ar_gfkjs1pn 2s
-pages ar_9_l0ln0y 0s
-pages ar_snto90d6 0s
-pages ar_2cp88_l0 0s
-pages ar_v_3dz4yb 0s
-pages ar_fmtlrxr3 0s
-pages ar_97yvt66g 0s
-pages ar_thegsxky 0s
-pages ar_l2mf8sv9 3s
-pages ar_34s61295 0s
-pages ar_yxtwjidz 0s
-pages ar_qxygf0xj 0s
-pages ar_7e20arnj 0s
-pages ar_g3ii2ot7 4s
-pages ar_7p8wr3kw 0s
-pages ar_7d8p_e_6 2s
-pages ar_tibtbu13 2s
-pages ar_4sftfc71 4s
 pages ar_hdukz8wf 1s
 pages ar_nof13mm5 3s
 pages ar_ogge656o 20s
@@ -298,3 +242,59 @@ pages ar_z6mdy9v5 1s
 pages ar_3vvjmkvz 1s
 done: read 3 annual reports (2 audit re-reads), 0 skipped, about 140 still to read; models used: openai/gpt-oss-120b 1, nvidia/nemotron-3-ultra-550b-a55b:free 2, nvidia/nemotron-3.5-super-vl:free 2; resting until tomorrow: 18 models
 guard: this run $0.000 for 3 reports; last day $1.75 for 851; credit $0.50
+tracker flags: 548 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 447 company years flagged: 112 to re-read, 274 re-read, 23 waiting for a first read, 38 no usable report
+openrouter: paid models off (credit left $0.50)
+pages ar_acyufakm 6s
+pages ar_fbs8x5q5 6s
+pages ar_qbc16anx 0s
+pages ar_lrrb7ls4 11s
+pages ar_rzaj6er4 17s
+pages ar_1ky5w_lp 6s
+pages ar_39vvdric 0s
+pages ar_trfg55p4 10s
+pages ar_saauy1k1 0s
+pages ar_7bqtd9tj 0s
+pages ar_ga_um4u4 2s
+pages ar_vx9bp_ja 1s
+pages ar_w02p5fre 1s
+pages ar_e7c1_xxu 20s
+pages ar_fw4be6us 1s
+pages ar_63_a97kf 6s
+pages ar_sv2niy1i 6s
+pages ar_rpwi9x4s 17s
+pages ar_9trcfp_f 1s
+pages ar_vpy75oqu 2s
+pages ar_x4haxpm7 0s
+pages ar_8g_sept4 5s
+pages ar_63gh43ru 0s
+pages ar_jketu624 0s
+pages ar_ef3h65qf 0s
+pages ar_80crk9dn 0s
+pages ar_vy372sd9 0s
+pages ar_leqquzhw 0s
+pages ar_1y32fjdn 0s
+pages ar_lly7qftg 0s
+pages ar_gbq_96nv 0s
+pages ar_fuuh5zb2 6s
+pages ar_te82lpco 0s
+pages ar_81_jd4t7 0s
+pages ar_aphk6cpl 7s
+pages ar_zqek_2sf 3s
+pages ar_wxjqs5dc 1s
+pages ar_hzpzynjg 4s
+pages ar_04mdnxv9 1s
+pages ar_p82vlera 0s
+pages ar_yqlwunvu 31s
+pages ar_ls2vt1se 1s
+pages ar_3rh6mtmu 4s
+pages ar_u4ic103z 9s
+pages ar_eud9rve2 0s
+pages ar_n4jdpz6c 0s
+pages ar_d8l5ulh3 4s
+pages ar_9uulp8n5 6s
+pages ar_4hvjys7h 11s
+pages ar_m1opfy7k 48s
+done: read 1 annual reports (1 audit re-reads), 0 skipped, about 138 still to read; models used: gemini-3-flash-preview 1, gemini-3.1-flash-lite 1, xingchen-agi/xing4.0-29b-a4b:free 1; resting until tomorrow: 17 models
+guard: this run $0.000 for 1 reports; last day $1.75 for 852; credit $0.50
