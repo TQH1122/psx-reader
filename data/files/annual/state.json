@@ -6692,9 +6692,12 @@
 "n": 20
 },
 "khi:NONS:2006": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
-"n": 23
+"n": 12,
+"reread": [
+2005
+]
 },
 "psx:INKL:2024": {
 "at": "2026-11-01",
@@ -8052,9 +8055,16 @@
 "n": 26
 },
 "khi:TRSM:2003": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
-"n": 5
+"n": 5,
+"reread": [
+2002,
+2003
+],
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Bahawal Pure Sugar Company Limited (names HSMPSR)"
 },
 "khi:TRIBL:2007": {
 "at": "2026-11-01",
@@ -12310,9 +12320,10 @@
 "why": "not annual accounts: required numeric figures not present in provided pages"
 },
 "khi:GRYL:2003": {
-"at": "2026-11-02",
+"at": "2026-11-04",
 "done": true,
-"n": 14
+"n": 14,
+"waits": 1
 },
 "khi:WASL:2002": {
 "at": "2026-11-04",
@@ -14349,8 +14360,11 @@
 "web:DLL:2013": {
 "at": "2026-11-04",
 "done": true,
-"n": 23,
-"waits": 1
+"n": 22,
+"waits": 1,
+"reread": [
+2013
+]
 },
 "web:PKGS:2012": {
 "at": "2026-11-03",
@@ -23634,10 +23648,13 @@
 ]
 },
 "khi:FCCL:2003": {
-"at": "2026-11-03",
-"waits": 2,
+"at": "2026-11-04",
+"waits": 0,
 "done": true,
-"n": 18
+"n": 18,
+"tries": 1,
+"rev": 4,
+"why": "no two models gave a usable read"
 },
 "web:SRVI:2015": {
 "at": "2026-11-03",
@@ -24600,7 +24617,7 @@
 },
 "web:DCTL:2021": {
 "at": "2026-11-04",
-"waits": 1
+"waits": 2
 },
 "web:ICCT:2017": {
 "at": "2026-11-04",
@@ -24711,7 +24728,7 @@
 },
 "web:ICCT:2013": {
 "at": "2026-11-04",
-"waits": 1
+"waits": 2
 },
 "web:IML:2018": {
 "at": "2026-11-04",
@@ -24771,14 +24788,79 @@
 },
 "web:LSEPL:2017": {
 "at": "2026-11-04",
-"waits": 1
+"waits": 2
 },
 "web:DHPL:2011": {
-"at": "2026-11-04"
+"at": "2026-11-04",
+"waits": 1
 },
 "web:DMIL:2020": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"khi:TRSM:2004": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:DLL:2012": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Shahid Hamid Pracha Inam ur Rahman"
+},
+"web:DMTX:2024": {
+"at": "2026-11-04",
+"waits": 1
+},
+"web:JSIL:2025": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan Stock Exchange (names DOMF)"
+},
+"web:JSIL:2024": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: JSIL"
+},
+"khi:JSIL:2023": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "file too large"
+},
+"khi:JSIL:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"khi:JSIL:2021": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"web:DMIL:2019": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Textile Mills Ltd. (names AABS)"
+},
+"khi:JSIL:2014": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: HBL PENSION FUND (names HGFA)"
+},
+"khi:JSIL:2009": {
+"at": "2026-11-04",
+"tries": 2,
 "rev": 4,
 "why": "no figure passed the checks"
 }
