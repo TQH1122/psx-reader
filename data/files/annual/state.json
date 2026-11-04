@@ -6045,13 +6045,23 @@
 "khi:FNEL:2016": {
 "at": "2026-11-04",
 "done": true,
-"n": 18,
-"waits": 2
+"n": 14,
+"waits": 2,
+"reread": [
+2016
+]
 },
 "khi:FNEL:2015": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
-"n": 8
+"n": 8,
+"reread": [
+2014,
+2015
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:SNBL:2004": {
 "at": "2026-11-01",
