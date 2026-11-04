@@ -26765,10 +26765,34 @@ null,
 "basis": "company only",
 "fy": [
 2026,
-2025
+2025,
+2024,
+2023,
+2022,
+2021,
+2020,
+2019
 ],
-"ni": [],
-"eq": []
+"ni": [
+null,
+null,
+1,
+1,
+null,
+null,
+1,
+1
+],
+"eq": [
+null,
+null,
+null,
+null,
+null,
+null,
+1,
+1
+]
 },
 "IMAGE": {
 "basis": "group",
@@ -26830,12 +26854,12 @@ null,
 null,
 null,
 null,
-null,
-null,
-null,
-null,
-null,
-null,
+1,
+1,
+1,
+1,
+1,
+1,
 null,
 null,
 1,
@@ -43975,8 +43999,7 @@ null,
 2009,
 2008,
 2007,
-2006,
-2005
+2006
 ],
 "ni": [
 1,
@@ -43998,8 +44021,7 @@ null,
 1,
 1,
 null,
-1,
-null
+1
 ],
 "eq": [
 1,
@@ -44020,7 +44042,6 @@ null,
 null,
 1,
 1,
-null,
 null,
 null
 ]

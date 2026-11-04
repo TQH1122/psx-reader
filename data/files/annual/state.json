@@ -5912,9 +5912,13 @@
 "n": 36
 },
 "khi:WTL:2005": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
-"n": 8
+"n": 2,
+"reread": [
+2004,
+2005
+]
 },
 "khi:KOSM:2007": {
 "at": "2026-11-01",
@@ -11561,7 +11565,10 @@
 "khi:WTL:2006": {
 "at": "2026-11-04",
 "done": true,
-"n": 12
+"n": 10,
+"reread": [
+2006
+]
 },
 "khi:ASTL:2017": {
 "at": "2026-11-02",
@@ -11965,7 +11972,13 @@
 "at": "2026-11-04",
 "done": true,
 "n": 6,
-"waits": 2
+"waits": 2,
+"reread": [
+2006
+],
+"tries": 1,
+"rev": 4,
+"why": "not annual accounts: company name not printed on the provided pages"
 },
 "khi:MIRKS:2003": {
 "at": "2026-11-02",
@@ -24884,7 +24897,13 @@
 "khi:AABS:2006": {
 "at": "2026-11-04",
 "done": true,
-"n": 24
+"n": 24,
+"reread": [
+2006
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:UNIC:2004": {
 "at": "2026-11-04",
