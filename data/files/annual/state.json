@@ -11205,8 +11205,11 @@
 "khi:AABS:2007": {
 "at": "2026-11-04",
 "done": true,
-"n": 8,
-"waits": 2
+"n": 12,
+"waits": 2,
+"reread": [
+2007
+]
 },
 "khi:EFUL:2003": {
 "at": "2026-11-02",
@@ -23654,7 +23657,9 @@
 "n": 18,
 "tries": 1,
 "rev": 4,
-"why": "no two models gave a usable read"
+"reread": [
+2003
+]
 },
 "web:SRVI:2015": {
 "at": "2026-11-03",
@@ -24866,5 +24871,10 @@
 "tries": 2,
 "rev": 4,
 "why": "no figure passed the checks"
+},
+"khi:AABS:2006": {
+"at": "2026-11-04",
+"done": true,
+"n": 24
 }
 }
