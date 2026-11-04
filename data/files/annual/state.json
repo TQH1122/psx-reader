@@ -2734,7 +2734,7 @@
 "n": 37
 },
 "khi:AGP:2017": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
 "n": 6
 },
@@ -6087,7 +6087,13 @@
 "khi:FHAM:2003": {
 "at": "2026-11-04",
 "done": true,
-"n": 2
+"n": 2,
+"reread": [
+2002
+],
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Pakistan Savings Bank (names ABL)"
 },
 "khi:LIVEN:2005": {
 "at": "2026-11-01",
@@ -8442,8 +8448,11 @@
 "khi:IDEAL:2003": {
 "at": "2026-11-04",
 "done": true,
-"n": 13,
-"waits": 2
+"n": 27,
+"waits": 2,
+"reread": [
+2002
+]
 },
 "khi:IMS:2019": {
 "at": "2026-11-01",
@@ -13463,12 +13472,18 @@
 "why": "not annual accounts: Key primary financial statement pages (Balance Sheet, Profit and Loss, Cash Flow"
 },
 "khi:FHAM:2001": {
-"at": "2026-11-02",
+"at": "2026-11-04",
 "done": true,
-"n": 10
+"n": 10,
+"reread": [
+2001
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:FHAM:2000": {
-"at": "2026-11-02",
+"at": "2026-11-04",
 "done": true,
 "n": 10
 },
@@ -15250,7 +15265,7 @@
 "n": 29
 },
 "web:BML:2013": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
 "n": 5
 },
@@ -16831,8 +16846,11 @@
 "web:UBDL:2015": {
 "at": "2026-11-04",
 "done": true,
-"n": 38,
-"waits": 1
+"n": 34,
+"waits": 1,
+"reread": [
+2015
+]
 },
 "web:KHTC:2017": {
 "at": "2026-11-03",
@@ -20956,7 +20974,10 @@
 "web:AGP:2018": {
 "at": "2026-11-04",
 "done": true,
-"n": 19
+"n": 23,
+"reread": [
+2018
+]
 },
 "web:NICL:2024": {
 "at": "2026-11-03",
@@ -21236,7 +21257,10 @@
 "web:GATM:2018": {
 "at": "2026-11-04",
 "done": true,
-"n": 18
+"n": 18,
+"reread": [
+2018
+]
 },
 "web:SSGC:2016": {
 "at": "2026-11-03",
@@ -21632,8 +21656,11 @@
 "web:CHAS:2019": {
 "at": "2026-11-04",
 "done": true,
-"n": 34,
-"waits": 1
+"n": 36,
+"waits": 1,
+"reread": [
+2019
+]
 },
 "khi:DWSM:2006": {
 "at": "2026-11-03",
@@ -23415,7 +23442,7 @@
 "why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names GEMUNSL)"
 },
 "web:UBDL:2012": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "waits": 1,
 "done": true,
 "n": 16
@@ -25089,7 +25116,10 @@
 "web:BML:2014": {
 "at": "2026-11-04",
 "done": true,
-"n": 2
+"n": 18,
+"reread": [
+2014
+]
 },
 "web:UBDL:2019": {
 "at": "2026-11-04",
@@ -25126,5 +25156,8 @@
 "web:SSGC:2024": {
 "at": "2026-11-04",
 "waits": 1
+},
+"web:CHAS:2018": {
+"at": "2026-11-04"
 }
 }
