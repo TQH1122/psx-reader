@@ -2736,7 +2736,10 @@
 "khi:AGP:2017": {
 "at": "2026-11-04",
 "done": true,
-"n": 6
+"n": 0,
+"reread": [
+2017
+]
 },
 "khi:AICL:2025": {
 "at": "2026-11-01",
@@ -6278,7 +6281,10 @@
 "khi:PIM:2002": {
 "at": "2026-11-04",
 "done": true,
-"n": 9
+"n": 2,
+"reread": [
+2001
+]
 },
 "khi:AATM:2006": {
 "at": "2026-11-01",
@@ -7828,8 +7834,12 @@
 "khi:FSWL:2005": {
 "at": "2026-11-04",
 "done": true,
-"n": 10,
-"waits": 2
+"n": 6,
+"waits": 2,
+"reread": [
+2004,
+2005
+]
 },
 "khi:DWTM:2003": {
 "at": "2026-11-01",
@@ -7837,9 +7847,12 @@
 "n": 31
 },
 "khi:FSWL:2003": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
-"n": 10
+"n": 24,
+"reread": [
+2002
+]
 },
 "khi:GIL:2017": {
 "at": "2026-11-01",
@@ -8031,9 +8044,12 @@
 "n": 31
 },
 "khi:BFMOD:2006": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
-"n": 8
+"n": 8,
+"reread": [
+2006
+]
 },
 "khi:KOHP:2004": {
 "at": "2026-11-01",
@@ -8150,7 +8166,7 @@
 "n": 26
 },
 "khi:CJPL:2002": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
 "n": 24
 },
@@ -8261,8 +8277,11 @@
 "khi:FPRM:2005": {
 "at": "2026-11-04",
 "done": true,
-"n": 12,
-"waits": 1
+"n": 8,
+"waits": 1,
+"reread": [
+2004
+]
 },
 "khi:SLCL:2007": {
 "at": "2026-11-01",
@@ -8355,7 +8374,7 @@
 "n": 18
 },
 "khi:FPRM:2003": {
-"at": "2026-11-01",
+"at": "2026-11-04",
 "done": true,
 "n": 10
 },
@@ -12671,11 +12690,13 @@
 "khi:FIL:2005": {
 "at": "2026-11-04",
 "done": true,
-"n": 10,
+"n": 8,
 "waits": 0,
 "tries": 1,
 "rev": 4,
-"why": "no two models gave a usable read"
+"reread": [
+2004
+]
 },
 "khi:FPJM:2001": {
 "at": "2026-11-04",
@@ -13209,7 +13230,7 @@
 "why": "not annual accounts: company name not found in provided pages"
 },
 "khi:BFMOD:2005": {
-"at": "2026-11-02",
+"at": "2026-11-04",
 "done": true,
 "n": 2
 },
@@ -13384,7 +13405,10 @@
 "waits": 0,
 "tries": 1,
 "rev": 4,
-"why": "no two models gave a usable read"
+"reread": [
+2000,
+2001
+]
 },
 "khi:DKTM:2003": {
 "at": "2026-11-02",
@@ -13485,7 +13509,13 @@
 "khi:FHAM:2000": {
 "at": "2026-11-04",
 "done": true,
-"n": 10
+"n": 10,
+"reread": [
+2000
+],
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Tayyaba Securities Limited (names AKDSL)"
 },
 "khi:MARI:2021": {
 "at": "2026-11-03",
@@ -15267,7 +15297,13 @@
 "web:BML:2013": {
 "at": "2026-11-04",
 "done": true,
-"n": 5
+"n": 5,
+"reread": [
+2013
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:LOTCHEM:2006": {
 "at": "2026-11-03",
@@ -15388,7 +15424,13 @@
 "web:PSEL:2015": {
 "at": "2026-11-04",
 "done": true,
-"n": 6
+"n": 6,
+"reread": [
+2015
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:PIOC:2010": {
 "at": "2026-11-03",
@@ -15457,9 +15499,15 @@
 "why": "company name does not match: Bosicor Pakistan Limited"
 },
 "web:PSEL:2013": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
-"n": 25
+"n": 25,
+"reread": [
+2013
+],
+"tries": 1,
+"rev": 4,
+"why": "company name does not match: Rafhan Maize Products Company Limited (names PPP)"
 },
 "web:NCPL:2020": {
 "at": "2026-11-04",
@@ -19395,7 +19443,7 @@
 "why": "no figure passed the checks"
 },
 "web:UCAPM:2017": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
 "n": 0
 },
@@ -19605,9 +19653,12 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "web:BFMOD:2019": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
-"n": 4
+"n": 6,
+"reread": [
+2019
+]
 },
 "web:AASM:2021": {
 "at": "2026-11-03",
@@ -19803,11 +19854,13 @@
 "web:FECM:2021": {
 "at": "2026-11-04",
 "done": true,
-"n": 10,
+"n": 14,
 "waits": 0,
 "tries": 1,
 "rev": 4,
-"why": "no two models gave a usable read"
+"reread": [
+2021
+]
 },
 "web:ICCI:2017": {
 "at": "2026-11-03",
@@ -21702,7 +21755,10 @@
 "at": "2026-11-04",
 "waits": 1,
 "done": true,
-"n": 0
+"n": 0,
+"reread": [
+2016
+]
 },
 "web:IGIIL:2025": {
 "at": "2026-11-03",
@@ -21801,10 +21857,13 @@
 ]
 },
 "web:CHAS:2017": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "waits": 1,
 "done": true,
-"n": 16
+"n": 33,
+"reread": [
+2017
+]
 },
 "web:PMPK:2025": {
 "at": "2026-11-03",
@@ -22613,8 +22672,12 @@
 "web:AYTM:2019": {
 "at": "2026-11-04",
 "done": true,
-"n": 10,
-"waits": 1
+"n": 12,
+"waits": 1,
+"reread": [
+2018,
+2019
+]
 },
 "web:EWLA:2023": {
 "at": "2026-11-03",
@@ -22728,8 +22791,11 @@
 "web:SALT:2026": {
 "at": "2026-11-04",
 "done": true,
-"n": 30,
-"waits": 1
+"n": 24,
+"waits": 1,
+"reread": [
+2026
+]
 },
 "web:GTECH:2022": {
 "at": "2026-11-04",
@@ -22799,14 +22865,17 @@
 "at": "2026-11-04",
 "waits": 2,
 "done": true,
-"n": 30
+"n": 24,
+"reread": [
+2026
+]
 },
 "web:GEMUNSL:2025": {
 "at": "2026-11-04",
 "waits": 0,
-"tries": 1,
+"tries": 2,
 "rev": 4,
-"why": "no two models gave a usable read"
+"why": "company name does not match: BLUE EX LIMITED (names BLUEX)"
 },
 "web:EWLA:2021": {
 "at": "2026-11-03",
@@ -22817,9 +22886,9 @@
 "web:WYETH:2021": {
 "at": "2026-11-04",
 "waits": 0,
-"tries": 1,
+"tries": 2,
 "rev": 4,
-"why": "no two models gave a usable read"
+"why": "company name does not match: not printed"
 },
 "khi:UVIC:2024": {
 "at": "2026-11-03",
@@ -22851,7 +22920,7 @@
 "why": "no figure passed the checks"
 },
 "web:CHAS:2014": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
 "n": 38
 },
@@ -23061,7 +23130,7 @@
 "why": "no figure passed the checks"
 },
 "web:NAGC:2014": {
-"at": "2026-11-03",
+"at": "2026-11-04",
 "done": true,
 "n": 36
 },
@@ -24034,13 +24103,19 @@
 "at": "2026-11-04",
 "waits": 2,
 "done": true,
-"n": 7
+"n": 4,
+"reread": [
+2023
+]
 },
 "web:KOHP:2018": {
 "at": "2026-11-04",
 "waits": 2,
 "done": true,
-"n": 12
+"n": 14,
+"reread": [
+2018
+]
 },
 "web:AASM:2024": {
 "at": "2026-11-03",
@@ -24317,7 +24392,10 @@
 "at": "2026-11-04",
 "done": true,
 "n": 0,
-"waits": 1
+"waits": 1,
+"reread": [
+2018
+]
 },
 "web:ICCI:2019": {
 "at": "2026-11-04",
@@ -24355,14 +24433,20 @@
 "web:CJPL:2017": {
 "at": "2026-11-04",
 "done": true,
-"n": 14,
-"waits": 1
+"n": 12,
+"waits": 1,
+"reread": [
+2017
+]
 },
 "web:ARPAK:2020": {
 "at": "2026-11-04",
 "done": true,
 "n": 0,
-"waits": 1
+"waits": 1,
+"reread": [
+2020
+]
 },
 "web:MUGHALC:2022": {
 "at": "2026-11-04",
@@ -24722,7 +24806,9 @@
 },
 "web:AKZO:2007": {
 "at": "2026-11-04",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 32
 },
 "web:HSM:2013": {
 "at": "2026-11-04",
@@ -24773,7 +24859,9 @@
 },
 "web:PECO:2015": {
 "at": "2026-11-04",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 24
 },
 "web:IML:2022": {
 "at": "2026-11-04",
@@ -24823,9 +24911,9 @@
 "web:DCTL:2021": {
 "at": "2026-11-04",
 "waits": 0,
-"tries": 1,
+"tries": 2,
 "rev": 4,
-"why": "no two models gave a usable read"
+"why": "company name does not match: DADABHOY CEMENT INDUSTRIES LIMITED (names ABSON)"
 },
 "web:ICCT:2017": {
 "at": "2026-11-04",
@@ -24939,7 +25027,8 @@
 "waits": 0,
 "tries": 1,
 "rev": 4,
-"why": "no two models gave a usable read"
+"done": true,
+"n": 32
 },
 "web:IML:2018": {
 "at": "2026-11-04",
@@ -25002,11 +25091,15 @@
 "waits": 0,
 "tries": 1,
 "rev": 4,
-"why": "no two models gave a usable read"
+"done": true,
+"n": 0
 },
 "web:DHPL:2011": {
 "at": "2026-11-04",
-"waits": 2
+"waits": 2,
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: HBL Holdings Limited (names ENGROH)"
 },
 "web:DMIL:2020": {
 "at": "2026-11-04",
@@ -25028,7 +25121,9 @@
 },
 "web:DMTX:2024": {
 "at": "2026-11-04",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 34
 },
 "web:JSIL:2025": {
 "at": "2026-11-04",
@@ -25155,9 +25250,98 @@
 },
 "web:SSGC:2024": {
 "at": "2026-11-04",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 30
 },
 "web:CHAS:2018": {
+"at": "2026-11-04",
+"done": true,
+"n": 36,
+"reread": [
+2018
+]
+},
+"web:ARPAK:2019": {
+"at": "2026-11-04",
+"done": true,
+"n": 0
+},
+"web:PSEL:2014": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Hashwani Hotels Limited (names PHDL)"
+},
+"web:FECM:2020": {
+"at": "2026-11-04",
+"done": true,
+"n": 10
+},
+"web:BML:2011": {
+"at": "2026-11-04",
+"done": true,
+"n": 22
+},
+"web:ILTM:2025": {
+"at": "2026-11-04",
+"done": true,
+"n": 32
+},
+"web:KOHP:2013": {
+"at": "2026-11-04",
+"done": true,
+"n": 13
+},
+"web:ICCT:2009": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SALT:2025": {
+"at": "2026-11-04",
+"done": true,
+"n": 32
+},
+"web:DMTX:2023": {
+"at": "2026-11-04",
+"done": true,
+"n": 16
+},
+"web:PECO:2007": {
+"at": "2026-11-04"
+},
+"web:DCTL:2020": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: DADABHOY CEMENT INDUSTRIES LIMITED (names ABSON)"
+},
+"web:AKZO:2005": {
+"at": "2026-11-04",
+"done": true,
+"n": 0
+},
+"web:DMTX:2022": {
+"at": "2026-11-04"
+},
+"web:DHPL:2010": {
+"at": "2026-11-04"
+},
+"web:GEMUNSL:2024": {
+"at": "2026-11-04"
+},
+"web:AKZO:2004": {
+"at": "2026-11-04"
+},
+"web:LSEPL:2016": {
+"at": "2026-11-04"
+},
+"web:DCTL:2019": {
+"at": "2026-11-04"
+},
+"web:PSEL:2012": {
 "at": "2026-11-04"
 }
 }
