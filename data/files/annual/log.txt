@@ -1,47 +1,3 @@
-pages ar_x_id3j5n 45s
-done: read 0 annual reports (0 audit re-reads), 0 skipped, about 137 still to read; models used: ; resting until tomorrow: 17 models
-guard: this run $0.000 for 0 reports; last day $1.75 for 853; credit $0.50
-tracker flags: 548 companies with histories, 754 listed
-sources: company websites give 3609 reports for 398 companies
-audit: 447 company years flagged: 109 to re-read, 277 re-read, 23 waiting for a first read, 38 no usable report
-openrouter: paid models off (credit left $0.50)
-pages ar_skqm6but 6s
-pages ar_ltb2knnr 6s
-pages ar_c_nxy7hz 0s
-pages ar_gfri6qvw 1s
-pages ar_ygi4zu01 2s
-pages ar_slmckazc 17s
-pages ar_zfufif3o 0s
-pages ar_oyetd_bj 19s
-pages ar_1mdl1fwa 0s
-pages ar_4x3twc4g 11s
-pages ar_tzgwc4dq 1s
-pages ar_vbylsb6z 6s
-pages ar_fyxkrwb0 2s
-pages ar_xpimi69p 1s
-pages ar_0qclabbc 10s
-pages ar_n5si65ne 1s
-pages ar_276nxyr6 6s
-pages ar_a35izz0k 5s
-pages ar_uoaug9dn 0s
-pages ar__a9j_xrd 16s
-pages ar_m7ijdmi6 0s
-pages ar_7y4zsr_x 0s
-pages ar_qv1hm9q4 0s
-pages ar_ehhamdnf 0s
-pages ar_xg0fm0i1 0s
-pages ar_t8eglc2r 0s
-pages ar_g82rcrgb 0s
-pages ar_4_laogot 0s
-pages ar_o0rt_s0v 0s
-pages ar_rvx0ixec 5s
-pages ar_7i1cnkyw 0s
-pages ar_8d37ui2o 6s
-pages ar_f6j62sfy 0s
-pages ar_rz_g7mnz 3s
-pages ar_vjhbahol 1s
-pages ar_gubib82t 1s
-pages ar_f_zqy32j 0s
 pages ar_ef841q2d 3s
 pages ar_aw5hu0ez 30s
 pages ar_z4oxp1vv 4s
@@ -298,3 +254,47 @@ pages ar__4o36ol_ 5s
 pages ar_98guc8gr 38s
 done: read 17 annual reports (20 audit re-reads), 19 skipped, about 108 still to read; models used: nvidia/nemotron-3-ultra-550b-a55b:free 5, nvidia/nemotron-3.5-super-vl:free 1, recursive/flint-v1.0:free 37, xingchen-agi/xing4.0-29b-a4b:free 6; resting until tomorrow: 16 models
 guard: this run $0.000 for 17 reports; last day $1.75 for 875; credit $0.50
+tracker flags: 548 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 447 company years flagged: 82 to re-read, 305 re-read, 18 waiting for a first read, 42 no usable report
+openrouter: paid models off (credit left $0.50)
+pages ar__lr42gx7 1s
+pages ar_3lzhuv8d 2s
+pages ar_2tj0z8hc 0s
+pages ar_sen_wc1m 0s
+pages ar_oxlxjw2o 0s
+pages ar_eckyd8gv 0s
+pages ar_brx2s9bf 0s
+pages ar_5reszfhk 0s
+pages ar_d2aeeloj 0s
+pages ar_3x24iod2 0s
+pages ar_6374kt2o 4s
+pages ar_dwcxzjxo 9s
+pages ar_iygh7zyt 1s
+pages ar_detek18e 3s
+pages ar_zf8kd8z5 10s
+pages ar_u7ohbjqm 0s
+pages ar_7dac6p1x 25s
+pages ar_zyr9f_ie 4s
+pages ar_2nuazpub 15s
+pages ar_0sum_ka7 0s
+pages ar_lua5e5_x 5s
+pages ar_866349w2 5s
+pages ar_7g34tue0 0s
+pages ar_q7tp5peg 0s
+pages ar_2nmz9oci 3s
+pages ar_of505wcw 1s
+pages ar_9grcse0n 4s
+pages ar_izjg3htp 1s
+pages ar_vgz2cjl4 0s
+pages ar_0di187yb 1s
+pages ar_dt7bbf6c 3s
+pages ar_rd1q3x2s 0s
+pages ar_ib3z7uos 0s
+pages ar_xser0_vw 3s
+pages ar_5rfg4_gt 7s
+pages ar_jed4lkep 9s
+pages ar_dheh_7ui 5s
+pages ar_dt98yynx 41s
+done: read 0 annual reports (1 audit re-reads), 1 skipped, about 107 still to read; models used: openai/gpt-oss-120b 2; resting until tomorrow: 17 models
+guard: this run $0.000 for 0 reports; last day $1.75 for 875; credit $0.50

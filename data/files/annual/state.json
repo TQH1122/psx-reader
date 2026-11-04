@@ -7518,7 +7518,13 @@
 "at": "2026-11-04",
 "done": true,
 "n": 12,
-"waits": 2
+"waits": 2,
+"reread": [
+2000
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:GAMON:2005": {
 "at": "2026-11-01",
