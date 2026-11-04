@@ -1,44 +1,3 @@
-pages ar_31hv0lwf 2s
-pages ar_6kf5e1ui 0s
-pages ar_9jwadkam 5s
-pages ar_k9hwodh4 0s
-pages ar_6qe1x6wh 1s
-pages ar_k9bc00_r 10s
-pages ar_v_m2f822 2s
-pages ar_a71dv72v 1s
-pages ar_4gwcge3b 6s
-pages ar_qt0unh29 16s
-pages ar_nayinkef 0s
-pages ar_0_c663o1 0s
-pages ar_h_28plh4 0s
-pages ar_rgz9efax 0s
-pages ar_sqabhn8j 0s
-pages ar_yytjw1ym 0s
-pages ar_r5u6a923 0s
-pages ar_5ds9ext6 0s
-pages ar_zdjq1x9s 0s
-pages ar_0bgj63n2 0s
-pages ar_u0iwnprh 5s
-pages ar_k1gf5q35 6s
-pages ar_glxouxqt 0s
-pages ar__zcojjdu 0s
-pages ar_7yv7an95 4s
-pages ar_0j7opopd 3s
-pages ar_5fkgni6u 29s
-pages ar_e1wk5e29 3s
-pages ar_plsg40tg 1s
-pages ar_rcrnpday 11s
-pages ar_3vaaais0 0s
-pages ar_h3kvtw5u 1s
-pages ar_bjvn3dj3 1s
-pages ar_o3et2grx 3s
-pages ar_iko9s_sn 0s
-pages ar__rkqb9rl 0s
-pages ar_rqo25iur 8s
-pages ar_ws9gzblq 10s
-pages ar_5yywhb70 6s
-pages ar_pb_7d3e1 45s
-pages ar_67ud6jm5 11s
 done: read 2 annual reports (1 audit re-reads), 0 skipped, about 134 still to read; models used: gemini-3-flash-preview 1, gemini-3.1-flash-lite 1, nvidia/nemotron-3-ultra-550b-a55b:free 1, nvidia/nemotron-3.5-super-vl:free 1, xingchen-agi/xing4.0-29b-a4b:free 1; resting until tomorrow: 17 models
 guard: this run $0.000 for 2 reports; last day $1.75 for 858; credit $0.50
 tracker flags: 548 companies with histories, 754 listed
@@ -298,3 +257,44 @@ pages ar_jvlcdadi 0s
 pages ar_gj2b_6ag 45s
 done: read 6 annual reports (8 audit re-reads), 2 skipped, about 94 still to read; models used: gemini-3.7-flash 1, gemini-3.5-flash 2, gemini-3.5-flash-lite 4, gemini-3.1-flash-lite 1, openai/gpt-oss-120b 1, xingchen-agi/xing4.0-29b-a4b:free 5; resting until tomorrow: 19 models
 guard: this run $0.000 for 6 reports; last day $1.75 for 881; credit $0.50
+tracker flags: 548 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 435 company years flagged: 69 to re-read, 311 re-read, 17 waiting for a first read, 38 no usable report
+openrouter: paid models off (credit left $0.50)
+pages ar_rcdfdfvh 5s
+pages ar__fw8xmzb 0s
+pages ar_6qee3mj7 0s
+pages ar_gc9bynnh 0s
+pages ar_bxt8nts8 0s
+pages ar_w82468vl 0s
+pages ar_9vphps21 0s
+pages ar_qro2mri2 0s
+pages ar_iwq0t1s0 0s
+pages ar_csmipf84 14s
+pages ar_6x6lnpyd 3s
+pages ar_k51gwcjg 31s
+pages ar_2bcy6vj0 20s
+pages ar_41hyjyda 2s
+pages ar_h2vbqawt 4s
+pages ar_d1pjmt4p 33s
+pages ar_v7o866wo 3s
+pages ar_b20_i8a3 4s
+pages ar__hh11x8m 9s
+pages ar_9wq_egxo 0s
+pages ar_r_h_g0nf 0s
+pages ar_xql5hvk1 1s
+pages ar_a7su_7up 1s
+pages ar_nnwrgr9k 2s
+pages ar__g5xyj_t 3s
+pages ar_nb80eepl 2s
+pages ar_5wi_481u 0s
+pages ar_ijq3u8g6 1s
+pages ar_stn3nc2c 0s
+pages ar_ziy2bi77 6s
+pages ar_7looebc8 2s
+pages ar_1752mwad 0s
+pages ar_b4drt6x8 7s
+pages ar_xsby3g2w 4s
+pages ar_n1466b20 32s
+done: read 0 annual reports (0 audit re-reads), 0 skipped, about 94 still to read; models used: gemini-3.1-flash-lite 1; resting until tomorrow: 19 models
+guard: this run $0.000 for 0 reports; last day $1.75 for 881; credit $0.50
