@@ -4740,7 +4740,13 @@
 "khi:PPL:2004": {
 "at": "2026-11-04",
 "done": true,
-"n": 4
+"n": 4,
+"reread": [
+2003
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "khi:ALTN:2015": {
 "at": "2026-11-01",
@@ -22438,7 +22444,10 @@
 "why": "scanned report (left for later, OCR too slow)"
 },
 "web:LSEPL:2024": {
-"at": "2026-11-03"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:DKL:2021": {
 "at": "2026-11-04",
@@ -22543,10 +22552,16 @@
 "n": 30
 },
 "web:GTECH:2022": {
-"at": "2026-11-03"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:ARM:2023": {
-"at": "2026-11-03"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Allied Engineering Management Company (Private) Limited (names ABL)"
 },
 "web:HIRAT:2024": {
 "at": "2026-11-04",
@@ -22569,11 +22584,14 @@
 "n": 21
 },
 "web:ADOS:2022": {
-"at": "2026-11-03"
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Sialkot & Anchor Mills Company Limited (names DMTX)"
 },
 "web:DCTL:2023": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: DADABHOY CEMENT INDUSTRIES LIMITED (names ABSON)"
 },
@@ -22604,8 +22622,8 @@
 "n": 30
 },
 "web:GEMUNSL:2025": {
-"at": "2026-11-03",
-"waits": 1
+"at": "2026-11-04",
+"waits": 2
 },
 "web:EWLA:2021": {
 "at": "2026-11-03",
@@ -22614,8 +22632,8 @@
 "why": "company name does not match: HBL PENSION FUND (names HGFA)"
 },
 "web:WYETH:2021": {
-"at": "2026-11-03",
-"waits": 1
+"at": "2026-11-04",
+"waits": 2
 },
 "khi:UVIC:2024": {
 "at": "2026-11-03",
@@ -24364,7 +24382,7 @@
 },
 "web:SPAC2:2022": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: Sialkot & Co."
 },
@@ -24375,37 +24393,37 @@
 },
 "web:PECO:2016": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: Mairaj Anees Ariﬀ"
 },
 "web:WHALE:2009": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: Singer Pakistan Limited (names SING)"
 },
 "web:DMTX:2020": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: D.M. Industries Limited (names ABSON)"
 },
 "web:ICCT:2020": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: Nestle Pakistan Limited (names NESTLE)"
 },
 "web:DHPL:2015": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
 },
 "web:IML:2023": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: HBL Holdings Limited (names ENGROH)"
 },
@@ -24416,14 +24434,352 @@
 },
 "web:CLVL:2019": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: WY MIAN TEXTILE INDUSTRIES LTD. (names ABSON)"
 },
 "web:BLUEX:2016": {
 "at": "2026-11-04",
-"tries": 1,
+"tries": 2,
 "rev": 4,
 "why": "company name does not match: Universal Network Systems (Private) Limited (names GEMUNSL)"
+},
+"web:PAKOXY:2024": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:PAKOXY:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:PAKOXY:2021": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:PAKOXY:2020": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SPAC2:2021": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SPAC2:2020": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SPAC2:2019": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SANE:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:SANE:2021": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:AKZO:2007": {
+"at": "2026-11-04",
+"waits": 1
+},
+"web:HSM:2013": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:LSEPL:2023": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:DMC:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Textile Mills Limited (names AABS)"
+},
+"web:ICCT:2019": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:DHPL:2014": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"web:DCTL:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: DADABHOY CEMENT INDUSTRIES LIMITED (names ABSON)"
+},
+"web:ICCT:2018": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:ILTM:2024": {
+"at": "2026-11-04",
+"done": true,
+"n": 24
+},
+"web:PECO:2015": {
+"at": "2026-11-04",
+"waits": 1
+},
+"web:IML:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: HBL Pankaj Ghar (P) Ltd"
+},
+"web:DMTX:2019": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:SALT:2024": {
+"at": "2026-11-04",
+"waits": 1
+},
+"web:DMIL:2025": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Corporation Limited"
+},
+"web:SANE:2020": {
+"at": "2026-11-04",
+"done": true,
+"n": 4
+},
+"web:SANE:2018": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SANE:2017": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:SPAC2:2018": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: LSE FINANCIAL SERVICES LIMITED (names ASRL)"
+},
+"web:DCTL:2021": {
+"at": "2026-11-04",
+"waits": 1
+},
+"web:ICCT:2017": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:DHPL:2013": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"web:DMIL:2024": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Textile Mills Limited (names AABS)"
+},
+"web:IML:2021": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: HBL HOLIDAYS AND LEISURE"
+},
+"web:ICCT:2016": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Lahore Electric Supply Company Limited (names KEL)"
+},
+"web:DMIL:2023": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Textile Mills Limited (names AABS)"
+},
+"web:DHPL:2012": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DAWH)"
+},
+"web:IML:2020": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Hindustan Cables Limited (names FCL)"
+},
+"web:DMIL:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Textile Mills Limited (names AABS)"
+},
+"web:DMC:2021": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Textile Mills Limited (names AABS)"
+},
+"web:ICCT:2015": {
+"at": "2026-11-04",
+"done": true,
+"n": 2
+},
+"web:SPAC2:2017": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: LSE FINANCIAL SERVICES LIMITED (names ASRL)"
+},
+"web:DMIL:2021": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Textile Mills Limited (names AABS)"
+},
+"web:IML:2019": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Sugar Mills Company Limited (names AABS)"
+},
+"web:ILTM:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:DMC:2020": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Industries Limited (names ABSON)"
+},
+"web:SPAC2:2016": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: LSE Financial Services Limited (names ASRL)"
+},
+"web:ILTM:2021": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Tata Pakistan Limited (names TATM)"
+},
+"web:ICCT:2013": {
+"at": "2026-11-04",
+"waits": 1
+},
+"web:IML:2018": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Sugar Mills Company Limited (names AABS)"
+},
+"web:DMC:2019": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: D.M. Textile Mills Ltd. (names AABS)"
+},
+"web:ILTM:2020": {
+"at": "2026-11-04",
+"done": true,
+"n": 1
+},
+"web:IML:2017": {
+"at": "2026-11-04",
+"done": true,
+"n": 0
+},
+"web:ILTM:2018": {
+"at": "2026-11-04",
+"waits": 1
+},
+"web:LSEPL:2022": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan Stock Exchange Limited (names DOMF)"
+},
+"web:LSEPL:2021": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:LSEPL:2020": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:LSEPL:2019": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "scanned report (left for later, OCR too slow)"
+},
+"web:LSEPL:2018": {
+"at": "2026-11-04",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"web:LSEPL:2017": {
+"at": "2026-11-04",
+"waits": 1
+},
+"web:DHPL:2011": {
+"at": "2026-11-04"
+},
+"web:DMIL:2020": {
+"at": "2026-11-04",
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 }
 }
