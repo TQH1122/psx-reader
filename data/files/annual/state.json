@@ -7551,7 +7551,13 @@
 "khi:UCAPM:2006": {
 "at": "2026-11-04",
 "done": true,
-"n": 4
+"n": 4,
+"reread": [
+2005
+],
+"tries": 1,
+"rev": 4,
+"why": "not annual accounts: reason"
 },
 "khi:SERT:2006": {
 "at": "2026-11-01",
@@ -12816,9 +12822,13 @@
 "n": 1
 },
 "khi:UCAPM:2003": {
-"at": "2026-11-02",
+"at": "2026-11-04",
 "done": true,
-"n": 4
+"n": 4,
+"reread": [
+2002,
+2003
+]
 },
 "khi:HSPI:2006": {
 "at": "2026-11-02",
@@ -20013,7 +20023,13 @@
 "web:CJPL:2016": {
 "at": "2026-11-04",
 "done": true,
-"n": 11
+"n": 11,
+"reread": [
+2016
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "web:STML:2022": {
 "at": "2026-11-03",
@@ -25702,5 +25718,10 @@
 "web:GATM:2025": {
 "at": "2026-11-04",
 "waits": 1
+},
+"web:CJPL:2015": {
+"at": "2026-11-04",
+"done": true,
+"n": 41
 }
 }
