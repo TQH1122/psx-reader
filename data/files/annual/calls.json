@@ -1,6 +1,6 @@
 {
-"at": "2026-11-05 15:55",
-"minutes": 0.1,
+"at": "2026-11-05 16:25",
+"minutes": 0.2,
 "panel": [
 "gemini:gemini-3.8-flash",
 "gemini:gemini-3.7-flash",
@@ -9,6 +9,7 @@
 "gemini:gemini-3-flash-preview",
 "gemini:gemini-2.5-flash",
 "gemini:gemini-omni-1.1-flash",
+"gemini:gemini-omni-1.2-flash",
 "gemini:gemini-omni-flash-preview",
 "gemini:gemini-3.5-flash-lite",
 "gemini:gemini-3.1-flash-lite",
