@@ -1,6 +1,6 @@
 {
-"at": "2026-11-05 00:29",
-"minutes": 18.7,
+"at": "2026-11-05 01:00",
+"minutes": 0.1,
 "panel": [
 "gemini:gemini-3.8-flash",
 "gemini:gemini-3.7-flash",
@@ -23,83 +23,5 @@
 "cloudflare:@cf/openai/gpt-oss-120b",
 "cloudflare:@cf/meta/llama-3.3-70b-instruct-fp8-fast"
 ],
-"calls": [
-[
-"gemini-omni-1.1-flash",
-429,
-0.1,
-3174,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-omni-1.1-flash, description: Generate content input tokens per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\n* Quota exceeded for m"
-],
-[
-"gemini-omni-flash-preview",
-429,
-0.2,
-3174,
-"{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-omni-1.1-flash, description: Generate content input tokens per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\n* Quota exceeded for m"
-],
-[
-"nvidia/nemotron-3-ultra-550b-a55b:free",
-200,
-322.2,
-4407,
-""
-],
-[
-"openai/gpt-oss-120b",
-200,
-6.6,
-2527,
-""
-],
-[
-"nvidia/nemotron-3-ultra-550b-a55b:free",
-200,
-235.1,
-5470,
-""
-],
-[
-"openai/gpt-oss-120b",
-200,
-6.0,
-2883,
-""
-],
-[
-"nvidia/nemotron-3-ultra-550b-a55b:free",
-200,
-248.3,
-4080,
-""
-],
-[
-"openai/gpt-oss-120b",
-200,
-6.7,
-544,
-""
-],
-[
-"nvidia/nemotron-3-ultra-550b-a55b:free",
-200,
-151.6,
-4979,
-""
-],
-[
-"openai/gpt-oss-120b",
-200,
-6.8,
-533,
-""
-],
-[
-"nvidia/nemotron-3-ultra-550b-a55b:free",
-200,
-107.1,
-5072,
-""
-]
-]
+"calls": []
 }
