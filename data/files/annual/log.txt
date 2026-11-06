@@ -1,9 +1,3 @@
-pages ar__9v28qxt 6s
-pages ar_1jy7juk4 9s
-pages ar_ups_qql9 4s
-pages ar_9e4nhuyu 6s
-done: read 5 annual reports (5 audit re-reads), 0 skipped, about 0 still to read; models used: openai/gpt-oss-120b 4, nvidia/nemotron-3-ultra-550b-a55b:free 5; resting until tomorrow: 2 models
-guard: this run $0.000 for 5 reports; last day $0.00 for 277; credit $0.50
 tracker flags: 549 companies with histories, 754 listed
 sources: company websites give 3609 reports for 398 companies
 audit: 433 company years flagged: 0 to re-read, 394 re-read, 0 waiting for a first read, 39 no usable report
@@ -280,6 +274,12 @@ audit: 432 company years flagged: 0 to re-read, 392 re-read, 0 waiting for a fir
 openrouter: paid models off (credit left $0.50)
 done: read 0 annual reports (0 audit re-reads), 0 skipped, about 0 still to read; models used: 
 guard: this run $0.000 for 0 reports; last day $0.00 for 5; credit $0.50
+tracker flags: 549 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 432 company years flagged: 0 to re-read, 392 re-read, 0 waiting for a first read, 40 no usable report
+openrouter: paid models off (credit left $0.50)
+done: read 0 annual reports (0 audit re-reads), 0 skipped, about 0 still to read; models used: 
+guard: this run $0.000 for 0 reports; last day $0.00 for 0; credit $0.50
 tracker flags: 549 companies with histories, 754 listed
 sources: company websites give 3609 reports for 398 companies
 audit: 432 company years flagged: 0 to re-read, 392 re-read, 0 waiting for a first read, 40 no usable report
