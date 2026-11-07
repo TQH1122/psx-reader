@@ -252,16 +252,22 @@ def psx_docs():
     out = {}
     lib = [r for r in jl(os.path.join(FILES, "library_index.json"), []) or []
            if r.get("kind") == "A" and r.get("tk") and r.get("y")]
-    for r in lib:
-        m = re.fullmatch(r"(\d{5,7})\.pdf", r.get("title") or "")
-        if m:
-            out.setdefault(r["tk"], {}).setdefault(int(r["y"]), (r["id"], f"https://dps.psx.com.pk/download/document/{m.group(1)}.pdf"))
+    # the robot's own index of everything in the folder (toolkit/drive_index.py, 8 Nov 2026): reports he uploaded
+    # after 27 Oct 2026 had never been used
+    seen = {r.get("id") for r in lib}
+    for fid, r in ((jl(os.path.join(FILES, "drive_ident.json"), {}) or {}).items()):
+        if fid not in seen and r.get("kind") == "A" and r.get("tk") and r.get("y") and not r.get("err"):
+            lib.append({"id": fid, "title": r.get("title"), "tk": r["tk"], "kind": "A", "y": r["y"]})
     # his other Drive annual reports (2 Nov 2026), once the PSX Library folder is shared "anyone with the link":
     # checked with one test download per run, so nothing is tried (and no attempt wasted) while it is still private
     withid = [r for r in lib if r.get("id")]
     if any(drive_open(r["id"]) for r in withid[:6]):  # any one opening shows the folder is shared
         for r in withid:
             out.setdefault(r["tk"], {}).setdefault(int(r["y"]), (r["id"], DRIVE.format(r["id"])))
+    for r in lib:  # after Drive, so his Drive copy wins over the PSX site
+        m = re.fullmatch(r"(\d{5,7})\.pdf", r.get("title") or "")
+        if m and not r.get("id"):  # PSX site only when the file is not in his Drive
+            out.setdefault(r["tk"], {}).setdefault(int(r["y"]), (r["id"], f"https://dps.psx.com.pk/download/document/{m.group(1)}.pdf"))
     return out
 
 
@@ -306,6 +312,29 @@ def load_recheck():
     tickers and years only. An empty set when the secret is missing or the site cannot be reached."""
     d = site_json("recheck")
     return {(str(t), int(y)) for t, y in (d or {}).get("recheck", []) if str(y).isdigit()}
+
+
+def active_only(sc):
+    """only companies that traded in the last 90 days (8 Nov 2026): delisted, merged and long untraded companies
+    (Suzuki, Shell, FFBL and about 270 more) had stayed in the reading list. Trading comes from the tracker's daily
+    market prices (pxstats). Safeguards: a broken or short price file changes nothing (the saved list is used), and
+    a company that trades again comes back on the next run, since nothing is deleted, it is only left unread."""
+    ap = os.path.join(DB, "market", "active.json")
+    d = site_json("pxstats")
+    rows = (d or {}).get("rows") or {}
+    if len(rows) >= 300:
+        last = max((r.get("d") or "") for r in rows.values())
+        from datetime import date as _d, timedelta
+        cut = (_d.fromisoformat(last) - timedelta(days=90)).isoformat() if last else ""
+        act = sorted(t for t, r in rows.items() if (r.get("d") or "") >= cut)
+        jw({"asOf": last, "note": "companies traded in the last 90 days (tickers only)", "s": act}, ap, indent=0)
+    act = set((jl(ap, {}) or {}).get("s") or [])
+    if len(act) < 300:
+        print("universe: no trading list, every listed company kept", flush=True)
+        return sc
+    out = {t: r for t, r in sc.items() if t in act}
+    print(f"universe: {len(out)} companies traded in the last 90 days; {len(sc) - len(out)} delisted, merged or untraded left out", flush=True)
+    return out
 
 
 def refresh_flags():
@@ -369,17 +398,40 @@ def candidates(tk, cat, docs):
     cands = {}
     for y in (cat.get(tk) or {}).get("years", []):
         cands[y] = ("khi", f"{KHI}/assets/annual_reports/{cat[tk]['id']}/{y}")
-    for y, (fid, url) in (docs.get(tk) or {}).items():
-        cands.setdefault(y, ("psx" if "dps.psx" in url else "drive", url))
-    # the company's own website (3 Nov 2026): a full report, so it carries the consolidated statements that KHI
-    # Stocks' short extracts lack. It replaces KHI for group companies, and any source whose read failed for good
-    for y, url in (WEB.get(tk) or {}).items():
-        y = int(y)
+    if tk in BAD_KHI:  # KHI Stocks files this ticker under another company's reports (8 Nov 2026)
+        cands = {}
+    # full reports (his Drive library, then the company's own website) carry the consolidated statements that KHI
+    # Stocks' short extracts lack: they replace KHI for group companies, and any source whose read failed for good
+    alts = [(int(y), "psx" if "dps.psx" in url else "drive", url) for y, (fid, url) in (docs.get(tk) or {}).items()]
+    alts += [(int(y), "web", url) for y, url in (WEB.get(tk) or {}).items()]
+    for y, src, url in sorted(alts, key=lambda a: a[1] != "drive"):  # Drive first: his own copy always downloads
         cur = cands.get(y)
         st = STATE.get(f"{cur[0]}:{tk}:{y}") or {} if cur else {}
-        if cur is None or (tk in GROUPS and cur[0] == "khi") or (not st.get("done") and st.get("tries", 0) >= 2):
-            cands[y] = ("web", url)
+        if cur is None or (tk in GROUPS and cur[0] == "khi") or (not st.get("done") and (st.get("tries", 0) >= 2 or st.get("retry"))):
+            cands[y] = (src, url)
     return cands
+
+
+BAD_KHI = set()
+
+
+def second_chance(state):
+    """one more try for reports given up for reasons that can change (8 Nov 2026: 2,134 reports had been dropped for
+    good, so the reader sat idle). Scanned reports are now read with OCR; failed downloads, missing statement pages
+    and reads where no figure passed get one fresh go with models that have not read them. Once only per report
+    (the "second" mark), so nothing can loop. KHI tickers that twice gave another company's report lose KHI."""
+    again = re.compile(r"scanned|download failed|no statement pages|no figure passed|no two models|page picking|broken PDF")
+    n = 0
+    bad = {}
+    for k, st in state.items():
+        why = st.get("why") or ""
+        if k.startswith("khi:") and why.startswith("company name does not match"):
+            bad[k.split(":")[1]] = bad.get(k.split(":")[1], 0) + 1
+        if not st.get("done") and st.get("tries", 0) >= 2 and not st.get("second") and again.search(why):
+            st.update(retry=1, second=1, tries=1)
+            n += 1
+    BAD_KHI.update(t for t, c in bad.items() if c >= 2)
+    return n
 
 
 def audit_years(tk, y, cands):
@@ -438,6 +490,9 @@ def next_job(tk, sc, longrows, cat, docs, state, extracts, imp):
             # the audit found two sources disagreeing on this year: read the report once more with fresh models
             src, url = cands[y]
             return (tier, -float(sc[tk].get("mc") or 0), -y, f"{src}:{tk}:{y}", tk, y, src, url, "audit")
+        if st.get("retry") and not st.get("done") and y not in cov:
+            src, url = cands[y]
+            return (tier, -float(sc[tk].get("mc") or 0), -y, f"{src}:{tk}:{y}", tk, y, src, url, "retry")
         if st.get("done") or st.get("tries", 0) >= 2:
             cov |= {y} if st.get("done") else set()
             continue
@@ -504,8 +559,7 @@ def get_pages(jid, src, url, work):
             return None, f"{ {'psx': 'PSX', 'web': 'Company website'}.get(src, 'Drive') } download failed ({code})"
     if pdf.endswith(".pdf") and os.path.getsize(pdf) > 80e6:
         return None, "file too large"
-    with PREP:
-        return _pages(pdf, work)
+    return _pages(pdf, work)
 
 
 def _pages(pdf, work):
@@ -517,13 +571,24 @@ def _pages(pdf, work):
         t = subprocess.run(["pdftotext", "-layout", pdf, "-"], capture_output=True, text=True, errors="ignore").stdout.split("\f")
         textp = sum(1 for x in t if len(x.strip()) > 200)
         if len(t) > 40 and textp < len(t) * 0.3:
-            return None, "scanned report (left for later, OCR too slow)"
+            # scanned (8 Nov 2026): read with OCR, at most two at a time so normal reports keep flowing
+            if len(t) > 450:
+                return None, "scanned report too long for OCR"
+            return _prep(pdf, work, OCR, 1800)
+    return _prep(pdf, work, PREP, 600)
+
+
+OCR = threading.Semaphore(2)
+
+
+def _prep(pdf, work, sem, limit):
     out = os.path.join(work, "bundle.txt")
     try:
         t0 = time.time()
-        p = subprocess.run([sys.executable, os.path.join(ROOT, "toolkit", "lib", "prep.py"), pdf, out],
-                           capture_output=True, text=True, timeout=600, cwd=work,
-                           env=dict(os.environ, OMP_THREAD_LIMIT="1"))  # OCR: one core each
+        with sem:
+            p = subprocess.run([sys.executable, os.path.join(ROOT, "toolkit", "lib", "prep.py"), pdf, out],
+                               capture_output=True, text=True, timeout=limit, cwd=work,
+                               env=dict(os.environ, OMP_THREAD_LIMIT="1"))  # OCR: one core each
         print(f"pages {os.path.basename(work)} {round(time.time() - t0)}s", flush=True)
     except subprocess.TimeoutExpired:
         return None, "page picking took too long (scanned report)"
@@ -1049,6 +1114,23 @@ def phone(title, text):
                    capture_output=True, timeout=90)
 
 
+def idle_alert(done, sc, longrows, by_tk):
+    """never idle in silence (8 Nov 2026: every run "succeeded" for three days while reading nothing). When no annual
+    report has been read for 24 hours his phone gets one message a day saying so, with how many traded companies
+    still have short histories."""
+    g = jl(GUARD, {}) or {}
+    now = time.time()
+    if done or "last_read" not in g:
+        g["last_read"] = now
+    elif now - g["last_read"] > 86400 and now - g.get("idle_alert", 0) > 86400:
+        short = sum(1 for tk in sc if len({y for y in covered(tk, longrows, by_tk.get(tk, [])) if y >= 2005}) < 10)
+        phone("Report reader idle", f"No annual report read for {round((now - g['last_read']) / 3600)} hours. "
+                                    f"{short} of {len(sc)} traded companies still have under 10 years. Needs a look in Claude.")
+        g["idle_alert"] = now
+        print("idle alert sent to his phone", flush=True)
+    jw(g, GUARD)
+
+
 def guard_start():
     g = jl(GUARD, {}) or {}
     until = g.get("paid_off_until") or ""
@@ -1094,7 +1176,7 @@ def main():
     os.makedirs(RAW, exist_ok=True)
     nl, ns = refresh_flags()
     print(f"tracker flags: {nl} companies with histories, {ns} listed" if nl else "tracker flags: kept the saved copy", flush=True)
-    sc = screener()
+    sc = active_only(screener())
     longrows = load_rows("long")
     ext = jl(EXTRACTS, {}) or {}
     state0 = jl(os.path.join(AN, "state.json"), {}) or {}
@@ -1118,6 +1200,10 @@ def main():
             by_tk.setdefault(d["ticker"], []).append(d)
     state = jl(os.path.join(AN, "state.json"), {}) or {}
     RECHECK.update(load_recheck())
+    nsec = second_chance(state)
+    if nsec:
+        jw(state, os.path.join(AN, "state.json"), indent=0)
+        print(f"second chance: {nsec} reports given up earlier get one more try", flush=True)
     STATE.update(state)
     WEB.update({t: v.get("years") or {} for t, v in ((jl(os.path.join(AN, "web_catalogue.json"), {}) or {}).get("co") or {}).items()})
     GROUPS.update(t for t, r in longrows.items() if (r or {}).get("basis") == "group")
@@ -1195,7 +1281,9 @@ def main():
                 jid, tk = job[3], job[4]
                 st = state.setdefault(jid, {})
                 st["at"] = date.today().isoformat()
-                if len(job) > 8 and "wait" not in res:  # an audit re-read counts once, whatever came back
+                if len(job) > 8 and job[8] == "retry" and "wait" not in res:
+                    st.pop("retry", None)  # the second chance is used up, whatever came back
+                if len(job) > 8 and job[8] == "audit" and "wait" not in res:  # an audit re-read counts once, whatever came back
                     st["reread"] = sorted(set(st.get("reread") or []) | audit_years(tk, job[5], candidates(tk, cat, docs)))
                     audited_now[0] += 1
                 if "rec" in res:
@@ -1218,7 +1306,7 @@ def main():
                     if "wait" in res:
                         res = {"skip": "no two models gave a usable read"}
                         st["waits"] = 0
-                    st["tries"] = 2 if res["skip"].startswith("scanned") else st.get("tries", 0) + 1
+                    st["tries"] = st.get("tries", 0) + 1
                     st["rev"] = 4
                     st["why"] = res["skip"]
                     skipped += 1
@@ -1240,6 +1328,10 @@ def main():
         guard_end(c0, done)
     except Exception as e:  # the guard never stops the reader
         print(f"guard: skipped ({e})", flush=True)
+    try:
+        idle_alert(done, sc, longrows, by_tk)
+    except Exception as e:  # the alert never stops the reader
+        print(f"idle alert: skipped ({e})", flush=True)
     sys.stdout.flush()
     pool.shutdown(wait=False, cancel_futures=True)
     os._exit(0)  # leave any report still hanging after the hard stop; everything finished is already saved

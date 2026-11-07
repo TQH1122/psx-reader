@@ -56,4 +56,4 @@ jobs:
           if ! echo "$last" | grep -q "^done:"; then sleep 600
           elif echo "$last" | grep -qE "[^0-9]0 waiting"; then sleep 1800
           elif echo "$last" | grep -qE "^done: read 0 "; then sleep 900; fi
-          for i in 1 2 3; do gh workflow run broker.yml --ref main && exit 0; sleep 30; done
+          for i in 1 2 3; do gh workflow run broker.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done   # -R: this step runs inside the private tracker checkout (8 Nov 2026 fix)

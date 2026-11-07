@@ -1,0 +1,44 @@
+# Drive library indexer (8 Nov 2026): lists his PSX Library Drive folder, opens every file not seen before, and works out
+# company, kind and year (toolkit/drive_index.py), so the report reader reads every annual report he uploads. Started by
+# the report reader every half hour; while files are still waiting it starts its own next run at once.
+name: Drive library indexer
+on:
+  workflow_dispatch:
+  push:
+    paths: ['toolkit/drive_index.py']
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: drive
+  cancel-in-progress: false
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: command -v pdftotext && command -v tesseract || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils tesseract-ocr; } > /dev/null 2>&1
+      - name: Look at new files in the Drive library
+        timeout-minutes: 55
+        run: python3 toolkit/drive_index.py 45 | tee /tmp/drive_last.txt
+      - name: Save
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          git add data/files/drive_ident.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -q -m "Drive library: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M')"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          exit 1
+      - name: Start the next run while files are waiting
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          grep -qE "\(.*[1-9][0-9]* still to look at\)" /tmp/drive_last.txt || exit 0
+          grep -qE "[( ]0 this run" /tmp/drive_last.txt && exit 0   # a run that opened nothing does not loop
+          for i in 1 2 3; do gh workflow run drive.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done
