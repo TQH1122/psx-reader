@@ -76,18 +76,18 @@ done: read 0 annual reports (0 audit re-reads), 0 skipped, about 0 still to read
 guard: this run $0.000 for 0 reports; last day $0.00 for 0; credit $0.50
 tracker flags: 549 companies with histories, 754 listed
 sources: company websites give 3609 reports for 398 companies
-audit: 432 company years flagged: 0 to re-read, 392 re-read, 0 waiting for a first read, 40 no usable report
-openrouter: paid models off (credit left $0.50)
-done: read 0 annual reports (0 audit re-reads), 0 skipped, about 0 still to read; models used: 
-guard: this run $0.000 for 0 reports; last day $0.00 for 0; credit $0.50
-tracker flags: 549 companies with histories, 754 listed
-sources: company websites give 3609 reports for 398 companies
 audit: 434 company years flagged: 0 to re-read, 392 re-read, 1 waiting for a first read, 41 no usable report
 openrouter: paid models off (credit left $0.50)
 pages ar_1dcw_drd 14s
 pages ar_wn1uaob_ 14s
 done: read 1 annual reports (1 audit re-reads), 1 skipped, about 0 still to read; models used: gemini-3.6-flash 1, nvidia/nemotron-3-ultra-550b-a55b:free 1, recursive/flint-v1.0:free 1, xingchen-agi/xing4.0-29b-a4b:free 1; resting until tomorrow: 6 models
 guard: this run $0.000 for 1 reports; last day $0.00 for 1; credit $0.50
+tracker flags: 549 companies with histories, 754 listed
+sources: company websites give 3609 reports for 398 companies
+audit: 434 company years flagged: 0 to re-read, 393 re-read, 0 waiting for a first read, 41 no usable report
+openrouter: paid models off (credit left $0.50)
+done: read 0 annual reports (0 audit re-reads), 0 skipped, about 0 still to read; models used: 
+guard: this run $0.000 for 0 reports; last day $0.00 for 1; credit $0.50
 tracker flags: 549 companies with histories, 754 listed
 sources: company websites give 3609 reports for 398 companies
 audit: 434 company years flagged: 0 to re-read, 393 re-read, 0 waiting for a first read, 41 no usable report
