@@ -23505,10 +23505,9 @@
 "web:GATM:2020": {
 "at": "2026-11-08",
 "waits": 2,
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "Company website download failed (200)",
-"retry": 1,
 "second": 1
 },
 "web:IDYM:2019": {
@@ -29996,9 +29995,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "not annual accounts: company name not found in provided pages",
-"retry": 1,
-"redo8": 1
+"redo8": 1,
+"done": true,
+"n": 21
 },
 "web:WAVESAPP:2016": {
 "at": "2026-11-08",
@@ -30019,11 +30018,10 @@
 "web:CLVL:2021": {
 "at": "2026-11-08",
 "n": 11,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks",
-"retry": 1,
+"why": "Company website download failed (200)",
 "second": 1,
 "waits": 1
 },
@@ -31005,12 +31003,11 @@
 },
 "web:ARMG:2026": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "redo8": 1,
 "n": 24,
 "why": "Company website download failed (200)",
-"retry": 1,
 "second": 1,
 "waits": 1
 },
@@ -40331,7 +40328,8 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 0
+"n": 0,
+"waits": 1
 },
 "arc:YOUW:2024": {
 "at": "2026-11-08",
@@ -41117,12 +41115,14 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:SAIF:2018": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 }
 }
