@@ -406,11 +406,12 @@ def covered(tk, longrows, extracts):
             # a group company's year is filled only by group accounts (3 Nov 2026: company only extracts from KHI Stocks
             # had marked 124 group years as done, so their full website reports were never read); its early company only
             # years that the tracker accepted are already in the flags above
-            if (b == "C") == bool(d.get("cons")) and not (group and b == "S"):
+            if (b == "C") == bool(d.get("cons")) and not (group and b == "S" and not d.get("nogroup")):
                 # only years whose profit was read (8 Nov 2026: a read that gave only assets or cash had marked the
                 # year as done, so the year's full report on his Drive or the company's website was never read)
+                # a group year needs the owners' share (a consolidated total alone leaves the history empty)
                 cov |= {int(y) for y, row in (d.get(b) or {}).items() if str(y).isdigit() and isinstance(row, dict)
-                        and (row.get("ni") is not None or row.get("pat") is not None)}
+                        and (row.get("ni") is not None or (row.get("pat") is not None and not (group and b == "C")))}
         for k in ("SUM", "SUM_C", "SUM_X"):
             sm = d.get(k) or {}
             ok = sm.get("basis") == "consolidated" if group else sm.get("basis") in ("standalone", "unclear")
@@ -496,6 +497,32 @@ def requeue_8nov(state, ext):
             st.update(retry=1, tries=1, redo8=1)
             n += 1
     done["requeue_8nov"] = f"{date.today().isoformat()}: {n} reports"
+    jw(done, mp, indent=0)
+    return n
+
+
+def requeue_groups(state, ext, longrows):
+    """once (8 Nov 2026): group companies' reports read before the reader noted whether a report has group accounts
+    at all (standalone reads) or before owners' profit was taken from statements with no minority interest
+    (consolidated reads with total profit only). Saved model answers are reused; once per report."""
+    mp = os.path.join(AN, "migrations.json")
+    done = jl(mp, {}) or {}
+    if done.get("requeue_groups"):
+        return 0
+    groups = {t for t, r in longrows.items() if (r or {}).get("basis") == "group"}
+    n = 0
+    for k, d in ext.items():
+        st = state.get(k)
+        if not st or not st.get("done") or d.get("by") != "ai" or d.get("ticker") not in groups or "pages" in d:
+            continue
+        rows = (d.get("C") if d.get("cons") else d.get("S")) or {}
+        need = (not d.get("cons")) or any(isinstance(r, dict) and r.get("ni") is None and r.get("pat") is not None
+                                          for r in rows.values())
+        if need:
+            st.pop("done", None)
+            st.update(retry=1, tries=1, redo8=1)
+            n += 1
+    done["requeue_groups"] = f"{date.today().isoformat()}: {n} reports"
     jw(done, mp, indent=0)
     return n
 
@@ -1118,7 +1145,13 @@ def read_one(job, readers, sc, work):
                     dropped.append(f"summary {yy} {fld}: differs from the statements")
     sie = [j.get("surplus_in_equity") for j in firsts if isinstance(j.get("surplus_in_equity"), bool)]
     sie = sie[0] if len(sie) >= 2 and sie[0] == sie[1] else None
+    # 8 Nov 2026, group companies: consolidated statements with no non controlling (minority) interest anywhere in
+    # them belong to a group whose subsidiaries are wholly owned, so the owners' profit is the whole profit
+    # (IFRS prints the split between owners and minority on the face of the income statement, so that page must be in)
+    nominority = bool(cons and "===== PLC page" in pages and not re.search(r"non\s*-?\s*controlling|minority", pages, re.I))
     for r in st.values():
+        if nominority and "pat" in r and "ni" not in r and "nci" not in r:
+            r["ni"] = r["pat"]
         if "surplus" in r and sie is not None:
             r["surplus_in_eq"] = sie
         elif "surplus" in r and "eq" in r:
@@ -1134,7 +1167,16 @@ def read_one(job, readers, sc, work):
            ("C" if cons else "S"): st, "restated": "",
            "notes": f"read by free AI models ({', '.join(sorted(reads))[:200]}); figures kept only when two agree and the "
                     f"number is printed" + ("; OCR pages, only figures confirmed by arithmetic" if ocr else ""),
-           "src": url, "by": "ai", "v": 3, "dropped": dropped[:40], "disputed": sorted(bad)[:40]}
+           "src": url, "by": "ai", "v": 3, "dropped": dropped[:40], "disputed": sorted(bad)[:40],
+           # a full annual report (40 pages or more) with no consolidated statements: the company had no group accounts
+           # that year, so its standalone figures are the whole business (8 Nov 2026)
+           # and the statements must not call themselves unconsolidated, separate or standalone, nor mention a
+           # subsidiary: IFRS makes a company with subsidiaries name its own accounts that way, so a standalone file of a
+           # group (Lucky Cement publishes one) is never taken for the whole business
+           "pages": info.get("pages"), "nogroup": bool(not cons and (info.get("pages") or 0) >= 40 and not re.search(
+               r"un\s*-?\s*consolidated|consolidated|separate\s+financial|stand\s*-?\s*alone|subsidiar",
+               re.sub(r"(?m)^FILE .*$", "", pages), re.I)),   # not the page picker's own header line
+           "nominority": nominority}
     if moved:
         out["moved_from"] = job[4]
     if audit:
@@ -1312,7 +1354,7 @@ def main():
         if d.get("ticker") and not d.get("skip"):
             by_tk.setdefault(d["ticker"], []).append(d)
     state = jl(os.path.join(AN, "state.json"), {}) or {}
-    nre = requeue_8nov(state, ext)
+    nre = requeue_8nov(state, ext) + requeue_groups(state, ext, load_rows("long"))
     if nre:
         jw(state, os.path.join(AN, "state.json"), indent=0)
         print(f"requeue: {nre} reports read again under the 8 Nov 2026 fixes (joined letters, profit rules)", flush=True)
