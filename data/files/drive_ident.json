@@ -27922,9 +27922,9 @@
 },
 "1M8iXZ_dmH4GbmUx2ENzKUMGsYNLgZRBR": {
 "title": "238992.pdf",
-"err": "download 503",
-"tries": 1,
-"v": 2,
+"size": 2040,
+"kind": "notpdf",
+"v": 3,
 "at": "2026-11-08"
 },
 "1-0TUx5NKa0i50525CK5ALkqxuswen3Gh": {
@@ -56834,7 +56834,7 @@
 "1fa9RzLs_JL8ey1E0UCA0Xq5NUvuBo0okWc6bciaWfDY": {
 "title": "PSX Library Index",
 "err": "download 404",
-"tries": 1,
+"tries": 2,
 "v": 2,
 "at": "2026-11-08"
 },
