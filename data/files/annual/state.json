@@ -18580,19 +18580,17 @@
 "n": 28
 },
 "web:INKL:2019": {
-"at": "2026-11-03",
-"tries": 1,
+"at": "2026-11-08",
+"tries": 2,
 "rev": 4,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
+"why": "no statement pages found",
 "second": 1
 },
 "web:INKL:2018": {
-"at": "2026-11-03",
-"tries": 1,
+"at": "2026-11-08",
+"tries": 2,
 "rev": 4,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
+"why": "company name does not match: Not available",
 "second": 1
 },
 "web:ADAMS:2026": {
@@ -29262,14 +29260,257 @@
 },
 "drive:INKL:2019": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 4,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:INKL:2018": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 4,
 "why": "company name does not match: TNAEEM SHAFT TAVED KHAN (names DGKC)"
+},
+"drive:PIM:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 9
+},
+"drive:DCR:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"drive:HASCOL:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: The provided pages do not contain the required financial statement figures or co"
+},
+"drive:OLPL:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"drive:JSIL:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: insufficient data to extract required fields"
+},
+"drive:DCR:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"drive:GAMON:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"drive:MUGHAL:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: not stated"
+},
+"drive:HWQS:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 16
+},
+"drive:ANL:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"drive:FZCM:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "not annual accounts: The provided pages do not contain the complete main financial statements (Profit"
+},
+"drive:NSRM:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"drive:SFL:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 38
+},
+"drive:FRCL:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"drive:BELA:2020": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:FFL:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated in provided pages"
+},
+"drive:ILP:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:MSCL:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"drive:CCM:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 35
+},
+"drive:NATF:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 6
+},
+"drive:KHYT:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:PIBTL:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"drive:AHTM:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"drive:DINT:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Nishat Chunian Limited (names NCL)"
+},
+"drive:AATM:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: not stated"
+},
+"drive:TSPL:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"drive:CFL:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Colony Textile Mills Limited (names AATM)"
+},
+"drive:SSML:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"drive:KSTM:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 29
+},
+"drive:OCTOPUS:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 23
+},
+"drive:JUBS:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 17
+},
+"drive:FABL:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: MACPAC (names MACFL)"
+},
+"drive:SUHJ:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 8
+},
+"drive:JSML:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"drive:IML:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan Stock Exchange Company (names PSX)"
+},
+"drive:IDRT:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Bawany Air Products Limited (names BAPL)"
+},
+"drive:RUBY:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"drive:TSPL:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"drive:AKDHL:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"drive:AATM:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
+},
+"drive:SLYT:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"drive:SHCM:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"drive:SAIF:2004": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:IDRT:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: BSS"
+},
+"drive:IML:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pakistan National Investment Trust Limited (names NATF)"
 }
 }
