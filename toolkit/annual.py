@@ -52,6 +52,14 @@ AN = os.path.join(FILES, "annual")
 RAW = os.path.join(AN, "reads")
 EXTRACTS = os.path.join(FILES, "report_extracts.json")
 MINUTES, MAXN, PLAN = float(opt("--minutes", 25)), int(opt("--max", 100000)), "--plan" in A
+# several readers side by side (8 Nov 2026): each takes its own share of companies (--shard i of --shards n); the
+# workflow's merge job joins their results, so no two readers ever touch the same company
+SHARD, SHARDS = int(opt("--shard", 0)), int(opt("--shards", 1))
+
+
+def mine(tk):
+    import zlib
+    return SHARDS <= 1 or zlib.crc32(str(tk).encode()) % SHARDS == SHARD
 WORKERS = int(opt("--workers", 6))  # reports read at the same time
 # Page picking at once: on GitHub's 4 core machines, twelve page pickings at the same time all stalled past 15 minutes
 # (each takes about 10 seconds alone), so only a few run at once; downloads and model calls stay fully parallel.
@@ -556,7 +564,7 @@ def next_job(tk, sc, longrows, cat, docs, state, extracts, imp):
 
 def plan(sc, longrows, cat, docs, state, extracts_by_tk):
     imp = important()
-    jobs = [j for tk in sorted(set(cat) | set(docs) | set(WEB))
+    jobs = [j for tk in sorted(set(cat) | set(docs) | set(WEB)) if mine(tk)
             for j in [next_job(tk, sc, longrows, cat, docs, state, extracts_by_tk.get(tk, []), imp)] if j]
     jobs.sort()
     return jobs, imp
@@ -1330,6 +1338,9 @@ def main():
             print("  ", j[3], j[7])
         return 0
     c0 = guard_start()
+    if SHARDS > 1:
+        jw({"c0": c0}, os.path.join(AN, f"credit_start_{SHARD}.json"))
+        c0 = None  # the merge job measures the spend of all readers together
     readers = R.panel()
     if not readers:
         print("annual: no free AI key is set (GEMINI_API_KEY); nothing read")
@@ -1437,8 +1448,11 @@ def main():
         guard_end(c0, done)
     except Exception as e:  # the guard never stops the reader
         print(f"guard: skipped ({e})", flush=True)
+    if SHARDS > 1:
+        jw({"done": done}, os.path.join(AN, f"shard_done_{SHARD}.json"))
     try:
-        idle_alert(done, sc, longrows, by_tk)
+        if SHARDS <= 1:
+            idle_alert(done, sc, longrows, by_tk)
     except Exception as e:  # the alert never stops the reader
         print(f"idle alert: skipped ({e})", flush=True)
     sys.stdout.flush()

@@ -13,9 +13,14 @@ concurrency:
   group: drive
   cancel-in-progress: false
 jobs:
+  # three indexers side by side (8 Nov 2026), each on its own share of files; the merge job joins them
   index:
     runs-on: ubuntu-latest
     timeout-minutes: 70
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,15 +31,35 @@ jobs:
         timeout-minutes: 55
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}   # lists the whole folder once the Drive API is on (8 Nov 2026)
-        run: python3 toolkit/drive_index.py 45 | tee /tmp/drive_last.txt
-      - name: Save
+          DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}   # lists the whole folder (8 Nov 2026)
+        run: |
+          python3 toolkit/drive_index.py 45 ${{ matrix.shard }} 3 | tee /tmp/drive_last.txt
+          mkdir -p /tmp/out/drive-${{ matrix.shard }}
+          cp data/files/drive_ident.json /tmp/drive_last.txt /tmp/out/drive-${{ matrix.shard }}/
+      - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
+        with:
+          name: drive-${{ matrix.shard }}
+          path: /tmp/out/drive-${{ matrix.shard }}
+          retention-days: 1
+  merge:
+    needs: index
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: /tmp/shards
+      - name: Join and save
         run: |
           git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
-          git add data/files/drive_ident.json 2>/dev/null || true
+          git pull -q --rebase || true
+          python3 toolkit/shard_merge_drive.py /tmp/shards 3
+          cat /tmp/shards/drive-*/drive_last.txt | grep "done:" | tee /tmp/drive_last.txt
+          git add data/files/drive_ident.json
           git diff --cached --quiet && { echo "nothing new"; exit 0; }
-          git commit -q -m "Drive library: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M')"
+          git commit -q -m "Drive library: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') (3 indexers)"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
           exit 1
       - name: Start the next run while files are waiting
@@ -42,6 +67,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          grep -qE "\(.*[1-9][0-9]* still to look at\)" /tmp/drive_last.txt || exit 0
-          grep -qE "[( ]0 this run" /tmp/drive_last.txt && exit 0   # a run that opened nothing does not loop
+          grep -qE "[1-9][0-9]* still to look at" /tmp/drive_last.txt || exit 0
+          grep -qE "\(0 this run" /tmp/drive_last.txt && ! grep -qE "\([1-9][0-9]* this run" /tmp/drive_last.txt && exit 0   # nothing opened anywhere: no fast loop
           for i in 1 2 3; do gh workflow run drive.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done

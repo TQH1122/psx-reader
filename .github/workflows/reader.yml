@@ -14,17 +14,23 @@ concurrency:
   group: reader
   cancel-in-progress: false
 jobs:
+  # four readers side by side (8 Nov 2026), each on its own share of companies, so reports are read four times as
+  # fast; the paid models' spend guard still runs once on their total (merge job)
   read:
     runs-on: ubuntu-latest
-    timeout-minutes: 120   # room for a 75 minute read plus the longest rest before the next run
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: command -v pdftotext && command -v tesseract || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils tesseract-ocr; }
+      - run: command -v pdftotext && command -v tesseract || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils tesseract-ocr; } > /dev/null 2>&1
       - name: Read annual reports
-        timeout-minutes: 75          # a stuck step is stopped so the save and restart steps still run
+        timeout-minutes: 75          # a stuck step is stopped so the hand over still runs
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -38,10 +44,43 @@ jobs:
           SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}   # reads the audit's re-read list from his locked tracker site
           OPENROUTER_PAID: '1'          # his prepaid $10 (1 Nov 2026): paid models first, free ones as extra checkers
           OPENROUTER_RESERVE: '0.5'     # paid models stop when $0.50 is left
+        run: python3 toolkit/annual.py --minutes 50 --workers 14 --shard ${{ matrix.shard }} --shards 4 | tee /tmp/log.txt
+      - name: Hand over what this reader saved
+        if: ${{ !cancelled() }}
         run: |
-          if [ "$(head -n1 .github/run-now)" = diag ] && [ "${{ github.event_name }}" = push ]; then python3 toolkit/diag.py; exit 0; fi
-          m=50; [ "$(head -n1 .github/run-now)" = short ] && [ "${{ github.event_name }}" = push ] && m=8
-          python3 toolkit/annual.py --minutes $m --workers 18 | tee -a data/files/annual/log.txt
+          o=/tmp/out/shard-${{ matrix.shard }}; mkdir -p $o/reads
+          cp /tmp/log.txt $o/log.txt 2>/dev/null || true
+          cd data/files
+          cp report_extracts.json $o/ 2>/dev/null || true
+          cd annual
+          cp state.json jobs.json migrations.json credit_start_*.json shard_done_*.json $o/ 2>/dev/null || true
+          git status --porcelain -- reads | awk '{print $2}' | sed 's|^data/files/annual/||' | while read f; do cp "$f" $o/reads/ 2>/dev/null || true; done
+          ls $o | head; ls $o/reads | wc -l
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: shard-${{ matrix.shard }}
+          path: /tmp/out/shard-${{ matrix.shard }}
+          retention-days: 1
+  merge:
+    needs: read
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          path: /tmp/shards
+      - name: Join the four readers' results
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}   # the spend guard reads the credit left
+        run: |
+          git pull -q --rebase || true
+          python3 toolkit/shard_merge.py /tmp/shards 4 | tee -a /tmp/merge.txt
       - name: Wake the tracker robots if anything is overdue
         # GitHub drops or delays timed runs, so after every read the reader asks his site's /api/wake, which starts
         # the private robots when a regular job (prices, imports, weekly, monthly) is overdue. Never stops the reader.
@@ -68,13 +107,13 @@ jobs:
             [ "${busy:-0}" = 0 ] && gh workflow run "$w" --ref main && echo "started $w" || echo "$w busy or not started"
           done
       - name: Save
-        if: always()
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
-          tail -n 300 data/files/annual/log.txt > l && mv l data/files/annual/log.txt
+          tail -n 400 data/files/annual/log.txt > l && mv l data/files/annual/log.txt
           git add data
           git diff --cached --quiet && { echo "nothing changed"; exit 0; }
-          git commit -q -m "Reader: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M')"
+          git commit -q -m "Reader: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') (4 readers)"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
           exit 1
       - name: Start the next run (24/7)

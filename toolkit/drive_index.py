@@ -18,6 +18,14 @@ OUT = os.path.join(FILES, "drive_ident.json")
 FOLDER = "1KZBgru0osNuRHUyypDF1V8Pxhf7Db02F"   # PSX Library
 DRIVE = "https://drive.usercontent.google.com/download?id={}&export=download&confirm=t"
 MINUTES = float(sys.argv[1]) if len(sys.argv) > 1 else 40
+# several indexers side by side (8 Nov 2026): indexer i of n looks only at its own share of files; the workflow's merge
+# job joins them (toolkit/shard_merge_drive.py)
+SHARD, SHARDS = (int(sys.argv[2]), int(sys.argv[3])) if len(sys.argv) > 3 else (0, 1)
+
+
+def mine(fid):
+    import zlib
+    return SHARDS <= 1 or zlib.crc32(fid.encode()) % SHARDS == SHARD
 
 
 def jl(p, d):
@@ -234,7 +242,7 @@ def main():
     again = lambda r: (r.get("err") and (r.get("tries", 1) < 3 or ("tesseract" in str(r["err"]) and r.get("v", 1) < 2))) \
         or (not r.get("err") and not r.get("tk") and r.get("v", 1) < 2) \
         or (not r.get("err") and not r.get("kind") and r.get("v", 1) < 3)  # unknown files: checked for research material
-    todo = [(f, t) for f, t in files.items() if f not in known and (f not in db or again(db[f]))]
+    todo = [(f, t) for f, t in files.items() if f not in known and (f not in db or again(db[f])) and mine(f)]
     todo.sort(key=lambda x: x[0] in db)  # files never seen first
     lock, done = threading.Lock(), [0]
     with ThreadPoolExecutor(8) as pool:
