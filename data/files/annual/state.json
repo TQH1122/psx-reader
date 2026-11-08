@@ -3548,11 +3548,11 @@
 },
 "khi:DLL:2007": {
 "at": "2026-11-08",
-"n": 30,
-"retry": 1,
+"n": 27,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:IGIHL:2016": {
 "at": "2026-11-08",
@@ -11218,11 +11218,12 @@
 "redo8": 1
 },
 "khi:DLL:2005": {
-"at": "2026-11-02",
+"at": "2026-11-08",
 "n": 28,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
 },
 "khi:GATI:2020": {
 "at": "2026-11-02",
@@ -40742,10 +40743,9 @@
 "web:OGDC:2026": {
 "at": "2026-11-08",
 "waits": 1,
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "Company website download failed (0)",
-"retry": 1,
 "second": 1
 },
 "drive:THALL:2022": {
