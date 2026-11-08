@@ -1288,10 +1288,15 @@
 },
 "khi:AVN:2015": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "redo8": 1,
 "done": true,
-"n": 12
+"n": 12,
+"reread": [
+2014
+],
+"rev": 5,
+"why": "company name does not match: Pakistan Steel Mills Limited (names AABS)"
 },
 "psx:IMAGE:2022": {
 "at": "2026-11-08",
@@ -5478,11 +5483,11 @@
 "n": 36
 },
 "khi:DWSM:2001": {
-"at": "2026-11-01",
-"n": 6,
-"retry": 1,
+"at": "2026-11-08",
+"n": 26,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:CHCC:2026": {
 "at": "2026-11-01",
@@ -11551,7 +11556,8 @@
 "tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
-"redo8": 1
+"redo8": 1,
+"second": 1
 },
 "khi:EMCO:2025": {
 "at": "2026-11-02",
@@ -24050,10 +24056,12 @@
 2018,
 2019
 ],
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:AGSML:2019": {
 "at": "2026-11-08",
@@ -27819,10 +27827,9 @@
 },
 "khi:DWSM:2003": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "not annual accounts: company name not found in provided pages",
-"retry": 1,
+"why": "no figure passed the checks",
 "redo8": 1,
 "waits": 1
 },
@@ -27831,7 +27838,8 @@
 "tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
-"redo8": 1
+"redo8": 1,
+"second": 1
 },
 "web:BLUEX:2018": {
 "at": "2026-11-08",
@@ -28745,9 +28753,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "no figure passed the checks",
-"retry": 1,
-"redo8": 1
+"redo8": 1,
+"done": true,
+"n": 20
 },
 "web:TICL:2021": {
 "at": "2026-11-08",
@@ -28770,10 +28778,10 @@
 },
 "khi:SPWL:2015": {
 "at": "2026-11-08",
-"n": 17,
-"retry": 1,
+"n": 18,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:CEPB:2006": {
 "at": "2026-11-08",
@@ -29335,9 +29343,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "not annual accounts: company name not found in provided pages",
-"retry": 1,
-"redo8": 1
+"redo8": 1,
+"done": true,
+"n": 12
 },
 "khi:BECO:2003": {
 "at": "2026-11-08",
@@ -30079,9 +30087,11 @@
 "drive:KSTM:2025": {
 "at": "2026-11-08",
 "waits": 1,
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "web:INKL:2018": {
 "at": "2026-11-08",
@@ -30459,7 +30469,12 @@
 "waits": 1
 },
 "khi:AVN:2019": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 34,
+"reread": [
+2019
+]
 },
 "web:NCPL:2019": {
 "at": "2026-11-08",
@@ -30470,7 +30485,15 @@
 ]
 },
 "khi:SPWL:2019": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 17,
+"reread": [
+2019
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:SMCPL:2015": {
 "at": "2026-11-08",
@@ -30511,13 +30534,17 @@
 "n": 9
 },
 "web:SEL:2020": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"done": true,
+"n": 14
 },
 "psx:PACE:2022": {
 "at": "2026-11-08",
 "done": true,
 "n": 28,
-"waits": 1
+"waits": 2
 },
 "web:ASL:2013": {
 "at": "2026-11-08",
@@ -30860,360 +30887,481 @@
 },
 "drive:PAKL:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:QUICE:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:JDMT:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:HINOON:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:JDWS:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:HUBC:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:PSO:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:AVN:2018": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:SYS:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:QUICE:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:DCR:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:PTC:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:JDWS:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:NATF:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:FFL:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:SYS:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:HUBC:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:PTC:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:OLPL:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:DCR:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:FFL:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:JDWS:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:NEXT:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:IDRT:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:PTC:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:SEL:2020": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:NATF:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:SASML:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:JDWS:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:CCM:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:SEL:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:OLPL:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:KHYT:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:ECOP:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:NSRM:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:JDWS:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:KHYT:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:ANSM:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:OLPL:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:NSRM:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:NATF:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:SHDT:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:PGLC:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:FSWL:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:HWQS:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:NSRM:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:LEUL:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:OLPL:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:PGLC:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "khi:SPWL:2017": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found"
 },
 "drive:FANM:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:NSRM:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:NATF:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:LEUL:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:ELCM:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:OLPL:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:KSTM:2022": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:PACE:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:AVN:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:AVN:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "web:SSGC:2010": {
 "at": "2026-11-08",
@@ -31229,5 +31377,123 @@
 "at": "2026-11-08",
 "done": true,
 "n": 29
+},
+"khi:ASC:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"khi:DSIL:2007": {
+"at": "2026-11-08",
+"done": true,
+"n": 35
+},
+"khi:FFL:2007": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"khi:DNCC:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"khi:NATF:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 41
+},
+"khi:FFL:2006": {
+"at": "2026-11-08",
+"done": true,
+"n": 25
+},
+"khi:AVN:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:FFL:2005": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"khi:FFL:2003": {
+"at": "2026-11-08",
+"done": true,
+"n": 31
+},
+"khi:FFL:2002": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: Company name and required summary page not provided"
+},
+"khi:FFL:2001": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"khi:JKSM:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 42
+},
+"web:SUTM:2019": {
+"at": "2026-11-08"
+},
+"khi:TCORP:2006": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"khi:TCORP:2004": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found"
+},
+"khi:TCORP:2003": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"khi:TCORP:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not printed in provided pages"
+},
+"khi:JATM:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:JATM:2003": {
+"at": "2026-11-08",
+"done": true,
+"n": 15
+},
+"khi:NETSOL:2026": {
+"at": "2026-11-08"
+},
+"khi:HRPL:2026": {
+"at": "2026-11-08"
+},
+"khi:BTL:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"khi:UNITY:2025": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"khi:UNITY:2023": {
+"at": "2026-11-08"
 }
 }
