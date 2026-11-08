@@ -1,0 +1,49 @@
+# PSX brain explorer (8 Nov 2026): invents and tests new investing ideas around the clock on the free robots, no
+# Claude needed (toolkit/explorer.py in the private tracker). It reads the monthly brain run's company snapshots,
+# tests ideas in batches against a luck bar, checks promoted ones once on locked years, and saves its findings back
+# into the private repository. This public log shows only counts.
+name: Brain explorer
+on:
+  schedule:
+    - cron: '41 */6 * * *'   # wakes every 6 hours to see whether new figures or a new month started a new round
+  workflow_dispatch:
+  push:
+    paths: ['.github/run-explorer']
+permissions:
+  contents: read
+  actions: write   # each run starts the next while ideas are left in the round
+concurrency:
+  group: explorer
+  cancel-in-progress: false
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q numpy > /dev/null 2>&1
+      - name: Test new ideas
+        timeout-minutes: 55
+        run: |
+          set -o pipefail
+          python3 toolkit/explorer.py 50 | tee /tmp/explorer_last.txt
+      - name: Save to the private repository
+        if: always()
+        run: python3 toolkit/savegit.py "Robot: brain explorer $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/brain/explorer.json
+      - name: Start the next run while ideas are left
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          last="$(tail -n 1 /tmp/explorer_last.txt 2>/dev/null)"
+          echo "$last" | grep -q "^done:" || { sleep 600; }
+          echo "$last" | grep -qE " 0 left this round|no company snapshots" && exit 0
+          for i in 1 2 3; do gh workflow run explorer.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done
