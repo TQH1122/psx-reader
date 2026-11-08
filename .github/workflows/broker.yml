@@ -44,7 +44,7 @@ jobs:
       - name: Save to the private repository
         if: always()
         run: |
-          python3 toolkit/savegit.py "Robot: broker reading $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/readings data/db/market/readings.json data/files/robots.json
+          python3 toolkit/savegit.py "Robot: broker reading $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/readings data/db/market/readings.json data/files/robots.json data/files/notes
       - name: Start the next run (24/7)
         # never waits on GitHub's timer: a run that read reports starts the next at once; after a failure it rests
         # 10 minutes, when the free models are all resting 15 minutes, and with nothing waiting it checks every 30
