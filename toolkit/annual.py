@@ -163,6 +163,18 @@ def name_ok(printed, listed):
     return bool(a and b) and len(a & b) / min(len(a), len(b)) >= 0.5
 
 
+GENERIC = {"limited", "ltd", "pakistan", "company", "co", "the", "of", "and", "industries", "mills", "corporation", "group",
+           "holdings", "pvt", "private", "plc", "international", "textile", "textiles", "sugar", "cement", "power", "bank"}
+ALIASES = {}  # ticker -> former names (KHI Stocks' archive names), filled at the start of a run
+
+
+def close_name(printed, listed):
+    """nearly every distinctive word of both names matches: strong enough to move a read to another company"""
+    a = {w for w in toks(printed) if w not in GENERIC and len(w) > 2}
+    b = {w for w in toks(listed) if w not in GENERIC and len(w) > 2}
+    return bool(a and b) and len(a & b) / max(len(a), len(b)) >= 0.8
+
+
 def name_ok2(printed, listed, pages):
     """the model's company name matches the listed name, or is its initials (PNSC, HUBCO), or most words of the listed
     name are printed on the pages themselves (models sometimes answer "unknown" or a short name)"""
@@ -575,6 +587,12 @@ def _pages(pdf, work):
             if len(t) > 450:
                 return None, "scanned report too long for OCR"
             return _prep(pdf, work, OCR, 1800)
+        b, info = _prep(pdf, work, PREP, 600)
+        if b is not None and isinstance(info, dict):
+            # the company's name as printed on the cover and first pages (8 Nov 2026): 133 reports were given up as
+            # "company name not found in provided pages" because the statement pages alone did not print it
+            info["cover"] = re.sub(r"[ \t]{3,}", "   ", "\n".join(x.strip() for x in t[:3] if x.strip()))[:1500]
+        return b, info
     return _prep(pdf, work, PREP, 600)
 
 
@@ -899,6 +917,8 @@ def read_one(job, readers, sc, work):
     pages = pick_pages(bundle, cons)
     if len(pages) < 800:
         return {"skip": "no statement pages found"}
+    if info.get("cover"):
+        pages = "===== COVER (first pages, for the company's name) =====\n" + info["cover"] + "\n" + pages
     low = pages.lower()
     interim = r"(half[\s-]+year|six\s+months|nine\s+months|three\s+months|quarter|period)\s+ended"
     if re.search(interim, low) and not re.search(r"year\s+ended", re.sub(interim, " ", low)):
@@ -978,9 +998,22 @@ def read_one(job, readers, sc, work):
     fs = [facts(j, nums, cons, sumb, rows) for j in firsts]
     ok, bad = agree(fs)
     company = next((j.get("company") for j in firsts if j.get("company")), "")
-    other = next((t for t, rr in sc.items() if t != tk and name_ok(company, rr.get("n")) and not name_ok(company, sc[tk].get("n"))), None)
-    if (src != "khi" and not name_ok2(company, sc[tk].get("n"), pages)) or (other and len(toks(company)) >= 2):
-        return {"skip": f"company name does not match: {company[:60]}" + (f" (names {other})" if other else "")}
+    # a renamed company (8 Nov 2026): the report prints its former name, which KHI Stocks' archive still lists for the
+    # ticker, or the pages say "formerly" with the listed name; it is the same company, so the read counts
+    alias = ALIASES.get(tk) or set()
+    renamed = any(name_ok(company, a) for a in alias) or bool(
+        re.search(r"formerly", pages[:6000], re.I) and name_ok2(company, sc[tk].get("n"), pages[:6000]))
+    other = None if renamed else next((t for t, rr in sc.items() if t != tk and name_ok(company, rr.get("n"))
+                                       and not name_ok(company, sc[tk].get("n"))), None)
+    if not renamed and ((src != "khi" and not name_ok2(company, sc[tk].get("n"), pages)) or (other and len(toks(company)) >= 2)):
+        # a report filed under the wrong company (8 Nov 2026): when the printed name is clearly another listed
+        # company's (nearly every distinctive word matches), its figures are kept for that company instead of thrown away
+        strong = other and len(toks(company)) >= 2 and close_name(company, sc[other].get("n"))
+        if not strong:
+            return {"skip": f"company name does not match: {company[:60]}" + (f" (names {other})" if other else "")}
+        tk, moved = other, other
+    else:
+        moved = None
     fye = next((j.get("fye") for j in firsts if re.fullmatch(r"(19|20)\d\d-\d\d", str(j.get("fye") or ""))), None)
     fy = int(fye[:4]) if fye else None
     if not fy or str(fy) not in pages:
@@ -1025,6 +1058,8 @@ def read_one(job, readers, sc, work):
            "notes": f"read by free AI models ({', '.join(sorted(reads))[:200]}); figures kept only when two agree and the "
                     f"number is printed" + ("; OCR pages, only figures confirmed by arithmetic" if ocr else ""),
            "src": url, "by": "ai", "v": 3, "dropped": dropped[:40], "disputed": sorted(bad)[:40]}
+    if moved:
+        out["moved_from"] = job[4]
     if audit:
         # figures the fresh pair and the earlier pair agree on: four models, two separate reads. The tracker's audit
         # then keeps the report figure even where an outside source differs (definitions and basis often differ)
@@ -1183,8 +1218,9 @@ def main():
     stale = [k for k, v in ext.items() if v.get("by") == "ai" and v.get("v") != 3]
     # older reads are checked again under the latest rules; the saved model answers are reused (same pages and prompt),
     # so this costs no model calls
-    stale_names = [k for k, v in state0.items() if v.get("rev") != 4 and
-                   re.search(r"company name does not match|no figure passed", v.get("why") or "")]
+    stale_names = [k for k, v in state0.items() if v.get("rev") != 5 and
+                   re.search(r"company name does not match|no figure passed|company name not (found|printed)|"
+                             r"cannot determine company name", v.get("why") or "")]
     for k in stale_names:
         state0.pop(k, None)
     for k in stale:
@@ -1209,6 +1245,14 @@ def main():
     GROUPS.update(t for t, r in longrows.items() if (r or {}).get("basis") == "group")
     print(f"sources: company websites give {sum(len(v) for v in WEB.values())} reports for {sum(1 for v in WEB.values() if v)} companies", flush=True)
     cat = khi_catalogue(sc)
+    # former names: KHI Stocks' archive name for the ticker, and every name printed in reports already accepted for it
+    for t, r in cat.items():
+        if r.get("name"):
+            ALIASES.setdefault(t, set()).add(r["name"])
+    for t, ds in by_tk.items():
+        for d in ds:
+            if d.get("company") and not d.get("moved_from"):
+                ALIASES.setdefault(t, set()).add(d["company"])
     docs = psx_docs()
     print("audit: " + audit_summary(sc, cat, docs, state), flush=True)
     audited_now = [0]
@@ -1287,6 +1331,7 @@ def main():
                     st["reread"] = sorted(set(st.get("reread") or []) | audit_years(tk, job[5], candidates(tk, cat, docs)))
                     audited_now[0] += 1
                 if "rec" in res:
+                    tk = res["rec"].get("ticker") or tk  # a report filed under the wrong company counts for its own
                     ext[jid] = res["rec"]
                     by_tk.setdefault(tk, []).append(res["rec"])
                     jobsmap[jid] = [tk, job[5], job[7]]
@@ -1307,7 +1352,7 @@ def main():
                         res = {"skip": "no two models gave a usable read"}
                         st["waits"] = 0
                     st["tries"] = st.get("tries", 0) + 1
-                    st["rev"] = 4
+                    st["rev"] = 5
                     st["why"] = res["skip"]
                     skipped += 1
                 nxt = next_job(tk, sc, longrows, cat, docs, state, by_tk.get(tk, []), imp)
