@@ -36566,8 +36566,11 @@
 "drive:PSYL:2019": {
 "at": "2026-11-08",
 "done": true,
-"n": 29,
-"waits": 2
+"n": 26,
+"waits": 2,
+"reread": [
+2019
+]
 },
 "drive:MARI:2016": {
 "at": "2026-11-08",
@@ -37883,11 +37886,15 @@
 },
 "arc:FFC:2009": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 14
+"n": 14,
+"reread": [
+2009
+],
+"why": "no figure passed the checks"
 },
 "arc:TPL:2017": {
 "at": "2026-11-08",
