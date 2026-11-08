@@ -1155,7 +1155,8 @@
 "second": 1,
 "n": 3,
 "retry": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "khi:HUMNL:2023": {
 "at": "2026-11-07",
@@ -1855,7 +1856,8 @@
 "n": 31,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "khi:AGTL:2019": {
 "at": "2026-11-02",
@@ -3549,7 +3551,8 @@
 "n": 30,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "khi:IGIHL:2016": {
 "at": "2026-11-08",
@@ -3891,7 +3894,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "khi:SHFA:2007": {
 "at": "2026-11-01",
@@ -4098,11 +4101,12 @@
 "n": 14
 },
 "khi:SFL:2003": {
-"at": "2026-11-01",
+"at": "2026-11-08",
 "n": 31,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "khi:PIBTL:2017": {
 "at": "2026-11-01",
@@ -4511,9 +4515,10 @@
 "khi:BAHL:2003": {
 "at": "2026-11-08",
 "n": 29,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "not annual accounts: reason"
 },
 "khi:LCI:2022": {
 "at": "2026-11-01",
@@ -4787,10 +4792,11 @@
 "khi:IDYM:2003": {
 "at": "2026-11-08",
 "n": 18,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: unable to identify company name from provided pages"
 },
 "khi:GATM:2006": {
 "at": "2026-11-01",
@@ -5373,7 +5379,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "khi:TELE:2015": {
 "at": "2026-11-01",
@@ -8441,7 +8447,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "khi:YOUW:2006": {
 "at": "2026-11-01",
@@ -10034,7 +10040,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "khi:FZCM:2003": {
 "at": "2026-11-08",
@@ -10939,10 +10945,11 @@
 "khi:NML:2001": {
 "at": "2026-11-08",
 "n": 2,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: company name not explicitly printed on the provided pages"
 },
 "khi:EPCL:2021": {
 "at": "2026-11-08",
@@ -11019,14 +11026,15 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "khi:SFL:2005": {
 "at": "2026-11-08",
 "n": 18,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "not annual accounts: pages are from a nine-month period, not a full annual report"
 },
 "khi:THCCL:2009": {
 "at": "2026-11-08",
@@ -11059,7 +11067,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "khi:CNERGY:2002": {
 "at": "2026-11-08",
@@ -11151,11 +11159,12 @@
 "redo8": 1
 },
 "khi:JDWS:2001": {
-"at": "2026-11-02",
+"at": "2026-11-08",
 "n": 19,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "drive:JSBL:2013": {
 "at": "2026-11-02",
@@ -11188,9 +11197,10 @@
 "khi:FEROZ:2001": {
 "at": "2026-11-08",
 "n": 16,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "not annual accounts: unable to identify company name from provided pages"
 },
 "khi:EPCL:2015": {
 "at": "2026-11-02",
@@ -11367,7 +11377,8 @@
 "n": 14,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "khi:CSAP:2006": {
 "at": "2026-11-02",
@@ -11759,7 +11770,8 @@
 "n": 27,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "khi:SEL:2006": {
 "at": "2026-11-08",
@@ -12896,9 +12908,10 @@
 "khi:IDRT:2006": {
 "at": "2026-11-08",
 "n": 26,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "not annual accounts: The company name is not printed on the provided pages"
 },
 "khi:ZUMA:2002": {
 "at": "2026-11-02",
@@ -13027,7 +13040,7 @@
 "redo8": 1,
 "done": true,
 "n": 4,
-"waits": 1
+"waits": 2
 },
 "khi:FAEL:2007": {
 "at": "2026-11-02",
@@ -19297,7 +19310,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "web:AASM:2013": {
 "at": "2026-11-03",
@@ -20008,7 +20021,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "khi:HUBC:2007": {
 "at": "2026-11-08",
@@ -20063,9 +20076,10 @@
 "khi:JDWS:2002": {
 "at": "2026-11-08",
 "n": 24,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "not annual accounts: company name not printed"
 },
 "khi:HUBC:2005": {
 "at": "2026-11-08",
@@ -20818,7 +20832,8 @@
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1
+"retry": 1,
+"waits": 1
 },
 "web:NCL:2019": {
 "at": "2026-11-03",
@@ -23411,7 +23426,7 @@
 },
 "web:SRVI:2014": {
 "at": "2026-11-08",
-"waits": 0,
+"waits": 1,
 "done": true,
 "n": 6,
 "tries": 1,
@@ -23480,10 +23495,12 @@
 },
 "web:GATM:2020": {
 "at": "2026-11-08",
-"waits": 1,
-"tries": 2,
+"waits": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (200)"
+"why": "Company website download failed (200)",
+"retry": 1,
+"second": 1
 },
 "web:IDYM:2019": {
 "at": "2026-11-03",
@@ -23639,7 +23656,8 @@
 "rev": 4,
 "why": "scanned report (left for later, OCR too slow)",
 "retry": 1,
-"second": 1
+"second": 1,
+"waits": 1
 },
 "khi:ATRL:2010": {
 "at": "2026-11-08",
@@ -23647,7 +23665,8 @@
 "rev": 5,
 "why": "no figure passed the checks",
 "retry": 1,
-"second": 1
+"second": 1,
+"waits": 1
 },
 "web:BML:2016": {
 "at": "2026-11-04",
@@ -24305,7 +24324,7 @@
 "rev": 5,
 "second": 1,
 "retry": 1,
-"waits": 1
+"waits": 2
 },
 "web:BML:2011": {
 "at": "2026-11-04",
@@ -25573,7 +25592,8 @@
 "rev": 4,
 "redo8": 1,
 "done": true,
-"n": 0
+"n": 0,
+"waits": 1
 },
 "drive:RUBY:2020": {
 "at": "2026-11-08",
@@ -28051,7 +28071,8 @@
 "second": 1,
 "redo8": 1,
 "n": 13,
-"retry": 1
+"retry": 1,
+"waits": 1
 },
 "khi:DAAG:2003": {
 "at": "2026-11-08",
@@ -29061,7 +29082,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 34,
-"waits": 1
+"waits": 2
 },
 "drive:FRCL:2024": {
 "at": "2026-11-08",
@@ -29987,7 +30008,8 @@
 "rev": 5,
 "why": "no figure passed the checks",
 "retry": 1,
-"second": 1
+"second": 1,
+"waits": 1
 },
 "web:TICL:2025": {
 "at": "2026-11-08",
@@ -30973,7 +30995,8 @@
 "n": 24,
 "why": "Company website download failed (200)",
 "retry": 1,
-"second": 1
+"second": 1,
+"waits": 1
 },
 "khi:ARMG:2007": {
 "at": "2026-11-08",
@@ -31652,7 +31675,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "web:AGP:2022": {
 "at": "2026-11-08",
@@ -32477,7 +32500,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 16,
-"waits": 1
+"waits": 2
 },
 "khi:AVN:2019": {
 "at": "2026-11-08",
@@ -32539,7 +32562,8 @@
 "n": 10,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "psx:JVDC:2018": {
 "at": "2026-11-08",
@@ -32580,7 +32604,8 @@
 "n": 2,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "psx:PTL:2024": {
 "at": "2026-11-08",
@@ -32768,7 +32793,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "web:AMTEX:2018": {
 "at": "2026-11-08",
@@ -33086,7 +33111,8 @@
 "second": 1,
 "n": 32,
 "retry": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "drive:SYS:2013": {
 "at": "2026-11-08",
@@ -33268,7 +33294,8 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 0
+"n": 0,
+"waits": 1
 },
 "drive:ANSM:2015": {
 "at": "2026-11-08",
@@ -33440,7 +33467,7 @@
 "rev": 5,
 "second": 1,
 "n": 25,
-"waits": 1,
+"waits": 2,
 "retry": 1,
 "redo8": 1
 },
@@ -34289,7 +34316,8 @@
 "second": 1,
 "n": 16,
 "retry": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:BAFL:2002": {
 "at": "2026-11-08",
@@ -34613,7 +34641,8 @@
 "second": 1,
 "n": 30,
 "retry": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:BAHL:2001": {
 "at": "2026-11-08",
@@ -34662,7 +34691,8 @@
 "arc:DGKC:2012": {
 "at": "2026-11-08",
 "done": true,
-"n": 33
+"n": 33,
+"waits": 1
 },
 "arc:DGKC:2011": {
 "at": "2026-11-08",
@@ -34992,7 +35022,8 @@
 "n": 38,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:CCM:2014": {
 "at": "2026-11-08",
@@ -35348,7 +35379,8 @@
 "tries": 1,
 "rev": 5,
 "done": true,
-"n": 9
+"n": 9,
+"waits": 1
 },
 "arc:EPCL:2018": {
 "at": "2026-11-08",
@@ -35455,7 +35487,8 @@
 "second": 1,
 "n": 26,
 "retry": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:GAMON:2017": {
 "at": "2026-11-08",
@@ -35768,7 +35801,8 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 11
+"n": 11,
+"waits": 1
 },
 "arc:DAAG:2018": {
 "at": "2026-11-08",
@@ -35821,7 +35855,7 @@
 "n": 17,
 "retry": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "arc:GCIL:2013": {
 "at": "2026-11-08",
@@ -35952,7 +35986,8 @@
 "second": 1,
 "n": 24,
 "retry": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:FATIMA:2012": {
 "at": "2026-11-08",
@@ -36060,7 +36095,8 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 24
+"n": 24,
+"waits": 1
 },
 "arc:DOL:2011": {
 "at": "2026-11-08",
@@ -36310,7 +36346,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 2,
-"waits": 1
+"waits": 2
 },
 "arc:DCL:2011": {
 "at": "2026-11-08",
@@ -36386,7 +36422,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 15,
-"waits": 1
+"waits": 2
 },
 "arc:GSPM:2016": {
 "at": "2026-11-08",
@@ -36511,7 +36547,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 29,
-"waits": 1
+"waits": 2
 },
 "drive:MARI:2016": {
 "at": "2026-11-08",
@@ -36712,7 +36748,8 @@
 "rev": 5,
 "why": "no figure passed the checks",
 "retry": 1,
-"second": 1
+"second": 1,
+"waits": 1
 },
 "drive:HUMNL:2013": {
 "at": "2026-11-08",
@@ -36970,7 +37007,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 39,
-"waits": 1
+"waits": 2
 },
 "arc:JVDC:2012": {
 "at": "2026-11-08",
@@ -37031,7 +37068,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "arc:DMC:2016": {
 "at": "2026-11-08",
@@ -37060,7 +37097,8 @@
 "retry": 1,
 "second": 1,
 "done": true,
-"n": 35
+"n": 35,
+"waits": 1
 },
 "arc:PMRS:2022": {
 "at": "2026-11-08",
@@ -37113,7 +37151,8 @@
 "n": 26,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:FCSC:2007": {
 "at": "2026-11-08",
@@ -37155,7 +37194,8 @@
 "n": 24,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:PMRS:2017": {
 "at": "2026-11-08",
@@ -37493,7 +37533,8 @@
 "arc:CENI:2005": {
 "at": "2026-11-08",
 "done": true,
-"n": 18
+"n": 18,
+"waits": 1
 },
 "arc:FIMM:2000": {
 "at": "2026-11-08",
@@ -37539,7 +37580,7 @@
 },
 "arc:JSIL:2007": {
 "at": "2026-11-08",
-"waits": 1,
+"waits": 2,
 "n": 0,
 "retry": 1,
 "tries": 1,
@@ -37547,7 +37588,7 @@
 },
 "drive:NETSOL:2013": {
 "at": "2026-11-08",
-"waits": 1,
+"waits": 2,
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -37593,12 +37634,13 @@
 "at": "2026-11-08",
 "done": true,
 "n": 25,
-"waits": 1
+"waits": 2
 },
 "arc:MIRKS:2008": {
 "at": "2026-11-08",
 "done": true,
-"n": 38
+"n": 38,
+"waits": 1
 },
 "arc:PAKL:2017": {
 "at": "2026-11-08",
@@ -37622,7 +37664,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 27,
-"waits": 1
+"waits": 2
 },
 "arc:DMC:2014": {
 "at": "2026-11-08",
@@ -37658,7 +37700,13 @@
 "arc:KEL:2007": {
 "at": "2026-11-08",
 "done": true,
-"n": 19
+"n": 19,
+"reread": [
+2007
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:KHYT:2010": {
 "at": "2026-11-08",
@@ -37723,10 +37771,9 @@
 },
 "arc:TPLT:2014": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "Internet Archive download failed (404)",
 "second": 1
 },
 "arc:TRSM:2022": {
@@ -37745,10 +37792,9 @@
 },
 "arc:TPLT:2013": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "Internet Archive download failed (404)",
 "second": 1
 },
 "arc:TRSM:2021": {
@@ -37767,10 +37813,9 @@
 },
 "arc:TPLT:2012": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "Internet Archive download failed (404)",
 "second": 1
 },
 "arc:TRSM:2020": {
@@ -37825,7 +37870,8 @@
 "second": 1,
 "n": 27,
 "retry": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:TRSM:2018": {
 "at": "2026-11-08",
@@ -37911,7 +37957,8 @@
 "rev": 5,
 "why": "Internet Archive download failed (0)",
 "retry": 1,
-"second": 1
+"second": 1,
+"waits": 1
 },
 "arc:TPL:2014": {
 "at": "2026-11-08",
@@ -38015,7 +38062,8 @@
 "second": 1,
 "n": 5,
 "retry": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:MWMP:2020": {
 "at": "2026-11-08",
@@ -38071,7 +38119,8 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 27
+"n": 27,
+"waits": 1
 },
 "arc:PMRS:2014": {
 "at": "2026-11-08",
@@ -38144,7 +38193,7 @@
 "n": 20,
 "retry": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "arc:SHFA:2011": {
 "at": "2026-11-08",
@@ -38182,7 +38231,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 0,
-"waits": 1
+"waits": 2
 },
 "arc:MUGHAL:2013": {
 "at": "2026-11-08",
@@ -38200,10 +38249,14 @@
 },
 "arc:PAKQATAR:2007": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "done": true,
-"n": 0
+"n": 0,
+"reread": [
+2006
+],
+"why": "Internet Archive download failed (404)"
 },
 "arc:JSRR:2023": {
 "at": "2026-11-08",
@@ -38226,7 +38279,8 @@
 "arc:KSBP:2015": {
 "at": "2026-11-08",
 "done": true,
-"n": 24
+"n": 24,
+"waits": 1
 },
 "arc:LSEFSL:2013": {
 "at": "2026-11-08",
@@ -38247,7 +38301,8 @@
 "n": 20,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:JSRR:2022": {
 "at": "2026-11-08",
@@ -38395,7 +38450,8 @@
 "arc:LSECL:2013": {
 "at": "2026-11-08",
 "done": true,
-"n": 4
+"n": 4,
+"waits": 1
 },
 "arc:MCB:2017": {
 "at": "2026-11-08",
@@ -38403,7 +38459,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "arc:IMS:2025": {
 "at": "2026-11-08",
@@ -38414,7 +38470,8 @@
 "arc:GVGL:2016": {
 "at": "2026-11-08",
 "done": true,
-"n": 28
+"n": 28,
+"waits": 1
 },
 "arc:MLCF:2012": {
 "at": "2026-11-08",
@@ -38513,7 +38570,8 @@
 "n": 30,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:IMS:2020": {
 "at": "2026-11-08",
@@ -38715,7 +38773,8 @@
 "arc:KOHTM:2009": {
 "at": "2026-11-08",
 "done": true,
-"n": 26
+"n": 26,
+"waits": 1
 },
 "arc:IMS:2012": {
 "at": "2026-11-08",
@@ -38847,19 +38906,22 @@
 "arc:QUICE:2009": {
 "at": "2026-11-08",
 "done": true,
-"n": 25
+"n": 25,
+"waits": 1
 },
 "arc:PIBTL:2014": {
 "at": "2026-11-08",
 "n": 14,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:DSIL:2013": {
 "at": "2026-11-08",
 "done": true,
-"n": 0
+"n": 0,
+"waits": 1
 },
 "arc:SCBPL:2005": {
 "at": "2026-11-08",
@@ -38873,7 +38935,8 @@
 "arc:PTC:2016": {
 "at": "2026-11-08",
 "done": true,
-"n": 14
+"n": 14,
+"waits": 1
 },
 "arc:PCAL:2008": {
 "at": "2026-11-08",
@@ -39114,10 +39177,14 @@
 },
 "arc:OTSU:2007": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "done": true,
-"n": 12
+"n": 12,
+"reread": [
+2007
+],
+"why": "Internet Archive download failed (404)"
 },
 "arc:MDTL:2006": {
 "at": "2026-11-08",
@@ -39479,7 +39546,8 @@
 "second": 1
 },
 "arc:SPWL:2017": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"waits": 1
 },
 "arc:SYS:2017": {
 "at": "2026-11-08",
@@ -39529,7 +39597,7 @@
 "why": "Internet Archive download failed (0)",
 "retry": 1,
 "second": 1,
-"waits": 1
+"waits": 2
 },
 "arc:TPLP:2018": {
 "at": "2026-11-08",
@@ -39643,7 +39711,8 @@
 "arc:SCBPL:2002": {
 "at": "2026-11-08",
 "done": true,
-"n": 16
+"n": 16,
+"waits": 1
 },
 "arc:QTECH:2021": {
 "at": "2026-11-08",
@@ -39670,7 +39739,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 26,
-"waits": 1
+"waits": 2
 },
 "arc:QTECH:2018": {
 "at": "2026-11-08",
@@ -39726,7 +39795,8 @@
 "retry": 1,
 "second": 1,
 "done": true,
-"n": 0
+"n": 0,
+"waits": 1
 },
 "arc:WASL:2018": {
 "at": "2026-11-08",
@@ -39874,7 +39944,8 @@
 "n": 2,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "arc:SUHJ:2019": {
 "at": "2026-11-08",
@@ -39915,9 +39986,11 @@
 "at": "2026-11-08",
 "n": 0,
 "retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 2
+"waits": 0,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "arc:STL:2013": {
 "at": "2026-11-08",
@@ -39990,7 +40063,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "arc:TOWL:2015": {
 "at": "2026-11-08",
@@ -40213,7 +40286,8 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 32
+"n": 32,
+"waits": 1
 },
 "arc:PQGTL:2016": {
 "at": "2026-11-08",
@@ -40300,7 +40374,7 @@
 "second": 1,
 "done": true,
 "n": 14,
-"waits": 1
+"waits": 2
 },
 "arc:YOUW:2017": {
 "at": "2026-11-08",
@@ -40435,7 +40509,8 @@
 "arc:UDPL:2009": {
 "at": "2026-11-08",
 "done": true,
-"n": 0
+"n": 0,
+"waits": 1
 },
 "arc:MCB:2006": {
 "at": "2026-11-08",
@@ -40475,7 +40550,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 24,
-"waits": 1
+"waits": 2
 },
 "drive:PTC:2023": {
 "at": "2026-11-08",
@@ -40514,7 +40589,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 21,
-"waits": 1
+"waits": 2
 },
 "arc:PACE:2012": {
 "at": "2026-11-08",
@@ -40618,7 +40693,8 @@
 "n": 36
 },
 "web:OGDC:2026": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"waits": 1
 },
 "drive:THALL:2022": {
 "at": "2026-11-08",
@@ -40638,7 +40714,8 @@
 "second": 1
 },
 "drive:HTL:2017": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"waits": 1
 },
 "arc:TPLT:2017": {
 "at": "2026-11-08",
@@ -40689,7 +40766,8 @@
 "web:HBL:2009": {
 "at": "2026-11-08",
 "done": true,
-"n": 30
+"n": 30,
+"waits": 1
 },
 "arc:AICL:2019": {
 "at": "2026-11-08",
@@ -40731,18 +40809,20 @@
 "second": 1
 },
 "drive:MLCF:2021": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"waits": 1
 },
 "arc:MEBL:2005": {
 "at": "2026-11-08",
 "done": true,
 "n": 26,
-"waits": 1
+"waits": 2
 },
 "arc:SBL:2008": {
 "at": "2026-11-08",
 "done": true,
-"n": 13
+"n": 13,
+"waits": 1
 },
 "arc:GATI:2017": {
 "at": "2026-11-08",
@@ -40922,11 +41002,12 @@
 "n": 22
 },
 "khi:IBFL:2019": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"waits": 1
 },
 "drive:THALL:2025": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 2
 },
 "web:NONS:2017": {
 "at": "2026-11-08",
@@ -40934,20 +41015,22 @@
 "rev": 5,
 "why": "Company website download failed (0)",
 "retry": 1,
-"second": 1
+"second": 1,
+"waits": 1
 },
 "arc:NONS:2016": {
 "at": "2026-11-08"
 },
 "arc:JSRR:2018": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"waits": 1
 },
 "web:SIEM:2022": {
 "at": "2026-11-08"
 },
 "arc:ATIL:2006": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 2
 },
 "arc:SPWL:2018": {
 "at": "2026-11-08",
@@ -40957,18 +41040,20 @@
 "second": 1
 },
 "arc:PCAL:2007": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"waits": 1
 },
 "arc:DWAE:2013": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 2
 },
 "arc:NBP:2006": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"waits": 1
 },
 "drive:GHNI:2018": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 2
 },
 "drive:GATM:2019": {
 "at": "2026-11-08"
