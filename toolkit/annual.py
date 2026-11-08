@@ -228,7 +228,7 @@ def khi_catalogue(sc):
     """KHI Stocks archive: ticker -> {"id", "name", "years": {year: ext}}; refreshed every 30 days"""
     p = os.path.join(AN, "khi_catalogue.json")
     cat = jl(p, {}) or {}
-    if cat.get("asOf") and (date.today() - date.fromisoformat(cat["asOf"])).days < 30:
+    if cat.get("asOf") and (date.today() - date.fromisoformat(cat["asOf"])).days < 30 and cat.get("v", 1) >= 2:
         return cat["co"]
     code, body = curl(f"{KHI}/annual_reports/get_company_report", data="symbol=LUCK", timeout=90)
     lst = (R.jload(body) or {}).get("annual_report") if code == 200 else None
@@ -258,6 +258,12 @@ def khi_catalogue(sc):
     for t, ids in co.items():
         i = known.get(t) if known.get(t) in ids else (ids[0] if len(ids) == 1 else None)
         if not i:
+            # the same company listed twice on KHI Stocks (8 Nov 2026: Fauji Foods, Unity Foods, J.A. Textile and others
+            # were never read): when every listing carries exactly the company's name, the one with the most years
+            exact = [x for x in ids if toks(byid[x].get("company")) == names.get(t)]
+            if len(exact) == len(ids):
+                i = max(exact, key=lambda x: len(re.findall(r"\d{4}", str(byid[x].get("years") or ""))))
+        if not i:
             continue
         ys = sorted({int(y) for y in re.findall(r"\d{4}", str(byid[i].get("years") or ""))})
         out[t] = {"id": i, "name": byid[i].get("company"), "years": ys}
@@ -265,7 +271,7 @@ def khi_catalogue(sc):
         if t not in out and i in byid:
             out[t] = {"id": i, "name": byid[i].get("company"),
                       "years": sorted({int(y) for y in re.findall(r"\d{4}", str(byid[i].get("years") or ""))})}
-    jw({"asOf": date.today().isoformat(), "n": len(out), "co": out}, p, indent=0)
+    jw({"asOf": date.today().isoformat(), "v": 2, "n": len(out), "co": out}, p, indent=0)
     return out
 
 
@@ -415,6 +421,7 @@ def covered(tk, longrows, extracts):
 
 
 WEB = {}       # ticker -> {year: url}: full annual reports on the companies' own websites (toolkit/websites.py)
+ARC = {}       # ticker -> {year: url}: the same, as kept by the Internet Archive (toolkit/archive_finder.py)
 GROUPS = set()  # companies whose histories must be consolidated (group basis)
 STATE = {}
 
@@ -429,6 +436,8 @@ def candidates(tk, cat, docs):
     # Stocks' short extracts lack: they replace KHI for group companies, and any source whose read failed for good
     alts = [(int(y), "psx" if "dps.psx" in url else "drive", url) for y, (fid, url) in (docs.get(tk) or {}).items()]
     alts += [(int(y), "web", url) for y, url in (WEB.get(tk) or {}).items()]
+    # the company's own reports kept by the Internet Archive (8 Nov 2026), for years its website no longer shows
+    alts += [(int(y), "arc", url) for y, url in (ARC.get(tk) or {}).items() if y not in (WEB.get(tk) or {})]
     for y, src, url in sorted(alts, key=lambda a: a[1] != "drive"):  # Drive first: his own copy always downloads
         cur = cands.get(y)
         st = STATE.get(f"{cur[0]}:{tk}:{y}") or {} if cur else {}
@@ -564,7 +573,7 @@ def next_job(tk, sc, longrows, cat, docs, state, extracts, imp):
 
 def plan(sc, longrows, cat, docs, state, extracts_by_tk):
     imp = important()
-    jobs = [j for tk in sorted(set(cat) | set(docs) | set(WEB)) if mine(tk)
+    jobs = [j for tk in sorted(set(cat) | set(docs) | set(WEB) | set(ARC)) if mine(tk)
             for j in [next_job(tk, sc, longrows, cat, docs, state, extracts_by_tk.get(tk, []), imp)] if j]
     jobs.sort()
     return jobs, imp
@@ -613,7 +622,7 @@ def get_pages(jid, src, url, work):
             if code in (200, 404):
                 break
         if code != 200 or open(pdf, "rb").read(5) != b"%PDF-":
-            return None, f"{ {'psx': 'PSX', 'web': 'Company website'}.get(src, 'Drive') } download failed ({code})"
+            return None, f"{ {'psx': 'PSX', 'web': 'Company website', 'arc': 'Internet Archive'}.get(src, 'Drive') } download failed ({code})"
     if pdf.endswith(".pdf") and os.path.getsize(pdf) > 80e6:
         return None, "file too large"
     return _pages(pdf, work)
@@ -1314,8 +1323,10 @@ def main():
         print(f"second chance: {nsec} reports given up earlier get one more try", flush=True)
     STATE.update(state)
     WEB.update({t: v.get("years") or {} for t, v in ((jl(os.path.join(AN, "web_catalogue.json"), {}) or {}).get("co") or {}).items()})
+    ARC.update({t: v.get("years") or {} for t, v in ((jl(os.path.join(AN, "archive_catalogue.json"), {}) or {}).get("co") or {}).items()})
     GROUPS.update(t for t, r in longrows.items() if (r or {}).get("basis") == "group")
-    print(f"sources: company websites give {sum(len(v) for v in WEB.values())} reports for {sum(1 for v in WEB.values() if v)} companies", flush=True)
+    print(f"sources: company websites give {sum(len(v) for v in WEB.values())} reports for {sum(1 for v in WEB.values() if v)} companies; "
+          f"the Internet Archive {sum(len(v) for v in ARC.values())} for {sum(1 for v in ARC.values() if v)}", flush=True)
     cat = khi_catalogue(sc)
     # former names: KHI Stocks' archive name for the ticker, and every name printed in reports already accepted for it
     for t, r in cat.items():

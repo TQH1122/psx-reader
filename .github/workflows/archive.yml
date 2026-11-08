@@ -1,0 +1,82 @@
+# Old report finder (8 Nov 2026): four robots side by side look up every listed company's website in the Internet
+# Archive for annual reports the companies have since taken down (toolkit/archive_finder.py). Started by the report
+# reader every round; each company is looked up again only after 30 days, so most runs end at once.
+name: Old report finder
+on:
+  schedule:
+    - cron: '17 */8 * * *'
+  workflow_dispatch:
+  push:
+    paths: ['toolkit/archive_finder.py']
+permissions:
+  contents: write
+concurrency:
+  group: archive
+  cancel-in-progress: false
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Look up company websites in the Internet Archive
+        timeout-minutes: 50
+        run: |
+          python3 toolkit/archive_finder.py 45 ${{ matrix.shard }} 4 | tee /tmp/last.txt
+          mkdir -p /tmp/out/arc-${{ matrix.shard }}
+          cp data/files/annual/archive_${{ matrix.shard }}.json /tmp/last.txt /tmp/out/arc-${{ matrix.shard }}/ 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: arc-${{ matrix.shard }}
+          path: /tmp/out/arc-${{ matrix.shard }}
+          retention-days: 1
+  merge:
+    needs: find
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: /tmp/shards
+      - name: Join and save
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          git pull -q --rebase || true
+          python3 - <<'PY'
+          import glob, json, os, zlib
+          p = "data/files/annual/archive_catalogue.json"
+          try:
+              cat = json.load(open(p))
+          except Exception:
+              cat = {"co": {}}
+          for f in glob.glob("/tmp/shards/arc-*/archive_*.json"):
+              i = int(os.path.basename(f)[8:-5])
+              for t, v in (json.load(open(f)).get("co") or {}).items():
+                  if zlib.crc32(t.encode()) % 4 == i:
+                      cat["co"][t] = v
+          cat["asOf"] = __import__("time").strftime("%Y-%m-%d")
+          json.dump(cat, open(p, "w"), indent=0, sort_keys=True)
+          print(f"merged: {len(cat['co'])} companies, {sum(len(v.get('years') or {}) for v in cat['co'].values())} archived annual reports")
+          PY
+          cat /tmp/shards/arc-*/last.txt | grep "done:" | tee /tmp/last.txt
+          git add data/files/annual/archive_catalogue.json
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -q -m "Old reports: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') (Internet Archive, 4 finders)"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          exit 1
+      - name: Start the next round while companies are left
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          grep -qE "[1-9][0-9]* still to look up" /tmp/last.txt || exit 0
+          for i in 1 2 3; do gh workflow run archive.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done
