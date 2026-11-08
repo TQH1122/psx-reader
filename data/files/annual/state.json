@@ -2991,9 +2991,12 @@
 "n": 33
 },
 "khi:THCCL:2016": {
-"at": "2026-11-01",
+"at": "2026-11-08",
 "done": true,
-"n": 4
+"n": 14,
+"reread": [
+2016
+]
 },
 "khi:DLL:2025": {
 "at": "2026-11-01",
@@ -10335,7 +10338,10 @@
 "rev": 4,
 "second": 1,
 "done": true,
-"n": 6
+"n": 6,
+"reread": [
+2008
+]
 },
 "khi:POL:2003": {
 "at": "2026-11-02",
@@ -13279,9 +13285,16 @@
 "why": "company name does not match: NAGINA GROUP (names NAGC)"
 },
 "khi:ARCTM:2005": {
-"at": "2026-11-02",
+"at": "2026-11-08",
 "done": true,
-"n": 6
+"n": 6,
+"reread": [
+2004,
+2005
+],
+"tries": 1,
+"rev": 4,
+"why": "not annual accounts (interim statements)"
 },
 "khi:PHDL:2006": {
 "at": "2026-11-02",
@@ -13440,7 +13453,10 @@
 "rev": 4,
 "second": 1,
 "done": true,
-"n": 12
+"n": 12,
+"reread": [
+2003
+]
 },
 "khi:GFIL:2003": {
 "at": "2026-11-02",
@@ -18910,12 +18926,12 @@
 "why": "company name does not match: First Habib Modaraba (names AHCL)"
 },
 "web:NEXT:2019": {
-"at": "2026-11-03",
+"at": "2026-11-08",
 "tries": 1,
 "rev": 4,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 6
 },
 "web:NEXT:2018": {
 "at": "2026-11-08",
@@ -18937,12 +18953,12 @@
 "why": "no figure passed the checks"
 },
 "web:NEXT:2017": {
-"at": "2026-11-03",
+"at": "2026-11-08",
 "tries": 1,
 "rev": 4,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 6
 },
 "web:UVIC:2009": {
 "at": "2026-11-07",
@@ -21162,7 +21178,10 @@
 "retry": 1,
 "second": 1,
 "done": true,
-"n": 0
+"n": 0,
+"reread": [
+2008
+]
 },
 "web:KSTM:2025": {
 "at": "2026-11-03",
@@ -24407,7 +24426,10 @@
 "rev": 4,
 "second": 1,
 "done": true,
-"n": 16
+"n": 16,
+"reread": [
+2026
+]
 },
 "web:CASH:2025": {
 "at": "2026-11-04",
@@ -25185,10 +25207,13 @@
 "n": 0
 },
 "web:GEMBCEM:2025": {
-"at": "2026-11-03",
+"at": "2026-11-08",
 "waits": 1,
 "done": true,
-"n": 0
+"n": 0,
+"reread": [
+2025
+]
 },
 "web:EWLA:2020": {
 "at": "2026-11-03",
@@ -28713,7 +28738,10 @@
 "drive:FASM:2019": {
 "at": "2026-11-08",
 "done": true,
-"n": 6
+"n": 9,
+"reread": [
+2019
+]
 },
 "drive:SUTM:2019": {
 "at": "2026-11-08",
@@ -28735,7 +28763,10 @@
 "drive:FPJM:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 8
+"n": 8,
+"reread": [
+2020
+]
 },
 "drive:BAFS:2019": {
 "at": "2026-11-08",
@@ -28757,7 +28788,13 @@
 "drive:PIM:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 5
+"n": 5,
+"reread": [
+2020
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "drive:ICCI:2020": {
 "at": "2026-11-08",
@@ -28776,7 +28813,13 @@
 "drive:FFC:2019": {
 "at": "2026-11-08",
 "done": true,
-"n": 30
+"n": 30,
+"reread": [
+2019
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "drive:AVN:2019": {
 "at": "2026-11-08",
@@ -28830,6 +28873,7 @@
 "done": true,
 "n": 14,
 "reread": [
+2019,
 2020
 ]
 },
@@ -28881,7 +28925,10 @@
 "drive:NSRM:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 4
+"n": 4,
+"reread": [
+2019
+]
 },
 "drive:CCM:2019": {
 "at": "2026-11-08",
@@ -28922,7 +28969,10 @@
 "drive:HTL:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 38
+"n": 34,
+"reread": [
+2020
+]
 },
 "drive:GOC:2019": {
 "at": "2026-11-08",
@@ -28937,7 +28987,10 @@
 "drive:ZAHID:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 40
+"n": 2,
+"reread": [
+2020
+]
 },
 "drive:GOC:2018": {
 "at": "2026-11-08",
@@ -28964,7 +29017,10 @@
 "drive:FASM:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 10
+"n": 20,
+"reread": [
+2020
+]
 },
 "drive:FRCL:2019": {
 "at": "2026-11-08",
@@ -28974,7 +29030,13 @@
 "drive:SHCM:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 18
+"n": 18,
+"reread": [
+2020
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "drive:REDCO:2020": {
 "at": "2026-11-08",
@@ -29025,7 +29087,10 @@
 "drive:KOSM:2018": {
 "at": "2026-11-08",
 "done": true,
-"n": 6
+"n": 6,
+"reread": [
+2017
+]
 },
 "drive:RICL:2029": {
 "at": "2026-11-08",
@@ -29065,7 +29130,10 @@
 "drive:JDMT:2018": {
 "at": "2026-11-08",
 "done": true,
-"n": 38
+"n": 34,
+"reread": [
+2018
+]
 },
 "drive:AHTM:2020": {
 "at": "2026-11-08",
@@ -29075,7 +29143,11 @@
 "drive:KHYT:2019": {
 "at": "2026-11-08",
 "done": true,
-"n": 0
+"n": 0,
+"reread": [
+2018,
+2019
+]
 },
 "drive:CFL:2020": {
 "at": "2026-11-08",
@@ -29116,7 +29188,10 @@
 "drive:FEM:2019": {
 "at": "2026-11-08",
 "done": true,
-"n": 16
+"n": 16,
+"reread": [
+2019
+]
 },
 "drive:CFL:2018": {
 "at": "2026-11-08",
@@ -29156,7 +29231,14 @@
 "drive:SUHJ:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 25
+"n": 25,
+"reread": [
+2019,
+2020
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "drive:INKL:2021": {
 "at": "2026-11-08",
@@ -29189,7 +29271,10 @@
 "drive:SLYT:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 26
+"n": 34,
+"reread": [
+2020
+]
 },
 "drive:KSTM:2018": {
 "at": "2026-11-08",
@@ -29199,7 +29284,10 @@
 "drive:SLYT:2018": {
 "at": "2026-11-08",
 "done": true,
-"n": 24
+"n": 30,
+"reread": [
+2017
+]
 },
 "drive:ELCM:2021": {
 "at": "2026-11-08",
@@ -29275,7 +29363,10 @@
 "drive:PIM:2022": {
 "at": "2026-11-08",
 "done": true,
-"n": 9
+"n": 10,
+"reread": [
+2022
+]
 },
 "drive:DCR:2022": {
 "at": "2026-11-08",
@@ -29292,7 +29383,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 4,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:JSIL:2021": {
 "at": "2026-11-08",
@@ -29334,9 +29427,11 @@
 },
 "drive:NSRM:2021": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 4,
-"why": "no figure passed the checks"
+"second": 1,
+"done": true,
+"n": 12
 },
 "drive:SFL:2021": {
 "at": "2026-11-08",
@@ -29446,7 +29541,13 @@
 "drive:SUHJ:2022": {
 "at": "2026-11-08",
 "done": true,
-"n": 8
+"n": 8,
+"reread": [
+2022
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
 },
 "drive:JSML:2022": {
 "at": "2026-11-08",
@@ -29512,5 +29613,117 @@
 "tries": 2,
 "rev": 4,
 "why": "company name does not match: Pakistan National Investment Trust Limited (names NATF)"
+},
+"drive:KSTM:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"drive:FPJM:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 2,
+"reread": [
+2019
+]
+},
+"drive:SPWL:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"drive:SHCM:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 42,
+"reread": [
+2019
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"drive:SUHJ:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 16,
+"reread": [
+2021
+],
+"tries": 1,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"drive:JSBL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"drive:FEM:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "no figure passed the checks"
+},
+"drive:JUBS:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Rafi Textile Mills Limited (names AATM)"
+},
+"drive:JSIL:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 22,
+"reread": [
+2019
+]
+},
+"drive:PIM:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 0,
+"reread": [
+2021
+]
+},
+"web:NEXT:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"khi:SKRS:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 22
+},
+"web:NEXT:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 6
+},
+"khi:SKRS:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 40
+},
+"web:SKRS:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SKRS:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
+},
+"web:SKRS:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "Company website download failed (0)"
 }
 }
