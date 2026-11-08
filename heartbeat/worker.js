@@ -24,6 +24,7 @@ const CHAINS = {
   "broker.yml": [20 * MIN, 150 * MIN],     // chained the same way since 3 Nov 2026
   "lane-daily.yml": [60 * MIN, 190 * MIN], // started by the reader every half hour
   "lane-jobs.yml": [60 * MIN, 190 * MIN],
+  "explorer.yml": [30 * MIN, 120 * MIN],   // brain explorer (8 Nov 2026): a restart with no ideas left ends in a minute
 };
 const ALERT_GAP = 6 * HOUR, STAMP_GAP = 6 * HOUR;
 
@@ -112,7 +113,7 @@ async function sha256(s) {
 const b64dec = (s) => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, "")), (c) => c.charCodeAt(0)));
 const b64enc = (s) => btoa(String.fromCharCode(...new TextEncoder().encode(s)));
 const name = (wf) => ({ "reader.yml": "Report reader", "broker.yml": "Broker reader",
-                        "lane-daily.yml": "Daily jobs", "lane-jobs.yml": "Regular jobs" })[wf] || wf;
+                        "lane-daily.yml": "Daily jobs", "lane-jobs.yml": "Regular jobs", "explorer.yml": "Brain explorer" })[wf] || wf;
 const mins = (ms) => `${Math.round(ms / MIN)} minutes`;
 const hrs = (ms) => ms < 2 * HOUR ? mins(ms) : `${Math.round(ms / HOUR)} hours`;
 

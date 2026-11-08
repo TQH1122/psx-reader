@@ -1,17 +1,18 @@
 # PSX brain explorer (8 Nov 2026): invents and tests new investing ideas around the clock on the free robots, no
-# Claude needed (toolkit/explorer.py in the private tracker). It reads the monthly brain run's company snapshots,
-# tests ideas in batches against a luck bar, checks promoted ones once on locked years, and saves its findings back
-# into the private repository. This public log shows only counts.
+# Claude needed (toolkit/explorer.py in the private tracker). Eight robots work at the same time, each on its own
+# share of about 12 million ideas, on all the past years we hold; findings go back into the private repository.
+# This public log shows only counts. Chained: while ideas are left, each round of robots starts the next; the
+# heartbeat restarts the chain if it ever stops, and a timer wakes it every 6 hours for new data.
 name: Brain explorer
 on:
   schedule:
-    - cron: '41 */6 * * *'   # wakes every 6 hours to see whether new figures or a new month started a new round
+    - cron: '41 */6 * * *'
   workflow_dispatch:
   push:
     paths: ['.github/run-explorer']
 permissions:
   contents: read
-  actions: write   # each run starts the next while ideas are left in the round
+  actions: write
 concurrency:
   group: explorer
   cancel-in-progress: false
@@ -19,6 +20,10 @@ jobs:
   explore:
     runs-on: ubuntu-latest
     timeout-minutes: 70
+    strategy:
+      fail-fast: false
+      matrix:
+        worker: [0, 1, 2, 3, 4, 5, 6, 7]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,18 +37,31 @@ jobs:
       - run: pip install -q numpy > /dev/null 2>&1
       - name: Test new ideas
         timeout-minutes: 55
-        run: |
-          set -o pipefail
-          python3 toolkit/explorer.py 50 | tee /tmp/explorer_last.txt
+        run: python3 toolkit/explorer.py 50 ${{ matrix.worker }} 8
       - name: Save to the private repository
         if: always()
-        run: python3 toolkit/savegit.py "Robot: brain explorer $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/brain/explorer.json
-      - name: Start the next run while ideas are left
-        if: ${{ !cancelled() }}
+        run: python3 toolkit/savegit.py "Robot: brain explorer ${{ matrix.worker }} $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/brain/explorer_${{ matrix.worker }}.json
+  next:
+    needs: explore
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          sparse-checkout: data/files/brain
+      - name: Start the next round while ideas are left
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          last="$(tail -n 1 /tmp/explorer_last.txt 2>/dev/null)"
-          echo "$last" | grep -q "^done:" || { sleep 600; }
-          echo "$last" | grep -qE " 0 left this round|no company snapshots" && exit 0
+          left=$(python3 -c "
+          import glob, json
+          n = 0
+          for f in glob.glob('data/files/brain/explorer_*.json'):
+              d = json.load(open(f)); n += max(0, d.get('space', 0) - d.get('cursor', 0))
+          print(n)" 2>/dev/null || echo 1)
+          echo "ideas left: $left"
+          [ "$left" = "0" ] && exit 0
           for i in 1 2 3; do gh workflow run explorer.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done
