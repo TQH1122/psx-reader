@@ -12564,9 +12564,13 @@
 "second": 1
 },
 "web:SNGP:2002": {
-"at": "2026-11-03",
+"at": "2026-11-08",
 "done": true,
-"n": 16
+"n": 20,
+"reread": [
+2001,
+2002
+]
 },
 "web:ZIL:2012": {
 "at": "2026-11-08",
@@ -32758,7 +32762,10 @@
 "web:SNGP:2004": {
 "at": "2026-11-08",
 "done": true,
-"n": 33
+"n": 27,
+"reread": [
+2004
+]
 },
 "arc:ARMG:2023": {
 "at": "2026-11-08",
@@ -32919,11 +32926,20 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:BERG:2016": {
 "at": "2026-11-08",
 "done": true,
 "n": 24
+},
+"web:SNGP:2003": {
+"at": "2026-11-08",
+"done": true,
+"n": 28,
+"reread": [
+2003
+]
 }
 }

@@ -1,32 +1,3 @@
-pages ar_8jh7t62k 28s
-pages ar_yspunoga 29s
-pages ar_bhv1s93t 46s
-pages ar_ruw4fq92 45s
-pages ar_yx5_whe8 41s
-pages ar_z2qyylf4 53s
-pages ar_bptfrsiy 52s
-pages ar_oz6owqzn 36s
-pages ar_87jd2gw5 35s
-pages ar__3nqwfym 51s
-pages ar_b0diz0s6 64s
-pages ar_d_pnhmyx 79s
-pages ar_arp5a373 58s
-pages ar_ctt21grc 57s
-pages ar__rthoe2k 156s
-pages ar_9m3tqq2c 57s
-pages ar_t3sj4eup 63s
-pages ar_ayz0m3hq 45s
-pages ar__omb_q7o 25s
-pages ar_0gp2senq 13s
-pages ar_q10pa09n 7s
-pages ar_jmmkyvwa 49s
-pages ar_jw3nknas 21s
-pages ar_zub4ordv 17s
-pages ar_zajhbl0r 17s
-pages ar_0pu46f_9 20s
-pages ar_i3860w_d 20s
-pages ar_xugp55hd 26s
-pages ar_wzg9lzc6 37s
 pages ar_d509lp92 65s
 pages ar_xyhgnp2l 18s
 pages ar_ayxk_43w 14s
@@ -398,3 +369,32 @@ done: read 13 annual reports (4 readers side by side), 0 skipped, about 38 still
 [reader 3] openrouter: paid models on (credit left $6.60)
 [reader 3] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 30 still to read; models used: ; resting until tomorrow: 12 models
 done: read 2 annual reports (4 readers side by side), 0 skipped, about 28 still to read
+[reader 0] tracker flags: 558 companies with histories, 754 listed
+[reader 0] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 0] second chance: 1 reports given up earlier get one more try
+[reader 0] sources: company websites give 3609 reports for 398 companies; the Internet Archive 842 for 80
+[reader 0] audit: 539 company years flagged: 20 to re-read, 433 re-read, 3 waiting for a first read, 83 no usable report
+[reader 0] openrouter: paid models on (credit left $6.58)
+[reader 0] done: read 4 annual reports (3 audit re-reads), 1 skipped, about 23 still to read; models used: openai/gpt-oss-120b 2, google/gemini-2.5-flash-lite 2, qwen/qwen3-235b-a22b-2507 1, deepseek/deepseek-chat-v3.1 2, gemini-3.5-flash-lite 2, gemini-3.1-flash-lite 1, xingchen-agi/xing4.0-29b-a4b:free 3; resting until tomorrow: 10 models
+[reader 1] tracker flags: 558 companies with histories, 754 listed
+[reader 1] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 1] second chance: 1 reports given up earlier get one more try
+[reader 1] sources: company websites give 3609 reports for 398 companies; the Internet Archive 842 for 80
+[reader 1] audit: 539 company years flagged: 20 to re-read, 433 re-read, 3 waiting for a first read, 83 no usable report
+[reader 1] openrouter: paid models on (credit left $6.58)
+[reader 1] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 28 still to read; models used: ; resting until tomorrow: 7 models
+[reader 2] tracker flags: 558 companies with histories, 754 listed
+[reader 2] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 2] second chance: 1 reports given up earlier get one more try
+[reader 2] sources: company websites give 3609 reports for 398 companies; the Internet Archive 842 for 80
+[reader 2] audit: 539 company years flagged: 20 to re-read, 433 re-read, 3 waiting for a first read, 83 no usable report
+[reader 2] openrouter: paid models on (credit left $6.58)
+[reader 2] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 28 still to read; models used: ; resting until tomorrow: 18 models
+[reader 3] tracker flags: 558 companies with histories, 754 listed
+[reader 3] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 3] second chance: 1 reports given up earlier get one more try
+[reader 3] sources: company websites give 3609 reports for 398 companies; the Internet Archive 842 for 80
+[reader 3] audit: 539 company years flagged: 20 to re-read, 433 re-read, 3 waiting for a first read, 83 no usable report
+[reader 3] openrouter: paid models on (credit left $6.58)
+[reader 3] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 28 still to read; models used: ; resting until tomorrow: 13 models
+done: read 4 annual reports (4 readers side by side), 0 skipped, about 23 still to read
