@@ -24,6 +24,8 @@ jobs:
       - run: command -v pdftotext && command -v tesseract || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils tesseract-ocr; } > /dev/null 2>&1
       - name: Look at new files in the Drive library
         timeout-minutes: 55
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # lists the whole folder once the Drive API is on (8 Nov 2026)
         run: python3 toolkit/drive_index.py 45 | tee /tmp/drive_last.txt
       - name: Save
         if: ${{ !cancelled() }}

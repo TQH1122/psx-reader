@@ -27,8 +27,39 @@ def jl(p, d):
         return d
 
 
+def api_listing():
+    """every file in the folder through the Drive API and his free Google key (8 Nov 2026: the folder view below stops
+    at about 5,500 files, so his newest uploads were never seen). Needs the Drive API turned on for that key's
+    project; until then it returns None and the folder view is used."""
+    import urllib.parse, urllib.request
+    key = os.environ.get("GEMINI_API_KEY", "")
+    if not key:
+        return None
+    out, tok = {}, ""
+    q = urllib.parse.quote(f"'{FOLDER}' in parents and trashed = false")
+    try:
+        for _ in range(60):
+            u = (f"https://www.googleapis.com/drive/v3/files?q={q}&pageSize=1000&key={key}"
+                 f"&fields=nextPageToken,files(id,name,mimeType)" + (f"&pageToken={tok}" if tok else ""))
+            d = json.load(urllib.request.urlopen(u, timeout=90))
+            for f in d.get("files", []):
+                if f.get("mimeType") != "application/vnd.google-apps.folder":
+                    out[f["id"]] = f.get("name") or ""
+            tok = d.get("nextPageToken")
+            if not tok:
+                return out
+    except Exception as e:
+        print(f"drive api: not available ({str(e)[:80]}); using the folder view", flush=True)
+        return None
+    return out
+
+
 def listing():
     """every file in the folder: id -> title (subfolders left out)"""
+    full = api_listing()
+    if full:
+        print(f"drive api: {len(full)} files listed", flush=True)
+        return full
     p = subprocess.run(["curl", "-sL", "-m", "180", f"https://drive.google.com/embeddedfolderview?id={FOLDER}"],
                        capture_output=True, text=True, errors="ignore")
     html, out = p.stdout, {}
@@ -87,6 +118,32 @@ def period(text):
     return ("A", None, None) if "annual report" in t else (None, None, None)
 
 
+# research material he adds beside the reports (8 Nov 2026: State Bank, PACRA, VIS, APCMA, PAMA, APTMA and more):
+# filed by publisher and sector so the PSX brain can use it; nothing is read by a model here
+SOURCES = [("SBP", r"state bank of pakistan|\bsbp\b"), ("PACRA", r"\bpacra\b|pakistan credit rating"),
+           ("VIS", r"\bvis credit|\bvis\b.{0,20}rating|\bvis research"), ("APCMA", r"\bapcma\b|all pakistan cement"),
+           ("PAMA", r"\bpama\b|pakistan automotive manufacturers"), ("APTMA", r"\baptma\b|all pakistan textile"),
+           ("PBS", r"pakistan bureau of statistics|\bpbs\b"), ("OCAC", r"\bocac\b|oil companies advisory"),
+           ("NEPRA", r"\bnepra\b"), ("OGRA", r"\bogra\b"), ("MoF", r"ministry of finance|economic survey"),
+           ("IMF", r"international monetary fund|\bimf\b"), ("WB", r"world bank"), ("ADB", r"asian development bank"),
+           ("JICA", r"\bjica\b"), ("PSX", r"pakistan stock exchange"), ("Broker", r"securities limited|research desk|target price")]
+SECTORS = [("cement", r"cement|clinker"), ("auto", r"automo|vehicle|car sales|motorcycle|tractor"),
+           ("textile", r"textile|cotton|yarn|garment|weaving|spinning|knitwear|towel|bed ?wear"),
+           ("pharma", r"pharma"), ("fertilizer", r"fertili[sz]er|urea|\bdap\b"), ("steel", r"steel|\biron\b"),
+           ("oil", r"\boil\b|petroleum|\bomc\b|refiner|\blng\b|\bgas\b"), ("power", r"power|electricity|\bipp"),
+           ("banks", r"\bbank|deposit|advances|monetary|policy rate|kibor"), ("insurance", r"insurance|takaful"),
+           ("sugar", r"sugar"), ("food", r"\bfood|dairy|edible"), ("chemicals", r"chemical"), ("tech", r"software|\bit exports"),
+           ("macro", r"inflation|\bcpi\b|current account|remittance|reserves|exchange rate|\bgdp\b|balance of payments|trade deficit")]
+
+
+def research(text, title):
+    t = (title + " " + text[:6000]).lower()
+    src = next((k for k, p in SOURCES if re.search(p, t)), None)
+    sec = sorted({k for k, p in SECTORS if re.search(p, t)})
+    yrs = [int(y) for y in re.findall(r"\b(20[0-3]\d)\b", t)]
+    return {"src": src, "sectors": sec, "y": max(yrs) if yrs else None}
+
+
 def company(text):
     low = norm(text[:4000]).split(" bankers ")[0]
     best = None
@@ -121,7 +178,12 @@ def ident(fid, title):
             return {"title": title, "err": f"download {p.stdout or p.returncode}"}
         size = os.path.getsize(pdf)
         if open(pdf, "rb").read(5) != b"%PDF-":
-            return {"title": title, "size": size, "kind": "notpdf"}
+            r = {"title": title, "size": size, "kind": "notpdf", "v": 3}
+            if re.search(r"\.(xlsx?|csv)$", title or "", re.I):
+                r.update(kind="sheet", **research("", title))
+            elif re.search(r"\.(jpe?g|png|webp)$", title or "", re.I):
+                r["kind"] = "image"
+            return r
         txt = subprocess.run(["pdftotext", "-l", "4", "-layout", pdf, "-"], capture_output=True, text=True,
                              errors="ignore", timeout=120).stdout
         scanned = len(txt.strip()) < 300
@@ -145,9 +207,13 @@ def ident(fid, title):
         m = re.match(r"^([A-Z]{2,8})[ _-]", title or "")
         if not tk and m and any(m.group(1) == t for t, _ in NAMES):
             tk = m.group(1)  # files he named himself (TICKER FY2024 ...)
-        r = {"title": title, "size": size, "tk": tk, "kind": k, "y": y, "mon": mon, "scanned": scanned, "v": 2}
+        r = {"title": title, "size": size, "tk": tk, "kind": k, "y": y, "mon": mon, "scanned": scanned, "v": 3}
         if not tk:
             r["co"] = coname(txt)
+        if not k or not tk:  # not a company's own report: research material, filed by publisher and sector
+            rs = research(txt, title or "")
+            if rs["src"] or rs["sectors"]:
+                r.update(kind=k or "R", research=rs)
         return r
     except Exception as e:
         return {"title": title, "err": str(e)[:80]}
@@ -164,7 +230,8 @@ def main():
     # looked at again (8 Nov 2026): files that failed on the old OCR time limit, and files matched to no listed company,
     # which now get their printed company name (companies that left the market)
     again = lambda r: (r.get("err") and (r.get("tries", 1) < 3 or ("tesseract" in str(r["err"]) and r.get("v", 1) < 2))) \
-        or (not r.get("err") and not r.get("tk") and r.get("v", 1) < 2)
+        or (not r.get("err") and not r.get("tk") and r.get("v", 1) < 2) \
+        or (not r.get("err") and not r.get("kind") and r.get("v", 1) < 3)  # unknown files: checked for research material
     todo = [(f, t) for f, t in files.items() if f not in known and (f not in db or again(db[f]))]
     todo.sort(key=lambda x: x[0] in db)  # files never seen first
     lock, done = threading.Lock(), [0]
