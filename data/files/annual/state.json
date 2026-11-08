@@ -9474,9 +9474,9 @@
 "drive:MDTL:2026": {
 "at": "2026-11-08",
 "n": 0,
-"retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:GATM:2018": {
 "at": "2026-11-02",
@@ -30004,7 +30004,10 @@
 "at": "2026-11-08",
 "waits": 1,
 "done": true,
-"n": 30
+"n": 26,
+"reread": [
+2025
+]
 },
 "web:MACTER:2022": {
 "at": "2026-11-08",
@@ -30592,7 +30595,9 @@
 },
 "drive:TSML:2025": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 30
 },
 "drive:LIVEN:2026": {
 "at": "2026-11-08",
@@ -33219,10 +33224,11 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
 "retry": 1,
 "second": 1,
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 33
 },
 "arc:ISIL:2009": {
 "at": "2026-11-08",
@@ -33837,7 +33843,9 @@
 "second": 1
 },
 "arc:GGL:2018": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 34
 },
 "arc:CFL:2020": {
 "at": "2026-11-08",
@@ -34255,13 +34263,21 @@
 },
 "arc:AHL:2008": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"second": 1,
+"done": true,
+"n": 10,
+"reread": [
+2008
+]
 },
 "arc:FCEPL:2009": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: not a Pakistan Stock Exchange company"
 },
 "arc:AGP:2017": {
 "at": "2026-11-08",
@@ -34300,10 +34316,17 @@
 "n": 20
 },
 "drive:SNGP:2023": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 22,
+"reread": [
+2023
+]
 },
 "drive:SPWL:2015": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 19
 },
 "drive:KSTM:2024": {
 "at": "2026-11-08",
@@ -34312,15 +34335,18 @@
 },
 "drive:KSTM:2023": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "arc:GSPM:2020": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "drive:KSTM:2017": {
 "at": "2026-11-08",
@@ -34371,7 +34397,10 @@
 "n": 20
 },
 "arc:FCSC:2012": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "drive:SSGC:2015": {
 "at": "2026-11-08",
@@ -34439,8 +34468,11 @@
 "drive:MARI:2016": {
 "at": "2026-11-08",
 "done": true,
-"n": 6,
-"waits": 1
+"n": 0,
+"waits": 1,
+"reread": [
+2016
+]
 },
 "drive:RUPL:2014": {
 "at": "2026-11-08",
@@ -34453,7 +34485,9 @@
 "n": 18
 },
 "drive:LPL:2013": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 0
 },
 "drive:IBFL:2016": {
 "at": "2026-11-08",
@@ -34473,20 +34507,32 @@
 },
 "drive:TPLT:2017": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 29
 },
 "drive:ARPAK:2013": {
 "at": "2026-11-08",
 "done": true,
-"n": 14,
-"waits": 1
+"n": 12,
+"waits": 1,
+"reread": [
+2013
+]
 },
 "arc:FEROZ:2016": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 14
 },
 "arc:FFC:2016": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 28,
+"reread": [
+2016
+]
 },
 "drive:KOIL:2017": {
 "at": "2026-11-08",
@@ -34509,7 +34555,12 @@
 "n": 34
 },
 "drive:CJPL:2017": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 10,
+"reread": [
+2017
+]
 },
 "drive:MFFL:2016": {
 "at": "2026-11-08",
@@ -34578,9 +34629,11 @@
 },
 "drive:MQTM:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:HUMNL:2013": {
 "at": "2026-11-08",
@@ -34611,8 +34664,11 @@
 "drive:NPL:2016": {
 "at": "2026-11-08",
 "done": true,
-"n": 26,
-"waits": 1
+"n": 27,
+"waits": 1,
+"reread": [
+2016
+]
 },
 "drive:SFL:2015": {
 "at": "2026-11-08",
@@ -34626,13 +34682,18 @@
 "waits": 1
 },
 "drive:NETSOL:2015": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 31
 },
 "drive:EFUG:2017": {
 "at": "2026-11-08",
 "done": true,
-"n": 2,
-"waits": 1
+"n": 0,
+"waits": 1,
+"reread": [
+2017
+]
 },
 "drive:RPL:2017": {
 "at": "2026-11-08",
@@ -34641,7 +34702,10 @@
 },
 "drive:PSX:2016": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: KHAIRPUR SUGAR MILLS LIMITED (names AABS)"
 },
 "drive:RPL:2016": {
 "at": "2026-11-08",
@@ -34650,7 +34714,9 @@
 },
 "drive:FIL:2013": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 18
 },
 "drive:TICL:2014": {
 "at": "2026-11-08",
@@ -34678,7 +34744,9 @@
 },
 "drive:ALTN:2015": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 10
 },
 "drive:YOUW:2016": {
 "at": "2026-11-08",
@@ -34687,11 +34755,16 @@
 },
 "drive:SPEL:2016": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 16
 },
 "drive:PIM:2015": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: required financial statement figures not present in provided pages"
 },
 "drive:FIMM:2016": {
 "at": "2026-11-08",
@@ -34707,13 +34780,15 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CFL:2016": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CFL:2015": {
 "at": "2026-11-08",
@@ -34725,7 +34800,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CFL:2013": {
 "at": "2026-11-08",
@@ -34736,11 +34812,511 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CFL:2010": {
 "at": "2026-11-08",
 "done": true,
 "n": 35
+},
+"arc:ICL:2004": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:KHYT:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:FNEL:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 31
+},
+"arc:JDWS:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 12
+},
+"arc:LUCK:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 38
+},
+"arc:KHYT:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"arc:KHYT:2013": {
+"at": "2026-11-08"
+},
+"arc:ILP:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 39,
+"waits": 1
+},
+"arc:JVDC:2012": {
+"at": "2026-11-08"
+},
+"arc:LUCK:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"arc:KML:2014": {
+"at": "2026-11-08"
+},
+"arc:DMC:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: D.M. Textile Mills Ltd. (names AABS)"
+},
+"arc:DMC:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: D.M. Textile Mills Ltd. (names AABS)"
+},
+"arc:DWAE:2015": {
+"at": "2026-11-08"
+},
+"arc:LUCK:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 22
+},
+"arc:LUCK:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 31
+},
+"arc:LUCK:2008": {
+"at": "2026-11-08",
+"done": true,
+"n": 27
+},
+"arc:DMC:2016": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:NAGC:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ELLCOT SPINNING MILLS LIMITED (names DFSM)"
+},
+"arc:MUGHAL:2020": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"arc:PKGP:2011": {
+"at": "2026-11-08"
+},
+"arc:PMRS:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:PMRS:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:FCSC:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"arc:NAGC:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:RMPL:2007": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"arc:PINL:2008": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"arc:PINL:2005": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"arc:MUGHAL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:FCSC:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pace (Pakistan) Limited (names PACE)"
+},
+"drive:MARI:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 27,
+"reread": [
+2015
+]
+},
+"arc:FFC:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 33,
+"reread": [
+2015
+]
+},
+"arc:MCBIM:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pakistan Income Enchancement Fund"
+},
+"arc:FCSC:2006": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"arc:FCSC:2004": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"arc:PMRS:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ARPAK INTERNATIONAL INVESTMENTS LIMITED (names 786)"
+},
+"drive:MARI:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 12
+},
+"arc:QUET:2011": {
+"at": "2026-11-08"
+},
+"arc:MUGHAL:2015": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:FFC:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"arc:FCSC:2003": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:PMRS:2016": {
+"at": "2026-11-08"
+},
+"arc:FFC:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 10
+},
+"arc:FFC:2010": {
+"at": "2026-11-08"
+},
+"arc:PASL:2013": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"done": true,
+"n": 12
+},
+"arc:PASL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:PASL:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 27
+},
+"arc:FEROZ:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 2
+},
+"arc:FEROZ:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"arc:PNSC:2010": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:FEROZ:2005": {
+"at": "2026-11-08"
+},
+"arc:CTM:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:FLYNG:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"arc:FABL:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "file too large"
+},
+"arc:HMB:2006": {
+"at": "2026-11-08"
+},
+"arc:JKSM:2012": {
+"at": "2026-11-08"
+},
+"arc:HAEL:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"arc:HAEL:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"arc:GWLC:2006": {
+"at": "2026-11-08"
+},
+"arc:FLYNG:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 12
+},
+"arc:FLYNG:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 40,
+"reread": [
+2010
+]
+},
+"arc:FABL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:HAEL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:FLYNG:2008": {
+"at": "2026-11-08",
+"done": true,
+"n": 29
+},
+"arc:FABL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 12
+},
+"arc:HAEL:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 35
+},
+"arc:HAEL:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 27
+},
+"arc:GGL:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"arc:GGL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: required information (company name, financial year end, kind, statements) not fo"
+},
+"arc:GGL:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 17
+},
+"arc:GGL:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: GAS AVAILABILITY SERVICES LIMITED (names PSEL)"
+},
+"arc:GGL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: company name exactly as printed"
+},
+"arc:GGL:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"arc:KOSM:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:GVGL:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 9
+},
+"arc:IMAGE:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:KOHE:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:GATI:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 19
+},
+"arc:IMAGE:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:EFUG:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 2,
+"reread": [
+2013
+]
+},
+"arc:IMAGE:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:IMAGE:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:FML:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 30,
+"reread": [
+2011
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"arc:KTML:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Maple Leaf Cement (names ACPL)"
+},
+"arc:CENI:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CENI:2005": {
+"at": "2026-11-08"
+},
+"arc:FIMM:2000": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"arc:FML:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: NAKSHBANDI INDUSTRIES LIMITED (names AGIL)"
+},
+"arc:GATI:2013": {
+"at": "2026-11-08"
+},
+"drive:NPL:2013": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:GVGL:2017": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:KTML:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: MAPLE LEAF CEMENT FACTORY LIMITED (names ACPL)"
+},
+"drive:TSML:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"arc:JSIL:2007": {
+"at": "2026-11-08",
+"waits": 1
+},
+"drive:NETSOL:2013": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:KTML:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"arc:KTML:2008": {
+"at": "2026-11-08",
+"waits": 1
 }
 }
