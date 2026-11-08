@@ -29747,7 +29747,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 4,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "drive:SUHJ:2023": {
 "at": "2026-11-08",
@@ -29861,5 +29862,71 @@
 "at": "2026-11-08",
 "done": true,
 "n": 18
+},
+"drive:WAVESAPP:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"drive:ARCTM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"drive:JDMT:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"drive:FSWL:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Not stated"
+},
+"drive:SPWL:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: SPL"
+},
+"drive:FTSM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"drive:GRYL:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: ANNUAL REPORT 2024"
+},
+"drive:SINDM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"drive:FANM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 12
+},
+"drive:HAFL:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: First Habib Modaraba (names AHCL)"
+},
+"drive:SAIF:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 31
+},
+"drive:MUGHAL:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Pak Elektron Limited (names GEMPAPL)"
 }
 }
