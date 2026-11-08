@@ -18298,10 +18298,12 @@
 },
 "web:BFMOD:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
 "why": "Company website download failed (0)",
-"redo8": 1
+"redo8": 1,
+"retry": 1,
+"second": 1
 },
 "web:SHCI:2021": {
 "at": "2026-11-03",
@@ -32774,9 +32776,12 @@
 },
 "web:BFMOD:2018": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)"
+"retry": 1,
+"second": 1,
+"done": true,
+"n": 0
 },
 "arc:ARMG:2009": {
 "at": "2026-11-08",
@@ -32907,6 +32912,18 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
+},
+"arc:BERG:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:BERG:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
 }
 }
