@@ -553,10 +553,10 @@
 "khi:CNERGY:2003": {
 "at": "2026-11-08",
 "tries": 1,
-"why": "not annual accounts: Insufficient information to identify company name and required statement pages",
-"retry": 1,
 "redo8": 1,
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 10
 },
 "khi:PSO:2007": {
 "at": "2026-11-08",
@@ -10175,11 +10175,12 @@
 "n": 24
 },
 "khi:CNERGY:2002": {
-"at": "2026-11-02",
+"at": "2026-11-08",
 "n": 5,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "company name does not match: Hobbs Bannerman Engineering Inc. (names PECO)"
 },
 "khi:BIPL:2025": {
 "at": "2026-11-02",
@@ -12023,7 +12024,8 @@
 "rev": 4,
 "redo8": 1,
 "done": true,
-"n": 4
+"n": 4,
+"waits": 1
 },
 "khi:FAEL:2007": {
 "at": "2026-11-02",
@@ -12630,16 +12632,15 @@
 },
 "web:DSL:2015": {
 "at": "2026-11-08",
-"n": 12,
+"n": 13,
 "reread": [
 2015
 ],
 "tries": 1,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true
 },
 "web:CLOV:2026": {
 "at": "2026-11-03",
@@ -12755,7 +12756,10 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"done": true
+"done": true,
+"reread": [
+2006
+]
 },
 "web:UDPL:2013": {
 "at": "2026-11-07",
@@ -18293,11 +18297,10 @@
 "redo8": 1
 },
 "web:BFMOD:2016": {
-"at": "2026-11-03",
-"tries": 1,
-"rev": 4,
-"why": "not annual accounts: insufficient data to identify company and extract required statement figures",
-"retry": 1,
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)",
 "redo8": 1
 },
 "web:SHCI:2021": {
@@ -21183,10 +21186,13 @@
 },
 "web:SOYASUP:2021": {
 "at": "2026-11-08",
-"n": 3,
+"n": 5,
 "tries": 1,
 "redo8": 1,
-"done": true
+"done": true,
+"reread": [
+2020
+]
 },
 "web:CSAP:2005": {
 "at": "2026-11-03",
@@ -22308,7 +22314,10 @@
 "rev": 4,
 "second": 1,
 "done": true,
-"n": 0
+"n": 6,
+"reread": [
+2016
+]
 },
 "web:SSGC:2018": {
 "at": "2026-11-04",
@@ -26342,7 +26351,7 @@
 "redo8": 1,
 "done": true,
 "n": 34,
-"waits": 1
+"waits": 2
 },
 "web:JUBS:2012": {
 "at": "2026-11-08",
@@ -26730,10 +26739,9 @@
 },
 "khi:PPVC:2005": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "not annual accounts: company name not found in provided pages",
-"retry": 1,
+"why": "not annual accounts: not a company name",
 "redo8": 1,
 "waits": 1
 },
@@ -30388,7 +30396,13 @@
 "web:DSL:2017": {
 "at": "2026-11-08",
 "done": true,
-"n": 18
+"n": 18,
+"reread": [
+2017
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:AICL:2024": {
 "at": "2026-11-08",
@@ -31604,7 +31618,10 @@
 "web:SUTM:2019": {
 "at": "2026-11-08",
 "done": true,
-"n": 33
+"n": 13,
+"reread": [
+2019
+]
 },
 "khi:TCORP:2006": {
 "at": "2026-11-08",
@@ -32018,12 +32035,18 @@
 "n": 28
 },
 "arc:CPPL:2008": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: MIRPURKHAS SUGAR MILLS LIMITED (names AABS)"
 },
 "arc:BERG:2019": {
 "at": "2026-11-08",
 "done": true,
-"n": 32
+"n": 28,
+"reread": [
+2019
+]
 },
 "arc:AKDSL:2021": {
 "at": "2026-11-08",
@@ -32409,7 +32432,9 @@
 "n": 22
 },
 "arc:ALIFE:2016": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 0
 },
 "arc:AABS:2006": {
 "at": "2026-11-08",
@@ -32702,13 +32727,16 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:AKDSL:2009": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: KASB",
+"retry": 1,
+"second": 1
 },
 "web:ICL:2025": {
 "at": "2026-11-08",
@@ -32722,7 +32750,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "web:SNGP:2004": {
 "at": "2026-11-08",
@@ -32733,22 +32762,28 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:ARMG:2021": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "web:BFMOD:2018": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
 },
 "arc:ARMG:2009": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "company name does not match: Capital Assets Leasing Corporation Limited (names GRYL)",
+"second": 1
 },
 "arc:DWSM:2013": {
 "at": "2026-11-08",
@@ -32756,7 +32791,9 @@
 "n": 21
 },
 "arc:DWSM:2011": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 11
 },
 "khi:JKSM:2025": {
 "at": "2026-11-08",
@@ -32768,9 +32805,14 @@
 },
 "khi:PRWM:2006": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"second": 1,
+"done": true,
+"n": 6,
+"reread": [
+2006
+]
 },
 "khi:JKSM:2021": {
 "at": "2026-11-08",
@@ -32834,6 +32876,37 @@
 },
 "web:HASCOL:2019": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Mughal Iron & Steel Industries Limited (names AGIL)"
+},
+"arc:CPPL:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: MIRPURKHAS SUGAR MILLS LIMITED (names AABS)"
+},
+"arc:BERG:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Bergre"
+},
+"arc:BERG:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 35
+},
+"arc:BERG:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 27
+},
+"arc:DWSM:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
 }
 }
