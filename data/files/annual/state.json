@@ -27831,7 +27831,8 @@
 "rev": 5,
 "why": "no figure passed the checks",
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"second": 1
 },
 "khi:SEL:2007": {
 "at": "2026-11-08",
@@ -30737,7 +30738,9 @@
 },
 "psx:PAEL:2022": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 30
 },
 "psx:MTL:2018": {
 "at": "2026-11-08",
@@ -31382,7 +31385,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "khi:DSIL:2007": {
 "at": "2026-11-08",
@@ -31411,9 +31416,11 @@
 },
 "khi:AVN:2018": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:FFL:2005": {
 "at": "2026-11-08",
@@ -31442,7 +31449,9 @@
 "n": 42
 },
 "web:SUTM:2019": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 33
 },
 "khi:TCORP:2006": {
 "at": "2026-11-08",
@@ -31478,10 +31487,14 @@
 "n": 15
 },
 "khi:NETSOL:2026": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 0
 },
 "khi:HRPL:2026": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 30
 },
 "khi:BTL:2026": {
 "at": "2026-11-08",
@@ -31494,6 +31507,29 @@
 "n": 36
 },
 "khi:UNITY:2023": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 29
+},
+"khi:UNITY:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"khi:UNITY:2020": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"done": true,
+"n": 20
+},
+"khi:UNITY:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 25
+},
+"khi:UNITY:2018": {
+"at": "2026-11-08",
+"waits": 1
 }
 }
