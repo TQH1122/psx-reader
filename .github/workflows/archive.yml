@@ -10,6 +10,7 @@ on:
     paths: ['toolkit/archive_finder.py']
 permissions:
   contents: write
+  actions: write   # starts its own next round
 concurrency:
   group: archive
   cancel-in-progress: false
