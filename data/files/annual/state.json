@@ -29618,7 +29618,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 4,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "drive:FPJM:2019": {
 "at": "2026-11-08",
@@ -29662,9 +29663,14 @@
 },
 "drive:FEM:2018": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 4,
-"why": "no figure passed the checks"
+"second": 1,
+"done": true,
+"n": 14,
+"reread": [
+2018
+]
 },
 "drive:JUBS:2019": {
 "at": "2026-11-08",
@@ -29712,18 +29718,148 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 4,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "web:SKRS:2011": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 4,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "web:SKRS:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 4,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
+},
+"drive:PIM:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 10
+},
+"drive:FANM:2023": {
+"at": "2026-11-08"
+},
+"drive:SSML:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "no statement pages found"
+},
+"drive:SUHJ:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 16
+},
+"drive:SHCM:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:FTSM:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 10
+},
+"drive:FSWL:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: not stated"
+},
+"drive:JUBS:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 19
+},
+"drive:FRCL:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:HAEL:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: HBL Holdings Limited (names ENGROH)"
+},
+"drive:SLYT:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 10
+},
+"drive:MSCL:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 6
+},
+"drive:FASM:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"drive:IML:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 22
+},
+"drive:REDCO:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"drive:EFUG:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:HWQS:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 10
+},
+"drive:TSPL:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"drive:RUBY:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"drive:AATM:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 12
+},
+"drive:SAIF:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 43
+},
+"drive:HAFL:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 4,
+"why": "company name does not match: Ali Mubeen Hashmi"
+},
+"drive:AHTM:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"drive:ANTM:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"drive:NATM:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
 }
 }

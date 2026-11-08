@@ -1,43 +1,3 @@
-pages ar_cf88ddte 0s
-pages ar_q6su75zq 457s
-pages ar_4_imb5cs 0s
-pages ar__ylbvlf1 2s
-pages ar_b5gfsdod 476s
-pages ar_e4uzgdsc 0s
-pages ar_iccx01hf 1s
-pages ar_akua1t0u 7s
-pages ar_92ssc4ag 1s
-pages ar_lcxlce_r 453s
-pages ar_bhoagqjh 1s
-pages ar_30xrng1y 7s
-pages ar_mr3j3qqh 474s
-pages ar_jyk_17fb 4s
-pages ar_7z8q1m1x 5s
-pages ar_cexrnzf8 265s
-pages ar_7zxl9rqu 0s
-pages ar_9o4zurfa 1s
-pages ar_68thw25r 309s
-pages ar_xs2vha80 3s
-pages ar_4nm39nsl 314s
-pages ar_eh_2ejn9 288s
-pages ar_7h6xn062 304s
-pages ar_cpt42azn 9s
-pages ar_hk21se7q 6s
-pages ar_h1nmm5b6 0s
-pages ar_426wcuvz 320s
-pages ar_jiswe18f 239s
-pages ar_8hi3irme 1s
-pages ar__umnonah 2s
-pages ar_sgwztf0a 0s
-pages ar_g4dtsb0z 292s
-pages ar_b3con6tu 3s
-pages ar_prwc9n2h 292s
-pages ar_2p7m6xws 9s
-pages ar_66zrlxef 0s
-pages ar_fhgcolb2 56s
-pages ar_h9he16fh 14s
-pages ar_i9aermz9 3s
-pages ar_vlk996ap 355s
 pages ar_z4cat4zr 280s
 pages ar_hdjz7t27 0s
 pages ar_1bjnebdo 1s
@@ -298,3 +258,43 @@ pages ar_w0kh3cqq 67s
 pages ar_50i_5m2a 0s
 done: read 37 annual reports (31 audit re-reads), 21 skipped, about 0 still to read; models used: gemini-3.8-flash 1, gemini-3.7-flash 2, gemini-3.5-flash 2, gemini-3-flash-preview 1, gemini-3.5-flash-lite 12, gemini-3.1-flash-lite 8, gemini-3.1-flash-lite-preview 4, openai/gpt-oss-120b 4, nvidia/nemotron-3-ultra-550b-a55b:free 16, nvidia/nemotron-3.5-super-vl:free 3, recursive/flint-v1.0:free 29, xingchen-agi/xing4.0-29b-a4b:free 20; resting until tomorrow: 14 models
 guard: this run $0.000 for 37 reports; last day $0.00 for 544; credit $0.50
+tracker flags: 554 companies with histories, 754 listed
+universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+second chance: 5 reports given up earlier get one more try
+sources: company websites give 3609 reports for 398 companies
+audit: 528 company years flagged: 0 to re-read, 436 re-read, 2 waiting for a first read, 90 no usable report
+openrouter: paid models off (credit left $0.50)
+pages ar_zv69l5ih 5s
+pages ar_1hc9571c 10s
+pages ar_ha9bbbsq 10s
+pages ar_2_pyhvft 13s
+pages ar_n4ig7hsp 13s
+pages ar_1f6ywhe6 22s
+pages ar_15611rmf 31s
+pages ar_m8y4sq4y 31s
+pages ar__0aoxmfo 46s
+pages ar_h7os6b_a 52s
+pages ar_46z3e4qq 54s
+pages ar_qn7u0_uu 54s
+pages ar_9xs14_3v 54s
+pages ar_4cy701tc 54s
+pages ar_1v4zqu6c 59s
+pages ar_k0t__iu6 67s
+pages ar_op5ufv1u 37s
+pages ar_o3hmjwj5 25s
+pages ar_47z37dru 14s
+pages ar_9hl13_tv 10s
+pages ar_qo8djckd 6s
+pages ar_qakc7fo8 4s
+pages ar_5e2yo4rf 144s
+pages ar_vr0hx4ta 151s
+pages ar_1pfs6cht 3s
+pages ar_wtvs5ly8 0s
+pages ar_evluaz6y 1s
+pages ar_odldc1i7 153s
+pages ar_jcrw8vkr 0s
+pages ar_xbpp6tgr 1s
+pages ar_cgyeof_3 5s
+pages ar_cuw1uve1 4s
+done: read 22 annual reports (1 audit re-reads), 12 skipped, about 1 still to read; models used: gemini-3-flash-preview 1, gemini-3.5-flash-lite 15, gemini-3.1-flash-lite 2, gemini-3.1-flash-lite-preview 2, openai/gpt-oss-120b 5, nvidia/nemotron-3-ultra-550b-a55b:free 19, nvidia/nemotron-3.5-super-vl:free 1, recursive/flint-v1.0:free 8, xingchen-agi/xing4.0-29b-a4b:free 2; resting until tomorrow: 14 models
+guard: this run $0.000 for 22 reports; last day $0.00 for 566; credit $0.50
