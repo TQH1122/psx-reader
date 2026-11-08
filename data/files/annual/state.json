@@ -21040,7 +21040,10 @@
 "n": 0,
 "tries": 1,
 "redo8": 1,
-"done": true
+"done": true,
+"reread": [
+2017
+]
 },
 "khi:DOL:2020": {
 "at": "2026-11-03",
@@ -25599,7 +25602,10 @@
 "redo8": 1,
 "done": true,
 "n": 0,
-"waits": 1
+"waits": 1,
+"reread": [
+2020
+]
 },
 "drive:RUBY:2020": {
 "at": "2026-11-08",
@@ -37651,7 +37657,13 @@
 "at": "2026-11-08",
 "done": true,
 "n": 25,
-"waits": 2
+"waits": 2,
+"reread": [
+2019
+],
+"tries": 1,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
 },
 "arc:MIRKS:2008": {
 "at": "2026-11-08",
@@ -38953,7 +38965,13 @@
 "at": "2026-11-08",
 "done": true,
 "n": 14,
-"waits": 1
+"waits": 1,
+"reread": [
+2016
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:PCAL:2008": {
 "at": "2026-11-08",
@@ -40713,9 +40731,11 @@
 "web:OGDC:2026": {
 "at": "2026-11-08",
 "waits": 1,
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "drive:THALL:2022": {
 "at": "2026-11-08",
@@ -41051,9 +41071,11 @@
 },
 "web:SIEM:2022": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "arc:ATIL:2006": {
 "at": "2026-11-08",
@@ -41087,5 +41109,20 @@
 },
 "arc:SIEM:2009": {
 "at": "2026-11-08"
+},
+"arc:JSBL:2008": {
+"at": "2026-11-08"
+},
+"arc:SAIF:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:SAIF:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
 }
 }
