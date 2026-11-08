@@ -6326,11 +6326,10 @@
 "n": 23
 },
 "khi:OLPL:2009": {
-"at": "2026-11-01",
-"tries": 1,
-"rev": 3,
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
 "why": "no statement pages found",
-"retry": 1,
 "second": 1
 },
 "khi:WAHN:2005": {
@@ -20538,12 +20537,12 @@
 "second": 1
 },
 "khi:PAKOXY:2023": {
-"at": "2026-11-04",
+"at": "2026-11-08",
 "tries": 1,
 "rev": 4,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 6
 },
 "khi:GTYR:2021": {
 "at": "2026-11-08",
@@ -22619,7 +22618,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:FCCL:2005": {
 "at": "2026-11-08",
@@ -22630,19 +22630,22 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:PAKT:2004": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:PTC:2011": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:BWCL:2004": {
 "at": "2026-11-08",
@@ -22654,25 +22657,31 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:PAKT:2003": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:PTC:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:BAFL:2009": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:BWCL:2003": {
 "at": "2026-11-08",
@@ -22683,13 +22692,15 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:BOP:2004": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:BML:2026": {
 "at": "2026-11-08",
@@ -22705,13 +22716,15 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:HINOON:2012": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "drive:FFC:2019": {
 "at": "2026-11-08",
@@ -22807,13 +22820,15 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:PSO:2008": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:IGIHL:2003": {
 "at": "2026-11-08",
@@ -22831,7 +22846,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:HBL:2010": {
 "at": "2026-11-08",
@@ -22850,7 +22866,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:MLCF:2016": {
 "at": "2026-11-08",
@@ -22888,7 +22906,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:AGTL:2004": {
 "at": "2026-11-08",
@@ -22961,7 +22980,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:FABL:2001": {
 "at": "2026-11-08",
@@ -22973,7 +22993,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:JLICL:2003": {
 "at": "2026-11-08",
@@ -22996,7 +23017,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:SITC:2005": {
 "at": "2026-11-08",
@@ -23047,13 +23070,16 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:GADT:2006": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:FFC:2017": {
 "at": "2026-11-08",
@@ -23085,7 +23111,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:DLL:2011": {
 "at": "2026-11-08",
@@ -23171,7 +23198,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:REWM:2026": {
 "at": "2026-11-08",
@@ -23197,7 +23225,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:REWM:2003": {
 "at": "2026-11-08",
@@ -23229,13 +23258,16 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:ALAC:2007": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "drive:BTL:2019": {
 "at": "2026-11-08",
@@ -23274,9 +23306,11 @@
 },
 "khi:FHAM:2001": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:FHAM:2000": {
 "at": "2026-11-08",
@@ -23303,7 +23337,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:EXIDE:2011": {
 "at": "2026-11-08",
@@ -23349,13 +23384,15 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:ASIC:2004": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:ALNRS:2003": {
 "at": "2026-11-08",
@@ -23367,7 +23404,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:ALNRS:2002": {
 "at": "2026-11-08",
@@ -23432,7 +23470,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:KOHTM:2002": {
 "at": "2026-11-08",
@@ -23444,7 +23483,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:SHJS:2003": {
 "at": "2026-11-08",
@@ -23500,7 +23541,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "drive:MSOT:2021": {
 "at": "2026-11-08",
@@ -23512,7 +23554,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:SZTM:2026": {
 "at": "2026-11-08",
@@ -23570,19 +23614,24 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:NAGC:2005": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:CWHC:2006": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:NATM:2006": {
 "at": "2026-11-08",
@@ -23619,7 +23668,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:POML:2003": {
 "at": "2026-11-08",
@@ -23644,7 +23695,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:PASL:2018": {
 "at": "2026-11-08",
@@ -23655,7 +23708,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:WASL:2004": {
 "at": "2026-11-08",
@@ -23683,13 +23737,17 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:OLPM:2004": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:ELSM:2025": {
 "at": "2026-11-08",
@@ -23729,7 +23787,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:DADX:2011": {
 "at": "2026-11-08",
@@ -23741,7 +23801,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "drive:SHCM:2020": {
 "at": "2026-11-08",
@@ -23794,7 +23855,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:GRYL:2017": {
 "at": "2026-11-08",
@@ -23816,25 +23879,30 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:FPJM:2001": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:DAAG:2003": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:UVIC:2003": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:ANTM:2007": {
 "at": "2026-11-08",
@@ -23925,13 +23993,16 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:MSOT:2007": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:ELSM:2023": {
 "at": "2026-11-08",
@@ -23943,7 +24014,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:SARC:2005": {
 "at": "2026-11-08",
@@ -23955,7 +24027,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:BELA:2003": {
 "at": "2026-11-08",
@@ -23988,7 +24062,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:SHCM:2006": {
 "at": "2026-11-08",
@@ -24018,7 +24093,9 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:FFLM:2005": {
 "at": "2026-11-08",
@@ -24097,7 +24174,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "web:DADX:2008": {
 "at": "2026-11-08",
@@ -24108,7 +24186,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "web:CFL:2026": {
 "at": "2026-11-08",
@@ -24119,7 +24198,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:FECM:2020": {
 "at": "2026-11-08",
@@ -24154,13 +24234,15 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:BFMOD:2005": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:CJPL:2016": {
 "at": "2026-11-08",
@@ -24191,7 +24273,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:WTL:2012": {
 "at": "2026-11-08",
@@ -24256,7 +24339,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:HPL:2005": {
 "at": "2026-11-08",
@@ -24480,13 +24564,13 @@
 },
 "web:HASCOL:2021": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: INSPIRING ENERGY (names ALTN)"
 },
 "drive:MUGHAL:2024": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: Not stated"
 },
@@ -24502,13 +24586,13 @@
 },
 "drive:HAFL:2024": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: First Habib Modaraba (names AHCL)"
 },
 "web:ELSM:2015": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: NAGINA COTTON MILLS LTD. (names CCM)"
 },
@@ -24519,26 +24603,33 @@
 },
 "web:FFL:2018": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: Not printed in provided pages"
 },
 "drive:KTML:2014": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: Constant Brilliance"
 },
 "web:CNERGY:2018": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: The Searle Company Limited (names SEARL)"
 },
 "drive:SUHJ:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 13
+"n": 13,
+"reread": [
+2019,
+2020
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:AGL:2024": {
 "at": "2026-11-08",
@@ -24557,8 +24648,1022 @@
 },
 "drive:CFL:2018": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: Annual Report 2018"
+},
+"khi:BWCL:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:FCCL:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pakistan International Airlines Corporation (names ARPAK)"
+},
+"khi:REWM:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pakistan Industrial Trading Corporation (names NICL)"
+},
+"khi:SSOM:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:BWHL:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:BWHL:2003": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"drive:FRCL:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:ARPAK:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"web:FZCM:2009": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"khi:FZCM:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:ELSM:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: NAGINA COTTON MILLS LTD. (names CCM)"
+},
+"khi:ELSM:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"drive:PTL:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 12,
+"reread": [
+2024
+]
+},
+"web:HAFL:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: First Prudential Modaraba (names BFMOD)"
+},
+"web:ZIL:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Zulfeqar Industries Limited (names AGIL)"
+},
+"drive:PIM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 10
+},
+"drive:KOIL:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 23,
+"reread": [
+2024
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:LCI:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"drive:SSML:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"web:JSCL:2008": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"drive:FASM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"khi:FASM:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: cannot determine company name from provided pages"
+},
+"drive:SYS:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"drive:DCR:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"web:BIPL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: PLC"
+},
+"web:FECM:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 12
+},
+"web:BIPL:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Unknown"
+},
+"drive:SUHJ:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 22
+},
+"khi:ENGROH:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DEL)"
+},
+"khi:HAFL:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: MIB Islamic Bank Limited (names ABL)"
+},
+"web:LCI:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"khi:HAFL:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:BIPL:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: N/A"
+},
+"drive:SLYT:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 10
+},
+"drive:AMBL:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"khi:TREET:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: IGI Insurance Limited (names AGIC)"
+},
+"web:AGL:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"khi:SML:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 42
+},
+"khi:SUHJ:2003": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"drive:TPLT:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: HBL HOLDINGS LIMITED (names ENGROH)"
+},
+"khi:IMAGE:2004": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Tri-Star Polyester Limited (names FTSM)"
+},
+"khi:ENGROH:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DEL)"
+},
+"khi:IMAGE:2003": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Tri-Star Polyester Limited (names FTSM)"
+},
+"khi:IMAGE:2002": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Tri-Star Polyester Limited (names FTSM)"
+},
+"web:AGL:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"drive:TPLP:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:OLPL:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ORIX Leasing Pakistan Limited (names FFLM)"
+},
+"web:HASCOL:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: not stated"
+},
+"web:HASCOL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Hindustan Zinc Limited"
+},
+"web:PAKL:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Alok Industries Limited (names AGIL)"
+},
+"khi:TPLP:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:JSCL:2003": {
+"at": "2026-11-08",
+"done": true,
+"n": 31
+},
+"drive:HWQS:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"web:LSEVL:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"drive:MSCL:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 6
+},
+"drive:SML:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"khi:KOHE:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Lahore Electric Supply Company (names KEL)"
+},
+"khi:KOHE:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Southern Electric Power Company Limited (names HUBC)"
+},
+"khi:KOHE:2003": {
+"at": "2026-11-08",
+"done": true,
+"n": 22
+},
+"khi:OLPL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ORIX Leasing Pakistan Limited (names FFLM)"
+},
+"khi:SML:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: SML Foods Limited (names BBFL)"
+},
+"khi:SML:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:ENGROH:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DEL)"
+},
+"khi:SML:2004": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
+},
+"khi:ALTN:2004": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pakistan Industrial Trading Corporation (names NICL)"
+},
+"web:FFL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: NOON PAKISTAN LIMITED (names NONS)"
+},
+"drive:MUGHAL:2022": {
+"at": "2026-11-08",
+"done": true,
+"n": 38
+},
+"web:SYM:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 44
+},
+"drive:SHCM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"web:CLVL:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"web:ITANZ:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ZAHUR COTTON MILLS LIMITED (names CCM)"
+},
+"web:BLUEX:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS LIMITED (names HUMNL)"
+},
+"web:WAVES:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 38
+},
+"web:SYM:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Key Financial Data of the company (names DAAG)"
+},
+"khi:OLPL:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ORIX Leasing Pakistan Limited (names FFLM)"
+},
+"khi:OLPL:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Orix Leasing Pakistan Ltd (names FFLM)"
+},
+"khi:OLPL:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Orix Leasing Pakistan Ltd (names FFLM)"
+},
+"khi:OLPL:2004": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pak-Gulf Leasing Company Limited (names GOC)"
+},
+"khi:SPWL:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 38
+},
+"khi:ENGROH:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DEL)"
+},
+"web:BLUEX:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names HUMNL)"
+},
+"web:BLUEX:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names HUMNL)"
+},
+"web:WAVES:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"khi:MFFL:2025": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"drive:SPWL:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"drive:KTML:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 46
+},
+"khi:KTML:2006": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"khi:DWSM:2003": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:SEL:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:BLUEX:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names HUMNL)"
+},
+"khi:NBP:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:COLG:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:COLG:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:COLG:2003": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:ABOT:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Fauji Fertilizer Bin Qasim Limited (names FATIMA)"
+},
+"khi:ABOT:2003": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Atlas Honda Limited (names ATBA)"
+},
+"drive:CCM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"khi:ENGROH:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dawood Hercules Corporation Limited (names DEL)"
+},
+"web:BLUEX:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: UNIVERSAL NETWORK SYSTEMS (PRIVATE) LIMITED (names HUMNL)"
+},
+"web:CSAP:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 16
+},
+"web:BLUEX:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Universal Network Systems (Private) Limited (names HUMNL)"
+},
+"web:WAVES:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 38
+},
+"web:WAVES:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:ENGROH:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dawood Hercules Corporation limited (names DEL)"
+},
+"khi:ENGROH:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dawood Hercules Chemicals Ltd (names DEL)"
+},
+"khi:ENGROH:2004": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:PRL:2003": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:MFFL:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Mitchells.com.pk (names CNERGY)"
+},
+"drive:SPWL:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"drive:SNAI:2020": {
+"at": "2026-11-08",
+"done": true,
+"n": 44
+},
+"khi:PSYL:2002": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Sui Southern Gas Company (names SNGP)"
+},
+"khi:WAFI:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:WAVESAPP:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 12
+},
+"web:NEXT:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Not printed on provided pages"
+},
+"khi:KOHC:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"khi:HCAR:2006": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"web:HALEON:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: GlaxoSmithKline Consumer Healthcare Pakistan Limited (names CWHC)"
+},
+"web:ITANZ:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ZAHUR COTTON MILLS LIMITED (names CCM)"
+},
+"khi:MFFL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:MFFL:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:MFFL:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:EFUL:2003": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: State Life Insurance Corporation of Pakistan (names AICL)"
+},
+"web:LOTCHEM:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pakistan PTA Limited"
+},
+"web:LCI:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"drive:BFBIO:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:WAVES:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:TGL:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 40
+},
+"khi:CEPB:2008": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:CEPB:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:CSAP:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: a New STRIDE"
+},
+"web:APL:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Not stated"
+},
+"khi:APL:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:WAVESAPP:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"khi:PAKOXY:2025": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:CLVL:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 11
+},
+"web:TICL:2025": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Not Stated"
+},
+"web:CLVL:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Mian Textile Industries Ltd. (names AGIL)"
+},
+"web:ITANZ:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ZAHUR COTTON MILLS LIMITED (names CCM)"
+},
+"khi:ITANZ:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Zahur Cotton Mills Ltd (names CCM)"
+},
+"khi:ITANZ:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:TPLI:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 17
+},
+"khi:HINO:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:HINO:2004": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not printed on provided pages"
+},
+"web:WAVESAPP:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: HBL Limited"
+},
+"drive:TPLRF1:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 6
+},
+"web:LOTCHEM:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ICI Pakistan Limited"
+},
+"web:CLVL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: WY MIAN TEXTILE INDUSTRIES LTD. (names AGIL)"
+},
+"khi:TPLI:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:CNERGY:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Byco Petroleum Pakistan Limited (names APL)"
+},
+"web:PAKL:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"khi:CLVL:2002": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:SPEL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Synthetic Products Enterprises Limited (names HAEL)"
+},
+"khi:UNIC:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:PKGP:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: NOT STATED"
+},
+"khi:OTSU:2006": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"web:LCI:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 42
+},
+"web:SURC:2026": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: HBL HALCOOT"
+},
+"web:SOYASUP:2026": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:SEPL:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"khi:DYNO:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Buxly Paints Limited (names BERG)"
+},
+"web:CRTM:2025": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: SME Leasing Limited (names FFLM)"
+},
+"web:ASTL:2026": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Out of the Storms"
+},
+"web:LCI:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:QTECH:2026": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"khi:MEHT:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
+},
+"khi:MCBIM:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: MCB Arif Habib Savings and Investments Limited (names 786)"
+},
+"web:NNAR:2023": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"why": "not annual accounts: This is a quarterly report, not an annual report."
+},
+"khi:TICL:2023": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"khi:RPL:2021": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:WAVESAPP:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 42
+},
+"web:BECO:2018": {
+"at": "2026-11-08",
+"waits": 1
+},
+"web:CNERGY:2016": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan Steel Mills Corporation (Private) Limited (names AABS)"
+},
+"khi:SPEL:2017": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: Synthetic Products Enterprises Limited (names HAEL)"
+},
+"web:PAKL:2020": {
+"at": "2026-11-08",
+"done": true,
+"n": 21
+},
+"web:PECO:2018": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: Peco"
+},
+"web:SURC:2025": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: HBL"
+},
+"web:CRTM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"web:LPL:2014": {
+"at": "2026-11-08",
+"waits": 1
 }
 }
