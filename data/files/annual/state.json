@@ -24149,9 +24149,8 @@
 "tries": 1,
 "redo8": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true
 },
 "drive:AGSML:2019": {
 "at": "2026-11-08",
@@ -24225,10 +24224,10 @@
 },
 "drive:KSTM:2020": {
 "at": "2026-11-08",
-"n": 12,
-"retry": 1,
+"n": 6,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "drive:ARUJ:2018": {
 "at": "2026-11-08",
@@ -24507,10 +24506,10 @@
 },
 "drive:SAIF:2004": {
 "at": "2026-11-08",
-"n": 0,
-"retry": 1,
+"n": 3,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "drive:KSTM:2019": {
 "at": "2026-11-08",
@@ -26960,7 +26959,10 @@
 "drive:CFL:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 42
+"n": 36,
+"reread": [
+2020
+]
 },
 "web:PIAHCLA:2024": {
 "at": "2026-11-08",
@@ -27579,7 +27581,10 @@
 "n": 14,
 "tries": 1,
 "redo8": 1,
-"done": true
+"done": true,
+"reread": [
+2024
+]
 },
 "khi:ENGROH:2020": {
 "at": "2026-11-08",
@@ -28342,7 +28347,11 @@
 "drive:TPLRF1:2024": {
 "at": "2026-11-08",
 "done": true,
-"n": 6
+"n": 9,
+"reread": [
+2023,
+2024
+]
 },
 "web:LOTCHEM:2005": {
 "at": "2026-11-08",
@@ -28588,11 +28597,10 @@
 },
 "drive:DSL:2025": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no statement pages found",
 "redo8": 1,
-"retry": 1,
 "second": 1
 },
 "drive:PKGI:2024": {
@@ -28605,11 +28613,10 @@
 },
 "drive:ANTM:2025": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no statement pages found",
 "redo8": 1,
-"retry": 1,
 "second": 1
 },
 "drive:FNEL:2025": {
@@ -28680,7 +28687,10 @@
 "n": 20,
 "tries": 1,
 "redo8": 1,
-"done": true
+"done": true,
+"reread": [
+2025
+]
 },
 "drive:ASL:2025": {
 "at": "2026-11-08",
@@ -28695,11 +28705,15 @@
 },
 "drive:SSML:2025": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "redo8": 1,
 "done": true,
-"n": 29
+"n": 29,
+"reread": [
+2025
+],
+"why": "no figure passed the checks"
 },
 "drive:OLPL:2022": {
 "at": "2026-11-08",
@@ -29370,10 +29384,11 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "no figure passed the checks",
 "retry": 1,
 "redo8": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 21
 },
 "khi:ICCI:2003": {
 "at": "2026-11-08",
@@ -30014,7 +30029,13 @@
 "drive:EFUG:2019": {
 "at": "2026-11-08",
 "done": true,
-"n": 2
+"n": 2,
+"reread": [
+2019
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:JLICL:2005": {
 "at": "2026-11-08",
@@ -30038,7 +30059,10 @@
 "drive:MACTER:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 22
+"n": 14,
+"reread": [
+2020
+]
 },
 "drive:MACTER:2019": {
 "at": "2026-11-08",
@@ -30262,10 +30286,9 @@
 },
 "drive:PKGI:2025": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no statement pages found",
-"retry": 1,
 "second": 1
 },
 "web:MERIT:2016": {
@@ -30339,7 +30362,9 @@
 "at": "2026-11-08"
 },
 "drive:PNSC:2025": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 36
 },
 "drive:TPL:2023": {
 "at": "2026-11-08"
@@ -30350,11 +30375,15 @@
 "n": 31
 },
 "drive:PSYL:2020": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 18
 },
 "drive:GRR:2025": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 25
 },
 "web:AMTEX:2024": {
 "at": "2026-11-08",
@@ -31063,27 +31092,25 @@
 },
 "drive:PAKL:2016": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "company name does not match: Unknown Company",
 "second": 1
 },
 "drive:QUICE:2014": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "no statement pages found",
 "second": 1
 },
 "drive:JDMT:2014": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 33
 },
 "drive:HINOON:2013": {
 "at": "2026-11-08",
@@ -31097,17 +31124,17 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 14
 },
 "drive:HUBC:2016": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 36
 },
 "drive:PSO:2017": {
 "at": "2026-11-08",
@@ -31129,25 +31156,25 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 42
 },
 "drive:QUICE:2013": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 26
 },
 "drive:DCR:2017": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 16
 },
 "drive:PTC:2017": {
 "at": "2026-11-08",
@@ -31161,9 +31188,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 12
 },
 "drive:NATF:2017": {
 "at": "2026-11-08",
@@ -31177,25 +31204,24 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 32
 },
 "drive:SYS:2013": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "company name does not match: Century Paper & Board Mills Limited (names CENI)",
 "second": 1
 },
 "drive:HUBC:2013": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 33
 },
 "drive:PTC:2016": {
 "at": "2026-11-08",
@@ -31207,51 +31233,50 @@
 },
 "drive:OLPL:2017": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "company name does not match: ORIX Leasing Pakistan Limited (names FFLM)",
 "second": 1
 },
 "drive:DCR:2016": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 14
 },
 "drive:FFL:2013": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 28
 },
 "drive:JDWS:2015": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 12
 },
 "drive:NEXT:2014": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 6
 },
 "drive:IDRT:2017": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 26
 },
 "drive:PTC:2014": {
 "at": "2026-11-08",
@@ -31281,17 +31306,18 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
 "retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 26
 },
 "drive:JDWS:2014": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 34
 },
 "drive:CCM:2017": {
 "at": "2026-11-08",
@@ -31311,19 +31337,18 @@
 },
 "drive:OLPL:2016": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "company name does not match: ORIX LEASING PAKISTAN LIMITED (names FFLM)",
 "second": 1
 },
 "drive:KHYT:2017": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 0
 },
 "drive:ECOP:2017": {
 "at": "2026-11-08",
@@ -31337,40 +31362,39 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 26
 },
 "drive:JDWS:2013": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
 "retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 30
 },
 "drive:KHYT:2014": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 0
 },
 "drive:ANSM:2015": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "not annual accounts: Insufficient data to extract required financial figures from provided pages.",
 "second": 1
 },
 "drive:OLPL:2015": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "company name does not match: ORIX Leasing Pakistan Limited (names FFLM)",
 "second": 1
 },
 "drive:NSRM:2016": {
@@ -31393,9 +31417,10 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
 "retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 24
 },
 "drive:PGLC:2016": {
 "at": "2026-11-08",
@@ -31409,9 +31434,10 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
 "retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 24
 },
 "drive:HWQS:2016": {
 "at": "2026-11-08",
@@ -31431,18 +31457,16 @@
 },
 "drive:LEUL:2017": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "company name does not match: Rani Tata (names TATM)",
 "second": 1
 },
 "drive:OLPL:2014": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "company name does not match: ORIX Leasing Pakistan Limited (names FFLM)",
 "second": 1
 },
 "drive:PGLC:2015": {
@@ -31487,9 +31511,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 0
 },
 "drive:ELCM:2016": {
 "at": "2026-11-08",
@@ -31501,42 +31525,40 @@
 },
 "drive:OLPL:2013": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "company name does not match: ORIX LEASING PAKISTAN LIMITED (names FFLM)",
 "second": 1
 },
 "drive:KSTM:2022": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 30
 },
 "drive:PACE:2015": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 9
 },
 "drive:AVN:2016": {
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 25
 },
 "drive:AVN:2014": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "company name does not match: Seamless Engineering (names DWAE)",
 "second": 1
 },
 "web:SSGC:2010": {
@@ -32944,21 +32966,25 @@
 },
 "arc:CCM:2024": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:CCM:2021": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CCM:2017": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GAL:2018": {
 "at": "2026-11-08",
@@ -32966,7 +32992,9 @@
 "n": 40
 },
 "arc:FASM:2011": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 29
 },
 "arc:GSPM:2025": {
 "at": "2026-11-08",
@@ -32977,13 +33005,15 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GSPM:2022": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CCM:2015": {
 "at": "2026-11-08",
@@ -32994,100 +33024,128 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:CCM:2012": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GSPM:2021": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 0
 },
 "arc:GHGL:2009": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:FCSC:2022": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:HTL:2020": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:GTYR:2007": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GTYR:2006": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:JSGCL:2019": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 22
 },
 "arc:JSGCL:2008": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 20
 },
 "arc:GCWL:2018": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 40
 },
 "arc:GCWL:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"retry": 1,
+"second": 1,
+"done": true,
+"n": 0
 },
 "arc:GCWL:2015": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts: insufficient data to identify company and required fields",
+"second": 1
 },
 "arc:GCWL:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 17
 },
 "arc:GCWL:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:GCWL:2012": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: company name exactly as printed",
+"second": 1
 },
 "arc:GCWL:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: Keyline Pakistan Limited",
+"second": 1
 },
 "arc:CSIL:2017": {
 "at": "2026-11-08",
@@ -33096,51 +33154,61 @@
 },
 "arc:CSIL:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:CSIL:2014": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: BSS",
+"second": 1
 },
 "arc:CSIL:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 0
 },
 "arc:CSIL:2012": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: Your Security - Our Policy (names SEPL)",
+"second": 1
 },
 "arc:CSIL:2011": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CSIL:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: VERON",
+"second": 1
 },
 "arc:CSIL:2009": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: ESN",
+"second": 1
 },
 "arc:CSIL:2008": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: LEED REZ",
+"second": 1
 },
 "arc:HIRAT:2012": {
 "at": "2026-11-08",
@@ -33149,9 +33217,12 @@
 },
 "arc:HIRAT:2011": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1,
+"waits": 1
 },
 "arc:ISIL:2009": {
 "at": "2026-11-08",
@@ -33171,45 +33242,59 @@
 },
 "arc:IBFL:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:IBFL:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 30
 },
 "arc:IBFL:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 28
 },
 "arc:IBFL:2012": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 32
 },
 "arc:IBFL:2011": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 31
 },
 "arc:IBFL:2010": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 28
 },
 "arc:IBFL:2008": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 18
 },
 "arc:IBLHL:2014": {
 "at": "2026-11-08",
@@ -33233,7 +33318,10 @@
 "waits": 1
 },
 "arc:FEROZ:2017": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: HBL HOTELS LIMITED"
 },
 "arc:FCCL:2010": {
 "at": "2026-11-08",
@@ -33254,7 +33342,9 @@
 },
 "arc:HTL:2016": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 28
 },
 "arc:IGIL:2012": {
 "at": "2026-11-08",
@@ -33267,331 +33357,413 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GAMON:2021": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:DAAG:2019": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DFSM:2024": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DWTM:2024": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CLVL:2018": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GAMON:2020": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:EPCL:2017": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GAMON:2019": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DFSM:2023": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:EPCL:2016": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "file too large",
+"second": 1
 },
 "arc:CLVL:2017": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DFSM:2022": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: N/A",
+"second": 1
 },
 "arc:GAMON:2018": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:EPCL:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 26
 },
 "arc:GAMON:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 22
 },
 "arc:DFSM:2021": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts: company name not found in provided pages",
+"second": 1
 },
 "arc:CLVL:2016": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:EPCL:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DWTM:2023": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GAMON:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:CLVL:2015": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DFSM:2020": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:EPCL:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 30
 },
 "arc:DWTM:2022": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: Unnamed",
+"second": 1
 },
 "arc:GAMON:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 8
 },
 "arc:DFSM:2019": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: TEXTILE COPORATION OF PAKISTAN (PRIVATE) LIMITED (names AATM)",
+"second": 1
 },
 "arc:CLVL:2014": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:EPCL:2012": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DWTM:2021": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts: company name not found in provided pages",
+"second": 1
 },
 "arc:DFSM:2018": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: Unknown",
+"second": 1
 },
 "arc:CLVL:2013": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GAMON:2014": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts: insufficient information to identify company name and required fields",
+"second": 1
 },
 "arc:EPCL:2011": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 28
 },
 "arc:DWTM:2020": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CLVL:2012": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DFSM:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 28
 },
 "arc:GAMON:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 12
 },
 "arc:EPCL:2010": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DWTM:2019": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 23
 },
 "arc:DFSM:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:CLVL:2011": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: MIAN TEXTILE INDUSTRIES LTD. (names AGIL)",
+"second": 1
 },
 "arc:EPCL:2009": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts: company name not found in provided pages",
+"second": 1
 },
 "arc:DWTM:2018": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DFSM:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:EPCL:2008": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 11
 },
 "arc:DWTM:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DFSM:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DWTM:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DFSM:2011": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 11
 },
 "arc:DWTM:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DFSM:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:DWTM:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DWTM:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 19
 },
 "arc:DWTM:2011": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DAAG:2018": {
 "at": "2026-11-08",
@@ -33600,15 +33772,19 @@
 },
 "arc:DAAG:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DWTM:2010": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:GCIL:2018": {
 "at": "2026-11-08",
@@ -33617,168 +33793,206 @@
 },
 "arc:GCIL:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"retry": 1,
+"second": 1,
+"done": true,
+"n": 0
 },
 "arc:GCIL:2015": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts: insufficient data to identify company and required fields",
+"second": 1
 },
 "arc:GCIL:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 17
 },
 "arc:GCIL:2013": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts: insufficient information to identify company name and required fields",
+"second": 1
 },
 "arc:GCIL:2012": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: company name exactly as printed",
+"second": 1
 },
 "arc:GCIL:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts: company name not found in provided pages",
+"second": 1
 },
 "arc:GGL:2018": {
 "at": "2026-11-08"
 },
 "arc:CFL:2020": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:FATIMA:2017": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DOL:2021": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DOL:2020": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FATIMA:2016": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DOL:2019": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FATIMA:2015": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DOL:2018": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FATIMA:2014": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DFML:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:DOL:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 20
 },
 "arc:FATIMA:2013": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DINT:2023": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 26
 },
 "arc:DOL:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 24
 },
 "arc:FATIMA:2012": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 26
 },
 "arc:DINT:2020": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DOL:2015": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FATIMA:2011": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: PakArab Fertilizers Limited (names EFERT)",
+"second": 1
 },
 "arc:DINT:2019": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:DOL:2013": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FATIMA:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts (interim statements)",
+"second": 1
 },
 "arc:BIFO:2010": {
 "at": "2026-11-08",
@@ -33787,201 +34001,251 @@
 },
 "arc:DINT:2018": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:BIFO:2008": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 8
 },
 "arc:DOL:2012": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FATIMA:2009": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 6
 },
 "arc:DINT:2017": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FCEL:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 24
 },
 "arc:DOL:2011": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 25
 },
 "arc:FATIMA:2005": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: Unknown Company",
+"second": 1
 },
 "arc:DINT:2016": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 10
 },
 "arc:FFLM:2024": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FCEL:2009": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 20
 },
 "arc:DINT:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:FFLM:2023": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DINT:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:FFLM:2022": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DINT:2013": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:FFLM:2021": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DINT:2012": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:FFLM:2020": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:DINT:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FFLM:2019": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FFLM:2018": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FFLM:2017": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (404)",
+"second": 1
 },
 "arc:FFLM:2016": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (404)",
+"second": 1
 },
 "arc:FFLM:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"second": 1,
+"done": true,
+"n": 17
 },
 "arc:FFLM:2014": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:FFLM:2013": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: Fidelity Capital Management (Private) Limited (names LSECL)",
+"second": 1
 },
 "arc:EMCO:2026": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:FFLM:2012": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "not annual accounts: Company name not found in provided pages",
+"second": 1
 },
 "arc:EMCO:2015": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "Internet Archive download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:FFLM:2011": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: Fidelity Capital Management (Private) Limited (names LSECL)",
+"second": 1
 },
 "arc:FFLM:2010": {
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)"
+"why": "company name does not match: Fidelity Capital Management (Private) Limited (names LSECL)",
+"second": 1
 },
 "arc:EFUL:2007": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1,
+"waits": 1
 },
 "arc:DCL:2019": {
 "at": "2026-11-08",
@@ -33990,10 +34254,14 @@
 "why": "company name does not match: TEXTILE COPORATION OF PAKISTAN (PRIVATE) LIMITED (names AATM)"
 },
 "arc:AHL:2008": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:FCEPL:2009": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"waits": 1
 },
 "arc:AGP:2017": {
 "at": "2026-11-08",
@@ -34004,7 +34272,12 @@
 ]
 },
 "arc:CFL:2019": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 11,
+"reread": [
+2019
+]
 },
 "arc:EFUL:2006": {
 "at": "2026-11-08",
@@ -34012,11 +34285,462 @@
 "n": 2
 },
 "arc:DCL:2011": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 12
 },
 "arc:AGP:2016": {
 "at": "2026-11-08",
 "done": true,
 "n": 0
+},
+"drive:SPWL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"drive:SNGP:2023": {
+"at": "2026-11-08"
+},
+"drive:SPWL:2015": {
+"at": "2026-11-08"
+},
+"drive:KSTM:2024": {
+"at": "2026-11-08",
+"done": true,
+"n": 4
+},
+"drive:KSTM:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"arc:GSPM:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:KSTM:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"arc:GSPM:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"arc:GSPM:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 15
+},
+"arc:GSPM:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"arc:GSPM:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 33
+},
+"drive:MARI:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 25
+},
+"drive:ARPAK:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 2
+},
+"drive:ATRL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 29,
+"reread": [
+2016
+]
+},
+"drive:ISIL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"arc:FCSC:2012": {
+"at": "2026-11-08"
+},
+"drive:SSGC:2015": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"done": true,
+"n": 6
+},
+"drive:MERIT:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"drive:IBFL:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"drive:ARPAK:2014": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"done": true,
+"n": 14,
+"reread": [
+2014
+]
+},
+"drive:TREET:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"drive:CSIL:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"drive:ISIL:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"drive:PKGP:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"arc:FFC:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: unknown"
+},
+"drive:SHFA:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"drive:PSYL:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 29
+},
+"drive:MARI:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 6,
+"waits": 1
+},
+"drive:RUPL:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 27
+},
+"drive:STCL:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"drive:LPL:2013": {
+"at": "2026-11-08"
+},
+"drive:IBFL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"drive:MWMP:2074": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:FIBLM:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: Not a listed company on Pakistan Stock Exchange"
+},
+"drive:TPLT:2017": {
+"at": "2026-11-08",
+"waits": 1
+},
+"drive:ARPAK:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 14,
+"waits": 1
+},
+"arc:FEROZ:2016": {
+"at": "2026-11-08"
+},
+"arc:FFC:2016": {
+"at": "2026-11-08",
+"waits": 1
+},
+"drive:KOIL:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 21
+},
+"drive:SAPT:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"drive:SAPT:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 35
+},
+"drive:SUTM:2020": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"drive:CJPL:2017": {
+"at": "2026-11-08"
+},
+"drive:MFFL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"drive:KOIL:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"drive:DIIL:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"drive:JKSM:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 42
+},
+"drive:KOIL:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"drive:SUTM:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 16
+},
+"drive:HUMNL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"drive:GAMON:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 22
+},
+"drive:FPRM:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"drive:DIIL:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"drive:HAEL:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"drive:SSML:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"drive:HUMNL:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 3
+},
+"drive:MQTM:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"drive:HUMNL:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:GATI:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 24,
+"reread": [
+2017
+]
+},
+"drive:MLCF:2020": {
+"at": "2026-11-08",
+"done": true,
+"n": 24,
+"reread": [
+2020
+]
+},
+"drive:ALTN:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 35
+},
+"drive:NPL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 26,
+"waits": 1
+},
+"drive:SFL:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 36
+},
+"drive:FPJM:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 20,
+"waits": 1
+},
+"drive:NETSOL:2015": {
+"at": "2026-11-08"
+},
+"drive:EFUG:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 2,
+"waits": 1
+},
+"drive:RPL:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 25
+},
+"drive:PSX:2016": {
+"at": "2026-11-08",
+"waits": 1
+},
+"drive:RPL:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 12
+},
+"drive:FIL:2013": {
+"at": "2026-11-08",
+"waits": 1
+},
+"drive:TICL:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"drive:PIM:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: required financial figures not provided in the given pages"
+},
+"drive:KOHTM:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"drive:SEARL:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 45
+},
+"drive:KOHTM:2014": {
+"at": "2026-11-08"
+},
+"drive:ALTN:2015": {
+"at": "2026-11-08",
+"waits": 1
+},
+"drive:YOUW:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 21
+},
+"drive:SPEL:2016": {
+"at": "2026-11-08",
+"waits": 1
+},
+"drive:PIM:2015": {
+"at": "2026-11-08",
+"waits": 1
+},
+"drive:FIMM:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"drive:PASM:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"arc:CFL:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:CFL:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:CFL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Imran Maqbool (names MQTM)"
+},
+"arc:CFL:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:CFL:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 37
+},
+"arc:CFL:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:CFL:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 35
 }
 }
