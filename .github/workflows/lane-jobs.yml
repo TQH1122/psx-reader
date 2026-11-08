@@ -33,7 +33,7 @@ jobs:
           python-version: '3.12'
       - name: Tools
         run: |
-          pip install -q beautifulsoup4 openpyxl > /dev/null 2>&1
+          pip install -q beautifulsoup4 openpyxl numpy > /dev/null 2>&1
           { command -v pdftotext && command -v tesseract; } > /dev/null 2>&1 || { sudo apt-get update -q; sudo apt-get install -y -q poppler-utils tesseract-ocr; } > /dev/null 2>&1
       - name: Run the due jobs
         env:
