@@ -2489,7 +2489,7 @@
 "n": 15,
 "tries": 1,
 "redo8": 1,
-"retry": 1
+"done": true
 },
 "khi:SYS:2021": {
 "at": "2026-11-01",
@@ -10055,10 +10055,10 @@
 },
 "khi:MARI:2005": {
 "at": "2026-11-08",
-"n": 16,
-"retry": 1,
+"n": 12,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "drive:PRET:2014": {
 "at": "2026-11-07",
@@ -16471,7 +16471,11 @@
 "n": 0,
 "tries": 1,
 "redo8": 1,
-"done": true
+"done": true,
+"reread": [
+2015,
+2016
+]
 },
 "web:GGGL:2026": {
 "at": "2026-11-08",
@@ -19628,7 +19632,7 @@
 "n": 12,
 "tries": 1,
 "redo8": 1,
-"retry": 1
+"done": true
 },
 "khi:MARI:2002": {
 "at": "2026-11-08",
@@ -27950,12 +27954,16 @@
 },
 "web:NONS:2019": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "redo8": 1,
 "done": true,
 "n": 34,
-"waits": 2
+"waits": 2,
+"reread": [
+2019
+],
+"why": "Company website download failed (0)"
 },
 "web:JUBS:2012": {
 "at": "2026-11-08",
@@ -29037,7 +29045,8 @@
 "khi:BWHL:2003": {
 "at": "2026-11-08",
 "done": true,
-"n": 34
+"n": 34,
+"waits": 1
 },
 "drive:FRCL:2024": {
 "at": "2026-11-08",
@@ -30943,11 +30952,13 @@
 },
 "web:ARMG:2026": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
 "redo8": 1,
 "n": 24,
-"why": "Company website download failed (200)"
+"why": "Company website download failed (200)",
+"retry": 1,
+"second": 1
 },
 "khi:ARMG:2007": {
 "at": "2026-11-08",
@@ -37842,9 +37853,9 @@
 "tries": 1,
 "rev": 5,
 "second": 1,
-"n": 22,
-"retry": 1,
-"redo8": 1
+"n": 8,
+"redo8": 1,
+"done": true
 },
 "arc:TPL:2015": {
 "at": "2026-11-08",
@@ -38571,11 +38582,11 @@
 },
 "arc:FABL:2011": {
 "at": "2026-11-08",
-"n": 10,
-"retry": 1,
+"n": 0,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "drive:SAIF:2017": {
 "at": "2026-11-08",
@@ -39190,7 +39201,10 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 32
+"n": 32,
+"reread": [
+2008
+]
 },
 "arc:SPAC1:2024": {
 "at": "2026-11-08",
@@ -40850,13 +40864,16 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:EPCL:2019": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:SAIF:2004": {
 "at": "2026-11-08",
@@ -40867,5 +40884,30 @@
 "at": "2026-11-08",
 "done": true,
 "n": 22
+},
+"khi:IBFL:2019": {
+"at": "2026-11-08"
+},
+"drive:THALL:2025": {
+"at": "2026-11-08",
+"waits": 1
+},
+"web:NONS:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
+},
+"arc:NONS:2016": {
+"at": "2026-11-08"
+},
+"arc:JSRR:2018": {
+"at": "2026-11-08"
+},
+"web:SIEM:2022": {
+"at": "2026-11-08"
+},
+"arc:ATIL:2006": {
+"at": "2026-11-08"
 }
 }
