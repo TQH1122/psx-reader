@@ -95,6 +95,20 @@ def company(text):
     return best[2] if best else None
 
 
+CONAME = re.compile(r"\b((?:[A-Z][A-Za-z&().,'-]*[ \t]+(?:(?:of|and|the|&)[ \t]+)?){1,8}(?:Limited|Ltd\.?|LIMITED|LTD\.?))")
+NOT_CO = re.compile(r"chartered accountants|registrar|\(private\) limited|\(pvt\.?\) ltd|associates|consultants", re.I)
+
+
+def coname(text):
+    """the company's own name as printed on the first pages, for reports of companies no longer listed (8 Nov 2026):
+    they match no listed name, so without this they could never be used"""
+    for m in CONAME.finditer(text[:6000]):
+        n = re.sub(r"\s+", " ", m.group(1)).strip(" ,.")
+        if len(n) <= 70 and not NOT_CO.search(n):
+            return n
+    return None
+
+
 def ident(fid, title):
     w = tempfile.mkdtemp()
     pdf = os.path.join(w, "f.pdf")
@@ -113,17 +127,25 @@ def ident(fid, title):
             txt = ""
             for i in (1, 2, 3):
                 img = os.path.join(w, f"p{i}")
-                subprocess.run(["pdftoppm", "-r", "150", "-gray", "-f", str(i), "-l", str(i), "-png", "-singlefile", pdf, img],
-                               capture_output=True, timeout=120)
-                if os.path.exists(img + ".png"):
-                    txt += subprocess.run(["tesseract", img + ".png", "-", "--psm", "6"], capture_output=True, text=True,
-                                          errors="ignore", timeout=120).stdout + "\n"
+                # 8 Nov 2026: very large scanned pages made OCR run past its time limit and the whole file failed (575 of
+                # his files); pages are now capped at a readable size, and one slow page no longer sinks the file
+                try:
+                    subprocess.run(["pdftoppm", "-scale-to", "1700", "-gray", "-f", str(i), "-l", str(i), "-png", "-singlefile", pdf, img],
+                                   capture_output=True, timeout=90)
+                    if os.path.exists(img + ".png"):
+                        txt += subprocess.run(["tesseract", img + ".png", "-", "--psm", "6"], capture_output=True, text=True,
+                                              errors="ignore", timeout=150).stdout + "\n"
+                except subprocess.TimeoutExpired:
+                    continue
         k, y, mon = period(txt)
         tk = company(txt)
         m = re.match(r"^([A-Z]{2,8})[ _-]", title or "")
         if not tk and m and any(m.group(1) == t for t, _ in NAMES):
             tk = m.group(1)  # files he named himself (TICKER FY2024 ...)
-        return {"title": title, "size": size, "tk": tk, "kind": k, "y": y, "mon": mon, "scanned": scanned}
+        r = {"title": title, "size": size, "tk": tk, "kind": k, "y": y, "mon": mon, "scanned": scanned, "v": 2}
+        if not tk:
+            r["co"] = coname(txt)
+        return r
     except Exception as e:
         return {"title": title, "err": str(e)[:80]}
     finally:
@@ -136,7 +158,12 @@ def main():
     known = {r["id"] for r in jl(os.path.join(FILES, "library_index.json"), []) or [] if r.get("id")}
     files = listing()
     # a failed download gets two more tries, in later runs
-    todo = [(f, t) for f, t in files.items() if f not in known and (f not in db or (db[f].get("err") and db[f].get("tries", 1) < 3))]
+    # looked at again (8 Nov 2026): files that failed on the old OCR time limit, and files matched to no listed company,
+    # which now get their printed company name (companies that left the market)
+    again = lambda r: (r.get("err") and (r.get("tries", 1) < 3 or ("tesseract" in str(r["err"]) and r.get("v", 1) < 2))) \
+        or (not r.get("err") and not r.get("tk") and r.get("v", 1) < 2)
+    todo = [(f, t) for f, t in files.items() if f not in known and (f not in db or again(db[f]))]
+    todo.sort(key=lambda x: x[0] in db)  # files never seen first
     lock, done = threading.Lock(), [0]
     with ThreadPoolExecutor(8) as pool:
         futs = {}
@@ -152,6 +179,7 @@ def main():
                 with lock:
                     if r.get("err"):
                         r["tries"] = (db.get(fid) or {}).get("tries", 0) + 1
+                        r["v"] = 2
                     r["at"] = time.strftime("%Y-%m-%d")
                     db[fid] = r
                     done[0] += 1
