@@ -2718,7 +2718,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:DCR:2016": {
 "at": "2026-11-08",
@@ -4704,7 +4705,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:TREET:2019": {
 "at": "2026-11-01",
@@ -9970,9 +9972,10 @@
 "khi:JVDC:2003": {
 "at": "2026-11-08",
 "n": 20,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan International Airports Company Limited (names ARPAK)"
 },
 "khi:FML:2006": {
 "at": "2026-11-02",
@@ -10025,11 +10028,12 @@
 "n": 18
 },
 "khi:JVDC:2002": {
-"at": "2026-11-02",
+"at": "2026-11-08",
 "n": 20,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "khi:FZCM:2003": {
 "at": "2026-11-08",
@@ -10959,7 +10963,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:BAHL:2010": {
 "at": "2026-11-08",
@@ -10997,7 +11002,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:KTML:2005": {
 "at": "2026-11-02",
@@ -14067,14 +14073,14 @@
 },
 "web:MTL:2011": {
 "at": "2026-11-08",
-"n": 41,
+"n": 16,
 "reread": [
 2011
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "web:NICL:2023": {
 "at": "2026-11-08",
@@ -23402,9 +23408,12 @@
 },
 "web:SRVI:2014": {
 "at": "2026-11-08",
-"waits": 2,
+"waits": 0,
 "done": true,
-"n": 6
+"n": 6,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:KTML:2019": {
 "at": "2026-11-03",
@@ -26857,7 +26866,7 @@
 "rev": 5,
 "redo8": 1,
 "n": 22,
-"retry": 1
+"done": true
 },
 "khi:EWIC:2006": {
 "at": "2026-11-08",
@@ -33039,7 +33048,10 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 14
+"n": 14,
+"reread": [
+2017
+]
 },
 "drive:JDWS:2016": {
 "at": "2026-11-08",
@@ -36238,10 +36250,9 @@
 },
 "arc:EFUL:2007": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
-"retry": 1,
 "second": 1,
 "waits": 1
 },
@@ -36412,10 +36423,9 @@
 },
 "arc:FCSC:2012": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "no figure passed the checks",
-"retry": 1,
+"why": "not annual accounts: The provided pages do not contain the full financial statements or a multi-year ",
 "second": 1
 },
 "drive:SSGC:2015": {
@@ -37596,7 +37606,8 @@
 "arc:HWQS:2015": {
 "at": "2026-11-08",
 "done": true,
-"n": 27
+"n": 27,
+"waits": 1
 },
 "arc:DMC:2014": {
 "at": "2026-11-08",
@@ -38752,7 +38763,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:MUGHALC:2020": {
 "at": "2026-11-08",
@@ -39358,7 +39370,10 @@
 "arc:POL:2009": {
 "at": "2026-11-08",
 "done": true,
-"n": 18
+"n": 12,
+"reread": [
+2009
+]
 },
 "arc:SPWL:2020": {
 "at": "2026-11-08",
@@ -39376,82 +39391,72 @@
 },
 "arc:REWM:2022": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run",
-"retry": 1,
+"why": "no statement pages found",
 "second": 1
 },
 "arc:REWM:2021": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "broken PDF (download incomplete); tried again next run",
 "second": 1
 },
 "arc:REWM:2020": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "no statement pages found",
 "second": 1
 },
 "arc:REWM:2019": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "no statement pages found",
 "second": 1
 },
 "arc:REWM:2018": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "broken PDF (download incomplete); tried again next run",
 "second": 1
 },
 "arc:REWM:2017": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "broken PDF (download incomplete); tried again next run",
 "second": 1
 },
 "arc:REWM:2016": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "broken PDF (download incomplete); tried again next run",
 "second": 1
 },
 "arc:REWM:2015": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "broken PDF (download incomplete); tried again next run",
 "second": 1
 },
 "arc:REWM:2014": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "broken PDF (download incomplete); tried again next run",
-"retry": 1,
 "second": 1
 },
 "arc:REWM:2013": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "broken PDF (download incomplete); tried again next run",
-"retry": 1,
 "second": 1
 },
 "arc:SPWL:2017": {
@@ -39504,7 +39509,8 @@
 "rev": 5,
 "why": "Internet Archive download failed (0)",
 "retry": 1,
-"second": 1
+"second": 1,
+"waits": 1
 },
 "arc:TPLP:2018": {
 "at": "2026-11-08",
@@ -39644,7 +39650,8 @@
 "arc:TPLI:2014": {
 "at": "2026-11-08",
 "done": true,
-"n": 26
+"n": 26,
+"waits": 1
 },
 "arc:QTECH:2018": {
 "at": "2026-11-08",
@@ -39664,7 +39671,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:WASL:2022": {
 "at": "2026-11-08",
@@ -39854,9 +39862,10 @@
 "done": true,
 "n": 0,
 "reread": [
+2018,
 2019
 ],
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no figure passed the checks"
 },
@@ -39866,7 +39875,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:MUGHALC:2013": {
 "at": "2026-11-08",
@@ -39936,7 +39946,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:TOWL:2016": {
 "at": "2026-11-08",
@@ -39951,7 +39962,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:NATF:2007": {
 "at": "2026-11-08",
@@ -40481,7 +40493,8 @@
 "arc:PACE:2015": {
 "at": "2026-11-08",
 "done": true,
-"n": 21
+"n": 21,
+"waits": 1
 },
 "arc:PACE:2012": {
 "at": "2026-11-08",
@@ -40894,9 +40907,11 @@
 },
 "web:NONS:2017": {
 "at": "2026-11-08",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:NONS:2016": {
 "at": "2026-11-08"
@@ -40909,5 +40924,18 @@
 },
 "arc:ATIL:2006": {
 "at": "2026-11-08"
+},
+"arc:SPWL:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:PCAL:2007": {
+"at": "2026-11-08"
+},
+"arc:DWAE:2013": {
+"at": "2026-11-08",
+"waits": 1
 }
 }
