@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""One off probe (8 Nov 2026): does PSX keep daily market prices of companies that left the market?"""
-import json, subprocess
+"""One off probe (8 Nov 2026): can the free Google key list every file in his link shared PSX Library folder? The
+folder view the Drive indexer reads stops at about 5,500 files, so his newest uploads were never seen."""
+import json, os, urllib.parse, urllib.request
 
-for sym in ["PSMC", "SHEL", "FFBL", "DAWH", "LUCK"]:
-    p = subprocess.run(["curl", "-s", "-m", "60", "-w", "\n%{http_code}", f"https://dps.psx.com.pk/timeseries/eod/{sym}"], capture_output=True)
-    body, _, code = p.stdout.decode("latin1").rpartition("\n")
-    try:
-        d = json.loads(body).get("data") or []
-        print("PSX", sym, code, len(d), d[0] if d else "", d[-1] if d else "")
-    except Exception:
-        print("PSX", sym, code, body[:120])
+FOLDER = "1KZBgru0osNuRHUyypDF1V8Pxhf7Db02F"
+key = os.environ.get("GEMINI_API_KEY", "")
+q = urllib.parse.quote(f"'{FOLDER}' in parents and trashed = false")
+url = f"https://www.googleapis.com/drive/v3/files?q={q}&pageSize=1000&fields=nextPageToken,files(id,name,mimeType,createdTime)&key={key}"
+try:
+    d = json.load(urllib.request.urlopen(url, timeout=60))
+    print("drive api ok:", len(d.get("files", [])), "files on page 1; more pages:", bool(d.get("nextPageToken")))
+except urllib.error.HTTPError as e:
+    print("drive api error", e.code, e.read().decode()[:600])
