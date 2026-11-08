@@ -9414,7 +9414,8 @@
 "n": 3,
 "waits": 1,
 "reread": [
-2013
+2013,
+2014
 ],
 "tries": 1,
 "redo8": 1,
@@ -30251,7 +30252,10 @@
 "drive:ICCI:2020": {
 "at": "2026-11-08",
 "done": true,
-"n": 4
+"n": 2,
+"reread": [
+2020
+]
 },
 "web:DMC:2025": {
 "at": "2026-11-08",
@@ -31213,9 +31217,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 14
 },
 "drive:JDWS:2016": {
 "at": "2026-11-08",
@@ -31584,7 +31588,8 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 25
+"n": 25,
+"waits": 1
 },
 "drive:AVN:2014": {
 "at": "2026-11-08",
@@ -32082,7 +32087,10 @@
 "arc:DSIL:2014": {
 "at": "2026-11-08",
 "done": true,
-"n": 26
+"n": 43,
+"reread": [
+2014
+]
 },
 "arc:CEPB:2007": {
 "at": "2026-11-08",
@@ -33823,9 +33831,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 11
 },
 "arc:DAAG:2018": {
 "at": "2026-11-08",
@@ -33843,9 +33851,9 @@
 },
 "arc:DWTM:2010": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
+"why": "no statement pages found",
 "retry": 1,
 "second": 1
 },
@@ -34420,7 +34428,8 @@
 "arc:GSPM:2018": {
 "at": "2026-11-08",
 "done": true,
-"n": 15
+"n": 15,
+"waits": 1
 },
 "arc:GSPM:2016": {
 "at": "2026-11-08",
@@ -34941,7 +34950,14 @@
 "arc:KHYT:2016": {
 "at": "2026-11-08",
 "done": true,
-"n": 0
+"n": 0,
+"reread": [
+2015,
+2016
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:KHYT:2013": {
 "at": "2026-11-08",
@@ -35205,7 +35221,9 @@
 },
 "arc:PNSC:2010": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 38
 },
 "arc:FEROZ:2005": {
 "at": "2026-11-08",
@@ -35480,7 +35498,9 @@
 },
 "arc:JSIL:2007": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "drive:NETSOL:2013": {
 "at": "2026-11-08",
@@ -35774,9 +35794,12 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 11,
+"reread": [
+2008
+]
 },
 "arc:TPL:2016": {
 "at": "2026-11-08",
@@ -35804,9 +35827,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 22
 },
 "arc:TPL:2015": {
 "at": "2026-11-08",
@@ -35850,10 +35873,11 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
 "retry": 1,
 "second": 1,
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 18
 },
 "arc:UDLI:2019": {
 "at": "2026-11-08",
@@ -35866,9 +35890,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 26
 },
 "arc:TPL:2013": {
 "at": "2026-11-08",
@@ -35881,9 +35905,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 20
 },
 "arc:UDLI:2018": {
 "at": "2026-11-08",
@@ -35909,10 +35933,9 @@
 },
 "arc:FFC:2003": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "company name does not match: Dr Haldor Topsoe",
 "second": 1
 },
 "arc:STCL:2010": {
@@ -35927,9 +35950,9 @@
 "at": "2026-11-08",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 17
 },
 "arc:UDLI:2016": {
 "at": "2026-11-08",
@@ -36412,7 +36435,10 @@
 "n": 14
 },
 "arc:MLCF:2007": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: KOHINOOR TEXTILE MILLS LIMITED (names AATM)"
 },
 "arc:JATM:2014": {
 "at": "2026-11-08",
@@ -36440,7 +36466,10 @@
 "at": "2026-11-08"
 },
 "arc:NATF:2019": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: PLC"
 },
 "arc:ORM:2021": {
 "at": "2026-11-08",
@@ -36452,7 +36481,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (404)"
+"why": "Internet Archive download failed (404)",
+"second": 1
 },
 "arc:ORM:2019": {
 "at": "2026-11-08",
@@ -36467,7 +36497,12 @@
 "why": "company name does not match: Eman Management (Private) Limited (names MCBIM)"
 },
 "drive:PNSC:2024": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 38,
+"reread": [
+2024
+]
 },
 "drive:SAIF:2025": {
 "at": "2026-11-08",
@@ -36475,7 +36510,9 @@
 "n": 36
 },
 "arc:FABL:2011": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 10
 },
 "drive:SAIF:2017": {
 "at": "2026-11-08",
@@ -36485,8 +36522,11 @@
 "arc:KOIL:2013": {
 "at": "2026-11-08",
 "done": true,
-"n": 6,
-"waits": 1
+"n": 4,
+"waits": 1,
+"reread": [
+2013
+]
 },
 "arc:ATLH:2008": {
 "at": "2026-11-08",
@@ -36510,8 +36550,11 @@
 "arc:GATI:2016": {
 "at": "2026-11-08",
 "done": true,
-"n": 27,
-"waits": 1
+"n": 28,
+"waits": 1,
+"reread": [
+2016
+]
 },
 "arc:FPJM:2016": {
 "at": "2026-11-08",
@@ -36531,10 +36574,14 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (404)"
+"why": "Internet Archive download failed (404)",
+"retry": 1,
+"second": 1
 },
 "arc:MEBL:2003": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 10
 },
 "arc:MRNS:2006": {
 "at": "2026-11-08",
@@ -36547,7 +36594,10 @@
 "n": 6
 },
 "arc:MCB:2014": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: HBL"
 },
 "arc:KOHTM:2010": {
 "at": "2026-11-08",
@@ -36560,7 +36610,10 @@
 "n": 26
 },
 "arc:IMS:2012": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: United Bank Limited (names ABL)"
 },
 "arc:ATIL:2007": {
 "at": "2026-11-08",
@@ -36571,10 +36624,533 @@
 ]
 },
 "arc:JATM:2012": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"done": true,
+"n": 0
 },
 "arc:FPJM:2015": {
 "at": "2026-11-08",
+"waits": 1,
+"done": true,
+"n": 18
+},
+"arc:REWM:2025": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:QUICE:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:REWM:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:PSO:2013": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run",
 "waits": 1
+},
+"arc:PIBTL:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"arc:MUGHALC:2020": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"arc:QUICE:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 27
+},
+"arc:PTC:2021": {
+"at": "2026-11-08",
+"done": true,
+"n": 16
+},
+"arc:MUGHALC:2016": {
+"at": "2026-11-08"
+},
+"arc:POML:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 32
+},
+"arc:REWM:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:QUICE:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"arc:SHDT:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:PTC:2020": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"arc:PTC:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:SHDT:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"arc:QUICE:2009": {
+"at": "2026-11-08"
+},
+"arc:PIBTL:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"arc:DSIL:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"arc:SCBPL:2005": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:PTC:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 14
+},
+"arc:PCAL:2008": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
+},
+"arc:PTC:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:PTC:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:PACE:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 18,
+"reread": [
+2013
+]
+},
+"arc:NATF:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ANNUAL REPORT 2018"
+},
+"arc:NATF:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:PTC:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: PTCL"
+},
+"arc:PACE:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: FIRST CAPITAL SECURITIES CORPORATION LIMITED (names AKDSL)"
+},
+"arc:NATF:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 35
+},
+"arc:PACE:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: FIRST CAPITAL SECURITIES CORPORATION LIMITED (names AKDSL)"
+},
+"arc:NATF:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"arc:NATF:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 16
+},
+"arc:NATF:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:PTC:2012": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:NATF:2012": {
+"at": "2026-11-08"
+},
+"arc:PACE:2007": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:PNSC:2005": {
+"at": "2026-11-08"
+},
+"arc:SAIF:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:SAIF:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:SAIF:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:PRWM:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: NAGINA COTTON MILLS LTD. (names CCM)"
+},
+"arc:SAIF:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 24
+},
+"arc:STJT:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:SNBL:2008": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"done": true,
+"n": 14
+},
+"arc:SAPT:2017": {
+"at": "2026-11-08"
+},
+"arc:FABL:2009": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"arc:FABL:2007": {
+"at": "2026-11-08",
+"done": true,
+"n": 36,
+"reread": [
+2007
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"arc:SAIF:2006": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:POL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:SEARL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:NML:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 29
+},
+"arc:FPJM:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:MDTL:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pace (Pakistan) Limited (names PACE)"
+},
+"arc:SEARL:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: unknown"
+},
+"arc:OTSU:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 22
+},
+"arc:POL:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"arc:OTSU:2007": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"why": "Internet Archive download failed (404)"
+},
+"arc:MDTL:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: FIRST CAPITAL SECURITIES CORPORATION LIMITED (names AKDSL)"
+},
+"arc:NML:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 30
+},
+"arc:SEARL:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: WorldHealthDays"
+},
+"arc:MCB:2013": {
+"at": "2026-11-08",
+"done": true,
+"n": 22
+},
+"arc:PQGTL:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"arc:NML:2009": {
+"at": "2026-11-08"
+},
+"arc:POL:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 28
+},
+"arc:PQGTL:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: no financial statements pages provided"
+},
+"arc:SURC:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 35
+},
+"arc:JSIL:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Unit Trust of Pakistan (names TRSM)"
+},
+"arc:SPAC1:2025": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:MDTL:2004": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: FIRST CAPITAL SECURITIES CORPORATION LIMITED (names AKDSL)"
+},
+"arc:SPEL:2019": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:POL:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:PQGTL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: THE ROBUST IFS"
+},
+"arc:IMS:2011": {
+"at": "2026-11-08",
+"done": true,
+"n": 29
+},
+"arc:STML:2012": {
+"at": "2026-11-08"
+},
+"arc:SURC:2008": {
+"at": "2026-11-08"
+},
+"arc:SPAC1:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:MDTL:2003": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: required profit and loss and balance sheet figures not present in provided pages"
+},
+"arc:SFL:2022": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:IMS:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: FILE r.pdf"
+},
+"arc:POL:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 29
+},
+"arc:MEBL:2002": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:MCB:2011": {
+"at": "2026-11-08"
+},
+"arc:MLCF:2006": {
+"at": "2026-11-08",
+"done": true,
+"n": 20
+},
+"arc:MLCF:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
+},
+"arc:PASM:2025": {
+"at": "2026-11-08"
+},
+"arc:IMS:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"arc:SPAC1:2023": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"arc:SPAC1:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:SPAC1:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:POL:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 22,
+"reread": [
+2010
+]
+},
+"arc:SPAC1:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
+},
+"arc:JSIL:2003": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: what it is"
+},
+"arc:IMS:2008": {
+"at": "2026-11-08"
+},
+"arc:JATM:2011": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:SPAC1:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Lahore Stock Exchange Limited (names PSX)"
+},
+"arc:JSIL:2001": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: Provided pages contain yield/interest rate risk tables, not the required financi"
+},
+"arc:PQGTL:2018": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:POL:2009": {
+"at": "2026-11-08",
+"done": true,
+"n": 18
 }
 }
