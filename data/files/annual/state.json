@@ -32941,5 +32941,1082 @@
 "reread": [
 2003
 ]
+},
+"arc:CCM:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:CCM:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:CCM:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:GAL:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 40
+},
+"arc:FASM:2011": {
+"at": "2026-11-08"
+},
+"arc:GSPM:2025": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"arc:GSPM:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:GSPM:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:CCM:2015": {
+"at": "2026-11-08",
+"done": true,
+"n": 38
+},
+"arc:CCM:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:CCM:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:GSPM:2021": {
+"at": "2026-11-08"
+},
+"arc:GHGL:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:FCSC:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:HTL:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:GTYR:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:GTYR:2006": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:JSGCL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:JSGCL:2008": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCWL:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCWL:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCWL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCWL:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCWL:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCWL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCWL:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CSIL:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 22
+},
+"arc:CSIL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CSIL:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CSIL:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CSIL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CSIL:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CSIL:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CSIL:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CSIL:2008": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:HIRAT:2012": {
+"at": "2026-11-08",
+"done": true,
+"n": 38
+},
+"arc:HIRAT:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:ISIL:2009": {
+"at": "2026-11-08",
+"done": true,
+"n": 39,
+"reread": [
+2009
+],
+"tries": 1,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:IBFL:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
+},
+"arc:IBFL:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:IBFL:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:IBFL:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:IBFL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:IBFL:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:IBFL:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:IBFL:2008": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:IBLHL:2014": {
+"at": "2026-11-08",
+"done": true,
+"n": 37
+},
+"arc:FCSC:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 10
+},
+"arc:HTL:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"arc:FFC:2019": {
+"at": "2026-11-08",
+"done": true,
+"n": 26,
+"waits": 1
+},
+"arc:FEROZ:2017": {
+"at": "2026-11-08"
+},
+"arc:FCCL:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 24,
+"reread": [
+2010
+],
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: BUILDING BETTER PAKISTAN"
+},
+"arc:FCCL:2008": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: BUILDING BETTER PAKISTAN"
+},
+"arc:HTL:2016": {
+"at": "2026-11-08",
+"waits": 1
+},
+"arc:IGIL:2012": {
+"at": "2026-11-08",
+"tries": 1,
+"rev": 5,
+"done": true,
+"n": 9
+},
+"arc:EPCL:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:GAMON:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:DAAG:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:DFSM:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:DWTM:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:CLVL:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:GAMON:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:EPCL:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GAMON:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EPCL:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CLVL:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GAMON:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EPCL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GAMON:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CLVL:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EPCL:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GAMON:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CLVL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EPCL:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GAMON:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CLVL:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EPCL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CLVL:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GAMON:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EPCL:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CLVL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GAMON:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EPCL:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:CLVL:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EPCL:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EPCL:2008": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFSM:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DAAG:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:DAAG:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DWTM:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCIL:2018": {
+"at": "2026-11-08",
+"done": true,
+"n": 26
+},
+"arc:GCIL:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCIL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCIL:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCIL:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCIL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GCIL:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:GGL:2018": {
+"at": "2026-11-08"
+},
+"arc:CFL:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:FATIMA:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:DOL:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:DOL:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:FATIMA:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:DOL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FATIMA:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DOL:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FATIMA:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DFML:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DOL:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FATIMA:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DOL:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FATIMA:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DOL:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FATIMA:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DOL:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FATIMA:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:BIFO:2010": {
+"at": "2026-11-08",
+"done": true,
+"n": 34
+},
+"arc:DINT:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:BIFO:2008": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DOL:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FATIMA:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FCEL:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DOL:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FATIMA:2005": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2024": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FCEL:2009": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2023": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2022": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2021": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2020": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:DINT:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2018": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2017": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2016": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2014": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2013": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EMCO:2026": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2012": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EMCO:2015": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2011": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:FFLM:2010": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "Internet Archive download failed (0)"
+},
+"arc:EFUL:2007": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"arc:DCL:2019": {
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: TEXTILE COPORATION OF PAKISTAN (PRIVATE) LIMITED (names AATM)"
+},
+"arc:AHL:2008": {
+"at": "2026-11-08"
+},
+"arc:FCEPL:2009": {
+"at": "2026-11-08"
+},
+"arc:AGP:2017": {
+"at": "2026-11-08",
+"done": true,
+"n": 6,
+"reread": [
+2017
+]
+},
+"arc:CFL:2019": {
+"at": "2026-11-08"
+},
+"arc:EFUL:2006": {
+"at": "2026-11-08",
+"done": true,
+"n": 2
+},
+"arc:DCL:2011": {
+"at": "2026-11-08"
+},
+"arc:AGP:2016": {
+"at": "2026-11-08",
+"done": true,
+"n": 0
 }
 }
