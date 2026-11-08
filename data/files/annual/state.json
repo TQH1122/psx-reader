@@ -11137,10 +11137,11 @@
 "khi:JDWS:2003": {
 "at": "2026-11-08",
 "n": 28,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: company name not found on provided pages"
 },
 "khi:HASCOL:2019": {
 "at": "2026-11-02",
@@ -20060,7 +20061,7 @@
 "redo8": 1
 },
 "khi:JDWS:2002": {
-"at": "2026-11-03",
+"at": "2026-11-08",
 "n": 24,
 "retry": 1,
 "tries": 1,
@@ -23479,7 +23480,10 @@
 },
 "web:GATM:2020": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (200)"
 },
 "web:IDYM:2019": {
 "at": "2026-11-03",
@@ -39372,11 +39376,15 @@
 "arc:PQGTL:2018": {
 "at": "2026-11-08",
 "waits": 1,
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 0
+"n": 0,
+"reread": [
+2017
+],
+"why": "broken PDF (download incomplete); tried again next run"
 },
 "arc:POL:2009": {
 "at": "2026-11-08",
@@ -40961,5 +40969,8 @@
 "drive:GHNI:2018": {
 "at": "2026-11-08",
 "waits": 1
+},
+"drive:GATM:2019": {
+"at": "2026-11-08"
 }
 }
