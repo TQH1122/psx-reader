@@ -3118,7 +3118,7 @@
 "redo8": 1
 },
 "khi:AHCL:2003": {
-"at": "2026-11-01",
+"at": "2026-11-08",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -20023,10 +20023,11 @@
 "khi:AHCL:2004": {
 "at": "2026-11-08",
 "n": 17,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 2
+"waits": 2,
+"rev": 5,
+"why": "not annual accounts: not a company name"
 },
 "khi:HUBC:2007": {
 "at": "2026-11-08",
@@ -38154,8 +38155,11 @@
 "rev": 5,
 "second": 1,
 "done": true,
-"n": 27,
-"waits": 1
+"n": 39,
+"waits": 1,
+"reread": [
+2008
+]
 },
 "arc:PMRS:2014": {
 "at": "2026-11-08",
