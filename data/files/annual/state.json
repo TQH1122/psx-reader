@@ -3120,9 +3120,10 @@
 "khi:AHCL:2003": {
 "at": "2026-11-08",
 "n": 20,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:JDWS:2018": {
 "at": "2026-11-08",
@@ -20103,7 +20104,7 @@
 "redo8": 1
 },
 "khi:AHCL:2002": {
-"at": "2026-11-03",
+"at": "2026-11-08",
 "n": 26,
 "retry": 1,
 "tries": 1,
