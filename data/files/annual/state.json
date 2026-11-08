@@ -10876,7 +10876,7 @@
 ]
 },
 "khi:DGKC:2006": {
-"at": "2026-11-02",
+"at": "2026-11-08",
 "n": 28,
 "retry": 1,
 "tries": 1,
@@ -13229,7 +13229,7 @@
 "second": 1
 },
 "khi:KOHC:2001": {
-"at": "2026-11-02",
+"at": "2026-11-08",
 "n": 18,
 "retry": 1,
 "tries": 1,
@@ -16443,7 +16443,10 @@
 "n": 4,
 "tries": 1,
 "redo8": 1,
-"done": true
+"done": true,
+"reread": [
+2018
+]
 },
 "web:UBDL:2015": {
 "at": "2026-11-08",
@@ -21961,7 +21964,10 @@
 "n": 14,
 "tries": 1,
 "redo8": 1,
-"done": true
+"done": true,
+"reread": [
+2004
+]
 },
 "web:BBFL:2024": {
 "at": "2026-11-04",
@@ -29076,7 +29082,10 @@
 "redo8": 1,
 "waits": 1,
 "done": true,
-"n": 22
+"n": 22,
+"reread": [
+2004
+]
 },
 "khi:BWHL:2003": {
 "at": "2026-11-08",
@@ -29423,7 +29432,8 @@
 "at": "2026-11-08",
 "n": 23,
 "reread": [
-2002
+2002,
+2003
 ],
 "tries": 1,
 "redo8": 1,
@@ -32790,10 +32800,11 @@
 "khi:KOHC:2002": {
 "at": "2026-11-08",
 "n": 18,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 2
+"waits": 2,
+"rev": 5,
+"why": "not annual accounts: company name not printed on the provided pages"
 },
 "web:AMTEX:2018": {
 "at": "2026-11-08",
@@ -34692,7 +34703,13 @@
 "at": "2026-11-08",
 "done": true,
 "n": 33,
-"waits": 1
+"waits": 1,
+"reread": [
+2012
+],
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:DGKC:2011": {
 "at": "2026-11-08",
@@ -35485,10 +35502,10 @@
 "tries": 1,
 "rev": 5,
 "second": 1,
-"n": 26,
-"retry": 1,
+"n": 27,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "arc:GAMON:2017": {
 "at": "2026-11-08",
@@ -35552,12 +35569,12 @@
 },
 "arc:EPCL:2013": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "second": 1,
 "n": 30,
-"retry": 1,
-"redo8": 1
+"redo8": 1,
+"why": "Internet Archive download failed (404)"
 },
 "arc:DWTM:2022": {
 "at": "2026-11-08",
@@ -38280,7 +38297,7 @@
 "at": "2026-11-08",
 "done": true,
 "n": 24,
-"waits": 1
+"waits": 2
 },
 "arc:LSEFSL:2013": {
 "at": "2026-11-08",
@@ -39986,11 +40003,12 @@
 "at": "2026-11-08",
 "n": 0,
 "retry": 1,
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "waits": 0,
 "rev": 5,
-"why": "no two models gave a usable read"
+"why": "no two models gave a usable read",
+"second": 1
 },
 "arc:STL:2013": {
 "at": "2026-11-08",
@@ -40175,10 +40193,10 @@
 },
 "arc:SIEM:2011": {
 "at": "2026-11-08",
-"n": 26,
-"retry": 1,
+"n": 24,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "arc:REDCO:2011": {
 "at": "2026-11-08",
@@ -40694,7 +40712,10 @@
 },
 "web:OGDC:2026": {
 "at": "2026-11-08",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
 },
 "drive:THALL:2022": {
 "at": "2026-11-08",
@@ -40821,8 +40842,11 @@
 "arc:SBL:2008": {
 "at": "2026-11-08",
 "done": true,
-"n": 13,
-"waits": 1
+"n": 8,
+"waits": 1,
+"reread": [
+2007
+]
 },
 "arc:GATI:2017": {
 "at": "2026-11-08",
@@ -41026,7 +41050,10 @@
 "waits": 1
 },
 "web:SIEM:2022": {
-"at": "2026-11-08"
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:ATIL:2006": {
 "at": "2026-11-08",
@@ -41056,6 +41083,9 @@
 "waits": 2
 },
 "drive:GATM:2019": {
+"at": "2026-11-08"
+},
+"arc:SIEM:2009": {
 "at": "2026-11-08"
 }
 }
