@@ -13231,9 +13231,10 @@
 "khi:KOHC:2001": {
 "at": "2026-11-08",
 "n": 18,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan Electric Power Company Limited (names HUBC)"
 },
 "khi:AASM:2001": {
 "at": "2026-11-02",
