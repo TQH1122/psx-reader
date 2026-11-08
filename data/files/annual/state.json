@@ -2904,10 +2904,10 @@
 },
 "khi:PTC:2004": {
 "at": "2026-11-08",
-"n": 26,
-"retry": 1,
+"n": 27,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:IBFL:2004": {
 "at": "2026-11-01",
@@ -11161,10 +11161,11 @@
 "khi:JDWS:2001": {
 "at": "2026-11-08",
 "n": 19,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: company name not found on provided pages"
 },
 "drive:JSBL:2013": {
 "at": "2026-11-02",
@@ -19806,7 +19807,7 @@
 "why": "not annual accounts (interim statements)"
 },
 "khi:PTC:2003": {
-"at": "2026-11-03",
+"at": "2026-11-08",
 "n": 29,
 "retry": 1,
 "tries": 1,
@@ -37172,11 +37173,11 @@
 },
 "arc:MUGHAL:2016": {
 "at": "2026-11-08",
-"n": 26,
-"retry": 1,
+"n": 0,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "arc:FCSC:2007": {
 "at": "2026-11-08",
