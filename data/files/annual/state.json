@@ -23476,7 +23476,7 @@
 "waits": 1
 },
 "web:GATM:2020": {
-"at": "2026-11-03",
+"at": "2026-11-08",
 "waits": 1
 },
 "web:IDYM:2019": {
@@ -23628,7 +23628,7 @@
 "waits": 1
 },
 "web:MTL:2009": {
-"at": "2026-11-03",
+"at": "2026-11-08",
 "tries": 1,
 "rev": 4,
 "why": "scanned report (left for later, OCR too slow)",
@@ -32674,10 +32674,10 @@
 },
 "web:GATM:2021": {
 "at": "2026-11-08",
-"n": 22,
-"retry": 1,
+"n": 24,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:PECO:2014": {
 "at": "2026-11-08",
@@ -37207,10 +37207,14 @@
 },
 "arc:PASL:2013": {
 "at": "2026-11-08",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "done": true,
-"n": 12
+"n": 12,
+"reread": [
+2013
+],
+"why": "not annual accounts: company name not found on provided pages and financial statements pages not prov"
 },
 "arc:PASL:2012": {
 "at": "2026-11-08",
@@ -40929,7 +40933,8 @@
 "at": "2026-11-08",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:PCAL:2007": {
 "at": "2026-11-08"
