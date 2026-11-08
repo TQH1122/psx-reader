@@ -15956,11 +15956,10 @@
 },
 "web:SUTM:2008": {
 "at": "2026-11-08",
-"tries": 1,
-"rev": 4,
+"tries": 2,
+"rev": 5,
 "why": "no statement pages found",
 "second": 1,
-"retry": 1,
 "redo8": 1
 },
 "web:KOIL:2026": {
@@ -22183,11 +22182,10 @@
 "second": 1
 },
 "web:SUTM:2006": {
-"at": "2026-11-03",
-"tries": 1,
-"rev": 4,
+"at": "2026-11-08",
+"tries": 2,
+"rev": 5,
 "why": "no statement pages found",
-"retry": 1,
 "second": 1,
 "redo8": 1
 },
@@ -31529,6 +31527,12 @@
 "n": 25
 },
 "khi:UNITY:2018": {
+"at": "2026-11-08",
+"waits": 1,
+"done": true,
+"n": 7
+},
+"khi:UNITY:2007": {
 "at": "2026-11-08",
 "waits": 1
 }
