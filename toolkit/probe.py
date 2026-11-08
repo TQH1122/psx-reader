@@ -4,7 +4,7 @@ folder view the Drive indexer reads stops at about 5,500 files, so his newest up
 import json, os, urllib.parse, urllib.request
 
 FOLDER = "1KZBgru0osNuRHUyypDF1V8Pxhf7Db02F"
-key = os.environ.get("GEMINI_API_KEY", "")
+key = os.environ.get("DRIVE_API_KEY") or os.environ.get("GEMINI_API_KEY", "")
 q = urllib.parse.quote(f"'{FOLDER}' in parents and trashed = false")
 url = f"https://www.googleapis.com/drive/v3/files?q={q}&pageSize=1000&fields=nextPageToken,files(id,name,mimeType,createdTime)&key={key}"
 try:

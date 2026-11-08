@@ -15,3 +15,4 @@ jobs:
       - run: python3 toolkit/probe.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}

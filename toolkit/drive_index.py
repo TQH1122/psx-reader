@@ -32,7 +32,9 @@ def api_listing():
     at about 5,500 files, so his newest uploads were never seen). Needs the Drive API turned on for that key's
     project; until then it returns None and the folder view is used."""
     import urllib.parse, urllib.request
-    key = os.environ.get("GEMINI_API_KEY", "")
+    # DRIVE_API_KEY: his own key for the Drive API (8 Nov 2026: the AI Studio key is locked to Gemini, so Google
+    # blocks it for Drive); the Gemini key is tried only when no Drive key is set
+    key = os.environ.get("DRIVE_API_KEY") or os.environ.get("GEMINI_API_KEY", "")
     if not key:
         return None
     out, tok = {}, ""
