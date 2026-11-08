@@ -40,7 +40,8 @@ jobs:
         run: python3 toolkit/explorer.py 50 ${{ matrix.worker }} 8
       - name: Save to the private repository
         if: always()
-        run: python3 toolkit/savegit.py "Robot: brain explorer ${{ matrix.worker }} $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/brain/explorer_${{ matrix.worker }}.json
+        run: |
+          python3 toolkit/savegit.py "Robot: brain explorer ${{ matrix.worker }} $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/brain/explorer_${{ matrix.worker }}.json
   next:
     needs: explore
     if: ${{ !cancelled() }}
