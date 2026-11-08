@@ -9,6 +9,8 @@ Usage: drive_index.py MINUTES. Writes data/files/drive_ident.json (file id -> wh
 """
 import json, os, re, subprocess, sys, tempfile, threading, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib"))
+from textfix import fix  # joined letters in PDF fonts (8 Nov 2026)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FILES = os.path.join(ROOT, "data", "files")
@@ -137,6 +139,7 @@ def ident(fid, title):
                                               errors="ignore", timeout=150).stdout + "\n"
                 except subprocess.TimeoutExpired:
                     continue
+        txt = fix(txt)
         k, y, mon = period(txt)
         tk = company(txt)
         m = re.match(r"^([A-Z]{2,8})[ _-]", title or "")

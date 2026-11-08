@@ -8,6 +8,8 @@ Scanned pages with no text layer are OCRed (only the candidate pages, found by O
 Prints one json line: pages, text pages, has consolidated, picked pages.
 """
 import json, re, subprocess, sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from textfix import fix  # joined letters in PDF fonts (8 Nov 2026)
 
 pdf, out = sys.argv[1], sys.argv[2]
 
@@ -16,10 +18,10 @@ def run(a):
 
 def pages_text(mode="-layout"):
     t = run(["pdftotext", mode, pdf, "-"])
-    return t.split("\f")
+    return fix(t).split("\f")
 
 TXT = pdf.lower().endswith(".txt")  # an old html report already turned into text pages (split by form feeds)
-P = open(pdf, errors="ignore").read().split("\f") if TXT else pages_text()
+P = fix(open(pdf, errors="ignore").read()).split("\f") if TXT else pages_text()
 n = len(P)
 textp = sum(1 for p in P if len(p.strip()) > 200)
 ocr = False
@@ -36,7 +38,7 @@ if not TXT and textp < max(3, n * 0.3):
         for x in f:
             txt = run(["tesseract", "/tmp/" + x, "-", "--psm", "6"])
             os.remove("/tmp/" + x)
-        P.append(txt)
+        P.append(fix(txt))
     n = len(P)
 
 YEAR = re.compile(r"\b(19[89]\d|20[0-3]\d)\b")
@@ -73,7 +75,8 @@ def score(p, kind):
     elif kind == "PL":
         if not re.search(r"statement of profit or loss|profit and loss account|income statement|statement of income", l):
             return 0
-        if not re.search(r"earnings per share|earning per share|\(loss\) per share|loss per share", l):
+        # "earnings per ordinary share", "basic and diluted earnings per share", "loss per share" (8 Nov 2026)
+        if not re.search(r"per (ordinary |each |one )?(share|certificate|unit)", l):
             return 0
         s = 10 + sum(k in l for k in ["cost of sales", "gross profit", "taxation", "finance cost", "profit before", "net revenue", "sales", "attributable"]) * 3
         if "comprehensive income" in l and "cost of sales" not in l and "gross" not in l and "markup" not in l and "interest earned" not in l:
@@ -125,7 +128,7 @@ if not ocr and not TXT:
     for i, p in enumerate(P):
         head = re.sub(r"\s+", " ", p.lower())[:300]
         if TITLE.search(head) and numdens(p) < 15 and "contents" not in head and "notes to" not in head and len(ocrd) < 12:
-            t = ocr_page(i)
+            t = fix(ocr_page(i))
             if numdens(t) >= 25:
                 P[i] = t
                 ocrd.append(i + 1)

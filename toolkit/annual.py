@@ -60,6 +60,8 @@ KHI = "https://www.khistocks.com"
 UA = "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Mobile Safari/537.36"
 
 import reader as R  # the free model panel and the printed number checks of batch 5
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib"))
+from textfix import fix as tfix  # joined letters in PDF fonts (8 Nov 2026)
 
 _http = R.http
 
@@ -391,7 +393,10 @@ def covered(tk, longrows, extracts):
             # had marked 124 group years as done, so their full website reports were never read); its early company only
             # years that the tracker accepted are already in the flags above
             if (b == "C") == bool(d.get("cons")) and not (group and b == "S"):
-                cov |= {int(y) for y in (d.get(b) or {}) if str(y).isdigit()}
+                # only years whose profit was read (8 Nov 2026: a read that gave only assets or cash had marked the
+                # year as done, so the year's full report on his Drive or the company's website was never read)
+                cov |= {int(y) for y, row in (d.get(b) or {}).items() if str(y).isdigit() and isinstance(row, dict)
+                        and (row.get("ni") is not None or row.get("pat") is not None)}
         for k in ("SUM", "SUM_C", "SUM_X"):
             sm = d.get(k) or {}
             ok = sm.get("basis") == "consolidated" if group else sm.get("basis") in ("standalone", "unclear")
@@ -443,6 +448,38 @@ def second_chance(state):
             st.update(retry=1, second=1, tries=1)
             n += 1
     BAD_KHI.update(t for t, c in bad.items() if c >= 2)
+    return n
+
+
+def requeue_8nov(state, ext):
+    """once (8 Nov 2026): reports read before the joined letters fix and the profit rules get one more go. Reads that
+    gave no profit, and reports given up for reasons those fixes change (statement pages not found, not annual
+    accounts, no figure passed, no company name found). Saved model answers are reused where the pages are unchanged,
+    so most cost no model calls. The old figures stay until a better read replaces them; once per report, so nothing
+    loops. Returns how many were requeued."""
+    mp = os.path.join(AN, "migrations.json")
+    done = jl(mp, {}) or {}
+    if done.get("requeue_8nov"):
+        return 0
+    fixable = re.compile(r"no statement pages|no figure passed|not annual accounts|year end not readable|no two models|"
+                         r"fewer than two|page picking|^error:|company name does not match: (not|no |company name|cannot|unknown)", re.I)
+    n = 0
+    for k, st in state.items():
+        if st.get("redo8"):
+            continue
+        d = ext.get(k) or {}
+        if st.get("done"):
+            blk = d.get("C") if d.get("cons") else d.get("S")
+            if d.get("by") == "ai" and isinstance(blk, dict) and not any(
+                    isinstance(r, dict) and (r.get("ni") is not None or r.get("pat") is not None) for r in blk.values()):
+                st.pop("done", None)
+                st.update(retry=1, tries=1, redo8=1)
+                n += 1
+        elif fixable.search(st.get("why") or "") and "interim" not in (st.get("why") or ""):
+            st.update(retry=1, tries=1, redo8=1)
+            n += 1
+    done["requeue_8nov"] = f"{date.today().isoformat()}: {n} reports"
+    jw(done, mp, indent=0)
     return n
 
 
@@ -580,7 +617,7 @@ def _pages(pdf, work):
         if info0.returncode != 0 or not re.search(r"Pages:\s+\d+", info0.stdout):
             return None, "broken PDF (download incomplete); tried again next run"
         # a scanned report (no text layer) needs every page OCRed, which costs 10 or more GitHub minutes: left for later
-        t = subprocess.run(["pdftotext", "-layout", pdf, "-"], capture_output=True, text=True, errors="ignore").stdout.split("\f")
+        t = tfix(subprocess.run(["pdftotext", "-layout", pdf, "-"], capture_output=True, text=True, errors="ignore").stdout).split("\f")
         textp = sum(1 for x in t if len(x.strip()) > 200)
         if len(t) > 40 and textp < len(t) * 0.3:
             # scanned (8 Nov 2026): read with OCR, at most two at a time so normal reports keep flowing
@@ -656,9 +693,14 @@ LBL = {
     "fin": (r"finance (cost|costs|charges|expense)|financial charges|financial cost|mark ?up|interest expense|borrowing cost", r"income|earned"),
     "pbt": (r"before (taxation|tax|income tax|final tax|levy|levies)", r"operations|continuing|discontinued|segment|refinery"),
     "tax": (r"tax", r"before|after|asset|liabilit|payable|refund|paid"),
-    "pat": (r"((profit|loss|income|earnings).*(after tax|after taxation|for the year|for the period))|net (profit|loss|income)",
-            r"before|operations|continuing|discontinued|refinery|segment|comprehensive|attributable|per share|retained|"
-            r"unappropriated|transferred|brought|carried"),
+    # 8 Nov 2026: "after income tax", "after final tax and levies" and a standalone "attributable to ordinary
+    # shareholders" are the whole profit; 57 reports had all their models agree on profit and still lost it here.
+    # "attributable" to owners, the parent or minority stays banned, and so does profit "available for appropriation"
+    "pat": (r"((profit|loss|income|earnings).*(after (income |final |minimum |and |turnover |super |levy |levies |tax |taxation )*"
+            r"(tax|taxes|taxation|levy|levies)|for (the )?(year|period)))|net (profit|loss|income)",
+            r"before|operations|continuing|discontinued|refinery|segment|comprehensive|per share|retained|"
+            r"attributable.*(owners|equity holders|holding|parent|non ?controlling|minority)|appropriation|available|"
+            r"prior period|unappropriated|transferred|brought|carried"),
     "ni": (r"owners|equity holders|shareholders|holding company|parent", r"non ?controlling|minority|comprehensive|per share"),
     "nci": (r"non ?controlling|minority", r"^$"),
     "eps": (r"per share", r"dividend|book value|break ?up|market"),
@@ -697,7 +739,7 @@ STOPW = {"the", "and", "for", "from", "with", "year", "rupees", "note", "total",
 
 
 def norm(t):
-    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", (t or "").lower().replace("-", " "))).strip()
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", tfix(t or "").lower().replace("-", " "))).strip()
 
 
 def label_ok(field, label):
@@ -739,9 +781,14 @@ def row_proof(field, value, label, rows):
             continue
         if field in TOTALS and kind != "SUM":
             a, b = LBL[field]
-            later = [r for r in rows[i + 1:] if r[0] == pg and r[3] and re.search(a, r[2]) and not re.search(b, r[2])]
+            # a matching row further down the page with other numbers is the real total (8 Nov 2026: a later row
+            # sharing this row's numbers, such as the statement printed twice or profit repeated in the changes in
+            # equity, no longer rejects the figure)
+            mine = [abs(n) for n in nums]
+            later = [r for r in rows[i + 1:] if r[0] == pg and r[3] and re.search(a, r[2]) and not re.search(b, r[2])
+                     and not any(abs(abs(n) - m) <= max(1e-9, m * 1e-9) for n in r[3] for m in mine)]
             if later:
-                continue  # a matching row further down the page is the real total
+                continue
         return True
     return False
 
@@ -969,7 +1016,14 @@ def read_one(job, readers, sc, work):
             break
         fs = [facts(v["j"], nums, cons, sumb, rows) for v in okr]
         ok, bad = agree(fs) if len(fs) >= 2 else ({}, set())
-        want = 2 - len(okr) if len(okr) < 2 else (1 if bad and len(okr) < 3 else 0)
+        # profit is the anchor of every history (8 Nov 2026): when only one model gave it, or two gave different
+        # numbers, one more model is asked (up to four reads), instead of losing the year as before (192 reports);
+        # when no model gave it, a third model is asked
+        part = "C|" if cons else "S|"
+        anchor = {k for x in fs for k in x if k.startswith(part) and k.rsplit("|", 1)[1] in ("pat", "ni")}
+        open_anchor = bool(anchor - set(ok))
+        want = 2 - len(okr) if len(okr) < 2 else (1 if (bad and len(okr) < 3) or (open_anchor and len(okr) < 4)
+                                                      or (not anchor and len(okr) < 3) else 0)
         free = [r for r in readers if not r.out and r.name not in reads and r.name not in failed and r.name not in before]
         if want <= 0 or not free:
             break
@@ -1005,7 +1059,13 @@ def read_one(job, readers, sc, work):
         re.search(r"formerly", pages[:6000], re.I) and name_ok2(company, sc[tk].get("n"), pages[:6000]))
     other = None if renamed else next((t for t, rr in sc.items() if t != tk and name_ok(company, rr.get("n"))
                                        and not name_ok(company, sc[tk].get("n"))), None)
-    if not renamed and ((src != "khi" and not name_ok2(company, sc[tk].get("n"), pages)) or (other and len(toks(company)) >= 2)):
+    # no company name found at all (8 Nov 2026: "not printed on provided pages", a slogan, an auditor's name) in a report
+    # from his own Drive library (named by its cover) or the company's own website: the source names the company. A
+    # report that prints any company name (listed or not) still has to match, as before.
+    noname = not re.search(r"\b(limited|ltd|corporation|corp|plc|bank|modaraba|fund|company|mills|industries|insurance)\b",
+                           company or "", re.I)
+    trusted = src in ("drive", "web") and noname and not other
+    if not renamed and not trusted and ((src != "khi" and not name_ok2(company, sc[tk].get("n"), pages)) or (other and len(toks(company)) >= 2)):
         # a report filed under the wrong company (8 Nov 2026): when the printed name is clearly another listed
         # company's (nearly every distinctive word matches), its figures are kept for that company instead of thrown away
         strong = other and len(toks(company)) >= 2 and close_name(company, sc[other].get("n"))
@@ -1235,6 +1295,10 @@ def main():
         if d.get("ticker") and not d.get("skip"):
             by_tk.setdefault(d["ticker"], []).append(d)
     state = jl(os.path.join(AN, "state.json"), {}) or {}
+    nre = requeue_8nov(state, ext)
+    if nre:
+        jw(state, os.path.join(AN, "state.json"), indent=0)
+        print(f"requeue: {nre} reports read again under the 8 Nov 2026 fixes (joined letters, profit rules)", flush=True)
     RECHECK.update(load_recheck())
     nsec = second_chance(state)
     if nsec:
