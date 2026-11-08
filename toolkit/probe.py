@@ -2,8 +2,7 @@
 """One off probe (8 Nov 2026): where are SBP's yearly analysis files of listed companies, and how are they laid out?
 SBP data is public, so printing its layout here is fine."""
 import io, re, subprocess, sys
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "openpyxl", "xlrd"], capture_output=True)
-import openpyxl
+import json
 
 UA = "Mozilla/5.0"
 
@@ -32,3 +31,14 @@ for u in ["https://www.sbp.org.pk/departments/stats/index2.htm", "https://archiv
           "https://www.sbp.org.pk/our-operations/publications/financial-statements-analysis-non-financial-companies-listed-on-pakistan-stock-exchange/428"]:
     code, hs = links(u)
     print("INDEX", u, code, [h for h in hs if re.search(r"fsa|financial.?statement|FSANFC", h, re.I)][:40])
+
+# 2. does SCS Trade still serve market prices of companies that left the market?
+for sym in ["PSMC", "SHEL", "FFBL", "NIB", "DAWH", "AKZO", "PICT", "LUCK"]:
+    body = json.dumps({"par": sym, "date1": "01/01/2004", "date2": "12/31/2025"})
+    p = subprocess.run(["curl", "-s", "-m", "150", "-X", "POST", "-H", "Content-Type: application/json", "-d", body,
+                        "https://www.scstrade.com/MarketStatistics/MS_HistoricalPrices.aspx/chart"], capture_output=True)
+    try:
+        d = json.loads(p.stdout.decode("utf-8", "ignore"))["d"]
+        print("SCS", sym, len(d), str(d[:1])[:120], str(d[-1:])[:120])
+    except Exception as e:
+        print("SCS", sym, "fail", p.stdout[:150])
