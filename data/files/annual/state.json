@@ -14016,18 +14016,19 @@
 "khi:FECTC:2003": {
 "at": "2026-11-09",
 "n": 20,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan International Airlines Limited (names ARPAK)"
 },
 "khi:FECTC:2001": {
-"at": "2026-11-07",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
 "n": 24,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:IREIT:2026": {
 "at": "2026-11-09",
