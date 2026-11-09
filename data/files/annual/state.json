@@ -10357,11 +10357,12 @@
 "why": "company name does not match: Pakistan Industrial Trading Corporation (names NICL)"
 },
 "khi:PAKL:2007": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 22,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:GLOT:2007": {
 "at": "2026-11-01",
@@ -51584,5 +51585,10 @@
 "waits": 1,
 "done": true,
 "n": 22
+},
+"drive:SAZEW:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 16
 }
 }
