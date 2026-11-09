@@ -252,10 +252,10 @@ def main():
     todo = [(f, t) for f, t in files.items() if f not in known and (f not in db or again(db[f])) and mine(f)]
     todo.sort(key=lambda x: x[0] in db)  # files never seen first
     lock, done, busy = threading.Lock(), [0], [0]
-    with ThreadPoolExecutor(4) as pool:   # 4 at a time (9 Nov 2026: 8 times 3 indexers made Google refuse)
+    with ThreadPoolExecutor(6) as pool:   # 6 at a time; Google's busy answers now slow it down instead of losing files
         futs = {}
         it = iter(todo)
-        for _ in range(4):
+        for _ in range(6):
             x = next(it, None)
             if x:
                 futs[pool.submit(ident, *x)] = x

@@ -20,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [0, 1, 2]
+        shard: [0, 1, 2, 3]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -33,7 +33,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}   # lists the whole folder (8 Nov 2026)
         run: |
-          python3 toolkit/drive_index.py 45 ${{ matrix.shard }} 3 | tee /tmp/drive_last.txt
+          python3 toolkit/drive_index.py 45 ${{ matrix.shard }} 4 | tee /tmp/drive_last.txt
           mkdir -p /tmp/out/drive-${{ matrix.shard }}
           cp data/files/drive_ident.json /tmp/drive_last.txt /tmp/out/drive-${{ matrix.shard }}/
       - uses: actions/upload-artifact@v4
@@ -55,11 +55,11 @@ jobs:
         run: |
           git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
           git pull -q --rebase || true
-          python3 toolkit/shard_merge_drive.py /tmp/shards 3
+          python3 toolkit/shard_merge_drive.py /tmp/shards 4
           cat /tmp/shards/drive-*/drive_last.txt | grep "done:" | tee /tmp/drive_last.txt
           git add data/files/drive_ident.json
           git diff --cached --quiet && { echo "nothing new"; exit 0; }
-          git commit -q -m "Drive library: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') (3 indexers)"
+          git commit -q -m "Drive library: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') (4 indexers)"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
           exit 1
       - name: Start the next run while files are waiting
