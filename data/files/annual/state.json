@@ -11822,7 +11822,7 @@
 "done": true
 },
 "khi:SSGC:2005": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 35,
 "retry": 1,
 "tries": 1,
@@ -13858,9 +13858,10 @@
 "khi:OTSU:2003": {
 "at": "2026-11-09",
 "n": 20,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan Industrial Trading Company Limited (names NICL)"
 },
 "khi:BHAT:2005": {
 "at": "2026-11-09",
@@ -16557,10 +16558,11 @@
 "reread": [
 2011
 ],
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"rev": 5,
+"why": "Company website download failed (0)"
 },
 "web:SSGC:2008": {
 "at": "2026-11-07",
@@ -17458,11 +17460,11 @@
 "reread": [
 2009
 ],
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"why": "Company website download failed (0)"
 },
 "web:ZAHID:2023": {
 "at": "2026-11-03",
@@ -17724,14 +17726,14 @@
 "web:BML:2006": {
 "at": "2026-11-09",
 "n": 5,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
 "reread": [
 2005
 ],
 "rev": 5,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"why": "Company website download failed (0)"
 },
 "web:ITANZ:2026": {
 "at": "2026-11-09",
@@ -21525,12 +21527,11 @@
 "reread": [
 2019
 ],
-"tries": 1,
+"tries": 2,
 "redo8": 1,
 "redo9": 1,
 "rev": 5,
-"why": "Company website download failed (200)",
-"retry": 1,
+"why": "Company website download failed (0)",
 "second": 1
 },
 "web:AASM:2021": {
@@ -22975,15 +22976,14 @@
 "redo9": 1
 },
 "web:BML:2008": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 21,
 "reread": [
 2008
 ],
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "Company website download failed (0)",
-"retry": 1,
 "redo8": 1
 },
 "web:JVDC:2016": {
@@ -26323,12 +26323,11 @@
 "reread": [
 2023
 ],
-"tries": 1,
+"tries": 2,
 "redo8": 1,
 "redo9": 1,
 "rev": 5,
-"why": "Company website download failed (200)",
-"retry": 1,
+"why": "Company website download failed (0)",
 "second": 1
 },
 "web:KOHP:2018": {
@@ -30621,7 +30620,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:ANL:2026": {
 "at": "2026-11-08",
@@ -35098,10 +35098,9 @@
 "reread": [
 2010
 ],
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "Company website download failed (0)",
-"retry": 1,
 "redo8": 1,
 "waits": 1
 },
@@ -51443,5 +51442,104 @@
 "tries": 2,
 "rev": 5,
 "why": "not annual accounts: OCR text is too garbled to extract required financial figures"
+},
+"drive:CLVL:2022": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:BELA:2021": {
+"at": "2026-11-09"
+},
+"drive:DGKC:2015": {
+"at": "2026-11-09"
+},
+"drive:TREET:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 40
+},
+"drive:BCL:2016": {
+"at": "2026-11-09"
+},
+"drive:FFC:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 12
+},
+"drive:FFC:2016": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"drive:FFC:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 23
+},
+"drive:FATIMA:2016": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Fatimafert Limited"
+},
+"drive:FATIMA:2014": {
+"at": "2026-11-09",
+"done": true,
+"n": 29
+},
+"drive:FATIMA:2013": {
+"at": "2026-11-09",
+"done": true,
+"n": 28
+},
+"drive:DSL:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 16
+},
+"drive:MSCL:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:MSCL:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:KHTC:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 20
+},
+"drive:FFL:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 14
+},
+"drive:ZTL:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"drive:EFERT:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 32
+},
+"drive:EFERT:2013": {
+"at": "2026-11-09",
+"done": true,
+"n": 31
+},
+"drive:ASL:2014": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:UNITY:2021": {
+"at": "2026-11-09"
 }
 }
