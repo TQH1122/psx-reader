@@ -9861,7 +9861,7 @@
 "redo8": 1
 },
 "khi:MQTM:2003": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 21,
 "retry": 1,
 "tries": 1,
@@ -14754,10 +14754,10 @@
 },
 "khi:MQTM:2005": {
 "at": "2026-11-09",
-"n": 22,
-"retry": 1,
+"n": 23,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:ARPAK:2003": {
 "at": "2026-11-09",
@@ -14777,9 +14777,10 @@
 "khi:BUXL:2001": {
 "at": "2026-11-09",
 "n": 28,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:KOHC:2005": {
 "at": "2026-11-02",
@@ -17462,7 +17463,7 @@
 },
 "web:BML:2009": {
 "at": "2026-11-09",
-"n": 28,
+"n": 12,
 "reread": [
 2009
 ],
@@ -17470,9 +17471,8 @@
 "rev": 5,
 "redo8": 1,
 "redo9": 1,
-"why": "Company website download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true
 },
 "web:ZAHID:2023": {
 "at": "2026-11-03",
@@ -17733,7 +17733,7 @@
 },
 "web:BML:2006": {
 "at": "2026-11-09",
-"n": 5,
+"n": 6,
 "tries": 1,
 "redo8": 1,
 "reread": [
@@ -17741,9 +17741,8 @@
 ],
 "rev": 5,
 "redo9": 1,
-"why": "Company website download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true
 },
 "web:ITANZ:2026": {
 "at": "2026-11-09",
@@ -22987,16 +22986,15 @@
 },
 "web:BML:2008": {
 "at": "2026-11-09",
-"n": 21,
+"n": 8,
 "reread": [
 2008
 ],
 "tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)",
 "redo8": 1,
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true
 },
 "web:JVDC:2016": {
 "at": "2026-11-09",
@@ -35106,17 +35104,16 @@
 },
 "web:BML:2010": {
 "at": "2026-11-09",
-"n": 26,
+"n": 20,
 "reread": [
 2010
 ],
 "tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)",
 "redo8": 1,
 "waits": 1,
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true
 },
 "drive:THALL:2023": {
 "at": "2026-11-08",
@@ -44406,9 +44403,10 @@
 "arc:TOWL:2014": {
 "at": "2026-11-09",
 "n": 6,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:NATF:2006": {
 "at": "2026-11-08",
@@ -51576,5 +51574,9 @@
 "at": "2026-11-09",
 "done": true,
 "n": 26
+},
+"drive:TOWL:2013": {
+"at": "2026-11-09",
+"waits": 1
 }
 }
