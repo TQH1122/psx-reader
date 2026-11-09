@@ -5438,7 +5438,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:GGL:2018": {
 "at": "2026-11-08",
@@ -7429,10 +7430,10 @@
 "khi:CRTM:2003": {
 "at": "2026-11-09",
 "n": 29,
-"retry": 1,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "psx:LSEVL:2024": {
 "at": "2026-11-01",
@@ -7465,11 +7466,12 @@
 "redo9": 1
 },
 "khi:SEPL:2002": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 30,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:PRL:2007": {
 "at": "2026-11-09",
@@ -7552,11 +7554,12 @@
 "done": true
 },
 "khi:CRTM:2001": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 30,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:DCL:2019": {
 "at": "2026-11-08",
@@ -10333,7 +10336,7 @@
 "redo9": 1
 },
 "khi:BFMOD:2006": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 13,
 "reread": [
 2006
@@ -11536,7 +11539,7 @@
 "redo9": 1
 },
 "khi:PACE:2009": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
@@ -11546,8 +11549,8 @@
 2009
 ],
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:SHEZ:2005": {
 "at": "2026-11-02",
@@ -13521,9 +13524,10 @@
 "khi:SEPL:2003": {
 "at": "2026-11-09",
 "n": 18,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:LOTCHEM:2003": {
 "at": "2026-11-09",
@@ -13848,7 +13852,7 @@
 "redo9": 1
 },
 "khi:OTSU:2003": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -21510,15 +21514,16 @@
 "second": 1
 },
 "web:BFMOD:2019": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 14,
 "reread": [
 2019
 ],
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"rev": 5,
+"why": "Company website download failed (200)"
 },
 "web:AASM:2021": {
 "at": "2026-11-03",
@@ -24361,7 +24366,7 @@
 },
 "web:SINDM:2019": {
 "at": "2026-11-09",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "second": 1,
 "n": 3,
@@ -24370,7 +24375,6 @@
 2019
 ],
 "why": "Company website download failed (200)",
-"retry": 1,
 "redo9": 1
 },
 "web:PECO:2026": {
@@ -25186,12 +25190,12 @@
 },
 "web:SOYASUP:2022": {
 "at": "2026-11-09",
-"tries": 1,
-"rev": 4,
+"tries": 2,
+"rev": 5,
 "second": 1,
 "n": 0,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"why": "Company website download failed (200)"
 },
 "khi:CHAS:2006": {
 "at": "2026-11-03",
@@ -25208,15 +25212,16 @@
 "done": true
 },
 "web:SOYASUP:2021": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 5,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
 "reread": [
 2020
 ],
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"rev": 5,
+"why": "Company website download failed (200)"
 },
 "web:CSAP:2005": {
 "at": "2026-11-03",
@@ -26308,10 +26313,11 @@
 "reread": [
 2023
 ],
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"rev": 5,
+"why": "Company website download failed (200)"
 },
 "web:KOHP:2018": {
 "at": "2026-11-08",
@@ -30598,7 +30604,7 @@
 "why": "company name does not match: Pakistan Electric Power Company Limited (names HUBC)"
 },
 "khi:FCSC:2009": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 4,
 "retry": 1,
 "tries": 1,
@@ -40362,7 +40368,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"second": 1
 },
 "drive:PSYL:2019": {
 "at": "2026-11-08",
@@ -43150,15 +43157,15 @@
 "second": 1
 },
 "arc:PACE:2013": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 18,
 "reread": [
 2013
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:NATF:2018": {
 "at": "2026-11-08",
@@ -43243,8 +43250,8 @@
 "n": 20,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:PNSC:2005": {
 "at": "2026-11-08",
@@ -44970,9 +44977,9 @@
 "reread": [
 2015
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:PACE:2012": {
 "at": "2026-11-08",
@@ -51401,9 +51408,22 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FCSC:2010": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 30
+},
+"arc:PACE:2014": {
+"at": "2026-11-09",
+"done": true,
+"n": 21
+},
+"khi:CRTM:2002": {
+"at": "2026-11-09",
+"done": true,
+"n": 26
 }
 }
