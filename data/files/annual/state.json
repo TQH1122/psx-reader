@@ -8816,11 +8816,11 @@
 },
 "khi:ASHT:2002": {
 "at": "2026-11-09",
-"n": 20,
-"retry": 1,
+"n": 18,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:NONS:2006": {
 "at": "2026-11-09",
@@ -9058,10 +9058,10 @@
 },
 "khi:RUBY:2007": {
 "at": "2026-11-09",
-"n": 24,
-"retry": 1,
+"n": 8,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:GRYL:2007": {
 "at": "2026-11-09",
@@ -10454,11 +10454,11 @@
 "redo9": 1
 },
 "khi:BNWM:2002": {
-"at": "2026-11-01",
-"n": 28,
-"retry": 1,
+"at": "2026-11-09",
+"n": 10,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:BFMOD:2003": {
 "at": "2026-11-08",
@@ -14298,7 +14298,7 @@
 "redo8": 1
 },
 "khi:RUBY:2005": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -14658,10 +14658,11 @@
 "khi:BNWM:2003": {
 "at": "2026-11-09",
 "n": 24,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
 },
 "khi:IDRT:2006": {
 "at": "2026-11-08",
@@ -30749,17 +30750,17 @@
 "why": "company name does not match: Wovens Tests Mil Lid"
 },
 "khi:ASHT:2001": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
-"retry": 1,
 "second": 1,
 "redo8": 1,
 "n": 5,
 "reread": [
 2000
 ],
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:SZTM:2026": {
 "at": "2026-11-08",
@@ -34369,7 +34370,7 @@
 "done": true
 },
 "khi:BNWM:2001": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 2,
 "rev": 5,
 "why": "not annual accounts: company name not found in provided pages",
@@ -37965,9 +37966,9 @@
 "tries": 1,
 "rev": 5,
 "second": 1,
-"n": 21,
-"retry": 1,
-"redo9": 1
+"n": 29,
+"redo9": 1,
+"done": true
 },
 "arc:BAFL:2003": {
 "at": "2026-11-09",
@@ -37977,8 +37978,8 @@
 "n": 4,
 "redo8": 1,
 "waits": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:BAFL:2002": {
 "at": "2026-11-09",
@@ -37986,8 +37987,8 @@
 "rev": 5,
 "second": 1,
 "n": 0,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:BAFL:2001": {
 "at": "2026-11-09",
@@ -42617,10 +42618,10 @@
 },
 "arc:GVGL:2014": {
 "at": "2026-11-09",
-"n": 28,
-"retry": 1,
+"n": 21,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:GVGL:2012": {
 "at": "2026-11-08",
@@ -51433,5 +51434,8 @@
 "at": "2026-11-09",
 "done": true,
 "n": 26
+},
+"arc:GVGL:2013": {
+"at": "2026-11-09"
 }
 }
