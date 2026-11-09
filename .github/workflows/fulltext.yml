@@ -1,0 +1,86 @@
+# Report text library (9 Nov 2026): every word of every report in his Drive PSX Library, turned into plain text with
+# free tools (no AI, no keys) by eight robots at once, each owning its own companies (toolkit/fulltext.py in the
+# private tracker). The text goes to a private release of the private repository, never here; this public log shows
+# only counts. When a round ends, the word scans (toolkit/textscan.py) measure every annual report for the PSX brain.
+# Chained: while reports are left, each round starts the next; the heartbeat restarts the chain if it ever stops.
+name: Report text library
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+  push:
+    paths: ['.github/run-fulltext']
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: fulltext
+  cancel-in-progress: false
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    strategy:
+      fail-fast: false
+      matrix:
+        worker: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - name: Tools
+        run: |
+          { command -v pdftotext && command -v tesseract; } > /dev/null 2>&1 || { sudo apt-get update -q; sudo apt-get install -y -q poppler-utils tesseract-ocr; } > /dev/null 2>&1
+      - name: Turn reports into text
+        timeout-minutes: 62
+        env:
+          GH_TOKEN: ${{ secrets.TRACKER_TOKEN }}
+        run: python3 toolkit/fulltext.py --worker ${{ matrix.worker }} --of 8 --minutes 50 2> data/files/fulltext_err_${{ matrix.worker }}.log | tail -n 1 || true
+      - name: Save progress to the private repository
+        if: always()
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          mkdir -p data/files/fulltext; mv -f data/files/fulltext_err_${{ matrix.worker }}.log data/files/fulltext/err_${{ matrix.worker }}.log 2>/dev/null || true
+          python3 toolkit/savegit.py "Robot: report text library ${{ matrix.worker }} $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/fulltext/state_${{ matrix.worker }}.json data/files/fulltext/err_${{ matrix.worker }}.log
+  scan:
+    needs: convert
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - name: Word scans of every annual report
+        env:
+          GH_TOKEN: ${{ secrets.TRACKER_TOKEN }}
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          fresh=$(python3 -c "
+          import glob, json
+          done = sum((json.load(open(f)).get('sum') or {}).get('done', 0) for f in glob.glob('data/files/fulltext/state_*.json'))
+          try:
+              lib = json.load(open('data/db/market/textlib.json'))
+          except Exception:
+              lib = {}
+          print(1 if done and lib.get('done') == done else 0)" 2>/dev/null || echo 0)
+          if [ "$fresh" = "1" ]; then echo "word scans: no new reports since the last scan"; else
+            python3 toolkit/textscan.py 2> /tmp/scan_err.log | tail -n 1 || true
+          fi
+          python3 toolkit/savegit.py "Robot: word scans $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/notes/text_features.json data/db/market/textlib.json
+      - name: Start the next round while reports are left
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          left=$(python3 -c "
+          import glob, json
+          print(sum((json.load(open(f)).get('sum') or {}).get('left', 1) for f in glob.glob('data/files/fulltext/state_*.json')) or (0 if glob.glob('data/files/fulltext/state_*.json') else 1))" 2>/dev/null || echo 1)
+          echo "reports left: $left"
+          [ "$left" = "0" ] && exit 0
+          for i in 1 2 3; do gh workflow run fulltext.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done
