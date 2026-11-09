@@ -20051,9 +20051,9 @@
 "tries": 1,
 "rev": 4,
 "redo8": 1,
-"n": 20,
-"retry": 1,
-"redo9": 1
+"n": 21,
+"redo9": 1,
+"done": true
 },
 "web:BCL:2017": {
 "at": "2026-11-03",
@@ -20081,13 +20081,13 @@
 "done": true
 },
 "web:LPGL:2023": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
-"n": 0,
-"retry": 1,
-"redo8": 1
+"n": 9,
+"redo8": 1,
+"done": true
 },
 "web:FTSM:2022": {
 "at": "2026-11-03",
@@ -20102,7 +20102,7 @@
 "n": 40
 },
 "web:LPGL:2022": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
@@ -34590,11 +34590,11 @@
 "n": 32
 },
 "web:LPGL:2024": {
-"at": "2026-11-08",
-"n": 26,
-"retry": 1,
+"at": "2026-11-09",
+"n": 28,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:BECO:2014": {
 "at": "2026-11-08",
@@ -35469,7 +35469,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "drive:SEL:2025": {
 "at": "2026-11-09",
