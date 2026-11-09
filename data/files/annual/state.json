@@ -11850,7 +11850,7 @@
 "why": "not annual accounts: cannot determine company name or required pages are missing"
 },
 "khi:ENGROH:2001": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 2,
 "retry": 1,
 "tries": 1,
@@ -13527,7 +13527,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:LOTCHEM:2003": {
 "at": "2026-11-09",
@@ -14906,11 +14907,11 @@
 },
 "khi:BELA:2005": {
 "at": "2026-11-09",
-"n": 24,
-"retry": 1,
+"n": 32,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:PAKL:2005": {
 "at": "2026-11-02",
@@ -21519,11 +21520,13 @@
 "reread": [
 2019
 ],
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "redo9": 1,
 "rev": 5,
-"why": "Company website download failed (200)"
+"why": "Company website download failed (200)",
+"retry": 1,
+"second": 1
 },
 "web:AASM:2021": {
 "at": "2026-11-03",
@@ -22225,10 +22228,11 @@
 "khi:ENGROH:2002": {
 "at": "2026-11-09",
 "n": 4,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
 },
 "khi:POL:2016": {
 "at": "2026-11-03",
@@ -25214,14 +25218,15 @@
 "web:SOYASUP:2021": {
 "at": "2026-11-09",
 "n": 5,
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "reread": [
 2020
 ],
 "redo9": 1,
 "rev": 5,
-"why": "Company website download failed (200)"
+"second": 1,
+"done": true
 },
 "web:CSAP:2005": {
 "at": "2026-11-03",
@@ -26313,11 +26318,13 @@
 "reread": [
 2023
 ],
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "redo9": 1,
 "rev": 5,
-"why": "Company website download failed (200)"
+"why": "Company website download failed (200)",
+"retry": 1,
+"second": 1
 },
 "web:KOHP:2018": {
 "at": "2026-11-08",
@@ -31389,7 +31396,7 @@
 "redo9": 1
 },
 "khi:BELA:2003": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 32,
 "reread": [
 2002,
@@ -31397,8 +31404,8 @@
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:SUHJ:2022": {
 "at": "2026-11-08",
@@ -32401,10 +32408,9 @@
 },
 "khi:FASM:2001": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 3,
 "rev": 5,
-"why": "not annual accounts: cannot determine company name from provided pages",
-"retry": 1,
+"why": "company name does not match: Hindustan Textiles Limited (names BTL)",
 "redo8": 1
 },
 "drive:SYS:2021": {
