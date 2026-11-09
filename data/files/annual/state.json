@@ -2218,11 +2218,12 @@
 "redo9": 1
 },
 "khi:SHEZ:2001": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 27,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:HBL:2025": {
 "at": "2026-11-01",
@@ -11565,16 +11566,18 @@
 "khi:SHEZ:2005": {
 "at": "2026-11-09",
 "n": 26,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:SHEZ:2002": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 20,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:HICL:2003": {
 "at": "2026-11-09",
@@ -14380,9 +14383,9 @@
 "khi:AHTM:2003": {
 "at": "2026-11-09",
 "n": 16,
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:SKRS:2005": {
 "at": "2026-11-09",
@@ -14393,7 +14396,7 @@
 "waits": 1
 },
 "khi:AHTM:2002": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 23,
 "retry": 1,
 "tries": 1,
@@ -20593,11 +20596,11 @@
 "done": true
 },
 "web:SEL:2021": {
-"at": "2026-11-03",
-"n": 5,
-"retry": 1,
+"at": "2026-11-09",
+"n": 2,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:SEL:2013": {
 "at": "2026-11-07",
@@ -26505,14 +26508,14 @@
 "redo9": 1
 },
 "khi:SHEZ:2003": {
-"at": "2026-11-04",
+"at": "2026-11-09",
 "n": 25,
 "reread": [
 2003
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:DSL:2016": {
 "at": "2026-11-09",
@@ -35450,16 +35453,16 @@
 "second": 1
 },
 "web:HUBC:2022": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "second": 1,
 "n": 26,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:HUBC:2021": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 34,
 "retry": 1,
 "tries": 1,
@@ -42660,9 +42663,10 @@
 "arc:GVGL:2012": {
 "at": "2026-11-09",
 "n": 34,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:LSEVL:2013": {
 "at": "2026-11-08",
@@ -51619,13 +51623,17 @@
 "n": 28
 },
 "web:HUBC:2023": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 32
 },
 "drive:SEL:2021": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:SEL:2019": {
 "at": "2026-11-09",
@@ -51651,5 +51659,8 @@
 "at": "2026-11-09",
 "done": true,
 "n": 28
+},
+"arc:GVGL:2011": {
+"at": "2026-11-09"
 }
 }
