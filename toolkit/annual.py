@@ -1387,10 +1387,13 @@ def guard_end(c0, saved, gain=None):
     spent, got = sum(x["spent"] for x in day), sum(x["saved"] for x in day)
     idle = sum(x["spent"] for x in day if not x["saved"])
     why = None
-    gains = [x.get("gain") for x in day if x.get("gain") is not None]
-    gained = sum(gains)
-    if gains and spent > 0.30 and spent / max(gained, 1) > 0.01:
-        why = f"${spent:.2f} spent in the last day for only {gained} new figures (over 1 cent a figure)"
+    # only runs that counted their new figures are compared (9 Nov 2026: the day's earlier spend, from before the
+    # count existed, was set against a single run's figures and paused the paid models by mistake); judged after
+    # at least $0.50 so one slow round cannot stop the work
+    counted = [x for x in day if x.get("gain") is not None]
+    spent_c, gained = sum(x["spent"] for x in counted), sum(x["gain"] for x in counted)
+    if counted and spent_c > 0.50 and spent_c / max(gained, 1) > 0.01:
+        why = f"${spent_c:.2f} spent in the last day for only {gained} new figures (over 1 cent a figure)"
     elif idle > IDLE_MAX:
         why = f"${idle:.2f} spent in the last day on runs that saved no report"
     elif spent > 0.30 and spent / max(got, 1) > PER_REPORT_MAX:
