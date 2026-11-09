@@ -520,6 +520,30 @@ def requeue_8nov(state, ext):
     return n
 
 
+def requeue_thin(state, ext):
+    """once (9 Nov 2026): reports whose own year came back without equity, total assets or cash flow (two models had
+    agreed on only a handful of lines). Read again with the saved answers plus the extra models now asked for the main
+    lines; the old figures stay until a fuller read replaces them. Once per report."""
+    mp = os.path.join(AN, "migrations.json")
+    done = jl(mp, {}) or {}
+    if done.get("requeue_thin"):
+        return 0
+    n = 0
+    for k, d in ext.items():
+        st = state.get(k)
+        if not st or not st.get("done") or d.get("by") != "ai":
+            continue
+        rows = (d.get("C") if d.get("cons") else d.get("S")) or {}
+        own = rows.get(str(k.rsplit(":", 1)[1])) if isinstance(rows, dict) else None
+        if not isinstance(own, dict) or any(own.get(f) is None for f in ("eq", "assets", "cfo")):
+            st.pop("done", None)
+            st.update(retry=1, tries=1, redo9=1)
+            n += 1
+    done["requeue_thin"] = f"{date.today().isoformat()}: {n} reports"
+    jw(done, mp, indent=0)
+    return n
+
+
 def requeue_drive_busy(state):
     """once (9 Nov 2026): Drive reports given up as "Drive download failed (200)", which was Google's busy page, and
     renamed companies' reports rejected for printing the former name"""
@@ -1396,7 +1420,7 @@ def main():
         if d.get("ticker") and not d.get("skip"):
             by_tk.setdefault(d["ticker"], []).append(d)
     state = jl(os.path.join(AN, "state.json"), {}) or {}
-    nre = requeue_8nov(state, ext) + requeue_groups(state, ext, load_rows("long")) + requeue_drive_busy(state)
+    nre = requeue_8nov(state, ext) + requeue_groups(state, ext, load_rows("long")) + requeue_drive_busy(state) + requeue_thin(state, ext)
     if nre:
         jw(state, os.path.join(AN, "state.json"), indent=0)
         print(f"requeue: {nre} reports read again under the 8 Nov 2026 fixes (joined letters, profit rules)", flush=True)

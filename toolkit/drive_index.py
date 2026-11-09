@@ -239,7 +239,8 @@ def ident(fid, title):
 def main():
     t0 = time.time()
     db = jl(OUT, {}) or {}
-    known = {r["id"] for r in jl(os.path.join(FILES, "library_index.json"), []) or [] if r.get("id")}
+    # hand indexed files with a company and year are left alone; those missing either are looked at (9 Nov 2026)
+    known = {r["id"] for r in jl(os.path.join(FILES, "library_index.json"), []) or [] if r.get("id") and r.get("tk") and r.get("y")}
     files = listing()
     # a failed download gets two more tries, in later runs
     # looked at again (8 Nov 2026): files that failed on the old OCR time limit, and files matched to no listed company,
