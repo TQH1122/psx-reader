@@ -38,6 +38,7 @@ jobs:
         timeout-minutes: 62
         env:
           GH_TOKEN: ${{ secrets.TRACKER_TOKEN }}
+          DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}   # Drive API first: its own download allowance
         run: python3 toolkit/fulltext.py --worker ${{ matrix.worker }} --of 8 --minutes 50 2> data/files/fulltext_err_${{ matrix.worker }}.log | tail -n 1 || true
       - name: Save progress to the private repository
         if: always()
