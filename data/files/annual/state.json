@@ -9255,10 +9255,11 @@
 "khi:CWHC:2002": {
 "at": "2026-11-09",
 "n": 24,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
 },
 "khi:PHDL:2003": {
 "at": "2026-11-01",
@@ -14188,11 +14189,12 @@
 "done": true
 },
 "khi:CWHC:2001": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 23,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:NAGC:2002": {
 "at": "2026-11-08",
