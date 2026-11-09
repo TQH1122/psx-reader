@@ -1953,7 +1953,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:MRNS:2005": {
 "at": "2026-11-09",
@@ -14244,7 +14245,8 @@
 "n": 30,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:PMRS:2007": {
 "at": "2026-11-09",
@@ -14908,7 +14910,8 @@
 "n": 20,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:ELCM:2003": {
 "at": "2026-11-09",
