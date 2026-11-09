@@ -6422,7 +6422,8 @@
 "redo8": 1,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:RPL:2018": {
 "at": "2026-11-01",
@@ -14238,7 +14239,7 @@
 "done": true
 },
 "khi:OML:2002": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 30,
 "retry": 1,
 "tries": 1,
@@ -51686,6 +51687,11 @@
 "n": 33
 },
 "drive:HUBC:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"drive:HUBC:2014": {
 "at": "2026-11-09"
 }
 }
