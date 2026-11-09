@@ -5433,7 +5433,7 @@
 "redo8": 1
 },
 "khi:ENGROH:2003": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 28,
 "retry": 1,
 "tries": 1,
@@ -7363,11 +7363,12 @@
 "redo9": 1
 },
 "khi:TATM:2002": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 28,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:ANL:2003": {
 "at": "2026-11-09",
@@ -8226,9 +8227,10 @@
 "khi:SZTM:2004": {
 "at": "2026-11-09",
 "n": 34,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:KCL:2005": {
 "at": "2026-11-04",
@@ -8419,7 +8421,7 @@
 "second": 1
 },
 "khi:SUTM:2007": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 30,
 "retry": 1,
 "tries": 1,
@@ -8449,9 +8451,10 @@
 "khi:ELSM:2002": {
 "at": "2026-11-09",
 "n": 33,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan International Airlines Corporation Limited (names ARPAK)"
 },
 "psx:BHAT:2026": {
 "at": "2026-11-01",
@@ -8708,7 +8711,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:BHAT:2002": {
 "at": "2026-11-09",
@@ -8976,7 +8980,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:ANSM:2003": {
 "at": "2026-11-09",
@@ -9063,11 +9068,11 @@
 },
 "khi:CHBL:2007": {
 "at": "2026-11-09",
-"n": 12,
-"retry": 1,
+"n": 29,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:BPL:2026": {
 "at": "2026-11-01",
@@ -9105,7 +9110,7 @@
 "redo9": 1
 },
 "khi:CHBL:2006": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 26,
 "waits": 1,
 "reread": [
@@ -9114,8 +9119,8 @@
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:BPL:2006": {
 "at": "2026-11-08",
@@ -9355,7 +9360,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:SHNI:2006": {
 "at": "2026-11-01",
@@ -11177,11 +11183,11 @@
 },
 "khi:DNCC:2003": {
 "at": "2026-11-09",
-"n": 28,
-"retry": 1,
+"n": 30,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:INDU:2015": {
 "at": "2026-11-02",
@@ -13454,9 +13460,10 @@
 "khi:TATM:2003": {
 "at": "2026-11-09",
 "n": 18,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:MSOT:2005": {
 "at": "2026-11-08",
@@ -14012,10 +14019,10 @@
 },
 "khi:MWMP:2004": {
 "at": "2026-11-09",
-"n": 18,
-"retry": 1,
+"n": 32,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:UNIC:2005": {
 "at": "2026-11-04",
@@ -14832,9 +14839,10 @@
 "khi:QUET:2003": {
 "at": "2026-11-09",
 "n": 18,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:GIL:2006": {
 "at": "2026-11-02",
@@ -15158,7 +15166,8 @@
 "n": 25,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "psx:DNCC:2018": {
 "at": "2026-11-02",
@@ -15576,7 +15585,7 @@
 "second": 1
 },
 "web:SHEZ:2023": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "redo8": 1,
@@ -19291,11 +19300,11 @@
 "done": true
 },
 "web:SUTM:2016": {
-"at": "2026-11-03",
-"n": 34,
-"retry": 1,
+"at": "2026-11-09",
+"n": 24,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:ADAMS:2012": {
 "at": "2026-11-07",
@@ -23780,14 +23789,14 @@
 "web:UBDL:2020": {
 "at": "2026-11-09",
 "waits": 2,
-"n": 29,
+"n": 27,
 "reread": [
 2020
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:NAGC:2016": {
 "at": "2026-11-08",
@@ -25107,7 +25116,7 @@
 "done": true
 },
 "web:UBDL:2014": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
@@ -25295,11 +25304,11 @@
 "redo9": 1
 },
 "web:CTM:2018": {
-"at": "2026-11-03",
-"n": 28,
-"retry": 1,
+"at": "2026-11-09",
+"n": 30,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:PIOC:2012": {
 "at": "2026-11-03",
@@ -27772,7 +27781,8 @@
 "redo9": 1,
 "waits": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"second": 1
 },
 "drive:HICL:2016": {
 "at": "2026-11-07",
@@ -30569,12 +30579,12 @@
 },
 "web:SHEZ:2026": {
 "at": "2026-11-09",
-"n": 6,
+"n": 4,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
 "redo9": 1,
-"waits": 2
+"waits": 2,
+"done": true
 },
 "khi:SHEZ:2004": {
 "at": "2026-11-08",
@@ -32246,9 +32256,9 @@
 "reread": [
 2003
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:FRCL:2024": {
 "at": "2026-11-09",
@@ -32994,10 +33004,9 @@
 },
 "khi:ENGROH:2004": {
 "at": "2026-11-09",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "not annual accounts: company name not found in provided pages",
-"retry": 1,
+"why": "company name does not match: Pakistan Steel Mills Corporation (names AABS)",
 "redo8": 1
 },
 "khi:PRL:2003": {
@@ -33557,10 +33566,10 @@
 "at": "2026-11-09",
 "tries": 1,
 "rev": 5,
-"retry": 1,
 "redo8": 1,
 "n": 4,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:PAKL:2003": {
 "at": "2026-11-08",
@@ -33936,7 +33945,7 @@
 "redo9": 1
 },
 "khi:MWMP:2003": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 2,
 "rev": 5,
 "why": "not annual accounts: company name not found in provided pages",
@@ -34126,10 +34135,11 @@
 },
 "khi:PPP:2003": {
 "at": "2026-11-09",
-"tries": 3,
+"tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
-"redo8": 1
+"redo8": 1,
+"second": 1
 },
 "web:SASML:2024": {
 "at": "2026-11-09",
@@ -38744,7 +38754,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:GHGL:2009": {
 "at": "2026-11-08",
@@ -40211,9 +40222,9 @@
 "reread": [
 2016
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:GSPM:2014": {
 "at": "2026-11-09",
@@ -41360,11 +41371,12 @@
 "done": true
 },
 "arc:HAEL:2018": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 35,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "arc:HAEL:2012": {
 "at": "2026-11-08",
@@ -42583,7 +42595,7 @@
 "done": true
 },
 "arc:GVGL:2014": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 28,
 "retry": 1,
 "tries": 1,
@@ -42645,10 +42657,10 @@
 },
 "arc:JATM:2018": {
 "at": "2026-11-09",
-"n": 11,
-"retry": 1,
+"n": 0,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:JATM:2017": {
 "at": "2026-11-08",
@@ -42681,11 +42693,12 @@
 "second": 1
 },
 "arc:JATM:2015": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 14,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "arc:MLCF:2007": {
 "at": "2026-11-08",
@@ -44341,10 +44354,10 @@
 },
 "arc:TOWL:2015": {
 "at": "2026-11-09",
-"n": 18,
-"retry": 1,
+"n": 0,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:QTECH:2014": {
 "at": "2026-11-08",
@@ -44353,7 +44366,7 @@
 "why": "company name does not match: CHAKWAL SPINNING MILLS LIMITED (names DFSM)"
 },
 "arc:TOWL:2014": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 6,
 "retry": 1,
 "tries": 1,
@@ -44854,7 +44867,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:MCB:2005": {
 "at": "2026-11-08",
@@ -45101,7 +45115,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:HTL:2019": {
 "at": "2026-11-08",
@@ -49549,7 +49564,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"second": 1
 },
 "drive:LOADS:2018": {
 "at": "2026-11-09",
@@ -49988,7 +50004,9 @@
 "second": 1
 },
 "arc:GVGL:2015": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 26
 },
 "arc:MWMP:2021": {
 "at": "2026-11-09",
@@ -49999,9 +50017,11 @@
 },
 "drive:CCM:2021": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "web:DLL:2014": {
 "at": "2026-11-09",
@@ -50508,7 +50528,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"second": 1
 },
 "drive:JDMT:2015": {
 "at": "2026-11-09",
@@ -50791,9 +50812,11 @@
 },
 "drive:ZTL:2017": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:IDYM:2016": {
 "at": "2026-11-09",
@@ -50987,9 +51010,11 @@
 },
 "drive:INIL:2017": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "web:PECO:2010": {
 "at": "2026-11-09",
@@ -51001,7 +51026,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"second": 1
 },
 "arc:TELE:2014": {
 "at": "2026-11-09",
@@ -51027,37 +51053,45 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"second": 1
 },
 "drive:FATIMA:2017": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "arc:JATM:2019": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "drive:FATIMA:2015": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "arc:TPLI:2021": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:TPLI:2020": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "web:CTM:2020": {
 "at": "2026-11-09",
@@ -51070,19 +51104,24 @@
 "n": 30
 },
 "web:CTM:2019": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 26
 },
 "drive:MSCL:2020": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"second": 1
 },
 "drive:GSPM:2016": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "arc:GSPM:2012": {
 "at": "2026-11-09",
@@ -51090,7 +51129,9 @@
 "n": 32
 },
 "web:BWHL:2025": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 22
 },
 "arc:SHFA:2022": {
 "at": "2026-11-09"
@@ -51104,7 +51145,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:RUBY:2019": {
 "at": "2026-11-09",
@@ -51118,7 +51160,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "khi:TSBL:2002": {
 "at": "2026-11-09",
@@ -51147,7 +51190,9 @@
 "n": 32
 },
 "arc:HAEL:2022": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 33
 },
 "khi:NSRM:2006": {
 "at": "2026-11-09",
@@ -51201,9 +51246,11 @@
 },
 "drive:ASL:2015": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "arc:FCSC:2014": {
 "at": "2026-11-09",
@@ -51213,15 +51260,19 @@
 },
 "drive:EFERT:2015": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "drive:PNSC:2017": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "arc:FCSC:2013": {
 "at": "2026-11-09",
@@ -51233,19 +51284,23 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "drive:ZTL:2016": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)"
+"why": "Drive download failed (200)",
+"retry": 1,
+"second": 1
 },
 "arc:NETSOL:2018": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:AHTM:2021": {
 "at": "2026-11-09",
@@ -51261,5 +51316,54 @@
 "at": "2026-11-09",
 "done": true,
 "n": 18
+},
+"drive:JATM:2017": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "Drive download failed (200)"
+},
+"web:CTM:2017": {
+"at": "2026-11-09"
+},
+"web:BWHL:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 6
+},
+"arc:HAEL:2021": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:HAEL:2020": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "Drive download failed (200)"
+},
+"web:SUTM:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 25
+},
+"web:SUTM:2014": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"web:SUTM:2013": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (404)"
+},
+"drive:UBDL:2019": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "Drive download failed (200)"
 }
 }
