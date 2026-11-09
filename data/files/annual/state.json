@@ -9420,7 +9420,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:HRPL:2003": {
 "at": "2026-11-01",
@@ -30617,9 +30618,10 @@
 "khi:FCSC:2009": {
 "at": "2026-11-09",
 "n": 4,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:ANL:2026": {
 "at": "2026-11-08",
@@ -41146,7 +41148,7 @@
 "why": "company name does not match: Pakistan Income Enchancement Fund"
 },
 "arc:FCSC:2006": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 24,
 "retry": 1,
 "tries": 1,
