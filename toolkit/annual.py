@@ -1499,10 +1499,10 @@ def main():
             paid = [r for r in readers if getattr(r, "paid", False)]
             free = [r for r in readers if not getattr(r, "paid", False)]
             rot = lambda L: L[k % len(L):] + L[:k % len(L)] if L else []
-            if (STATE.get(job[3]) or {}).get("redo9") or (STATE.get(job[3]) or {}).get("redo8"):
-                # 9 Nov 2026, his rule: paid credit is never spent reading a report again; second passes over reports
-                # already read use the free models only, and paid credit goes to reports never read before
-                order = rot(free)
+            if len(job) > 8 and job[8] == "retry" and paid and ((STATE.get(job[3]) or {}).get("redo9") or (STATE.get(job[3]) or {}).get("redo8")):
+                # a second pass (9 Nov 2026): the saved answers are reused for free; paid models are asked only for the
+                # main lines still missing, and the spend guard pauses them if a day buys under 1 new figure per cent
+                order = paid[:2] + rot(free)
             elif len(job) > 8:
                 # an audit re-read needs two models that never read this report: offer every model, free ones first
                 # (3 Nov 2026: re-reads always landed in slots 1 and 2, so only the 4 paid models were ever offered;

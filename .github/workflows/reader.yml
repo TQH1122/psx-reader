@@ -22,7 +22,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [0, 1, 2, 3]
+        shard: [0, 1, 2, 3, 4, 5]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -44,7 +44,7 @@ jobs:
           SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}   # reads the audit's re-read list from his locked tracker site
           OPENROUTER_PAID: '1'          # his prepaid $10 (1 Nov 2026): paid models first, free ones as extra checkers
           OPENROUTER_RESERVE: '0.5'     # paid models stop when $0.50 is left
-        run: python3 toolkit/annual.py --minutes 50 --workers 14 --shard ${{ matrix.shard }} --shards 4 | tee /tmp/log.txt
+        run: python3 toolkit/annual.py --minutes 50 --workers 14 --shard ${{ matrix.shard }} --shards 6 | tee /tmp/log.txt
       - name: Hand over what this reader saved
         if: ${{ !cancelled() }}
         run: |
@@ -80,7 +80,7 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}   # the spend guard reads the credit left
         run: |
           git pull -q --rebase || true
-          python3 toolkit/shard_merge.py /tmp/shards 4 | tee -a /tmp/merge.txt
+          python3 toolkit/shard_merge.py /tmp/shards 6 | tee -a /tmp/merge.txt
       - name: Wake the tracker robots if anything is overdue
         # GitHub drops or delays timed runs, so after every read the reader asks his site's /api/wake, which starts
         # the private robots when a regular job (prices, imports, weekly, monthly) is overdue. Never stops the reader.
@@ -114,7 +114,7 @@ jobs:
           tail -n 400 data/files/annual/log.txt > l && mv l data/files/annual/log.txt
           git add data
           git diff --cached --quiet && { echo "nothing changed"; exit 0; }
-          git commit -q -m "Reader: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') (4 readers)"
+          git commit -q -m "Reader: $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') (6 readers)"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
           exit 1
       - name: Start the next run (24/7)
