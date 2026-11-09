@@ -11855,9 +11855,10 @@
 "khi:ENGROH:2001": {
 "at": "2026-11-09",
 "n": 2,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:POML:2001": {
 "at": "2026-11-09",
@@ -16558,11 +16559,13 @@
 "reread": [
 2011
 ],
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "redo9": 1,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "web:SSGC:2008": {
 "at": "2026-11-07",
@@ -17460,11 +17463,13 @@
 "reread": [
 2009
 ],
-"tries": 2,
+"tries": 1,
 "rev": 5,
 "redo8": 1,
 "redo9": 1,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "web:ZAHID:2023": {
 "at": "2026-11-03",
@@ -17726,14 +17731,16 @@
 "web:BML:2006": {
 "at": "2026-11-09",
 "n": 5,
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "reread": [
 2005
 ],
 "rev": 5,
 "redo9": 1,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "web:ITANZ:2026": {
 "at": "2026-11-09",
@@ -22981,10 +22988,12 @@
 "reread": [
 2008
 ],
-"tries": 2,
+"tries": 1,
 "rev": 5,
 "why": "Company website download failed (0)",
-"redo8": 1
+"redo8": 1,
+"retry": 1,
+"second": 1
 },
 "web:JVDC:2016": {
 "at": "2026-11-09",
@@ -34376,9 +34385,9 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "not annual accounts: company name not found in provided pages",
-"retry": 1,
-"redo8": 1
+"redo8": 1,
+"done": true,
+"n": 20
 },
 "drive:IDRT:2024": {
 "at": "2026-11-08",
@@ -35098,11 +35107,13 @@
 "reread": [
 2010
 ],
-"tries": 2,
+"tries": 1,
 "rev": 5,
 "why": "Company website download failed (0)",
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"retry": 1,
+"second": 1
 },
 "drive:THALL:2023": {
 "at": "2026-11-08",
@@ -41289,9 +41300,10 @@
 "arc:CTM:2010": {
 "at": "2026-11-09",
 "n": 26,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:FLYNG:2013": {
 "at": "2026-11-09",
@@ -49577,10 +49589,9 @@
 },
 "web:DIIL:2023": {
 "at": "2026-11-09",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "no figure passed the checks",
-"retry": 1,
+"why": "not annual accounts: Balance sheet, profit and loss, cash flow statements and multi-year summary are ",
 "second": 1,
 "waits": 1
 },
@@ -51445,15 +51456,21 @@
 },
 "drive:CLVL:2022": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:BELA:2021": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 0
 },
 "drive:DGKC:2015": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 32
 },
 "drive:TREET:2017": {
 "at": "2026-11-09",
@@ -51540,6 +51557,8 @@
 "n": 0
 },
 "drive:UNITY:2021": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 6
 }
 }
