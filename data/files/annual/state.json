@@ -7782,7 +7782,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:GGGL:2021": {
 "at": "2026-11-02",
@@ -8972,11 +8973,12 @@
 "n": 23
 },
 "khi:ARPAK:2007": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 18,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan Electric Power Company Limited (names HUBC)"
 },
 "khi:HUSI:2007": {
 "at": "2026-11-01",
@@ -12946,11 +12948,11 @@
 "redo8": 1
 },
 "khi:ARPAK:2005": {
-"at": "2026-11-02",
-"n": 7,
-"retry": 1,
+"at": "2026-11-09",
+"n": 16,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:PAKD:2003": {
 "at": "2026-11-08",
@@ -13003,11 +13005,11 @@
 "n": 22
 },
 "khi:ARPAK:2003": {
-"at": "2026-11-02",
-"n": 16,
-"retry": 1,
+"at": "2026-11-09",
+"n": 18,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:DADX:2022": {
 "at": "2026-11-02",
@@ -24529,7 +24531,7 @@
 },
 "web:ARPAK:2017": {
 "at": "2026-11-09",
-"n": 10,
+"n": 0,
 "reread": [
 2017
 ],
@@ -24537,7 +24539,7 @@
 "redo8": 1,
 "rev": 5,
 "second": 1,
-"retry": 1
+"done": true
 },
 "web:SALT:2023": {
 "at": "2026-11-04",
@@ -36530,9 +36532,13 @@
 ]
 },
 "arc:GSPM:2014": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "done": true,
-"n": 33
+"n": 37,
+"reread": [
+2013,
+2014
+]
 },
 "drive:MARI:2017": {
 "at": "2026-11-08",
@@ -41415,7 +41421,10 @@
 "arc:GSPM:2015": {
 "at": "2026-11-09",
 "done": true,
-"n": 16
+"n": 19,
+"reread": [
+2015
+]
 },
 "arc:THCCL:2013": {
 "at": "2026-11-09",
@@ -41493,7 +41502,10 @@
 "arc:KSBP:2006": {
 "at": "2026-11-09",
 "done": true,
-"n": 10
+"n": 8,
+"reread": [
+2006
+]
 },
 "arc:NONS:2013": {
 "at": "2026-11-09",
@@ -41589,5 +41601,10 @@
 "at": "2026-11-09",
 "done": true,
 "n": 26
+},
+"khi:DLL:2006": {
+"at": "2026-11-09",
+"done": true,
+"n": 38
 }
 }
