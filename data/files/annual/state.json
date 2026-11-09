@@ -14451,10 +14451,11 @@
 "khi:YOUW:2003": {
 "at": "2026-11-09",
 "n": 16,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: company name not found on provided pages"
 },
 "khi:SKRS:2003": {
 "at": "2026-11-02",
