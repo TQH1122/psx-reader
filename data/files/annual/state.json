@@ -4777,11 +4777,11 @@
 },
 "khi:SIEM:2001": {
 "at": "2026-11-09",
-"n": 24,
-"retry": 1,
+"n": 22,
 "tries": 1,
 "redo8": 1,
-"waits": 2
+"waits": 2,
+"done": true
 },
 "khi:NCL:2025": {
 "at": "2026-11-01",
@@ -6418,10 +6418,11 @@
 "khi:SEL:2015": {
 "at": "2026-11-09",
 "n": 17,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:RPL:2018": {
 "at": "2026-11-01",
@@ -6457,12 +6458,12 @@
 "done": true
 },
 "khi:SEL:2005": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 25,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:BML:2025": {
 "at": "2026-11-01",
@@ -9399,11 +9400,12 @@
 "done": true
 },
 "khi:YOUW:2006": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 24,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:HRPL:2004": {
 "at": "2026-11-01",
@@ -22522,8 +22524,8 @@
 "n": 22,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:DCR:2019": {
 "at": "2026-11-08",
@@ -34353,10 +34355,10 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "not annual accounts: company name not found in provided pages",
-"retry": 1,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 29
 },
 "web:ORM:2026": {
 "at": "2026-11-08",
@@ -36679,12 +36681,12 @@
 },
 "drive:HUBC:2016": {
 "at": "2026-11-09",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "second": 1,
 "n": 36,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"why": "no figure passed the checks"
 },
 "drive:PSO:2017": {
 "at": "2026-11-08",
@@ -44554,10 +44556,11 @@
 "arc:SIEM:2010": {
 "at": "2026-11-09",
 "n": 18,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: The provided balance sheet, profit and loss, and cash flow statement pages are m"
 },
 "arc:SAPT:2009": {
 "at": "2026-11-08",
@@ -44581,11 +44584,11 @@
 },
 "arc:SIEM:2007": {
 "at": "2026-11-09",
-"n": 0,
+"n": 12,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:TOMCL:2019": {
 "at": "2026-11-08",
@@ -44808,12 +44811,12 @@
 },
 "arc:YOUW:2014": {
 "at": "2026-11-09",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "second": 1,
 "n": 6,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"why": "no figure passed the checks"
 },
 "arc:PQGTL:2010": {
 "at": "2026-11-09",
@@ -51681,5 +51684,8 @@
 "at": "2026-11-09",
 "done": true,
 "n": 33
+},
+"drive:HUBC:2015": {
+"at": "2026-11-09"
 }
 }
