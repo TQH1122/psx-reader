@@ -95,6 +95,7 @@ def main():
             break
         h = host(web[t]["site"])
         if not h or W.NOT_SITE.search(h):
+            co[t] = {"site": h, "at": now, "years": {}, "skip": "not a company website"}  # never counted as waiting
             continue
         rows = hosts_done[h] if h in hosts_done else cdx(h)
         if rows is None:

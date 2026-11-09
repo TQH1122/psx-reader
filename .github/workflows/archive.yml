@@ -80,4 +80,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           grep -qE "[1-9][0-9]* still to look up" /tmp/last.txt || exit 0
+          # a round where no finder could look anything up (the Archive did not answer, or only skipped sites are left)
+          # does not start another at once: the 8 hour timer tries again (9 Nov 2026: it had looped every minute)
+          grep -qE "finder [0-9]: [1-9][0-9]* websites looked up" /tmp/last.txt || exit 0
           for i in 1 2 3; do gh workflow run archive.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done
