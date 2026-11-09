@@ -14527,9 +14527,10 @@
 "khi:NSRM:2005": {
 "at": "2026-11-09",
 "n": 28,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "company name does not match: Sui Northern Gas Pipe Lines Limited (names SNGP)"
 },
 "khi:FIMM:2005": {
 "at": "2026-11-09",
