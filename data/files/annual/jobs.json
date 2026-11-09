@@ -6265,7 +6265,7 @@
 "https://www.khistocks.com/assets/annual_reports/469/2018"
 ],
 "khi:INDU:2002": [
-"INDU",
+"PSX",
 2002,
 "https://www.khistocks.com/assets/annual_reports/689/2002"
 ],
@@ -7125,7 +7125,7 @@
 "https://drive.usercontent.google.com/download?id=10ntaMKsVMfvxX_EGSFtXEluIj_JD54C4&export=download&confirm=t"
 ],
 "khi:SEPL:2006": [
-"SEPL",
+"PSX",
 2006,
 "https://www.khistocks.com/assets/annual_reports/785/2006"
 ],
@@ -7200,7 +7200,7 @@
 "https://www.khistocks.com/assets/annual_reports/1641/2026"
 ],
 "khi:NRSL:2002": [
-"NRSL",
+"PSX",
 2002,
 "https://www.khistocks.com/assets/annual_reports/757/2002"
 ],
@@ -7235,7 +7235,7 @@
 "https://www.khistocks.com/assets/annual_reports/451/2004"
 ],
 "khi:CHCC:2001": [
-"CHCC",
+"PSX",
 2001,
 "https://www.khistocks.com/assets/annual_reports/598/2001"
 ],
@@ -7430,7 +7430,7 @@
 "https://www.khistocks.com/assets/annual_reports/558/2023"
 ],
 "khi:TSBL:2003": [
-"TSBL",
+"PSX",
 2003,
 "https://www.khistocks.com/assets/annual_reports/182/2003"
 ],
@@ -22258,5 +22258,830 @@
 "GFIL",
 2004,
 "https://www.khistocks.com/assets/annual_reports/468/2004"
+],
+"web:CLVL:2025": [
+"CLVL",
+2025,
+"https://www.cordobalv.com/pdf/Annual-Report-June-30-2025.pdf"
+],
+"web:PECO:2025": [
+"PECO",
+2025,
+"https://www.peco.com.pk/wp-content/uploads/2026/02/Annual-Report-2025.pdf"
+],
+"drive:LOADS:2025": [
+"LOADS",
+2025,
+"https://drive.usercontent.google.com/download?id=1It9Yq30yjRC2vMsNd3qDbWIW6iraJv2_&export=download&confirm=t"
+],
+"drive:IGIHL:2019": [
+"IGIHL",
+2019,
+"https://drive.usercontent.google.com/download?id=19iD1Wst3qMQWFZUOJR0_-OyUXHTjFRtV&export=download&confirm=t"
+],
+"arc:MIRKS:2005": [
+"MIRKS",
+2005,
+"https://web.archive.org/web/20121222074243id_/http://www.gfg.com.pk:80/Mirpurkhas/2005_annual_report.pdf"
+],
+"web:KOHP:2019": [
+"KOHP",
+2019,
+"http://www.kpcl.com.pk/kp/files/reports/annual/KPC_Annual_Report_2019.pdf"
+],
+"drive:LOADS:2018": [
+"LOADS",
+2018,
+"https://drive.usercontent.google.com/download?id=1i1aahKUNSJg2xFBg2Ydc3m9VdvE_xV4C&export=download&confirm=t"
+],
+"arc:ANSM:2016": [
+"ANSM",
+2016,
+"https://web.archive.org/web/20170713112351id_/http://ansarisugar.com.pk:80/assets/downloads/reports/2016/ANNUAL-REPORT-2016.pdf"
+],
+"khi:FASM:2006": [
+"FASM",
+2006,
+"https://www.khistocks.com/assets/annual_reports/297/2006"
+],
+"drive:TPLP:2024": [
+"TPLP",
+2024,
+"https://drive.usercontent.google.com/download?id=1JprmtnWCnuH4VTsnM82cxXAD12gXknwd&export=download&confirm=t"
+],
+"drive:TOWL:2025": [
+"TOWL",
+2025,
+"https://drive.usercontent.google.com/download?id=1nidg0_oK4I7xgxOBHd4TZo7gxLns5UkR&export=download&confirm=t"
+],
+"drive:SSOM:2014": [
+"SSOM",
+2014,
+"https://drive.usercontent.google.com/download?id=1KUmKKGEkby5H0V-feewZNzToOHCZWBOb&export=download&confirm=t"
+],
+"drive:TOWL:2024": [
+"TOWL",
+2024,
+"https://drive.usercontent.google.com/download?id=1xwhFvUkagKh4prMQw4xZg2A13IVsF-w_&export=download&confirm=t"
+],
+"arc:EPCL:2022": [
+"EPCL",
+2022,
+"https://web.archive.org/web/20230627103536id_/https://www.engropolymer.com/app/media/2023/02/EPCL-Annual-Report-2022.pdf"
+],
+"web:CLVL:2022": [
+"CLVL",
+2022,
+"https://www.cordobalv.com/pdf/Annual-Report-June-30-2022.pdf"
+],
+"web:PECO:2023": [
+"PECO",
+2023,
+"https://www.peco.com.pk/wp-content/uploads/2025/01/Annual-Report-2023.pdf"
+],
+"web:PECO:2022": [
+"PECO",
+2022,
+"https://www.peco.com.pk/wp-content/uploads/2025/01/Annual-Report-2022.pdf"
+],
+"web:PECO:2021": [
+"PECO",
+2021,
+"https://www.peco.com.pk/wp-content/uploads/2025/01/Annual-Report-2021.pdf"
+],
+"web:PECO:2020": [
+"PECO",
+2020,
+"https://www.peco.com.pk/wp-content/uploads/2025/01/Annual-Report-2020.pdf"
+],
+"arc:PCAL:2007": [
+"PCAL",
+2007,
+"https://web.archive.org/web/20140114095117id_/http://www.pakistancables.com:80/investor/reports/annual/2007%20Annual%20Report.pdf"
+],
+"web:PECO:2019": [
+"PECO",
+2019,
+"https://www.peco.com.pk/wp-content/uploads/2025/01/Annual-Report-2019.pdf"
+],
+"web:MSOT:2017": [
+"MSOT",
+2017,
+"https://masoodtextile.com/wp-content/uploads/2018/11/AnnualReport2017.pdf"
+],
+"arc:QUICE:2012": [
+"QUICE",
+2012,
+"https://web.archive.org/web/20130717170033id_/http://www.quice.com.pk:80/pdf/Quice%20Annual%20Report-June-2012.pdf"
+],
+"web:PAKQATAR:2010": [
+"PAKQATAR",
+2010,
+"https://www.pqftl.com.pk/wp-content/uploads/2024/10/2010_Annual_Financial_Report_Pak_Qatar_Family_Takaful_Islamic_Insurance.pdf"
+],
+"arc:KSBP:2005": [
+"KSBP",
+2005,
+"https://web.archive.org/web/20061104182952id_/http://www.ksb.com/ksb/web/COM/de/company/investor__relations/4c__Finanzberichte/4c__1__GB__Konzern/4c__1__0__bestellen__bericht/KSB__Annual__Report__2005__Combine,property=file.pdf"
+],
+"khi:KSBP:2003": [
+"KSBP",
+2003,
+"https://www.khistocks.com/assets/annual_reports/664/2003"
+],
+"arc:EPCL:2014": [
+"EPCL",
+2014,
+"https://web.archive.org/web/20160514111718id_/http://engropolymer.com/pdf/annual_report/annual_report_2014.pdf"
+],
+"arc:WASL:2015": [
+"WASL",
+2015,
+"https://web.archive.org/web/20170119011434id_/http://www.firstprudentialmodaraba.com/pdf/AnnualReport2015.pdf"
+],
+"arc:STJT:2010": [
+"STJT",
+2010,
+"https://web.archive.org/web/20160913141023id_/http://shahtaj.com/images/financial-reports/Annual%20Report%20For%20The%20Year%20Ended%20June%2030,%202010.pdf"
+],
+"khi:SLYT:2002": [
+"SLYT",
+2002,
+"https://www.khistocks.com/assets/annual_reports/383/2002"
+],
+"khi:BUXL:2005": [
+"BUXL",
+2005,
+"https://www.khistocks.com/assets/annual_reports/728/2005"
+],
+"khi:KOHP:2003": [
+"KOHP",
+2003,
+"https://www.khistocks.com/assets/annual_reports/642/2003"
+],
+"arc:EPCL:2010": [
+"EPCL",
+2010,
+"https://web.archive.org/web/20160514095139id_/http://engropolymer.com/pdf/annual_report/annual_report_2010.pdf"
+],
+"web:PECO:2011": [
+"PSX",
+2011,
+"http://www.peco.com.pk/wp-content/uploads/acc/AnnualReport2011.pdf"
+],
+"arc:WASL:2013": [
+"WASL",
+2013,
+"https://web.archive.org/web/20240617124507id_/http://www.firstprudentialmodaraba.com/first_pak_downloads/AnnualReport2013.pdf"
+],
+"arc:INDU:2006": [
+"INDU",
+2006,
+"https://web.archive.org/web/20080920161549id_/http://www.toyota-indus.com:80/pdf/Annual-Rep-2006.pdf"
+],
+"drive:BTL:2013": [
+"BTL",
+2013,
+"https://drive.usercontent.google.com/download?id=1vAqFY9RONdvf4cVHbGYitBkHq24dNUyz&export=download&confirm=t"
+],
+"drive:JATM:2025": [
+"JATM",
+2025,
+"https://drive.usercontent.google.com/download?id=1Vf_r57e1HqWWS-NgBk-GFSdWYSxi2s4z&export=download&confirm=t"
+],
+"khi:INDU:2005": [
+"INDU",
+2005,
+"https://www.khistocks.com/assets/annual_reports/689/2005"
+],
+"drive:CFL:2016": [
+"CFL",
+2016,
+"https://drive.usercontent.google.com/download?id=1uMyDmx2-nP-aqK-hF62CajfSzKdXGNZH&export=download&confirm=t"
+],
+"drive:JATM:2023": [
+"JATM",
+2023,
+"https://drive.usercontent.google.com/download?id=1fxOttLewIvD6rsHU1yVlYsRPMHhzAMqg&export=download&confirm=t"
+],
+"arc:CFL:2008": [
+"CFL",
+2008,
+"https://web.archive.org/web/20210927200146id_/http://urdu.crescentfibres.com/wp-content/uploads/2016/05/rpt_1223704324ANNUAL-REPORT-2008.pdf"
+],
+"web:GATI:2024": [
+"GATI",
+2024,
+"https://gatron.com/wp-content/uploads/2025/04/Gaton-Annual-Report-2024-new.pdf"
+],
+"arc:FFC:2004": [
+"FFC",
+2004,
+"https://web.archive.org/web/20120316144839id_/http://www.ffc.com.pk:80/uploads/docs/ar_2004.pdf"
+],
+"drive:SZTM:2017": [
+"SZTM",
+2017,
+"https://drive.usercontent.google.com/download?id=1hfhxs9owv4kU6w_MHbq56BM8EtyDRiNE&export=download&confirm=t"
+],
+"drive:JATM:2022": [
+"JATM",
+2022,
+"https://drive.usercontent.google.com/download?id=1LDy6UtkfrrpOxUFHQeR6z2Xb-qiLBbTY&export=download&confirm=t"
+],
+"drive:JSCL:2013": [
+"JSCL",
+2013,
+"https://drive.usercontent.google.com/download?id=1SxikCbOX99sMwnUtxiCbp7Tf3C-yUHEa&export=download&confirm=t"
+],
+"arc:KTML:2009": [
+"KTML",
+2009,
+"https://web.archive.org/web/20120617081123id_/http://www.kmlg.com:80/ktml_annual_2009.pdf"
+],
+"khi:CHCC:2003": [
+"CHCC",
+2003,
+"https://www.khistocks.com/assets/annual_reports/598/2003"
+],
+"web:TICL:2019": [
+"TICL",
+2019,
+"https://thalindustries.com/wp-content/uploads/2020/01/Thal-Annual-Report-2019.pdf"
+],
+"web:TATM:2025": [
+"TATM",
+2025,
+"https://cms.tatapakistan.com/storage/media/1780986267_GrrVkl9eYI.pdf"
+],
+"khi:TATM:2006": [
+"TATM",
+2006,
+"https://www.khistocks.com/assets/annual_reports/408/2006"
+],
+"web:MWMP:2025": [
+"MWMP",
+2025,
+"https://mandviwallamauser.com/wp-content/uploads/2026/10/annual-report-2025.pdf"
+],
+"web:MWMP:2023": [
+"MWMP",
+2023,
+"https://mandviwallamauser.com/wp-content/uploads/2026/10/annual-report-2023.pdf"
+],
+"drive:DLL:2015": [
+"DLL",
+2015,
+"https://drive.usercontent.google.com/download?id=1xVz73LHrnGzpWhTGJAdHr4UUcgREGBCu&export=download&confirm=t"
+],
+"arc:KML:2012": [
+"KML",
+2012,
+"https://web.archive.org/web/20150218165104id_/http://www.kohinoormills.com:80/financial/2012/KMLAnnualReport2012.pdf"
+],
+"khi:SML:2020": [
+"SML",
+2020,
+"https://www.khistocks.com/assets/annual_reports/589/2020"
+],
+"web:DLL:2014": [
+"DLL",
+2014,
+"https://dawoodlawrencepur.com/wp-content/uploads/2023/01/DLL-Annual-Report-2014.pdf"
+],
+"drive:CJPL:2018": [
+"CJPL",
+2018,
+"https://drive.usercontent.google.com/download?id=1vyqcVqe_ayf7ateuiBVj5RKDCgk02uWX&export=download&confirm=t"
+],
+"drive:CJPL:2016": [
+"CJPL",
+2016,
+"https://drive.usercontent.google.com/download?id=15_OA2SW6qmgUXCB-rwI4zkLItN3GiEwW&export=download&confirm=t"
+],
+"drive:GSPM:2025": [
+"GSPM",
+2025,
+"https://drive.usercontent.google.com/download?id=1d8BSkp7lVe4bcmm-5azcmPX63Lwxxfaw&export=download&confirm=t"
+],
+"khi:TPLI:2023": [
+"TPLI",
+2023,
+"https://www.khistocks.com/assets/annual_reports/1652/2023"
+],
+"arc:KML:2011": [
+"KML",
+2011,
+"https://web.archive.org/web/20120710075030id_/http://www.kohinoormills.com:80/financial/2011/KMLAnnualReport2011.pdf"
+],
+"drive:NATM:2015": [
+"NATM",
+2015,
+"https://drive.usercontent.google.com/download?id=1Jq1SAucVeIUkNnALi1P_Vksh-XfL_B70&export=download&confirm=t"
+],
+"arc:KML:2010": [
+"KML",
+2010,
+"https://web.archive.org/web/20120710075027id_/http://www.kohinoormills.com:80/financial/2010/KohinoorAnnualReport2010.pdf"
+],
+"arc:ESBL:2003": [
+"ESBL",
+2003,
+"https://web.archive.org/web/20050520200401id_/http://www.escortsbank.net:80/pdf/Annual%20Report%202003.pdf"
+],
+"arc:ACPL:2025": [
+"ACPL",
+2025,
+"https://web.archive.org/web/20260121060322id_/https://attockcement.com/wp-content/uploads/2025/09/Attock-Annual-Report-2025.pdf"
+],
+"web:GATM:2022": [
+"GATM",
+2022,
+"https://gulahmed.com/wp/wp-content/uploads/2022/10/Annual_Report_2022.pdf"
+],
+"drive:ASTM:2025": [
+"ASTM",
+2025,
+"https://drive.usercontent.google.com/download?id=1vlPKawEq9VnFNy97tfl5lTwRm7vQJE0l&export=download&confirm=t"
+],
+"drive:KHYT:2024": [
+"KHYT",
+2024,
+"https://drive.usercontent.google.com/download?id=1rji4RI3YG4vclivgfMLPO1R6D7x091dM&export=download&confirm=t"
+],
+"khi:TPLI:2022": [
+"TPLI",
+2022,
+"https://www.khistocks.com/assets/annual_reports/1652/2022"
+],
+"arc:STL:2023": [
+"STL",
+2023,
+"https://web.archive.org/web/20261016061223id_/https://supernet-technologies.com/assets/images/pdf/HCL-Annual-Report-2023-Complete.pdf"
+],
+"drive:CTM:2025": [
+"CTM",
+2025,
+"https://drive.usercontent.google.com/download?id=1e-epyfpIeip1EN4gsI3lHtP-lzkNVkxk&export=download&confirm=t"
+],
+"khi:KEL:2005": [
+"KEL",
+2005,
+"https://www.khistocks.com/assets/annual_reports/639/2005"
+],
+"khi:APL:2006": [
+"APL",
+2006,
+"https://www.khistocks.com/assets/annual_reports/1343/2006"
+],
+"web:JVDC:2022": [
+"JVDC",
+2022,
+"https://jcl.com.pk/wp-content/uploads/2023/03/AnnualReport2022.pdf"
+],
+"khi:FRCL:2006": [
+"FRCL",
+2006,
+"https://www.khistocks.com/assets/annual_reports/840/2006"
+],
+"khi:NRSL:2003": [
+"NRSL",
+2003,
+"https://www.khistocks.com/assets/annual_reports/757/2003"
+],
+"web:CTM:2021": [
+"CTM",
+2021,
+"https://colonytextiles.com/wp-content/uploads/2021/10/Annual-Report-2021.pdf"
+],
+"khi:TPLI:2019": [
+"TPLI",
+2019,
+"https://www.khistocks.com/assets/annual_reports/1652/2019"
+],
+"arc:STL:2018": [
+"STL",
+2018,
+"https://web.archive.org/web/20261016071837id_/https://supernet-technologies.com/assets/images/pdf/Hallmark-Annual-Report-june-30-2018.pdf"
+],
+"khi:TCORP:2005": [
+"TCORP",
+2005,
+"https://www.khistocks.com/assets/annual_reports/572/2005"
+],
+"arc:CRTM:2011": [
+"CRTM",
+2011,
+"https://web.archive.org/web/20120617110424id_/http://www.crescenttextile.com:80/finance/Annual%20Report%202011.pdf"
+],
+"khi:CRTM:2004": [
+"CRTM",
+2004,
+"https://www.khistocks.com/assets/annual_reports/463/2004"
+],
+"arc:STL:2016": [
+"STL",
+2016,
+"https://web.archive.org/web/20261016070553id_/https://supernet-technologies.com/assets/images/pdf/Annual-Report-Dec-2016.pdf"
+],
+"web:CTM:2016": [
+"CTM",
+2016,
+"https://colonytextiles.com/wp-content/uploads/2021/06/Annual-Report-2016.pdf"
+],
+"web:CTM:2015": [
+"CTM",
+2015,
+"https://colonytextiles.com/wp-content/uploads/2021/06/Annual-Report-2015.pdf"
+],
+"arc:MERIT:2009": [
+"MERIT",
+2009,
+"https://web.archive.org/web/20190713001051id_/http://www.meritpack.com:80/Financial%20year%202009/Annual%202009.pdf"
+],
+"web:BWHL:2026": [
+"BWHL",
+2026,
+"https://bwheels.com/wp-content/uploads/2026/09/Annual-Report-2026-03-09-2026.pdf"
+],
+"drive:HINO:2026": [
+"HINO",
+2026,
+"https://drive.usercontent.google.com/download?id=1YjiZT9H948_K1AtcmAJXi5Lvsr8p844g&export=download&confirm=t"
+],
+"drive:KOHTM:2015": [
+"KOHTM",
+2015,
+"https://drive.usercontent.google.com/download?id=1eCil0ozas_0mcAI_FB-vPKr40SzSHcUc&export=download&confirm=t"
+],
+"drive:PASM:2025": [
+"PASM",
+2025,
+"https://drive.usercontent.google.com/download?id=1FGWpeNoJKUKoIXv8EwlHtsyrQ9TUp80N&export=download&confirm=t"
+],
+"drive:OCTOPUS:2022": [
+"OCTOPUS",
+2022,
+"https://drive.usercontent.google.com/download?id=1EytqUNyfUng3aeB5U1JpdA45MXQGB2JC&export=download&confirm=t"
+],
+"drive:YOUW:2023": [
+"YOUW",
+2023,
+"https://drive.usercontent.google.com/download?id=17CwGDHwha5lo2cUMnNg3R9U5HRNWPNsP&export=download&confirm=t"
+],
+"khi:TPLT:2024": [
+"TPLT",
+2024,
+"https://www.khistocks.com/assets/annual_reports/1864/2024"
+],
+"khi:BWHL:2022": [
+"BWHL",
+2022,
+"https://www.khistocks.com/assets/annual_reports/678/2022"
+],
+"web:SSGC:2023": [
+"SSGC",
+2023,
+"https://www.ssgc.com.pk/web/wp-content/uploads/pdfs/Annual_Report_2023.pdf"
+],
+"khi:TRIPF:2005": [
+"TRIPF",
+2005,
+"https://www.khistocks.com/assets/annual_reports/874/2005"
+],
+"drive:PASM:2018": [
+"PASM",
+2018,
+"https://drive.usercontent.google.com/download?id=1L4bsc44SnZGpLqcsGM_GanYQcEm2iuDG&export=download&confirm=t"
+],
+"arc:SFL:2021": [
+"SFL",
+2021,
+"https://web.archive.org/web/20240512091910id_/http://www.sapphire.com.pk/stml/pdf/STML%20AR%202021.pdf"
+],
+"web:BWHL:2021": [
+"BWHL",
+2021,
+"https://bwheels.com/wp-content/uploads/2021/09/BWL-ANNUAL-ACCOUNTS-JUNE-2021-FINAL.pdf"
+],
+"khi:DINT:2007": [
+"DINT",
+2007,
+"https://www.khistocks.com/assets/annual_reports/292/2007"
+],
+"web:SSGC:2021": [
+"SSGC",
+2021,
+"https://www.ssgc.com.pk/web/wp-content/uploads/pdfs/2021/2021_annual_report.pdf"
+],
+"khi:KOHTM:2002": [
+"KOHTM",
+2002,
+"https://www.khistocks.com/assets/annual_reports/338/2002"
+],
+"khi:STCL:2005": [
+"STCL",
+2005,
+"https://www.khistocks.com/assets/annual_reports/848/2005"
+],
+"web:STPL:2013": [
+"STPL",
+2013,
+"https://www.siddiqsonstinplate.com/tinplate/docs/Siddiqsons_Annual_2013_04-10-2013.pdf"
+],
+"khi:MERIT:2002": [
+"MERIT",
+2002,
+"https://www.khistocks.com/assets/annual_reports/781/2002"
+],
+"web:STPL:2012": [
+"STPL",
+2012,
+"https://www.siddiqsonstinplate.com/tinplate/docs/Siddiqsons-Annual-2012.pdf"
+],
+"web:STPL:2011": [
+"STPL",
+2011,
+"https://www.siddiqsonstinplate.com/tinplate/docs/Siddiqsons_Annual_Report_2011_Final.pdf"
+],
+"khi:JSML:2006": [
+"JSML",
+2006,
+"https://www.khistocks.com/assets/annual_reports/577/2006"
+],
+"khi:PMRS:2002": [
+"PMRS",
+2002,
+"https://www.khistocks.com/assets/annual_reports/584/2002"
+],
+"web:BWHL:2020": [
+"BWHL",
+2020,
+"https://bwheels.com/wp-content/uploads/2020/10/BWL-ANNUAL-ACCOUNTS-JUNE-2020.pdf"
+],
+"arc:RUBY:2018": [
+"RUBY",
+2018,
+"https://web.archive.org/web/20190203231523id_/http://www.rubytextile.com.pk:80/pdf/Annual30-06-2018.pdf"
+],
+"drive:JDMT:2017": [
+"JDMT",
+2017,
+"https://drive.usercontent.google.com/download?id=1OQDjM2oaAg-sG7LyIvE73MkfqAFns8Iw&export=download&confirm=t"
+],
+"drive:JDMT:2015": [
+"JDMT",
+2015,
+"https://drive.usercontent.google.com/download?id=13aPYn-B0GMNZo1_cp59UWrj2eS1bDGrM&export=download&confirm=t"
+],
+"drive:KOIL:2018": [
+"KOIL",
+2018,
+"https://drive.usercontent.google.com/download?id=12R3KEfYY8-ZRp-x6hEk_V3ZaHuCx23dJ&export=download&confirm=t"
+],
+"web:SYS:2025": [
+"SYS",
+2025,
+"https://www.systemsltd.com/sites/default/files/2026-04/Systems%20Limited-Annual%20Report%202025.pdf"
+],
+"drive:JDMT:2013": [
+"JDMT",
+2013,
+"https://drive.usercontent.google.com/download?id=1TGKb2nqz7zZ6dS35vvmFaE_S23kIQV5V&export=download&confirm=t"
+],
+"arc:KOIL:2017": [
+"KOIL",
+2017,
+"https://web.archive.org/web/20240719000544id_/http://kil.com.pk/files/reports/annual/KIL_Annual_Report_2017.pdf"
+],
+"web:SYS:2024": [
+"SYS",
+2024,
+"https://www.systemsltd.com/sites/default/files/2025-04/Annual%20Report-%202024%20-%20Systems%20Limited..pdf"
+],
+"arc:SHSML:2014": [
+"SHSML",
+2014,
+"https://web.archive.org/web/20160527051429id_/http://shahmuradsugar.co/pdf/Annual%202014.pdf"
+],
+"drive:KOIL:2016": [
+"KOIL",
+2016,
+"https://drive.usercontent.google.com/download?id=1LvHcMkkQMTCBVC-a3s1GbUBh63Cof8aq&export=download&confirm=t"
+],
+"drive:ELCM:2020": [
+"ELCM",
+2020,
+"https://drive.usercontent.google.com/download?id=1wg1aXCcColiOdB2QW-77KwR95EYO1I-Q&export=download&confirm=t"
+],
+"arc:JSBL:2013": [
+"JSBL",
+2013,
+"https://web.archive.org/web/20150423163800id_/http://www.jsbl.com/wp-content/uploads/2014/08/ar-2013.pdf"
+],
+"arc:SHSML:2013": [
+"SHSML",
+2013,
+"https://web.archive.org/web/20160527050734id_/http://shahmuradsugar.co/pdf/Annual%2030-09-2013.pdf"
+],
+"drive:FZCM:2023": [
+"FZCM",
+2023,
+"https://drive.usercontent.google.com/download?id=1OitQKXbgdHLLXCCMLNtnSGozDadKHMf1&export=download&confirm=t"
+],
+"drive:AATM:2017": [
+"AATM",
+2017,
+"https://drive.usercontent.google.com/download?id=1f8tj-J2s8wBbSd8aXg9ItOwhX-GzMkBR&export=download&confirm=t"
+],
+"drive:ELCM:2019": [
+"ELCM",
+2019,
+"https://drive.usercontent.google.com/download?id=1gGxGSE__KouBsAA_LLbkyLPiFAukGc_8&export=download&confirm=t"
+],
+"arc:PTC:2018": [
+"PTC",
+2018,
+"https://web.archive.org/web/20190922150045id_/https://ptcl.com.pk/uploads/PTCL-AR-2018.pdf"
+],
+"arc:SHSML:2012": [
+"SHSML",
+2012,
+"https://web.archive.org/web/20160526225933id_/http://shahmuradsugar.co/pdf/Annual%202012.pdf"
+],
+"arc:JSBL:2011": [
+"JSBL",
+2011,
+"https://web.archive.org/web/20150423153455id_/http://www.jsbl.com/wp-content/uploads/2013/01/ar-2011.pdf"
+],
+"arc:JSBL:2010": [
+"JSBL",
+2010,
+"https://web.archive.org/web/20110424093844id_/http://jsbl.com/jsbl_annual_report_2010.pdf"
+],
+"web:UBDL:2025": [
+"UBDL",
+2025,
+"https://ubrands.biz/uploads/files/Annual_2025.pdf"
+],
+"web:BLUEX:2024": [
+"BLUEX",
+2024,
+"https://www.blue-ex.com/assets/financial-repo/Annual-Report-2024-LR.pdf"
+],
+"web:UBDL:2023": [
+"UBDL",
+2023,
+"https://ubrands.biz/uploads/files/annual-2023.pdf"
+],
+"arc:AICL:2015": [
+"AICL",
+2015,
+"https://web.archive.org/web/20161222014545id_/http://adamjeeinsurance.com/downloads/pdf/annual_reports/2015/04_annual_report2015/annual_report2015.pdf"
+],
+"khi:FECTC:2006": [
+"FECTC",
+2006,
+"https://www.khistocks.com/assets/annual_reports/607/2006"
+],
+"web:FZCM:2018": [
+"FZCM",
+2018,
+"https://fazalcloth.com/FinancialReports/Accounts2018.pdf"
+],
+"arc:AICL:2014": [
+"AICL",
+2014,
+"https://web.archive.org/web/20161221200158id_/http://adamjeeinsurance.com/downloads/pdf/annual_reports/2014/04_annual_report2014/annual_report2014.pdf"
+],
+"khi:KHTC:2006": [
+"KHTC",
+2006,
+"https://www.khistocks.com/assets/annual_reports/621/2006"
+],
+"arc:HAEL:2025": [
+"HAEL",
+2025,
+"https://web.archive.org/web/20261008131900id_/https://halaenterprises.com/Reports/Annual-report-2025.pdf"
+],
+"web:FZCM:2014": [
+"FZCM",
+2014,
+"https://fazalcloth.com/FinancialReports/FCML_2014_Financials_Statements.pdf"
+],
+"web:NCL:2011": [
+"NCL",
+2011,
+"https://www.nishat.net/images/pdf/NCG_Financials/NCL_Annual/annual2011.pdf"
+],
+"drive:ASHT:2015": [
+"ASHT",
+2015,
+"https://drive.usercontent.google.com/download?id=1MvZWE8XiYBOYSGpb-wMd3mwZtDP4rtm9&export=download&confirm=t"
+],
+"drive:GFIL:2016": [
+"GFIL",
+2016,
+"https://drive.usercontent.google.com/download?id=127sMhXEAHCVgUs3DVFnqM__m0lW4MP8G&export=download&confirm=t"
+],
+"arc:BAFL:2022": [
+"BAFL",
+2022,
+"https://web.archive.org/web/20231122092653id_/https://www.bankalfalah.com/wp-content/themes/alfalah-theme/pdf/baf-annual-report-2022.pdf"
+],
+"drive:ARCTM:2023": [
+"ARCTM",
+2023,
+"https://drive.usercontent.google.com/download?id=1jKf0Q77ZtZy8hbJYMFg0gDTNMD4DdLrp&export=download&confirm=t"
+],
+"drive:ALTN:2025": [
+"ALTN",
+2025,
+"https://drive.usercontent.google.com/download?id=1V4Orj_di5Nbaq3xuj2FleH_cIsWKmXD3&export=download&confirm=t"
+],
+"drive:IDYM:2017": [
+"IDYM",
+2017,
+"https://drive.usercontent.google.com/download?id=1mfY3c_3I_Wtb1_5D2MZJKw2X9gblGxKN&export=download&confirm=t"
+],
+"drive:IDYM:2016": [
+"IDYM",
+2016,
+"https://drive.usercontent.google.com/download?id=1Dz61WzACxBRuV-jPKrz4Q_gwKJCkb94X&export=download&confirm=t"
+],
+"arc:DCL:2013": [
+"DCL",
+2013,
+"https://web.archive.org/web/20180205091924id_/http://yousufdewan.com:80/DFML/Financial%20Highlights/dfml/Annual%20report/DFML%20Annual%202013%20Final.pdf"
+],
+"drive:ARCTM:2022": [
+"ARCTM",
+2022,
+"https://drive.usercontent.google.com/download?id=1Ejh1asHSs0Ni1RjZHgCGNFOmDRe4dX_I&export=download&confirm=t"
+],
+"arc:BAFL:2021": [
+"BAFL",
+2021,
+"https://web.archive.org/web/20231122093017id_/https://www.bankalfalah.com/wp-content/themes/alfalah-theme/pdf/BAF-Annual-Report-2021.pdf"
+],
+"drive:ALTN:2024": [
+"ALTN",
+2024,
+"https://drive.usercontent.google.com/download?id=1YI9WwWRGVjqiu4whQd0ax7HnG2-Ipk2A&export=download&confirm=t"
+],
+"drive:GUSM:2024": [
+"GUSM",
+2024,
+"https://drive.usercontent.google.com/download?id=1guNRp008HYHwc14lU-e5KUfsnBn4inF0&export=download&confirm=t"
+],
+"web:IDYM:2015": [
+"IDYM",
+2015,
+"http://www.indus-group.com/downloads/Annual2015IDML.pdf"
+],
+"arc:FEROZ:2015": [
+"FEROZ",
+2015,
+"https://web.archive.org/web/20170111035628id_/http://ferozsons-labs.com/images/stories/Financial%20Statements%20for%20the%20year%20ended%20June%2030,%202015.pdf"
+],
+"arc:POL:2011": [
+"POL",
+2011,
+"https://web.archive.org/web/20120526160833id_/http://www.pakoil.com.pk:80/investor_relations/reports/2010_11/annual_accounts_2011/annual_accounts_2011/pol_annual_report_2011.pdf"
+],
+"arc:TPL:2023": [
+"TPL",
+2023,
+"https://web.archive.org/web/20240807123416id_/https://tplcorp.com/wp-content/uploads/2023/09/TPL-Corp-Annual-Report-2022-2023.pdf"
+],
+"web:ANL:2006": [
+"ANL",
+2006,
+"https://www.azgard9.com/financial/Annual%20Year%20Ended%2030-12-2006.pdf"
+],
+"arc:TPL:2016": [
+"TPL",
+2016,
+"https://web.archive.org/web/20190204130257id_/http://tplcorp.com/wp-content/uploads/annual-reports/TPL-Trakker-Annual-Report-2016.pdf"
+],
+"khi:ADMM:2006": [
+"PSX",
+2006,
+"https://www.khistocks.com/assets/annual_reports/451/2006"
+],
+"khi:GFIL:2002": [
+"GFIL",
+2002,
+"https://www.khistocks.com/assets/annual_reports/468/2002"
+],
+"khi:SARC:2002": [
+"SARC",
+2002,
+"https://www.khistocks.com/assets/annual_reports/763/2002"
+],
+"arc:AHTM:2020": [
+"AHTM",
+2020,
+"https://web.archive.org/web/20230803053205id_/https://ahtml.com.pk/wp-content/uploads/2020/10/Annual-Report2020.pdf"
 ]
 }
