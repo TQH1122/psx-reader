@@ -14780,7 +14780,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:KOHC:2005": {
 "at": "2026-11-02",
@@ -41159,9 +41160,10 @@
 "arc:FCSC:2006": {
 "at": "2026-11-09",
 "n": 24,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:FCSC:2004": {
 "at": "2026-11-09",
@@ -41169,8 +41171,8 @@
 "tries": 1,
 "redo8": 1,
 "waits": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:PMRS:2017": {
 "at": "2026-11-08",
@@ -41217,9 +41219,9 @@
 "at": "2026-11-09",
 "waits": 1,
 "n": 8,
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:PMRS:2016": {
 "at": "2026-11-08",
@@ -44406,7 +44408,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:NATF:2006": {
 "at": "2026-11-08",
