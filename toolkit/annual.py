@@ -392,7 +392,8 @@ def refresh_flags():
         flag = lambda xs: [1 if x is not None else None for x in (xs or [])]
         jw({"note": "Which years already hold checked profit and equity figures (1) in the tracker, so the reader skips "
                     "them; refreshed from the tracker every run", "asOf": date.today().isoformat(),
-            "rows": {t: {"basis": r.get("basis"), "fy": r.get("fy") or [], "ni": flag(r.get("ni")), "eq": flag(r.get("eq"))}
+            "rows": {t: {"basis": r.get("basis"), "fy": r.get("fy") or [], "ni": flag(r.get("ni")), "eq": flag(r.get("eq")),
+                         "assets": flag(r.get("assets")), "cfo": flag(r.get("cfo"))}
                      for t, r in rows.items() if isinstance(r, dict)}}, lp, indent=0)
     sc = site_json("screener")
     sp = os.path.join(DB, "market", "screener.json")
@@ -408,8 +409,14 @@ def covered(tk, longrows, extracts):
     report statements, and multi year summary years on the same basis (one summary page gives 6 to 10 years)"""
     r = longrows.get(tk) or {}
     group = r.get("basis") == "group"
-    fy, ni, eq = r.get("fy") or [], r.get("ni") or [], r.get("eq") or []
-    cov = {y for i, y in enumerate(fy) if i < len(ni) and ni[i] is not None and i < len(eq) and eq[i] is not None}
+    # 9 Nov 2026: a year counts as complete only when profit, equity, total assets and operating cash flow are all
+    # held. Before, profit and equity were enough, so a year filled from KHI Stocks' highlights never had its full
+    # report read and every other metric (assets, cash flow, capex, margins) stayed at the data source's few years.
+    # Each report is still read once only, so this cannot loop.
+    fy = r.get("fy") or []
+    need = [r.get(k) or [] for k in ("ni", "eq", "assets", "cfo") if k in r] if "assets" in r else [r.get("ni") or [], r.get("eq") or []]
+    cov = {y for i, y in enumerate(fy) if all(i < len(xs) and xs[i] is not None for xs in need)}
+    full = lambda row: isinstance(row, dict) and row.get("eq") is not None and row.get("assets") is not None
     for d in extracts:
         for b in ("C", "S"):
             # a group company's year is filled only by group accounts (3 Nov 2026: company only extracts from KHI Stocks
@@ -419,14 +426,14 @@ def covered(tk, longrows, extracts):
                 # only years whose profit was read (8 Nov 2026: a read that gave only assets or cash had marked the
                 # year as done, so the year's full report on his Drive or the company's website was never read)
                 # a group year needs the owners' share (a consolidated total alone leaves the history empty)
-                cov |= {int(y) for y, row in (d.get(b) or {}).items() if str(y).isdigit() and isinstance(row, dict)
+                cov |= {int(y) for y, row in (d.get(b) or {}).items() if str(y).isdigit() and full(row)
                         and (row.get("ni") is not None or (row.get("pat") is not None and not (group and b == "C")))}
         for k in ("SUM", "SUM_C", "SUM_X"):
             sm = d.get(k) or {}
             ok = sm.get("basis") == "consolidated" if group else sm.get("basis") in ("standalone", "unclear")
             if ok:
                 cov |= {int(y) for y, row in (sm.get("years") or {}).items()
-                        if str(y).isdigit() and isinstance(row, dict) and (row.get("ni") is not None or row.get("pat") is not None)}
+                        if str(y).isdigit() and full(row) and (row.get("ni") is not None or row.get("pat") is not None)}
     return cov - {y for t, y in RECHECK if t == tk}
 
 
@@ -451,7 +458,10 @@ def candidates(tk, cat, docs):
     for y, src, url in sorted(alts, key=lambda a: a[1] != "drive"):  # Drive first: his own copy always downloads
         cur = cands.get(y)
         st = STATE.get(f"{cur[0]}:{tk}:{y}") or {} if cur else {}
-        if cur is None or (tk in GROUPS and cur[0] == "khi") or (not st.get("done") and (st.get("tries", 0) >= 2 or st.get("retry"))):
+        # 9 Nov 2026: his own Drive copy (the full report) is read ahead of KHI Stocks' file for every company, not only
+        # for groups; KHI's files are often short extracts with few statement lines
+        if cur is None or (cur[0] == "khi" and (tk in GROUPS or src == "drive")) or \
+                (not st.get("done") and (st.get("tries", 0) >= 2 or st.get("retry"))):
             cands[y] = (src, url)
     return cands
 
@@ -1094,7 +1104,9 @@ def read_one(job, readers, sc, work):
         # numbers, one more model is asked (up to four reads), instead of losing the year as before (192 reports);
         # when no model gave it, a third model is asked
         part = "C|" if cons else "S|"
-        anchor = {k for x in fs for k in x if k.startswith(part) and k.rsplit("|", 1)[1] in ("pat", "ni")}
+        # 9 Nov 2026: the main lines (sales, profit, equity, total assets, operating cash flow) all count, so a
+        # report no longer comes back with only five figures because two models differed on the rest
+        anchor = {k for x in fs for k in x if k.startswith(part) and k.rsplit("|", 1)[1] in ("pat", "ni", "rev", "eq", "assets", "cfo")}
         open_anchor = bool(anchor - set(ok))
         want = 2 - len(okr) if len(okr) < 2 else (1 if (bad and len(okr) < 3) or (open_anchor and len(okr) < 4)
                                                       or (not anchor and len(okr) < 3) else 0)
