@@ -1182,34 +1182,35 @@
 "done": true
 },
 "khi:HUMNL:2022": {
-"at": "2026-11-01",
-"tries": 1,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
-"second": 1
-},
-"khi:HUMNL:2021": {
-"at": "2026-11-07",
+"at": "2026-11-09",
 "tries": 1,
 "second": 1,
+"done": true,
+"n": 5
+},
+"khi:HUMNL:2021": {
+"at": "2026-11-09",
+"tries": 2,
+"second": 1,
 "n": 10,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:HUMNL:2020": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "tries": 1,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 8
 },
 "khi:HUMNL:2019": {
-"at": "2026-11-07",
+"at": "2026-11-09",
 "tries": 1,
 "second": 1,
 "n": 0,
-"retry": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:SIEM:2019": {
 "at": "2026-11-01",
@@ -1831,7 +1832,7 @@
 "done": true
 },
 "khi:DFML:2005": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 34,
 "retry": 1,
 "tries": 1,
@@ -2834,7 +2835,7 @@
 "redo9": 1
 },
 "khi:PSO:2016": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 28,
 "tries": 1,
 "redo8": 1,
@@ -3378,11 +3379,11 @@
 },
 "khi:AHCL:2001": {
 "at": "2026-11-09",
-"n": 19,
+"n": 26,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:PKGS:2003": {
 "at": "2026-11-01",
@@ -3568,7 +3569,7 @@
 "redo9": 1
 },
 "khi:AGP:2020": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 23,
 "waits": 2,
 "reread": [
@@ -4921,8 +4922,8 @@
 "n": 22,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:LCI:2017": {
 "at": "2026-11-01",
@@ -4980,8 +4981,8 @@
 "n": 17,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:NCL:2017": {
 "at": "2026-11-01",
@@ -5566,8 +5567,8 @@
 "n": 10,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:CSAP:2015": {
 "at": "2026-11-01",
@@ -5643,7 +5644,7 @@
 "done": true
 },
 "khi:TELE:2022": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 3,
 "second": 1,
@@ -7171,7 +7172,8 @@
 "n": 28,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:BAPL:2003": {
 "at": "2026-11-01",
@@ -7932,7 +7934,7 @@
 "redo9": 1
 },
 "khi:NRSL:2004": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 29,
 "retry": 1,
 "tries": 1,
@@ -8067,7 +8069,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:WAVESAPP:2004": {
 "at": "2026-11-08",
@@ -8203,7 +8206,7 @@
 "n": 30
 },
 "khi:SZTM:2004": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 34,
 "retry": 1,
 "tries": 1,
@@ -8391,7 +8394,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:SUTM:2007": {
 "at": "2026-11-01",
@@ -8593,11 +8597,12 @@
 "done": true
 },
 "khi:JSML:2007": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 28,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:SHJS:2007": {
 "at": "2026-11-01",
@@ -8664,11 +8669,12 @@
 "redo9": 1
 },
 "khi:GOC:2008": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 26,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:TSBL:2001": {
 "at": "2026-11-01",
@@ -8697,7 +8703,7 @@
 "done": true
 },
 "khi:GOC:2006": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 24,
 "retry": 1,
 "tries": 1,
@@ -8752,7 +8758,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:CLVL:2003": {
 "at": "2026-11-08",
@@ -8770,7 +8777,7 @@
 "redo9": 1
 },
 "khi:ASHT:2002": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -9142,11 +9149,12 @@
 "second": 1
 },
 "khi:UVIC:2002": {
-"at": "2026-11-01",
-"n": 15,
+"at": "2026-11-09",
+"n": 19,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:BCL:2007": {
 "at": "2026-11-01",
@@ -9228,11 +9236,11 @@
 "redo9": 1
 },
 "khi:ZTL:2006": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 20,
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:BCL:2005": {
 "at": "2026-11-01",
@@ -9295,14 +9303,14 @@
 "redo9": 1
 },
 "khi:BCL:2003": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 20,
 "reread": [
 2003
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:AGSML:2006": {
 "at": "2026-11-01",
@@ -9584,7 +9592,7 @@
 "redo9": 1
 },
 "khi:BCL:2001": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 30,
 "retry": 1,
 "tries": 1,
@@ -9738,7 +9746,7 @@
 "redo8": 1
 },
 "khi:SERT:2006": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 24,
 "retry": 1,
 "tries": 1,
@@ -9767,9 +9775,10 @@
 "khi:SUHJ:2005": {
 "at": "2026-11-09",
 "n": 34,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:DIIL:2002": {
 "at": "2026-11-01",
@@ -9980,11 +9989,11 @@
 "why": "company name does not match: Pakistan Electric Power Company Limited (names HUBC)"
 },
 "khi:HUSI:2007": {
-"at": "2026-11-01",
-"n": 22,
-"retry": 1,
+"at": "2026-11-09",
+"n": 24,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:ARMG:2003": {
 "at": "2026-11-09",
@@ -10141,11 +10150,11 @@
 "n": 22
 },
 "khi:SARC:2014": {
-"at": "2026-11-01",
-"n": 18,
-"retry": 1,
+"at": "2026-11-09",
+"n": 20,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:FANM:2001": {
 "at": "2026-11-01",
@@ -10155,7 +10164,7 @@
 "redo9": 1
 },
 "khi:SARC:2007": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 18,
 "retry": 1,
 "tries": 1,
@@ -10225,11 +10234,12 @@
 "redo9": 1
 },
 "khi:HUSI:2005": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 26,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
 },
 "khi:QUET:2007": {
 "at": "2026-11-01",
@@ -10272,7 +10282,7 @@
 "redo9": 1
 },
 "khi:KOHP:2004": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 22,
 "retry": 1,
 "tries": 1,
@@ -10421,7 +10431,7 @@
 "redo9": 1
 },
 "khi:HUSI:2003": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 27,
 "retry": 1,
 "tries": 1,
@@ -10731,7 +10741,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:CSIL:2003": {
 "at": "2026-11-08",
@@ -13154,7 +13165,7 @@
 "second": 1,
 "n": 22,
 "redo9": 1,
-"waits": 1
+"waits": 2
 },
 "khi:DWSM:2005": {
 "at": "2026-11-09",
@@ -13276,12 +13287,11 @@
 "why": "company name does not match: Pakistan Industrial Trading Corporation (names NICL)"
 },
 "khi:SITC:2004": {
-"at": "2026-11-07",
-"tries": 1,
-"rev": 4,
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
 "why": "not annual accounts: Required primary financial statement pages (Balance Sheet and Profit and Loss Ac",
 "second": 1,
-"retry": 1,
 "redo8": 1
 },
 "khi:AABS:2007": {
@@ -13297,7 +13307,7 @@
 "redo9": 1
 },
 "khi:SITC:2003": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 18,
 "retry": 1,
 "tries": 1,
@@ -13351,7 +13361,8 @@
 "n": 32,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:TICL:2002": {
 "at": "2026-11-02",
@@ -13453,11 +13464,12 @@
 "done": true
 },
 "khi:PIOC:2003": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 33,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:BATA:2003": {
 "at": "2026-11-09",
@@ -13468,7 +13480,7 @@
 "done": true
 },
 "khi:MUREB:2007": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 18,
 "retry": 1,
 "tries": 1,
@@ -13811,13 +13823,13 @@
 "redo9": 1
 },
 "khi:GTYR:2001": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
 "n": 23,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:BHAT:2003": {
 "at": "2026-11-02",
@@ -13834,7 +13846,7 @@
 "redo9": 1
 },
 "khi:SSOM:2005": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 27,
 "waits": 2,
 "reread": [
@@ -13842,8 +13854,8 @@
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:CHAS:2004": {
 "at": "2026-11-07",
@@ -13855,7 +13867,7 @@
 "redo8": 1
 },
 "khi:SSOM:2003": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -14101,7 +14113,7 @@
 "done": true
 },
 "khi:ANSM:2006": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 18,
 "retry": 1,
 "tries": 1,
@@ -14265,7 +14277,8 @@
 "n": 26,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:AHTM:2002": {
 "at": "2026-11-02",
@@ -14315,11 +14328,12 @@
 "redo9": 1
 },
 "khi:GFIL:2005": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 30,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
 },
 "khi:AGSML:2001": {
 "at": "2026-11-04",
@@ -14360,11 +14374,12 @@
 "redo9": 1
 },
 "khi:GFIL:2003": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 40,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:JDMT:2003": {
 "at": "2026-11-02",
@@ -14767,7 +14782,8 @@
 "n": 22,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:GUTM:2005": {
 "at": "2026-11-02",
@@ -15017,11 +15033,13 @@
 "redo9": 1
 },
 "khi:ARUJ:2005": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 22,
 "retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
 },
 "khi:DMTM:2003": {
 "at": "2026-11-02",
@@ -15052,7 +15070,7 @@
 "redo9": 1
 },
 "khi:ARUJ:2003": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 25,
 "retry": 1,
 "tries": 1,
@@ -15590,7 +15608,8 @@
 "redo9": 1,
 "waits": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:AMTEX:2009": {
 "at": "2026-11-07",
@@ -15917,10 +15936,12 @@
 "web:MTL:2010": {
 "at": "2026-11-09",
 "n": 20,
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:ISIL:2012": {
 "at": "2026-11-09",
@@ -15983,10 +16004,12 @@
 "web:PKGS:2012": {
 "at": "2026-11-09",
 "n": 26,
-"tries": 2,
+"tries": 1,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:NICL:2017": {
 "at": "2026-11-09",
@@ -16841,11 +16864,12 @@
 "redo9": 1
 },
 "web:BML:2012": {
-"at": "2026-11-03",
+"at": "2026-11-09",
 "n": 15,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "web:PKGS:2000": {
 "at": "2026-11-08",
@@ -17064,7 +17088,7 @@
 "why": "file too large"
 },
 "web:PSYL:2022": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "redo8": 1,
@@ -17126,21 +17150,22 @@
 "n": 14
 },
 "web:MSOT:2019": {
-"at": "2026-11-03",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 14
 },
 "web:MSOT:2018": {
-"at": "2026-11-07",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
 "n": 14,
 "retry": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "web:CEPB:2026": {
 "at": "2026-11-03",
@@ -17267,7 +17292,8 @@
 "tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
-"redo8": 1
+"redo8": 1,
+"second": 1
 },
 "web:PSYL:2016": {
 "at": "2026-11-03",
@@ -17489,12 +17515,12 @@
 "waits": 1
 },
 "web:ASTL:2013": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 0,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:NRSL:2009": {
 "at": "2026-11-03",
@@ -17776,15 +17802,15 @@
 "redo9": 1
 },
 "web:ASTL:2012": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 0,
 "tries": 1,
 "redo8": 1,
 "reread": [
 2011
 ],
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:TATM:2021": {
 "at": "2026-11-03",
@@ -18602,11 +18628,11 @@
 "waits": 1
 },
 "web:SZTM:2018": {
-"at": "2026-11-03",
+"at": "2026-11-09",
 "n": 0,
-"retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:GGGL:2025": {
 "at": "2026-11-03",
@@ -18645,13 +18671,13 @@
 "second": 1
 },
 "web:SZTM:2012": {
-"at": "2026-11-07",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
 "n": 0,
-"retry": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:GGGL:2016": {
 "at": "2026-11-08",
@@ -19208,11 +19234,12 @@
 "done": true
 },
 "web:SZTM:2011": {
-"at": "2026-11-03",
+"at": "2026-11-09",
 "n": 35,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:SUTM:2008": {
 "at": "2026-11-08",
@@ -19273,14 +19300,14 @@
 "redo8": 1
 },
 "web:JSML:2016": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 19,
 "tries": 1,
 "redo8": 1,
 "rev": 5,
 "second": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:NEXT:2020": {
 "at": "2026-11-08",
@@ -19338,16 +19365,16 @@
 "redo9": 1
 },
 "web:UVIC:2009": {
-"at": "2026-11-07",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
-"n": 10,
-"retry": 1,
-"redo9": 1
+"n": 8,
+"redo9": 1,
+"done": true
 },
 "web:UVIC:2007": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
@@ -19355,8 +19382,8 @@
 "reread": [
 2006
 ],
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:ZTL:2026": {
 "at": "2026-11-03",
@@ -19911,11 +19938,11 @@
 "waits": 1
 },
 "web:BCL:2015": {
-"at": "2026-11-03",
-"n": 15,
-"retry": 1,
+"at": "2026-11-09",
+"n": 28,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:LPGL:2023": {
 "at": "2026-11-08",
@@ -19975,7 +20002,7 @@
 "redo9": 1
 },
 "web:AKGL:2024": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
@@ -20262,11 +20289,12 @@
 "n": 25
 },
 "web:SNAI:2022": {
-"at": "2026-11-03",
+"at": "2026-11-09",
 "n": 2,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "web:SNAI:2019": {
 "at": "2026-11-07",
@@ -20593,29 +20621,29 @@
 "done": true
 },
 "web:HUSI:2022": {
-"at": "2026-11-03",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 14
 },
 "web:HUSI:2021": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
 "n": 18,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:HUSI:2020": {
-"at": "2026-11-03",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 24
 },
 "web:MQTM:2024": {
 "at": "2026-11-03",
@@ -22925,10 +22953,12 @@
 "web:NICL:2018": {
 "at": "2026-11-09",
 "n": 38,
-"tries": 2,
+"tries": 1,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:MUGHAL:2024": {
 "at": "2026-11-08",
@@ -23078,8 +23108,8 @@
 "n": 0,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:IDYM:2014": {
 "at": "2026-11-08",
@@ -23360,7 +23390,7 @@
 "redo8": 1
 },
 "web:BERG:2020": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
@@ -23369,8 +23399,8 @@
 2020
 ],
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:STL:2023": {
 "at": "2026-11-07",
@@ -24514,10 +24544,12 @@
 "at": "2026-11-09",
 "waits": 2,
 "n": 34,
-"tries": 2,
+"tries": 1,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:JOPP:2023": {
 "at": "2026-11-03",
@@ -24657,10 +24689,12 @@
 "at": "2026-11-09",
 "waits": 2,
 "n": 43,
-"tries": 2,
+"tries": 1,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:786:2026": {
 "at": "2026-11-04",
@@ -24977,7 +25011,7 @@
 "redo8": 1
 },
 "web:MSOT:2021": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
@@ -24985,8 +25019,8 @@
 "reread": [
 2021
 ],
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:UBDL:2014": {
 "at": "2026-11-08",
@@ -25825,12 +25859,12 @@
 "at": "2026-11-03"
 },
 "web:UVIC:2008": {
-"at": "2026-11-03",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
-"why": "scanned report (left for later, OCR too slow)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 8
 },
 "web:PMPK:2008": {
 "at": "2026-11-03",
@@ -25918,7 +25952,8 @@
 "redo8": 1,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:JVDC:2020": {
 "at": "2026-11-03",
@@ -26763,11 +26798,12 @@
 "redo8": 1
 },
 "web:IML:2017": {
-"at": "2026-11-04",
+"at": "2026-11-09",
 "n": 0,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:ILTM:2018": {
 "at": "2026-11-04",
@@ -26861,15 +26897,15 @@
 },
 "web:BML:2014": {
 "at": "2026-11-09",
-"n": 26,
+"n": 0,
 "reread": [
 2014
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "web:UBDL:2019": {
 "at": "2026-11-04",
@@ -27565,11 +27601,11 @@
 "redo8": 1
 },
 "drive:SSOM:2018": {
-"at": "2026-11-07",
-"n": 31,
-"retry": 1,
+"at": "2026-11-09",
+"n": 35,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:IGIHL:2018": {
 "at": "2026-11-07",
@@ -27789,10 +27825,12 @@
 "drive:THALL:2018": {
 "at": "2026-11-09",
 "n": 30,
-"tries": 2,
+"tries": 1,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:THALL:2016": {
 "at": "2026-11-09",
@@ -28119,7 +28157,8 @@
 "tries": 1,
 "redo8": 1,
 "retry": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "drive:SSML:2020": {
 "at": "2026-11-08",
@@ -29032,10 +29071,12 @@
 "drive:SHCM:2023": {
 "at": "2026-11-09",
 "n": 0,
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:FTSM:2023": {
 "at": "2026-11-08",
@@ -29168,11 +29209,11 @@
 "redo8": 1
 },
 "drive:ARCTM:2024": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 14,
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:JDMT:2024": {
 "at": "2026-11-08",
@@ -29813,7 +29854,7 @@
 "redo9": 1
 },
 "khi:SITC:2005": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "redo8": 1,
@@ -29821,8 +29862,8 @@
 "reread": [
 2005
 ],
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:NCL:2010": {
 "at": "2026-11-08",
@@ -29922,14 +29963,14 @@
 "redo9": 1
 },
 "web:BML:2013": {
-"at": "2026-11-08",
-"n": 22,
+"at": "2026-11-09",
+"n": 23,
 "reread": [
 2013
 ],
-"retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:GATM:2016": {
 "at": "2026-11-08",
@@ -30319,14 +30360,14 @@
 "why": "not annual accounts: reason"
 },
 "khi:SSOM:2006": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 24,
 "reread": [
 2006
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:ASIC:2006": {
 "at": "2026-11-09",
@@ -31426,7 +31467,7 @@
 "redo8": 1
 },
 "web:KOHP:2013": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "second": 1,
@@ -31435,8 +31476,8 @@
 "reread": [
 2013
 ],
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:FECM:2020": {
 "at": "2026-11-08",
@@ -31663,7 +31704,8 @@
 "n": 34,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "web:FECM:2017": {
 "at": "2026-11-08",
@@ -32352,13 +32394,13 @@
 "redo9": 1
 },
 "khi:SUHJ:2003": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "redo8": 1,
 "n": 17,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:TPLT:2020": {
 "at": "2026-11-08",
@@ -32841,14 +32883,14 @@
 "redo8": 1
 },
 "khi:PRL:2003": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "redo8": 1,
 "waits": 1,
 "n": 21,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:MFFL:2024": {
 "at": "2026-11-08",
@@ -33598,7 +33640,7 @@
 "redo8": 1
 },
 "web:PAKQATAR:2013": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 0,
 "retry": 1,
 "tries": 1,
@@ -33920,7 +33962,7 @@
 "done": true
 },
 "khi:ZTL:2005": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 2,
 "rev": 5,
 "why": "not annual accounts: company name not found in provided pages",
@@ -34839,11 +34881,12 @@
 "done": true
 },
 "web:AGP:2022": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 34,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:HINOON:2011": {
 "at": "2026-11-09",
@@ -35187,7 +35230,7 @@
 "done": true
 },
 "web:HUBC:2024": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 38,
 "retry": 1,
 "tries": 1,
@@ -35202,7 +35245,7 @@
 "done": true
 },
 "web:SYS:2021": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 40,
 "retry": 1,
 "tries": 1,
@@ -35426,7 +35469,9 @@
 "redo9": 1
 },
 "drive:CSIL:2024": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 6
 },
 "drive:PNSC:2025": {
 "at": "2026-11-08",
@@ -35784,15 +35829,15 @@
 "redo9": 1
 },
 "web:PSO:2018": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 26,
 "reread": [
 2018
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:HINOON:2019": {
 "at": "2026-11-08",
@@ -35975,14 +36020,14 @@
 "redo9": 1
 },
 "khi:BCL:2002": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 32,
 "reread": [
 2002
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:PNSC:2025": {
 "at": "2026-11-08",
@@ -36890,7 +36935,7 @@
 "second": 1
 },
 "khi:DSIL:2007": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 35,
 "retry": 1,
 "tries": 1,
@@ -36968,14 +37013,14 @@
 "n": 42
 },
 "web:SUTM:2019": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 13,
 "reread": [
 2019
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:TCORP:2006": {
 "at": "2026-11-09",
@@ -37426,15 +37471,15 @@
 "why": "company name does not match: MIRPURKHAS SUGAR MILLS LIMITED (names AABS)"
 },
 "arc:BERG:2019": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 28,
 "reread": [
 2019
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:AKDSL:2021": {
 "at": "2026-11-08",
@@ -37497,11 +37542,10 @@
 "second": 1
 },
 "arc:ARUJ:2013": {
-"at": "2026-11-08",
-"tries": 2,
+"at": "2026-11-09",
+"tries": 3,
 "rev": 5,
 "why": "broken PDF (download incomplete); tried again next run",
-"retry": 1,
 "second": 1
 },
 "arc:ABL:2008": {
@@ -38155,7 +38199,8 @@
 "tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
-"redo9": 1
+"redo9": 1,
+"second": 1
 },
 "arc:DGKC:2011": {
 "at": "2026-11-09",
@@ -38666,7 +38711,7 @@
 "n": 22
 },
 "arc:CSIL:2015": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "second": 1,
@@ -39497,14 +39542,14 @@
 "second": 1
 },
 "arc:DOL:2017": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "second": 1,
 "n": 18,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:FATIMA:2013": {
 "at": "2026-11-08",
@@ -39530,8 +39575,8 @@
 "n": 28,
 "redo8": 1,
 "waits": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:FATIMA:2012": {
 "at": "2026-11-09",
@@ -39658,8 +39703,8 @@
 "second": 1,
 "n": 26,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:FATIMA:2005": {
 "at": "2026-11-08",
@@ -39830,11 +39875,10 @@
 "second": 1
 },
 "arc:EMCO:2015": {
-"at": "2026-11-08",
-"tries": 1,
+"at": "2026-11-09",
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "broken PDF (download incomplete); tried again next run",
 "second": 1
 },
 "arc:FFLM:2011": {
@@ -40296,7 +40340,7 @@
 "n": 30
 },
 "drive:DIIL:2017": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 28,
 "retry": 1,
 "tries": 1,
@@ -40333,8 +40377,8 @@
 "tries": 1,
 "rev": 5,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:GAMON:2016": {
 "at": "2026-11-08",
@@ -40376,10 +40420,10 @@
 "at": "2026-11-09",
 "n": 8,
 "waits": 1,
-"retry": 1,
 "tries": 1,
 "redo8": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:MQTM:2013": {
 "at": "2026-11-09",
@@ -40396,9 +40440,9 @@
 2012,
 2013
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:GATI:2017": {
 "at": "2026-11-08",
@@ -40488,7 +40532,7 @@
 "why": "company name does not match: KHAIRPUR SUGAR MILLS LIMITED (names AABS)"
 },
 "drive:RPL:2016": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 12,
 "retry": 1,
 "tries": 1,
@@ -40656,7 +40700,7 @@
 "done": true
 },
 "arc:JDWS:2019": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 12,
 "retry": 1,
 "tries": 1,
@@ -40674,10 +40718,12 @@
 2015,
 2016
 ],
-"tries": 2,
+"tries": 1,
 "rev": 5,
 "why": "no figure passed the checks",
-"redo9": 1
+"redo9": 1,
+"retry": 1,
+"second": 1
 },
 "arc:KHYT:2013": {
 "at": "2026-11-08",
@@ -41361,7 +41407,7 @@
 "redo9": 1
 },
 "arc:KTML:2010": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 30,
 "retry": 1,
 "tries": 1,
@@ -41624,7 +41670,7 @@
 "second": 1
 },
 "arc:PAKRI:2000": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "second": 1,
@@ -42854,9 +42900,9 @@
 "reread": [
 2013
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:SCBPL:2005": {
 "at": "2026-11-08",
@@ -43059,11 +43105,11 @@
 "done": true
 },
 "arc:SAPT:2017": {
-"at": "2026-11-08",
-"n": 2,
-"retry": 1,
+"at": "2026-11-09",
+"n": 36,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:FABL:2009": {
 "at": "2026-11-08",
@@ -44204,7 +44250,7 @@
 "redo9": 1
 },
 "arc:SAPT:2012": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 36,
 "retry": 1,
 "tries": 1,
@@ -44420,11 +44466,10 @@
 "redo9": 1
 },
 "arc:YOUW:2019": {
-"at": "2026-11-08",
-"tries": 2,
+"at": "2026-11-09",
+"tries": 3,
 "rev": 5,
 "why": "broken PDF (download incomplete); tried again next run",
-"retry": 1,
 "second": 1
 },
 "arc:PQGTL:2012": {
@@ -44499,7 +44544,7 @@
 "second": 1
 },
 "arc:YOUW:2014": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "second": 1,
@@ -44739,7 +44784,7 @@
 "redo9": 1
 },
 "arc:BERG:2018": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 37,
 "retry": 1,
 "tries": 1,
@@ -45137,7 +45182,7 @@
 "redo9": 1
 },
 "khi:HASCOL:2022": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 36,
 "retry": 1,
 "tries": 1,
@@ -45501,7 +45546,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:UBL:2018": {
 "at": "2026-11-09",
@@ -45678,17 +45724,17 @@
 },
 "arc:UBL:2005": {
 "at": "2026-11-09",
-"n": 28,
-"retry": 1,
+"n": 24,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:UBL:2004": {
 "at": "2026-11-09",
-"n": 27,
-"retry": 1,
+"n": 19,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:MCB:2007": {
 "at": "2026-11-09",
@@ -45892,7 +45938,9 @@
 },
 "web:JDWS:2021": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 22
 },
 "drive:PTC:2022": {
 "at": "2026-11-09",
@@ -45905,7 +45953,9 @@
 },
 "drive:IGIHL:2021": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 34
 },
 "khi:AGL:2019": {
 "at": "2026-11-09",
@@ -46008,11 +46058,16 @@
 },
 "khi:MIRKS:2006": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 2
 },
 "drive:BERG:2024": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dadex (names DADX)"
 },
 "drive:ICCI:2024": {
 "at": "2026-11-09",
@@ -46244,7 +46299,9 @@
 },
 "drive:MERIT:2022": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 30
 },
 "drive:ICIBL:2016": {
 "at": "2026-11-09",
@@ -46449,11 +46506,15 @@
 },
 "web:CSAP:2020": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 34
 },
 "arc:SHSML:2017": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 38
 },
 "drive:MTL:2015": {
 "at": "2026-11-09",
@@ -46782,7 +46843,9 @@
 },
 "drive:SZTM:2024": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 4
 },
 "drive:LSECL:2024": {
 "at": "2026-11-09",
@@ -46810,7 +46873,10 @@
 },
 "drive:EMCO:2025": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Sapphire Textile Mills Limited (names AATM)"
 },
 "web:SHNI:2011": {
 "at": "2026-11-09",
@@ -46857,7 +46923,9 @@
 "n": 26
 },
 "drive:DIIL:2024": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 31
 },
 "arc:EPCL:2024": {
 "at": "2026-11-09",
@@ -46899,10 +46967,14 @@
 "why": "company name does not match: MIRPURKHAS SUGAR MILLS LIMITED (names AABS)"
 },
 "web:PIOC:2020": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 35
 },
 "drive:KTML:2025": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 20
 },
 "web:GATI:2024": {
 "at": "2026-11-09",
@@ -46916,7 +46988,9 @@
 "at": "2026-11-09"
 },
 "drive:RPL:2023": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 41
 },
 "arc:ATLH:2006": {
 "at": "2026-11-09",
@@ -46947,7 +47021,9 @@
 "n": 2
 },
 "web:IML:2023": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 20
 },
 "drive:SAPT:2025": {
 "at": "2026-11-09",
@@ -46957,7 +47033,9 @@
 },
 "drive:DLL:2020": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 34
 },
 "arc:SEARL:2018": {
 "at": "2026-11-09",
@@ -47003,7 +47081,9 @@
 "n": 0
 },
 "drive:SEARL:2017": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 38
 },
 "arc:KOHTM:2016": {
 "at": "2026-11-09",
@@ -47032,7 +47112,9 @@
 "why": "company name does not match: Saudi Pak Commercial Bank Ltd. (names ABL)"
 },
 "arc:BWCL:2005": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 2
 },
 "drive:GAMON:2024": {
 "at": "2026-11-09",
@@ -47040,7 +47122,9 @@
 "n": 38
 },
 "drive:AATM:2022": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 0
 },
 "drive:HINOON:2017": {
 "at": "2026-11-09",
@@ -47168,7 +47252,9 @@
 "n": 25
 },
 "drive:GLAXO:2015": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 24
 },
 "khi:BAHL:2019": {
 "at": "2026-11-09",
@@ -47191,7 +47277,9 @@
 "n": 12
 },
 "khi:AGP:2023": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 30
 },
 "drive:KOHP:2023": {
 "at": "2026-11-09",
@@ -47199,7 +47287,9 @@
 "n": 16
 },
 "arc:SITC:2007": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 32
 },
 "web:LOTCHEM:2004": {
 "at": "2026-11-09",
@@ -47231,11 +47321,15 @@
 },
 "web:HASCOL:2023": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 26
 },
 "drive:ARUJ:2024": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 30
 },
 "web:GATI:2023": {
 "at": "2026-11-09",
@@ -47301,7 +47395,9 @@
 "n": 0
 },
 "arc:YOUW:2020": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 18
 },
 "arc:PASM:2023": {
 "at": "2026-11-09",
@@ -47316,7 +47412,10 @@
 "n": 30
 },
 "drive:AICL:2022": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: HBL (House Building Finance Corporation)"
 },
 "drive:PAKRI:2025": {
 "at": "2026-11-09",
@@ -47324,10 +47423,15 @@
 "n": 0
 },
 "khi:MUREB:2026": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 14
 },
 "drive:FANM:2018": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "drive:LOADS:2025": {
 "at": "2026-11-09"
@@ -47374,11 +47478,15 @@
 "n": 16
 },
 "web:PAKQATAR:2022": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 8
 },
 "web:PSO:2019": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 31
 },
 "web:HBL:2011": {
 "at": "2026-11-09",
@@ -47386,7 +47494,9 @@
 "n": 0
 },
 "drive:KOHP:2020": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 31
 },
 "web:PECO:2025": {
 "at": "2026-11-09"
@@ -47438,7 +47548,9 @@
 },
 "arc:DSIL:2017": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 35
 },
 "drive:SASML:2017": {
 "at": "2026-11-09",
@@ -47449,7 +47561,9 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:SSOM:2022": {
 "at": "2026-11-09",
@@ -47470,10 +47584,13 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:SSOM:2019": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 34
 },
 "khi:GGL:2024": {
 "at": "2026-11-09",
@@ -47484,7 +47601,9 @@
 "at": "2026-11-09"
 },
 "drive:ANSM:2018": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 3
 },
 "drive:UVIC:2024": {
 "at": "2026-11-09",
@@ -47500,10 +47619,13 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "drive:BCL:2023": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 33
 },
 "arc:CHCC:2006": {
 "at": "2026-11-09",
@@ -47562,7 +47684,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "khi:GTYR:2003": {
 "at": "2026-11-09",
@@ -47651,9 +47774,11 @@
 },
 "web:PKGS:2007": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "web:PKGS:2005": {
 "at": "2026-11-09",
@@ -47679,7 +47804,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "drive:FIMM:2014": {
 "at": "2026-11-09",
@@ -47697,7 +47823,9 @@
 "n": 34
 },
 "drive:SAPT:2023": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 41
 },
 "web:MTL:2013": {
 "at": "2026-11-09",
@@ -47708,7 +47836,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "khi:SML:2020": {
 "at": "2026-11-09"
@@ -47717,28 +47846,34 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CCM:2020": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CCM:2019": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:CCM:2018": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "drive:CTM:2024": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 34
 },
 "drive:HUMNL:2071": {
 "at": "2026-11-09",
@@ -47747,7 +47882,9 @@
 },
 "drive:SERT:2020": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 31
 },
 "khi:WAHN:2006": {
 "at": "2026-11-09",
@@ -47773,23 +47910,28 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FRCL:2021": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:FRCL:2020": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "web:NRSL:2007": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 25
 },
 "drive:NATM:2017": {
 "at": "2026-11-09",
@@ -47818,7 +47960,9 @@
 "why": "company name does not match: Unknown Company"
 },
 "khi:ESBL:2006": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 10
 },
 "web:LSEFSL:2017": {
 "at": "2026-11-09",
@@ -47837,9 +47981,11 @@
 },
 "arc:KHYT:2019": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:KHYT:2017": {
 "at": "2026-11-09",
@@ -47860,13 +48006,15 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "arc:STCL:2014": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "drive:SFL:2023": {
 "at": "2026-11-09",
@@ -47885,9 +48033,11 @@
 },
 "web:WAVESAPP:2021": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:AHCL:2020": {
 "at": "2026-11-09",
@@ -47924,19 +48074,22 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:PASL:2014": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:PASL:2007": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "drive:AMBL:2021": {
 "at": "2026-11-09",
@@ -47997,19 +48150,22 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:KOSM:2015": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:KOSM:2014": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:SHCM:2016": {
 "at": "2026-11-09",
@@ -48038,9 +48194,11 @@
 },
 "arc:SHCM:2014": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:SHCM:2013": {
 "at": "2026-11-09",
@@ -48098,7 +48256,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "web:BIPL:2017": {
 "at": "2026-11-09",
@@ -48110,7 +48269,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "web:DADX:2025": {
 "at": "2026-11-09",
@@ -48133,7 +48293,9 @@
 "n": 34
 },
 "web:HUBC:2025": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 32
 },
 "web:DADX:2022": {
 "at": "2026-11-09",
@@ -48159,13 +48321,16 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (404)"
+"why": "Company website download failed (404)",
+"second": 1
 },
 "drive:DADX:2017": {
 "at": "2026-11-09",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:NCL:2017": {
 "at": "2026-11-09",
@@ -48176,19 +48341,22 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:POL:2021": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:POL:2020": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "web:GOC:2026": {
 "at": "2026-11-09",
@@ -48201,10 +48369,14 @@
 "n": 40
 },
 "khi:PAKRI:2024": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 22
 },
 "drive:GRR:2024": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 25
 },
 "arc:NML:2017": {
 "at": "2026-11-09",
@@ -48212,7 +48384,9 @@
 "n": 41
 },
 "drive:PSYL:2024": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 34
 },
 "drive:TSML:2020": {
 "at": "2026-11-09",
@@ -48228,20 +48402,29 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "drive:IDYM:2018": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 21
 },
 "drive:GFIL:2020": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 14
 },
 "web:PNSC:2016": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 32
 },
 "drive:GOC:2020": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 26
 },
 "khi:PRL:2006": {
 "at": "2026-11-09",
@@ -48249,7 +48432,9 @@
 "n": 24
 },
 "khi:PRL:2004": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 20
 },
 "arc:IMS:2021": {
 "at": "2026-11-09",
@@ -48259,7 +48444,9 @@
 },
 "arc:DOL:2025": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 28
 },
 "web:ATBA:2008": {
 "at": "2026-11-09",
@@ -48278,7 +48465,9 @@
 "n": 18
 },
 "khi:DFML:2006": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 31
 },
 "web:NCL:2011": {
 "at": "2026-11-09",
@@ -48291,11 +48480,16 @@
 "why": "company name does not match: Pace (Pakistan) Limited (names PACE)"
 },
 "arc:UBL:2006": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:ASHT:2003": {
 "at": "2026-11-09",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 25
 },
 "khi:DEL:2016": {
 "at": "2026-11-09",
@@ -48308,7 +48502,9 @@
 "n": 24
 },
 "khi:SARC:2019": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 26
 },
 "web:DEL:2014": {
 "at": "2026-11-09",
@@ -48322,7 +48518,8 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "arc:FCSC:2019": {
 "at": "2026-11-09",
@@ -48334,30 +48531,728 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "arc:UDPL:2012": {
 "at": "2026-11-09"
 },
 "drive:ARCTM:2025": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 14
 },
 "web:ZTL:2017": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "web:ZTL:2016": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "web:ZTL:2015": {
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
+"why": "Company website download failed (0)",
+"second": 1
+},
+"arc:MIRKS:2005": {
+"at": "2026-11-09"
+},
+"drive:IGIHL:2019": {
+"at": "2026-11-09"
+},
+"arc:FASM:2007": {
+"at": "2026-11-09"
+},
+"drive:SNAI:2024": {
+"at": "2026-11-09",
+"done": true,
+"n": 40
+},
+"web:PAKQATAR:2016": {
+"at": "2026-11-09",
+"done": true,
+"n": 16
+},
+"web:BERG:2024": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
 "why": "Company website download failed (0)"
+},
+"arc:ECOP:2005": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Unknown"
+},
+"arc:DSIL:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 42
+},
+"drive:SELECT:2026": {
+"at": "2026-11-09",
+"done": true,
+"n": 14
+},
+"arc:ECOP:2004": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: BSS"
+},
+"drive:PACE:2025": {
+"at": "2026-11-09",
+"done": true,
+"n": 16
+},
+"drive:TOWL:2025": {
+"at": "2026-11-09"
+},
+"drive:DIIL:2023": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:PAKQATAR:2014": {
+"at": "2026-11-09",
+"done": true,
+"n": 6
+},
+"drive:DIIL:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 24
+},
+"web:BERG:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 43
+},
+"web:BERG:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 36
+},
+"drive:ANSM:2016": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:BERG:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"web:KOHP:2019": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:DIIL:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 10
+},
+"drive:KOHP:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:KOHP:2016": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:KOHP:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 9
+},
+"drive:KOHP:2014": {
+"at": "2026-11-09",
+"done": true,
+"n": 19
+},
+"arc:GTYR:2020": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:ARUJ:2025": {
+"at": "2026-11-09",
+"done": true,
+"n": 2
+},
+"khi:PIOC:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 40
+},
+"web:SZTM:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 18
+},
+"drive:BCL:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 32
+},
+"arc:RPL:2021": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:KTML:2024": {
+"at": "2026-11-09",
+"done": true,
+"n": 40
+},
+"arc:RPL:2017": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:SITC:2006": {
+"at": "2026-11-09",
+"done": true,
+"n": 24
+},
+"drive:SZTM:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 30
+},
+"drive:ARUJ:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 30
+},
+"drive:SZTM:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 35
+},
+"drive:BCL:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"drive:KTML:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 42
+},
+"drive:ARUJ:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"drive:SZTM:2020": {
+"at": "2026-11-09",
+"done": true,
+"n": 32
+},
+"drive:BCL:2020": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"drive:ARUJ:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 16
+},
+"drive:KTML:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 20
+},
+"drive:BCL:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"drive:KTML:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 38
+},
+"web:SZTM:2019": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:ARUJ:2020": {
+"at": "2026-11-09",
+"done": true,
+"n": 36
+},
+"web:BCL:2016": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"drive:ARUJ:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 32
+},
+"khi:BCL:2004": {
+"at": "2026-11-09",
+"done": true,
+"n": 23
+},
+"arc:ARUJ:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 31
+},
+"arc:ARUJ:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 26
+},
+"drive:ARUJ:2016": {
+"at": "2026-11-09",
+"done": true,
+"n": 24
+},
+"web:SZTM:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 35
+},
+"drive:KTML:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 40
+},
+"web:SZTM:2016": {
+"at": "2026-11-09",
+"done": true,
+"n": 30
+},
+"drive:ARUJ:2015": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: cannot determine company name and required fields from provided pages"
+},
+"web:SZTM:2015": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: cannot extract required financial figures due to garbled OCR text"
+},
+"arc:ARUJ:2014": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"web:SZTM:2014": {
+"at": "2026-11-09",
+"done": true,
+"n": 32
+},
+"arc:KTML:2016": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Maple Leaf Cement Factory Limited (names ACPL)"
+},
+"web:SZTM:2013": {
+"at": "2026-11-09",
+"done": true,
+"n": 14
+},
+"web:SZTM:2010": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:KTML:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 44
+},
+"web:NRSL:2006": {
+"at": "2026-11-09",
+"done": true,
+"n": 16
+},
+"drive:CTM:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 26
+},
+"drive:CTM:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 28
+},
+"web:NRSL:2005": {
+"at": "2026-11-09",
+"done": true,
+"n": 27
+},
+"drive:KML:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"arc:ESBL:2003": {
+"at": "2026-11-09"
+},
+"drive:CTM:2021": {
+"at": "2026-11-09"
+},
+"drive:IML:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 25
+},
+"arc:KML:2012": {
+"at": "2026-11-09"
+},
+"drive:KHYT:2024": {
+"at": "2026-11-09"
+},
+"drive:SAPT:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"drive:IML:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 24
+},
+"drive:SAPT:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 40
+},
+"drive:IML:2020": {
+"at": "2026-11-09",
+"done": true,
+"n": 21
+},
+"drive:SAPT:2020": {
+"at": "2026-11-09",
+"done": true,
+"n": 44
+},
+"arc:SAPT:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 41
+},
+"web:IML:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 20
+},
+"web:IML:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 15
+},
+"web:IML:2016": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"web:IML:2015": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"web:IML:2014": {
+"at": "2026-11-09",
+"done": true,
+"n": 24
+},
+"drive:HUMNL:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 6
+},
+"drive:PASM:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"arc:SEARL:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 46
+},
+"arc:MERIT:2009": {
+"at": "2026-11-09",
+"waits": 1
+},
+"drive:JSML:2014": {
+"at": "2026-11-09",
+"done": true,
+"n": 26
+},
+"drive:JSML:2013": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:BRRG:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:PASM:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:PASM:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:PASM:2018": {
+"at": "2026-11-09",
+"waits": 1
+},
+"drive:SYS:2025": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Your Company"
+},
+"drive:SYS:2024": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: OILBOV ENERGY LIMITED (names ALTN)"
+},
+"arc:REWM:2005": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"arc:JDWS:2020": {
+"at": "2026-11-09",
+"done": true,
+"n": 25
+},
+"drive:AGSML:2020": {
+"at": "2026-11-09",
+"done": true,
+"n": 14
+},
+"drive:AATM:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:AICL:2021": {
+"at": "2026-11-09"
+},
+"web:CSAP:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 36
+},
+"arc:SHSML:2016": {
+"at": "2026-11-09",
+"done": true,
+"n": 38
+},
+"web:DADX:2017": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"arc:SHSML:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 38
+},
+"arc:SHSML:2014": {
+"at": "2026-11-09",
+"waits": 1
+},
+"drive:KOIL:2018": {
+"at": "2026-11-09",
+"waits": 1
+},
+"web:PNSC:2014": {
+"at": "2026-11-09"
+},
+"drive:IDYM:2017": {
+"at": "2026-11-09"
+},
+"arc:DOL:2024": {
+"at": "2026-11-09",
+"done": true,
+"n": 30
+},
+"drive:PSYL:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 30
+},
+"drive:GRR:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 28
+},
+"web:GFIL:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 26
+},
+"khi:PAKRI:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"khi:SARC:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 14
+},
+"drive:TSML:2024": {
+"at": "2026-11-09",
+"done": true,
+"n": 9
+},
+"khi:SARC:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 34
+},
+"khi:SARC:2016": {
+"at": "2026-11-09",
+"done": true,
+"n": 24
+},
+"arc:EMCO:2025": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: ANNUAL REPORT 2025"
+},
+"arc:PAKRI:2013": {
+"at": "2026-11-09",
+"done": true,
+"n": 21
+},
+"drive:GFIL:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 14
+},
+"web:PAKRI:2007": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: Company name not found in provided pages"
+},
+"arc:DOL:2023": {
+"at": "2026-11-09",
+"done": true,
+"n": 18
+},
+"drive:EMCO:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 35
+},
+"arc:DOL:2022": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"web:AGP:2021": {
+"at": "2026-11-09",
+"done": true,
+"n": 25
+},
+"drive:EMCO:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 32
+},
+"web:PAKRI:2006": {
+"at": "2026-11-09",
+"done": true,
+"n": 28
+},
+"drive:TSML:2019": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
+},
+"khi:PAKRI:2005": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: United Services Insurance Company Limited (names AICL)"
+},
+"drive:GFIL:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 26
+},
+"arc:PAKRI:2004": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:GFIL:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 26
+},
+"drive:GFIL:2014": {
+"at": "2026-11-09",
+"done": true,
+"n": 24
+},
+"drive:GFIL:2013": {
+"at": "2026-11-09",
+"done": true,
+"n": 33
+},
+"khi:GFIL:2004": {
+"at": "2026-11-09",
+"done": true,
+"n": 28
 }
 }
