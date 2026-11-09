@@ -150,6 +150,11 @@ def curl(url, out=None, data=None, timeout=240):
     # his Drive files through the Drive API and his key first (9 Nov 2026): the public download link hits Google's daily
     # limit ("Quota exceeded") long before the API does, which left thousands of his reports unread
     m = re.search(r"drive\.usercontent\.google\.com/download\?id=([\w-]+)", url)
+    if m and out and not data:  # as the owner first: Google limits only downloads by others (lib/gtoken.py)
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib"))
+        import gtoken
+        if gtoken.fetch_pdf(m.group(1), out, timeout):
+            return 200, ""
     if m and out and os.environ.get("DRIVE_API_KEY") and not data:
         code, msg = curl(DRIVE_API.format(m.group(1), os.environ["DRIVE_API_KEY"]), out, timeout=timeout)
         try:

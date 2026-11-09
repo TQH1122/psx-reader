@@ -43,6 +43,7 @@ jobs:
           CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
           SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}   # reads the audit's re-read list from his locked tracker site
           DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}   # his Drive reports through the API first (9 Nov 2026)
+          TRACKER_TOKEN: ${{ secrets.TRACKER_TOKEN }}   # fetches the owner Drive pass from the private tracker (9 Nov 2026)
           OPENROUTER_PAID: '1'          # his prepaid $10 (1 Nov 2026): paid models first, free ones as extra checkers
           OPENROUTER_RESERVE: '0.5'     # paid models stop when $0.50 is left
         run: python3 toolkit/annual.py --minutes 50 --workers 14 --shard ${{ matrix.shard }} --shards 6 | tee /tmp/log.txt

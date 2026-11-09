@@ -189,7 +189,11 @@ def ident(fid, title):
         # of his files, so they were never identified; the public link stays as the fallback
         key = os.environ.get("DRIVE_API_KEY", "")
         p = None
-        if key:
+        import gtoken  # as the owner first (9 Nov 2026): Google refuses his shared files to everyone else
+        if gtoken.fetch_pdf(fid, pdf, 400):
+            API_N[0] += 1
+            p = subprocess.CompletedProcess([], 0, "200", "")
+        elif key:
             p = subprocess.run(["curl", "-sL", "-m", "400", "--max-filesize", "90000000", "-o", pdf, "-w", "%{http_code}",
                                 f"https://www.googleapis.com/drive/v3/files/{fid}?alt=media&acknowledgeAbuse=true&key={key}"],
                                capture_output=True, text=True)
