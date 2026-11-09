@@ -14624,7 +14624,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:AKGL:2005": {
 "at": "2026-11-02",
@@ -38665,14 +38666,14 @@
 "why": "company name does not match: Bergre"
 },
 "arc:BERG:2012": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 35,
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:BERG:2010": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 27,
 "retry": 1,
 "tries": 1,
@@ -38694,10 +38695,10 @@
 },
 "arc:BERG:2016": {
 "at": "2026-11-09",
-"n": 24,
-"retry": 1,
+"n": 15,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:SNGP:2003": {
 "at": "2026-11-09",
@@ -51604,5 +51605,10 @@
 "tries": 2,
 "rev": 5,
 "why": "not annual accounts: company name not found in provided pages"
+},
+"arc:BERG:2011": {
+"at": "2026-11-09",
+"done": true,
+"n": 28
 }
 }
