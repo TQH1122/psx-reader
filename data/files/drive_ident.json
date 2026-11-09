@@ -568,10 +568,10 @@
 },
 "1pZylPCt-55zuTzhn5Q6JWMN5XPiQcfe_": {
 "title": "118556.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1EFpqvpv2JCgBMY3ZammsrVP_-0vDkV21": {
 "title": "119045.pdf",
@@ -1662,10 +1662,23 @@
 },
 "1tJZPDdLECEhytO-Bly24Y1nyQVbmF-Lx": {
 "title": "119606.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 14224607,
+"tk": "AHL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"power",
+"steel"
+],
+"y": null
+},
+"at": "2026-11-09"
 },
 "17zi_Tc8_fc49IF36-SEBrQconfOHBqHx": {
 "title": "119611.pdf",
@@ -1864,10 +1877,10 @@
 },
 "1JjV8HqjY9GhYIITCCKHPY9X8Pvsszpvi": {
 "title": "119506.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "13IsF9J6SQ8rj_o4B8eLFSwqr4Q8uVafy": {
 "title": "119669.pdf",
@@ -7175,17 +7188,33 @@
 },
 "1OPqu1aa4nq6gWIrZK-KbL5lVzmJ6soZ-": {
 "title": "136138.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 6398798,
+"tk": "KHTC",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1eyMJdc7Mc3J5sbH-bgDC_lGfIjTBQxz9": {
 "title": "136102.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 10851781,
+"tk": null,
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"research": {
+"src": null,
+"sectors": [
+"steel"
+],
+"y": 2017
+},
+"at": "2026-11-09"
 },
 "1DmkAmMDK5_On-maSWFqwqymdppqxeqEO": {
 "title": "135873.pdf",
@@ -8069,10 +8098,23 @@
 },
 "1aXtFJa8IvYo7Sr5o1ns6y0zN5aobZU4x": {
 "title": "136448.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 10105349,
+"tk": null,
+"kind": "A",
+"y": 2019,
+"mon": 6,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": "Bank Al Habib Limited",
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"food"
+],
+"y": 2019
+},
+"at": "2026-11-09"
 },
 "1pQqLeRKVd2KFgkrtwFMoi1yxOr78Qnks": {
 "title": "136458.pdf",
@@ -9096,10 +9138,14 @@
 },
 "1uoZ0a7bukhA5OeE3IyUIOZld7ckJelnF": {
 "title": "138958.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 3984388,
+"tk": "YOUW",
+"kind": "A",
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "13tH02wzJjaRBcZQ3GOeejOGunx9GAnb1": {
 "title": "139860.pdf",
@@ -10095,10 +10141,10 @@
 },
 "15KSxtlPg33vV5FmW6UR9dPJRlRXiQt8u": {
 "title": "144412 (1).pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1yi7vW1r4MwBkExh-CFXlOlzw4kIb0Bd7": {
 "title": "144412.pdf",
@@ -11165,10 +11211,24 @@
 },
 "1ewGLmWZhxMPnkvv6Ft0pHTljSYsALfVX": {
 "title": "148778.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 2374375,
+"tk": null,
+"kind": "A",
+"y": 2019,
+"mon": 12,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"research": {
+"src": null,
+"sectors": [
+"cement",
+"fertilizer",
+"food"
+],
+"y": 2019
+},
+"at": "2026-11-09"
 },
 "1HCldlcVy4nmmtUDo274oLu7sKFVpzgXq": {
 "title": "147600.pdf",
@@ -12129,10 +12189,23 @@
 },
 "1L71i61OxeXqc01fFIOuRtucXTIkRDyV5": {
 "title": "153714.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 8741178,
+"tk": null,
+"kind": "A",
+"y": 2020,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": "Private) Limited",
+"research": {
+"src": "PSX",
+"sectors": [
+"banks",
+"oil"
+],
+"y": 2021
+},
+"at": "2026-11-09"
 },
 "1_QZN4glfTqsP7-tPLTLaJ6WWLOKOLpu7": {
 "title": "153716.pdf",
@@ -12417,10 +12490,15 @@
 },
 "1qdKySpBZJQ7It1nk3Ec77oXWYPYLGy2r": {
 "title": "153847.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 8804860,
+"tk": null,
+"kind": "A",
+"y": 2020,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1mNSZJ8C5gip-1fQw9OorhuwYdd17Jtoi": {
 "title": "153854.pdf",
@@ -12715,10 +12793,24 @@
 },
 "1UNAEgjKKb6EIndjxRKayMN-S5wFKaMxp": {
 "title": "154063.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 6373267,
+"tk": null,
+"kind": "A",
+"y": 2020,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": "Habib Bank Limited",
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"power",
+"textile"
+],
+"y": 2020
+},
+"at": "2026-11-09"
 },
 "168XuWnjhAfnXQWDGRILH__tF-bx3lvLq": {
 "title": "154078.pdf",
@@ -12915,10 +13007,24 @@
 },
 "1FKafAKG87kj9J3Ro2vnxLgOHUhi5kIK6": {
 "title": "154171.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 9379969,
+"tk": null,
+"kind": "A",
+"y": 2020,
+"mon": 6,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": "Samba Bank Limited",
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"food",
+"power"
+],
+"y": 2020
+},
+"at": "2026-11-09"
 },
 "1wb0wMZX989ZTUfgaEcYD_GUWmdyhp94c": {
 "title": "154176.pdf",
@@ -13389,10 +13495,14 @@
 },
 "1wWHyUxK3_MWKqNC3tDlI9iBDUqo2RUHf": {
 "title": "154184.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 12130153,
+"tk": "MSCL",
+"kind": "A",
+"y": 2020,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1NBxtfU2SEBUrcLO7wJOqI4GQ5Xz-8_g9": {
 "title": "154341.pdf",
@@ -13752,10 +13862,14 @@
 },
 "1U9C2ogR0FGh1zjctRscs1fGbDIplFkhQ": {
 "title": "154434.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 8930152,
+"tk": "KHTC",
+"kind": "A",
+"y": 2020,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1cZmo42My24_L_R4-hyk8-dlyuSUY3653": {
 "title": "154353.pdf",
@@ -14810,10 +14924,15 @@
 },
 "1gM0sksYUTOhSp-vgs7OFzdsTkns9VM6Y": {
 "title": "158553.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 10699015,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1vckDoakWTZ5k-JXpV4b-IdAq-v5DJnF5": {
 "title": "159342.pdf",
@@ -15106,10 +15225,10 @@
 },
 "1e51rFbDct5EKsmpi3SIBB3X6DRXvy8WT": {
 "title": "160447.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1X6MJaMNyzIWU0GFdFj0cIOOIWCzHy91X": {
 "title": "160516.pdf",
@@ -16626,10 +16745,10 @@
 },
 "1Zk1AMjxZu_Cm0zidOt_EkQDTR-klnUK-": {
 "title": "166421.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1PyJVyGe_ku6WM9Hl28weUWpRy96dt5Xa": {
 "title": "166433.pdf",
@@ -16759,10 +16878,14 @@
 },
 "1L5ltsb4mKmw8kpzqyRMx35W9jzcZTaB1": {
 "title": "164296.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 14154623,
+"tk": "KSBP",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1XAUpnyBuOI_f5KArSYh4bDh57vRGDZR8": {
 "title": "169059.pdf",
@@ -17111,10 +17234,22 @@
 },
 "1_uSFMlH4G2DkqR1BzHB8j8BCOcFBOcAT": {
 "title": "171563.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 6064425,
+"tk": "PIBTL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"cement",
+"power"
+],
+"y": 2021
+},
+"at": "2026-11-09"
 },
 "1sQL-NkojsQMejoHMOOKb63DX6LkxJHJb": {
 "title": "169893.pdf",
@@ -17424,10 +17559,10 @@
 },
 "1GNa-WBaeRwuF9W_hm2mqmORyJqaoS5by": {
 "title": "172628.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1zFjeL8a-nyHxowrAmrVRJJnNzWvIiYyH": {
 "title": "171436.pdf",
@@ -21229,10 +21364,10 @@
 },
 "1MyD9hAqutNftTxXVb9AXFEgwzlmLgqNA": {
 "title": "183231.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1k9aYXebRa-mvaPQkoFvjQk-2qYOt2I-3": {
 "title": "181993.pdf",
@@ -21303,10 +21438,10 @@
 },
 "1eazdtL3N9qd67rqJr30wnqLi2RqV2I2j": {
 "title": "183467 (1).pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1N41WtDcNehAbyFGqgL7mjY6UBM08g0d4": {
 "title": "183677.pdf",
@@ -21390,10 +21525,15 @@
 },
 "1-MwVbhba6ieevwAoKysFg4DeRRr292bv": {
 "title": "182031.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 10110053,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1TxD8FJRbDI0CfXbCH3oJwxJV5V8eugmh": {
 "title": "184188.pdf",
@@ -21538,10 +21678,10 @@
 },
 "1RFX8vDWT56o8CUMnstjxCi5-WPAXFUSa": {
 "title": "182678.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1zlvyBcb0xaCDzAeOqDSHOyGcguBBn25J": {
 "title": "184475.pdf",
@@ -23596,10 +23736,22 @@
 },
 "1q3SvqlfVolwNwYj-ETG-N55lh47isivK": {
 "title": "193432.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 6028859,
+"tk": null,
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"research": {
+"src": null,
+"sectors": [
+"steel"
+],
+"y": null
+},
+"at": "2026-11-09"
 },
 "1K76JsQHsYwMj2jAPW3TXbS5viyeWL8dm": {
 "title": "193685.pdf",
@@ -24371,10 +24523,21 @@
 },
 "1DOslfScKuNddQ-5zJMWSN2-QL0doSGgL": {
 "title": "194034.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 4348632,
+"tk": "MSCL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"steel"
+],
+"y": null
+},
+"at": "2026-11-09"
 },
 "1vvych3Kyv-IVkqdTpFB5r0IFS-zUHkxF": {
 "title": "194035.pdf",
@@ -24564,10 +24727,22 @@
 },
 "10t2EwwhRfW3b_PbAO-xpJSxDmm-qLlo9": {
 "title": "194192.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 9001049,
+"tk": null,
+"kind": "A",
+"y": 2022,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"research": {
+"src": null,
+"sectors": [
+"pharma"
+],
+"y": 2022
+},
+"at": "2026-11-09"
 },
 "1Ya06p3be4wOe2mMqJn_rf9U7Fl0lRhU1": {
 "title": "194193.pdf",
@@ -25045,10 +25220,15 @@
 },
 "1IdM5nm73agjd2f0uMBu4qWTzpjeonwPS": {
 "title": "194260.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 24775996,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1khgL9YNxt9gB6w4cqZApkeR71luPoIKR": {
 "title": "194425.pdf",
@@ -25062,10 +25242,15 @@
 },
 "1BJEomKeW_yVOM7K1GO4-qLjAAJo1sdj2": {
 "title": "194363.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 2519955,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1CTRMfeXq_Y-6XNn5REb0-YzvtNOjo1lD": {
 "title": "194337.pdf",
@@ -27050,10 +27235,23 @@
 },
 "1oFXbx-Ati99dJncKNvWoySwpqo-lNLiL": {
 "title": "203729.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 6752001,
+"tk": "HCL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"fertilizer",
+"macro",
+"oil"
+],
+"y": null
+},
+"at": "2026-11-09"
 },
 "1m0PLEsASLSEUhEV9z8w6U281jAEbS_XA": {
 "title": "203765.pdf",
@@ -30087,10 +30285,15 @@
 },
 "1DtnLCGdsMAQj2sJfC1NKWvd_2Q-hOFtw": {
 "title": "216856.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 5032101,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1h3wCP1rCM1yaL1b85DLdSVPxYVsf1Olj": {
 "title": "216857.pdf",
@@ -30159,10 +30362,15 @@
 },
 "1faOTFTSMUu8C_dBWTCJGvwg4uFi7DH38": {
 "title": "216879.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 21939539,
+"tk": null,
+"kind": "A",
+"y": 2023,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1NeMOpZiIctAO-2kXm7aZbBSID6AtYkVv": {
 "title": "216887.pdf",
@@ -30598,10 +30806,22 @@
 },
 "1VXD56BdfO6VT6Z_Mxur3_JuZHFqfC-V9": {
 "title": "217077.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 15455457,
+"tk": null,
+"kind": "A",
+"y": 2023,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"research": {
+"src": null,
+"sectors": [
+"steel"
+],
+"y": 2023
+},
+"at": "2026-11-09"
 },
 "1sh58XJ215dfK5nqxJptMkpPRGBN4SINs": {
 "title": "217086.pdf",
@@ -33303,10 +33523,10 @@
 },
 "1v6u3V2NHLd6_Kk3Q_9RRq_4Eqpnchrt4": {
 "title": "226360.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1av4temtgdCDfD0uPrPG6fGAO9cZBfVt_": {
 "title": "226501.pdf",
@@ -33368,10 +33588,10 @@
 },
 "13z73AedkKlxAqNBvkAzuaXeWGn91HqaC": {
 "title": "227235.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1lTJlfkn2FkhNu3oZLy4nwIKd9C59oCYA": {
 "title": "226590.pdf",
@@ -33382,10 +33602,22 @@
 },
 "1xcDcPXbPeD5In9u0sFXTv6xa1z9SLcDq": {
 "title": "227309 (1).pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 8531173,
+"tk": null,
+"kind": "A",
+"y": 2023,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"research": {
+"src": null,
+"sectors": [
+"banks"
+],
+"y": 2023
+},
+"at": "2026-11-09"
 },
 "1QN3Zr-VgnrXDhPb0_GqTJEUA7kHOA0B0": {
 "title": "226727.pdf",
@@ -35011,17 +35243,35 @@
 },
 "1-H8ksfwVQ2IC5xj9LyyYJVTz8pnEXqcK": {
 "title": "236234.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 14074582,
+"tk": null,
+"kind": "A",
+"y": 2024,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"research": {
+"src": "VIS",
+"sectors": [
+"power",
+"steel"
+],
+"y": 2024
+},
+"at": "2026-11-09"
 },
 "1L752JNb-HJKTZliO_mnShEIfroI5yb3A": {
 "title": "231530.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 5986647,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1GSSawAzFC6kQSXu9gWP9w2FhJT1x6Zeu": {
 "title": "236240.pdf",
@@ -37480,10 +37730,22 @@
 },
 "1AcFvC8G4uw2wBzarzYC9r30yOtZ-XVy2": {
 "title": "239144.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 8505593,
+"tk": null,
+"kind": "A",
+"y": 2024,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"research": {
+"src": null,
+"sectors": [
+"steel"
+],
+"y": 2024
+},
+"at": "2026-11-09"
 },
 "11hVgoWnI3B82pVYKxc-33W0CsjaTmLya": {
 "title": "239312.pdf",
@@ -41995,10 +42257,15 @@
 },
 "1VdC90AjhsaGFszGRP6BoTny__lUslhbH": {
 "title": "258926.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 16408639,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1_t4IUukeDa4d8QgQ7UPWyxHoPJM0Fqks": {
 "title": "259377.pdf",
@@ -43551,10 +43818,21 @@
 },
 "1Q0ZL-S6J_JnOUXzWtrWZ2RKezMpU1OpZ": {
 "title": "261405.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 8135035,
+"tk": "ZTL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"textile"
+],
+"y": null
+},
+"at": "2026-11-09"
 },
 "1mS4IUN5FNZpcD6-4zd4ASby7TnTe9Poe": {
 "title": "261422.pdf",
@@ -43878,10 +44156,15 @@
 },
 "18mqZfH3pehG1bbSXIZOdAXd5NgqiZ4sC": {
 "title": "261413.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 15023478,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1KO_ZfD0KubwqAesalwYIsP7DuzgJoh5j": {
 "title": "261639 (1).pdf",
@@ -44270,10 +44553,21 @@
 },
 "1qwew-jx36qOO9OTfwkLR3oteTQiIJcmc": {
 "title": "261704 (1).pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 14129654,
+"tk": "ASTL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"steel"
+],
+"y": 2025
+},
+"at": "2026-11-09"
 },
 "1aAPJHohqdUo4lUeCK1tN3Y6jNX2TN39A": {
 "title": "261796.pdf",
@@ -46411,10 +46705,15 @@
 },
 "1BYh6wi3xCAjycjR5_thwJzFhbJlBFEO6": {
 "title": "270733 (1).pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 24643303,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1rpveloavmuNipkNSFLoNYOJfihESbAHT": {
 "title": "265641.pdf",
@@ -46490,10 +46789,14 @@
 },
 "1uQejlEzkEe9bvgmx7UW_UYpoCNewnLR4": {
 "title": "270678.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 8044049,
+"tk": "FFL",
+"kind": "A",
+"y": 2025,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1pCaMu9xQ_BpFi91gXmLtEiEObJIQttu7": {
 "title": "271176.pdf",
@@ -46661,10 +46964,15 @@
 },
 "171tMmUN8w8SD-AikOUVwYqi3a7N7EQHu": {
 "title": "271541.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 5175109,
+"tk": null,
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"co": null,
+"at": "2026-11-09"
 },
 "1Gx749cIfzeBmeD8B6DLN8g1N7xzJ3qsX": {
 "title": "271542.pdf",
@@ -46996,10 +47304,10 @@
 },
 "1RSquzh1yg8UVSe0th5v1YO69v-qHyrHt": {
 "title": "271333.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1hJqFDZ1uAInMhXHq3AUUG4mp5FBUbw9A": {
 "title": "272068.pdf",
@@ -50211,10 +50519,14 @@
 },
 "1XgRo-YZAC1j7S_gpWXdwJkFYM9pY499y": {
 "title": "AGL_Q4_2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 10858095,
+"tk": "AGL",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1IC_ISiM-DmAfmgxjruCUF1sOlFnV3CQL": {
 "title": "ADMM_Q4_2015.pdf",
@@ -50306,10 +50618,14 @@
 },
 "1zopxCeOp8ycMo2uovmQ5xpqv_6BISS_g": {
 "title": "AGL_Q4_2014.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 16130711,
+"tk": "AGL",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "19LyfLHPWagItmHuzEANihDL9VKum7JnD": {
 "title": "AGSML-ANNUAL-2017.pdf",
@@ -62507,10 +62823,14 @@
 },
 "1QN7pI07JZeoitGypQ6rjVwoKtdhb76fX": {
 "title": "ASHT-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 13701061,
+"tk": "ASHT",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1p5mAFbZgANta102P1DfH_H2mGlnFZ-Fu": {
 "title": "PMPK-ANNUAL-2017.pdf",
@@ -62525,17 +62845,32 @@
 },
 "1hoN9hOTyIARjMD7l5UN4T4PhT_nZwEj6": {
 "title": "PNSC_Q4_2014.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 8206132,
+"tk": "PNSC",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"oil"
+],
+"y": null
+},
+"at": "2026-11-09"
 },
 "1t4dJoPo0i4m5JamUFRzpQiRGS9DjuDSD": {
 "title": "PICT-ANNUAL-2016.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 4699087,
+"tk": "PICT",
+"kind": "A",
+"y": 2016,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "16VcTyTqAu_8g5bwdeqAhiabZW2V3jH_G": {
 "title": "SSOM-ANNUAL-2013.pdf",
@@ -62579,10 +62914,14 @@
 },
 "1bLo9U_qvcVPTgVZ61BAazV0DydW1fpc-": {
 "title": "SSOM-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 11886819,
+"tk": "SSOM",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1IAe5j1_KEWpxNOCR_EXQ2XWC51UhLpEE": {
 "title": "POML_Q4_2014.pdf",
@@ -62593,10 +62932,14 @@
 },
 "1CIbF9bviLEw46ypi4Fy1ciff_Al6LJg1": {
 "title": "SSOM-ANNUAL-2016.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 18213709,
+"tk": "SSOM",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1hVaNhoJfN2AlkgoXUH8TSXvddMv87zS7": {
 "title": "POML_Q4_2015.pdf",
@@ -62607,10 +62950,14 @@
 },
 "1zvMqPTC5ooK4TuTTc12chh2ALhaLZbwt": {
 "title": "FFL-ANNUAL-2013.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 2964259,
+"tk": "FFL",
+"kind": "A",
+"y": 2013,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1DjFXs7G7Xo1v5HjzKwo7ThaqcYfFuRGL": {
 "title": "TREET_Q4_2014.pdf",
@@ -62691,10 +63038,14 @@
 },
 "1l-RMbU3Ivyh9BK9RjpKCqm-7afZCumHT": {
 "title": "ITTEFAQ-ANNUAL-2016.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 994355,
+"tk": "ITTEFAQ",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "15vyvIsuvD3vZjEnEZRlUWYr0btkvgTkf": {
 "title": "BCL-ANNUAL-2013.pdf",
@@ -62705,17 +63056,32 @@
 },
 "10zq1qJUdE3FlHTYny8liThN2owJgprgE": {
 "title": "BCL-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 7389955,
+"tk": "BCL",
+"kind": "A",
+"y": 2017,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1A41ZqJqV5agwtFeMfHB2nFy7Xs6mFqSt": {
 "title": "ISL-ANNUAL-2013.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 1525832,
+"tk": "ISL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"steel"
+],
+"y": 2013
+},
+"at": "2026-11-09"
 },
 "190-h_PszQdmwT42TnbejXxuZfkKtlXG5": {
 "title": "INIL-ANNUAL-2013.pdf",
@@ -62733,10 +63099,14 @@
 },
 "1jUS83K9EHm6hpyFH-HmECPNINAxUArYL": {
 "title": "CSAP-ANNUAL-2016.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 3658884,
+"tk": "CSAP",
+"kind": "A",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1q1ofVYZ_PfCo_eVQiINCNBW2EjmNcpvU": {
 "title": "CSAP-ANNUAL-2014.pdf",
@@ -62754,10 +63124,22 @@
 },
 "1APpEAHeblCrgclb0K5lBoAR2YpTQbLuv": {
 "title": "ASTL-ANNUAL-2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 11049410,
+"tk": "HBL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"steel"
+],
+"y": 2015
+},
+"at": "2026-11-09"
 },
 "1wq0RHuewyOgJtUxwXbcG5gFxIjDMXOZS": {
 "title": "ASTL-ANNUAL-2016.pdf",
@@ -62789,17 +63171,21 @@
 },
 "1oyrOdxOKm_EPnyWM5Xa4LNQl3lvs5uwK": {
 "title": "SCBPL_Q4_2014.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1xTOm9tD_d9bVP7LD3V02SEWo7ReSn-96": {
 "title": "ASTL-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 13016967,
+"tk": "ASTL",
+"kind": "A",
+"y": 2017,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1RDOrEjZPAysS8rRyaXd6LVimmZJxAcSQ": {
 "title": "JVDC_Q4_2015.pdf",
@@ -62810,10 +63196,10 @@
 },
 "1cQL26s9SMC5xcfnZmVtBfzVRoCpXOUF7": {
 "title": "BOK-ANNUAL-2013.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1yrOwSuJgyFWLVmrrXQzKfCwiuwpdqT70": {
 "title": "BWCL_Q4_2015.pdf",
@@ -66504,24 +66890,36 @@
 },
 "1qWwqrIflUFnqUEoU2aey_8TjK8oTCjuJ": {
 "title": "PAKT-ANNUAL-2016.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 6573733,
+"tk": "PAKT",
+"kind": "A",
+"y": 2016,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "11UAzCZB14UHauVyDiPBGTH3O0eeBK_qJ": {
 "title": "PMPK-ANNUAL-2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 3401909,
+"tk": "PMPK",
+"kind": "A",
+"y": 2015,
+"mon": 12,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1dWj-r8Tl8if0cNM5GiYK9LtKwIb7HeS1": {
 "title": "PAKT-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 13635838,
+"tk": "PAKT",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1KQteDgjUioaCNSq7TdNV9GiXm-Wj1DVJ": {
 "title": "PMPK-ANNUAL-2014.pdf",
@@ -66543,24 +66941,36 @@
 },
 "11tmGqiwIB5Alo3OsbQdMX8THYZt6jCvY": {
 "title": "PICT-ANNUAL-2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 4119882,
+"tk": "PICT",
+"kind": "A",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1dqjoJd5MpRA5yvrWizmCDL1rZ0fOVLEu": {
 "title": "PIBTL_Q4_2014.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 6305575,
+"tk": "PIBTL",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "151Lv7JdVYRpbzN2lZK87IOeq6dAXsiOh": {
 "title": "PIBTL_Q4_2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 12730269,
+"tk": "PIBTL",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1_S6z8CCxsljnlcjynj1y6W38W2EZcYYk": {
 "title": "PSX Research Tracker (2).zip",
@@ -66585,10 +66995,14 @@
 },
 "12B_cLUu_mWiy0rPJMsJX2UYCbigDRiTA": {
 "title": "UNITY-ANNUAL-2013.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 4868076,
+"tk": "THAS",
+"kind": "A",
+"y": 2013,
+"mon": 6,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1XS8SH7q9syAushtb39Oq9Lz0M-F2fWwY": {
 "title": "UNITY-ANNUAL-2014.pdf",
@@ -66606,10 +67020,14 @@
 },
 "1tXYjOqk5hWM-eZrTI2YXjywT27vbe15n": {
 "title": "UNITY-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 3356266,
+"tk": "THAS",
+"kind": "A",
+"y": 2017,
+"mon": 6,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1I_kcM84jsOpcoKtSd2w4Byu9MX2CeM_t": {
 "title": "FATIMA-ANNUAL-2016.pdf",
@@ -66627,10 +67045,14 @@
 },
 "1I8m9rmaxFK6mRessiVVMOQ63SO5PjHaU": {
 "title": "FFC-ANNUAL-2014.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 1976191,
+"tk": "FFC",
+"kind": "A",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1tLlH8w_v739fvltFC1OUvkzn6Jevt1Yc": {
 "title": "FATIMA-ANNUAL-2013.pdf",
@@ -66648,10 +67070,24 @@
 },
 "1T6nE7PSWBhvvN8KSW37wgAk86qA2aBvu": {
 "title": "FFC-ANNUAL-2013.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 9558235,
+"tk": "FFC",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"cement",
+"fertilizer",
+"food",
+"power"
+],
+"y": 2013
+},
+"at": "2026-11-09"
 },
 "11_yHRoKxurWt-Zo-gaC223F2-MsONM2u": {
 "title": "ITTEFAQ-ANNUAL-2017.pdf",
@@ -66683,24 +67119,36 @@
 },
 "1yOX6YCyWmzIpf6b65unEb5h5AYVylB0R": {
 "title": "INIL-ANNUAL-2016.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 5117394,
+"tk": "INIL",
+"kind": "A",
+"y": 2016,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "194u9OulBv5Necf9TcX6yNk6b2_03b_ys": {
 "title": "ISL-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 8515444,
+"tk": "SYS",
+"kind": "A",
+"y": 2017,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1e1PlafOMQpk4d4QX7VPrB_TLsnHWWq0S": {
 "title": "INIL-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 19579754,
+"tk": "INIL",
+"kind": "A",
+"y": 2017,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1FNizFwEFNfGG0Y8prmxf2ySfdg58eoCN": {
 "title": "ISL-ANNUAL-2016.pdf",
@@ -66718,10 +67166,21 @@
 },
 "113eYPfRHjyHsAPJH7zY0Vft9ARQtbJZ5": {
 "title": "ASTL-ANNUAL-2014.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 10935453,
+"tk": "ASTL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"auto"
+],
+"y": 2014
+},
+"at": "2026-11-09"
 },
 "1kzf88R2Jwq_hGzwTAWFSm2LUs8KLsNj6": {
 "title": "ASTL-ANNUAL-2013.pdf",
@@ -66732,10 +67191,14 @@
 },
 "1cRYS1UHsg2Nt0WEbKJLOdB3WgNE0b6uy": {
 "title": "ASL-ANNUAL-2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 5728874,
+"tk": "ASL",
+"kind": "A",
+"y": 2015,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1dFVdSBw1D6AhOTEz2VJsVXIkWgV1GU-Z": {
 "title": "ASL-ANNUAL-2016.pdf",
@@ -66760,10 +67223,10 @@
 },
 "1KcY_vIejGQ7jU9hCRuJMlZ7z-KTB2C5e": {
 "title": "BOK-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1kpg0grGAZYXgVlDn-lIsjXmKSyR_91ns": {
 "title": "SCBPL_Q4_2015.pdf",
@@ -66792,10 +67255,10 @@
 },
 "13BCOR9ThzzXgHK4ifyiy-xVCRedtBFF2": {
 "title": "LUCK-ANNUAL-2013.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1F7kNRvrWcXnTbDLxhkFjKeHEZaCQeGni": {
 "title": "FCCL_Q4_2015.pdf",
@@ -70626,24 +71089,36 @@
 },
 "1dN8_ehr7bn1vvy3l3OA_xbpvHQ4iHPbV": {
 "title": "YOUW_Q4_2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 13877492,
+"tk": "YOUW",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1zEBPYOP6z6dlQukN5yrOJccPxGIZgrVd": {
 "title": "ASHT-ANNUAL-2014.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 14325921,
+"tk": "ASHT",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1UigPWeU6AgXJlF8BpGgz1v-JPiz_NJal": {
 "title": "ASHT-ANNUAL-2016.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 14029077,
+"tk": "ASHT",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "15L_FqpZMI5S-C-ZGgi_iHVWnw6Nxk7VA": {
 "title": "YOUW_Q4_2014.pdf",
@@ -70658,17 +71133,25 @@
 },
 "1jx42-KzP0sSadlQsbdm22mPD_fonMKZh": {
 "title": "YOUW_Q4_2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 13877492,
+"tk": "YOUW",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1oeeowsfWGxzNdZ4vgcR7jUewN1wsheTv": {
 "title": "ZTL-ANNUAL-2016.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 1755944,
+"tk": "ZTL",
+"kind": "A",
+"y": 2016,
+"mon": 6,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1IlkLHP2VDqqYEH0XRHAMtfvM_EATWYO3": {
 "title": "PMPK-ANNUAL-2016.pdf",
@@ -70697,10 +71180,14 @@
 },
 "1ioeA4fekmYO-_yySmySl5CPv8WFxrsjN": {
 "title": "SSOM-ANNUAL-2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 2805544,
+"tk": "SSOM",
+"kind": null,
+"y": null,
+"mon": null,
+"scanned": true,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "10beo-q7e2h3E165epgpD6bJkdybaWAJu": {
 "title": "FFL-ANNUAL-2014.pdf",
@@ -70725,24 +71212,36 @@
 },
 "17GmlgapZpRXcIa7eCc_bGGAXnMjtH-c7": {
 "title": "PNSC_Q4_2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 18971088,
+"tk": "PNSC",
+"kind": "A",
+"y": 2017,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1NAvx0Y2i_PYGWZjvWKV0GBsEJRg0c4fO": {
 "title": "FATIMA-ANNUAL-2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 3280457,
+"tk": "FATIMA",
+"kind": "A",
+"y": 2015,
+"mon": 12,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1oCfUSQBoc7dyyV1hhR1NSHeR7S2dr-Z0": {
 "title": "FATIMA-ANNUAL-2017.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 9158872,
+"tk": "FATIMA",
+"kind": "A",
+"y": 2017,
+"mon": 12,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "14IyyiV7qVaPHrUsP3ntXpNLm8NGYXAIO": {
 "title": "TREET_Q4_2015.pdf",
@@ -70767,10 +71266,14 @@
 },
 "12YLy9csA-x19iB81ZyGYlOqDeVcFVt8f": {
 "title": "EFERT-ANNUAL-2014.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 3277982,
+"tk": "EFERT",
+"kind": "A",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1JxZ5l5UkpQ0jaG8tAOXxWcilUU_hrq39": {
 "title": "TREET_Q4_2017.pdf",
@@ -70781,10 +71284,14 @@
 },
 "1PExLQ_7i8IdawE4gvVzFo7IsPJ2cyc9T": {
 "title": "EFERT-ANNUAL-2015.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 7102970,
+"tk": "EFERT",
+"kind": "A",
+"y": 2015,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"at": "2026-11-09"
 },
 "1wPvBT4PhoWR7ipwL3TKfhihMIBMSCRc3": {
 "title": "MDTL_Q4_2014 (1).pdf",
@@ -70806,10 +71313,21 @@
 },
 "1-lGGu1nWG5BSVJeFEOrorhfcPMC1g7zI": {
 "title": "BCL-ANNUAL-2014.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 1658164,
+"tk": "BCL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"insurance"
+],
+"y": 2014
+},
+"at": "2026-11-09"
 },
 "1JE_AC82PQr2MFllz6mKI7-fcYhn9AAYD": {
 "title": "BCL-ANNUAL-2016.pdf",
@@ -70855,10 +71373,23 @@
 },
 "1rO1azEhWyJIM-PraJdgq0ojGhOjFfVNm": {
 "title": "DSL-ANNUAL-2014.pdf",
-"size": 2040,
-"kind": "notpdf",
+"size": 2722137,
+"tk": "DSL",
+"kind": "R",
+"y": null,
+"mon": null,
+"scanned": false,
 "v": 3,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"steel",
+"tech"
+],
+"y": 2014
+},
+"at": "2026-11-09"
 },
 "12Bh1h3s--18ZYEOrSFxf9yTSEpzuHaDs": {
 "title": "FFC-ANNUAL-2017.pdf",
@@ -70918,10 +71449,10 @@
 },
 "1KdZ1o9UlSn1fhdl9MUfdJIu0Ft2eZBWV": {
 "title": "HMB_Q4_2014.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1z9Qh4jB-qimTtFgOJkVTIzRH6iY-ZgPc": {
 "title": "JSBL-ANNUAL-2016 (1).pdf",
@@ -70981,10 +71512,10 @@
 },
 "1wmOB6p_d6e6RONC_5xj5zcgKxT07A4fh": {
 "title": "FCCL_Q4_2014.pdf",
-"size": 2040,
-"kind": "notpdf",
-"v": 3,
-"at": "2026-11-08"
+"err": "google busy",
+"busy": true,
+"tries": 0,
+"at": "2026-11-09"
 },
 "1acyhWUAvDL73i9ZwSI3MKAERV4DFH5X4": {
 "title": "PCAL-Q1-2014.pdf",
