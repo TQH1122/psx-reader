@@ -67,12 +67,14 @@ for i in range(n):
 json.dump(mig, open(os.path.join(AN, "migrations.json"), "w"), indent=0)
 
 # one log line per reader, then one summary line the restart step reads
-done, lefts, logs = 0, [], []
+done, gain, lefts, logs = 0, 0, [], []
 for i in range(n):
     lines = open(os.path.join(src, f"shard-{i}", "log.txt"), errors="ignore").read().splitlines() \
         if os.path.exists(os.path.join(src, f"shard-{i}", "log.txt")) else []
     logs += [f"[reader {i}] {x}" for x in lines if not x.startswith("pages ")]
-    done += (jl(os.path.join(src, f"shard-{i}", f"shard_done_{i}.json"), {}) or {}).get("done", 0)
+    sd = jl(os.path.join(src, f"shard-{i}", f"shard_done_{i}.json"), {}) or {}
+    done += sd.get("done", 0)
+    gain += sd.get("gain", 0)
     for x in lines:
         if x.startswith("done: read") and "about " in x:
             try:
@@ -80,7 +82,7 @@ for i in range(n):
             except ValueError:
                 pass
 left = min(lefts) if lefts else 0
-summary = f"done: read {done} annual reports ({n} readers side by side), 0 skipped, about {left} still to read"
+summary = f"done: read {done} annual reports ({n} readers side by side), {gain} new figures, 0 skipped, about {left} still to read"
 with open(os.path.join(AN, "log.txt"), "a") as f:
     f.write("\n".join(logs + [summary]) + "\n")
 print(summary)
@@ -93,7 +95,7 @@ import annual  # noqa: E402
 c0s = [(jl(os.path.join(src, f"shard-{i}", f"credit_start_{i}.json"), {}) or {}).get("c0") for i in range(n)]
 c0s = [c for c in c0s if isinstance(c, (int, float))]
 try:
-    annual.guard_end(max(c0s) if c0s else None, done)
+    annual.guard_end(max(c0s) if c0s else None, done, gain)
 except Exception as e:
     print(f"guard: skipped ({e})")
 try:

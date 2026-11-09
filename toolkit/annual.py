@@ -520,6 +520,16 @@ def requeue_8nov(state, ext):
     return n
 
 
+def new_figures(old, new):
+    """how many statement figures a read adds that the earlier read of the same report did not have"""
+    def flat(d):
+        if not isinstance(d, dict):
+            return set()
+        rows = (d.get("C") if d.get("cons") else d.get("S")) or {}
+        return {(y, k) for y, r in rows.items() if isinstance(r, dict) for k, v in r.items() if v is not None}
+    return len(flat(new) - flat(old))
+
+
 def requeue_thin(state, ext):
     """once (9 Nov 2026): reports whose own year came back without equity, total assets or cash flow (two models had
     agreed on only a handful of lines). Read again with the saved answers plus the extra models now asked for the main
@@ -647,7 +657,9 @@ def next_job(tk, sc, longrows, cat, docs, state, extracts, imp):
             return (tier, -float(sc[tk].get("mc") or 0), -y, f"{src}:{tk}:{y}", tk, y, src, url, "audit")
         if st.get("retry") and not st.get("done") and y not in cov:
             src, url = cands[y]
-            return (tier, -float(sc[tk].get("mc") or 0), -y, f"{src}:{tk}:{y}", tk, y, src, url, "retry")
+            # second passes wait behind every report never read before (9 Nov 2026)
+            t2 = tier + (3 if st.get("redo9") or st.get("redo8") else 0)
+            return (t2, -float(sc[tk].get("mc") or 0), -y, f"{src}:{tk}:{y}", tk, y, src, url, "retry")
         if st.get("done") or st.get("tries", 0) >= 2:
             cov |= {y} if st.get("done") else set()
             continue
@@ -1360,7 +1372,7 @@ def guard_start():
     return credit_left() if os.environ.get("OPENROUTER_PAID") else None
 
 
-def guard_end(c0, saved):
+def guard_end(c0, saved, gain=None):
     if c0 is None:
         return
     c1 = credit_left()
@@ -1369,17 +1381,21 @@ def guard_end(c0, saved):
     g = jl(GUARD, {}) or {}
     now = time.time()
     log = [x for x in g.get("runs", []) if now - x["t"] < 48 * 3600]
-    log.append({"t": round(now), "spent": round(max(0.0, c0 - c1), 4), "saved": saved})
+    log.append({"t": round(now), "spent": round(max(0.0, c0 - c1), 4), "saved": saved, "gain": gain})
     g["runs"] = log
     day = [x for x in log if now - x["t"] < 24 * 3600]
     spent, got = sum(x["spent"] for x in day), sum(x["saved"] for x in day)
     idle = sum(x["spent"] for x in day if not x["saved"])
     why = None
-    if idle > IDLE_MAX:
+    gains = [x.get("gain") for x in day if x.get("gain") is not None]
+    gained = sum(gains)
+    if gains and spent > 0.30 and spent / max(gained, 1) > 0.01:
+        why = f"${spent:.2f} spent in the last day for only {gained} new figures (over 1 cent a figure)"
+    elif idle > IDLE_MAX:
         why = f"${idle:.2f} spent in the last day on runs that saved no report"
     elif spent > 0.30 and spent / max(got, 1) > PER_REPORT_MAX:
         why = f"${spent:.2f} spent for {got} reports in the last day, over 2 cents a report"
-    print(f"guard: this run ${max(0.0, c0 - c1):.3f} for {saved} reports; last day ${spent:.2f} for {got}; credit ${c1:.2f}",
+    print(f"guard: this run ${max(0.0, c0 - c1):.3f} for {saved} reports ({gain} new figures); last day ${spent:.2f} for {got}; credit ${c1:.2f}",
           flush=True)
     if why:
         g["paid_off_until"] = time.strftime("%Y-%m-%dT%H:%M:%S", time.gmtime(now + PAUSE_H * 3600))
@@ -1466,6 +1482,7 @@ def main():
         return 0
     jobsmap = jl(os.path.join(AN, "jobs.json"), {}) or {}
     done = skipped = waiting = 0
+    gain = [0]   # figures this run added that were not held before (what his credit actually buys)
     import heapq
     from concurrent.futures import ThreadPoolExecutor, wait as fwait, FIRST_COMPLETED
     heap = list(jobs)
@@ -1482,7 +1499,11 @@ def main():
             paid = [r for r in readers if getattr(r, "paid", False)]
             free = [r for r in readers if not getattr(r, "paid", False)]
             rot = lambda L: L[k % len(L):] + L[:k % len(L)] if L else []
-            if len(job) > 8:
+            if (STATE.get(job[3]) or {}).get("redo9") or (STATE.get(job[3]) or {}).get("redo8"):
+                # 9 Nov 2026, his rule: paid credit is never spent reading a report again; second passes over reports
+                # already read use the free models only, and paid credit goes to reports never read before
+                order = rot(free)
+            elif len(job) > 8:
                 # an audit re-read needs two models that never read this report: offer every model, free ones first
                 # (3 Nov 2026: re-reads always landed in slots 1 and 2, so only the 4 paid models were ever offered;
                 # once those had all read a report, its re-read waited forever and was retried every run)
@@ -1526,6 +1547,7 @@ def main():
                     audited_now[0] += 1
                 if "rec" in res:
                     tk = res["rec"].get("ticker") or tk  # a report filed under the wrong company counts for its own
+                    gain[0] += new_figures(ext.get(jid), res["rec"])
                     ext[jid] = res["rec"]
                     by_tk.setdefault(tk, []).append(res["rec"])
                     jobsmap[jid] = [tk, job[5], job[7]]
@@ -1564,11 +1586,12 @@ def main():
           f"models used: " + ", ".join(f"{r.model} {r.n}" for r in readers if r.n)
           + (f"; resting until tomorrow: {len(spent)} models" if spent else ""))
     try:
-        guard_end(c0, done)
+        guard_end(c0, done, gain[0])
     except Exception as e:  # the guard never stops the reader
         print(f"guard: skipped ({e})", flush=True)
+    print(f"gain: {gain[0]} new figures this run", flush=True)
     if SHARDS > 1:
-        jw({"done": done}, os.path.join(AN, f"shard_done_{SHARD}.json"))
+        jw({"done": done, "gain": gain[0]}, os.path.join(AN, f"shard_done_{SHARD}.json"))
     try:
         if SHARDS <= 1:
             idle_alert(done, sc, longrows, by_tk)
