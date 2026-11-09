@@ -6415,7 +6415,7 @@
 "redo8": 1
 },
 "khi:SEL:2015": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 17,
 "tries": 1,
 "redo8": 1,
@@ -6690,7 +6690,7 @@
 "redo9": 1
 },
 "khi:PSYL:2006": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 26,
 "retry": 1,
 "tries": 1,
@@ -7243,11 +7243,11 @@
 },
 "khi:SHSML:2003": {
 "at": "2026-11-09",
-"n": 18,
-"retry": 1,
+"n": 32,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:NETSOL:2005": {
 "at": "2026-11-09",
@@ -8427,11 +8427,12 @@
 },
 "khi:SUTM:2007": {
 "at": "2026-11-09",
-"n": 30,
-"tries": 2,
+"n": 36,
+"tries": 1,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"second": 1,
+"done": true
 },
 "khi:MIRKS:2007": {
 "at": "2026-11-01",
@@ -9541,10 +9542,10 @@
 },
 "khi:AGSML:2003": {
 "at": "2026-11-09",
-"n": 31,
-"retry": 1,
+"n": 13,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:SNAI:2003": {
 "at": "2026-11-09",
@@ -11040,9 +11041,10 @@
 "khi:FIL:2002": {
 "at": "2026-11-09",
 "n": 24,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan Electric Power Company Limited (names HUBC)"
 },
 "khi:SSGC:2021": {
 "at": "2026-11-01",
@@ -11561,7 +11563,7 @@
 "done": true
 },
 "khi:SHEZ:2005": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 26,
 "retry": 1,
 "tries": 1,
@@ -14446,15 +14448,15 @@
 "why": "not annual accounts (interim statements)"
 },
 "khi:AGSML:2001": {
-"at": "2026-11-04",
+"at": "2026-11-09",
 "n": 35,
 "waits": 2,
 "reread": [
 2000
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:RUPL:2005": {
 "at": "2026-11-09",
@@ -14953,9 +14955,9 @@
 "khi:MQTM:2002": {
 "at": "2026-11-09",
 "n": 18,
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:TSMF:2003": {
 "at": "2026-11-02",
@@ -15622,9 +15624,9 @@
 "tries": 1,
 "rev": 4,
 "redo8": 1,
-"n": 9,
-"retry": 1,
-"redo9": 1
+"n": 14,
+"redo9": 1,
+"done": true
 },
 "web:SIEM:2023": {
 "at": "2026-11-08",
@@ -17366,14 +17368,14 @@
 "done": true
 },
 "web:PSYL:2019": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 26,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
 "rev": 5,
 "second": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"why": "Company website download failed (522)"
 },
 "web:TATM:2026": {
 "at": "2026-11-09",
@@ -26106,12 +26108,12 @@
 "web:PSYL:2020": {
 "at": "2026-11-09",
 "waits": 1,
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "second": 1,
 "n": 28,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"why": "Company website download failed (522)"
 },
 "web:GAL:2020": {
 "at": "2026-11-08",
@@ -35418,7 +35420,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:LCI:2021": {
 "at": "2026-11-09",
@@ -35560,10 +35563,10 @@
 "khi:SEL:2022": {
 "at": "2026-11-09",
 "waits": 1,
-"n": 25,
-"retry": 1,
+"n": 29,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:PKGI:2025": {
 "at": "2026-11-08",
@@ -36171,12 +36174,12 @@
 "redo9": 1
 },
 "web:SEL:2020": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
-"n": 14,
-"retry": 1,
-"redo9": 1
+"n": 16,
+"redo9": 1,
+"done": true
 },
 "psx:PACE:2022": {
 "at": "2026-11-08",
@@ -38680,7 +38683,8 @@
 "n": 27,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "arc:DWSM:2010": {
 "at": "2026-11-08",
@@ -51616,5 +51620,36 @@
 },
 "web:HUBC:2023": {
 "at": "2026-11-09"
+},
+"drive:SEL:2021": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:SEL:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 25
+},
+"web:SEL:2018": {
+"at": "2026-11-09",
+"done": true,
+"n": 32
+},
+"khi:AGSML:2002": {
+"at": "2026-11-09",
+"done": true,
+"n": 28
+},
+"drive:SEL:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 30
+},
+"drive:SEL:2016": {
+"at": "2026-11-09",
+"done": true,
+"n": 28
 }
 }
