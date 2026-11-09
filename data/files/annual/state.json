@@ -8255,20 +8255,20 @@
 "redo9": 1
 },
 "khi:UBDL:2007": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 27,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:UBDL:2006": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 11,
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:FASM:2005": {
 "at": "2026-11-09",
@@ -9303,11 +9303,11 @@
 "redo8": 1
 },
 "khi:RUBY:2003": {
-"at": "2026-11-01",
-"n": 18,
-"retry": 1,
+"at": "2026-11-09",
+"n": 15,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:SKRS:2007": {
 "at": "2026-11-09",
@@ -9826,10 +9826,10 @@
 },
 "khi:MQTM:2007": {
 "at": "2026-11-09",
-"n": 24,
-"retry": 1,
+"n": 18,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:SUHJ:2005": {
 "at": "2026-11-09",
@@ -11858,7 +11858,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:POML:2001": {
 "at": "2026-11-09",
@@ -13329,10 +13330,11 @@
 "khi:KPUS:2003": {
 "at": "2026-11-09",
 "n": 22,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: incomplete annual accounts, missing balance sheet liabilities and second page"
 },
 "khi:GHGL:2002": {
 "at": "2026-11-02",
@@ -14304,9 +14306,10 @@
 "khi:RUBY:2005": {
 "at": "2026-11-09",
 "n": 20,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "company name does not match: Profit and Loss Account for the Nine Months Ended June 30, 2 (names ANL)"
 },
 "khi:DBCI:2001": {
 "at": "2026-11-02",
@@ -14750,7 +14753,7 @@
 "redo9": 1
 },
 "khi:MQTM:2005": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 22,
 "retry": 1,
 "tries": 1,
@@ -18623,15 +18626,15 @@
 "done": true
 },
 "web:UBDL:2013": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 10,
 "reread": [
 2013
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:KHTC:2015": {
 "at": "2026-11-08",
@@ -18719,7 +18722,7 @@
 "redo8": 1
 },
 "web:UBDL:2011": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 10,
 "reread": [
 2010,
@@ -18727,8 +18730,8 @@
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:CRTM:2020": {
 "at": "2026-11-09",
@@ -25148,13 +25151,13 @@
 "tries": 1,
 "rev": 4,
 "second": 1,
-"n": 22,
+"n": 2,
 "reread": [
 2014
 ],
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:PIOC:2014": {
 "at": "2026-11-03",
@@ -25723,7 +25726,7 @@
 "redo8": 1
 },
 "web:UBDL:2012": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "waits": 1,
 "n": 16,
 "reread": [
@@ -25731,8 +25734,8 @@
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:BLUEX:2023": {
 "at": "2026-11-07",
@@ -34264,7 +34267,7 @@
 "redo8": 1
 },
 "khi:RUBY:2002": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "redo8": 1,
@@ -34272,8 +34275,8 @@
 "reread": [
 2001
 ],
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:SKRS:2025": {
 "at": "2026-11-08",
@@ -40551,11 +40554,10 @@
 "drive:DIIL:2017": {
 "at": "2026-11-09",
 "n": 28,
-"tries": 1,
+"tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
+"why": "no figure passed the checks",
 "second": 1
 },
 "drive:JKSM:2014": {
@@ -41303,7 +41305,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:FLYNG:2013": {
 "at": "2026-11-09",
@@ -49827,9 +49830,9 @@
 "at": "2026-11-09",
 "tries": 1,
 "rev": 5,
-"why": "Drive download failed (200)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 24
 },
 "web:PECO:2011": {
 "at": "2026-11-09",
@@ -51478,7 +51481,10 @@
 "n": 40
 },
 "drive:BCL:2016": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: required financial statement pages not provided"
 },
 "drive:FFC:2017": {
 "at": "2026-11-09",
@@ -51560,5 +51566,15 @@
 "at": "2026-11-09",
 "done": true,
 "n": 6
+},
+"drive:BELA:2022": {
+"at": "2026-11-09",
+"done": true,
+"n": 0
+},
+"drive:BCL:2015": {
+"at": "2026-11-09",
+"done": true,
+"n": 26
 }
 }
