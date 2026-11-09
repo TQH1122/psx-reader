@@ -7556,11 +7556,11 @@
 },
 "khi:CRTM:2001": {
 "at": "2026-11-09",
-"n": 30,
-"retry": 1,
+"n": 26,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:DCL:2019": {
 "at": "2026-11-08",
@@ -11530,7 +11530,7 @@
 "done": true
 },
 "khi:GVGL:2003": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -11569,7 +11569,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:SHEZ:2002": {
 "at": "2026-11-09",
@@ -11577,7 +11578,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:HICL:2003": {
 "at": "2026-11-09",
@@ -42666,7 +42668,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "arc:LSEVL:2013": {
 "at": "2026-11-08",
@@ -42689,15 +42692,14 @@
 "why": "company name does not match: Maple Leaf Cement Factory Limited (names ACPL)"
 },
 "arc:GVGL:2010": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 15,
 "reread": [
 2009
 ],
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
-"retry": 1,
 "redo9": 1
 },
 "arc:MLCF:2009": {
@@ -51661,6 +51663,9 @@
 "n": 28
 },
 "arc:GVGL:2011": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: MCB Bank Limited (names ABL)"
 }
 }
