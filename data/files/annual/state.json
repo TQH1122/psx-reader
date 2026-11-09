@@ -3145,10 +3145,10 @@
 },
 "khi:AHCL:2001": {
 "at": "2026-11-09",
-"n": 24,
-"retry": 1,
+"n": 19,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:PKGS:2003": {
 "at": "2026-11-01",
@@ -4549,7 +4549,7 @@
 "redo8": 1
 },
 "khi:PTC:2001": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 26,
 "retry": 1,
 "tries": 1,
@@ -8587,10 +8587,11 @@
 "khi:SNAI:2003": {
 "at": "2026-11-09",
 "n": 24,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:FEM:2006": {
 "at": "2026-11-08",
@@ -10320,11 +10321,11 @@
 "redo8": 1
 },
 "khi:GATM:2002": {
-"at": "2026-11-02",
-"n": 32,
-"retry": 1,
+"at": "2026-11-09",
+"n": 39,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:UBL:2010": {
 "at": "2026-11-08",
@@ -10563,11 +10564,11 @@
 "why": "not annual accounts: reason"
 },
 "khi:GATM:2001": {
-"at": "2026-11-02",
-"n": 37,
-"retry": 1,
+"at": "2026-11-09",
+"n": 15,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:PINL:2017": {
 "at": "2026-11-08",
@@ -10687,11 +10688,11 @@
 "n": 30
 },
 "khi:PTC:2002": {
-"at": "2026-11-02",
-"n": 30,
-"retry": 1,
+"at": "2026-11-09",
+"n": 31,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "drive:MTL:2013": {
 "at": "2026-11-02",
@@ -19833,9 +19834,10 @@
 "khi:PTC:2003": {
 "at": "2026-11-09",
 "n": 29,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:PAEL:2016": {
 "at": "2026-11-03",
@@ -21134,10 +21136,10 @@
 },
 "khi:GATM:2003": {
 "at": "2026-11-09",
-"n": 34,
-"retry": 1,
+"n": 32,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:CHAS:2021": {
 "at": "2026-11-03",
