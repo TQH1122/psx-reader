@@ -8763,11 +8763,12 @@
 "done": true
 },
 "khi:TOWL:2001": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 32,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:MIRKS:2005": {
 "at": "2026-11-01",
@@ -9864,9 +9865,10 @@
 "khi:MQTM:2003": {
 "at": "2026-11-09",
 "n": 21,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "company name does not match: Habib Bank Limited (names ABL)"
 },
 "khi:FEM:2003": {
 "at": "2026-11-09",
@@ -11504,10 +11506,10 @@
 },
 "khi:UDPL:2005": {
 "at": "2026-11-09",
-"n": 20,
-"retry": 1,
+"n": 15,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:PRET:2003": {
 "at": "2026-11-09",
@@ -14194,7 +14196,8 @@
 "tries": 2,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:NAGC:2002": {
 "at": "2026-11-08",
@@ -14618,9 +14621,10 @@
 "khi:TOWL:2003": {
 "at": "2026-11-09",
 "n": 28,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:AKGL:2005": {
 "at": "2026-11-02",
@@ -14944,7 +14948,7 @@
 "redo8": 1
 },
 "khi:MQTM:2002": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 18,
 "retry": 1,
 "tries": 1,
@@ -14967,9 +14971,10 @@
 "khi:PASM:2003": {
 "at": "2026-11-09",
 "n": 29,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan Industrial Trading Corporation (names NICL)"
 },
 "khi:BFMOD:2002": {
 "at": "2026-11-08",
@@ -15023,7 +15028,7 @@
 "why": "not annual accounts: Company name not found on provided pages"
 },
 "khi:PASM:2001": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -20129,8 +20134,8 @@
 "second": 1,
 "n": 0,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:LPGL:2020": {
 "at": "2026-11-03",
@@ -20194,23 +20199,24 @@
 "redo9": 1
 },
 "web:AKGL:2021": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
 "n": 6,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:AKGL:2020": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 4,
 "second": 1,
 "n": 11,
 "retry": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "web:BCL:2014": {
 "at": "2026-11-03",
@@ -38687,7 +38693,7 @@
 "second": 1
 },
 "arc:BERG:2016": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 24,
 "retry": 1,
 "tries": 1,
@@ -45027,11 +45033,11 @@
 },
 "arc:BERG:2018": {
 "at": "2026-11-09",
-"n": 37,
-"retry": 1,
+"n": 22,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "arc:SPWL:2024": {
 "at": "2026-11-08",
@@ -51592,5 +51598,11 @@
 "at": "2026-11-09",
 "done": true,
 "n": 16
+},
+"khi:PASM:2002": {
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
 }
 }
