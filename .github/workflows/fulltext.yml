@@ -75,6 +75,25 @@ jobs:
             python3 toolkit/textscan.py 2> /tmp/scan_err.log | tail -n 1 || true
           fi
           python3 toolkit/savegit.py "Robot: word scans $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/notes/text_features.json data/db/market/textlib.json
+      - name: Rerun the brain when the word scans have grown a fifth
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          go=$(python3 -c "
+          import json, os
+          lib = json.load(open('data/db/market/textlib.json')) if os.path.exists('data/db/market/textlib.json') else {}
+          n = (lib.get('scanned') or {}).get('years') or 0
+          p = 'data/files/fulltext/brain_at.json'
+          last = json.load(open(p)).get('years', 0) if os.path.exists(p) else 0
+          if n >= 200 and n >= 1.2 * last:
+              json.dump({'years': n}, open(p, 'w'))
+              print(1)
+          else:
+              print(0)" 2>/dev/null || echo 0)
+          if [ "$go" = "1" ]; then
+            python3 toolkit/savegit.py "Robot: brain rerun for new word scans [CF-Pages-Skip]" data/files/fulltext/brain_at.json
+            gh workflow run lane-jobs.yml -R ${{ github.repository }} --ref main -f job=monthly && echo "brain rerun started"
+          fi
       - name: Start the next round while reports are left
         env:
           GH_TOKEN: ${{ github.token }}
