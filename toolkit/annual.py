@@ -143,7 +143,20 @@ def jw(obj, p, **kw):
     os.replace(t, p)
 
 
+DRIVE_API = "https://www.googleapis.com/drive/v3/files/{}?alt=media&acknowledgeAbuse=true&key={}"
+
+
 def curl(url, out=None, data=None, timeout=240):
+    # his Drive files through the Drive API and his key first (9 Nov 2026): the public download link hits Google's daily
+    # limit ("Quota exceeded") long before the API does, which left thousands of his reports unread
+    m = re.search(r"drive\.usercontent\.google\.com/download\?id=([\w-]+)", url)
+    if m and out and os.environ.get("DRIVE_API_KEY") and not data:
+        code, msg = curl(DRIVE_API.format(m.group(1), os.environ["DRIVE_API_KEY"]), out, timeout=timeout)
+        try:
+            if code == 200 and open(out, "rb").read(5) == b"%PDF-":
+                return code, msg
+        except OSError:
+            pass
     cmd = ["curl", "-s", "-L", "-m", str(timeout), "-A", UA, "-w", "%{http_code}"]
     if data:
         cmd += ["-X", "POST", "-d", data]

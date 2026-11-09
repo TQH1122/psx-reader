@@ -182,8 +182,19 @@ def ident(fid, title):
     w = tempfile.mkdtemp()
     pdf = os.path.join(w, "f.pdf")
     try:
-        p = subprocess.run(["curl", "-sL", "-m", "400", "--max-filesize", "90000000", "-o", pdf, "-w", "%{http_code}",
-                            DRIVE.format(fid)], capture_output=True, text=True)
+        # the Drive API with his key first (9 Nov 2026): the public link was answering "Quota exceeded" for thousands
+        # of his files, so they were never identified; the public link stays as the fallback
+        key = os.environ.get("DRIVE_API_KEY", "")
+        p = None
+        if key:
+            p = subprocess.run(["curl", "-sL", "-m", "400", "--max-filesize", "90000000", "-o", pdf, "-w", "%{http_code}",
+                                f"https://www.googleapis.com/drive/v3/files/{fid}?alt=media&acknowledgeAbuse=true&key={key}"],
+                               capture_output=True, text=True)
+            if not (p.stdout == "200" and os.path.exists(pdf) and open(pdf, "rb").read(5) == b"%PDF-"):
+                p = None
+        if p is None:
+            p = subprocess.run(["curl", "-sL", "-m", "400", "--max-filesize", "90000000", "-o", pdf, "-w", "%{http_code}",
+                                DRIVE.format(fid)], capture_output=True, text=True)
         if p.stdout != "200" or not os.path.exists(pdf):
             return {"title": title, "err": f"download {p.stdout or p.returncode}"}
         size = os.path.getsize(pdf)
