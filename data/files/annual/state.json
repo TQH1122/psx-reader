@@ -4554,7 +4554,8 @@
 "tries": 2,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:HUMNL:2015": {
 "at": "2026-11-08",
@@ -10448,11 +10449,11 @@
 "n": 2
 },
 "khi:PSEL:2002": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 28,
-"retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "khi:PTC:2025": {
 "at": "2026-11-08",
@@ -21299,9 +21300,10 @@
 "khi:PSEL:2003": {
 "at": "2026-11-09",
 "n": 18,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "company name does not match: National Foods Limited (names BBFL)"
 },
 "web:NCL:2004": {
 "at": "2026-11-08",
