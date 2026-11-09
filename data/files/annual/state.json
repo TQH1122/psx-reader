@@ -22167,11 +22167,11 @@
 "why": "file too large"
 },
 "web:HUBC:2020": {
-"at": "2026-11-03",
-"n": 36,
-"retry": 1,
+"at": "2026-11-09",
+"n": 31,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:LUCK:2002": {
 "at": "2026-11-09",
@@ -22305,11 +22305,11 @@
 "n": 49
 },
 "web:HUBC:2018": {
-"at": "2026-11-03",
-"n": 34,
-"retry": 1,
+"at": "2026-11-09",
+"n": 18,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:MTL:2014": {
 "at": "2026-11-03",
@@ -35466,9 +35466,10 @@
 "web:HUBC:2021": {
 "at": "2026-11-09",
 "n": 34,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "drive:SEL:2025": {
 "at": "2026-11-09",
@@ -36675,7 +36676,7 @@
 "why": "Drive download failed (200)"
 },
 "drive:HUBC:2016": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "second": 1,
@@ -42700,7 +42701,8 @@
 "tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
-"redo9": 1
+"redo9": 1,
+"second": 1
 },
 "arc:MLCF:2009": {
 "at": "2026-11-08",
@@ -51667,5 +51669,15 @@
 "tries": 2,
 "rev": 5,
 "why": "company name does not match: MCB Bank Limited (names ABL)"
+},
+"web:HUBC:2019": {
+"at": "2026-11-09",
+"done": true,
+"n": 36
+},
+"drive:HUBC:2017": {
+"at": "2026-11-09",
+"done": true,
+"n": 33
 }
 }
