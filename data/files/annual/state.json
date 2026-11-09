@@ -8428,9 +8428,10 @@
 "khi:SUTM:2007": {
 "at": "2026-11-09",
 "n": 30,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:MIRKS:2007": {
 "at": "2026-11-01",
@@ -13917,11 +13918,12 @@
 "done": true
 },
 "khi:SUTM:2005": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 32,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:GTYR:2001": {
 "at": "2026-11-09",
@@ -14689,11 +14691,11 @@
 },
 "khi:ZUMA:2002": {
 "at": "2026-11-09",
-"n": 20,
-"retry": 1,
+"n": 16,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:BUXL:2005": {
 "at": "2026-11-09",
@@ -35413,9 +35415,10 @@
 "web:HUBC:2024": {
 "at": "2026-11-09",
 "n": 38,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:LCI:2021": {
 "at": "2026-11-09",
@@ -51610,5 +51613,8 @@
 "at": "2026-11-09",
 "done": true,
 "n": 28
+},
+"web:HUBC:2023": {
+"at": "2026-11-09"
 }
 }
