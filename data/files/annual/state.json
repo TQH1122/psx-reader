@@ -4100,7 +4100,7 @@
 "redo8": 1
 },
 "khi:AICL:2010": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 18,
 "retry": 1,
 "tries": 1,
@@ -31028,7 +31028,7 @@
 "redo9": 1
 },
 "khi:WASL:2004": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 13,
 "reread": [
 2004
@@ -36647,7 +36647,8 @@
 "redo9": 1,
 "waits": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "web:UCAPM:2020": {
 "at": "2026-11-08",
@@ -38162,11 +38163,11 @@
 },
 "arc:AICL:2013": {
 "at": "2026-11-09",
-"n": 22,
-"retry": 1,
+"n": 20,
 "tries": 1,
 "redo9": 1,
-"waits": 2
+"waits": 2,
+"done": true
 },
 "arc:ALIFE:2016": {
 "at": "2026-11-09",
@@ -44307,11 +44308,11 @@
 "at": "2026-11-09",
 "tries": 1,
 "rev": 5,
-"retry": 1,
 "second": 1,
-"n": 10,
+"n": 8,
 "redo9": 1,
-"waits": 2
+"waits": 2,
+"done": true
 },
 "arc:TELE:2011": {
 "at": "2026-11-09",
