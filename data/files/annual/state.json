@@ -1887,11 +1887,11 @@
 },
 "khi:FECTC:2005": {
 "at": "2026-11-09",
-"n": 11,
-"retry": 1,
+"n": 24,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:BTL:2002": {
 "at": "2026-11-09",
@@ -1948,11 +1948,12 @@
 "done": true
 },
 "khi:FECTC:2004": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 24,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:MRNS:2005": {
 "at": "2026-11-09",
@@ -14012,7 +14013,7 @@
 "done": true
 },
 "khi:FECTC:2003": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -14903,7 +14904,7 @@
 "redo8": 1
 },
 "khi:FANM:2006": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -36780,7 +36781,7 @@
 "second": 1
 },
 "drive:HUBC:2013": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "tries": 1,
 "rev": 5,
 "second": 1,
@@ -37524,12 +37525,12 @@
 },
 "arc:FANM:2016": {
 "at": "2026-11-09",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "second": 1,
 "n": 0,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"why": "no figure passed the checks"
 },
 "arc:ASTM:2017": {
 "at": "2026-11-08",
@@ -51692,6 +51693,8 @@
 "n": 34
 },
 "drive:HUBC:2014": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"done": true,
+"n": 34
 }
 }
