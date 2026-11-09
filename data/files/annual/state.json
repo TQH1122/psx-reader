@@ -4551,9 +4551,10 @@
 "khi:PTC:2001": {
 "at": "2026-11-09",
 "n": 26,
-"retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:HUMNL:2015": {
 "at": "2026-11-08",
@@ -8591,7 +8592,8 @@
 "redo8": 1,
 "waits": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1
 },
 "khi:FEM:2006": {
 "at": "2026-11-08",
@@ -19833,11 +19835,12 @@
 },
 "khi:PTC:2003": {
 "at": "2026-11-09",
-"n": 29,
-"tries": 2,
+"n": 26,
+"tries": 1,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"second": 1,
+"done": true
 },
 "web:PAEL:2016": {
 "at": "2026-11-03",
