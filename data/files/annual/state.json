@@ -6695,7 +6695,8 @@
 "n": 26,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:MUREB:2006": {
 "at": "2026-11-09",
@@ -42759,10 +42760,10 @@
 "arc:JATM:2015": {
 "at": "2026-11-09",
 "n": 14,
-"retry": 1,
 "tries": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "arc:MLCF:2007": {
 "at": "2026-11-08",
@@ -42771,7 +42772,7 @@
 "why": "company name does not match: KOHINOOR TEXTILE MILLS LIMITED (names AATM)"
 },
 "arc:JATM:2014": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 11,
 "retry": 1,
 "tries": 1,
