@@ -10371,10 +10371,11 @@
 "khi:BNWM:2005": {
 "at": "2026-11-09",
 "n": 26,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
 },
 "khi:SLYT:2003": {
 "at": "2026-11-09",
@@ -14655,11 +14656,12 @@
 "redo9": 1
 },
 "khi:BNWM:2003": {
-"at": "2026-11-02",
+"at": "2026-11-09",
 "n": 24,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "khi:IDRT:2006": {
 "at": "2026-11-08",
