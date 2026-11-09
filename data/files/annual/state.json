@@ -9417,9 +9417,10 @@
 "khi:FIL:2006": {
 "at": "2026-11-09",
 "n": 22,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "khi:HRPL:2003": {
 "at": "2026-11-01",
@@ -9500,11 +9501,11 @@
 "waits": 1
 },
 "khi:FIL:2003": {
-"at": "2026-11-01",
-"n": 10,
-"retry": 1,
+"at": "2026-11-09",
+"n": 4,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:LPGL:2020": {
 "at": "2026-11-01",
@@ -11031,7 +11032,7 @@
 "redo8": 1
 },
 "khi:FIL:2002": {
-"at": "2026-11-01",
+"at": "2026-11-09",
 "n": 24,
 "retry": 1,
 "tries": 1,
@@ -14535,7 +14536,7 @@
 "redo8": 1
 },
 "khi:FIL:2005": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 8,
 "waits": 0,
 "tries": 1,
@@ -14543,9 +14544,9 @@
 "reread": [
 2004
 ],
-"retry": 1,
 "redo8": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:MSCL:2005": {
 "at": "2026-11-09",
@@ -42624,7 +42625,7 @@
 "done": true
 },
 "arc:GVGL:2012": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 34,
 "retry": 1,
 "tries": 1,
@@ -51436,6 +51437,9 @@
 "n": 26
 },
 "arc:GVGL:2013": {
-"at": "2026-11-09"
+"at": "2026-11-09",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: OCR text is too garbled to extract required financial figures"
 }
 }
