@@ -187,7 +187,12 @@ def ident(fid, title):
         if p.stdout != "200" or not os.path.exists(pdf):
             return {"title": title, "err": f"download {p.stdout or p.returncode}"}
         size = os.path.getsize(pdf)
-        if open(pdf, "rb").read(5) != b"%PDF-":
+        head = open(pdf, "rb").read(4096)
+        if head[:5] != b"%PDF-" and size < 50_000 and re.search(rb"(?i)<html|<!doctype", head):
+            # Google answered with a page instead of the file: it is busy or limiting downloads (9 Nov 2026: 3,270
+            # of his PDFs were filed as "not a PDF" from this 2 KB page and never read). A pause, never a verdict.
+            return {"title": title, "err": "google busy", "busy": True}
+        if head[:5] != b"%PDF-":
             r = {"title": title, "size": size, "kind": "notpdf", "v": 3}
             if re.search(r"\.(xlsx?|csv)$", title or "", re.I):
                 r.update(kind="sheet", **research("", title))
@@ -239,16 +244,17 @@ def main():
     # a failed download gets two more tries, in later runs
     # looked at again (8 Nov 2026): files that failed on the old OCR time limit, and files matched to no listed company,
     # which now get their printed company name (companies that left the market)
-    again = lambda r: (r.get("err") and (r.get("tries", 1) < 3 or ("tesseract" in str(r["err"]) and r.get("v", 1) < 2))) \
+    again = lambda r: (r.get("err") and (r.get("busy") or r.get("tries", 1) < 3 or ("tesseract" in str(r["err"]) and r.get("v", 1) < 2))) \
+        or (r.get("kind") == "notpdf" and r.get("size") == 2040) \
         or (not r.get("err") and not r.get("tk") and r.get("v", 1) < 2) \
         or (not r.get("err") and not r.get("kind") and r.get("v", 1) < 3)  # unknown files: checked for research material
     todo = [(f, t) for f, t in files.items() if f not in known and (f not in db or again(db[f])) and mine(f)]
     todo.sort(key=lambda x: x[0] in db)  # files never seen first
-    lock, done = threading.Lock(), [0]
-    with ThreadPoolExecutor(8) as pool:
+    lock, done, busy = threading.Lock(), [0], [0]
+    with ThreadPoolExecutor(4) as pool:   # 4 at a time (9 Nov 2026: 8 times 3 indexers made Google refuse)
         futs = {}
         it = iter(todo)
-        for _ in range(8):
+        for _ in range(4):
             x = next(it, None)
             if x:
                 futs[pool.submit(ident, *x)] = x
@@ -257,14 +263,28 @@ def main():
                 fid, title = futs.pop(f)
                 r = f.result()
                 with lock:
-                    if r.get("err"):
-                        r["tries"] = (db.get(fid) or {}).get("tries", 0) + 1
+                    old = db.get(fid) or {}
+                    if r.get("busy"):
+                        busy[0] += 1
+                        r["tries"] = old.get("tries", 0)   # Google being busy is not the file's fault
+                    elif r.get("err"):
+                        r["tries"] = old.get("tries", 0) + 1
                         r["v"] = 2
+                        busy[0] = 0
+                    else:
+                        busy[0] = 0
                     r["at"] = time.strftime("%Y-%m-%d")
-                    db[fid] = r
+                    # a failed look never replaces a file already identified (9 Nov 2026)
+                    if not (r.get("err") and old.get("kind") and old.get("kind") != "notpdf" and not old.get("err")):
+                        db[fid] = r
                     done[0] += 1
                     if done[0] % 25 == 0:
                         json.dump(db, open(OUT, "w"), indent=0)
+                if busy[0] >= 5:   # Google is limiting: slow down, and stop this run if it goes on
+                    time.sleep(min(300, 30 * busy[0]))
+                    if busy[0] >= 25:
+                        print("google busy: stopping this run early; the next run carries on", flush=True)
+                        t0 = 0
                 if time.time() - t0 < MINUTES * 60:
                     x = next(it, None)
                     if x:

@@ -176,6 +176,12 @@ def name_ok(printed, listed):
 GENERIC = {"limited", "ltd", "pakistan", "company", "co", "the", "of", "and", "industries", "mills", "corporation", "group",
            "holdings", "pvt", "private", "plc", "international", "textile", "textiles", "sugar", "cement", "power", "bank"}
 ALIASES = {}  # ticker -> former names (KHI Stocks' archive names), filled at the start of a run
+# renamed companies whose older reports print the former name (9 Nov 2026): Engro Holdings Limited is the former
+# Dawood Hercules Corporation Limited, renamed in the 2024 to 2025 Engro restructuring; its reports up to 2023 print
+# the old name, so eight years were rejected as another company's
+RENAMED = {"ENGROH": {"Dawood Hercules Corporation Limited"}}
+for _t, _n in RENAMED.items():
+    ALIASES.setdefault(_t, set()).update(_n)
 
 
 def close_name(printed, listed):
@@ -289,7 +295,10 @@ def psx_docs():
     # his other Drive annual reports (2 Nov 2026), once the PSX Library folder is shared "anyone with the link":
     # checked with one test download per run, so nothing is tried (and no attempt wasted) while it is still private
     withid = [r for r in lib if r.get("id")]
-    if any(drive_open(r["id"]) for r in withid[:6]):  # any one opening shows the folder is shared
+    # 9 Nov 2026: the folder is link shared (2 Nov 2026). A test download that Google turned away while busy used to
+    # drop every Drive report from the whole run, so the copies are always offered; a file that will not download
+    # fails on its own with its own reason
+    if withid:
         for r in withid:
             out.setdefault(r["tk"], {}).setdefault(int(r["y"]), (r["id"], DRIVE.format(r["id"])))
     for r in lib:  # after Drive, so his Drive copy wins over the PSX site
@@ -501,6 +510,25 @@ def requeue_8nov(state, ext):
     return n
 
 
+def requeue_drive_busy(state):
+    """once (9 Nov 2026): Drive reports given up as "Drive download failed (200)", which was Google's busy page, and
+    renamed companies' reports rejected for printing the former name"""
+    mp = os.path.join(AN, "migrations.json")
+    done = jl(mp, {}) or {}
+    if done.get("requeue_drive_busy"):
+        return 0
+    n = 0
+    for k, st in state.items():
+        renamed = k.split(":")[1] in RENAMED and "does not match" in (st.get("why") or "")
+        if renamed or (k.startswith("drive:") and not st.get("done") and "download failed (200)" in (st.get("why") or "")):
+            st.update(retry=1, tries=1)
+            st.pop("why", None)
+            n += 1
+    done["requeue_drive_busy"] = f"{date.today().isoformat()}: {n} reports"
+    jw(done, mp, indent=0)
+    return n
+
+
 def requeue_groups(state, ext, longrows):
     """once (8 Nov 2026): group companies' reports read before the reader noted whether a report has group accounts
     at all (standalone reads) or before owners' profit was taken from statements with no minority interest
@@ -644,9 +672,11 @@ def get_pages(jid, src, url, work):
             pdf = os.path.join(work, "r.txt")
             html_to_pages(os.path.join(work, "r.html"), pdf)
     else:
-        for _ in range(2):
+        for wait in (0, 45, 120):   # Google sometimes answers with a short "busy" page: wait and ask again (9 Nov 2026)
+            time.sleep(wait)
             code, _ = curl(url, pdf, timeout=600)
-            if code in (200, 404):
+            ok = code == 200 and os.path.exists(pdf) and open(pdf, "rb").read(5) == b"%PDF-"
+            if ok or code == 404 or (code == 200 and os.path.getsize(pdf) > 50_000):
                 break
         if code != 200 or open(pdf, "rb").read(5) != b"%PDF-":
             return None, f"{ {'psx': 'PSX', 'web': 'Company website', 'arc': 'Internet Archive'}.get(src, 'Drive') } download failed ({code})"
@@ -1354,7 +1384,7 @@ def main():
         if d.get("ticker") and not d.get("skip"):
             by_tk.setdefault(d["ticker"], []).append(d)
     state = jl(os.path.join(AN, "state.json"), {}) or {}
-    nre = requeue_8nov(state, ext) + requeue_groups(state, ext, load_rows("long"))
+    nre = requeue_8nov(state, ext) + requeue_groups(state, ext, load_rows("long")) + requeue_drive_busy(state)
     if nre:
         jw(state, os.path.join(AN, "state.json"), indent=0)
         print(f"requeue: {nre} reports read again under the 8 Nov 2026 fixes (joined letters, profit rules)", flush=True)
