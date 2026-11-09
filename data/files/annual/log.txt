@@ -1,30 +1,5 @@
 [reader 3] audit: 476 company years flagged: 63 to re-read, 368 re-read, 8 waiting for a first read, 37 no usable report
 [reader 3] openrouter: paid models off (credit left $0.15)
-[reader 3] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 185 still to read; models used: xingchen-agi/xing4.0-29b-a4b:free 2; resting until tomorrow: 20 models
-done: read 1 annual reports (4 readers side by side), 0 skipped, about 184 still to read
-[reader 0] tracker flags: 557 companies with histories, 754 listed
-[reader 0] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 0] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
-[reader 0] audit: 476 company years flagged: 63 to re-read, 368 re-read, 8 waiting for a first read, 37 no usable report
-[reader 0] openrouter: paid models off (credit left $0.15)
-[reader 0] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 183 still to read; models used: ; resting until tomorrow: 20 models
-[reader 1] tracker flags: 557 companies with histories, 754 listed
-[reader 1] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 1] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
-[reader 1] audit: 476 company years flagged: 63 to re-read, 368 re-read, 8 waiting for a first read, 37 no usable report
-[reader 1] openrouter: paid models off (credit left $0.15)
-[reader 1] done: read 1 annual reports (2 audit re-reads), 1 skipped, about 181 still to read; models used: gemini-3.1-flash-lite-preview 1, openai/gpt-oss-120b 1; resting until tomorrow: 20 models
-[reader 2] tracker flags: 557 companies with histories, 754 listed
-[reader 2] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 2] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
-[reader 2] audit: 476 company years flagged: 63 to re-read, 368 re-read, 8 waiting for a first read, 37 no usable report
-[reader 2] openrouter: paid models off (credit left $0.15)
-[reader 2] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 183 still to read; models used: ; resting until tomorrow: 20 models
-[reader 3] tracker flags: 557 companies with histories, 754 listed
-[reader 3] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 3] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
-[reader 3] audit: 476 company years flagged: 63 to re-read, 368 re-read, 8 waiting for a first read, 37 no usable report
-[reader 3] openrouter: paid models off (credit left $0.15)
 [reader 3] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 183 still to read; models used: ; resting until tomorrow: 20 models
 done: read 1 annual reports (4 readers side by side), 0 skipped, about 181 still to read
 [reader 0] tracker flags: 557 companies with histories, 754 listed
@@ -372,6 +347,31 @@ done: read 0 annual reports (4 readers side by side), 0 skipped, about 2 still t
 [reader 3] audit: 476 company years flagged: 0 to re-read, 438 re-read, 0 waiting for a first read, 38 no usable report
 [reader 3] openrouter: paid models off (credit left $0.15)
 [reader 3] done: read 0 annual reports (0 audit re-reads), 1 skipped, about 1 still to read; models used: openai/gpt-oss-120b 1; resting until tomorrow: 3 models
+done: read 0 annual reports (4 readers side by side), 0 skipped, about 1 still to read
+[reader 0] tracker flags: 557 companies with histories, 754 listed
+[reader 0] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 0] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
+[reader 0] audit: 476 company years flagged: 0 to re-read, 438 re-read, 0 waiting for a first read, 38 no usable report
+[reader 0] openrouter: paid models off (credit left $0.15)
+[reader 0] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 1 still to read; models used: 
+[reader 1] tracker flags: 557 companies with histories, 754 listed
+[reader 1] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 1] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
+[reader 1] audit: 476 company years flagged: 0 to re-read, 438 re-read, 0 waiting for a first read, 38 no usable report
+[reader 1] openrouter: paid models off (credit left $0.15)
+[reader 1] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 1 still to read; models used: 
+[reader 2] tracker flags: 557 companies with histories, 754 listed
+[reader 2] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 2] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
+[reader 2] audit: 476 company years flagged: 0 to re-read, 438 re-read, 0 waiting for a first read, 38 no usable report
+[reader 2] openrouter: paid models off (credit left $0.15)
+[reader 2] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 1 still to read; models used: ; resting until tomorrow: 5 models
+[reader 3] tracker flags: 557 companies with histories, 754 listed
+[reader 3] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 3] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
+[reader 3] audit: 476 company years flagged: 0 to re-read, 438 re-read, 0 waiting for a first read, 38 no usable report
+[reader 3] openrouter: paid models off (credit left $0.15)
+[reader 3] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 1 still to read; models used: 
 done: read 0 annual reports (4 readers side by side), 0 skipped, about 1 still to read
 [reader 0] tracker flags: 557 companies with histories, 754 listed
 [reader 0] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
