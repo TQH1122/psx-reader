@@ -8310,15 +8310,15 @@
 },
 "khi:PIM:2002": {
 "at": "2026-11-09",
-"n": 12,
+"n": 14,
 "reread": [
 2001
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "khi:AATM:2006": {
 "at": "2026-11-01",
@@ -20969,7 +20969,7 @@
 "redo8": 1
 },
 "web:UCAPM:2021": {
-"at": "2026-11-08",
+"at": "2026-11-09",
 "n": 6,
 "tries": 1,
 "redo8": 1,
@@ -36643,10 +36643,11 @@
 "web:UCAPM:2022": {
 "at": "2026-11-09",
 "n": 0,
-"retry": 1,
-"tries": 1,
+"tries": 2,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:UCAPM:2020": {
 "at": "2026-11-08",
@@ -51755,6 +51756,7 @@
 "at": "2026-11-09",
 "tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (200)"
+"why": "Internet Archive download failed (200)",
+"second": 1
 }
 }
