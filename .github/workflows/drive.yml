@@ -32,9 +32,14 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}   # lists the whole folder (8 Nov 2026)
+        run: python3 toolkit/drive_index.py 38 ${{ matrix.shard }} 4 | tee /tmp/drive_last.txt
+      # 9 Nov 2026: a run that overran its time limit lost all its work, because the copy sat in the same step. The file
+      # is saved every 10 reports, so whatever was identified is now kept even if the step is stopped
+      - name: Keep what was identified
+        if: always()
         run: |
-          python3 toolkit/drive_index.py 45 ${{ matrix.shard }} 4 | tee /tmp/drive_last.txt
           mkdir -p /tmp/out/drive-${{ matrix.shard }}
+          touch /tmp/drive_last.txt
           cp data/files/drive_ident.json /tmp/drive_last.txt /tmp/out/drive-${{ matrix.shard }}/
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}

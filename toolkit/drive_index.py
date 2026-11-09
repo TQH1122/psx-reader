@@ -178,6 +178,9 @@ def coname(text):
     return None
 
 
+API_N = [0, 0]  # downloads through the Drive API: got the file, refused
+
+
 def ident(fid, title):
     w = tempfile.mkdtemp()
     pdf = os.path.join(w, "f.pdf")
@@ -191,7 +194,10 @@ def ident(fid, title):
                                 f"https://www.googleapis.com/drive/v3/files/{fid}?alt=media&acknowledgeAbuse=true&key={key}"],
                                capture_output=True, text=True)
             if not (p.stdout == "200" and os.path.exists(pdf) and open(pdf, "rb").read(5) == b"%PDF-"):
+                API_N[1] += 1
                 p = None
+            else:
+                API_N[0] += 1
         if p is None:
             p = subprocess.run(["curl", "-sL", "-m", "400", "--max-filesize", "90000000", "-o", pdf, "-w", "%{http_code}",
                                 DRIVE.format(fid)], capture_output=True, text=True)
@@ -290,10 +296,11 @@ def main():
                     if not (r.get("err") and old.get("kind") and old.get("kind") != "notpdf" and not old.get("err")):
                         db[fid] = r
                     done[0] += 1
-                    if done[0] % 25 == 0:
+                    if done[0] % 10 == 0:
                         json.dump(db, open(OUT, "w"), indent=0)
                 if busy[0] >= 5:   # Google is limiting: slow down, and stop this run if it goes on
-                    time.sleep(min(300, 30 * busy[0]))
+                    # never sleep past the run's own time limit (9 Nov 2026: sleeps ran the step out of time)
+                    time.sleep(max(0, min(300, 30 * busy[0], MINUTES * 60 - (time.time() - t0))))
                     if busy[0] >= 25:
                         print("google busy: stopping this run early; the next run carries on", flush=True)
                         t0 = 0
@@ -307,7 +314,7 @@ def main():
     left = sum(1 for f, _ in todo) - done[0]
     print(f"done: drive folder lists {len(files)} files; {len(known)} were indexed by hand, {len(db)} by the robot "
           f"({done[0]} this run, {max(0, left)} still to look at); {len(ann)} annual reports with company and year, "
-          f"{sum(1 for r in db.values() if r.get('err'))} downloads failed")
+          f"{sum(1 for r in db.values() if r.get('err'))} downloads failed; Drive API gave {API_N[0]} files, refused {API_N[1]}")
 
 
 if __name__ == "__main__":
