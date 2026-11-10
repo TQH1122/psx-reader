@@ -50138,7 +50138,7 @@
 },
 "web:GATI:2020": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 2
 },
 "drive:SZTM:2014": {
 "at": "2026-11-09",
@@ -57063,7 +57063,7 @@
 },
 "arc:AKDHL:2025": {
 "at": "2026-11-10",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "broken PDF (download incomplete); tried again next run",
 "retry": 1,
@@ -57079,7 +57079,7 @@
 },
 "arc:REDCO:2021": {
 "at": "2026-11-10",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "broken PDF (download incomplete); tried again next run",
 "retry": 1,
@@ -57341,12 +57341,16 @@
 },
 "drive:SNAI:2013": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:DSIL:2021": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"done": true,
+"n": 8
 },
 "drive:TELE:2025": {
 "at": "2026-11-10"
@@ -57364,7 +57368,8 @@
 "at": "2026-11-10"
 },
 "drive:ILP:2024": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:ASTM:2015": {
 "at": "2026-11-10"
@@ -57399,12 +57404,71 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:UBL:2020": {
 "at": "2026-11-10"
 },
 "drive:ANTM:2024": {
 "at": "2026-11-10"
+},
+"drive:ASTL:2013": {
+"at": "2026-11-10"
+},
+"drive:SSOM:2013": {
+"at": "2026-11-10"
+},
+"drive:KSBP:2021": {
+"at": "2026-11-10"
+},
+"drive:POML:2025": {
+"at": "2026-11-10"
+},
+"drive:FATIMA:2020": {
+"at": "2026-11-10"
+},
+"drive:JATM:2018": {
+"at": "2026-11-10"
+},
+"drive:SLGL:2025": {
+"at": "2026-11-10"
+},
+"drive:TREET:2014": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:GSPM:2017": {
+"at": "2026-11-10"
+},
+"drive:SIEM:2015": {
+"at": "2026-11-10"
+},
+"drive:OML:2025": {
+"at": "2026-11-10"
+},
+"drive:REDCO:2018": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:TOMCL:2022": {
+"at": "2026-11-10"
+},
+"drive:KHTC:2014": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:GWLC:2014": {
+"at": "2026-11-10"
+},
+"drive:ASL:2018": {
+"at": "2026-11-10"
+},
+"drive:ITTEFAQ:2017": {
+"at": "2026-11-10",
+"waits": 1
 }
 }
