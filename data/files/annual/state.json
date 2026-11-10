@@ -57395,7 +57395,8 @@
 "at": "2026-11-10"
 },
 "drive:SUTM:2017": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:FZCM:2015": {
 "at": "2026-11-10"
@@ -57457,9 +57458,11 @@
 },
 "drive:KHTC:2014": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:GWLC:2014": {
 "at": "2026-11-10"
@@ -57470,5 +57473,38 @@
 "drive:ITTEFAQ:2017": {
 "at": "2026-11-10",
 "waits": 1
+},
+"drive:SSOM:2017": {
+"at": "2026-11-10"
+},
+"drive:MSOT:2026": {
+"at": "2026-11-10"
+},
+"drive:INIL:2025": {
+"at": "2026-11-10"
+},
+"drive:ASTL:2015": {
+"at": "2026-11-10"
+},
+"drive:BRRG:2024": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
+},
+"drive:AHL:2008": {
+"at": "2026-11-10"
+},
+"drive:PAEL:2020": {
+"at": "2026-11-10"
+},
+"drive:EFERT:2019": {
+"at": "2026-11-10"
+},
+"drive:ITTEFAQ:2016": {
+"at": "2026-11-10"
+},
+"drive:DCL:2018": {
+"at": "2026-11-10"
 }
 }
