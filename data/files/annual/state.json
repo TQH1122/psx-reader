@@ -56907,9 +56907,11 @@
 },
 "drive:MACTER:2022": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:QUET:2015": {
 "at": "2026-11-10"
@@ -57121,9 +57123,11 @@
 },
 "drive:TPLT:2022": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "web:ASIC:2025": {
 "at": "2026-11-10",
@@ -57390,9 +57394,11 @@
 },
 "drive:CHBL:2016": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:RUPL:2015": {
 "at": "2026-11-10"
@@ -57538,5 +57544,11 @@
 },
 "drive:MACTER:2018": {
 "at": "2026-11-10"
+},
+"drive:BRRG:2025": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
 }
 }
