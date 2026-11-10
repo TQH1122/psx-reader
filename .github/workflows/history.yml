@@ -1,0 +1,33 @@
+# PSX's own daily files, kept so companies that later left the market stay in the tracker's history (10 Nov 2026).
+# Own queue, so it never waits behind the other jobs and they never wait behind it. It checks out the private
+# tracker with the hidden TRACKER_TOKEN key, collects there and saves straight back; nothing is kept here and this
+# log shows one line. The first runs fetch the back years gently (one small file every 2 seconds); after that a run
+# takes seconds and adds the newest day.
+name: Market history (free lane)
+on:
+  schedule:
+    - cron: '23 1,5,9,13,17,21 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: lane-history
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          python3 toolkit/lane.py history
