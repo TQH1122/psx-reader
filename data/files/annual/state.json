@@ -55645,7 +55645,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:SHEZ:2013": {
 "at": "2026-11-10",
@@ -55874,9 +55876,11 @@
 },
 "drive:APL:2020": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:KEL:2021": {
 "at": "2026-11-10",
@@ -57490,7 +57494,10 @@
 },
 "drive:FEM:2022": {
 "at": "2026-11-10",
-"waits": 2
+"waits": 2,
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "drive:SNAI:2013": {
 "at": "2026-11-10",
@@ -57610,9 +57617,11 @@
 },
 "drive:JATM:2018": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:SLGL:2025": {
 "at": "2026-11-10",
@@ -57847,5 +57856,8 @@
 "web:APL:2020": {
 "at": "2026-11-10",
 "waits": 1
+},
+"drive:FEM:2015": {
+"at": "2026-11-10"
 }
 }
