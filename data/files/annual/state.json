@@ -56553,7 +56553,9 @@
 },
 "khi:ALAC:2018": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "khi:TSBL:2023": {
 "at": "2026-11-10",
@@ -57207,7 +57209,10 @@
 },
 "drive:AVN:2015": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: Required financial statements and summary page are not provided in the text"
 },
 "drive:AGSML:2025": {
 "at": "2026-11-10"
@@ -57564,9 +57569,11 @@
 },
 "drive:EFERT:2019": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:ITTEFAQ:2016": {
 "at": "2026-11-10",
@@ -57661,6 +57668,15 @@
 "at": "2026-11-10"
 },
 "drive:UBL:2018": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dewan Abdul Baqi Farooqui (names DCL)"
+},
+"khi:ALAC:2017": {
+"at": "2026-11-10"
+},
+"drive:UBL:2023": {
 "at": "2026-11-10"
 }
 }
