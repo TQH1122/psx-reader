@@ -1,0 +1,44 @@
+# Free GPU reading on Kaggle (10 Nov 2026): scanned annual reports are sent to a free Kaggle GPU in his own private
+# Kaggle account and the text comes back to the private repository (toolkit/kaggle_gpu.py in the tracker). Every two
+# hours: a finished Kaggle job is brought back, then the next batch is started. His phone hears when the keys work, when
+# the first test passes and when a run fails. This public log shows only counts.
+# Keys: KAGGLE_USERNAME and KAGGLE_KEY in Settings, Secrets, Actions.
+name: Kaggle GPU reader
+on:
+  schedule:
+    - cron: '23 */2 * * *'
+  workflow_dispatch:
+  push:
+    paths: ['.github/run-kaggle', '.github/workflows/kaggle.yml']
+permissions:
+  contents: read
+concurrency:
+  group: kaggle
+  cancel-in-progress: false
+jobs:
+  gpu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          pip install -q kaggle > /dev/null 2>&1
+          command -v pdftoppm || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils; } > /dev/null 2>&1
+      - name: Bring back finished work, start the next batch
+        timeout-minutes: 100
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: python3 toolkit/kaggle_gpu.py step | tail -1
+      - name: Save to the private repository
+        if: always()
+        run: python3 toolkit/savegit.py "Robot: Kaggle GPU reader $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/kaggle
