@@ -9739,9 +9739,9 @@
 "khi:AKGL:2003": {
 "at": "2026-11-10",
 "n": 19,
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:PGLC:2006": {
 "at": "2026-11-09",
@@ -9955,11 +9955,11 @@
 "done": true
 },
 "khi:AKGL:2001": {
-"at": "2026-11-01",
-"n": 16,
-"retry": 1,
+"at": "2026-11-10",
+"n": 18,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:DEL:2019": {
 "at": "2026-11-01",
@@ -51990,5 +51990,10 @@
 "tries": 2,
 "rev": 5,
 "why": "not annual accounts: company name not found in provided pages"
+},
+"khi:AKGL:2002": {
+"at": "2026-11-10",
+"done": true,
+"n": 18
 }
 }
