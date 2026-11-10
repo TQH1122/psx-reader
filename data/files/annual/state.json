@@ -17091,11 +17091,13 @@
 "done": true
 },
 "web:PIOC:2010": {
-"at": "2026-11-03",
+"at": "2026-11-10",
 "n": 0,
 "retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "Company website download failed (200)"
 },
 "web:KAPCO:2026": {
 "at": "2026-11-03",
@@ -55511,7 +55513,9 @@
 "second": 1
 },
 "drive:AABS:2014": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"done": true,
+"n": 32
 },
 "arc:ICL:2017": {
 "at": "2026-11-10"
@@ -56090,7 +56094,8 @@
 "at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Service Industries Limited (names AGIL)"
+"done": true,
+"n": 25
 },
 "khi:AGIC:2022": {
 "at": "2026-11-10",
@@ -56848,7 +56853,10 @@
 "n": 21
 },
 "drive:ANSM:2023": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Habib Bank Limited (names ABL)"
 },
 "drive:NONS:2019": {
 "at": "2026-11-10"
@@ -56905,7 +56913,10 @@
 "at": "2026-11-10"
 },
 "web:PIOC:2015": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (200)"
 },
 "drive:MACTER:2022": {
 "at": "2026-11-10",
@@ -56994,7 +57005,10 @@
 "waits": 1
 },
 "web:BCL:2010": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (200)"
 },
 "drive:TATM:2022": {
 "at": "2026-11-10"
@@ -57419,7 +57433,9 @@
 },
 "drive:KOSM:2022": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 14
 },
 "drive:PASM:2020": {
 "at": "2026-11-10"
@@ -57571,9 +57587,49 @@
 "waits": 1
 },
 "drive:MCB:2019": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Merit Packaging Limited (names CPPL)"
 },
 "drive:UBL:2019": {
 "at": "2026-11-10"
+},
+"web:AABS:2012": {
+"at": "2026-11-10"
+},
+"drive:ANSM:2020": {
+"at": "2026-11-10"
+},
+"web:BCL:2009": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (200)"
+},
+"web:PIOC:2009": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (200)"
+},
+"web:PIOC:2008": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (200)"
+},
+"web:PIOC:2007": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (200)"
+},
+"drive:MCB:2016": {
+"at": "2026-11-10"
+},
+"khi:BATA:2019": {
+"at": "2026-11-10",
+"waits": 1
 }
 }
