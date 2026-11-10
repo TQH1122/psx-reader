@@ -10046,7 +10046,7 @@
 "redo9": 1
 },
 "khi:TRSM:2007": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "n": 8,
 "waits": 1,
 "reread": [
@@ -10055,7 +10055,8 @@
 "tries": 1,
 "redo8": 1,
 "retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:DSFL:2007": {
 "at": "2026-11-01",
@@ -19713,7 +19714,7 @@
 "redo8": 1
 },
 "web:OLPM:2026": {
-"at": "2026-11-03",
+"at": "2026-11-10",
 "n": 18,
 "retry": 1,
 "tries": 1,
@@ -20968,7 +20969,7 @@
 "second": 1
 },
 "web:SERT:2026": {
-"at": "2026-11-03",
+"at": "2026-11-10",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -21250,7 +21251,7 @@
 "waits": 1
 },
 "web:FPRM:2009": {
-"at": "2026-11-03",
+"at": "2026-11-10",
 "n": 11,
 "retry": 1,
 "tries": 1,
@@ -27870,7 +27871,7 @@
 "redo8": 1
 },
 "drive:SSML:2018": {
-"at": "2026-11-07",
+"at": "2026-11-10",
 "n": 9,
 "retry": 1,
 "tries": 1,
@@ -30501,11 +30502,12 @@
 "done": true
 },
 "drive:PKGI:2020": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "n": 0,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "khi:FHAM:2003": {
 "at": "2026-11-08",
@@ -31401,11 +31403,13 @@
 "why": "company name does not match: Pakistan Electric Power Company Limited (names HUBC)"
 },
 "web:ARCTM:2019": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "n": 2,
 "retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "Company website download failed (404)"
 },
 "web:DADX:2010": {
 "at": "2026-11-08",
@@ -31723,11 +31727,12 @@
 "second": 1
 },
 "web:CFL:2026": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "n": 36,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "web:KOHP:2013": {
 "at": "2026-11-09",
@@ -34701,7 +34706,7 @@
 "why": "company name does not match: Ravi Textile Mills Limited (names AATM)"
 },
 "drive:AKDHL:2024": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "n": 0,
 "retry": 1,
 "tries": 1,
@@ -35055,7 +35060,7 @@
 "done": true
 },
 "web:STML:2022": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
 "why": "company name does not match: Not stated in provided pages",
@@ -39663,7 +39668,7 @@
 "why": "no figure passed the checks"
 },
 "arc:DWTM:2015": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
 "why": "Internet Archive download failed (0)",
@@ -41309,13 +41314,13 @@
 "drive:MARI:2014": {
 "at": "2026-11-10",
 "n": 12,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
 "redo9": 1,
 "rev": 5,
 "second": 1,
-"retry": 1,
-"waits": 1
+"waits": 1,
+"why": "company name does not match: Pakistan State Oil Corporation Limited (names OGDC)"
 },
 "arc:QUET:2011": {
 "at": "2026-11-08",
@@ -46665,7 +46670,7 @@
 "n": 14
 },
 "khi:JSGCL:2025": {
-"at": "2026-11-09",
+"at": "2026-11-10",
 "waits": 1
 },
 "arc:IGIL:2015": {
@@ -46721,7 +46726,7 @@
 "n": 29
 },
 "web:HIRAT:2022": {
-"at": "2026-11-09",
+"at": "2026-11-10",
 "waits": 1
 },
 "web:SSGC:2023": {
@@ -46992,7 +46997,7 @@
 "second": 1
 },
 "drive:CJPL:2025": {
-"at": "2026-11-09",
+"at": "2026-11-10",
 "waits": 1
 },
 "arc:MCB:2025": {
@@ -47191,7 +47196,7 @@
 "n": 10
 },
 "drive:JGICL:2021": {
-"at": "2026-11-09",
+"at": "2026-11-10",
 "waits": 1
 },
 "khi:NPL:2021": {
@@ -47253,7 +47258,7 @@
 "n": 6
 },
 "drive:UDPL:2026": {
-"at": "2026-11-09",
+"at": "2026-11-10",
 "waits": 1
 },
 "drive:SZTM:2024": {
@@ -52436,25 +52441,33 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:FATIMA:2020": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:FATIMA:2019": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:FATIMA:2018": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "drive:ATLH:2026": {
 "at": "2026-11-10",
@@ -52535,19 +52548,25 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:JSIL:2022": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:JSIL:2021": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "drive:CPHL:2022": {
 "at": "2026-11-10",
@@ -52593,7 +52612,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (404)"
+"why": "Company website download failed (404)",
+"retry": 1,
+"second": 1
 },
 "khi:CHCC:2024": {
 "at": "2026-11-10",
@@ -52694,17 +52715,22 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "khi:PIOC:2015": {
 "at": "2026-11-10",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "not annual accounts: Company name not found in provided pages"
+"why": "no figure passed the checks"
 },
 "khi:CHAS:2005": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "drive:KOHE:2018": {
 "at": "2026-11-10",
@@ -52720,7 +52746,8 @@
 "at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Made of Steel (names AGHA)"
+"why": "company name does not match: Made of Steel (names AGHA)",
+"waits": 1
 },
 "khi:ATLH:2018": {
 "at": "2026-11-10",
@@ -52734,9 +52761,11 @@
 },
 "khi:FCCL:2016": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:JSIL:2014": {
 "at": "2026-11-10",
@@ -52790,9 +52819,9 @@
 },
 "khi:FCCL:2015": {
 "at": "2026-11-10",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "not annual accounts: company name not found in provided pages"
+"why": "no figure passed the checks"
 },
 "drive:ATLH:2016": {
 "at": "2026-11-10",
@@ -52833,7 +52862,8 @@
 "at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Afiniti International Holding Limited (names INIL)"
+"why": "company name does not match: Afiniti International Holding Limited (names INIL)",
+"waits": 1
 },
 "khi:SITC:2021": {
 "at": "2026-11-10",
@@ -53108,9 +53138,11 @@
 },
 "khi:SEPL:2023": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:NRSL:2024": {
 "at": "2026-11-10",
@@ -53440,7 +53472,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:ABOT:2017": {
 "at": "2026-11-10",
@@ -54298,7 +54332,7 @@
 },
 "drive:EXIDE:2016": {
 "at": "2026-11-10",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no figure passed the checks"
 },
@@ -54657,7 +54691,9 @@
 },
 "khi:BWCL:2009": {
 "at": "2026-11-10",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 4
 },
 "drive:UNIC:2017": {
 "at": "2026-11-10",
@@ -54666,9 +54702,11 @@
 },
 "khi:CEPB:2009": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:CPPL:2017": {
 "at": "2026-11-10",
@@ -55081,9 +55119,11 @@
 },
 "khi:PPL:2010": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "arc:PAKRI:2021": {
 "at": "2026-11-10",
@@ -55325,9 +55365,11 @@
 },
 "drive:NPL:2017": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "arc:MCBIM:2019": {
 "at": "2026-11-10",
@@ -55451,9 +55493,11 @@
 },
 "drive:AKGL:2023": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:AABS:2014": {
 "at": "2026-11-10"
@@ -55469,7 +55513,10 @@
 "n": 0
 },
 "drive:AKGL:2014": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:SNGP:2011": {
 "at": "2026-11-10"
@@ -55494,7 +55541,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (404)"
+"why": "Company website download failed (404)",
+"retry": 1,
+"second": 1
 },
 "drive:COLG:2017": {
 "at": "2026-11-10",
@@ -55575,7 +55624,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "khi:ASTL:2025": {
 "at": "2026-11-10"
@@ -55595,11 +55646,16 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "web:SHEZ:2011": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
 },
 "drive:BECO:2022": {
 "at": "2026-11-10",
@@ -55662,7 +55718,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "khi:BUXL:2025": {
 "at": "2026-11-10"
@@ -55677,7 +55735,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (403)"
+"why": "Company website download failed (403)",
+"retry": 1,
+"second": 1
 },
 "drive:DIIL:2020": {
 "at": "2026-11-10",
@@ -55735,13 +55795,17 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:AKDSL:2012": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "web:SCBPL:2013": {
 "at": "2026-11-10",
@@ -55832,7 +55896,8 @@
 "n": 16
 },
 "drive:SIEM:2025": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:FRCL:2014": {
 "at": "2026-11-10",
@@ -55843,43 +55908,55 @@
 "at": "2026-11-10"
 },
 "khi:NRSL:2017": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:EWIC:2014": {
 "at": "2026-11-10"
 },
 "web:SEPL:2023": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "khi:WAHN:2021": {
 "at": "2026-11-10"
 },
 "arc:JLICL:2011": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:KEL:2019": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "web:GRYL:2021": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:IML:2019": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: FIVE STAR (names CSIL)"
 },
 "arc:AKDSL:2011": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:TCORP:2025": {
 "at": "2026-11-10"
 },
 "khi:DSL:2022": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "web:TOMCL:2024": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:FCEL:2022": {
 "at": "2026-11-10",
@@ -55919,9 +55996,11 @@
 },
 "drive:FCEL:2019": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "arc:MEBL:2008": {
 "at": "2026-11-10",
@@ -55947,7 +56026,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "drive:TRIPF:2023": {
 "at": "2026-11-10",
@@ -55958,7 +56039,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "khi:ASIC:2025": {
 "at": "2026-11-10",
@@ -56064,9 +56147,11 @@
 },
 "web:ADAMS:2009": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (404)"
+"why": "Company website download failed (404)",
+"retry": 1,
+"second": 1
 },
 "drive:MERIT:2025": {
 "at": "2026-11-10"
@@ -56075,7 +56160,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (403)"
+"why": "Company website download failed (403)",
+"retry": 1,
+"second": 1
 },
 "drive:SHFA:2014": {
 "at": "2026-11-10",
@@ -56131,7 +56218,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (403)"
+"why": "Company website download failed (403)",
+"retry": 1,
+"second": 1
 },
 "drive:STCL:2024": {
 "at": "2026-11-10",
@@ -56141,13 +56230,17 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (403)"
+"why": "Company website download failed (403)",
+"retry": 1,
+"second": 1
 },
 "web:TRIPF:2011": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (403)"
+"why": "Company website download failed (403)",
+"retry": 1,
+"second": 1
 },
 "khi:TRIPF:2010": {
 "at": "2026-11-10",
@@ -56160,13 +56253,17 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:GAMON:2015": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:SUHJ:2018": {
 "at": "2026-11-10",
@@ -56210,9 +56307,11 @@
 },
 "drive:UBDL:2018": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:NESTLE:2010": {
 "at": "2026-11-10",
@@ -56233,7 +56332,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "khi:GWLC:2009": {
 "at": "2026-11-10",
@@ -56275,13 +56376,16 @@
 "at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"done": true,
+"n": 0
 },
 "khi:PICT:2015": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:GWLC:2008": {
 "at": "2026-11-10",
@@ -56347,13 +56451,17 @@
 },
 "khi:HMB:2023": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 18
 },
 "arc:TSBL:2024": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:JSRR:2017": {
 "at": "2026-11-10",
@@ -56452,7 +56560,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:ARPAK:2023": {
 "at": "2026-11-10",
@@ -56512,7 +56622,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:ARPAK:2022": {
 "at": "2026-11-10",
@@ -56543,7 +56655,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "khi:PKGP:2019": {
 "at": "2026-11-10",
@@ -56559,7 +56673,9 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "drive:ARPAK:2019": {
 "at": "2026-11-10",
@@ -56657,10 +56773,12 @@
 "at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"waits": 1
 },
 "khi:DYNO:2022": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:ATBA:2018": {
 "at": "2026-11-10",
@@ -56689,20 +56807,487 @@
 "at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"waits": 1
 },
 "web:MUREB:2024": {
 "at": "2026-11-10",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "no statement pages found"
 },
 "drive:DCL:2023": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "khi:GHGL:2016": {
 "at": "2026-11-10",
 "done": true,
 "n": 31
+},
+"drive:PSO:2019": {
+"at": "2026-11-10"
+},
+"drive:ANSM:2023": {
+"at": "2026-11-10"
+},
+"drive:NONS:2019": {
+"at": "2026-11-10"
+},
+"drive:HUSI:2025": {
+"at": "2026-11-10"
+},
+"drive:SASML:2025": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:FANM:2014": {
+"at": "2026-11-10"
+},
+"web:SHEZ:2010": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
+},
+"khi:SHEZ:2009": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:JSIL:2009": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:FCCL:2016": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:ABL:2019": {
+"at": "2026-11-10",
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"arc:JSIL:2008": {
+"at": "2026-11-10"
+},
+"web:PIOC:2015": {
+"at": "2026-11-10"
+},
+"drive:MACTER:2022": {
+"at": "2026-11-10"
+},
+"drive:QUET:2015": {
+"at": "2026-11-10"
+},
+"drive:NRL:2017": {
+"at": "2026-11-10"
+},
+"arc:ATLH:2012": {
+"at": "2026-11-10"
+},
+"arc:FCCL:2015": {
+"at": "2026-11-10"
+},
+"khi:HABSM:2023": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:PKGS:2013": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:EFUG:2018": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:MWMP:2025": {
+"at": "2026-11-10"
+},
+"drive:FPJM:2022": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:INDU:2016": {
+"at": "2026-11-10",
+"waits": 1
+},
+"khi:SITC:2019": {
+"at": "2026-11-10"
+},
+"drive:BTL:2024": {
+"at": "2026-11-10"
+},
+"khi:GVGL:2024": {
+"at": "2026-11-10"
+},
+"khi:HABSM:2022": {
+"at": "2026-11-10"
+},
+"khi:LOTCHEM:2017": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:MEHT:2014": {
+"at": "2026-11-10"
+},
+"khi:GTYR:2018": {
+"at": "2026-11-10"
+},
+"drive:FIMM:2024": {
+"at": "2026-11-10"
+},
+"drive:BHAT:2024": {
+"at": "2026-11-10"
+},
+"drive:PRET:2023": {
+"at": "2026-11-10"
+},
+"khi:ARPL:2021": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:HASCOL:2014": {
+"at": "2026-11-10",
+"waits": 1
+},
+"web:BCL:2010": {
+"at": "2026-11-10"
+},
+"drive:TATM:2022": {
+"at": "2026-11-10"
+},
+"drive:HAFL:2020": {
+"at": "2026-11-10"
+},
+"drive:BGL:2020": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:RICL:2025": {
+"at": "2026-11-10"
+},
+"khi:CHCC:2018": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:IGIL:2025": {
+"at": "2026-11-10",
+"waits": 1
+},
+"khi:SIBL:2024": {
+"at": "2026-11-10"
+},
+"khi:ZIL:2025": {
+"at": "2026-11-10",
+"waits": 1
+},
+"khi:FRSM:2025": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:ICIBL:2024": {
+"at": "2026-11-10"
+},
+"web:WAFI:2019": {
+"at": "2026-11-10"
+},
+"drive:GADT:2026": {
+"at": "2026-11-10"
+},
+"drive:KEL:2017": {
+"at": "2026-11-10",
+"done": true,
+"n": 10
+},
+"drive:REDCO:2014": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:HUMNL:2017": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:NCPL:2020": {
+"at": "2026-11-10"
+},
+"drive:HWQS:2015": {
+"at": "2026-11-10"
+},
+"drive:FTMM:2023": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:PAKD:2025": {
+"at": "2026-11-10"
+},
+"khi:MSCL:2007": {
+"at": "2026-11-10"
+},
+"arc:AKDHL:2025": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:HICL:2025": {
+"at": "2026-11-10",
+"waits": 1
+},
+"khi:ESBL:2023": {
+"at": "2026-11-10",
+"waits": 1
+},
+"arc:REDCO:2021": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:REDCO:2018": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:JVDC:2015": {
+"at": "2026-11-10",
+"waits": 1
+},
+"arc:REDCO:2017": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:IML:2018": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:SINDM:2015": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
+},
+"drive:MCB:2020": {
+"at": "2026-11-10"
+},
+"drive:TPLT:2022": {
+"at": "2026-11-10"
+},
+"web:ASIC:2025": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "file too large"
+},
+"drive:SSGC:2016": {
+"at": "2026-11-10"
+},
+"drive:ADAMS:2022": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:BWHL:2017": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:HRPL:2024": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:JSML:2017": {
+"at": "2026-11-10"
+},
+"drive:NESTLE:2015": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:EXIDE:2016": {
+"at": "2026-11-10",
+"waits": 1
+},
+"web:PICT:2015": {
+"at": "2026-11-10"
+},
+"khi:HMB:2022": {
+"at": "2026-11-10",
+"waits": 1
+},
+"arc:BWCL:2008": {
+"at": "2026-11-10"
+},
+"drive:AVN:2015": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:AGSML:2025": {
+"at": "2026-11-10"
+},
+"web:SUTM:2024": {
+"at": "2026-11-10",
+"waits": 1
+},
+"arc:GLAXO:2011": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:BAHL:2019": {
+"at": "2026-11-10"
+},
+"arc:BPL:2012": {
+"at": "2026-11-10",
+"done": true,
+"n": 27
+},
+"drive:NPL:2029": {
+"at": "2026-11-10",
+"done": true,
+"n": 28
+},
+"web:GHGL:2014": {
+"at": "2026-11-10"
+},
+"drive:PPL:2023": {
+"at": "2026-11-10",
+"tries": 1,
+"rev": 5,
+"why": "no figure passed the checks"
+},
+"web:ATBA:2014": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (404)"
+},
+"web:ATBA:2013": {
+"at": "2026-11-10"
+},
+"drive:RMPL:2024": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:FEROZ:2017": {
+"at": "2026-11-10",
+"waits": 1
+},
+"arc:BPL:2011": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:EFUL:2017": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:GOC:2024": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:TSML:2023": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:GOC:2023": {
+"at": "2026-11-10"
+},
+"drive:LPL:2021": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:JUBS:2021": {
+"at": "2026-11-10"
+},
+"drive:ADMM:2021": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:NETSOL:2023": {
+"at": "2026-11-10"
+},
+"web:ARCTM:2018": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (404)"
+},
+"web:ARCTM:2017": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (404)"
+},
+"web:ARCTM:2015": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (404)"
+},
+"web:ARCTM:2014": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (404)"
+},
+"drive:SHNI:2024": {
+"at": "2026-11-10"
+},
+"drive:PRL:2015": {
+"at": "2026-11-10"
+},
+"drive:NAGC:2024": {
+"at": "2026-11-10",
+"waits": 1
+},
+"khi:DEL:2024": {
+"at": "2026-11-10"
+},
+"drive:EMCO:2023": {
+"at": "2026-11-10",
+"waits": 1
+},
+"arc:AHTM:2016": {
+"at": "2026-11-10"
+},
+"drive:TPL:2013": {
+"at": "2026-11-10"
+},
+"web:MUREB:2023": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "file too large"
+},
+"khi:MDTL:2024": {
+"at": "2026-11-10"
+},
+"khi:ZTL:2024": {
+"at": "2026-11-10"
+},
+"khi:ITTEFAQ:2025": {
+"at": "2026-11-10",
+"waits": 1
+},
+"web:MUREB:2022": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:FEM:2022": {
+"at": "2026-11-10",
+"waits": 1
 }
 }
