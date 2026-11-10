@@ -55673,9 +55673,10 @@
 "waits": 1,
 "tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)",
 "retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 36
 },
 "drive:BECO:2022": {
 "at": "2026-11-10",
@@ -56862,10 +56863,14 @@
 "why": "company name does not match: Habib Bank Limited (names ABL)"
 },
 "drive:NONS:2019": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"done": true,
+"n": 34
 },
 "drive:HUSI:2025": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"done": true,
+"n": 4
 },
 "drive:SASML:2025": {
 "at": "2026-11-10",
@@ -57268,7 +57273,9 @@
 },
 "drive:FEROZ:2017": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 20
 },
 "arc:BPL:2011": {
 "at": "2026-11-10",
@@ -57534,7 +57541,10 @@
 "waits": 1
 },
 "drive:SSOM:2017": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "drive:MSOT:2026": {
 "at": "2026-11-10",
@@ -57592,7 +57602,9 @@
 "at": "2026-11-10"
 },
 "drive:MACTER:2018": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"done": true,
+"n": 14
 },
 "drive:BRRG:2025": {
 "at": "2026-11-10",
@@ -57620,7 +57632,9 @@
 "at": "2026-11-10"
 },
 "drive:ANSM:2020": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"done": true,
+"n": 0
 },
 "web:BCL:2009": {
 "at": "2026-11-10",
@@ -57677,6 +57691,20 @@
 "at": "2026-11-10"
 },
 "drive:UBL:2023": {
+"at": "2026-11-10"
+},
+"drive:ANSM:2019": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:NONS:2025": {
+"at": "2026-11-10"
+},
+"drive:HUSI:2024": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:FEROZ:2015": {
 "at": "2026-11-10"
 }
 }
