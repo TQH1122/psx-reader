@@ -57110,7 +57110,10 @@
 },
 "drive:IML:2018": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: STAR (names CSIL)"
 },
 "drive:SINDM:2015": {
 "at": "2026-11-10",
@@ -57119,7 +57122,10 @@
 "why": "not annual accounts (interim statements)"
 },
 "drive:MCB:2020": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Tasleemuddin A. Batlay & Co. Ltd"
 },
 "drive:TPLT:2022": {
 "at": "2026-11-10",
@@ -57380,7 +57386,9 @@
 "at": "2026-11-10"
 },
 "drive:CCM:2023": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"done": true,
+"n": 0
 },
 "drive:ILP:2024": {
 "at": "2026-11-10",
@@ -57430,7 +57438,10 @@
 "second": 1
 },
 "drive:UBL:2020": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Dewan Abdul Baqi Farooqui (names DCL)"
 },
 "drive:ANTM:2024": {
 "at": "2026-11-10"
@@ -57550,5 +57561,15 @@
 "tries": 2,
 "rev": 5,
 "why": "not annual accounts (interim statements)"
+},
+"drive:CCM:2016": {
+"at": "2026-11-10",
+"waits": 1
+},
+"drive:MCB:2019": {
+"at": "2026-11-10"
+},
+"drive:UBL:2019": {
+"at": "2026-11-10"
 }
 }
