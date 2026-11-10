@@ -1,44 +1,3 @@
-[reader 5] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: ; resting until tomorrow: 5 models
-[reader 5] gain: 0 new figures this run
-done: read 0 annual reports (6 readers side by side), 0 new figures, 0 skipped, about 4 still to read
-[reader 0] tracker flags: kept the saved copy
-[reader 0] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 0] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
-[reader 0] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
-[reader 0] openrouter: paid models on (credit left $3.86)
-[reader 0] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: 
-[reader 0] gain: 0 new figures this run
-[reader 1] tracker flags: kept the saved copy
-[reader 1] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 1] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
-[reader 1] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
-[reader 1] openrouter: paid models on (credit left $3.86)
-[reader 1] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: 
-[reader 1] gain: 0 new figures this run
-[reader 2] tracker flags: kept the saved copy
-[reader 2] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 2] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
-[reader 2] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
-[reader 2] openrouter: paid models on (credit left $3.86)
-[reader 2] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: 
-[reader 2] gain: 0 new figures this run
-[reader 3] tracker flags: kept the saved copy
-[reader 3] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 3] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
-[reader 3] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
-[reader 3] openrouter: paid models on (credit left $3.86)
-[reader 3] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: 
-[reader 3] gain: 0 new figures this run
-[reader 4] tracker flags: kept the saved copy
-[reader 4] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 4] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
-[reader 4] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
-[reader 4] openrouter: paid models on (credit left $3.86)
-[reader 4] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: 
-[reader 4] gain: 0 new figures this run
-[reader 5] tracker flags: kept the saved copy
-[reader 5] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
-[reader 5] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
 [reader 5] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
 [reader 5] openrouter: paid models on (credit left $3.86)
 [reader 5] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 4 still to read; models used: ; resting until tomorrow: 5 models
@@ -398,3 +357,44 @@ done: read 0 annual reports (6 readers side by side), 0 new figures, 0 skipped, 
 [reader 5] done: read 109 annual reports (0 audit re-reads), 75 skipped, about 41 still to read; models used: openai/gpt-oss-120b 111, google/gemini-2.5-flash-lite 109, qwen/qwen3-235b-a22b-2507 77, deepseek/deepseek-chat-v3.1 37, gemini-3-flash-preview 1, gemini-3.5-flash-lite 12, gemini-3.1-flash-lite 1, nvidia/nemotron-3-ultra-550b-a55b:free 13, recursive/flint-v1.0:free 1, xingchen-agi/xing4.0-29b-a4b:free 65; resting until tomorrow: 19 models
 [reader 5] gain: 2470 new figures this run
 done: read 596 annual reports (6 readers side by side), 13602 new figures, 0 skipped, about 40 still to read
+[reader 0] tracker flags: kept the saved copy
+[reader 0] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 0] second chance: 75 reports given up earlier get one more try
+[reader 0] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
+[reader 0] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
+[reader 0] openrouter: paid models on (credit left $0.55)
+[reader 0] done: read 17 annual reports (0 audit re-reads), 27 skipped, about 38 still to read; models used: openai/gpt-oss-120b 20, google/gemini-2.5-flash-lite 13, qwen/qwen3-235b-a22b-2507 2, deepseek/deepseek-chat-v3.1 3, gemini-3.5-flash-lite 1, gemini-3.1-flash-lite 15, gemini-3.1-flash-lite-preview 8, xingchen-agi/xing4.0-29b-a4b:free 34; resting until tomorrow: 24 models
+[reader 0] gain: 392 new figures this run
+[reader 2] tracker flags: kept the saved copy
+[reader 2] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 2] second chance: 75 reports given up earlier get one more try
+[reader 2] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
+[reader 2] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
+[reader 2] openrouter: paid models off (credit left $0.47)
+[reader 2] done: read 29 annual reports (0 audit re-reads), 12 skipped, about 32 still to read; models used: gemini-3.5-flash-lite 1, gemini-3.1-flash-lite 35, gemini-3.1-flash-lite-preview 33, xingchen-agi/xing4.0-29b-a4b:free 2; resting until tomorrow: 21 models
+[reader 2] gain: 521 new figures this run
+[reader 3] tracker flags: kept the saved copy
+[reader 3] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 3] second chance: 75 reports given up earlier get one more try
+[reader 3] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
+[reader 3] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
+[reader 3] openrouter: paid models on (credit left $0.55)
+[reader 3] done: read 36 annual reports (0 audit re-reads), 37 skipped, about 33 still to read; models used: openai/gpt-oss-120b 31, google/gemini-2.5-flash-lite 20, qwen/qwen3-235b-a22b-2507 8, deepseek/deepseek-chat-v3.1 4, gemini-3-flash-preview 1, gemini-3.5-flash-lite 2, gemini-3.1-flash-lite 29, gemini-3.1-flash-lite-preview 10, xingchen-agi/xing4.0-29b-a4b:free 42; resting until tomorrow: 24 models
+[reader 3] gain: 701 new figures this run
+[reader 4] tracker flags: kept the saved copy
+[reader 4] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 4] second chance: 75 reports given up earlier get one more try
+[reader 4] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
+[reader 4] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
+[reader 4] openrouter: paid models on (credit left $0.55)
+[reader 4] done: read 41 annual reports (0 audit re-reads), 37 skipped, about 33 still to read; models used: openai/gpt-oss-120b 24, google/gemini-2.5-flash-lite 55, qwen/qwen3-235b-a22b-2507 12, deepseek/deepseek-chat-v3.1 5, gemini-3.6-flash 1, gemini-3.5-flash-lite 1, gemini-3.1-flash-lite 20, gemini-3.1-flash-lite-preview 9, xingchen-agi/xing4.0-29b-a4b:free 41; resting until tomorrow: 23 models
+[reader 4] gain: 560 new figures this run
+[reader 5] tracker flags: kept the saved copy
+[reader 5] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
+[reader 5] second chance: 75 reports given up earlier get one more try
+[reader 5] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
+[reader 5] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
+[reader 5] openrouter: paid models on (credit left $0.55)
+[reader 5] done: read 49 annual reports (0 audit re-reads), 43 skipped, about 38 still to read; models used: openai/gpt-oss-120b 49, google/gemini-2.5-flash-lite 43, qwen/qwen3-235b-a22b-2507 22, deepseek/deepseek-chat-v3.1 12, gemini-3.1-flash-lite 40, gemini-3.1-flash-lite-preview 12, xingchen-agi/xing4.0-29b-a4b:free 2; resting until tomorrow: 25 models
+[reader 5] gain: 942 new figures this run
+done: read 172 annual reports (6 readers side by side), 3116 new figures, 0 skipped, about 32 still to read
