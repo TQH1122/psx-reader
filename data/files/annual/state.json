@@ -31464,14 +31464,15 @@
 "redo8": 1
 },
 "khi:TRSM:2003": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
 "second": 1,
 "redo8": 1,
-"n": 14,
+"n": 13,
 "retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:BELA:2003": {
 "at": "2026-11-09",
@@ -42211,10 +42212,10 @@
 "tries": 1,
 "rev": 5,
 "second": 1,
-"n": 17,
-"retry": 1,
+"n": 24,
 "redo9": 1,
-"waits": 1
+"waits": 1,
+"done": true
 },
 "arc:UDLI:2016": {
 "at": "2026-11-09",
