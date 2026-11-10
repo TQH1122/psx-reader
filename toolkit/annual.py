@@ -422,6 +422,19 @@ def refresh_flags():
     return len(rows), len(srows)
 
 
+def own_read(tk, longrows, extracts):
+    """years whose figures come from a report's own statements (this year and last year beside it), not only from the
+    tracker flags or a multi year summary page; the second check reads (10 Nov 2026) go after the other years"""
+    group = (longrows.get(tk) or {}).get("basis") == "group"
+    out = set()
+    for d in extracts:
+        for b in ("C", "S"):
+            if (b == "C") == bool(d.get("cons")) and not (group and b == "S" and not d.get("nogroup")):
+                out |= {int(y) for y, row in (d.get(b) or {}).items() if str(y).isdigit() and isinstance(row, dict)
+                        and (row.get("ni") is not None or row.get("pat") is not None)}
+    return out
+
+
 def covered(tk, longrows, extracts):
     """years that already hold a checked profit figure on the company's basis: the long history (profit and equity),
     report statements, and multi year summary years on the same basis (one summary page gives 6 to 10 years)"""
@@ -591,6 +604,24 @@ def requeue_drive_busy(state):
     return n
 
 
+def requeue_drive_owner(state):
+    """once (10 Nov 2026): Drive reports given up on 9 Nov 2026 as "Drive download failed", before the owner Drive pass
+    (lib/gtoken.py) was handed to the readers; they now download as the owner"""
+    mp = os.path.join(AN, "migrations.json")
+    done = jl(mp, {}) or {}
+    if done.get("requeue_drive_owner"):
+        return 0
+    n = 0
+    for k, st in state.items():
+        if k.startswith("drive:") and not st.get("done") and "download failed" in (st.get("why") or ""):
+            st.update(retry=1, tries=1)
+            st.pop("why", None)
+            n += 1
+    done["requeue_drive_owner"] = f"{date.today().isoformat()}: {n} reports"
+    jw(done, mp, indent=0)
+    return n
+
+
 def requeue_groups(state, ext, longrows):
     """once (8 Nov 2026): group companies' reports read before the reader noted whether a report has group accounts
     at all (standalone reads) or before owners' profit was taken from statements with no minority interest
@@ -687,6 +718,16 @@ def next_job(tk, sc, longrows, cat, docs, state, extracts, imp):
         if y not in cov or ((y - 1) not in cov and (y - 1) not in cands) or (not older and min(cov or {9999}) > y - 5):
             src, url = cands[y]
             return (tier, -float(sc[tk].get("mc") or 0), -y, f"{src}:{tk}:{y}", tk, y, src, url)
+    # second check (10 Nov 2026, his rule: every figure confirmed by more than one source): once nothing is left to read
+    # for a first time, a year filled only from the tracker's data sources or another report's summary page has its own
+    # report read too, so the audit can compare the two. Free models first; last in the queue, so first reads always
+    # come before; each report once (done, or two failed tries).
+    own = own_read(tk, longrows, extracts)
+    for y in ys:
+        st = state.get(f"{cands[y][0]}:{tk}:{y}") or {}
+        if y in cov and y not in own and not st.get("done") and st.get("tries", 0) < 2 and y >= 2005:
+            src, url = cands[y]
+            return (tier + 7, -float(sc[tk].get("mc") or 0), -y, f"{src}:{tk}:{y}", tk, y, src, url, "verify")
     return None
 
 
@@ -1457,7 +1498,7 @@ def main():
         if d.get("ticker") and not d.get("skip"):
             by_tk.setdefault(d["ticker"], []).append(d)
     state = jl(os.path.join(AN, "state.json"), {}) or {}
-    nre = requeue_8nov(state, ext) + requeue_groups(state, ext, load_rows("long")) + requeue_drive_busy(state) + requeue_thin(state, ext)
+    nre = requeue_8nov(state, ext) + requeue_groups(state, ext, load_rows("long")) + requeue_drive_busy(state) + requeue_thin(state, ext) + requeue_drive_owner(state)
     if nre:
         jw(state, os.path.join(AN, "state.json"), indent=0)
         print(f"requeue: {nre} reports read again under the 8 Nov 2026 fixes (joined letters, profit rules)", flush=True)

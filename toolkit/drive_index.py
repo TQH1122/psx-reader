@@ -96,7 +96,21 @@ for r in (jl(os.path.join(ROOT, "data", "db", "market", "screener.json"), {}) or
     core = re.sub(r"\s+", " ", core).strip()
     if len(core) >= 4 and r.get("s"):
         NAMES.append((str(r["s"]).split()[0], core))
+# companies no longer listed (10 Nov 2026): KHI Stocks' list keeps their names, so their reports get a ticker too
+_have = {t for t, _ in NAMES}
+for t, r in ((jl(os.path.join(ROOT, "data", "files", "annual", "khi_catalogue.json"), {}) or {}).get("co") or {}).items():
+    core = re.sub(r"\s+", " ", re.sub(r"\b(limited|ltd|company|co|the|plc)\b", " ", norm((r or {}).get("name") or ""))).strip()
+    if t not in _have and len(core) >= 4 and not re.search(r"\bfund\b|\bmodaraba\b certificate", core):
+        NAMES.append((t, core))
 NAMES.sort(key=lambda x: -len(x[1]))
+
+
+def squash(s):
+    """letters printed apart join up ("b r r guardian" = "brr guardian", "k s b" = "ksb"), so both sides compare alike"""
+    return re.sub(r"\b([a-z0-9]) (?=[a-z0-9]\b)", r"\1", s)
+
+
+SQ = [(t, squash(c)) for t, c in NAMES]
 
 MON = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 MONS = "january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec"
@@ -154,14 +168,95 @@ def research(text, title):
     return {"src": src, "sectors": sec, "y": max(yrs) if yrs else None}
 
 
-def company(text):
-    low = norm(text[:4000]).split(" bankers ")[0]
+def company(text, wide=False):
+    """the listed company whose name is printed first. 10 Nov 2026: letters printed apart (B.R.R Guardian) matched no
+    name, and names printed after the first 4,000 letters (after a long contents page) were missed; the wide look
+    reads the whole of the first four pages but only when the narrow one found nothing"""
+    low = squash(norm(text[:16000] if wide else text[:4000])).split(" bankers ")[0]
     best = None
-    for tk, core in NAMES:
+    for tk, core in SQ:
         m = re.search(r"\b" + re.escape(core) + r"\b", low)
         if m and (best is None or m.start() < best[0] or (m.start() == best[0] and len(core) > best[1])):
             best = (m.start(), len(core), tk)
     return best[2] if best else None
+
+
+def name_to_ticker(name):
+    """a printed company name (from the cover, or a model reading it) to a ticker: the same name list, exact first,
+    then a very close spelling (one or two letters off)"""
+    import difflib
+    core = squash(re.sub(r"\s+", " ", re.sub(r"\b(limited|ltd|company|co|the|plc|pakistan)\b", " ", norm(name or ""))).strip())
+    if len(core) < 4:
+        return None
+    strip = lambda c: re.sub(r"\s+", " ", re.sub(r"\bpakistan\b", " ", c)).strip()
+    for tk, c in SQ:
+        if strip(c) == core:
+            return tk
+    best = max(((difflib.SequenceMatcher(None, strip(c), core).ratio(), tk) for tk, c in SQ), default=(0, None))
+    return best[1] if best[0] >= 0.93 else None
+
+
+PANEL = []
+PANEL_LOCK = threading.Lock()
+ASK = """Below are the first pages of a PDF filed by a company listed on the Pakistan Stock Exchange.
+Answer only with JSON: {"company": "the company's full name exactly as printed", "report": "annual" or "half year" or
+"quarter" or "nine months" or "other", "period_end": "YYYY-MM-DD" or null}.
+"report" is "annual" only for annual accounts or an annual report; "quarter" for three month accounts; "other" for
+anything else (letters, notices, briefings, research). "period_end" is the date the accounts are made up to, as printed.
+If something is not printed, use null. Do not guess.
+FILE NAME: {title}
+PAGES:
+{text}"""
+
+
+def ask_model(txt, title):
+    """free models only (Gemini, Groq, Cloudflare and OpenRouter's free list) read the cover when the rules could not.
+    10 Nov 2026: 1,874 of his files had no company and about 1,200 no year. Nothing is taken on trust: the company
+    must be printed in the pages and match the listed names, and the year must be printed too."""
+    with PANEL_LOCK:
+        if not PANEL:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            import reader as R
+            PANEL.extend(R.panel() or [None])
+    for rd in [r for r in PANEL if r is not None and not r.out]:
+        j = rd.ask(ASK.replace("{title}", title or "").replace("{text}", txt[:5000]))
+        if isinstance(j, dict) and (j.get("company") or j.get("period_end")):
+            return j, rd.name
+    return None, None
+
+
+def by_model(r, txt, title):
+    """fills company, kind and year from a model's reading of the cover, each only when proven by the printed text"""
+    j, who = ask_model(txt, title)
+    if not j:
+        return False
+    sq = squash(norm(txt))
+    got = False
+    co = str(j.get("company") or "")
+    if not r.get("tk") and co and squash(norm(co))[:25] in sq:
+        tk = name_to_ticker(co)
+        if tk:
+            r["tk"], got = tk, True
+            r.pop("co", None)
+        else:
+            r["co"] = co[:80]
+    m = re.match(r"(19|20)(\d\d)-(\d\d)-(\d\d)$", str(j.get("period_end") or ""))
+    rep = str(j.get("report") or "").lower()
+    kind = {"annual": "A", "half year": "Q2", "quarter": "Q1", "nine months": "Q3"}.get(rep)
+    if m and kind and m.group(1) + m.group(2) in txt:
+        y, mon = int(m.group(1) + m.group(2)), int(m.group(3))
+        rk = r.get("kind")
+        # the kind the rules read stays (Q1 and Q3 cannot be told apart by "three months" alone); a clash is left alone
+        nk = kind if rk in (None, "Q", "other", "R") else (rk if (rk == "A") == (kind == "A") else None)
+        if not r.get("y") and nk:
+            r["kind"] = nk
+            r["y"], r["mon"], got = y, mon, True
+    elif rep == "other" and not r.get("kind"):
+        r["kind"] = "other"
+        got = True
+    if got:
+        r["ai"] = who
+    return got
 
 
 CONAME = re.compile(r"\b((?:[A-Z][A-Za-z&().,'-]*[ \t]+(?:(?:of|and|the|&)[ \t]+)?){1,8}(?:Limited|Ltd\.?|LIMITED|LTD\.?))")
@@ -239,17 +334,27 @@ def ident(fid, title):
                     continue
         txt = fix(txt)
         k, y, mon = period(txt)
-        tk = company(txt)
+        tk = company(txt) or company(txt, wide=True)
         m = re.match(r"^([A-Z]{2,8})[ _-]", title or "")
         if not tk and m and any(m.group(1) == t for t, _ in NAMES):
             tk = m.group(1)  # files he named himself (TICKER FY2024 ...)
-        r = {"title": title, "size": size, "tk": tk, "kind": k, "y": y, "mon": mon, "scanned": scanned, "v": 3}
+        r = {"title": title, "size": size, "tk": tk, "kind": k, "y": y, "mon": mon, "scanned": scanned, "v": 4}
         if not tk:
             r["co"] = coname(txt)
-        if not k or not tk:  # not a company's own report: research material, filed by publisher and sector
+            if r["co"] and name_to_ticker(r["co"]):
+                r["tk"] = name_to_ticker(r["co"])
+                r.pop("co")
+        # a free model reads the cover when the rules left the company or the year out (10 Nov 2026); research files
+        # with a known publisher are left alone
+        if (not r.get("tk") or not r.get("y") or not r.get("kind")) and len(txt.strip()) > 200:
+            try:
+                by_model(r, txt, title)
+            except Exception:
+                pass
+        if not r.get("kind") or r.get("kind") == "other" or not r.get("tk"):  # research material, by publisher and sector
             rs = research(txt, title or "")
             if rs["src"] or rs["sectors"]:
-                r.update(kind=k or "R", research=rs)
+                r.update(kind=r.get("kind") if r.get("kind") not in (None, "other") else "R", research=rs)
         return r
     except Exception as e:
         return {"title": title, "err": str(e)[:80]}
@@ -269,7 +374,12 @@ def main():
     again = lambda r: (r.get("err") and (r.get("busy") or r.get("tries", 1) < 3 or ("tesseract" in str(r["err"]) and r.get("v", 1) < 2))) \
         or (r.get("kind") == "notpdf" and r.get("size") == 2040) \
         or (not r.get("err") and not r.get("tk") and r.get("v", 1) < 2) \
-        or (not r.get("err") and not r.get("kind") and r.get("v", 1) < 3)  # unknown files: checked for research material
+        or (not r.get("err") and not r.get("kind") and r.get("v", 1) < 3) \
+        or (not r.get("err") and r.get("v", 1) < 4 and r.get("kind") not in ("notpdf", "image", "sheet", "CB")
+            and not (r.get("kind") == "R" and (r.get("research") or {}).get("src"))
+            and (not r.get("tk") or not r.get("y") or not r.get("kind")))
+    # 10 Nov 2026: every file still missing its company, kind or year is looked at once more with the better name
+    # matching and a free model reading the cover (research files with a known publisher are left alone)
     todo = [(f, t) for f, t in files.items() if f not in known and (f not in db or again(db[f])) and mine(f)]
     todo.sort(key=lambda x: x[0] in db)  # files never seen first
     lock, done, busy = threading.Lock(), [0], [0]
