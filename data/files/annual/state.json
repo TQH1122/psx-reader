@@ -7736,11 +7736,11 @@
 "redo8": 1
 },
 "khi:BAFS:2007": {
-"at": "2026-11-01",
-"n": 20,
-"retry": 1,
+"at": "2026-11-10",
+"n": 28,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:ADMM:2007": {
 "at": "2026-11-09",
@@ -7843,11 +7843,11 @@
 "redo8": 1
 },
 "khi:BAFS:2004": {
-"at": "2026-11-01",
+"at": "2026-11-10",
 "n": 28,
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:PRL:2005": {
 "at": "2026-11-09",
@@ -8162,11 +8162,11 @@
 "done": true
 },
 "khi:BAFS:2002": {
-"at": "2026-11-01",
-"n": 24,
-"retry": 1,
+"at": "2026-11-10",
+"n": 18,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:OLPL:2018": {
 "at": "2026-11-01",
@@ -8352,11 +8352,12 @@
 "why": "not on KHI Stocks (404)"
 },
 "khi:BAFS:2001": {
-"at": "2026-11-01",
+"at": "2026-11-10",
 "n": 23,
-"retry": 1,
-"tries": 1,
-"redo9": 1
+"tries": 2,
+"redo9": 1,
+"rev": 5,
+"why": "company name does not match: Pakistan International Airlines Corporation Limited (names ARPAK)"
 },
 "khi:OLPL:2009": {
 "at": "2026-11-08",
@@ -11005,22 +11006,22 @@
 "why": "company name does not match: Pakistan International Airline Company Limited (names ARPAK)"
 },
 "khi:ALNRS:2006": {
-"at": "2026-11-01",
-"n": 14,
-"retry": 1,
+"at": "2026-11-10",
+"n": 18,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:ALNRS:2005": {
-"at": "2026-11-04",
+"at": "2026-11-10",
 "n": 8,
 "waits": 2,
 "reread": [
 2004
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:PNSC:2000": {
 "at": "2026-11-08",
@@ -13793,11 +13794,11 @@
 "done": true
 },
 "khi:BAFS:2005": {
-"at": "2026-11-02",
-"n": 26,
-"retry": 1,
+"at": "2026-11-10",
+"n": 28,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:KSBP:2005": {
 "at": "2026-11-02",
@@ -14157,11 +14158,11 @@
 "done": true
 },
 "khi:ALNRS:2001": {
-"at": "2026-11-02",
-"n": 20,
-"retry": 1,
+"at": "2026-11-10",
+"n": 34,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:STCL:2003": {
 "at": "2026-11-09",
@@ -18029,9 +18030,9 @@
 "rev": 4,
 "second": 1,
 "n": 0,
-"retry": 1,
 "redo9": 1,
-"waits": 2
+"waits": 2,
+"done": true
 },
 "web:WAVESAPP:2024": {
 "at": "2026-11-08",
@@ -18042,23 +18043,23 @@
 "redo8": 1
 },
 "web:BAFS:2015": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 4,
 "second": 1,
 "n": 0,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "web:BAFS:2014": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 4,
 "second": 1,
-"n": 18,
-"retry": 1,
-"redo9": 1
+"n": 22,
+"redo9": 1,
+"done": true
 },
 "web:KPUS:2019": {
 "at": "2026-11-03",
@@ -18068,13 +18069,13 @@
 "redo9": 1
 },
 "web:BAFS:2013": {
-"at": "2026-11-07",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 4,
 "second": 1,
-"n": 15,
-"retry": 1,
-"redo9": 1
+"n": 11,
+"redo9": 1,
+"done": true
 },
 "web:WAVESAPP:2023": {
 "at": "2026-11-08",
@@ -30617,13 +30618,13 @@
 "done": true
 },
 "khi:ALNRS:2003": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
 "redo8": 1,
 "n": 27,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:ASIC:2003": {
 "at": "2026-11-09",
@@ -30639,12 +30640,12 @@
 "done": true
 },
 "khi:ALNRS:2002": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "not annual accounts: company name not found in provided pages",
-"retry": 1,
-"redo8": 1
+"redo8": 1,
+"done": true,
+"n": 30
 },
 "khi:PIM:2003": {
 "at": "2026-11-08",
@@ -38292,10 +38293,9 @@
 },
 "arc:ALNRS:2015": {
 "at": "2026-11-10",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
+"why": "company name does not match: ISMAIL H. ZAKARIA (names ISIL)",
 "second": 1,
 "waits": 1
 },
@@ -38307,12 +38307,12 @@
 "second": 1
 },
 "arc:ALNRS:2014": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 0
 },
 "arc:ADAMS:2018": {
 "at": "2026-11-08",
@@ -38322,20 +38322,20 @@
 "second": 1
 },
 "arc:ALNRS:2013": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 0
 },
 "arc:ALNRS:2012": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
-"retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 0
 },
 "khi:UNITY:2006": {
 "at": "2026-11-08",
@@ -51995,5 +51995,15 @@
 "at": "2026-11-10",
 "done": true,
 "n": 18
+},
+"khi:BAFS:2006": {
+"at": "2026-11-10",
+"done": true,
+"n": 27
+},
+"khi:BAFS:2003": {
+"at": "2026-11-10",
+"done": true,
+"n": 30
 }
 }
