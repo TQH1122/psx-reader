@@ -23506,7 +23506,7 @@
 "redo8": 1
 },
 "web:GATI:2019": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "n": 31,
 "waits": 1,
 "reread": [
@@ -23514,8 +23514,8 @@
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:GHNI:2023": {
 "at": "2026-11-03",
@@ -35421,14 +35421,14 @@
 "redo9": 1
 },
 "web:GATI:2018": {
-"at": "2026-11-08",
-"n": 30,
+"at": "2026-11-10",
+"n": 32,
 "reread": [
 2018
 ],
-"retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:BTL:2019": {
 "at": "2026-11-08",
@@ -41627,7 +41627,7 @@
 "second": 1
 },
 "arc:GATI:2015": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "n": 19,
 "retry": 1,
 "tries": 1,
@@ -43013,7 +43013,7 @@
 "second": 1
 },
 "arc:GATI:2016": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "n": 30,
 "waits": 1,
 "reread": [
@@ -43021,8 +43021,8 @@
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:FPJM:2016": {
 "at": "2026-11-08",
@@ -45456,14 +45456,14 @@
 "done": true
 },
 "arc:GATI:2017": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "n": 26,
 "reread": [
 2017
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "drive:KTML:2019": {
 "at": "2026-11-08",
@@ -50138,7 +50138,9 @@
 },
 "web:GATI:2020": {
 "at": "2026-11-10",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 29
 },
 "drive:SZTM:2014": {
 "at": "2026-11-09",
@@ -56904,7 +56906,10 @@
 "at": "2026-11-10"
 },
 "drive:MACTER:2022": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "drive:QUET:2015": {
 "at": "2026-11-10"
@@ -57115,7 +57120,10 @@
 "at": "2026-11-10"
 },
 "drive:TPLT:2022": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:ASIC:2025": {
 "at": "2026-11-10",
@@ -57124,7 +57132,10 @@
 "why": "file too large"
 },
 "drive:SSGC:2016": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pakistan Petroleum Limited (names APL)"
 },
 "drive:ADAMS:2022": {
 "at": "2026-11-10",
@@ -57378,7 +57389,10 @@
 "at": "2026-11-10"
 },
 "drive:CHBL:2016": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "drive:RUPL:2015": {
 "at": "2026-11-10"
@@ -57478,13 +57492,16 @@
 "at": "2026-11-10"
 },
 "drive:MSOT:2026": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:INIL:2025": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:ASTL:2015": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"waits": 1
 },
 "drive:BRRG:2024": {
 "at": "2026-11-10",
@@ -57497,9 +57514,11 @@
 },
 "drive:PAEL:2020": {
 "at": "2026-11-10",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:EFERT:2019": {
 "at": "2026-11-10"
@@ -57515,6 +57534,9 @@
 "at": "2026-11-10"
 },
 "drive:MDTL:2025": {
+"at": "2026-11-10"
+},
+"drive:MACTER:2018": {
 "at": "2026-11-10"
 }
 }
