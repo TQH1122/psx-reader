@@ -519,7 +519,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Pakistan) Limited",
 "research": {
 "src": null,
@@ -528,7 +528,7 @@
 ],
 "y": 2017
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1EUFa3o-8sBxDnc4-9oAX6XZtRHX-0puv": {
 "title": "118896.pdf",
@@ -557,9 +557,9 @@
 "y": 2018,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1xYZwi-I20-XSuOKBcsIFD-LzQ1h3XnK1": {
 "title": "118308.pdf",
@@ -624,9 +624,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "13A1VffgUMY73k1NaZ5WoyIRSmCApw4yN": {
 "title": "119010.pdf",
@@ -646,9 +646,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1pZylPCt-55zuTzhn5Q6JWMN5XPiQcfe_": {
 "title": "118556.pdf",
@@ -670,7 +670,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -678,7 +678,7 @@
 ],
 "y": 2018
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "151qhedJsR9GuSsdXBpn__9mjTyQszhtA": {
 "title": "119047 (1).pdf",
@@ -1294,8 +1294,8 @@
 "y": 2018,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "A Siddiqsons Group Company",
 "research": {
 "src": null,
 "sectors": [
@@ -1303,7 +1303,7 @@
 ],
 "y": 2018
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1PQJUxUhzW5iGE5R4XW7jkFRoiiP0ztUK": {
 "title": "119354.pdf",
@@ -1313,9 +1313,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1BkzGIsy3FnnHz-qq7PFqvEgNt8F_gLMi": {
 "title": "119355.pdf",
@@ -1375,7 +1375,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"at": "2026-11-10"
 },
 "1Olp7VwWW-SgA3ZvqRurzHdn3JCuzc-TJ": {
 "title": "119381.pdf",
@@ -1498,9 +1499,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "17tdNmgKgeTA-ycC3vjCBZDrckniS6CwX": {
 "title": "119447.pdf",
@@ -1969,7 +1970,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"at": "2026-11-10"
 },
 "1BSKgvvMOj-BcJ23xupgl7AI-Jt8NrTlh": {
 "title": "119652.pdf",
@@ -2089,14 +2091,13 @@
 "1KiEo_snNwR_CtoyvQAb3Fol5WOYaBFuD": {
 "title": "119473.pdf",
 "size": 8142755,
-"tk": null,
+"tk": "IML",
 "kind": "A",
 "y": 2018,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": "DOON LTD",
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1Kb-5OuKN5wAyhHLFIybu4u1IYjixm45V": {
 "title": "119689.pdf",
@@ -2255,9 +2256,9 @@
 "y": 2018,
 "mon": 6,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1HYIMkKAGuKMac39ik9uJouvVkX18kXai": {
 "title": "119793.pdf",
@@ -2451,22 +2452,14 @@
 "1KoWlYNk6YsiuJnNvPN1YEzK0AM7q8796": {
 "title": "119896.pdf",
 "size": 2156191,
-"tk": null,
+"tk": "PAKL",
 "kind": "A",
 "y": 2018,
 "mon": 6,
 "scanned": false,
-"v": 3,
-"co": "Albaraka Bank Pakistan Ltd",
-"research": {
-"src": null,
-"sectors": [
-"banks",
-"power"
-],
-"y": 2019
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1W1CLKsiZFGJ2QNVj-5TjOO1zH3SwaiBh": {
 "title": "119687.pdf",
@@ -2510,14 +2503,13 @@
 "1R2aUtzlJ1lrtBtYgYNwd9DHtmfdWPlnj": {
 "title": "119804.pdf",
 "size": 14472921,
-"tk": null,
+"tk": "UBDL",
 "kind": "A",
 "y": 2018,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1qJRqAnpQ48BJT_0G3OL70i-CtGUbKjK1": {
 "title": "119966.pdf",
@@ -2996,14 +2988,13 @@
 "1do0tJdjhxXLgRSQ9FqjB_py1Vk7gfteb": {
 "title": "120095.pdf",
 "size": 6191716,
-"tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"tk": "DIIL",
+"kind": "A",
+"y": 2018,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1YL2TKzbFjJqeDqDepcTjM-nZj6nigk5g": {
 "title": "121459.pdf",
@@ -4845,9 +4836,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "16r7QI3QZRZSRvefLHWhaRbihNlSdiq60": {
 "title": "127255.pdf",
@@ -4934,8 +4925,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1uK7PEC9bqkbrH9H_P18zle6Kv-OUTH_d": {
 "title": "127407.pdf",
@@ -5067,14 +5058,13 @@
 "1OoVMh_K7IMr-tCZcBggCVM6t1c4iG2oK": {
 "title": "127863.pdf",
 "size": 11771474,
-"tk": null,
+"tk": "TRIPF",
 "kind": "A",
 "y": 2018,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Tri-Pack Films Limited",
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1HzJiy_Mfd0DR6XKUx-wlGKRqjLXrQtta": {
 "title": "127891.pdf",
@@ -5221,12 +5211,13 @@
 "title": "128211.pdf",
 "size": 6131070,
 "tk": null,
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2018,
+"mon": 12,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
+"ai": "openrouter:xingchen-agi/xing4.0-29b-a4b:free",
 "research": {
 "src": null,
 "sectors": [
@@ -5234,7 +5225,7 @@
 ],
 "y": 2018
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "16NGI3Llcq8zvUJqR32wnZHaxr-Yd8Bzt": {
 "title": "126992.pdf",
@@ -5303,14 +5294,13 @@
 "1-vQPlSTuBDzrADJOUXfOT0soPO_qv5ut": {
 "title": "125643.pdf",
 "size": 6631523,
-"tk": null,
+"tk": "MCB",
 "kind": "A",
 "y": 2018,
 "mon": 6,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "19KflVatGGCSPiFDCy-_M8DIgi-k71AGy": {
 "title": "128320.pdf",
@@ -5320,7 +5310,7 @@
 "y": 2018,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -5330,7 +5320,7 @@
 ],
 "y": 2018
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1E8X-V9zr34KovpepQySYyl1waCJvoFuv": {
 "title": "128329.pdf",
@@ -5372,7 +5362,7 @@
 "y": 2018,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -5381,7 +5371,7 @@
 ],
 "y": 2018
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1pRdz2HfJXlvxurpasuycgPsphvM1SO_n": {
 "title": "128357.pdf",
@@ -5391,9 +5381,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1L1YMPuSp2Qe5GIhTLmp4VdclqY5PFr6S": {
 "title": "128364.pdf",
@@ -5467,9 +5457,9 @@
 "y": 2018,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1Oqm7p8FNHVhLR_nc08_B_uVtWCDVJwxv": {
 "title": "128412.pdf",
@@ -5540,9 +5530,9 @@
 "y": 2018,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "15H1p0Nb3Ab0ljRlqUwSO5HdNNRxO1WhB": {
 "title": "128380.pdf",
@@ -5673,39 +5663,25 @@
 "title": "128516.pdf",
 "size": 9105875,
 "tk": "PAKRI",
-"kind": "R",
-"y": null,
-"mon": null,
-"scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"banks",
-"insurance"
-],
-"y": 2018
-},
-"at": "2026-11-09"
-},
-"1upFVi7z7xYfq2LOAvkxLw160iiWx2G37": {
-"title": "128578.pdf",
-"size": 3024086,
-"tk": null,
 "kind": "A",
 "y": 2018,
 "mon": 12,
 "scanned": false,
-"v": 3,
-"co": "Pvt) Limited",
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2018
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
-"at": "2026-11-09"
+"1upFVi7z7xYfq2LOAvkxLw160iiWx2G37": {
+"title": "128578.pdf",
+"size": 3024086,
+"tk": "SIBL",
+"kind": "A",
+"y": 2018,
+"mon": 12,
+"scanned": false,
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1QJtwZY530c-Q8_e1uHc2Jz8OI1n1NFkm": {
 "title": "128615.pdf",
@@ -5754,9 +5730,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1F0GUdxotO77Sdn6a75Y6ozhtdnMpV8R-": {
 "title": "128693.pdf",
@@ -6280,9 +6256,9 @@
 "y": 2018,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1JbqvDSXHNc1x1KVjnIJzYQIzf_8GlsQr": {
 "title": "130497.pdf",
@@ -6431,21 +6407,13 @@
 "title": "132417.pdf",
 "size": 860941,
 "tk": "PKGI",
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2018,
+"mon": 12,
 "scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"banks",
-"insurance",
-"power"
-],
-"y": 2018
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1ozgt_ATyK_FKW-ifs3-tsIApO6hP_fAU": {
 "title": "131509.pdf",
@@ -6908,7 +6876,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"at": "2026-11-10"
 },
 "1JbG7lyXSwNoE25swOHt561L_QzBgGuhY": {
 "title": "134447.pdf",
@@ -7201,7 +7170,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Pvt) Ltd",
 "research": {
 "src": null,
@@ -7210,7 +7179,7 @@
 ],
 "y": 2017
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1QHEiBXpKthFugigupixJunwxLqfcUvQ_": {
 "title": "134883.pdf",
@@ -7370,27 +7339,21 @@
 "y": 2019,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "B ORIX Leasing Pakistan Limited",
-"at": "2026-11-09"
+"v": 4,
+"co": "ORIX Leasing Pakistan Limited",
+"at": "2026-11-10"
 },
 "1g4WPNZOmQppBatVbg7zxTU-992Q_qZ6a": {
 "title": "135752.pdf",
 "size": 3072998,
 "tk": "DEL",
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2019,
+"mon": 6,
 "scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2019
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1cW3j6g2KN4GG2hUoJZ1o62LMB3DoNTXo": {
 "title": "135579.pdf",
@@ -7585,14 +7548,13 @@
 "1GYmQzZjkRpfXNGnzaDCCuex1TBCstSfe": {
 "title": "135750.pdf",
 "size": 11866757,
-"tk": null,
-"kind": null,
-"y": null,
+"tk": "MFL",
+"kind": "A",
+"y": 2019,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1fmfYEvKKDeiQaCu7ys8tGMw879SYRWUH": {
 "title": "135633.pdf",
@@ -7630,7 +7592,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"at": "2026-11-07"
+"v": 4,
+"at": "2026-11-10"
 },
 "1SCdasDliHavLid7_ymEeafYFyYfcvq3r": {
 "title": "135852.pdf",
@@ -7867,9 +7830,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1DJh_jACL8Cr2hZM88uQxNjsj_5CVigkW": {
 "title": "135934.pdf",
@@ -8215,8 +8178,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "15PGJoxfRrnU7w2RSX0yI7pfmtvcz9T1b": {
 "title": "136167.pdf",
@@ -8297,12 +8260,13 @@
 "title": "136190.pdf",
 "size": 13391977,
 "tk": "AHL",
-"kind": null,
+"kind": "other",
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"ai": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+"at": "2026-11-10"
 },
 "17FLudYqM49dQ36wh9UxslIdn0n0gu7Ay": {
 "title": "136199.pdf",
@@ -8463,10 +8427,12 @@
 "size": 3023581,
 "tk": "ARPAK",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2019,
+"mon": 6,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"ai": "gemini:gemini-3-flash-preview",
+"at": "2026-11-10"
 },
 "1yGQTxGGRkp0wIf-SvY3PzKSW2I5U7sjb": {
 "title": "135902.pdf",
@@ -8731,23 +8697,14 @@
 "1XnlvAypyZgS3oP_ZRVa-slkR8WkwwAg7": {
 "title": "136372.pdf",
 "size": 965438,
-"tk": null,
+"tk": "LEUL",
 "kind": "A",
 "y": 2018,
 "mon": 6,
 "scanned": false,
-"v": 3,
-"co": "MCB Bank Ltd United Bank Ltd Faysal Bank Ltd",
-"research": {
-"src": null,
-"sectors": [
-"banks",
-"chemicals",
-"power"
-],
-"y": 2020
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1FfdSy9ksTSRWB8PCYaO78aw--LchNXnW": {
 "title": "136373.pdf",
@@ -8864,9 +8821,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1JheHAWW10-KR-dln2oMgT-t0SV8sAXH5": {
 "title": "136403.pdf",
@@ -8892,12 +8849,13 @@
 "title": "136417.pdf",
 "size": 4379334,
 "tk": "FCEL",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2019,
+"mon": 6,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1rmY2ok8ijAMh630QcFxPaEsm0yoyPgOw": {
 "title": "136418.pdf",
@@ -9035,21 +8993,14 @@
 "18MprpBkn8WngTMOdacn5QArIi7CNbhkO": {
 "title": "136441.pdf",
 "size": 2829984,
-"tk": null,
+"tk": "PAKL",
 "kind": "A",
 "y": 2019,
 "mon": 6,
 "scanned": false,
-"v": 3,
-"co": "Albaraka Bank Pakistan Ltd",
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2020
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1LLD7AKLJISKDkaxTEZRagxP3E9oGUIli": {
 "title": "136448.pdf",
@@ -9108,10 +9059,12 @@
 "size": 3348565,
 "tk": "PASL",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2019,
+"mon": 6,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1sItZtF1se_z3UprrH9Yr-yrcAtBpZZiE": {
 "title": "136479.pdf",
@@ -9121,8 +9074,8 @@
 "y": 2019,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "A Siddiqsons Group Company",
 "research": {
 "src": null,
 "sectors": [
@@ -9130,7 +9083,7 @@
 ],
 "y": 2019
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1BXA18E8DAzQvYHmZZa3WP8LbuoaRicjO": {
 "title": "136492.pdf",
@@ -9372,10 +9325,12 @@
 "size": 2108530,
 "tk": "TSBL",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2019,
+"mon": 6,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"ai": "openrouter:xingchen-agi/xing4.0-29b-a4b:free",
+"at": "2026-11-10"
 },
 "1eVCmRzQP2SAJSj8rcDL8EU3I856JjqIc": {
 "title": "136477.pdf",
@@ -9402,14 +9357,13 @@
 "1QkeqU5zZvOVQcxHgmkF5AZI7HgdgHw92": {
 "title": "136522.pdf",
 "size": 5482809,
-"tk": null,
-"kind": null,
-"y": null,
+"tk": "ESBL",
+"kind": "A",
+"y": 2019,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1auXckOYzo2ZDiPQ2ToxMJfIduJ7cs_5V": {
 "title": "136690.pdf",
@@ -9444,14 +9398,13 @@
 "1bG_NQHkbwZKDzV70Wcl4VXp8JVCpDWIk": {
 "title": "136527.pdf",
 "size": 11787777,
-"tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"tk": "SUHJ",
+"kind": "A",
+"y": 2018,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1x5QeNXzAnjbipcchz3yLGp7euOaCtGbY": {
 "title": "136546 (1).pdf",
@@ -9780,14 +9733,13 @@
 "1OyHxlWVgo_LMJzzSQ0_kCf4ff8_ccZau": {
 "title": "136524.pdf",
 "size": 5708042,
-"tk": null,
+"tk": "IML",
 "kind": "A",
 "y": 2019,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": "L-KHAIR GADOON LTD",
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "15KSC0Xw9w0CDMmLF_kKti5-zqX2bgeyk": {
 "title": "138249.pdf",
@@ -10457,13 +10409,14 @@
 "1mN-iLhUrc_tWqHmUuk0k8ZqPbYxENNnc": {
 "title": "139012.pdf",
 "size": 8928815,
-"tk": "SUHJ",
+"tk": null,
 "kind": null,
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"co": null,
+"at": "2026-11-10"
 },
 "1VJ-W8aalUwTGGVGlmTu4HGC85t0XpqxN": {
 "title": "140933.pdf",
@@ -10793,21 +10746,13 @@
 "1M7OQpU6XET98aE3RXzPfw35InB67vDb9": {
 "title": "139482.pdf",
 "size": 9776390,
-"tk": null,
+"tk": "HMB",
 "kind": "A",
 "y": 2019,
 "mon": 6,
 "scanned": true,
-"v": 3,
-"co": "Habib Metropolitan Bank Limited",
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2019
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1h6vG-HSvf0NmLwOnv6TpHccNxi-Hl1tY": {
 "title": "141616.pdf",
@@ -11479,8 +11424,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "17LOJyrn5yKMrWASXky13c8Wk24t5wjE1": {
 "title": "144458.pdf",
@@ -11610,33 +11555,25 @@
 "1036IpoPxW9fcHGCd0RtzzTULIEfJO363": {
 "title": "144815.pdf",
 "size": 13844259,
-"tk": null,
+"tk": "TRIPF",
 "kind": "A",
 "y": 2019,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Tri-Pack Films Limited",
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "11gY5lZJ7IOnZ11Bj_a7fqxvMeG0JfA3m": {
 "title": "145077.pdf",
 "size": 4020508,
-"tk": null,
+"tk": "SIBL",
 "kind": "A",
 "y": 2018,
 "mon": 12,
 "scanned": false,
-"v": 3,
-"co": "Pvt) Limited",
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2018
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1mYPr0OOgVNbQlrSgQQ5-VgKMjQajYQie": {
 "title": "145085.pdf",
@@ -11708,9 +11645,9 @@
 "y": 2019,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1eX5pNzbSqkzHK4rJJnu3ICzvvXt-S8Em": {
 "title": "145310.pdf",
@@ -11750,8 +11687,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "AMBL",
 "research": {
 "src": null,
 "sectors": [
@@ -11759,7 +11696,7 @@
 ],
 "y": 2019
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1sU02I8wPRqrWNyCUkEC382pTbKsvz1Vj": {
 "title": "145790.pdf",
@@ -11893,9 +11830,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1DttqgJuxvShGodLECBOzJs4uUgoD0Wgr": {
 "title": "146826.pdf",
@@ -12126,14 +12063,21 @@
 "1mtVYNLFCKqKLzCCS4dvq669SnBMWtZgF": {
 "title": "144497 (2).pdf",
 "size": 5054257,
-"tk": null,
-"kind": null,
+"tk": "JGICL",
+"kind": "R",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"research": {
+"src": null,
+"sectors": [
+"insurance"
+],
+"y": null
+},
+"at": "2026-11-10"
 },
 "18klJf6tewan_rcOaet77fWDDnXxKDEJK": {
 "title": "147115.pdf",
@@ -12348,7 +12292,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
 "research": {
 "src": null,
 "sectors": [
@@ -12357,7 +12302,7 @@
 ],
 "y": 2014
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1F_PoSHn55wfeTGell3KrrGaM70c62Ab2": {
 "title": "147263.pdf",
@@ -12379,14 +12324,13 @@
 "1E3UqW8QTTsjydpKNwyD2_T-SvyEy1N5a": {
 "title": "146840.pdf",
 "size": 5030781,
-"tk": null,
-"kind": null,
+"tk": "DLL",
+"kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1TyqwdCm4qUlRDH1RJTYd3qNgR7iEITx8": {
 "title": "147313.pdf",
@@ -12516,9 +12460,9 @@
 "y": 2019,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1J4wDdzolll5acpflyMx0nEUChwHAJSQS": {
 "title": "147534 (1).pdf",
@@ -12538,7 +12482,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -12548,7 +12492,7 @@
 ],
 "y": 2019
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1kkeVE3GD8Jodiw3L_s6sxBqHBjK59yT1": {
 "title": "147550.pdf",
@@ -12564,20 +12508,13 @@
 "title": "147589.pdf",
 "size": 4071206,
 "tk": "PAKRI",
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2018,
+"mon": 12,
 "scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"banks",
-"insurance"
-],
-"y": 2019
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1phC950MTSjkS7-GQ0rfL1zVUaRmqMkjW": {
 "title": "147610.pdf",
@@ -12774,21 +12711,14 @@
 "1BAQ1Wl2USD5OonkdvqTo9ew1NvEf9lk5": {
 "title": "147548.pdf",
 "size": 9828558,
-"tk": null,
-"kind": "R",
-"y": null,
-"mon": null,
+"tk": "ASIC",
+"kind": "A",
+"y": 2019,
+"mon": 12,
 "scanned": true,
-"v": 3,
-"co": null,
-"research": {
-"src": null,
-"sectors": [
-"insurance"
-],
-"y": 2019
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "156VuXX5-L84EYb_VeOIhxz3hRHWSz1Li": {
 "title": "148685.pdf",
@@ -12808,7 +12738,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"at": "2026-11-10"
 },
 "1ewGLmWZhxMPnkvv6Ft0pHTljSYsALfVX": {
 "title": "148778.pdf",
@@ -12835,13 +12766,14 @@
 "title": "147600.pdf",
 "size": 14898814,
 "tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2019,
+"mon": 12,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1MKnb3U79QbEBF6QvWmezkWCqTse_KRzb": {
 "title": "148802.pdf",
@@ -13539,7 +13471,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -13547,7 +13479,7 @@
 ],
 "y": 2020
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1Rcc5WTJonvTSWf5s4morxJ-2WthZXWeo": {
 "title": "153186.pdf",
@@ -14190,9 +14122,9 @@
 "y": 2020,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1nkbOCTSyQ5G0v52xCqwQoSzkwz00gdbf": {
 "title": "153782.pdf",
@@ -14202,7 +14134,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Pvt) Ltd",
 "research": {
 "src": null,
@@ -14211,7 +14143,7 @@
 ],
 "y": 2019
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1M4ty-W10wafUHiuyef7-Yfbx6Oc_AUxl": {
 "title": "153781.pdf",
@@ -14241,7 +14173,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"at": "2026-11-10"
 },
 "1t8OtOpE1bNydMtXknS62zM-2PnqIPFNf": {
 "title": "153787.pdf",
@@ -14408,9 +14341,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1vCb4rDrOplbuAERLUV1q1SE0ks5FsPSt": {
 "title": "153840.pdf",
@@ -14488,14 +14421,13 @@
 "1zh0ZwNmolmsrQFawa0THLr1tbTmE190a": {
 "title": "153663.pdf",
 "size": 12913295,
-"tk": null,
-"kind": null,
-"y": null,
+"tk": "MFL",
+"kind": "A",
+"y": 2020,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1mRC92twI-DPi44iEj4LJs6M3U6tgcH-t": {
 "title": "153938.pdf",
@@ -14547,9 +14479,9 @@
 "y": 2020,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "ORIX Leasing Pakistan Limited",
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1y8_kh0zIPbNPWH4Ey8pBGc6K7J551fA6": {
 "title": "153959.pdf",
@@ -14588,10 +14520,12 @@
 "size": 3742691,
 "tk": "PASL",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2020,
+"mon": 6,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1gjJKYQVuEbiuy7_bl7BkZlxWUaW0Xplk": {
 "title": "153879.pdf",
@@ -14719,13 +14653,14 @@
 "title": "154086.pdf",
 "size": 9654543,
 "tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2020,
+"mon": 6,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"ai": "gemini:gemini-3-flash-preview",
+"at": "2026-11-10"
 },
 "1bUW-bfCYo7wgnzp9DStzWDSqj4rPjDUP": {
 "title": "154085.pdf",
@@ -14805,7 +14740,7 @@
 "y": 2020,
 "mon": 6,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -14814,7 +14749,7 @@
 ],
 "y": 2020
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "15uVj6-hkxjaySL9YImQkNzlA0E14tPbq": {
 "title": "154154 (1).pdf",
@@ -14943,7 +14878,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-07"
+"v": 4,
+"at": "2026-11-10"
 },
 "1olNXBXB3BbrA4mG7ZZN75Y9mwn60uvOt": {
 "title": "154186.pdf",
@@ -14968,21 +14904,13 @@
 "173iY4eTjWmcQiaLjnZTkO4h9VVokb2Or": {
 "title": "154195.pdf",
 "size": 5454273,
-"tk": null,
+"tk": "BGL",
 "kind": "A",
 "y": 2020,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "BALOCHISTAN GLASS LIMITED",
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2020
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1x-R8U4QWKydb5iEGB1ZVGFAz0qH5PUL4": {
 "title": "154198.pdf",
@@ -15008,14 +14936,13 @@
 "13rmMwW5Uioq9MVLEDitHeWjcociPMdeL": {
 "title": "153875.pdf",
 "size": 7706307,
-"tk": null,
+"tk": "IML",
 "kind": "A",
-"y": null,
+"y": 2020,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": "KHAIR GADOON LTD",
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "134d6wg5Y_EGfiewbqQOtdMsw35d94_Cp": {
 "title": "154199.pdf",
@@ -15106,9 +15033,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "Pearl-Continental Hotel, Lahore",
+"at": "2026-11-10"
 },
 "13GvM6Sc4u5zpm-_WteE0yDgFU-v_wAQs": {
 "title": "154231.pdf",
@@ -15406,22 +15333,13 @@
 "1NBxtfU2SEBUrcLO7wJOqI4GQ5Xz-8_g9": {
 "title": "154341.pdf",
 "size": 8230633,
-"tk": null,
+"tk": "ESBL",
 "kind": "A",
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Escorts Investment Bank Limited",
-"research": {
-"src": "PSX",
-"sectors": [
-"banks",
-"power"
-],
-"y": 2020
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1EmZSy7SMG_mw7_3QjQmruEqtDlUUwe2W": {
 "title": "154226.pdf",
@@ -15830,7 +15748,7 @@
 "y": 2020,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Albaraka Bank Pakistan Ltd",
 "research": {
 "src": null,
@@ -15839,7 +15757,7 @@
 ],
 "y": 2020
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1bwlyE1xEewgkReEw3FF8G-ayLtH6QadG": {
 "title": "154541.pdf",
@@ -15956,19 +15874,13 @@
 "title": "154681.pdf",
 "size": 6897364,
 "tk": "FCEL",
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2020,
+"mon": 6,
 "scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2020
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "openrouter:xingchen-agi/xing4.0-29b-a4b:free",
+"at": "2026-11-10"
 },
 "1Amrh3G4hfBHgHeRTKA86xQviy-5Yhj4I": {
 "title": "154685 (1).pdf",
@@ -15992,19 +15904,13 @@
 "title": "154682 (1).pdf",
 "size": 12306894,
 "tk": "FCSC",
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2020,
+"mon": 6,
 "scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2020
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+"at": "2026-11-10"
 },
 "1vHVRZXTxBAv0sXBWS3o1M3t75Wv4pP0Y": {
 "title": "154690.pdf",
@@ -16052,7 +15958,7 @@
 "y": 2020,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -16061,7 +15967,7 @@
 ],
 "y": 2020
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1THHTuQBRPP2tTnl2GkyU45Gi2we8CLPJ": {
 "title": "154789.pdf",
@@ -16759,12 +16665,19 @@
 "title": "155616.pdf",
 "size": 14179195,
 "tk": "GAMON",
-"kind": null,
+"kind": "R",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"research": {
+"src": "PSX",
+"sectors": [
+"banks"
+],
+"y": 2020
+},
+"at": "2026-11-10"
 },
 "1_tu66XelijSBCS3di2x8edo_KeojFxjy": {
 "title": "156916.pdf",
@@ -16899,22 +16812,13 @@
 "1Q0LecJaawpkxRZ_KPMqSGV5-bhNs7JLd": {
 "title": "157825.pdf",
 "size": 2324964,
-"tk": null,
+"tk": "ABL",
 "kind": "A",
 "y": 2020,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Allied Bank Limited",
-"research": {
-"src": null,
-"sectors": [
-"banks",
-"food"
-],
-"y": 2020
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1q5I4pA0GB9x436QyFGplxZZq1hPzmRAI": {
 "title": "157828.pdf",
@@ -17030,21 +16934,13 @@
 "1w79Rmtnua1M-unc_VlrvyWZX4GpuUJFE": {
 "title": "157332.pdf",
 "size": 9248742,
-"tk": null,
+"tk": "MWMP",
 "kind": "A",
 "y": 2020,
 "mon": 6,
 "scanned": true,
-"v": 3,
-"co": "MANDVIWALLA MAUSER PLASTIC INDUSTRIES LIMITED",
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2020
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1F30ggUxhsx661hVfVFs_ii1W1XtirOe8": {
 "title": "156405.pdf",
@@ -18071,7 +17967,7 @@
 "y": 2020,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -18080,7 +17976,7 @@
 ],
 "y": 2020
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1dzuht6Xd9wJ5qTbSRRWglfFWt0sadZ9F": {
 "title": "163108.pdf",
@@ -18174,9 +18070,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Private) Limited",
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1saYb8FD4vsIz6sM_jw94iTmVlp4OZoGZ": {
 "title": "163616.pdf",
@@ -18262,7 +18158,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -18271,7 +18167,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1f9Dkfs5k4ftc8oZPnWBwu7o-ieL-RNXC": {
 "title": "163914.pdf",
@@ -18426,13 +18322,14 @@
 "title": "164282.pdf",
 "size": 7530224,
 "tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2019,
+"mon": 12,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"ai": "openrouter:recursive/flint-v1.0:free",
+"at": "2026-11-10"
 },
 "151vvf2E0Pz6LyJn4HEaQ4NdV6j3_TNpw": {
 "title": "162818.pdf",
@@ -18518,9 +18415,9 @@
 "y": 2020,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1axu8NxG08teHgiN5NT89kItwKIL91sfc": {
 "title": "164366.pdf",
@@ -18530,7 +18427,7 @@
 "y": 2020,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -18539,7 +18436,7 @@
 ],
 "y": 2020
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1tw_RDyPzaPidFT4l4a7mGIJjUiblowsL": {
 "title": "162633.pdf",
@@ -18588,7 +18485,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -18597,7 +18494,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1AAeo1k0RjHpz2EiOxoqfkAqC-5j21Q5o": {
 "title": "164368.pdf",
@@ -18617,7 +18514,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -18626,7 +18523,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1pe4uo2zymjl51Hrs9HV67Bu6ac8TAUJx": {
 "title": "164406.pdf",
@@ -18636,9 +18533,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "EXCELLENCE BEYOND PAR",
+"at": "2026-11-10"
 },
 "1w5mqte8qFc49uqJ1uvIO3v0UnskJ0waF": {
 "title": "164423.pdf",
@@ -18833,7 +18730,7 @@
 "y": 2020,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -18842,7 +18739,7 @@
 ],
 "y": 2020
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1U0WlWIn3W6_DgnYaBHwv24ouHXF5IL0N": {
 "title": "164558.pdf",
@@ -19417,12 +19314,13 @@
 "title": "166641.pdf",
 "size": 5994522,
 "tk": null,
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2020,
+"mon": 12,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
+"ai": "gemini:gemini-3.5-flash-lite",
 "research": {
 "src": null,
 "sectors": [
@@ -19431,7 +19329,7 @@
 ],
 "y": 2020
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1zzC3qFap4pbmCWkyu7iLGEnz94oPYJmH": {
 "title": "167248.pdf",
@@ -19840,13 +19738,14 @@
 "title": "166708.pdf",
 "size": 6925846,
 "tk": null,
-"kind": null,
+"kind": "other",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "18e0F8nQh1VIjpsyU21XG02ZLABp6qyZC": {
 "title": "171199 (1).pdf",
@@ -20647,7 +20546,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -20655,7 +20554,7 @@
 ],
 "y": 2021
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1XsKrVEDq4Dctt1YlJilSfr4gePJjLvsT": {
 "title": "173216.pdf",
@@ -20770,7 +20669,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1SrEg1bEae0W4HZGfSzzfOa2FGXEFYUtE": {
 "title": "173235.pdf",
@@ -21089,14 +20989,13 @@
 "16Uu56iqWkyeEBzjhbUSWJvxuEcORghb8": {
 "title": "173302.pdf",
 "size": 8311224,
-"tk": null,
-"kind": null,
-"y": null,
+"tk": "PSX",
+"kind": "A",
+"y": 2021,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1HqXQvp5MmbMrtlfNq5OlRGq8MUWQejKh": {
 "title": "173492.pdf",
@@ -21344,9 +21243,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "PEARL-CONTINENTAL HOTEL, KARACHI",
+"at": "2026-11-10"
 },
 "14N4emPKBmMXEiiC9NjCJKd3rbPP13gyi": {
 "title": "173631.pdf",
@@ -21435,13 +21334,13 @@
 "title": "173504.pdf",
 "size": 10768784,
 "tk": null,
-"kind": "A",
-"y": 2021,
+"kind": null,
+"y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": "ORIX Leasing Pakistan Limited",
-"at": "2026-11-09"
+"v": 4,
+"co": null,
+"at": "2026-11-10"
 },
 "1uMC5uMZokUwABZjIPTuc0KW1RoVx7OWU": {
 "title": "173687.pdf",
@@ -21589,14 +21488,13 @@
 "1OV2kjeMa2oxYTeBpKs42p3gqCG5vfjl_": {
 "title": "173745.pdf",
 "size": 9782251,
-"tk": null,
+"tk": "SHFA",
 "kind": "A",
 "y": 2021,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "SHIFA INTERNATIONAL HOSPITALS LIMITED",
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1xc6efh7GiZerBZfLf2nB3CIuKCq5EP-0": {
 "title": "173748.pdf",
@@ -21612,13 +21510,14 @@
 "title": "173772.pdf",
 "size": 8292650,
 "tk": null,
-"kind": null,
+"kind": "other",
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "Regent Plaza HOTEL & CONVENTION CENTRE",
+"ai": "gemini:gemini-3-flash-preview",
+"at": "2026-11-10"
 },
 "1eSQZq2k6Q4Qe1qjaONmyYi3l-iH7JGb3": {
 "title": "173773.pdf",
@@ -21751,21 +21650,13 @@
 "1Ar-68qZP-aWVX8GYPAR43HBcmIdSMgIk": {
 "title": "173790.pdf",
 "size": 1627502,
-"tk": null,
+"tk": "BAFL",
 "kind": "A",
 "y": 2021,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Bank Al Falah Limited",
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2021
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1f8gtYEheKeXFBiCEsdQr-jb8X1ujoSZL": {
 "title": "173667.pdf",
@@ -21791,14 +21682,13 @@
 "1Eq3Y3Jb0WGD4KoSjTBtyAad30wTVqsY2": {
 "title": "173593.pdf",
 "size": 13730388,
-"tk": null,
+"tk": "SLCL",
 "kind": null,
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1rWm9v7Ov8UhCD4QutdkfEBpi0y4aNxqA": {
 "title": "173668.pdf",
@@ -21831,8 +21721,8 @@
 "y": 2021,
 "mon": 6,
 "scanned": false,
-"v": 3,
-"co": "Bankers Samba Bank Limited",
+"v": 4,
+"co": "Bunny's Limited",
 "research": {
 "src": null,
 "sectors": [
@@ -21842,7 +21732,7 @@
 ],
 "y": 2021
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1CRx3BGSYedphuNVwSuaFGMOVDcI46J9e": {
 "title": "173840.pdf",
@@ -22108,8 +21998,8 @@
 "y": 2021,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "A Siddiqsons Group Company",
 "research": {
 "src": null,
 "sectors": [
@@ -22117,7 +22007,7 @@
 ],
 "y": 2021
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "10pMV_SPPBiHEyMAoqrSTkm7Zn48AUef3": {
 "title": "173926.pdf",
@@ -22134,10 +22024,12 @@
 "size": 3422432,
 "tk": "PASL",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2021,
+"mon": 6,
 "scanned": false,
-"at": "2026-11-08"
+"v": 4,
+"ai": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+"at": "2026-11-10"
 },
 "1NFo0xg6aGLjvGVhhxKOZIwFl9IjDJJKq": {
 "title": "173929.pdf",
@@ -22310,22 +22202,13 @@
 "1-XrFwEg3-ZKCzKB8REfBIz4n8Mdu1cKJ": {
 "title": "174023.pdf",
 "size": 13023662,
-"tk": null,
+"tk": "ESBL",
 "kind": "A",
 "y": 2021,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Escorts Investment Bank Limited",
-"research": {
-"src": null,
-"sectors": [
-"banks",
-"power"
-],
-"y": 2021
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1W4zHicOZ9pPENbWugSTEgtLVQ4AtZIyJ": {
 "title": "174032.pdf",
@@ -22437,9 +22320,16 @@
 "y": 2021,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": "INDUSTRIES LIMITED",
-"at": "2026-11-09"
+"research": {
+"src": null,
+"sectors": [
+"banks"
+],
+"y": 2021
+},
+"at": "2026-11-10"
 },
 "1NkMjaAQuQx0C4z9LGG16BNJFucoKYfCH": {
 "title": "173921.pdf",
@@ -22589,14 +22479,13 @@
 "16y67O4F8_nNcQtNcSMYJt1Oq_gVUKh3F": {
 "title": "174049.pdf",
 "size": 5277913,
-"tk": null,
+"tk": "IML",
 "kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": "KHAIR GADOON LTD",
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1CH_bXlv9FSZ6LsTTScbbDx_TddhgbIcS": {
 "title": "174161.pdf",
@@ -22665,14 +22554,13 @@
 "1IDGgWKRC0WFV7IDig-dBNq9qZarzH_4_": {
 "title": "174191.pdf",
 "size": 9199989,
-"tk": null,
+"tk": "MWMP",
 "kind": "A",
 "y": 2021,
 "mon": 6,
 "scanned": true,
-"v": 3,
-"co": "MANDVIWALLA MAUSER PLASTICS INDUSTRIES LIMITED",
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1AE9BA38fnCAt_K_ujum2trspflPzzMyX": {
 "title": "175581.pdf",
@@ -23504,7 +23392,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -23512,7 +23400,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1vadZgIBWcHYHFEJ7HqQokL3PRY-2Xbwj": {
 "title": "177354 (1).pdf",
@@ -23568,7 +23456,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
 "research": {
 "src": null,
 "sectors": [
@@ -23576,7 +23465,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1VJ6kzhCkxV2l6Hs1evH57FwpMhbzB6Mi": {
 "title": "174243.pdf",
@@ -24170,7 +24059,7 @@
 "y": 2021,
 "mon": 6,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -24179,7 +24068,7 @@
 ],
 "y": 2021
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1FeSQ_PtH-TOpyM0t0Jq7kRXTX5xfH6AQ": {
 "title": "181668.pdf",
@@ -25010,9 +24899,9 @@
 "y": 2021,
 "mon": 12,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1tT30FHwu0MRmvADPSv7j5eUwpBOGhyqm": {
 "title": "184255.pdf",
@@ -25090,13 +24979,14 @@
 "title": "184475.pdf",
 "size": 8969862,
 "tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2019,
+"mon": 12,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"ai": "openrouter:recursive/flint-v1.0:free",
+"at": "2026-11-10"
 },
 "1aVAbvUHC4FzUgMWbOpKx9dvnKZUiHZBP": {
 "title": "184485.pdf",
@@ -25135,7 +25025,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -25144,7 +25034,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1UM6qf9Bde31y70pfXtFGPAlQidOwyEYa": {
 "title": "183468.pdf",
@@ -25183,7 +25073,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
 "research": {
 "src": null,
 "sectors": [
@@ -25192,7 +25083,7 @@
 ],
 "y": 2014
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "14KQSqE0Wr1qHezJJHhJfxu-lhglAg8dr": {
 "title": "184237.pdf",
@@ -25259,9 +25150,9 @@
 "y": 2021,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "12RJPJyuQ19mAaFIk83XlaBmjj2Kjnqk9": {
 "title": "184647.pdf",
@@ -25271,7 +25162,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -25281,28 +25172,18 @@
 ],
 "y": 2021
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1VWZ_ew4ueF8S7XUiDyYgOOVFYAW02Y4L": {
 "title": "184656.pdf",
 "size": 11190575,
-"tk": null,
+"tk": "ASIC",
 "kind": "A",
 "y": 2021,
 "mon": 12,
 "scanned": false,
-"v": 3,
-"co": null,
-"research": {
-"src": "SBP",
-"sectors": [
-"banks",
-"insurance",
-"power"
-],
-"y": 2021
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1BqDCmVD4hsZikj35_QL9SbcgJwjuI_pD": {
 "title": "184665 (1).pdf",
@@ -25352,7 +25233,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -25361,7 +25242,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1G2p3eOMDYgrEO4tQH-VhbEzF8uPQAQzA": {
 "title": "184705.pdf",
@@ -25390,13 +25271,21 @@
 "title": "184505.pdf",
 "size": 8265600,
 "tk": null,
-"kind": null,
+"kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "Private) Limited",
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"power"
+],
+"y": 2022
+},
+"at": "2026-11-10"
 },
 "11_LD25gw-0kWLnPB-OPqqpLCTvieWySt": {
 "title": "184707.pdf",
@@ -25454,7 +25343,7 @@
 "y": 2021,
 "mon": 12,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -25464,7 +25353,7 @@
 ],
 "y": 2021
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1qkO80XW_LP9Irls7KcTIHDMnLrYRfIFt": {
 "title": "184761.pdf",
@@ -25486,7 +25375,7 @@
 "y": 2021,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -25495,7 +25384,7 @@
 ],
 "y": 2021
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1qhEjnFP4KhnQSkCdcEQ11kK7LpVh5D9l": {
 "title": "184821 (1).pdf",
@@ -25614,8 +25503,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1k5mb5LOijviizQJzNfARODh9zaCrxtNq": {
 "title": "186210.pdf",
@@ -25717,7 +25606,7 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -25725,7 +25614,7 @@
 ],
 "y": 2021
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1YIIDvwrkIEBDVJGIJEFiwOk4QCOEwPk7": {
 "title": "184625.pdf",
@@ -25735,7 +25624,7 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -25744,7 +25633,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1aQmUedaPv1AbzVZYsJi1b77l_cwcSfiJ": {
 "title": "186349.pdf",
@@ -26265,9 +26154,9 @@
 "y": 2021,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "17Et4VCXUz_GKadoiUW4lrh2IgnNFWJOU": {
 "title": "188012.pdf",
@@ -26699,7 +26588,7 @@
 "y": 2021,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -26708,7 +26597,7 @@
 ],
 "y": 2021
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1zz9mAnxAtC8rvEJgSgauDWetdqGxDbre": {
 "title": "191805.pdf",
@@ -27184,7 +27073,7 @@
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "PAK) LIMITED",
 "research": {
 "src": "PACRA",
@@ -27193,7 +27082,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1SS2mgLNVWM_dPYDl_CMlS6kde9O-E8M4": {
 "title": "192340.pdf",
@@ -27452,7 +27341,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -27460,7 +27349,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1loaDVcsKhMENeQGA04TNliFFzNcjUiu_": {
 "title": "193611.pdf",
@@ -27801,10 +27690,12 @@
 "size": 2726666,
 "tk": "ARPAK",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2022,
+"mon": 6,
 "scanned": false,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3-flash-preview",
+"at": "2026-11-10"
 },
 "1F7sIS0HxHTu7wdV0Co9scJ-7h4O5qiny": {
 "title": "193809.pdf",
@@ -27945,9 +27836,9 @@
 "y": 2022,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "12FisCxtlShV-En_kVc-3eWMBdgDnwj-n": {
 "title": "193903.pdf",
@@ -28147,13 +28038,14 @@
 "title": "193826.pdf",
 "size": 3275469,
 "tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2022,
+"mon": 6,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"ai": "openrouter:recursive/flint-v1.0:free",
+"at": "2026-11-10"
 },
 "1KkaTs8bsTJnhxFJcLDsD3GfIyP4f0rTc": {
 "title": "193971.pdf",
@@ -28363,7 +28255,7 @@
 "y": 2022,
 "mon": 6,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -28372,26 +28264,18 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1vCbRy38yidKyuFX4nVGmampz0JtFiciO": {
 "title": "194044.pdf",
 "size": 3027519,
-"tk": null,
+"tk": "BAFL",
 "kind": "A",
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Bank Al Falah Limited",
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2022
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1cQP0QG_j8Y-5VRtBUPDY9QEtBnlxRmzW": {
 "title": "194047.pdf",
@@ -28481,9 +28365,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1MLp9DNsJWZ4Zg_waexLbD0jEdLShqdVd": {
 "title": "194150.pdf",
@@ -28713,8 +28597,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1jNK-nCfL5oD_VId_V6fTISli2pKbPEpm": {
 "title": "194279.pdf",
@@ -28724,8 +28608,8 @@
 "y": 2022,
 "mon": 6,
 "scanned": false,
-"v": 3,
-"co": "Bankers Samba Bank Limited",
+"v": 4,
+"co": "Bunny's Limited",
 "research": {
 "src": null,
 "sectors": [
@@ -28735,7 +28619,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1ar4rxXzgk9cVwwGNUE4PZDAVRwtXVgqO": {
 "title": "194279.pdf",
@@ -28868,12 +28752,13 @@
 "title": "194344.pdf",
 "size": 13890281,
 "tk": "PHDL",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2022,
+"mon": 6,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3-flash-preview",
+"at": "2026-11-10"
 },
 "1vVPZLntsn8OtN9i5G7NU4Y1RJvWFWg7B": {
 "title": "194353.pdf",
@@ -29051,9 +28936,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1IdM5nm73agjd2f0uMBu4qWTzpjeonwPS": {
 "title": "194260.pdf",
@@ -29118,8 +29003,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1L9wYOvhz-Iey_5vIR3BE7m5yTkLuUDCo": {
 "title": "194308.pdf",
@@ -29274,8 +29159,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1DD39Ekm-BBHA88PxuFiea9IYmjZMk8Xo": {
 "title": "194492.pdf",
@@ -29300,21 +29185,14 @@
 "1KkKr4Cjseog3gYLD31Ewh4_yxYBapytx": {
 "title": "194557.pdf",
 "size": 5829377,
-"tk": null,
+"tk": "GAMON",
 "kind": "A",
 "y": 2022,
 "mon": 6,
 "scanned": false,
-"v": 3,
-"co": "Retd) Chairman Silk Bank Limited",
-"research": {
-"src": "PSX",
-"sectors": [
-"banks"
-],
-"y": 2022
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1zX97RKyg_qTGfccNwOdwj8RidZVi67EB": {
 "title": "194560 (1).pdf",
@@ -29393,8 +29271,8 @@
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "A Siddiqsons Group Company",
 "research": {
 "src": null,
 "sectors": [
@@ -29402,7 +29280,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1ByMadHkKP_JxGwu6q9gGCCSovBxPsbun": {
 "title": "194681.pdf",
@@ -29485,7 +29363,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
+"ai": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
 "research": {
 "src": null,
 "sectors": [
@@ -29493,7 +29372,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1jmxULk3rq0453KSMTRJ7pNOpsxMFQoRd": {
 "title": "194848.pdf",
@@ -29723,9 +29602,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": "L-KHGIR GADOON LTD",
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1PsA--GN3IsQ4W5-sUajPRfydjqlDLjpW": {
 "title": "196253.pdf",
@@ -30925,14 +30804,14 @@
 "138_jJ7BN9VSPVoNYLWXa87V6SfA3R5Yk": {
 "title": "197584.pdf",
 "size": 9275026,
-"tk": null,
+"tk": "MWMP",
 "kind": "A",
 "y": 2022,
 "mon": 6,
 "scanned": true,
-"v": 3,
-"co": "MandviwallaxlAWSER Plastic Industries Limited",
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1hhowAwC3qUtTksFU-r7ojJs3njMarPBD": {
 "title": "201447 (1).pdf",
@@ -31780,7 +31659,7 @@
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -31789,7 +31668,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1zcaAkh_cy2m-uaf53e1l5Y_qMYclJluW": {
 "title": "204082.pdf",
@@ -31824,22 +31703,13 @@
 "1O7BynfBMkCBM7Az6-H31gh3lUOiMfBvD": {
 "title": "204404.pdf",
 "size": 14820545,
-"tk": null,
+"tk": "TRIPF",
 "kind": "A",
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Tri-Pack Films Limited",
-"research": {
-"src": null,
-"sectors": [
-"macro",
-"power"
-],
-"y": 2023
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1yIZFiuJuqgoX06cBCAEv4bxrWnblzrYi": {
 "title": "203860.pdf",
@@ -31903,9 +31773,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "162OdhMe6quq8VyKHW12KQ-gY7dxGzqUy": {
 "title": "204837.pdf",
@@ -31946,9 +31816,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1gT6DO0T5zdLqmL9kyUMDFWWGAYC280U0": {
 "title": "204908.pdf",
@@ -31963,14 +31833,13 @@
 "16dwm1Z2TjTvC8D6M6b9PGLE9a1RQNq-F": {
 "title": "204498.pdf",
 "size": 18247122,
-"tk": null,
-"kind": null,
+"tk": "JSIL",
+"kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1Ry1G3l8das0G6eUd9ktceZPz66-dSaVS": {
 "title": "204588.pdf",
@@ -31991,7 +31860,7 @@
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": "PACRA",
@@ -32000,7 +31869,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1qyhKcdoU17330g3Z1crT7XsLIC3_XXCf": {
 "title": "205127.pdf",
@@ -32044,21 +31913,13 @@
 "1KSqB0qHYkSdtTXFpYjXBFrrWd1uDVPqh": {
 "title": "205169.pdf",
 "size": 8315376,
-"tk": null,
+"tk": "BAHL",
 "kind": "A",
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Bank Al Habib Limited",
-"research": {
-"src": "VIS",
-"sectors": [
-"banks"
-],
-"y": 2022
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1-IbuMc7VXk60qsFOV6x_krGzG6fGms7n": {
 "title": "205200.pdf",
@@ -32087,7 +31948,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1VIUPjhEc3w53drcf31v9Z5awXT-Z3Vw0": {
 "title": "205209 (1).pdf",
@@ -32177,7 +32039,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -32187,7 +32049,7 @@
 ],
 "y": 2023
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1WXmfu6AdJ1rJxqayubXdk9wGuGtuCjlc": {
 "title": "204742.pdf",
@@ -32320,7 +32182,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -32329,7 +32191,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1CtDgmy83ma_6c-6yvEivIZfXzCqH2Smx": {
 "title": "205382.pdf",
@@ -32339,7 +32201,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1scl2a3tR2q7iX7LXGRj0tt5kKJkD0W-i": {
 "title": "205398.pdf",
@@ -32354,14 +32217,13 @@
 "1H3iLq2sZQGxi2C06LYOdMLNHqF-KKlFr": {
 "title": "204655.pdf",
 "size": 21275129,
-"tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"tk": "EFUG",
+"kind": "Q1",
+"y": 2022,
+"mon": 12,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1If-svnyThfWKBMl0v0WPfk2JkGBp5n7-": {
 "title": "205395.pdf",
@@ -32411,8 +32273,8 @@
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "PABC",
 "research": {
 "src": null,
 "sectors": [
@@ -32420,7 +32282,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1IZZ5lfWLFbNBZ7yiCagoo3ejzXv938yP": {
 "title": "205426 (1).pdf",
@@ -32914,9 +32776,9 @@
 "y": 2022,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1ycAa4LcoBOPlgYahseJC55frJ-DQ9g5s": {
 "title": "207404.pdf",
@@ -33015,9 +32877,9 @@
 "y": 2022,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "ZJS Global",
+"at": "2026-11-10"
 },
 "1tyEJZCmyRBLrOKEpffBZuY2FgA6H6Fzd": {
 "title": "205333.pdf",
@@ -33252,7 +33114,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -33260,7 +33122,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1Yv6jPZiAzaUclCP9Bj2ynTLVEtgZxTxE": {
 "title": "207875.pdf",
@@ -33382,7 +33244,7 @@
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -33391,7 +33253,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1GdZcpSw_A56FqbHXgI2z_XO2LY3_YC1a": {
 "title": "209531.pdf",
@@ -33455,12 +33317,12 @@
 "title": "208143.pdf",
 "size": 12482742,
 "tk": "DLL",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2022,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1vdbsKVt-3PzrcyE-UsNDYyvdamUdRoXb": {
 "title": "212451.pdf",
@@ -33681,19 +33543,13 @@
 "title": "213999.pdf",
 "size": 9115028,
 "tk": "FCEL",
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2022,
+"mon": 6,
 "scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2022
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1uGfrQSpcZ58t_8-t1YIlA6OEPV3JWPbS": {
 "title": "214012.pdf",
@@ -34444,8 +34300,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1yceChjzDaetlvAhlcYGUHvXXPdjjX5Gs": {
 "title": "215943.pdf",
@@ -34455,8 +34311,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "18147Fzbymcc7ldsIzA0ov6vLxmKONMSD": {
 "title": "216000.pdf",
@@ -34494,7 +34350,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -34502,7 +34358,7 @@
 ],
 "y": 2023
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1E8DOGLVmrEu3rmnnyuDSEqwOQQW6h9IR": {
 "title": "216218.pdf",
@@ -34704,7 +34560,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Pvt) Ltd",
 "research": {
 "src": null,
@@ -34713,7 +34569,7 @@
 ],
 "y": 2019
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "16JunaUE60X6kzevXi8Iq9TsMf2VF6OwV": {
 "title": "216458.pdf",
@@ -34916,13 +34772,14 @@
 "title": "216697.pdf",
 "size": 16956876,
 "tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2023,
+"mon": 12,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"ai": "openrouter:recursive/flint-v1.0:free",
+"at": "2026-11-10"
 },
 "1nDVSCO3GLewpGAzMIZ4xrA6xt2b6wSsQ": {
 "title": "216718.pdf",
@@ -34962,9 +34819,9 @@
 "y": 2023,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1WPurPeyGb10GuPZSjWvRQoTP8CzLj4Ph": {
 "title": "216746.pdf",
@@ -35006,9 +34863,9 @@
 "y": 2023,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "12sZeolAyKcAF8zdt_g5xwxVWXrgyE9fU": {
 "title": "216512.pdf",
@@ -35210,9 +35067,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1gsiJ2g7Z9FubKAOh53-M_iCN3_cqJa2C": {
 "title": "216925.pdf",
@@ -35248,10 +35105,12 @@
 "size": 2812843,
 "tk": "ARPAK",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2023,
+"mon": 6,
 "scanned": false,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1LAdhAdnM3hGl1VDsXr5utPe0YWhfX39D": {
 "title": "216935.pdf",
@@ -35287,19 +35146,13 @@
 "title": "216959.pdf",
 "size": 13175145,
 "tk": "UBDL",
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2023,
+"mon": 6,
 "scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"power"
-],
-"y": 2023
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1oDRUciLJ6tW2W5c4CYt4lTHStEvlPDpg": {
 "title": "216981.pdf",
@@ -35309,9 +35162,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1AsljE-g8EsA1N2H0tbYCW2YmlgjZ96Wk": {
 "title": "216666.pdf",
@@ -35620,7 +35473,7 @@
 "y": 2023,
 "mon": 6,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -35629,7 +35482,7 @@
 ],
 "y": 2023
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1VXD56BdfO6VT6Z_Mxur3_JuZHFqfC-V9": {
 "title": "217077.pdf",
@@ -35668,9 +35521,9 @@
 "y": 2023,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1CItBHZBnIbmT-zfuLQi4DtB4nKdnfOBn": {
 "title": "217094.pdf",
@@ -35845,9 +35698,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "PC Legacy, Hunza",
+"at": "2026-11-10"
 },
 "1xeBamEVF00CMzjZXHYinMiIRVaGBVpp5": {
 "title": "217156.pdf",
@@ -36534,10 +36387,12 @@
 "size": 5776512,
 "tk": "AKDHL",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2023,
+"mon": 6,
 "scanned": false,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1dn-yKnEgx8KXtY_HY0AKKKiS_IiLPKHK": {
 "title": "217466.pdf",
@@ -36576,8 +36431,8 @@
 "y": 2023,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "A Siddiqsons Group Company",
 "research": {
 "src": null,
 "sectors": [
@@ -36585,7 +36440,7 @@
 ],
 "y": 2023
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1PCG4vrLSgh64Tn3nV4YDFQKId9irnaXL": {
 "title": "217618.pdf",
@@ -36600,21 +36455,14 @@
 "1tJfoDODuo7xgP6IevQxctSiGi7__eKBP": {
 "title": "217617.pdf",
 "size": 3703036,
-"tk": null,
+"tk": "GAMON",
 "kind": "A",
 "y": 2022,
 "mon": 6,
 "scanned": false,
-"v": 3,
-"co": "Retd) Chairman Askari Bank Limited",
-"research": {
-"src": "PSX",
-"sectors": [
-"banks"
-],
-"y": 2023
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "19eH1kCypOX5172gJyFMjg3d8uWr7KtHs": {
 "title": "217634.pdf",
@@ -36674,7 +36522,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
+"ai": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
 "research": {
 "src": null,
 "sectors": [
@@ -36682,7 +36531,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1HXoflJIj8imRb9BxoL_xOkyofThucBKd": {
 "title": "217755.pdf",
@@ -36871,7 +36720,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1FzzMIKuhRz7mO1aGZSy2yzEZYiW4KHC4": {
 "title": "219319.pdf",
@@ -37267,12 +37117,13 @@
 "title": "217383.pdf",
 "size": 6134641,
 "tk": "AKGL",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2023,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3-flash-preview",
+"at": "2026-11-10"
 },
 "14G-_MoLDcm4mAbCLI4uHmVz1UkjqNLYR": {
 "title": "219829.pdf",
@@ -37797,7 +37648,7 @@
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "SME Bank Limited",
 "research": {
 "src": null,
@@ -37807,7 +37658,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1mZyk3G4Oshhg02-m2nT4ub9AgaYZaJde": {
 "title": "223394.pdf",
@@ -37962,12 +37813,20 @@
 "size": 23068912,
 "tk": null,
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2023,
+"mon": 6,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": "Dak Leather Crajte Limited",
-"at": "2026-11-09"
+"ai": "gemini:gemini-3.5-flash-lite",
+"research": {
+"src": null,
+"sectors": [
+"banks"
+],
+"y": 2023
+},
+"at": "2026-11-10"
 },
 "1eqjg3BJjj87U0ApBieXMjaFCSi6Fcllh": {
 "title": "223543.pdf",
@@ -38519,14 +38378,14 @@
 "149Brpyect1QJXlyaZ4kdZoxAv94Qcrh3": {
 "title": "220632.pdf",
 "size": 19929400,
-"tk": null,
+"tk": "MWMP",
 "kind": "A",
 "y": 2023,
 "mon": 6,
 "scanned": true,
-"v": 3,
-"co": "MandviwallaxTAUSIER Plastic Industries Limited",
-"at": "2026-11-09"
+"v": 4,
+"ai": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+"at": "2026-11-10"
 },
 "1pQsLxW-SweP9N5EGrG5IWCBUDBQ9ILmG": {
 "title": "226378.pdf",
@@ -39252,19 +39111,13 @@
 "title": "228213.pdf",
 "size": 6798290,
 "tk": "SIBL",
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2023,
+"mon": 12,
 "scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2023
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "openrouter:xingchen-agi/xing4.0-29b-a4b:free",
+"at": "2026-11-10"
 },
 "1dQB9_DR9wlam7wcoZ_7JwipEZg6iDOM-": {
 "title": "228179.pdf",
@@ -39382,9 +39235,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1aMLZGXDSsOJS7Yy3sABoE8yxg9lKxdaf": {
 "title": "228430.pdf",
@@ -39444,32 +39297,23 @@
 "1krmV-oBoY0zDxYTd0n0_K3Vllx-x2e6-": {
 "title": "228487.pdf",
 "size": 8244950,
-"tk": null,
+"tk": "SRVI",
 "kind": "A",
 "y": 2023,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Service Industries Limited",
-"research": {
-"src": null,
-"sectors": [
-"steel"
-],
-"y": 2023
-},
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1IN1gk1X2h-CjFhSm8UhucK84NPc3sKta": {
 "title": "228493 (1).pdf",
 "size": 11406240,
-"tk": null,
+"tk": "SRVI",
 "kind": "R",
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Service Global Footwear Limited",
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -39478,7 +39322,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1Lc7yUHnJ1SSeFFituqqf7WpOhrI8Wzs0": {
 "title": "228485.pdf",
@@ -39520,7 +39364,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -39529,7 +39373,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1lXu-QjmPvRfOzoleTd-AE6A_Kv1-Gavk": {
 "title": "228531 (1).pdf",
@@ -39589,9 +39433,9 @@
 "y": 2023,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "19gs4etR_l_Q69Zk4MsC-vwdWPDqA_J54": {
 "title": "228619.pdf",
@@ -39629,9 +39473,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1MLhK3ezSXFTEdid9qrP30pDnNDLuzXi_": {
 "title": "228639.pdf",
@@ -39669,7 +39513,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -39678,7 +39522,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1Rc8l5DRrZ5KHH1kbbnZRkD3y3jm7jjcF": {
 "title": "228687.pdf",
@@ -39891,9 +39735,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1F5WYCGtZA0n34mgqMgDAKRaa8VYwQerH": {
 "title": "228796.pdf",
@@ -39962,9 +39806,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1_H9Z1V8w4nUfWFQ6gDJ12-7o3C8SdA47": {
 "title": "230121.pdf",
@@ -40236,13 +40080,21 @@
 "title": "228445.pdf",
 "size": 9123663,
 "tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2023,
+"mon": 12,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"ai": "gemini:gemini-3.5-flash-lite",
+"research": {
+"src": null,
+"sectors": [
+"fertilizer"
+],
+"y": 2023
+},
+"at": "2026-11-10"
 },
 "1xbKfT0QT1xdk1fH-rQ2KGCDToBAeQEDo": {
 "title": "230691.pdf",
@@ -40671,8 +40523,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "11GetYTHeLT4HR4Pzp0REqPjb4PM4CSRV": {
 "title": "231137.pdf",
@@ -40788,7 +40640,7 @@
 "y": 2023,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "SME Bank Limited",
 "research": {
 "src": null,
@@ -40798,7 +40650,7 @@
 ],
 "y": 2023
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1cbyY7mqW1xUqsENav5v7Q1F5lB7J7wgz": {
 "title": "233704.pdf",
@@ -41345,14 +41197,22 @@
 "1TkfQMq3QSPkHfY9wIt8CP52w86Hxt37L": {
 "title": "232366.pdf",
 "size": 11416726,
-"tk": null,
-"kind": null,
+"tk": "AMBL",
+"kind": "R",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"power"
+],
+"y": 2024
+},
+"at": "2026-11-10"
 },
 "1SZQ4gpABeO1PvILmAFXBES1dXN_dHOiS": {
 "title": "237421 (1).pdf",
@@ -41435,7 +41295,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -41443,7 +41303,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1lxOwQM817kdxyOieabRI_ATuaPScrrD3": {
 "title": "237872.pdf",
@@ -41603,7 +41463,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Pvt) Ltd",
 "research": {
 "src": null,
@@ -41612,7 +41472,7 @@
 ],
 "y": 2019
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1LRJg28PU5i4tFuDUcAszhaAhhdV657WP": {
 "title": "238121.pdf",
@@ -42344,8 +42204,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1gQEY8t6rhjsGsAKsZydIU_dwfaM-4-dA": {
 "title": "238525.pdf",
@@ -42355,9 +42215,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1LPqTOCO7xk6psrlr4QmAGovAsfo-mhOO": {
 "title": "238556.pdf",
@@ -42401,9 +42261,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1DBCVASDNrgl2YTM7g-EjaMQxMfVsPK5p": {
 "title": "238647.pdf",
@@ -42462,7 +42322,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": null,
@@ -42471,7 +42331,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "12GH-RfOIKg0sRxUV-rgJbqaubrFlLw7Q": {
 "title": "238692 (1).pdf",
@@ -42557,7 +42417,7 @@
 "y": 2024,
 "mon": 6,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Bankers Askari Bank Limited",
 "research": {
 "src": "VIS",
@@ -42566,7 +42426,7 @@
 ],
 "y": 2024
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1mlbR_RDI2h4YLKRhWaS1Fvr8ubU_hc5N": {
 "title": "238718 (1).pdf",
@@ -43036,13 +42896,21 @@
 "title": "238765.pdf",
 "size": 19195080,
 "tk": null,
-"kind": null,
+"kind": "R",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "Hospitals Ltd",
+"ai": "gemini:gemini-3-flash-preview",
+"research": {
+"src": null,
+"sectors": [
+"oil"
+],
+"y": null
+},
+"at": "2026-11-10"
 },
 "1ZtLMBRiZXDSZpkwSh4TKc4dWM2Ce2UD-": {
 "title": "238989.pdf",
@@ -43267,8 +43135,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "10BxoTbXWBEE5tM6juuIgq_i1WJMgR-Ne": {
 "title": "238687 (1).pdf",
@@ -43278,8 +43146,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1bJ-C49mRgheq8iEBduxpmqWhzD78zrnn": {
 "title": "239056.pdf",
@@ -43313,8 +43181,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1_xG3oKINwEsWVhrddid9PdWcnCCW8ChP": {
 "title": "239074.pdf",
@@ -43367,21 +43235,14 @@
 "1l0AvFvoDSKEv-3SGPHaJXz-8w3oVq9zE": {
 "title": "239094.pdf",
 "size": 2052491,
-"tk": null,
+"tk": "PAKL",
 "kind": "A",
 "y": 2024,
 "mon": 6,
 "scanned": false,
-"v": 3,
-"co": "Albaraka Bank Pakistan Ltd",
-"research": {
-"src": null,
-"sectors": [
-"banks"
-],
-"y": 2025
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1g-QO3MydmjgNTMWEZfHgeJcgaTU2L6pt": {
 "title": "239093.pdf",
@@ -43481,19 +43342,13 @@
 "title": "239129.pdf",
 "size": 15049648,
 "tk": "UBDL",
-"kind": "R",
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2024,
+"mon": 6,
 "scanned": false,
-"v": 3,
-"research": {
-"src": null,
-"sectors": [
-"power"
-],
-"y": 2024
-},
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3-flash-preview",
+"at": "2026-11-10"
 },
 "1CaZlWxe5OvTIxVmhdzxmpnojd-6w7G9T": {
 "title": "238971.pdf",
@@ -43633,9 +43488,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1o4H0jItT3I5Pvhah3_jbfUQtm1DssPnN": {
 "title": "239044.pdf",
@@ -43683,11 +43538,12 @@
 "size": 4014138,
 "tk": "FNEL",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2024,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"ai": "openrouter:xingchen-agi/xing4.0-29b-a4b:free",
+"at": "2026-11-10"
 },
 "1nR2P4Y-0mTivvOvepd3P_l61_EojKx-M": {
 "title": "239067.pdf",
@@ -43836,12 +43692,13 @@
 "title": "239354.pdf",
 "size": 20683931,
 "tk": "FCEL",
-"kind": null,
+"kind": "other",
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1vR9YCFM2C9tCQoDAAJ6jPuphHtfjNOOo": {
 "title": "239357.pdf",
@@ -43948,9 +43805,9 @@
 "y": 2024,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": "GADOON LTD",
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1I5Of-vRNWUdvddD7iYaWIIplnTYbWPgL": {
 "title": "239284.pdf",
@@ -44628,12 +44485,13 @@
 "title": "241829.pdf",
 "size": 1892923,
 "tk": "BBFL",
-"kind": "Q",
-"y": null,
-"mon": null,
+"kind": "Q1",
+"y": 2024,
+"mon": 9,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "13szzQBSj-9x4QKKlXa-e6yPHy6mbdSN8": {
 "title": "241817.pdf",
@@ -44715,12 +44573,13 @@
 "size": 3835569,
 "tk": null,
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2024,
+"mon": 12,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"ai": "openrouter:recursive/flint-v1.0:free",
+"at": "2026-11-10"
 },
 "1jtm8ssMpncX2HQBZp9LgLbD0CJxOoyzz": {
 "title": "242292.pdf",
@@ -44872,8 +44731,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1vofjkGGHUEgotQhwHrqZJKLeOTMmY7Er": {
 "title": "242653.pdf",
@@ -45250,14 +45109,13 @@
 "1cEH4ibnIMJCrHa1DPiiaQVpt-aurrYvK": {
 "title": "242766.pdf",
 "size": 6493588,
-"tk": null,
+"tk": "MWMP",
 "kind": "A",
 "y": 2024,
-"mon": null,
+"mon": 6,
 "scanned": true,
-"v": 2,
-"co": "Mandviwalla MAUS Plastic Industries Limited",
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1IjGlFmMvF3mdY4aafgbP5S3gKdM1fCxR": {
 "title": "245571.pdf",
@@ -46229,12 +46087,12 @@
 "title": "248385.pdf",
 "size": 6122310,
 "tk": "SPCL",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "Q2",
+"y": 2024,
+"mon": 12,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1HABMSdpbNaiWY0V7pyPprHw7xyD0jMtv": {
 "title": "248568.pdf",
@@ -46457,9 +46315,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1eUoRV71xWm9qw2Tjqv760SjnCBVfCCOY": {
 "title": "250255.pdf",
@@ -46488,9 +46346,9 @@
 "y": 2024,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1OH4i17J8Q8dO5Ewj3LD56qnIsYY0NctP": {
 "title": "248385.pdf",
@@ -46671,9 +46529,16 @@
 "y": 2024,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"insurance"
+],
+"y": 2024
+},
+"at": "2026-11-10"
 },
 "1Pt-KopTWwVzSz_rJUwkYWDsmsVA_UVG2": {
 "title": "248906.pdf",
@@ -46706,9 +46571,17 @@
 "y": 2024,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"research": {
+"src": "PACRA",
+"sectors": [
+"insurance",
+"power"
+],
+"y": 2024
+},
+"at": "2026-11-10"
 },
 "1sH7DCydKJoVk60vO0wyzUyAOwErq38Mn": {
 "title": "250558.pdf",
@@ -46736,14 +46609,13 @@
 "1ljWmMXv__NGsWc8qCKnZdHQoQw98Zg0l": {
 "title": "250597.pdf",
 "size": 9927165,
-"tk": null,
+"tk": "SRVI",
 "kind": "A",
 "y": 2024,
 "mon": null,
 "scanned": false,
-"v": 2,
-"co": "Service Industries Limited",
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1568618b5rNSL6vMgfIky0ojTpxr0BKAK": {
 "title": "248949.pdf",
@@ -46760,13 +46632,12 @@
 "16U5VwzGcT6fSFcrh0Xzj7bETIEFp4bdF": {
 "title": "250599 (1).pdf",
 "size": 5890469,
-"tk": null,
+"tk": "SRVI",
 "kind": "R",
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": "Service Global Footwear Limited",
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -46774,7 +46645,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1ppNT_kd2jRwpFVslTsLWjFEEqQ3CSt0y": {
 "title": "250599.pdf",
@@ -46803,9 +46674,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1M6hqFPMbterNsnk01_lNo6Dmzn9NBjG3": {
 "title": "250465.pdf",
@@ -46815,21 +46686,28 @@
 "y": 2024,
 "mon": null,
 "scanned": true,
-"v": 2,
-"co": null,
-"at": "2026-11-08"
+"v": 4,
+"co": "COMPANY LTD",
+"research": {
+"src": null,
+"sectors": [
+"insurance"
+],
+"y": 2024
+},
+"at": "2026-11-10"
 },
 "1_-CkIrwrYJCud7pYcFGfCdtO0kp-Psq2": {
 "title": "250379.pdf",
 "size": 4631773,
 "tk": null,
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2024,
+"mon": 12,
 "scanned": true,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1DFkEVJba5ELpd5XAucNUGYuwByxRIWna": {
 "title": "250651.pdf",
@@ -46862,7 +46740,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -46871,7 +46749,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1dpUH6pIlC9cXSfAW149c0BoQr3qQ1whz": {
 "title": "249742.pdf",
@@ -47111,7 +46989,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -47120,7 +46998,7 @@
 ],
 "y": 2016
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1G-4MjTXM8PgvCu_H1RDlcNuRxvY5eqPS": {
 "title": "250849.pdf",
@@ -47187,9 +47065,16 @@
 "y": 2024,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"insurance"
+],
+"y": 2024
+},
+"at": "2026-11-10"
 },
 "13KkxMOFSOAYxR14paHAR1668uluDkScb": {
 "title": "251766.pdf",
@@ -47211,9 +47096,16 @@
 "y": 2024,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "JS",
+"research": {
+"src": null,
+"sectors": [
+"power"
+],
+"y": 2024
+},
+"at": "2026-11-10"
 },
 "1ZuXBhX5lslGNicjykvJd6xiaxtLOFVoj": {
 "title": "252113.pdf",
@@ -47234,9 +47126,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1VL4QqRwJ1Z5X6r895Qd3ed7JlZIVS8SJ": {
 "title": "252233.pdf",
@@ -47449,13 +47341,21 @@
 "title": "250657.pdf",
 "size": 7246503,
 "tk": null,
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2024,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"co": "Pvt.) Limited",
+"research": {
+"src": "PSX",
+"sectors": [
+"banks",
+"pharma"
+],
+"y": 2024
+},
+"at": "2026-11-10"
 },
 "1PmGdmxMMQFo7RNoVN3fn_YEX89wj5ud5": {
 "title": "252821.pdf",
@@ -47476,9 +47376,17 @@
 "y": 2025,
 "mon": 3,
 "scanned": false,
-"v": 2,
-"co": "Pvt.) Limited",
-"at": "2026-11-08"
+"v": 4,
+"co": "S E C U R I T I E S   L T D",
+"research": {
+"src": "PSX",
+"sectors": [
+"banks",
+"pharma"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "12m-IFil__PiqwYSnYrzlysp_tuLVJlKm": {
 "title": "252849.pdf",
@@ -47844,9 +47752,18 @@
 "y": 2025,
 "mon": 3,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": "Registered Office Habib Bank Limited",
-"at": "2026-11-08"
+"research": {
+"src": "SBP",
+"sectors": [
+"banks",
+"macro",
+"oil"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "1yfLhGQFRc3DQMYuuqOIw-w11zx-QJTzc": {
 "title": "253099.pdf",
@@ -48180,9 +48097,16 @@
 "y": 2024,
 "mon": null,
 "scanned": false,
-"v": 2,
-"co": null,
-"at": "2026-11-08"
+"v": 4,
+"co": "A Siddiqsons Group Company",
+"research": {
+"src": null,
+"sectors": [
+"food"
+],
+"y": 2024
+},
+"at": "2026-11-10"
 },
 "1y0RkqP7a20FhqDJ_474yCL0uL9PJhEOr": {
 "title": "254726.pdf",
@@ -48203,9 +48127,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1bctc2VPvfKmMiZBC0Zeaj19GiPG0TH6t": {
 "title": "257124.pdf",
@@ -48636,14 +48560,13 @@
 "1QXJkP2ow9092apHJm6kA5352tr7uDqmg": {
 "title": "253986.pdf",
 "size": 7499281,
-"tk": null,
-"kind": "Q",
-"y": null,
-"mon": null,
+"tk": "PSX",
+"kind": "Q1",
+"y": 2024,
+"mon": 9,
 "scanned": true,
-"v": 2,
-"co": null,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "12ZHDyjb1FZz_8DCXrcIB4UWMgPjKekri": {
 "title": "259552.pdf",
@@ -48660,14 +48583,13 @@
 "1kuwRYBhGcoMK5dRFwHXB67qg_yCPEI6j": {
 "title": "253984.pdf",
 "size": 9227818,
-"tk": null,
-"kind": null,
-"y": null,
-"mon": null,
+"tk": "PSX",
+"kind": "Q1",
+"y": 2024,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"co": null,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1P1lRRd0dXKUK_Wap870vH5kqg87p94sT": {
 "title": "259628.pdf",
@@ -48684,14 +48606,13 @@
 "1GEsVk6xPXvRFy4JSHWzJe7FV40QBVTCV": {
 "title": "253986.pdf",
 "size": 7499281,
-"tk": null,
-"kind": "Q",
-"y": null,
-"mon": null,
+"tk": "PSX",
+"kind": "Q1",
+"y": 2024,
+"mon": 9,
 "scanned": true,
-"v": 2,
-"co": null,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1o90gq_yW403fWpMpiXZniJ0JhJ_ohNHB": {
 "title": "259988.pdf",
@@ -48899,7 +48820,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -48907,19 +48828,18 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1ivTVDKLtQxf_dUqwNHgvcjXc9Cgpry9H": {
 "title": "260650.pdf",
 "size": 2412371,
-"tk": null,
+"tk": "MEBL",
 "kind": "A",
 "y": 2025,
 "mon": null,
 "scanned": false,
-"v": 2,
-"co": "Meezan Bank Limited",
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1tbbmrZrqJuPVr1xTloVmnXOmSI-cJ1CD": {
 "title": "260582.pdf",
@@ -49137,7 +49057,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Pvt) Ltd",
 "research": {
 "src": null,
@@ -49146,7 +49066,7 @@
 ],
 "y": 2019
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1x6wi4Od60tzpqXzgq6qgx3MBDgFe6OZX": {
 "title": "260867.pdf",
@@ -49396,8 +49316,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1I4DkTZ7dZ-cfILQEB9zJNObEjKziNP2q": {
 "title": "260994.pdf",
@@ -49432,12 +49352,13 @@
 "title": "260474.pdf",
 "size": 8281428,
 "tk": "MCBIM",
-"kind": null,
+"kind": "other",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"ai": "openrouter:xingchen-agi/xing4.0-29b-a4b:free",
+"at": "2026-11-10"
 },
 "1It9Yq30yjRC2vMsNd3qDbWIW6iraJv2_": {
 "title": "261039.pdf",
@@ -49537,9 +49458,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1mOkvgBcAkKdNMn9w0FZ_yen5cHlfH3Ov": {
 "title": "260799.pdf",
@@ -50043,9 +49964,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1Udk_2pVwfnj4v05_fL81ysNusoeCPLQ5": {
 "title": "261327.pdf",
@@ -50078,8 +49999,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1sxx2CerCpaa6-6Al2H-TeuOWlWomRFkl": {
 "title": "261356.pdf",
@@ -50255,9 +50176,9 @@
 "y": 2025,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1E-ai1wrtVjFaSIsibWVTpiYZ9dLWIQOv": {
 "title": "261471.pdf",
@@ -50267,9 +50188,16 @@
 "y": 2025,
 "mon": 6,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"chemicals"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "1I-eNkk_4Zl4q7qw9gp9cgUztQ0rOzdOQ": {
 "title": "261487.pdf",
@@ -50431,7 +50359,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -50439,7 +50367,7 @@
 ],
 "y": 2025
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1tMY3JlxcA6eF_Hp100JEOVMDvuqs4ate": {
 "title": "261574.pdf",
@@ -50633,7 +50561,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": "Bankers Samba Bank Limited",
 "research": {
 "src": null,
@@ -50643,7 +50571,7 @@
 ],
 "y": 2025
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1bdlGb2LcIXF3sWw5AGVEyQ2Oz_e6mnEo": {
 "title": "261655.pdf",
@@ -50695,8 +50623,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1cHdHNj9KJfYUnLcWyYfwCnJU50TVI34l": {
 "title": "261686.pdf",
@@ -50834,14 +50762,13 @@
 "1KDuy_aVnc77_cCDztYpY_7fICuGnNncS": {
 "title": "261577.pdf",
 "size": 12731185,
-"tk": null,
+"tk": "TSBL",
 "kind": null,
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"co": "WH. BROKERAGE LTD",
-"at": "2026-11-09"
+"v": 4,
+"at": "2026-11-10"
 },
 "1KfsAupnoSI2oa9BqzIYmKzh_b2lc6tHU": {
 "title": "261741 (1).pdf",
@@ -50949,9 +50876,9 @@
 "y": 2025,
 "mon": null,
 "scanned": true,
-"v": 2,
+"v": 4,
 "co": "Dak Peather Crajte Limited",
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "13qW0qrMj-tDUHZjYZTaVU1TOomKvDxOe": {
 "title": "261635.pdf",
@@ -51010,11 +50937,12 @@
 "size": 22662603,
 "tk": "UBDL",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2025,
+"mon": 6,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1ckhNv45zKoPoBd0UKXtPZE3I_dqdrahs": {
 "title": "261814.pdf",
@@ -51137,9 +51065,16 @@
 "y": 2025,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": "Bankers Askari Bank Limited",
-"at": "2026-11-08"
+"research": {
+"src": "VIS",
+"sectors": [
+"banks"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "1MYBD8ZyhhdSkNDmK4Wu874Dn1JPjGAsH": {
 "title": "261909.pdf",
@@ -51160,19 +51095,20 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1e-uhNjoLmeLttgEwe0JW0DUKpjUmtEkU": {
 "title": "261964.pdf",
 "size": 3271538,
 "tk": "SPCL",
-"kind": null,
+"kind": "other",
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1e-epyfpIeip1EN4gsI3lHtP-lzkNVkxk": {
 "title": "261780.pdf",
@@ -51402,8 +51338,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1rtVJ-_7V4YZB7vIm4X9jOVf5d2i5r2dm": {
 "title": "262077.pdf",
@@ -51712,9 +51648,16 @@
 "y": 2025,
 "mon": 9,
 "scanned": false,
-"v": 2,
-"co": "Pvt.) Limited",
-"at": "2026-11-08"
+"v": 4,
+"co": "S E C U R I T I E S   L T D",
+"research": {
+"src": "PSX",
+"sectors": [
+"banks"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "1kgk6wWWct1hxu3dPNTLhQ_-ni3dw2vaA": {
 "title": "263176.pdf",
@@ -51791,9 +51734,16 @@
 "y": 2025,
 "mon": 9,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": "Tariq Jamil Central Depository Company of Pakistan Limited",
-"at": "2026-11-08"
+"research": {
+"src": "PACRA",
+"sectors": [
+"banks"
+],
+"y": 2026
+},
+"at": "2026-11-10"
 },
 "1p2q_d6JNXp7QL-6gFD7OMDqr1zVq0w-l": {
 "title": "264192.pdf",
@@ -51871,9 +51821,9 @@
 "y": 2025,
 "mon": null,
 "scanned": true,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1Odfw5PKFpfHfaGBvxn_hB2FpOyWLyd16": {
 "title": "264271.pdf",
@@ -51894,9 +51844,21 @@
 "y": 2025,
 "mon": 9,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": "Registered Office Habib Bank Limited",
-"at": "2026-11-08"
+"research": {
+"src": "SBP",
+"sectors": [
+"auto",
+"banks",
+"cement",
+"food",
+"macro",
+"textile"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "1J5GfNf4kyG71333qG0dq_R8lQzwu4MF_": {
 "title": "264315.pdf",
@@ -52140,9 +52102,9 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": "IR GADOON LTD",
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1xH_UnwNXDzPy30hjoHtQxihkFm3LPYFa": {
 "title": "264538.pdf",
@@ -52205,12 +52167,13 @@
 "title": "264578.pdf",
 "size": 698376,
 "tk": "BBFL",
-"kind": "Q",
-"y": null,
-"mon": null,
+"kind": "Q1",
+"y": 2025,
+"mon": 9,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "16BOc3VpFxS4rusHo4THIX91PO-f0jCXE": {
 "title": "264560.pdf",
@@ -52539,14 +52502,13 @@
 "181Fr_W-cO5a8dLLawGgm_FWDdhDfoC_6": {
 "title": "265299.pdf",
 "size": 8267716,
-"tk": null,
+"tk": "KCL",
 "kind": "A",
 "y": 2025,
 "mon": 6,
 "scanned": false,
-"v": 2,
-"co": "KaramCeramics Limited",
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1jeuIT1KLihtZ6a8XiK19-gzQGK8HOxxf": {
 "title": "264587.pdf",
@@ -52658,9 +52620,16 @@
 "y": 2025,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"food"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "15Pwk3WHlDrBeFxpIyD5SgASbcWR3YqT4": {
 "title": "266120.pdf",
@@ -53225,14 +53194,14 @@
 "14fP3WQ7uvBWSRZU02hem3kMT2pBXOYfc": {
 "title": "265322.pdf",
 "size": 14894723,
-"tk": null,
+"tk": "MWMP",
 "kind": "A",
 "y": 2025,
-"mon": null,
+"mon": 6,
 "scanned": true,
-"v": 2,
-"co": "MandviwallahiAUWSER Plastic Industries Limited",
-"at": "2026-11-08"
+"v": 4,
+"ai": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+"at": "2026-11-10"
 },
 "1rNLascAh82XsSB6T4GlG4vpN-qRWVmcW": {
 "title": "270710.pdf",
@@ -53736,9 +53705,16 @@
 "y": 2025,
 "mon": 12,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": "Tariq Jamil Central Depository Company of Pakistan Limited",
-"at": "2026-11-08"
+"research": {
+"src": "PACRA",
+"sectors": [
+"banks"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "1_nYSHPtmhsY4Tcgqt8f4lO9IQJWgccN8": {
 "title": "271697.pdf",
@@ -53759,9 +53735,16 @@
 "y": 2025,
 "mon": 12,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": "Pvt.) Limited",
-"at": "2026-11-08"
+"research": {
+"src": "PSX",
+"sectors": [
+"banks"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "1J2yfS0gwRv9rXiVXXi-norKkSwaO8oAk": {
 "title": "271720.pdf",
@@ -54308,9 +54291,9 @@
 "y": 2025,
 "mon": 12,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1Flvj2jA_jLq-p2nDWFdlMx6hlm_6MVe1": {
 "title": "273306.pdf",
@@ -54343,8 +54326,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1aE_CAJ5EcNHZ-L_IImNNlK4VRCuxv5ov": {
 "title": "273455.pdf",
@@ -54366,9 +54349,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "14y81taZtDMNF7GhWN3JDl980NGk6_eXQ": {
 "title": "273458.pdf",
@@ -54456,9 +54439,16 @@
 "y": 2025,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"insurance"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "193esFvZ04wDi0Yvp-oU7la-tAs1eRIGy": {
 "title": "273523.pdf",
@@ -54480,9 +54470,16 @@
 "y": 2025,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"insurance"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "11hoNvWdZR66uy4cHbdMHmD0U84JgL_sW": {
 "title": "273630.pdf",
@@ -54504,8 +54501,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1THn5RNs0bYEqr68tvnrTROSIqAxzCfrc": {
 "title": "273662.pdf",
@@ -54526,9 +54523,9 @@
 "y": 2025,
 "mon": null,
 "scanned": true,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1xJ6w3P3MuWKDU94kJiE6L7oU1I2WH2-9": {
 "title": "273665.pdf",
@@ -54598,9 +54595,16 @@
 "y": 2025,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": "JS Bank Limited Bank Islami Pakistan Limited",
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"banks"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "1zgiHw_fiocsA53dCmG_vKef4G_r1Wq9A": {
 "title": "273729.pdf",
@@ -54652,7 +54656,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -54661,7 +54665,7 @@
 ],
 "y": null
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1DOnAU3JASkNXl4c3IfoV0Cx7qylsdTan": {
 "title": "273757 (1).pdf",
@@ -54689,14 +54693,13 @@
 "1C_1ZAePmMAopxrXIi5bW-RGvj135ugyL": {
 "title": "273757 (2).pdf",
 "size": 9990839,
-"tk": null,
+"tk": "SRVI",
 "kind": "A",
 "y": 2025,
 "mon": null,
 "scanned": false,
-"v": 2,
-"co": "Service Global Footwear Limited",
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1l2UmmEWSZRzbC5PsmXHSLgDy8MmbB90w": {
 "title": "273772.pdf",
@@ -54849,9 +54852,17 @@
 "y": 2025,
 "mon": null,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"insurance"
+],
+"y": 2025
+},
+"at": "2026-11-10"
 },
 "1dnpny8g-wEMd1cZIqM6GssRFNVWbx9fz": {
 "title": "272282.pdf",
@@ -55132,9 +55143,16 @@
 "y": 2026,
 "mon": 3,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": "Pvt.) Limited",
-"at": "2026-11-08"
+"research": {
+"src": null,
+"sectors": [
+"banks"
+],
+"y": 2026
+},
+"at": "2026-11-10"
 },
 "10BzKqVGVHE4MvVwMwOs521eAZTj6lqAH": {
 "title": "275746.pdf",
@@ -55457,14 +55475,13 @@
 "1udkjGhYBAYV84y287Y00qXjaOzSIe1IW": {
 "title": "276212.pdf",
 "size": 6802511,
-"tk": null,
+"tk": "BAFL",
 "kind": "Q1",
 "y": 2026,
 "mon": 3,
 "scanned": false,
-"v": 2,
-"co": "Bank Alfalah Limited",
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "147MU281Y4zjs6B4U0CDrj6fbWVtSKUjf": {
 "title": "276216.pdf",
@@ -55675,7 +55692,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -55683,7 +55700,7 @@
 ],
 "y": 2026
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1tjnETG-oKAKxrtaDOZCdQZP1RGpG2IwD": {
 "title": "276353.pdf",
@@ -55728,9 +55745,16 @@
 "y": 2026,
 "mon": 3,
 "scanned": false,
-"v": 2,
+"v": 4,
 "co": "Chairman Central Depository Company of Pakistan Limited",
-"at": "2026-11-08"
+"research": {
+"src": "PACRA",
+"sectors": [
+"banks"
+],
+"y": 2026
+},
+"at": "2026-11-10"
 },
 "10vSlubKen_fsrH-0OoXLdgO7M78ReZI3": {
 "title": "276384.pdf",
@@ -56526,7 +56550,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
+"ai": "gemini:gemini-3-flash-preview",
 "research": {
 "src": null,
 "sectors": [
@@ -56534,7 +56559,7 @@
 ],
 "y": 2013
 },
-"at": "2026-11-09"
+"at": "2026-11-10"
 },
 "1e1JMT7INWvM3aMKLjLC248GnDH64eRFE": {
 "title": "53 - PAKISTAN PRINCIPAL EXPORTS.pdf",
@@ -57892,11 +57917,12 @@
 "size": 1140106,
 "tk": "AKGL",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2014,
+"mon": 6,
 "scanned": false,
-"v": 2,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3-flash-preview",
+"at": "2026-11-10"
 },
 "1EOdWei_z0Lp8jMpqDB2XDqMjz_gGRS4i": {
 "title": "AICL-ANNUAL-2017.pdf",
@@ -57979,12 +58005,19 @@
 "title": "AKGL_Q4_2017.pdf",
 "size": 3901488,
 "tk": "AKGL",
-"kind": null,
+"kind": "R",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-09"
+"v": 4,
+"research": {
+"src": null,
+"sectors": [
+"banks"
+],
+"y": null
+},
+"at": "2026-11-10"
 },
 "1T0Sw8wVJnK1cIvZvNyHdaqHsVqFdg4HR": {
 "title": "AKGL_Q4_2015.pdf",
@@ -58693,7 +58726,7 @@
 "y": 2025,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
 "research": {
 "src": "SBP",
@@ -58702,7 +58735,7 @@
 ],
 "y": 2025
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1nC7I4RpADVJbahZAJ5jHF0v0o0wmj9_E": {
 "title": "HalfYear-FY24.pdf",
@@ -58750,8 +58783,8 @@
 "y": 2024,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "State Bank of Pakistan",
 "research": {
 "src": "SBP",
 "sectors": [
@@ -58759,7 +58792,7 @@
 ],
 "y": 2025
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "15JJevmATD0a23fwC-tCrioPK7EcTSBES": {
 "title": "Gov-AR_2.pdf",
@@ -58769,8 +58802,8 @@
 "y": 2024,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "State Bank of Pakistan",
 "research": {
 "src": "SBP",
 "sectors": [
@@ -58778,7 +58811,7 @@
 ],
 "y": 2024
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1v2p1HMqdG5R-bsJPRwAVC4PFQBGuUKHi": {
 "title": "Payment_Systems_Quarterly_Review___3rd_Quarter_of_2022___23_1.pdf",
@@ -58796,11 +58829,12 @@
 "size": 3995248,
 "tk": null,
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2025,
+"mon": 12,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "State Bank of Pakistan",
+"ai": "gemini:gemini-3.5-flash-lite",
 "research": {
 "src": "SBP",
 "sectors": [
@@ -58808,7 +58842,7 @@
 ],
 "y": 2026
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1OLCiu-SYC-TA139YUKS0oyQI-t4IxVfp": {
 "title": "PS-Review-Q3FY26.pdf",
@@ -58866,8 +58900,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "State Bank of Pakistan",
 "research": {
 "src": "SBP",
 "sectors": [
@@ -58875,7 +58909,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1ORqMkPbthuTjtb8fYUPTQGrRsOhRE2hl": {
 "title": "Financial-Stability-Review-2023.pdf",
@@ -58904,8 +58938,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1DRA7DPx7CL5R2OycV1mrELk7G_2pk8-L": {
 "title": "Payment_Systems_Quarterly_Review___3rd_Quarter_of_2019___20.pdf",
@@ -58997,19 +59031,20 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1FNXdIQICPonGEQchdwuHtqy2AvKZ025t": {
 "title": "PHDL_Q4_2017.pdf",
 "size": 3952743,
 "tk": "PHDL",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "Q1",
+"y": 2017,
+"mon": 12,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"ai": "openrouter:recursive/flint-v1.0:free",
+"at": "2026-11-10"
 },
 "1IghdaoEAawst-gQFz0KF9OKM_D6V9tAi": {
 "title": "SHFA_Q4_2017.pdf",
@@ -59052,8 +59087,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1j_wDWINa5TN5PrRWcJjBbKg1VUGmydKL": {
 "title": "DIIL-ANNUAL-2016.pdf",
@@ -59151,8 +59186,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "19a9MofK4ucySldCI8UqDN6OvdIEUTGgP": {
 "title": "BATA-ANNUAL-2014.pdf",
@@ -59162,8 +59197,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1abPM1DFl9s1vMTaxAm9mv36U9HiLxZJK": {
 "title": "SLL-ANNUAL-2017.pdf",
@@ -59224,23 +59259,24 @@
 "title": "GAMON_Q4_2014.pdf",
 "size": 45373946,
 "tk": "GAMON",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2014,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"ai": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+"at": "2026-11-10"
 },
 "1IdJG_oWH-YAxmVOnlS6rdaR-rqRgJRez": {
 "title": "DIIL-ANNUAL-2014.pdf",
 "size": 3451447,
 "tk": "DIIL",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2014,
+"mon": 1,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "15_OA2SW6qmgUXCB-rwI4zkLItN3GiEwW": {
 "title": "CJPL-ANNUAL-2016.pdf",
@@ -59257,23 +59293,23 @@
 "title": "ECOP_Q4_2015.pdf",
 "size": 6778323,
 "tk": "ECOP",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2015,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1HdvZxjxX5jmWbvSCizfwDZzWlVOkKm2O": {
 "title": "SHFA_Q4_2014.pdf",
 "size": 34252174,
 "tk": "SHFA",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2014,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1W_FFDpOawJBKF6ryOEtlf5eYqRJFwEbD": {
 "title": "JSGCL-ANNUAL-2014.pdf",
@@ -59283,8 +59319,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "16rwxcIp8LLEjDtDQ-298ewazgEw5zDV8": {
 "title": "CYAN-ANNUAL-2017.pdf",
@@ -59294,19 +59330,19 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1LjGumRNKcpBM_7Dox9JYZ_TdNXBWjDnk": {
 "title": "ECOP_Q4_2014.pdf",
 "size": 8069869,
 "tk": "ECOP",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2014,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1FQRQnZl54dJBtVSN8SfyKTb95fP3s2-x": {
 "title": "JSIL_Q4_2015.pdf",
@@ -59371,8 +59407,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1hW2JCOgdH1iAZCwN0Z_DEeFK7Se_ZpdI": {
 "title": "PSEL-ANNUAL-2013.pdf",
@@ -59382,8 +59418,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1em7z3zJa971Z3AV6qV-gGOj0qBlxdAG8": {
 "title": "JSCL-ANNUAL-2015.pdf",
@@ -59426,7 +59462,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -59434,7 +59470,7 @@
 ],
 "y": 2013
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1m_EIhK_zYAw6NEi2wEkXd3He3CesKiPm": {
 "title": "ESBL-ANNUAL-2014.pdf",
@@ -59466,8 +59502,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1W9HIQvmUFcvyFnSuHRGpOW8D3r7GGx4c": {
 "title": "TSBL_Q4_2014.pdf",
@@ -59506,8 +59542,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1GkhN5SNqci01GkSJJzyEHmco99TK67yG": {
 "title": "ASIC-ANNUAL-2013.pdf",
@@ -59534,12 +59570,12 @@
 "title": "GRYL_Q4_2015.pdf",
 "size": 6606940,
 "tk": "GRYL",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2015,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1Zpwh1W4fBwRSl4ESTEe_AAE5etuhYDHE": {
 "title": "CENI-ANNUAL-2013 (1).pdf",
@@ -59571,8 +59607,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "18Z83GIpk-5rx5V6qui0kjoDkOLsNLjZz": {
 "title": "JGICL-ANNUAL-2016 (1).pdf",
@@ -59604,8 +59640,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1zuqVxnYl8Jxv0ioRi4nkDaN9IaSmD8sm": {
 "title": "RICL-ANNUAL-2014 (1).pdf",
@@ -59637,19 +59673,19 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1RRwnhN73TlpyJsV5Lr1qP4k44BMJ8vY1": {
 "title": "NEXT-ANNUAL-2016.pdf",
 "size": 2141518,
 "tk": "NEXT",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2016,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1FDW3rWaRXwbwx7mRUm0QIlUcqsE-zw11": {
 "title": "ALAC-ANNUAL-2014.pdf",
@@ -59681,7 +59717,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -59690,7 +59726,7 @@
 ],
 "y": 2014
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1EnDaCDVaKBECnOq1mYiiRqlGvLJInACY": {
 "title": "ATIL-ANNUAL-2015.pdf",
@@ -59722,7 +59758,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -59730,7 +59766,7 @@
 ],
 "y": 2013
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1PJAG9M1geW8vGUARFxWdkiiQdRQD3ztw": {
 "title": "SHNI-ANNUAL-2014 (1).pdf",
@@ -59817,8 +59853,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1T7q_4p-ES_fZxj_ynx630qzRj0dzGZtn": {
 "title": "PKGI_Q4_2014.pdf",
@@ -59868,8 +59904,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1NijhNXTdxfYIgAiFX-LFfAoK83v5eg2n": {
 "title": "PAKRI-ANNUAL-2015.pdf",
@@ -59896,13 +59932,13 @@
 "1F0Ir0-5HbJeliYeuDXY9mG087hsGCV9K": {
 "title": "PASL_Q4_2014.pdf",
 "size": 11506859,
-"tk": "PASL",
-"kind": null,
+"tk": "MCB",
+"kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "199JaBF-9xVwJi0vM-uDwQDCJDQw_xuz9": {
 "title": "CSIL-ANNUAL-2016.pdf",
@@ -59985,12 +60021,12 @@
 "title": "JLICL-ANNUAL-2015.pdf",
 "size": 1810413,
 "tk": "JLICL",
-"kind": null,
+"kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "16qNBNtRBlrwSG-y7rmxZ4gU1_jqjRtzv": {
 "title": "STCL-ANNUAL-2015.pdf",
@@ -60000,8 +60036,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "19ePsR-mCZ1MonnPOXpWk8iN4cTg0P4Xp": {
 "title": "ALAC-ANNUAL-2013.pdf",
@@ -60200,12 +60236,12 @@
 "title": "JGICL-ANNUAL-2013 (2).pdf",
 "size": 11841176,
 "tk": "JGICL",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2013,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "14i1aVKhWe7recl8igLEEpFnfCPGgfMB4": {
 "title": "STCL-ANNUAL-2016.pdf",
@@ -61457,8 +61493,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
+"ai": "gemini:gemini-3.6-flash",
 "research": {
 "src": null,
 "sectors": [
@@ -61466,7 +61503,7 @@
 ],
 "y": 2026
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1jVLGevuzHcfvZIazBFAt2wqjKtmnCNoh": {
 "title": "PAMA-Letter-Used-Vehicle-Policy-Notification-30-September.pdf",
@@ -61495,8 +61532,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
+"ai": "gemini:gemini-3.6-flash",
 "research": {
 "src": null,
 "sectors": [
@@ -61504,7 +61542,7 @@
 ],
 "y": 2026
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1t6STiqfOKFqGZMdj7w1lXSearmnH-hJN": {
 "title": "five-years-12.xlsx",
@@ -62108,13 +62146,14 @@
 "title": "state-of-pakistan-economy-2025-26.pdf",
 "size": 1943895,
 "tk": null,
-"kind": null,
+"kind": "other",
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
-"at": "2026-11-08"
+"v": 4,
+"co": "Institute of Business Administration",
+"ai": "gemini:gemini-3.6-flash",
+"at": "2026-11-10"
 },
 "1zmkp21G1Qz3AReifVg-au4pQbv16fFdQ": {
 "title": "MoterVehical-cy2017-cy2022 (1).pdf",
@@ -62512,8 +62551,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1f58lei_P1m1VOgdLgpnCFK7Q8-TMig8J": {
 "title": "DIIL-ANNUAL-2017.pdf",
@@ -62598,8 +62637,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1neTr61Qpk5qukqd0LKIIqnjwHUqk_b3I": {
 "title": "SLL-ANNUAL-2015.pdf",
@@ -62642,7 +62681,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -62650,7 +62689,7 @@
 ],
 "y": 2014
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1YOP7EZ7-Jx98VeZyxRsknwXWZXZiKIlo": {
 "title": "OLPL-ANNUAL-2014.pdf",
@@ -62700,19 +62739,19 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1csGZkQQnaFvmGdu2smA-1gc_tb3P8E85": {
 "title": "UDPL_Q4_2014.pdf",
 "size": 5100922,
 "tk": "UDPL",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2014,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1KKicinN87HKuXlNQAhKMIHpk9dAa1sOi": {
 "title": "CYAN-ANNUAL-2015.pdf",
@@ -62744,8 +62783,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "16lzdHVf9TTt5NV68YLTivu-7zD0shjBH": {
 "title": "NEXT-ANNUAL-2014.pdf",
@@ -62766,19 +62805,19 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1bDO3zngSAxaAAuG96HKF642m69wf_6k6": {
 "title": "LEUL_Q4_2015.pdf",
 "size": 4865900,
 "tk": "LEUL",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2015,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1-gyz8GoOi9u-R927O2R7r2Hro8Tv9qi9": {
 "title": "DEL-ANNUAL-2013.pdf",
@@ -62788,7 +62827,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -62796,29 +62835,29 @@
 ],
 "y": 2013
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1m4sUJvxNheiRXMnbeVsI9GkrPxqmxjwh": {
 "title": "SRVI_Q4_2015.pdf",
 "size": 9305253,
 "tk": "SRVI",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2015,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1UZ2V8QfahfWSq3a4xo1HR6oYaVunDqon": {
 "title": "BATA-ANNUAL-2013.pdf",
 "size": 14419593,
 "tk": "BATA",
-"kind": null,
+"kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1EZYubFS2h2CMaCE3mA2823hKjooO9iQH": {
 "title": "FCIBL-ANNUAL-2014.pdf",
@@ -62835,12 +62874,12 @@
 "title": "HADC_Q4_2015.pdf",
 "size": 6589177,
 "tk": "HADC",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2015,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1OXBxB-5RcBJEIAZwsgETn5sOoQR6Vpnf": {
 "title": "DLL-ANNUAL-2013.pdf",
@@ -62850,7 +62889,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -62859,7 +62898,7 @@
 ],
 "y": 2013
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1oHn3OLfYOG1ztbkgYyH73Kq5f3lDNalH": {
 "title": "FCIBL-ANNUAL-2015.pdf",
@@ -62880,7 +62919,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -62888,7 +62927,7 @@
 ],
 "y": 2014
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1MyhWUZPzcgu2NTPeFvEwAZV8eW-OozUE": {
 "title": "JSCL-ANNUAL-2016.pdf",
@@ -62983,11 +63022,12 @@
 "size": 7004244,
 "tk": "JSGCL",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2016,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"ai": "openrouter:recursive/flint-v1.0:free",
+"at": "2026-11-10"
 },
 "1hssZnOYhdjcm74E1pcdPHay1pPFqKMIQ": {
 "title": "EWIC-ANNUAL-2017.pdf",
@@ -63026,12 +63066,12 @@
 "title": "DLL-ANNUAL-2016.pdf",
 "size": 3995207,
 "tk": "DLL",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2016,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1jZNfpk_Zz5_CctNevXUZ6BQHDyGYYaaw": {
 "title": "EFUL-ANNUAL-2017.pdf",
@@ -63063,8 +63103,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1ZG1cTIJPgHGZbYMhQa1XX_O7KqBZrfPg": {
 "title": "IGIL-ANNUAL-2013.pdf",
@@ -63096,8 +63136,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1xwvn94jQArFWjuP6jdHaZrepRRbIuzEy": {
 "title": "JLICL-ANNUAL-2014.pdf",
@@ -63107,7 +63147,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -63116,7 +63156,7 @@
 ],
 "y": 2014
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "15KNGEC1IC7IMS-KG_IIbhGA-zfLQRkSq": {
 "title": "CENI-ANNUAL-2017 (1).pdf",
@@ -63137,8 +63177,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1-kS6vbLMsupNU8NEEoQd-Whp3iDvtjBw": {
 "title": "EFUG-ANNUAL-2016.pdf",
@@ -63162,23 +63202,23 @@
 "title": "AMBL-ANNUAL-2016.pdf",
 "size": 24552889,
 "tk": "AMBL",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2016,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1rtCU0z_kFIzvU8iBoO9NHRVCI-DZgPcE": {
 "title": "NEXT-ANNUAL-2017.pdf",
 "size": 3239004,
 "tk": "NEXT",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2017,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1uVa66TrwUO-Q0fEdb32Ieuhv1KIVdU-P": {
 "title": "ATIL-ANNUAL-2013.pdf",
@@ -63188,7 +63228,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -63197,7 +63237,7 @@
 ],
 "y": 2013
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1CP-jdgItVWd60s8OqeZJZYp0_1ME68y-": {
 "title": "ATIL-ANNUAL-2016.pdf",
@@ -63247,12 +63287,13 @@
 "title": "AMBL-ANNUAL-2015.pdf",
 "size": 24051937,
 "tk": "AMBL",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2015,
+"mon": 12,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "141UggIwc1gT7b7Yz3gMzuMNlfjcGL73x": {
 "title": "HICL-ANNUAL-2014 (1).pdf",
@@ -63378,24 +63419,24 @@
 "1xdwixpRYiAyYgi4byfkzIr7ys5z_nZcA": {
 "title": "ALAC-ANNUAL-2017.pdf",
 "size": 5909563,
-"tk": "ALAC",
+"tk": "EWIC",
 "kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1sPdZst5qjN5Z5OI_cQyLUvo09UuFQPY1": {
 "title": "ALAC-ANNUAL-2015.pdf",
 "size": 6485966,
-"tk": "ALAC",
+"tk": "EWIC",
 "kind": "A",
-"y": null,
+"y": 2015,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1t5VAx1MY104N6TVLAv981w1yTBbOBGIW": {
 "title": "TGL-ANNUAL-2015.pdf",
@@ -63434,12 +63475,12 @@
 "title": "EFUG-ANNUAL-2014.pdf",
 "size": 2865090,
 "tk": "EFUG",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2014,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1Fbz8m6a2wzAsqBaK0RzWGUZZ-Xg5qHEB": {
 "title": "FFL-ANNUAL-2013 (1).pdf",
@@ -63526,7 +63567,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -63534,7 +63575,7 @@
 ],
 "y": 2015
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1FXpEHZfBPrBsBuDc5D5pnZ1s0JXcX9AJ": {
 "title": "QUICE-ANNUAL-2017.pdf",
@@ -64807,8 +64848,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
+"ai": "gemini:gemini-3-flash-preview",
 "research": {
 "src": null,
 "sectors": [
@@ -64817,7 +64859,7 @@
 ],
 "y": 2026
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1kqi2NWOzcpmBNtx1SiaEqUqwMweovoqr": {
 "title": "MoIP-Used-Car-Imports-letter-28-10-26.pdf",
@@ -64865,8 +64907,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
+"ai": "openrouter:recursive/flint-v1.0:free",
 "research": {
 "src": null,
 "sectors": [
@@ -64874,7 +64917,7 @@
 ],
 "y": 2026
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "10LlUZvc1iCyRBmxlTmCk3bHNT_DOmj2U": {
 "title": "Sugar Sector Report.pdf",
@@ -65069,13 +65112,14 @@
 "title": "state-of-pakistan-economy-2025-26.pdf",
 "size": 1943895,
 "tk": null,
-"kind": null,
+"kind": "other",
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
-"at": "2026-11-08"
+"v": 4,
+"co": "Institute of Business Administration",
+"ai": "gemini:gemini-3-flash-preview",
+"at": "2026-11-10"
 },
 "1pvx4t_dYY1dM2PareLqtO8Yp9NBzzNg0": {
 "title": "Asset Management Companies - PACRA Research -Mar'26_1774416325.pdf",
@@ -65761,9 +65805,9 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1MwMoKmfKkApTQrJRGFZUPsGaQUiq0kGW": {
 "title": "MPR-Aug-2025.pdf",
@@ -65792,8 +65836,8 @@
 "y": 2022,
 "mon": null,
 "scanned": false,
-"v": 3,
-"co": null,
+"v": 4,
+"co": "State Bank of Pakistan",
 "research": {
 "src": "SBP",
 "sectors": [
@@ -65802,7 +65846,7 @@
 ],
 "y": 2022
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1KQDgZvmv6GqlZbEmTy7dZIf0Ze3kF0yb": {
 "title": "HalfYear-FY25.pdf",
@@ -65941,7 +65985,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -65949,7 +65993,7 @@
 ],
 "y": null
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1byxuQ9hOPs4T7D3auPeB8YSHEkk-GymT": {
 "title": "Payment_Systems_Quarterly_Review___3rd_Quarter_of_2019___20 (1).pdf",
@@ -65989,8 +66033,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1qorafT6-jsnQUBABGsy9MsaK1VVV_j6T": {
 "title": "Payment_system_Q_4_08-09.pdf",
@@ -66000,8 +66044,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "194H6gVFhUTMvvbNOv1TSMHRGkebeSaIz": {
 "title": "ARPAK-ANNUAL-2017 (1).pdf",
@@ -66022,8 +66066,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1uIz4_lZMbYEpNt0CVY32PLVVilubgi53": {
 "title": "Highlights_of_the_PES_2026.pdf",
@@ -66053,11 +66097,12 @@
 "size": 9219854,
 "tk": "GAMON",
 "kind": "A",
-"y": null,
-"mon": null,
+"y": 2015,
+"mon": 6,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "1PTrpMvaVtWH6i78_fZDyr6-AcbtMxb6g": {
 "title": "PSEL-ANNUAL-2016.pdf",
@@ -66089,8 +66134,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1el48Tw1weUmmCufZO-rV_B5MzLtujjof": {
 "title": "BATA-ANNUAL-2016.pdf",
@@ -66100,8 +66145,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1WjIGYoMmoW_e4UsWRqEZzr0c-ja1c80u": {
 "title": "LEUL_Q4_2014.pdf",
@@ -66133,8 +66178,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1pXJ7fRCzTv4sqH8kDDnzJzxHmdnuIMxR": {
 "title": "SLL-ANNUAL-2013.pdf",
@@ -66144,7 +66189,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -66153,7 +66198,7 @@
 ],
 "y": 2013
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1OHKbXSqOpd_AblLi5paSnxjwMSOtg57I": {
 "title": "SLL-ANNUAL-2016.pdf",
@@ -66185,8 +66230,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1nMpLkNtla07d8aPMw-R15oH2Mq7anktk": {
 "title": "PGLC-ANNUAL-2013.pdf",
@@ -66237,7 +66282,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -66245,7 +66290,7 @@
 ],
 "y": 2017
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "12bKPj7_m-P4mGn5ekb9Q_gtv_ovhrIxJ": {
 "title": "OLPL-ANNUAL-2013.pdf",
@@ -66299,8 +66344,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1zUzl3iF8TXdJbx-nv6euC4VIwYV0Or4B": {
 "title": "CJPL-ANNUAL-2014.pdf",
@@ -66376,9 +66421,16 @@
 "y": 2023,
 "mon": null,
 "scanned": true,
-"v": 3,
+"v": 4,
 "co": null,
-"at": "2026-11-08"
+"research": {
+"src": "SBP",
+"sectors": [
+"banks"
+],
+"y": 2023
+},
+"at": "2026-11-10"
 },
 "1HWF9gyMl9ov19HqvTdW7OPQsCT_535Eu": {
 "title": "DEL-ANNUAL-2014.pdf",
@@ -66388,8 +66440,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1wZSZ9WHV-H8Nz2_2D80xA_ge_9K-BUyE": {
 "title": "DEL-ANNUAL-2015.pdf",
@@ -66399,8 +66451,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1j3xyxsMJ4XcQQv6280aFghu0Zo6sfDsi": {
 "title": "DEL-ANNUAL-2017.pdf",
@@ -66410,8 +66462,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1rsUQEdP2P2blOaI7KpqciLP-hGlRICsU": {
 "title": "DEL-ANNUAL-2016.pdf",
@@ -66421,8 +66473,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1jarDSfcBGmYq7Mh6YLQbFnbJQsq3cTES": {
 "title": "JSGCL-ANNUAL-2015.pdf",
@@ -66520,8 +66572,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1cZYyukwDzWYB2LpNebMndbgecv5NU5dR": {
 "title": "JSIL_Q4_2014 (1).pdf",
@@ -66531,8 +66583,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "14ySBXjUSSwWZGa7FYEmc9rQVv4_b8iUK": {
 "title": "FCSC_Q4_2015 (1).pdf",
@@ -66560,12 +66612,13 @@
 "title": "JSIL_Q4_2014.pdf",
 "size": 11629029,
 "tk": "JSIL",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2014,
+"mon": 12,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"ai": "gemini:gemini-3.5-flash-lite",
+"at": "2026-11-10"
 },
 "17Q0-033YzFdr4SJSN1YFFQV2xQf3rAKV": {
 "title": "PASL_Q4_2016.pdf",
@@ -66586,8 +66639,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1jfXefna3-VwcOdueCmJzIsVtiD28Ujrm": {
 "title": "EWIC-ANNUAL-2017.pdf",
@@ -66619,8 +66672,8 @@
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1KutekbjZ-GeWnO1qVvARg-sZ4YzhEaOe": {
 "title": "EWIC-ANNUAL-2014.pdf",
@@ -66652,7 +66705,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -66661,7 +66714,7 @@
 ],
 "y": 2015
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1pA76KPLS6_DGN0rxiMj7Xsl7m4VmDH9v": {
 "title": "IGIL-ANNUAL-2014.pdf",
@@ -66707,12 +66760,12 @@
 "title": "GRYL_Q4_2014.pdf",
 "size": 4436349,
 "tk": "GRYL",
-"kind": null,
+"kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1rx5D6RA9Toj83EBMLyKbTrEhNeG2a7YN": {
 "title": "CENI-ANNUAL-2015 (1).pdf",
@@ -66733,7 +66786,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -66741,7 +66794,7 @@
 ],
 "y": 2016
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1F19HaOFW33YxROCvn9Ck6w6jW7XBS7Cb": {
 "title": "JLICL-ANNUAL-2016.pdf",
@@ -66758,12 +66811,12 @@
 "title": "HADC_Q4_2014.pdf",
 "size": 7704282,
 "tk": "HADC",
-"kind": null,
-"y": null,
-"mon": null,
+"kind": "A",
+"y": 2014,
+"mon": 6,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1cMf9wMdBB0YNgeU1NnZ0EoXo019l1aHD": {
 "title": "EFUG-ANNUAL-2013.pdf",
@@ -66784,7 +66837,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -66793,7 +66846,7 @@
 ],
 "y": 2013
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1Nc4vkSTnWg6fdms4QY3Bact3LI7r8f9G": {
 "title": "EFUG-ANNUAL-2017.pdf",
@@ -66905,12 +66958,12 @@
 "title": "AMBL-ANNUAL-2013.pdf",
 "size": 22104578,
 "tk": "AMBL",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2013,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "14_GxQOC8NEOlPoJyTVtkzBVLmsnK_H_J": {
 "title": "PINL-ANNUAL-2017 (1).pdf",
@@ -66960,7 +67013,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -66969,7 +67022,7 @@
 ],
 "y": 2017
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1-2YGCfOskbn8KBdiOh3UCOYMjPPu6cci": {
 "title": "KCL_Q4_2017.pdf",
@@ -67014,13 +67067,13 @@
 "1ACnHUI7UOU0mQDg14lrzE8a6hOyHegKE": {
 "title": "ALAC-ANNUAL-2017.pdf",
 "size": 5909563,
-"tk": "ALAC",
+"tk": "EWIC",
 "kind": "A",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1hoNlBPobvROLIiogKiePNco74Kv1gAcS": {
 "title": "PASL_Q4_2015.pdf",
@@ -67074,8 +67127,8 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1soH1NO4jvtaCnbBepOPqPQ0CnCBBEcH2": {
 "title": "STCL-ANNUAL-2013.pdf",
@@ -67129,19 +67182,19 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1xFpF7Pmhu16CYaYXRQoqe6dnX0T_MiEy": {
 "title": "FRCL_Q4_2014.pdf",
 "size": 6714432,
 "tk": "FRCL",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2014,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "12GGiY12ieiJXpRULKPozM34Vlnqmj9Iq": {
 "title": "ASC-ANNUAL-2017.pdf",
@@ -67151,7 +67204,7 @@
 "y": null,
 "mon": null,
 "scanned": false,
-"v": 3,
+"v": 4,
 "research": {
 "src": null,
 "sectors": [
@@ -67159,7 +67212,7 @@
 ],
 "y": 2017
 },
-"at": "2026-11-08"
+"at": "2026-11-10"
 },
 "1wqyod_xi-q5zBeqjEGggX18N88byBzfC": {
 "title": "NATF-ANNUAL-2017.pdf",
@@ -67217,12 +67270,21 @@
 "title": "RICL-ANNUAL-2016 (1).pdf",
 "size": 5815648,
 "tk": "RICL",
-"kind": null,
+"kind": "R",
 "y": null,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"research": {
+"src": null,
+"sectors": [
+"banks",
+"insurance",
+"steel"
+],
+"y": 2016
+},
+"at": "2026-11-10"
 },
 "1eEoo1xzDVstAjgT4XU1QU60W-OVABSn0": {
 "title": "GVGL_Q4_2014.pdf",
@@ -67314,12 +67376,12 @@
 "title": "CLOV_Q4_2014.pdf",
 "size": 6388671,
 "tk": "CLOV",
-"kind": null,
-"y": null,
+"kind": "A",
+"y": 2014,
 "mon": null,
 "scanned": true,
-"v": 3,
-"at": "2026-11-08"
+"v": 4,
+"at": "2026-11-10"
 },
 "1xRY-T4K7EX1iNHeZyBfPBTJomwDce2WX": {
 "title": "MUREB-ANNUAL-2013.pdf",
