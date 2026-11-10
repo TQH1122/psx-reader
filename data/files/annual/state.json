@@ -10487,15 +10487,15 @@
 },
 "khi:BFMOD:2003": {
 "at": "2026-11-10",
-"n": 13,
+"n": 17,
 "waits": 1,
 "reread": [
 2003
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:DBSL:2007": {
 "at": "2026-11-01",
@@ -15020,16 +15020,16 @@
 "why": "company name does not match: Pakistan Industrial Trading Corporation (names NICL)"
 },
 "khi:BFMOD:2002": {
-"at": "2026-11-08",
-"n": 8,
+"at": "2026-11-10",
+"n": 18,
 "reread": [
 2001,
 2002
 ],
 "tries": 1,
 "redo8": 1,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:FCONM:2005": {
 "at": "2026-11-02",
