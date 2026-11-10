@@ -9699,11 +9699,11 @@
 "done": true
 },
 "khi:HWQS:2002": {
-"at": "2026-11-01",
-"n": 32,
-"retry": 1,
+"at": "2026-11-10",
+"n": 26,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:PGLC:2007": {
 "at": "2026-11-01",
@@ -9737,7 +9737,7 @@
 "second": 1
 },
 "khi:AKGL:2003": {
-"at": "2026-11-01",
+"at": "2026-11-10",
 "n": 19,
 "retry": 1,
 "tries": 1,
@@ -10104,11 +10104,11 @@
 "second": 1
 },
 "khi:LPGL:2003": {
-"at": "2026-11-01",
-"n": 30,
-"retry": 1,
+"at": "2026-11-10",
+"n": 22,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:AKDHL:2005": {
 "at": "2026-11-09",
@@ -10119,11 +10119,11 @@
 "why": "company name does not match: Keyline Financial Services Limited (names LSEFSL)"
 },
 "khi:LPGL:2002": {
-"at": "2026-11-01",
-"n": 24,
-"retry": 1,
+"at": "2026-11-10",
+"n": 32,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:GIL:2019": {
 "at": "2026-11-01",
@@ -10827,11 +10827,11 @@
 "redo8": 1
 },
 "khi:IDEAL:2005": {
-"at": "2026-11-01",
-"n": 25,
-"retry": 1,
+"at": "2026-11-10",
+"n": 22,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:GTYR:2004": {
 "at": "2026-11-09",
@@ -10851,15 +10851,15 @@
 "why": "not annual accounts: company name not found in provided pages"
 },
 "khi:IDEAL:2003": {
-"at": "2026-11-04",
+"at": "2026-11-10",
 "n": 27,
 "waits": 2,
 "reread": [
 2002
 ],
-"retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:IMS:2019": {
 "at": "2026-11-08",
@@ -11548,11 +11548,12 @@
 },
 "khi:GVGL:2003": {
 "at": "2026-11-10",
-"n": 20,
-"tries": 2,
+"n": 26,
+"tries": 1,
 "redo9": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"second": 1,
+"done": true
 },
 "drive:PACE:2014": {
 "at": "2026-11-08",
@@ -14604,13 +14605,13 @@
 "done": true
 },
 "khi:IDEAL:2007": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 4,
 "second": 1,
 "n": 24,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:DINT:2003": {
 "at": "2026-11-09",
@@ -14973,12 +14974,13 @@
 },
 "khi:PAKL:2005": {
 "at": "2026-11-10",
-"n": 22,
-"tries": 2,
+"n": 24,
+"tries": 1,
 "redo9": 1,
 "waits": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"second": 1,
+"done": true
 },
 "khi:DMTM:2007": {
 "at": "2026-11-02",
@@ -20704,11 +20706,10 @@
 "done": true
 },
 "web:IDEAL:2022": {
-"at": "2026-11-03",
-"tries": 1,
-"rev": 4,
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
 "why": "Company website download failed (404)",
-"retry": 1,
 "second": 1
 },
 "web:IDEAL:2021": {
@@ -31401,26 +31402,26 @@
 "why": "not annual accounts: Company name not found in provided pages"
 },
 "khi:HWQS:2003": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
 "redo8": 1,
 "n": 31,
-"retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:HWQS:2001": {
-"at": "2026-11-08",
+"at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"retry": 1,
 "second": 1,
 "redo8": 1,
 "n": 12,
 "reread": [
 2000
 ],
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "khi:MSOT:2007": {
 "at": "2026-11-09",
@@ -51788,7 +51789,9 @@
 },
 "khi:AKGL:2004": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 18
 },
 "khi:GVGL:2002": {
 "at": "2026-11-10",
@@ -51797,7 +51800,9 @@
 "why": "not annual accounts: company name not found in provided pages"
 },
 "khi:HWQS:2004": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"done": true,
+"n": 16
 },
 "web:ICCI:2015": {
 "at": "2026-11-10",
@@ -51833,7 +51838,8 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "web:ICCI:2009": {
 "at": "2026-11-10",
@@ -51844,7 +51850,8 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "khi:LPGL:2016": {
 "at": "2026-11-10",
@@ -51860,7 +51867,8 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"second": 1
 },
 "khi:HRPL:2005": {
 "at": "2026-11-10",
@@ -51913,37 +51921,43 @@
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "arc:SYS:2019": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:SYS:2018": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:HAEL:2016": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:HAEL:2015": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "arc:HAEL:2014": {
 "at": "2026-11-10",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "drive:SYS:2017": {
 "at": "2026-11-10",
@@ -51970,5 +51984,11 @@
 "at": "2026-11-10",
 "done": true,
 "n": 33
+},
+"khi:IDEAL:2006": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: company name not found in provided pages"
 }
 }
