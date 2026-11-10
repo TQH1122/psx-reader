@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: |
-          pip install -q kaggle > /dev/null 2>&1
+          pip install -q kaggle six > /dev/null 2>&1
           command -v pdftoppm || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils; } > /dev/null 2>&1
       - name: Bring back finished work, start the next batch
         timeout-minutes: 100
