@@ -1,0 +1,68 @@
+# Every number library (10 Nov 2026): every figure printed in every table of every report, copied exactly as printed by
+# code (no AI), with free checks: totals must add up, and each figure must match the next year's report (which repeats
+# it). Reads the report text library (fulltext.yml) and writes one file per company to the private release "numbers"
+# of the private repository, never here; this public log shows only counts (toolkit/allnumbers.py in the tracker).
+# Chained: while companies are left, each round starts the next; the heartbeat restarts the chain if it ever stops.
+# A company is built again whenever its report text changes (new reports, OCR redone) or the parser version changes.
+name: Every number library
+on:
+  schedule:
+    - cron: '41 1-23/6 * * *'
+  workflow_dispatch:
+  push:
+    paths: ['.github/run-numbers', '.github/workflows/numbers.yml']
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: numbers
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    strategy:
+      fail-fast: false
+      matrix:
+        worker: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - name: Copy every number from the reports
+        timeout-minutes: 62
+        env:
+          GH_TOKEN: ${{ secrets.TRACKER_TOKEN }}
+        run: |
+          mkdir -p data/files/numbers
+          python3 toolkit/allnumbers.py --worker ${{ matrix.worker }} --of 8 --minutes 50 2> data/files/numbers/err_${{ matrix.worker }}.log | tail -n 1 || true
+          tail -n 5 data/files/numbers/err_${{ matrix.worker }}.log || true
+      - name: Save progress to the private repository
+        if: always()
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          python3 toolkit/savegit.py "Robot: every number library ${{ matrix.worker }} $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/numbers/state_${{ matrix.worker }}.json data/files/numbers/err_${{ matrix.worker }}.log
+  next:
+    needs: build
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+      - name: Start the next round while companies are left
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          left=$(python3 -c "
+          import glob, json
+          fs = glob.glob('data/files/numbers/state_*.json')
+          print(sum((json.load(open(f)).get('sum') or {}).get('left', 1) for f in fs) if len(fs) >= 8 else 1)" 2>/dev/null || echo 1)
+          echo "companies left: $left"
+          [ "$left" = "0" ] && exit 0
+          for i in 1 2 3; do gh workflow run numbers.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done
