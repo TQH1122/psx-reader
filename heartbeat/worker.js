@@ -85,7 +85,8 @@ export async function tick(env, now = Date.now()) {
   }
   const event = report.restarted.length || report.problems.length;
   const stampDue = now - Date.parse(state.stamp || 0) > STAMP_GAP;
-  if (msgs.length) {
+  // 11 Nov 2026: restarts and faults no longer buzz his phone; the morning progress report and the daily fixer cover them
+  if (false && msgs.length) {
     const topic = await topicOf(gh);
     if (topic) await fetch(`https://ntfy.sh/${topic}`, { method: "POST",
       headers: { Title: report.problems.length ? "PSX robots: heartbeat found a problem" : "PSX robots: heartbeat restarted a robot",
