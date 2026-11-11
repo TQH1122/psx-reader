@@ -59403,7 +59403,8 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Lakhani Securities Limited (names AKDSL)"
+"done": true,
+"n": 0
 },
 "drive:HMB:2020": {
 "at": "2026-11-11",
@@ -59582,7 +59583,9 @@
 },
 "arc:TSBL:2014": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 30
 },
 "drive:SMCPL:2019": {
 "at": "2026-11-11",
@@ -59613,7 +59616,9 @@
 },
 "drive:AMTEX:2020": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 26
 },
 "drive:BAHL:2018": {
 "at": "2026-11-11",
@@ -59899,6 +59904,18 @@
 "at": "2026-11-11"
 },
 "drive:PSX:2019": {
+"at": "2026-11-11"
+},
+"drive:AMTEX:2017": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "file too large"
+},
+"khi:CLOV:2016": {
+"at": "2026-11-11"
+},
+"arc:TSBL:2012": {
 "at": "2026-11-11"
 }
 }
