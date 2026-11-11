@@ -61764,7 +61764,10 @@
 },
 "arc:MDTL:2012": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: required financial statement data not present"
 },
 "khi:JSGCL:2021": {
 "at": "2026-11-11",
@@ -61772,9 +61775,13 @@
 },
 "drive:FSWL:2018": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "arc:EMCO:2009": {
+"at": "2026-11-11",
+"waits": 2
+},
+"arc:MDTL:2011": {
 "at": "2026-11-11",
 "waits": 1
 }
