@@ -10,11 +10,12 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - run: python3 toolkit/probe.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GITHUB_MODELS_TOKEN: ${{ github.token }}
