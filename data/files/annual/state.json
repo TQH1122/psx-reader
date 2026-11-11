@@ -61254,9 +61254,9 @@
 },
 "web:MERIT:2018": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "company name does not match: Buxly Paints Limited (names BERG)"
+"why": "company name does not match: Pakistani Stock Exchange Company (names PSX)"
 },
 "web:RUPL:2016": {
 "at": "2026-11-11",
@@ -61549,7 +61549,9 @@
 },
 "khi:BUXL:2021": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 33
 },
 "arc:PCAL:2010": {
 "at": "2026-11-11",
@@ -61670,6 +61672,14 @@
 "waits": 1
 },
 "drive:NONS:2015": {
+"at": "2026-11-11",
+"waits": 2
+},
+"khi:BUXL:2019": {
+"at": "2026-11-11",
+"waits": 1
+},
+"drive:MERIT:2014": {
 "at": "2026-11-11",
 "waits": 1
 }
