@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""One off probe (11 Nov 2026): can the robots reach what the corporate briefing session collector needs?
-PSX notice search, YouTube listing, captions, audio, and free Whisper on Groq. Prints only short status lines."""
-import glob, json, os, re, subprocess, sys, tempfile
+"""One off probe (11 Nov 2026), round 2: PSX notice search call, Gemini's own YouTube video reading (Google's official
+route, free daily allowance), and briefing videos on the known channels. Prints only short status lines."""
+import json, os, re, subprocess, sys, urllib.request
 
 UA = "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/128 Mobile Safari/537.36"
+VID = "0Mt95KPrw_I"
 
 
 def sh(cmd, t=180):
@@ -14,82 +15,58 @@ def sh(cmd, t=180):
         return -1, "", str(e)
 
 
-def strip(h):
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h)).strip()
-
-
-print("== PSX notice search")
+print("== PSX script calls")
+code, js, _ = sh(["curl", "-s", "-m", "60", "-A", UA, "https://dps.psx.com.pk/static/script.js?v=1.81"])
+print("js bytes", len(js))
+for m in re.finditer(r"announce", js, re.I):
+    print("  ..", js[max(0, m.start() - 250):m.start() + 350].replace("\n", " ")[:600])
 code, page, _ = sh(["curl", "-s", "-m", "60", "-A", UA, "https://dps.psx.com.pk/announcements/companies"])
-print("page bytes", len(page))
-for m in re.finditer(r"<script[^>]*src=\"([^\"]+)\"", page):
-    print("script", m.group(1))
-for m in re.finditer(r"(?:\$\.(?:post|ajax|get)|fetch|axios)\s*\([^;]{0,300}", page):
-    print("call", m.group(0)[:300])
-for m in re.finditer(r"<(?:input|select)[^>]*name=\"([^\"]+)\"", page):
-    print("field", m.group(1))
-for data in ["type=C&symbol=&query=briefing&count=20&offset=0&date_from=&date_to=&page=annc",
-             "type=C&symbol=&query=corporate+briefing&count=20&offset=0&date_from=2018-01-01&date_to=2026-11-11&page=annc"]:
-    code, out, _ = sh(["curl", "-s", "-m", "60", "-A", UA, "-X", "POST", "-H", "X-Requested-With: XMLHttpRequest",
-                       "-d", data, "https://dps.psx.com.pk/announcements"])
-    rows = re.findall(r"<tr[\s\S]*?</tr>", out)
-    print("post", data[:60], "bytes", len(out), "rows", len(rows))
-    for r in rows[:4]:
-        print("  ", strip(r)[:200], re.findall(r"href=\"([^\"]+)\"", r)[:2])
-    if not rows:
-        print("  head:", strip(out)[:300])
+for m in re.finditer(r"<form[\s\S]{0,1500}?</form>", page):
+    if "keyword" in m.group(0):
+        print("form", re.sub(r"\s+", " ", m.group(0))[:900])
 
-print("== YouTube")
+print("== Gemini reads a YouTube video")
+key = os.environ.get("GEMINI_API_KEY", "")
+try:
+    ms = json.load(urllib.request.urlopen("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200&key=" + key, timeout=60))
+    names = [m["name"].split("/")[1] for m in ms.get("models", []) if "generateContent" in m.get("supportedGenerationMethods", [])]
+    flash = [n for n in names if "flash" in n and "image" not in n and "tts" not in n and "live" not in n]
+    print("flash models", flash[:12])
+except Exception as e:
+    flash = ["gemini-2.5-flash"]
+    print("model list failed", str(e)[:120])
+for model in [m for m in ["gemini-2.5-flash", "gemini-flash-latest"] if m in flash][:2] or flash[:1]:
+    body = {"contents": [{"parts": [
+        {"file_data": {"file_uri": f"https://www.youtube.com/watch?v={VID}"}, "video_metadata": {"start_offset": "600s", "end_offset": "780s"}},
+        {"text": "Transcribe every spoken word of this clip exactly, in the language spoken, with [mm:ss] times. Then write ENGLISH: and a faithful English translation."}]}],
+        "generationConfig": {"temperature": 0, "mediaResolution": "MEDIA_RESOLUTION_LOW"}}
+    req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}",
+                                 data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
+    try:
+        j = json.load(urllib.request.urlopen(req, timeout=300))
+        t = "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
+        print(model, "ok, chars", len(t), "usage", j.get("usageMetadata", {}).get("promptTokenCount"))
+        print("  ", re.sub(r"\s+", " ", t)[:500])
+    except urllib.error.HTTPError as e:
+        print(model, "http", e.code, e.read().decode()[:300])
+    except Exception as e:
+        print(model, "failed", str(e)[:200])
+
+print("== briefing videos on known channels")
 sh([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp"], 300)
-first = None
-for q in ["Alpha Capital corporate briefing session", "Akseer Research corporate briefing session",
-          "corporate briefing session PSX"]:
-    code, out, err = sh(["yt-dlp", "--flat-playlist", "-J", f"ytsearch8:{q}"], 120)
+for q in ["Akseer Research", "Akseer corporate briefing session", "KTrade corporate briefing session", "Optimus capital corporate briefing session"]:
+    code, out, err = sh(["yt-dlp", "--flat-playlist", "-J", f"ytsearch10:{q}"], 120)
     try:
         ents = json.loads(out).get("entries") or []
     except Exception:
         ents = []
-        print("search failed:", err.strip().splitlines()[-1:] if err else "")
-    print("search", q, len(ents))
-    for e in ents[:8]:
-        print("  ", e.get("id"), e.get("channel"), e.get("channel_id"), e.get("duration"), (e.get("title") or "")[:70])
-        first = first or (e.get("id") if (e.get("duration") or 0) > 600 else None)
-for ch in ["https://www.youtube.com/@AlphaCapitalResearch/videos", "https://www.youtube.com/@AkseerResearch/videos",
-           "https://www.youtube.com/@alphacapital/videos", "https://www.youtube.com/@akseerresearch2486/videos"]:
-    code, out, err = sh(["yt-dlp", "--flat-playlist", "-J", "--playlist-end", "5", ch], 120)
+    print("search", q, sorted({(e.get("channel"), e.get("channel_id")) for e in ents}))
+for ch in ["UCr6RYtCwd1rsu6UyQZsPbNA", "UC1ilKViIpulidQm5UL6mGTQ", "UCtAosckRYJ95N6OPBH_ZOMg", "UC8iqMHYlaUCM3TRBvAcP1bA", "UCfXgbAAHzN_VxGJg2agyAYA"]:
+    code, out, err = sh(["yt-dlp", "--flat-playlist", "-J", f"https://www.youtube.com/channel/{ch}/videos"], 240)
     try:
-        j = json.loads(out)
-        print("channel", ch, j.get("channel"), j.get("channel_id"), len(j.get("entries") or []))
+        es = json.loads(out).get("entries") or []
+        cbs = [e for e in es if re.search(r"brief|cbs|analyst", e.get("title") or "", re.I)]
+        print("channel", ch, "videos", len(es), "briefing titles", len(cbs), [e.get("title")[:60] for e in cbs[:3]])
     except Exception:
         print("channel", ch, "failed", (err.strip().splitlines() or [""])[-1][:150])
-
-if first:
-    d = tempfile.mkdtemp()
-    print("== captions for", first)
-    code, out, err = sh(["yt-dlp", "--skip-download", "--write-subs", "--write-auto-subs", "--sub-langs", "en.*,ur.*,en,ur",
-                         "--sub-format", "vtt", "-o", f"{d}/%(id)s.%(ext)s", f"https://www.youtube.com/watch?v={first}"], 120)
-    print("code", code, "files", [os.path.basename(p) for p in glob.glob(d + "/*")], (err.strip().splitlines() or [""])[-1][:200])
-    print("== audio")
-    code, out, err = sh(["yt-dlp", "-f", "bestaudio", "--download-sections", "*300-420", "-x", "--audio-format", "mp3",
-                         "--postprocessor-args", "ffmpeg:-ac 1 -ar 16000 -b:a 32k", "-o", f"{d}/a.%(ext)s",
-                         f"https://www.youtube.com/watch?v={first}"], 300)
-    aud = glob.glob(d + "/a.*")
-    print("code", code, "files", [(os.path.basename(p), os.path.getsize(p)) for p in aud], (err.strip().splitlines() or [""])[-1][:200])
-    key = os.environ.get("GROQ_API_KEY")
-    if aud and key:
-        print("== Groq Whisper")
-        for ep in ["transcriptions", "translations"]:
-            code, out, err = sh(["curl", "-s", "-m", "120", "https://api.groq.com/openai/v1/audio/" + ep,
-                                 "-H", "Authorization: Bearer " + key, "-F", "model=whisper-large-v3",
-                                 "-F", "response_format=verbose_json", "-F", "file=@" + aud[0]], 150)
-            try:
-                j = json.loads(out)
-                print(ep, "language", j.get("language"), "text", (j.get("text") or str(j.get("error")))[:300])
-            except Exception:
-                print(ep, "failed", out[:200])
-
-print("== Invidious and Piped fallbacks")
-for u in ["https://inv.nadeko.net/api/v1/stats", "https://yewtu.be/api/v1/stats", "https://pipedapi.kavin.rocks/healthcheck",
-          "https://api.piped.private.coffee/healthcheck"]:
-    code, out, _ = sh(["curl", "-s", "-m", "20", "-o", "/dev/null", "-w", "%{http_code}", u])
-    print(u, out)
 print("done: probe")
