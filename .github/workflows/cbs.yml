@@ -1,0 +1,60 @@
+# Corporate briefing sessions for the PSX Tracker (11 Nov 2026, his ask: nothing missed). Runs the private tracker's
+# toolkit/cbs.py: finds briefing videos on the brokers' and PSX's YouTube channels and by company name, has Google's
+# Gemini transcribe them straight from YouTube (official route, free daily allowance), keeps briefing slides from PSX
+# notices and company websites, and links the brokers' briefing notes. Everything is saved in the private repository;
+# the log here shows one summary line. While videos wait and Gemini's daily allowance lasts, each run starts the next.
+name: Briefing sessions
+on:
+  schedule:
+    - cron: '37 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: minutes of work
+        default: '100'
+  push:
+    paths: ['.github/run-cbs']
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: cbs
+  cancel-in-progress: false
+jobs:
+  sessions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 130
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tools
+        run: |
+          pip install -q -U yt-dlp > /dev/null 2>&1
+          { command -v pdftotext && command -v tesseract; } > /dev/null 2>&1 || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils tesseract-ocr; } > /dev/null 2>&1
+      - name: Gather briefing sessions
+        timeout-minutes: 110
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 toolkit/cbs.py --minutes ${{ inputs.minutes || '100' }} 2> /tmp/cbs_err.log | tail -n 1 | tee /tmp/cbs_done.txt; tail -n 5 /tmp/cbs_err.log | cut -c1-200 || true
+      - name: Save to the private repository
+        if: always()
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          python3 toolkit/savegit.py "Robot: briefing sessions $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/cbs data/files/research data/files/robots.json
+      - name: Start the next run while videos wait
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          last="$(cat /tmp/cbs_done.txt 2>/dev/null)"
+          echo "$last" | grep -q "^done:" || exit 0
+          echo "$last" | grep -qiE "resting until tomorrow|no Gemini key" && exit 0
+          echo "$last" | grep -qE "[^0-9]0 waiting" && exit 0
+          for i in 1 2 3; do gh workflow run cbs.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done
