@@ -19206,14 +19206,14 @@
 },
 "web:OML:2020": {
 "at": "2026-11-11",
-"tries": 2,
-"rev": 5,
-"why": "not annual accounts: The provided pages do not contain the required key financial statement figures.",
+"tries": 1,
+"rev": 4,
+"why": "not annual accounts: Provided pages are notes to the financial statements (notes 1, 2, 9, 32, 33), no",
 "retry": 1,
 "redo8": 1
 },
 "web:OML:2019": {
-"at": "2026-11-11",
+"at": "2026-11-03",
 "tries": 1,
 "rev": 4,
 "why": "scanned report (left for later, OCR too slow)",
@@ -56349,10 +56349,7 @@
 },
 "drive:AGIC:2018": {
 "at": "2026-11-11",
-"waits": 1,
-"tries": 2,
-"rev": 5,
-"why": "no figure passed the checks"
+"waits": 1
 },
 "drive:KOHTM:2022": {
 "at": "2026-11-11",
@@ -59732,8 +59729,7 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"done": true,
-"n": 29
+"why": "company name does not match: Engro Fertilizer Company Limited (names EFERT)"
 },
 "khi:EFUL:2016": {
 "at": "2026-11-11",
@@ -59875,9 +59871,6 @@
 "at": "2026-11-11"
 },
 "arc:NAGC:2012": {
-"at": "2026-11-11"
-},
-"web:HALEON:2019": {
 "at": "2026-11-11"
 }
 }
