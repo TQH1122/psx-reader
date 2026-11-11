@@ -60522,7 +60522,9 @@
 },
 "khi:BNWM:2021": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 14
 },
 "khi:POML:2024": {
 "at": "2026-11-11",
@@ -61106,7 +61108,9 @@
 },
 "drive:GADT:2013": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 0
 },
 "web:WAFI:2012": {
 "at": "2026-11-11",
@@ -61114,11 +61118,16 @@
 },
 "khi:TRG:2009": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 7
 },
 "khi:LOTCHEM:2009": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: Not annual accounts pages (only notes and text)"
 },
 "drive:JGICL:2013": {
 "at": "2026-11-11",
@@ -61315,7 +61324,9 @@
 },
 "drive:EMCO:2014": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 32
 },
 "drive:HIRAT:2017": {
 "at": "2026-11-11",
@@ -61483,19 +61494,25 @@
 },
 "drive:UDPL:2014": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "arc:STJT:2022": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:STJT:2021": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "drive:STJT:2020": {
 "at": "2026-11-11",
@@ -61511,19 +61528,43 @@
 },
 "arc:PCAL:2010": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:HAFL:2016": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (404)"
+"why": "Company website download failed (404)",
+"retry": 1,
+"second": 1
 },
 "khi:IGIL:2018": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "arc:ASIC:2012": {
+"at": "2026-11-11",
+"waits": 2
+},
+"khi:BNWM:2018": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:GADT:2011": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:LOTCHEM:2009": {
+"at": "2026-11-11",
+"waits": 1
+},
+"arc:EMCO:2012": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:EMCO:2011": {
 "at": "2026-11-11",
 "waits": 1
 }
