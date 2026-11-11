@@ -1,23 +1,22 @@
 #!/usr/bin/env python3
-"""One off probe (11 Nov 2026): SCS Trade's fund flow (FIPI and LIPI) and mutual fund report data calls."""
-import json, re, urllib.request
-UA = {"user-agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130 Mobile Safari/537.36"}
-for page in ("https://scstrade.com/FIPILIPI.aspx", "https://scstrade.com/research/RE_Mutual_Fund_Reports.aspx"):
-    h = urllib.request.urlopen(urllib.request.Request(page, headers=UA), timeout=40).read().decode("utf-8", "ignore")
-    base = page.rsplit("/", 1)[0] + "/"
-    for m in sorted(set(re.findall(r"([\w]+\.aspx)/(\w+)", h))):
-        i = h.find(f"{m[0]}/{m[1]}")
-        ctx = re.sub(r"\s+", " ", h[max(0, i - 700): i + 500])
-        print(f"\n### {m[0]}/{m[1]} JS: {ctx[:1200]}")
-    for m in re.findall(r"(?is)<(?:select|input)[^>]*id=\"([^\"]+)\"[^>]*>(.{0,300})", h)[:12]:
-        print("FIELD:", m[0], re.sub(r"\s+", " ", m[1])[:300])
-    for meth in sorted(set(re.findall(r"[\w]+\.aspx/(\w+)", h))):
-        for body in ({}, {"date": "11/10/2026"}, {"par": "11/10/2026"}):
-            try:
-                req = urllib.request.Request(base + page.rsplit("/", 1)[1] + "/" + meth, data=json.dumps(body).encode(), method="POST",
-                                             headers={**UA, "content-type": "application/json; charset=utf-8"})
-                out = urllib.request.urlopen(req, timeout=40).read().decode("utf-8", "ignore")
-                print(f"CALL {meth} {body}: {len(out)} {out[:700]}")
-                break
-            except urllib.error.HTTPError as e:
-                print(f"CALL {meth} {body}: {e.code} {e.read().decode('utf-8','ignore')[:200]}")
+"""One off probe (11 Nov 2026): SCS Trade's fund flow and mutual fund calls with their real inputs."""
+import json, urllib.request
+UA = {"user-agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130 Mobile Safari/537.36",
+      "content-type": "application/json; charset=utf-8"}
+G = {"_search": False, "nd": 1, "rows": 500, "page": 1, "sidx": "", "sord": "asc"}
+for url, d1, d2 in [("https://scstrade.com/FIPILIPI.aspx/loadfipiInvestor", "11/10/2026", "11/10/2026"),
+                    ("https://scstrade.com/FIPILIPI.aspx/loadlipi", "11/10/2026", "11/10/2026"),
+                    ("https://scstrade.com/FIPILIPI.aspx/loadfipisector", "11/10/2026", "11/10/2026"),
+                    ("https://scstrade.com/FIPILIPI.aspx/loadmainsum", "11/10/2026", "11/10/2026"),
+                    ("https://scstrade.com/FIPILIPI.aspx/loadlipi", "01/02/2012", "01/02/2012"),
+                    ("https://scstrade.com/FIPILIPI.aspx/loadlipi", "10/01/2026", "10/31/2026"),
+                    ("https://scstrade.com/research/RE_Mutual_Fund_Reports.aspx/chart", "09/01/2026", "11/10/2026"),
+                    ("https://scstrade.com/research/RE_Mutual_Fund_Reports.aspx/chart", "01/01/2015", "12/31/2015")]:
+    for body in ({"date1": d1, "date2": d2, **G}, {"date1": d1, "date2": d2}):
+        try:
+            req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST", headers=UA)
+            out = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "ignore")
+            print(f"\nOK {url.rsplit('/',1)[1]} {d1}-{d2} {len(body)}: {len(out)} {out[:1500]}")
+            break
+        except urllib.error.HTTPError as e:
+            print(f"\nERR {url.rsplit('/',1)[1]} {d1}-{d2} {len(body)}: {e.code} {e.read().decode('utf-8','ignore')[:200]}")
