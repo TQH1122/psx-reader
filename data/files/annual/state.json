@@ -60528,7 +60528,9 @@
 },
 "khi:POML:2024": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 20
 },
 "drive:JGICL:2018": {
 "at": "2026-11-11",
@@ -60789,7 +60791,9 @@
 },
 "drive:FIL:2020": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 24
 },
 "khi:AGIC:2017": {
 "at": "2026-11-11",
@@ -60993,7 +60997,7 @@
 },
 "drive:ZTL:2022": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no figure passed the checks"
 },
@@ -61050,7 +61054,10 @@
 },
 "web:CFL:2025": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Pak Elektron Limited (names GEMPAPL)"
 },
 "arc:GTYR:2008": {
 "at": "2026-11-11",
@@ -61432,7 +61439,9 @@
 },
 "khi:SITC:2009": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 34
 },
 "drive:FRSM:2021": {
 "at": "2026-11-11",
@@ -61556,15 +61565,39 @@
 },
 "web:LOTCHEM:2009": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "arc:EMCO:2012": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:EMCO:2011": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:POML:2022": {
+"at": "2026-11-11",
+"waits": 1
+},
+"drive:CFL:2024": {
+"at": "2026-11-11",
+"waits": 1
+},
+"drive:FIL:2017": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:ZTL:2022": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
+},
+"khi:ZTL:2021": {
 "at": "2026-11-11",
 "waits": 1
 }
