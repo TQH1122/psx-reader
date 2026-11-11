@@ -31,4 +31,4 @@ jobs:
         if: always()
         run: |
           git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
-          python3 toolkit/savegit.py "Robot: morning note $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/morning/last.json
+          python3 toolkit/savegit.py "Robot: morning note $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/morning/last.json data/files/morning/note.json
