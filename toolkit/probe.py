@@ -15,16 +15,16 @@ def sh(cmd, t=180):
         return -1, "", str(e)
 
 
-print("== PSX script calls")
-code, js, _ = sh(["curl", "-s", "-m", "60", "-A", UA, "https://dps.psx.com.pk/static/script.js?v=1.81"])
-print("js bytes", len(js))
-for m in re.finditer(r"announce", js, re.I):
-    print("  ..", js[max(0, m.start() - 250):m.start() + 350].replace("\n", " ")[:600])
-code, page, _ = sh(["curl", "-s", "-m", "60", "-A", UA, "https://dps.psx.com.pk/announcements/companies"])
-for m in re.finditer(r"<form[\s\S]{0,1500}?</form>", page):
-    if "keyword" in m.group(0):
-        print("form", re.sub(r"\s+", " ", m.group(0))[:900])
-
+print("== PSX briefing page")
+jar = "/tmp/psxjar"
+sh(["curl", "-s", "-m", "60", "-A", UA, "-c", jar, "-o", "/dev/null", "https://dps.psx.com.pk/announcements/companies"])
+for data in ["type=C&symbol=&query=&count=50&offset=0&date_from=&date_to=&page=cbs", "type=C&symbol=OGDC&query=&count=50&offset=0&date_from=&date_to=&page=cbs"]:
+    code, out, _ = sh(["curl", "-s", "-m", "60", "-A", UA, "-b", jar, "-X", "POST", "-H", "X-Requested-With: XMLHttpRequest",
+                       "-H", "Referer: https://dps.psx.com.pk/announcements/companies", "-d", data, "https://dps.psx.com.pk/announcements"])
+    rows = re.findall(r"<tr[\s\S]*?</tr>", out)
+    print(data[:40], "bytes", len(out), "rows", len(rows), re.findall(r"data-total=\"(\d+)\"", out)[:1])
+    for r in rows[:5]:
+        print("  ", re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " | ", r))[:220], re.findall(r"(?:href|data-images)=\"([^\"]+)\"", r)[:3])
 print("== Gemini reads a YouTube video")
 key = os.environ.get("GEMINI_API_KEY", "")
 try:
@@ -35,7 +35,7 @@ try:
 except Exception as e:
     flash = ["gemini-2.5-flash"]
     print("model list failed", str(e)[:120])
-for model in [m for m in ["gemini-2.5-flash", "gemini-flash-latest"] if m in flash][:2] or flash[:1]:
+for model in [m for m in ["gemini-3.5-flash", "gemini-3-flash-preview", "gemini-omni-1.2-flash", "gemini-3.5-flash-lite"] if m in flash]:
     body = {"contents": [{"parts": [
         {"file_data": {"file_uri": f"https://www.youtube.com/watch?v={VID}"}, "video_metadata": {"start_offset": "600s", "end_offset": "780s"}},
         {"text": "Transcribe every spoken word of this clip exactly, in the language spoken, with [mm:ss] times. Then write ENGLISH: and a faithful English translation."}]}],
@@ -52,21 +52,4 @@ for model in [m for m in ["gemini-2.5-flash", "gemini-flash-latest"] if m in fla
     except Exception as e:
         print(model, "failed", str(e)[:200])
 
-print("== briefing videos on known channels")
-sh([sys.executable, "-m", "pip", "install", "-q", "-U", "yt-dlp"], 300)
-for q in ["Akseer Research", "Akseer corporate briefing session", "KTrade corporate briefing session", "Optimus capital corporate briefing session"]:
-    code, out, err = sh(["yt-dlp", "--flat-playlist", "-J", f"ytsearch10:{q}"], 120)
-    try:
-        ents = json.loads(out).get("entries") or []
-    except Exception:
-        ents = []
-    print("search", q, sorted({(e.get("channel"), e.get("channel_id")) for e in ents}))
-for ch in ["UCr6RYtCwd1rsu6UyQZsPbNA", "UC1ilKViIpulidQm5UL6mGTQ", "UCtAosckRYJ95N6OPBH_ZOMg", "UC8iqMHYlaUCM3TRBvAcP1bA", "UCfXgbAAHzN_VxGJg2agyAYA"]:
-    code, out, err = sh(["yt-dlp", "--flat-playlist", "-J", f"https://www.youtube.com/channel/{ch}/videos"], 240)
-    try:
-        es = json.loads(out).get("entries") or []
-        cbs = [e for e in es if re.search(r"brief|cbs|analyst", e.get("title") or "", re.I)]
-        print("channel", ch, "videos", len(es), "briefing titles", len(cbs), [e.get("title")[:60] for e in cbs[:3]])
-    except Exception:
-        print("channel", ch, "failed", (err.strip().splitlines() or [""])[-1][:150])
 print("done: probe")
