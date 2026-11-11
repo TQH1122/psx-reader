@@ -52914,9 +52914,9 @@
 },
 "arc:TRG:2016": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "company name does not match: Afiniti International Holding Limited (names INIL)",
+"why": "company name does not match: IGSP",
 "waits": 2
 },
 "khi:SITC:2021": {
@@ -59893,6 +59893,12 @@
 "at": "2026-11-11"
 },
 "arc:RMPL:2009": {
+"at": "2026-11-11"
+},
+"arc:TRG:2015": {
+"at": "2026-11-11"
+},
+"drive:PSX:2019": {
 "at": "2026-11-11"
 }
 }
