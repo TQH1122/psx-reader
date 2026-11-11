@@ -7,7 +7,7 @@
 name: Every number library
 on:
   schedule:
-    - cron: '41 1-23/6 * * *'
+    - cron: '41 */2 * * *'   # every 2 hours (11 Nov 2026): new report text is copied soon after it arrives
   workflow_dispatch:
   push:
     paths: ['.github/run-numbers', '.github/workflows/numbers.yml']
