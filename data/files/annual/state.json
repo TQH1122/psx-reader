@@ -60901,7 +60901,7 @@
 },
 "arc:EXIDE:2014": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
 "retry": 1,
@@ -61324,7 +61324,10 @@
 },
 "arc:EXIDE:2015": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:EMCO:2021": {
 "at": "2026-11-11",
