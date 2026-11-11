@@ -55749,7 +55749,7 @@
 "waits": 2
 },
 "khi:ASC:2025": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 1
 },
 "drive:SHDT:2024": {
@@ -56317,7 +56317,10 @@
 },
 "khi:TRIPF:2010": {
 "at": "2026-11-10",
-"waits": 2
+"waits": 2,
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: Primary financial statements (Profit and Loss Account, Balance Sheet) not provid"
 },
 "khi:IBLHL:2016": {
 "at": "2026-11-10",
@@ -56496,8 +56499,9 @@
 "at": "2026-11-10",
 "tries": 1,
 "rev": 5,
-"why": "no figure passed the checks",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 38
 },
 "drive:ALAC:2020": {
 "at": "2026-11-10",
@@ -56618,11 +56622,11 @@
 "n": 0
 },
 "khi:TSBL:2023": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 2
 },
 "arc:JSRR:2015": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "tries": 1,
 "rev": 5,
 "why": "company name does not match: Pakistan State Life Insurance Company Limited (names AICL)",
@@ -56633,11 +56637,11 @@
 "waits": 2
 },
 "drive:PPP:2022": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 2
 },
 "drive:AVN:2024": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 2
 },
 "web:GLAXO:2023": {
@@ -57300,7 +57304,9 @@
 "waits": 2
 },
 "arc:BWCL:2008": {
-"at": "2026-11-10"
+"at": "2026-11-10",
+"done": true,
+"n": 13
 },
 "drive:AVN:2015": {
 "at": "2026-11-10",
@@ -57495,9 +57501,11 @@
 "drive:FEM:2022": {
 "at": "2026-11-10",
 "waits": 2,
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:SNAI:2013": {
 "at": "2026-11-10",
@@ -57604,11 +57612,11 @@
 "at": "2026-11-10"
 },
 "drive:KSBP:2021": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 1
 },
 "drive:POML:2025": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 1
 },
 "drive:FATIMA:2020": {
@@ -57633,7 +57641,9 @@
 },
 "drive:GSPM:2017": {
 "at": "2026-11-10",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 4
 },
 "drive:SIEM:2015": {
 "at": "2026-11-10",
@@ -57858,6 +57868,15 @@
 "waits": 1
 },
 "drive:FEM:2015": {
+"at": "2026-11-10"
+},
+"web:TRIPF:2010": {
+"at": "2026-11-10",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (403)"
+},
+"khi:CLOV:2019": {
 "at": "2026-11-10"
 }
 }
