@@ -20,7 +20,7 @@ concurrency:
 jobs:
   read:
     runs-on: ubuntu-latest
-    timeout-minutes: 120   # room for the 45 minute read plus the longest rest before the next run
+    timeout-minutes: 150   # room for the 45 minute read, the extras and the longest rest before the next run
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Read waiting broker reports
-        timeout-minutes: 75   # 45 minute read, then notes (12) and departed companies (10)
+        timeout-minutes: 100   # 45 minute read, then notes (12), sector (10), departed companies (10) and promises (12)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
