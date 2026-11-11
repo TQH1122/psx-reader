@@ -4,7 +4,8 @@ data loads. Public pages only; prints status, size and the links and script call
 import json, os, re, urllib.request
 
 UA = {"user-agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Mobile Safari/537.36"}
-URLS = ["https://www.nccpl.com.pk/", "https://www.nccpl.com.pk/market-information", "https://www.nccpl.com.pk/fipi-lipi",
+URLS = ["https://scstrade.com/FIPILIPI.aspx", "https://scstrade.com/research/RE_Mutual_Fund_Reports.aspx"]
+OLD = ["https://www.nccpl.com.pk/", "https://www.nccpl.com.pk/market-information", "https://www.nccpl.com.pk/fipi-lipi",
         "https://beta.nccpl.com.pk/market-information", "https://www.mufap.com.pk/", "https://www.mufap.com.pk/Industry/IndustryStatDaily",
         "https://www.mufap.com.pk/FundProfile/FundManagerReports", "https://www.mufap.com.pk/WebRegulations/FundManagerReport",
         "https://scstrade.com/research/RE_Mutual_Fund_Reports.aspx", "https://finhisaab.com/market-updates/fipi-lipi",
@@ -17,8 +18,12 @@ for u in URLS:
         keep = [l for l in links if re.search(r"(?i)fipi|lipi|fund|holding|portfolio|api|ajax|json|\.aspx|report|flow|investor|xls|csv|pdf", l)]
         print(f"\n=== {u} {r.status} {len(h)} bytes")
         print("\n".join(keep[:70]))
-        for m in re.findall(r"(?i)(fetch\(|\$\.ajax|axios\.|XMLHttpRequest|__doPostBack|WebMethod)[^;]{0,160}", h)[:8]:
-            print("JS:", m)
+        for m in re.findall(r"(?is)\$\.ajax\(\{.{0,500}?\}\)", h)[:12]:
+            print("AJAX:", re.sub(r"\s+", " ", m)[:500])
+        for m in sorted(set(re.findall(r"[\w/.-]+\.aspx/\w+", h))):
+            print("METHOD:", m)
+        for m in re.findall(r"(?is)<select[^>]*>.{0,600}", h)[:4]:
+            print("SELECT:", re.sub(r"\s+", " ", m)[:600])
         print("TEXT:", re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", re.sub(r"(?s)<script.*?</script>|<style.*?</style>", "", h)))[:900])
     except Exception as e:
         print(f"\n=== {u} FAILED {str(e)[:150]}")
