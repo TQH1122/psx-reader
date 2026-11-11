@@ -18,38 +18,15 @@ def sh(cmd, t=180):
 print("== PSX briefing page")
 jar = "/tmp/psxjar"
 sh(["curl", "-s", "-m", "60", "-A", UA, "-c", jar, "-o", "/dev/null", "https://dps.psx.com.pk/announcements/companies"])
+for u in ["https://dps.psx.com.pk/announcements/cbs", "https://dps.psx.com.pk/corporate-briefing"]:
+    code, out, _ = sh(["curl", "-s", "-m", "60", "-A", UA, "-w", "\\n%{http_code}", u])
+    print(u, out[-3:], len(out), [m for m in re.findall(r"<option[^>]*>([^<]{2,40})<", out)][:5])
 for data in ["type=C&symbol=&query=&count=50&offset=0&date_from=&date_to=&page=cbs", "type=C&symbol=OGDC&query=&count=50&offset=0&date_from=&date_to=&page=cbs"]:
     code, out, _ = sh(["curl", "-s", "-m", "60", "-A", UA, "-b", jar, "-X", "POST", "-H", "X-Requested-With: XMLHttpRequest",
-                       "-H", "Referer: https://dps.psx.com.pk/announcements/companies", "-d", data, "https://dps.psx.com.pk/announcements"])
+                       "-H", "Referer: https://dps.psx.com.pk/announcements/companies", "-H", "Origin: https://dps.psx.com.pk", "-w", "\\nHTTP%{http_code}", "-d", data, "https://dps.psx.com.pk/announcements"])
+    print("status", out[-7:])
     rows = re.findall(r"<tr[\s\S]*?</tr>", out)
     print(data[:40], "bytes", len(out), "rows", len(rows), re.findall(r"data-total=\"(\d+)\"", out)[:1])
     for r in rows[:5]:
         print("  ", re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " | ", r))[:220], re.findall(r"(?:href|data-images)=\"([^\"]+)\"", r)[:3])
-print("== Gemini reads a YouTube video")
-key = os.environ.get("GEMINI_API_KEY", "")
-try:
-    ms = json.load(urllib.request.urlopen("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200&key=" + key, timeout=60))
-    names = [m["name"].split("/")[1] for m in ms.get("models", []) if "generateContent" in m.get("supportedGenerationMethods", [])]
-    flash = [n for n in names if "flash" in n and "image" not in n and "tts" not in n and "live" not in n]
-    print("flash models", flash[:12])
-except Exception as e:
-    flash = ["gemini-2.5-flash"]
-    print("model list failed", str(e)[:120])
-for model in [m for m in ["gemini-3.5-flash", "gemini-3-flash-preview", "gemini-omni-1.2-flash", "gemini-3.5-flash-lite"] if m in flash]:
-    body = {"contents": [{"parts": [
-        {"file_data": {"file_uri": f"https://www.youtube.com/watch?v={VID}"}, "video_metadata": {"start_offset": "600s", "end_offset": "780s"}},
-        {"text": "Transcribe every spoken word of this clip exactly, in the language spoken, with [mm:ss] times. Then write ENGLISH: and a faithful English translation."}]}],
-        "generationConfig": {"temperature": 0, "mediaResolution": "MEDIA_RESOLUTION_LOW"}}
-    req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}",
-                                 data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
-    try:
-        j = json.load(urllib.request.urlopen(req, timeout=300))
-        t = "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
-        print(model, "ok, chars", len(t), "usage", j.get("usageMetadata", {}).get("promptTokenCount"))
-        print("  ", re.sub(r"\s+", " ", t)[:500])
-    except urllib.error.HTTPError as e:
-        print(model, "http", e.code, e.read().decode()[:300])
-    except Exception as e:
-        print(model, "failed", str(e)[:200])
-
 print("done: probe")
