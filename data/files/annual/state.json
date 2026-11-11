@@ -58623,7 +58623,8 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Saigol Power Limited (names HUBC)"
+"why": "company name does not match: Saigol Power Limited (names HUBC)",
+"waits": 1
 },
 "drive:FATIMA:2019": {
 "at": "2026-11-11",
@@ -59936,7 +59937,10 @@
 },
 "khi:PRL:2010": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:DFML:2019": {
 "at": "2026-11-11",
