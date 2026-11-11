@@ -60997,9 +60997,11 @@
 },
 "drive:ZTL:2022": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:AHTM:2014": {
 "at": "2026-11-11",
@@ -61259,9 +61261,9 @@
 },
 "web:AGIC:2013": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "not annual accounts: financial statements not provided"
 },
 "drive:PINL:2019": {
 "at": "2026-11-11",
@@ -61589,15 +61591,21 @@
 },
 "drive:FIL:2017": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:ZTL:2022": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "khi:ZTL:2021": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:AGIC:2012": {
 "at": "2026-11-11",
 "waits": 1
 }
