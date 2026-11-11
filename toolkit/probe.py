@@ -1,39 +1,23 @@
 #!/usr/bin/env python3
-"""One off probe (11 Nov 2026): which free fund flow and fund holding sources answer GitHub's computers, and how their
-data loads. Public pages only; prints status, size and the links and script calls each page makes."""
-import json, os, re, urllib.request
-
-UA = {"user-agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Mobile Safari/537.36"}
-URLS = ["https://scstrade.com/FIPILIPI.aspx", "https://scstrade.com/research/RE_Mutual_Fund_Reports.aspx"]
-OLD = ["https://www.nccpl.com.pk/", "https://www.nccpl.com.pk/market-information", "https://www.nccpl.com.pk/fipi-lipi",
-        "https://beta.nccpl.com.pk/market-information", "https://www.mufap.com.pk/", "https://www.mufap.com.pk/Industry/IndustryStatDaily",
-        "https://www.mufap.com.pk/FundProfile/FundManagerReports", "https://www.mufap.com.pk/WebRegulations/FundManagerReport",
-        "https://scstrade.com/research/RE_Mutual_Fund_Reports.aspx", "https://finhisaab.com/market-updates/fipi-lipi",
-        "https://www.secp.gov.pk/data-and-statistics/capital-markets/", "https://dps.psx.com.pk/market-summary"]
-for u in URLS:
-    try:
-        r = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=40)
-        h = r.read().decode("utf-8", "ignore")
-        links = sorted(set(re.findall(r'(?:href|src|action|url)\s*[:=]\s*["\']([^"\'#]{4,160})["\']', h)))
-        keep = [l for l in links if re.search(r"(?i)fipi|lipi|fund|holding|portfolio|api|ajax|json|\.aspx|report|flow|investor|xls|csv|pdf", l)]
-        print(f"\n=== {u} {r.status} {len(h)} bytes")
-        print("\n".join(keep[:70]))
-        for m in re.findall(r"(?is)\$\.ajax\(\{.{0,500}?\}\)", h)[:12]:
-            print("AJAX:", re.sub(r"\s+", " ", m)[:500])
-        for m in sorted(set(re.findall(r"[\w/.-]+\.aspx/\w+", h))):
-            print("METHOD:", m)
-        for m in re.findall(r"(?is)<select[^>]*>.{0,600}", h)[:4]:
-            print("SELECT:", re.sub(r"\s+", " ", m)[:600])
-        print("TEXT:", re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", re.sub(r"(?s)<script.*?</script>|<style.*?</style>", "", h)))[:900])
-    except Exception as e:
-        print(f"\n=== {u} FAILED {str(e)[:150]}")
-tok = os.environ.get("GITHUB_MODELS_TOKEN")
-if tok:
-    req = urllib.request.Request("https://models.github.ai/inference/chat/completions", method="POST",
-                                 data=json.dumps({"model": "openai/gpt-4.1", "messages": [{"role": "user", "content": "Reply as JSON {\"ok\": true}"}],
-                                                  "response_format": {"type": "json_object"}}).encode(),
-                                 headers={"authorization": f"Bearer {tok}", "content-type": "application/json"})
-    try:
-        print("\n=== github models", urllib.request.urlopen(req, timeout=60).read().decode()[:300])
-    except urllib.error.HTTPError as e:
-        print("\n=== github models error", e.code, e.read().decode()[:400])
+"""One off probe (11 Nov 2026): SCS Trade's fund flow (FIPI and LIPI) and mutual fund report data calls."""
+import json, re, urllib.request
+UA = {"user-agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/130 Mobile Safari/537.36"}
+for page in ("https://scstrade.com/FIPILIPI.aspx", "https://scstrade.com/research/RE_Mutual_Fund_Reports.aspx"):
+    h = urllib.request.urlopen(urllib.request.Request(page, headers=UA), timeout=40).read().decode("utf-8", "ignore")
+    base = page.rsplit("/", 1)[0] + "/"
+    for m in sorted(set(re.findall(r"([\w]+\.aspx)/(\w+)", h))):
+        i = h.find(f"{m[0]}/{m[1]}")
+        ctx = re.sub(r"\s+", " ", h[max(0, i - 700): i + 500])
+        print(f"\n### {m[0]}/{m[1]} JS: {ctx[:1200]}")
+    for m in re.findall(r"(?is)<(?:select|input)[^>]*id=\"([^\"]+)\"[^>]*>(.{0,300})", h)[:12]:
+        print("FIELD:", m[0], re.sub(r"\s+", " ", m[1])[:300])
+    for meth in sorted(set(re.findall(r"[\w]+\.aspx/(\w+)", h))):
+        for body in ({}, {"date": "11/10/2026"}, {"par": "11/10/2026"}):
+            try:
+                req = urllib.request.Request(base + page.rsplit("/", 1)[1] + "/" + meth, data=json.dumps(body).encode(), method="POST",
+                                             headers={**UA, "content-type": "application/json; charset=utf-8"})
+                out = urllib.request.urlopen(req, timeout=40).read().decode("utf-8", "ignore")
+                print(f"CALL {meth} {body}: {len(out)} {out[:700]}")
+                break
+            except urllib.error.HTTPError as e:
+                print(f"CALL {meth} {body}: {e.code} {e.read().decode('utf-8','ignore')[:200]}")
