@@ -6,7 +6,7 @@
 name: Brain explorer
 on:
   schedule:
-    - cron: '41 */6 * * *'
+    - cron: '41 */4 * * *'   # every 4 hours (11 Nov 2026): the deeper level 1 ideas keep the robots busy
   workflow_dispatch:
   push:
     paths: ['.github/run-explorer']
