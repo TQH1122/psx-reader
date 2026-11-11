@@ -19698,7 +19698,7 @@
 "second": 1
 },
 "web:DBCI:2023": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "n": 20,
 "retry": 1,
 "tries": 1,
@@ -58315,7 +58315,7 @@
 },
 "web:PAKT:2011": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "Company website download failed (403)",
 "retry": 1,
@@ -58666,7 +58666,7 @@
 },
 "web:NRL:2011": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "Company website download failed (0)",
 "retry": 1,
@@ -59816,7 +59816,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:GADT:2021": {
 "at": "2026-11-11"
@@ -59846,7 +59848,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (404)"
+"why": "Company website download failed (404)",
+"retry": 1,
+"second": 1
 },
 "drive:SUTM:2023": {
 "at": "2026-11-11"
