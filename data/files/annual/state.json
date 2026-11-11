@@ -58623,9 +58623,9 @@
 },
 "arc:KOHE:2014": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "company name does not match: Saigol Power Limited (names HUBC)",
+"why": "company name does not match: not stated",
 "waits": 1
 },
 "drive:FATIMA:2019": {
@@ -60146,7 +60146,10 @@
 },
 "arc:KEL:2011": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: KESC"
 },
 "drive:NEXT:2016": {
 "at": "2026-11-11"
@@ -60164,6 +60167,10 @@
 "waits": 1
 },
 "khi:DYNO:2016": {
+"at": "2026-11-11",
+"waits": 1
+},
+"drive:KOHE:2013": {
 "at": "2026-11-11",
 "waits": 1
 }
