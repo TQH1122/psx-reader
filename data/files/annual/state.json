@@ -61703,17 +61703,45 @@
 },
 "arc:CHCC:2009": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Mirpurkhas Sugar Mills Limited (names AABS)"
 },
 "web:WAFI:2011": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
 },
 "web:AGIC:2011": {
 "at": "2026-11-11",
 "waits": 1
 },
 "drive:MDTL:2014": {
+"at": "2026-11-11",
+"waits": 1,
+"done": true,
+"n": 12
+},
+"arc:CHCC:2008": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:WAFI:2010": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
+},
+"web:WAFI:2009": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
+},
+"arc:MDTL:2012": {
 "at": "2026-11-11",
 "waits": 1
 }
