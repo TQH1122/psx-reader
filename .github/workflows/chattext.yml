@@ -1,0 +1,45 @@
+# PSX chat, step 3 (11 Nov 2026): the report passages the website's chat may quote. Scripts only, no AI, no keys
+# (toolkit/chattext.py in the private tracker). Reads the report text library (a private release) and saves each
+# company's key passages to the private repository, never here and never on the website. Only companies whose text
+# changed are redone, so later runs take minutes. Chained: while companies are left, each run starts the next.
+name: Chat report passages
+on:
+  schedule:
+    - cron: '47 */6 * * *'
+  workflow_dispatch:
+  push:
+    paths: ['.github/run-chattext']
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: chattext
+  cancel-in-progress: false
+jobs:
+  passages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 130
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - name: Pick the passages
+        env:
+          GH_TOKEN: ${{ secrets.TRACKER_TOKEN }}
+        run: python3 toolkit/chattext.py --minutes 100 2> /tmp/chattext_err.log | tail -n 1 | tee /tmp/chattext_done.txt; tail -n 20 /tmp/chattext_err.log || true
+      - name: Save to the private repository
+        if: always()
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          python3 toolkit/savegit.py "Robot: chat report passages $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/chattext
+      - name: Start the next run while companies are left
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # a run that stopped on its time limit updated many companies; one that finished updates few
+          n=$(grep -o 'done: report passages for the chat: [0-9]*' /tmp/chattext_done.txt | grep -o '[0-9]*$' || echo 0)
+          echo "updated this run: $n"
+          if [ "${n:-0}" -ge 25 ]; then for i in 1 2 3; do gh workflow run chattext.yml -R ${{ github.repository }} --ref main && exit 0; sleep 30; done; fi
