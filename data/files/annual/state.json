@@ -61698,7 +61698,9 @@
 },
 "web:BGL:2009": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 23
 },
 "drive:NONS:2015": {
 "at": "2026-11-11",
@@ -61744,7 +61746,10 @@
 },
 "arc:CHCC:2008": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: MIRPURKHAS SUGAR MILLS LTD (names AABS)"
 },
 "web:WAFI:2010": {
 "at": "2026-11-11",
@@ -61771,17 +61776,30 @@
 },
 "khi:JSGCL:2021": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 13
 },
 "drive:FSWL:2018": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "arc:EMCO:2009": {
 "at": "2026-11-11",
 "waits": 2
 },
 "arc:MDTL:2011": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:BGL:2008": {
+"at": "2026-11-11",
+"waits": 1
+},
+"arc:JSGCL:2017": {
 "at": "2026-11-11",
 "waits": 1
 }
