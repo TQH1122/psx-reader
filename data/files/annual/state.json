@@ -21306,7 +21306,7 @@
 "second": 1
 },
 "web:FECM:2026": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "n": 12,
 "retry": 1,
 "tries": 1,
@@ -21349,7 +21349,7 @@
 "redo9": 1
 },
 "web:PIL:2025": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "n": 6,
 "retry": 1,
 "tries": 1,
@@ -21509,7 +21509,7 @@
 "why": "not annual accounts: The provided pages do not contain the complete annual accounts (Statement of Fin"
 },
 "web:BFMOD:2025": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "n": 2,
 "retry": 1,
 "tries": 1,
@@ -55786,7 +55786,7 @@
 "waits": 1
 },
 "khi:ANSM:2007": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 1
 },
 "drive:ECOP:2014": {
@@ -55797,7 +55797,7 @@
 "why": "company name does not match: Eco Pack Ltd (names TRIPF)"
 },
 "khi:STJT:2025": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 2
 },
 "khi:ASC:2025": {
@@ -55807,11 +55807,11 @@
 "n": 0
 },
 "drive:SHDT:2024": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 2
 },
 "drive:PRWM:2024": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 2
 },
 "khi:UVIC:2022": {
@@ -57387,7 +57387,7 @@
 "second": 1
 },
 "drive:HUMNL:2017": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 1
 },
 "drive:NCPL:2020": {
@@ -57936,7 +57936,7 @@
 "n": 0
 },
 "drive:SSOM:2013": {
-"at": "2026-11-10"
+"at": "2026-11-11"
 },
 "drive:KSBP:2021": {
 "at": "2026-11-11",
@@ -58289,7 +58289,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (403)"
+"why": "Company website download failed (403)",
+"retry": 1,
+"second": 1
 },
 "drive:ANSM:2014": {
 "at": "2026-11-11",
@@ -58313,9 +58315,11 @@
 },
 "web:PAKT:2011": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (403)"
+"why": "Company website download failed (403)",
+"retry": 1,
+"second": 1
 },
 "web:ICL:2010": {
 "at": "2026-11-11",
@@ -58373,8 +58377,9 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Century Paper & Board Mills Limited (names CENI)",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 36
 },
 "drive:FASM:2018": {
 "at": "2026-11-11",
@@ -58485,9 +58490,11 @@
 },
 "drive:FPJM:2014": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:ATLH:2010": {
 "at": "2026-11-11",
@@ -58542,9 +58549,11 @@
 },
 "khi:GVGL:2022": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:MWMP:2024": {
 "at": "2026-11-11",
@@ -58592,7 +58601,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "drive:TATM:2019": {
 "at": "2026-11-11",
@@ -58616,21 +58627,27 @@
 },
 "drive:PRET:2021": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:PRET:2018": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:PRET:2017": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "drive:GADT:2025": {
 "at": "2026-11-11",
@@ -58649,9 +58666,11 @@
 },
 "web:NRL:2011": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "drive:TATM:2018": {
 "at": "2026-11-11",
@@ -58677,19 +58696,25 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:HABSM:2015": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:HABSM:2014": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "web:BGL:2016": {
 "at": "2026-11-11",
@@ -58803,7 +58828,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:APL:2016": {
 "at": "2026-11-11",
@@ -58812,15 +58839,19 @@
 },
 "khi:NRSL:2015": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "web:NRSL:2014": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "web:NCPL:2011": {
 "at": "2026-11-11",
@@ -58836,7 +58867,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "web:NRSL:2013": {
 "at": "2026-11-11",
@@ -58847,7 +58880,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:HWQS:2014": {
 "at": "2026-11-11",
@@ -58984,7 +59019,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (404)"
+"why": "Company website download failed (404)",
+"retry": 1,
+"second": 1
 },
 "drive:HWQS:2021": {
 "at": "2026-11-11",
@@ -59005,11 +59042,15 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:HUMNL:2019": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "web:SERT:2013": {
 "at": "2026-11-11",
@@ -59143,13 +59184,17 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:PASL:2008": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "drive:SHJS:2020": {
 "at": "2026-11-11",
@@ -59386,7 +59431,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:PICT:2009": {
 "at": "2026-11-11",
@@ -59568,7 +59615,9 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:FEM:2014": {
 "at": "2026-11-11",
@@ -59589,19 +59638,25 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:GHGL:2011": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "arc:GHGL:2010": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "drive:ALTN:2014": {
 "at": "2026-11-11",
@@ -59647,7 +59702,8 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"second": 1
 },
 "drive:JUBS:2014": {
 "at": "2026-11-11",
@@ -59746,5 +59802,71 @@
 "drive:MDTL:2023": {
 "at": "2026-11-11",
 "waits": 1
+},
+"web:BAPL:2020": {
+"at": "2026-11-11"
+},
+"web:PAKQATAR:2017": {
+"at": "2026-11-11"
+},
+"arc:COLG:2013": {
+"at": "2026-11-11"
+},
+"arc:GVGL:2022": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:GADT:2021": {
+"at": "2026-11-11"
+},
+"web:PRET:2021": {
+"at": "2026-11-11"
+},
+"web:NRSL:2015": {
+"at": "2026-11-11"
+},
+"arc:SEPL:2010": {
+"at": "2026-11-11"
+},
+"web:STPL:2015": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
+},
+"web:CHBL:2020": {
+"at": "2026-11-11"
+},
+"web:MERIT:2020": {
+"at": "2026-11-11"
+},
+"web:NCML:2021": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (404)"
+},
+"drive:SUTM:2023": {
+"at": "2026-11-11"
+},
+"drive:NCML:2019": {
+"at": "2026-11-11"
+},
+"drive:HMB:2019": {
+"at": "2026-11-11"
+},
+"drive:PPP:2019": {
+"at": "2026-11-11"
+},
+"drive:PKGI:2018": {
+"at": "2026-11-11"
+},
+"drive:EMCO:2021": {
+"at": "2026-11-11"
+},
+"arc:NAGC:2012": {
+"at": "2026-11-11"
 }
 }
