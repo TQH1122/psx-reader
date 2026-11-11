@@ -60428,7 +60428,9 @@
 },
 "drive:SHDT:2023": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 32
 },
 "khi:ASC:2023": {
 "at": "2026-11-11",
@@ -60490,7 +60492,9 @@
 },
 "khi:BUXL:2022": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 4
 },
 "drive:SLYT:2014": {
 "at": "2026-11-11",
@@ -61069,7 +61073,9 @@
 },
 "drive:IGIL:2020": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 20
 },
 "drive:GADT:2015": {
 "at": "2026-11-11",
@@ -61346,7 +61352,7 @@
 },
 "drive:NONS:2021": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:BAPL:2018": {
 "at": "2026-11-11",
@@ -61355,21 +61361,23 @@
 },
 "web:DBCI:2020": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "arc:SLYT:2013": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:ASTL:2020": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "khi:PCAL:2010": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "khi:UVIC:2018": {
 "at": "2026-11-11",
@@ -61391,37 +61399,45 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"retry": 1,
+"second": 1
 },
 "web:RICL:2016": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "web:SITC:2010": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (404)"
+"why": "Company website download failed (404)",
+"retry": 1,
+"second": 1
 },
 "khi:SITC:2009": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:FRSM:2021": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "arc:CHCC:2011": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:HAFL:2016": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:HAFL:2015": {
 "at": "2026-11-11",
@@ -61429,15 +61445,17 @@
 },
 "arc:PINL:2017": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:ASIC:2014": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 10
 },
 "drive:CLOV:2014": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:UDPL:2017": {
 "at": "2026-11-11",
@@ -61464,6 +61482,48 @@
 "waits": 1
 },
 "drive:UDPL:2014": {
+"at": "2026-11-11",
+"waits": 1
+},
+"arc:STJT:2022": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"arc:STJT:2021": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:STJT:2020": {
+"at": "2026-11-11",
+"waits": 1
+},
+"drive:SHDT:2015": {
+"at": "2026-11-11",
+"waits": 1
+},
+"khi:BUXL:2021": {
+"at": "2026-11-11",
+"waits": 1
+},
+"arc:PCAL:2010": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:HAFL:2016": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (404)"
+},
+"khi:IGIL:2018": {
+"at": "2026-11-11",
+"waits": 1
+},
+"arc:ASIC:2012": {
 "at": "2026-11-11",
 "waits": 1
 }
