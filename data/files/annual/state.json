@@ -53425,10 +53425,12 @@
 },
 "drive:AGTL:2014": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
 "why": "no two models gave a usable read",
-"waits": 0
+"waits": 0,
+"retry": 1,
+"second": 1
 },
 "drive:FTMM:2020": {
 "at": "2026-11-10",
@@ -56854,7 +56856,8 @@
 "waits": 1,
 "tries": 1,
 "rev": 5,
-"why": "no two models gave a usable read"
+"done": true,
+"n": 8
 },
 "drive:PPP:2022": {
 "at": "2026-11-11",
@@ -59118,10 +59121,10 @@
 },
 "khi:KEL:2011": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "not annual accounts: Provided pages contain only notes to financial statements (Notes 4-20), not the ",
-"waits": 2
+"why": "no two models gave a usable read",
+"waits": 0
 },
 "web:GRYL:2012": {
 "at": "2026-11-11",
@@ -59885,10 +59888,12 @@
 },
 "drive:EFUL:2015": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
 "why": "no two models gave a usable read",
-"waits": 0
+"waits": 0,
+"retry": 1,
+"second": 1
 },
 "drive:TSML:2013": {
 "at": "2026-11-11",
@@ -59928,7 +59933,7 @@
 },
 "khi:PRL:2010": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:DFML:2019": {
 "at": "2026-11-11",
@@ -60056,7 +60061,10 @@
 },
 "khi:CLOV:2016": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "arc:TSBL:2012": {
 "at": "2026-11-11",
@@ -60123,5 +60131,12 @@
 "drive:SHNI:2022": {
 "at": "2026-11-11",
 "waits": 1
+},
+"arc:KEL:2011": {
+"at": "2026-11-11",
+"waits": 1
+},
+"drive:NEXT:2016": {
+"at": "2026-11-11"
 }
 }
