@@ -61033,7 +61033,9 @@
 "waits": 2,
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "arc:GTYR:2011": {
 "at": "2026-11-11",
@@ -61625,13 +61627,18 @@
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "web:BGL:2011": {
 "at": "2026-11-11",
 "waits": 1
 },
 "arc:CFL:2023": {
+"at": "2026-11-11",
+"waits": 2
+},
+"khi:THCCL:2026": {
 "at": "2026-11-11",
 "waits": 1
 }
