@@ -61327,7 +61327,9 @@
 "waits": 2,
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "arc:EMCO:2021": {
 "at": "2026-11-11",
