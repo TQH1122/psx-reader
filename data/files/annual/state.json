@@ -60589,7 +60589,9 @@
 },
 "khi:JSGCL:2023": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 34
 },
 "khi:SITC:2015": {
 "at": "2026-11-11",
@@ -61711,9 +61713,11 @@
 "web:WAFI:2011": {
 "at": "2026-11-11",
 "waits": 1,
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "web:AGIC:2011": {
 "at": "2026-11-11",
@@ -61731,17 +61735,25 @@
 },
 "web:WAFI:2010": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "web:WAFI:2009": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "arc:MDTL:2012": {
+"at": "2026-11-11",
+"waits": 1
+},
+"khi:JSGCL:2021": {
 "at": "2026-11-11",
 "waits": 1
 }
