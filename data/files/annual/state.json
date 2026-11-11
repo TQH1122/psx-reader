@@ -25612,7 +25612,7 @@
 "why": "not annual accounts (interim statements)"
 },
 "khi:QUICE:2019": {
-"at": "2026-11-03",
+"at": "2026-11-11",
 "n": 2,
 "retry": 1,
 "tries": 1,
@@ -55745,11 +55745,15 @@
 },
 "khi:MIRKS:2025": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 40
 },
 "drive:QUICE:2021": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 36
 },
 "web:FASM:2019": {
 "at": "2026-11-11",
@@ -56350,9 +56354,11 @@
 "drive:AGIC:2018": {
 "at": "2026-11-11",
 "waits": 1,
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:KOHTM:2022": {
 "at": "2026-11-11",
@@ -59108,7 +59114,7 @@
 },
 "drive:PSX:2022": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: Gadoon Textile Mills Limited (names AATM)"
 },
@@ -59881,6 +59887,12 @@
 "at": "2026-11-11"
 },
 "web:AGIC:2018": {
+"at": "2026-11-11"
+},
+"drive:MIRKS:2024": {
+"at": "2026-11-11"
+},
+"arc:RMPL:2009": {
 "at": "2026-11-11"
 }
 }
