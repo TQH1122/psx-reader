@@ -19206,14 +19206,14 @@
 },
 "web:OML:2020": {
 "at": "2026-11-11",
-"tries": 1,
-"rev": 4,
-"why": "not annual accounts: Provided pages are notes to the financial statements (notes 1, 2, 9, 32, 33), no",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: The provided pages do not contain the required key financial statement figures.",
 "retry": 1,
 "redo8": 1
 },
 "web:OML:2019": {
-"at": "2026-11-03",
+"at": "2026-11-11",
 "tries": 1,
 "rev": 4,
 "why": "scanned report (left for later, OCR too slow)",
@@ -31756,7 +31756,7 @@
 "second": 1
 },
 "web:CFL:2026": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "n": 36,
 "retry": 1,
 "tries": 1,
@@ -56349,7 +56349,10 @@
 },
 "drive:AGIC:2018": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "drive:KOHTM:2022": {
 "at": "2026-11-11",
@@ -57304,7 +57307,7 @@
 "n": 14
 },
 "web:BCL:2010": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "tries": 1,
 "rev": 5,
 "why": "Company website download failed (200)",
@@ -57319,7 +57322,7 @@
 "n": 36
 },
 "drive:HAFL:2020": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 1
 },
 "drive:BGL:2020": {
@@ -57329,7 +57332,7 @@
 "n": 38
 },
 "drive:RICL:2025": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 1
 },
 "khi:CHCC:2018": {
@@ -57358,7 +57361,7 @@
 "waits": 2
 },
 "drive:ICIBL:2024": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "waits": 1
 },
 "web:WAFI:2019": {
@@ -59729,7 +59732,8 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Engro Fertilizer Company Limited (names EFERT)"
+"done": true,
+"n": 29
 },
 "khi:EFUL:2016": {
 "at": "2026-11-11",
@@ -59871,6 +59875,12 @@
 "at": "2026-11-11"
 },
 "arc:NAGC:2012": {
+"at": "2026-11-11"
+},
+"web:HALEON:2019": {
+"at": "2026-11-11"
+},
+"web:AGIC:2018": {
 "at": "2026-11-11"
 }
 }
