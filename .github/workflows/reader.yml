@@ -10,6 +10,7 @@ on:
 permissions:
   contents: write
   actions: write   # lets a productive run start the next one at once
+  models: read     # free GitHub Models through the robot's own key (11 Nov 2026)
 concurrency:
   group: reader
   cancel-in-progress: false
@@ -41,6 +42,7 @@ jobs:
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
+          GITHUB_MODELS_TOKEN: ${{ github.token }}   # free GitHub Models, no sign up (11 Nov 2026)
           SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}   # reads the audit's re-read list from his locked tracker site
           DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}   # his Drive reports through the API first (9 Nov 2026)
           TRACKER_TOKEN: ${{ secrets.TRACKER_TOKEN }}   # fetches the owner Drive pass from the private tracker (9 Nov 2026)

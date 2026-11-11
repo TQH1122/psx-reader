@@ -131,7 +131,7 @@ class Reader:
                 # Google lists the limit that was hit as a quotaId; only a per day limit (or a model outside the free
                 # plan, "limit: 0") rests the model until tomorrow. A per minute limit just means wait and try again.
                 ids = " ".join(re.findall(r'"quotaId"\s*:\s*"([^"]+)"', body)).lower()
-                daily = "perday" in ids or "limit: 0" in low or (not ids and ("per day" in low or "tokens per day" in low))
+                daily = "perday" in ids or "byday" in low or "limit: 0" in low or (not ids and ("per day" in low or "tokens per day" in low))
                 if self.n == 0 and attempt >= 1:  # refuses from the start (e.g. Mistral's free plan, no API): skip it this run
                     self.out, self.err = True, "refused from the start (429)"
                     return None
@@ -141,6 +141,9 @@ class Reader:
                 m = re.search(r'"retryDelay"\s*:\s*"(\d+)', body) or re.search(r"try again in (\d+(?:\.\d+)?)s", low)
                 time.sleep(min(90, float(m.group(1)) + 1 if m else 20 * (attempt + 1)))
                 continue
+            if code == 413 or "tokens_limit_reached" in low:  # this question is too long for this model (GitHub
+                self.err = "question too long for it"     # Models' free plan takes about 8,000 tokens): skip it only
+                return None
             if code == 404:  # retired model
                 self.out, self.err = True, "retired"
                 return None
@@ -261,6 +264,17 @@ def openrouter_paid(key):
     return rs
 
 
+def github_models(key):
+    """GitHub Models (models.github.ai): strong models of different makers, read from GitHub's own catalogue so a
+    retired one is never asked. Free plan: about 50 to 150 questions a day per model and short questions only."""
+    prefer = ["openai/gpt-4.1", "deepseek/deepseek-v3-0324", "meta/llama-3.3-70b-instruct", "xai/grok-3",
+              "mistral-ai/mistral-medium-2505", "openai/gpt-4o"]
+    code, body = http("https://models.github.ai/catalog/models", headers={"authorization": f"Bearer {key}"}, timeout=40)
+    have = {m.get("id") for m in (jload(body) or [])} if code == 200 and isinstance(jload(body), list) else None
+    models = [m for m in prefer if have is None or m in have]
+    return openai_readers("github", "https://models.github.ai/inference", key, models, 7, listing=False)
+
+
 def panel():
     E = os.environ.get
     rs = []
@@ -289,6 +303,9 @@ def panel():
     if E("CEREBRAS_API_KEY"):  # free plan with a large daily token allowance; models found from its list
         rs += openai_readers("cerebras", "https://api.cerebras.ai/v1", E("CEREBRAS_API_KEY"),
                              ["gpt-oss-120b", "qwen-3-235b-a22b-instruct-2507", "zai-glm-4.6", "llama-3.3-70b"], 3)
+    if E("GITHUB_MODELS_TOKEN"):  # free upgrade 2 (11 Nov 2026): GitHub Models through the robot's own built in key,
+        # no sign up. Small daily allowance per model, so they are extra checkers next to the others, never the bulk.
+        rs += github_models(E("GITHUB_MODELS_TOKEN"))
     acct = re.search(r"[0-9a-f]{32}", (E("CF_ACCOUNT_ID") or "").lower())  # works even if the whole dashboard address was pasted
     if acct and E("CF_AI_TOKEN"):
         rs += openai_readers("cloudflare", f"https://api.cloudflare.com/client/v4/accounts/{acct.group(0)}/ai/v1",

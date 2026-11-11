@@ -45,6 +45,29 @@ jobs:
         run: |
           git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
           python3 toolkit/savegit.py "Robot: every number library ${{ matrix.worker }} $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/numbers/state_${{ matrix.worker }}.json data/files/numbers/err_${{ matrix.worker }}.log
+  codecheck:
+    # free upgrade 1 (11 Nov 2026): the AI figures checked against the figures code copied from the printed tables;
+    # code wins where they differ and that year goes back to fresh models (toolkit/codecheck.py in the tracker)
+    needs: build
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - name: Check AI figures against code
+        env:
+          GH_TOKEN: ${{ secrets.TRACKER_TOKEN }}
+        run: python3 toolkit/codecheck.py --save 2> /tmp/cc_err.log | tail -n 1 || tail -n 5 /tmp/cc_err.log
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          python3 toolkit/savegit.py "Robot: code check of AI figures $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/codecheck.json data/db/market/recheck.json
   next:
     needs: build
     if: ${{ !cancelled() }}

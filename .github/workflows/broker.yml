@@ -11,6 +11,7 @@ on:
   push:
     paths: ['.github/run-broker']
 permissions:
+  models: read     # free GitHub Models through the robot's own key (11 Nov 2026)
   contents: read
   actions: write   # lets each run start the next one (GitHub fired the half hour timer only twice in 20 hours on 2 Nov 2026)
 concurrency:
@@ -38,6 +39,8 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
+          GITHUB_MODELS_TOKEN: ${{ github.token }}   # free GitHub Models (11 Nov 2026)
+          GH_TOKEN: ${{ secrets.TRACKER_TOKEN }}      # departed companies read their text from the private text library
         run: |
           set -o pipefail
           python3 toolkit/public_read.py 45 | tee /tmp/broker_last.txt
