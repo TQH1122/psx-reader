@@ -45784,21 +45784,23 @@
 "redo9": 1
 },
 "web:NONS:2017": {
-"at": "2026-11-09",
+"at": "2026-11-11",
 "tries": 1,
 "rev": 5,
 "second": 1,
 "waits": 1,
 "n": 10,
 "retry": 1,
-"redo9": 1
+"redo9": 1,
+"done": true
 },
 "arc:NONS:2016": {
-"at": "2026-11-09",
+"at": "2026-11-11",
 "n": 26,
 "retry": 1,
 "tries": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "arc:JSRR:2018": {
 "at": "2026-11-08",
@@ -61028,7 +61030,10 @@
 },
 "web:BGL:2012": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"tries": 2,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "arc:GTYR:2011": {
 "at": "2026-11-11",
@@ -61374,7 +61379,9 @@
 },
 "drive:NONS:2021": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 32
 },
 "web:BAPL:2018": {
 "at": "2026-11-11",
@@ -61589,7 +61596,10 @@
 },
 "drive:CFL:2024": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Company Name"
 },
 "drive:FIL:2017": {
 "at": "2026-11-11",
@@ -61610,5 +61620,19 @@
 "web:AGIC:2012": {
 "at": "2026-11-11",
 "waits": 2
+},
+"arc:CFL:2024": {
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"web:BGL:2011": {
+"at": "2026-11-11",
+"waits": 1
+},
+"arc:CFL:2023": {
+"at": "2026-11-11",
+"waits": 1
 }
 }
