@@ -1,0 +1,36 @@
+# PSX chat, step 16 (11 Nov 2026): the nightly self test of Ask PSX (toolkit/chat_selftest.py in the private tracker).
+# It asks the live chat 15 standard questions and code checks each answer: it finished, its figures match the tracker,
+# and the right chart came with it. Full results stay private (data/files/chattest/last.json); this public log shows
+# only pass and fail counts. The phone hears only when something truly fails. No Claude, only the free AI it tests.
+# Every night at 2:23 am Pakistan time (21:23 UTC), when nobody is asking questions.
+name: Chat self test
+on:
+  schedule:
+    - cron: '23 21 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: chattest
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          persist-credentials: true
+      - name: Ask the standard questions
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python3 toolkit/chat_selftest.py 2> /tmp/test_err.log | tail -n 1; test -s /tmp/test_err.log && echo "the test script printed errors (kept private)" || true
+      - name: Save the results
+        if: always()
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          python3 toolkit/savegit.py "Robot: chat self test $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/chattest/last.json data/files/chattest/history.json
