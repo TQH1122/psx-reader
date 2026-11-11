@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  models: read
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -16,3 +17,4 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ github.token }}
