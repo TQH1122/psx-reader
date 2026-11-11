@@ -55828,7 +55828,8 @@
 "waits": 0,
 "tries": 1,
 "rev": 5,
-"why": "no two models gave a usable read"
+"done": true,
+"n": 40
 },
 "khi:KSBP:2021": {
 "at": "2026-11-10",
@@ -59121,10 +59122,12 @@
 },
 "khi:KEL:2011": {
 "at": "2026-11-11",
-"tries": 2,
+"tries": 1,
 "rev": 5,
 "why": "no two models gave a usable read",
-"waits": 0
+"waits": 0,
+"retry": 1,
+"second": 1
 },
 "web:GRYL:2012": {
 "at": "2026-11-11",
@@ -60019,7 +60022,7 @@
 },
 "drive:PKGI:2018": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:EMCO:2021": {
 "at": "2026-11-11",
@@ -60138,5 +60141,9 @@
 },
 "drive:NEXT:2016": {
 "at": "2026-11-11"
+},
+"drive:SANSM:2019": {
+"at": "2026-11-11",
+"waits": 1
 }
 }
