@@ -19218,7 +19218,8 @@
 "rev": 4,
 "why": "scanned report (left for later, OCR too slow)",
 "retry": 1,
-"second": 1
+"second": 1,
+"waits": 1
 },
 "web:INKL:2016": {
 "at": "2026-11-08",
@@ -19701,9 +19702,11 @@
 "at": "2026-11-11",
 "n": 20,
 "retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 2
+"waits": 0,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "web:SHDT:2020": {
 "at": "2026-11-03",
@@ -20939,12 +20942,12 @@
 "done": true
 },
 "web:HUSI:2016": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "n": 15,
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "web:MQTM:2023": {
 "at": "2026-11-03",
@@ -21252,14 +21255,15 @@
 "done": true
 },
 "web:KOHP:2026": {
-"at": "2026-11-10",
-"tries": 1,
-"rev": 4,
+"at": "2026-11-11",
+"tries": 2,
+"rev": 5,
 "second": 1,
 "n": 24,
 "retry": 1,
 "redo8": 1,
-"waits": 2
+"waits": 0,
+"why": "no two models gave a usable read"
 },
 "web:FPRM:2009": {
 "at": "2026-11-11",
@@ -21309,9 +21313,11 @@
 "at": "2026-11-11",
 "n": 12,
 "retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 2
+"waits": 0,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "web:PASM:2014": {
 "at": "2026-11-08",
@@ -21352,9 +21358,11 @@
 "at": "2026-11-11",
 "n": 6,
 "retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 2
+"waits": 0,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "web:POWER:2007": {
 "at": "2026-11-09",
@@ -21512,9 +21520,11 @@
 "at": "2026-11-11",
 "n": 2,
 "retry": 1,
-"tries": 1,
+"tries": 2,
 "redo8": 1,
-"waits": 2
+"waits": 0,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "web:SLCL:2026": {
 "at": "2026-11-03",
@@ -25616,7 +25626,8 @@
 "n": 2,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"waits": 1
 },
 "khi:SPL:2021": {
 "at": "2026-11-08",
@@ -26388,11 +26399,13 @@
 },
 "web:GRYL:2009": {
 "at": "2026-11-11",
-"waits": 2,
+"waits": 0,
 "n": 0,
 "retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:FIMM:2006": {
 "at": "2026-11-09",
@@ -29370,12 +29383,12 @@
 "done": true
 },
 "drive:SLYT:2023": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "n": 10,
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "drive:MSCL:2023": {
 "at": "2026-11-10",
@@ -31761,7 +31774,7 @@
 "retry": 1,
 "tries": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "web:KOHP:2013": {
 "at": "2026-11-09",
@@ -35091,13 +35104,13 @@
 "done": true
 },
 "web:STML:2022": {
-"at": "2026-11-10",
+"at": "2026-11-11",
 "tries": 1,
 "rev": 5,
 "why": "company name does not match: Not stated in provided pages",
 "retry": 1,
 "redo8": 1,
-"waits": 1
+"waits": 2
 },
 "web:STML:2021": {
 "at": "2026-11-08",
@@ -40080,13 +40093,14 @@
 "second": 1
 },
 "arc:DINT:2016": {
-"at": "2026-11-08",
+"at": "2026-11-11",
 "tries": 1,
 "rev": 5,
 "second": 1,
 "n": 10,
 "retry": 1,
-"redo9": 1
+"redo9": 1,
+"waits": 1
 },
 "arc:FFLM:2024": {
 "at": "2026-11-08",
@@ -42426,7 +42440,7 @@
 "why": "Internet Archive download failed (0)",
 "retry": 1,
 "second": 1,
-"waits": 1
+"waits": 2
 },
 "arc:PMRS:2010": {
 "at": "2026-11-08",
@@ -46428,7 +46442,7 @@
 },
 "drive:EWIC:2012": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:SRVI:2017": {
 "at": "2026-11-09",
@@ -46714,7 +46728,10 @@
 },
 "khi:JSGCL:2025": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "arc:IGIL:2015": {
 "at": "2026-11-09",
@@ -46770,7 +46787,7 @@
 },
 "web:HIRAT:2022": {
 "at": "2026-11-11",
-"waits": 0,
+"waits": 1,
 "tries": 1,
 "rev": 5,
 "why": "no two models gave a usable read"
@@ -46800,8 +46817,8 @@
 "waits": 1
 },
 "drive:QUET:2025": {
-"at": "2026-11-09",
-"waits": 1
+"at": "2026-11-11",
+"waits": 2
 },
 "arc:SHFA:2025": {
 "at": "2026-11-09",
@@ -47044,7 +47061,10 @@
 },
 "drive:CJPL:2025": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "arc:MCB:2025": {
 "at": "2026-11-09",
@@ -47243,7 +47263,10 @@
 },
 "drive:JGICL:2021": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:NPL:2021": {
 "at": "2026-11-10",
@@ -47281,7 +47304,10 @@
 },
 "arc:SBL:2011": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "arc:ALNRS:2023": {
 "at": "2026-11-09",
@@ -47305,7 +47331,10 @@
 },
 "drive:UDPL:2026": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 1,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:SZTM:2024": {
 "at": "2026-11-09",
@@ -52796,10 +52825,10 @@
 },
 "khi:ISL:2024": {
 "at": "2026-11-11",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "company name does not match: Made of Steel (names AGHA)",
-"waits": 2
+"why": "no two models gave a usable read",
+"waits": 0
 },
 "khi:ATLH:2018": {
 "at": "2026-11-10",
@@ -53388,7 +53417,7 @@
 "tries": 1,
 "rev": 5,
 "why": "not annual accounts: company name not found in provided pages",
-"waits": 1
+"waits": 2
 },
 "drive:FTMM:2020": {
 "at": "2026-11-10",
@@ -55783,7 +55812,10 @@
 },
 "drive:SANSM:2023": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:KSBP:2021": {
 "at": "2026-11-10",
@@ -55791,7 +55823,7 @@
 },
 "khi:ANSM:2007": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:ECOP:2014": {
 "at": "2026-11-11",
@@ -55802,7 +55834,10 @@
 },
 "khi:STJT:2025": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:ASC:2025": {
 "at": "2026-11-11",
@@ -55812,15 +55847,21 @@
 },
 "drive:SHDT:2024": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:PRWM:2024": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:UVIC:2022": {
-"at": "2026-11-10",
-"waits": 1
+"at": "2026-11-11",
+"waits": 2
 },
 "arc:SLYT:2024": {
 "at": "2026-11-10",
@@ -55831,15 +55872,16 @@
 "second": 1
 },
 "khi:BUXL:2025": {
-"at": "2026-11-10",
-"waits": 1
+"at": "2026-11-11",
+"waits": 2
 },
 "drive:FANM:2021": {
-"at": "2026-11-10"
+"at": "2026-11-11",
+"waits": 1
 },
 "khi:BNWM:2024": {
-"at": "2026-11-10",
-"waits": 1
+"at": "2026-11-11",
+"waits": 2
 },
 "web:PAKT:2015": {
 "at": "2026-11-10",
@@ -55850,22 +55892,28 @@
 "second": 1
 },
 "drive:DIIL:2020": {
-"at": "2026-11-10",
-"waits": 2
+"at": "2026-11-11",
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:MQTM:2021": {
-"at": "2026-11-10",
-"waits": 2
+"at": "2026-11-11",
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:POML:2025": {
 "at": "2026-11-10"
 },
 "arc:BOK:2013": {
 "at": "2026-11-11",
-"waits": 2,
-"tries": 1,
+"waits": 0,
+"tries": 2,
 "rev": 5,
-"why": "company name does not match: Not printed on provided pages"
+"why": "no two models gave a usable read"
 },
 "web:BAPL:2022": {
 "at": "2026-11-11",
@@ -56790,7 +56838,10 @@
 },
 "drive:NEXT:2017": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 1,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:PPP:2022": {
 "at": "2026-11-11",
@@ -57280,7 +57331,10 @@
 },
 "khi:GTYR:2018": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:FIMM:2024": {
 "at": "2026-11-11",
@@ -57319,7 +57373,7 @@
 "why": "Company website download failed (200)",
 "retry": 1,
 "second": 1,
-"waits": 1
+"waits": 2
 },
 "drive:TATM:2022": {
 "at": "2026-11-11",
@@ -57329,7 +57383,7 @@
 },
 "drive:HAFL:2020": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:BGL:2020": {
 "at": "2026-11-11",
@@ -57339,14 +57393,14 @@
 },
 "drive:RICL:2025": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "khi:CHCC:2018": {
 "at": "2026-11-11",
-"waits": 2,
-"tries": 1,
+"waits": 0,
+"tries": 2,
 "rev": 5,
-"why": "company name does not match: Faruque Spinning Mills Limited (names DFSM)"
+"why": "no two models gave a usable read"
 },
 "drive:IGIL:2025": {
 "at": "2026-11-11",
@@ -57355,20 +57409,26 @@
 "n": 32
 },
 "khi:SIBL:2024": {
-"at": "2026-11-10",
-"waits": 1
+"at": "2026-11-11",
+"waits": 2
 },
 "khi:ZIL:2025": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:FRSM:2025": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:ICIBL:2024": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:WAFI:2019": {
 "at": "2026-11-11",
@@ -57397,7 +57457,7 @@
 },
 "drive:HUMNL:2017": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:NCPL:2020": {
 "at": "2026-11-11",
@@ -57549,7 +57609,10 @@
 },
 "arc:EXIDE:2016": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 1,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "web:PICT:2015": {
 "at": "2026-11-11",
@@ -57740,7 +57803,10 @@
 },
 "drive:SHNI:2024": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:PRL:2015": {
 "at": "2026-11-11",
@@ -57756,7 +57822,10 @@
 },
 "khi:DEL:2024": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:EMCO:2023": {
 "at": "2026-11-11",
@@ -57766,7 +57835,10 @@
 },
 "arc:AHTM:2016": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:TPL:2013": {
 "at": "2026-11-11",
@@ -57787,11 +57859,14 @@
 },
 "khi:ZTL:2024": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:ITTEFAQ:2025": {
 "at": "2026-11-11",
-"waits": 0,
+"waits": 1,
 "tries": 1,
 "rev": 5,
 "why": "no two models gave a usable read"
@@ -57945,7 +58020,8 @@
 "n": 0
 },
 "drive:SSOM:2013": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "drive:KSBP:2021": {
 "at": "2026-11-11",
@@ -57955,7 +58031,7 @@
 },
 "drive:POML:2025": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:FATIMA:2020": {
 "at": "2026-11-11",
@@ -58235,7 +58311,10 @@
 },
 "drive:NONS:2025": {
 "at": "2026-11-11",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:HUSI:2024": {
 "at": "2026-11-11",
@@ -58459,11 +58538,12 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Ravi Textile Mills Limited (names AATM)"
+"why": "company name does not match: Ravi Textile Mills Limited (names AATM)",
+"waits": 1
 },
 "arc:KSBP:2012": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:BAPL:2021": {
 "at": "2026-11-11",
@@ -58472,25 +58552,26 @@
 },
 "drive:WTL:2015": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:PECO:2008": {
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Habib Cement Limited (names ACPL)"
+"why": "company name does not match: Habib Cement Limited (names ACPL)",
+"waits": 1
 },
 "arc:PCAL:2012": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:ASTL:2023": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "khi:ASC:2024": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:EFUG:2016": {
 "at": "2026-11-11",
@@ -58573,7 +58654,8 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"waits": 1
 },
 "khi:LOTCHEM:2015": {
 "at": "2026-11-11",
@@ -58589,7 +58671,8 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Pakistan International Airlines Corporation Limited (names ARPAK)"
+"why": "company name does not match: Pakistan International Airlines Corporation Limited (names ARPAK)",
+"waits": 1
 },
 "khi:GVGL:2021": {
 "at": "2026-11-11",
@@ -58737,7 +58820,7 @@
 },
 "web:LOTCHEM:2011": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:GADT:2023": {
 "at": "2026-11-11",
@@ -58746,49 +58829,50 @@
 },
 "arc:ABL:2013": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:IGIL:2023": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:TATM:2017": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:BTL:2014": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:MWMP:2022": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "khi:NRL:2010": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:HABSM:2013": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:BHAT:2022": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:BGL:2015": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "khi:ARPL:2015": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:MEHT:2012": {
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"waits": 1
 },
 "web:HALEON:2021": {
 "at": "2026-11-11",
@@ -59017,7 +59101,8 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "not annual accounts: Provided pages contain only notes to financial statements (Notes 4-20), not the "
+"why": "not annual accounts: Provided pages contain only notes to financial statements (Notes 4-20), not the ",
+"waits": 1
 },
 "web:GRYL:2012": {
 "at": "2026-11-11",
@@ -59063,27 +59148,27 @@
 },
 "web:SERT:2013": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:ESBL:2017": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "arc:WAHN:2014": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:HICL:2017": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:PAKD:2016": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:AKDHL:2023": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:SURC:2017": {
 "at": "2026-11-11",
@@ -59099,7 +59184,8 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"done": true,
+"n": 4
 },
 "khi:BATA:2018": {
 "at": "2026-11-11",
@@ -59318,51 +59404,51 @@
 },
 "web:BWHL:2011": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "khi:RUPL:2022": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:SHJS:2014": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:STCL:2019": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:FIL:2022": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "khi:HRPL:2019": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:FTSM:2022": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:CENI:2016": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:SKRS:2013": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:PINL:2024": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:786:2022": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:ASIC:2017": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:KCL:2020": {
 "at": "2026-11-11",
@@ -59549,7 +59635,8 @@
 "at": "2026-11-11",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Mirpurkhas Sugar Mills Limited (names AABS)"
+"why": "company name does not match: Mirpurkhas Sugar Mills Limited (names AABS)",
+"waits": 1
 },
 "khi:TSBL:2016": {
 "at": "2026-11-11",
@@ -59589,11 +59676,11 @@
 },
 "drive:SMCPL:2019": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:FSWL:2023": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:NCML:2022": {
 "at": "2026-11-11",
@@ -59608,11 +59695,11 @@
 },
 "drive:DWAE:2019": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:KSTM:2013": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:AMTEX:2020": {
 "at": "2026-11-11",
@@ -59771,7 +59858,7 @@
 "tries": 1,
 "rev": 5,
 "why": "not annual accounts: Provided pages do not include the financial statements (profit and loss, balance",
-"waits": 1
+"waits": 2
 },
 "drive:TSML:2013": {
 "at": "2026-11-11",
@@ -59790,7 +59877,7 @@
 },
 "khi:DYNO:2018": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:DFML:2021": {
 "at": "2026-11-11",
@@ -59799,7 +59886,7 @@
 },
 "drive:DCL:2020": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:NAGC:2020": {
 "at": "2026-11-11",
@@ -59812,20 +59899,23 @@
 },
 "drive:DFML:2019": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "drive:MDTL:2023": {
 "at": "2026-11-11",
-"waits": 1
+"waits": 2
 },
 "web:BAPL:2020": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "web:PAKQATAR:2017": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "arc:COLG:2013": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "arc:GVGL:2022": {
 "at": "2026-11-11",
@@ -59836,16 +59926,20 @@
 "second": 1
 },
 "drive:GADT:2021": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "web:PRET:2021": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "web:NRSL:2015": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "arc:SEPL:2010": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "web:STPL:2015": {
 "at": "2026-11-11",
@@ -59854,10 +59948,12 @@
 "why": "not annual accounts (interim statements)"
 },
 "web:CHBL:2020": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "web:MERIT:2020": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "web:NCML:2021": {
 "at": "2026-11-11",
@@ -59868,43 +59964,56 @@
 "second": 1
 },
 "drive:SUTM:2023": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "drive:NCML:2019": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "drive:HMB:2019": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "drive:PPP:2019": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "drive:PKGI:2018": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "drive:EMCO:2021": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "arc:NAGC:2012": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "web:HALEON:2019": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "web:AGIC:2018": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "drive:MIRKS:2024": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "arc:RMPL:2009": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "arc:TRG:2015": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "drive:PSX:2019": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "drive:AMTEX:2017": {
 "at": "2026-11-11",
@@ -59913,15 +60022,53 @@
 "why": "file too large"
 },
 "khi:CLOV:2016": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "arc:TSBL:2012": {
-"at": "2026-11-11"
+"at": "2026-11-11",
+"waits": 1
 },
 "web:AMTEX:2017": {
 "at": "2026-11-11",
 "tries": 2,
 "rev": 5,
 "why": "file too large"
+},
+"web:DBCI:2022": {
+"at": "2026-11-11",
+"waits": 1
+},
+"arc:BOK:2012": {
+"at": "2026-11-11",
+"waits": 1
+},
+"drive:KOHP:2025": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:ISL:2024": {
+"at": "2026-11-11",
+"waits": 1
+},
+"drive:CHCC:2017": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:GRYL:2008": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:PIL:2024": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:BFMOD:2024": {
+"at": "2026-11-11",
+"waits": 1
+},
+"web:FECM:2025": {
+"at": "2026-11-11",
+"waits": 1
 }
 }
