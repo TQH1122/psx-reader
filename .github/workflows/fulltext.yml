@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
           mkdir -p data/files/fulltext; mv -f data/files/fulltext_err_${{ matrix.worker }}.log data/files/fulltext/err_${{ matrix.worker }}.log 2>/dev/null || true
-          python3 toolkit/savegit.py "Robot: report text library ${{ matrix.worker }} $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/fulltext/state_${{ matrix.worker }}.json data/files/fulltext/err_${{ matrix.worker }}.log
+          python3 toolkit/savegit.py "Robot: report text library ${{ matrix.worker }} $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/fulltext/state_${{ matrix.worker }}.json data/files/fulltext/err_${{ matrix.worker }}.log data/files/fulltext/ocrpart_${{ matrix.worker }}.json.gz
   scan:
     needs: convert
     if: ${{ !cancelled() }}
