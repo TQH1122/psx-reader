@@ -15864,15 +15864,16 @@
 "redo9": 1
 },
 "web:ICIBL:2011": {
-"at": "2026-11-11",
-"n": 17,
+"at": "2026-11-12",
+"n": 24,
 "reread": [
 2011
 ],
 "retry": 1,
 "tries": 1,
 "redo9": 1,
-"waits": 2
+"waits": 2,
+"done": true
 },
 "web:PSO:2025": {
 "at": "2026-11-07",
@@ -20073,11 +20074,13 @@
 "redo9": 1
 },
 "web:DBCI:2018": {
-"at": "2026-11-03",
+"at": "2026-11-12",
 "n": 0,
 "retry": 1,
-"tries": 1,
-"redo8": 1
+"tries": 2,
+"redo8": 1,
+"rev": 5,
+"why": "no figure passed the checks"
 },
 "web:LSEFSL:2021": {
 "at": "2026-11-08",
@@ -25963,11 +25966,12 @@
 "redo9": 1
 },
 "web:SANSM:2012": {
-"at": "2026-11-03",
+"at": "2026-11-12",
 "n": 0,
 "retry": 1,
 "tries": 1,
-"redo8": 1
+"redo8": 1,
+"done": true
 },
 "web:PMPK:2012": {
 "at": "2026-11-03",
@@ -42396,12 +42400,13 @@
 "done": true
 },
 "arc:QUET:2010": {
-"at": "2026-11-08",
+"at": "2026-11-12",
 "tries": 1,
 "rev": 5,
-"why": "Internet Archive download failed (0)",
 "retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 29
 },
 "arc:PMRS:2015": {
 "at": "2026-11-11",
@@ -46805,8 +46810,8 @@
 "n": 22
 },
 "drive:PINL:2013": {
-"at": "2026-11-09",
-"waits": 1
+"at": "2026-11-12",
+"waits": 2
 },
 "web:DEL:2019": {
 "at": "2026-11-09",
@@ -47323,8 +47328,8 @@
 "n": 28
 },
 "arc:EFUL:2008": {
-"at": "2026-11-09",
-"waits": 1
+"at": "2026-11-12",
+"waits": 2
 },
 "drive:AHL:2018": {
 "at": "2026-11-10",
@@ -47410,8 +47415,8 @@
 "why": "company name does not match: Sapphire Textile Mills Limited (names AATM)"
 },
 "web:SHNI:2011": {
-"at": "2026-11-09",
-"waits": 1
+"at": "2026-11-12",
+"waits": 2
 },
 "web:ZIL:2005": {
 "at": "2026-11-09",
@@ -55964,13 +55969,14 @@
 "at": "2026-11-10"
 },
 "arc:BOK:2013": {
-"at": "2026-11-11",
+"at": "2026-11-12",
 "waits": 1,
 "tries": 1,
 "rev": 5,
-"why": "no two models gave a usable read",
 "retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 0
 },
 "web:BAPL:2022": {
 "at": "2026-11-11",
@@ -60144,8 +60150,10 @@
 "n": 36
 },
 "arc:SEPL:2010": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 44
 },
 "web:STPL:2015": {
 "at": "2026-11-11",
@@ -60220,9 +60228,9 @@
 "why": "company name does not match: PROSPERITY WEAVING MILLS LTD. (names FML)"
 },
 "web:HALEON:2019": {
-"at": "2026-11-11",
+"at": "2026-11-12",
 "waits": 1,
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: GlaxoSmithKline Consumer Healthcare Pakistan Limited (names CWHC)"
 },
@@ -60270,8 +60278,10 @@
 "why": "company name does not match: Lakson Tobacco Company Limited (names KHTC)"
 },
 "arc:TSBL:2012": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 26
 },
 "web:AMTEX:2017": {
 "at": "2026-11-11",
@@ -60284,8 +60294,10 @@
 "waits": 1
 },
 "arc:BOK:2012": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 27
 },
 "drive:KOHP:2025": {
 "at": "2026-11-11",
@@ -60294,11 +60306,12 @@
 "n": 27
 },
 "web:ISL:2024": {
-"at": "2026-11-11",
+"at": "2026-11-12",
 "waits": 1,
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Made of Steel (names AGHA)"
+"done": true,
+"n": 14
 },
 "drive:CHCC:2017": {
 "at": "2026-11-11",
@@ -60331,9 +60344,9 @@
 "n": 12
 },
 "arc:EFUL:2009": {
-"at": "2026-11-11",
+"at": "2026-11-12",
 "waits": 1,
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no figure passed the checks"
 },
@@ -60443,8 +60456,10 @@
 "n": 38
 },
 "drive:PRWM:2023": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 44
 },
 "web:DBCI:2021": {
 "at": "2026-11-11",
@@ -60479,8 +60494,10 @@
 "n": 39
 },
 "drive:SANSM:2013": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 0
 },
 "web:NONS:2023": {
 "at": "2026-11-11",
@@ -60738,7 +60755,7 @@
 "n": 7
 },
 "khi:KEL:2010": {
-"at": "2026-11-11",
+"at": "2026-11-12",
 "tries": 1,
 "rev": 5,
 "why": "no figure passed the checks"
@@ -60948,8 +60965,10 @@
 "n": 15
 },
 "khi:DFML:2015": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 33
 },
 "drive:UDPL:2023": {
 "at": "2026-11-11",
@@ -61000,8 +61019,10 @@
 "n": 38
 },
 "khi:ITTEFAQ:2024": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 6
 },
 "drive:ZTL:2022": {
 "at": "2026-11-11",
@@ -61088,8 +61109,10 @@
 "n": 0
 },
 "drive:TATM:2014": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 18
 },
 "drive:BHAT:2016": {
 "at": "2026-11-11",
@@ -61173,8 +61196,10 @@
 "n": 0
 },
 "khi:ZIL:2018": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 14
 },
 "khi:RICL:2018": {
 "at": "2026-11-11",
@@ -61196,16 +61221,22 @@
 "n": 10
 },
 "drive:SIBL:2023": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 26
 },
 "web:QUET:2019": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 6
 },
 "web:HICL:2010": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 34
 },
 "arc:PAKD:2011": {
 "at": "2026-11-11",
@@ -61246,8 +61277,10 @@
 "second": 1
 },
 "drive:CJPL:2021": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 18
 },
 "web:CENI:2012": {
 "at": "2026-11-11",
@@ -61272,10 +61305,11 @@
 "why": "company name does not match: Pakistani Stock Exchange Company (names PSX)"
 },
 "web:RUPL:2016": {
-"at": "2026-11-11",
+"at": "2026-11-12",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Sazgar Engineering Works Limited (names PECO)"
+"done": true,
+"n": 41
 },
 "web:PIL:2012": {
 "at": "2026-11-11",
@@ -61301,8 +61335,10 @@
 "n": 16
 },
 "drive:HMB:2018": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 28
 },
 "web:FSWL:2019": {
 "at": "2026-11-11",
@@ -61376,10 +61412,11 @@
 "n": 40
 },
 "drive:SHNI:2018": {
-"at": "2026-11-11",
+"at": "2026-11-12",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: Company name not explicitly shown on these specific pages"
+"done": true,
+"n": 13
 },
 "drive:UDPL:2019": {
 "at": "2026-11-11",
@@ -61399,8 +61436,10 @@
 "n": 12
 },
 "khi:ASC:2021": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 40
 },
 "drive:NONS:2021": {
 "at": "2026-11-11",
@@ -61414,8 +61453,10 @@
 "n": 0
 },
 "web:DBCI:2020": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 17
 },
 "arc:SLYT:2013": {
 "at": "2026-11-11",
@@ -61424,8 +61465,10 @@
 "n": 0
 },
 "drive:ASTL:2020": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 36
 },
 "khi:PCAL:2010": {
 "at": "2026-11-11",
@@ -61436,20 +61479,28 @@
 "second": 1
 },
 "khi:UVIC:2018": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 0
 },
 "arc:PCAL:2009": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 40
 },
 "web:BAPL:2017": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 0
 },
 "drive:MIRKS:2020": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 16
 },
 "web:SITC:2011": {
 "at": "2026-11-11",
@@ -61482,8 +61533,10 @@
 "n": 34
 },
 "drive:FRSM:2021": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 36
 },
 "arc:CHCC:2011": {
 "at": "2026-11-11",
@@ -61500,12 +61553,16 @@
 "second": 1
 },
 "drive:HAFL:2015": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 0
 },
 "arc:PINL:2017": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 6
 },
 "drive:ASIC:2014": {
 "at": "2026-11-11",
@@ -61568,12 +61625,16 @@
 "second": 1
 },
 "drive:STJT:2020": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 40
 },
 "drive:SHDT:2015": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 33
 },
 "khi:BUXL:2021": {
 "at": "2026-11-11",
@@ -61582,8 +61643,10 @@
 "n": 33
 },
 "arc:PCAL:2010": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 3
 },
 "web:HAFL:2016": {
 "at": "2026-11-11",
@@ -61594,8 +61657,10 @@
 "second": 1
 },
 "khi:IGIL:2018": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 40
 },
 "arc:ASIC:2012": {
 "at": "2026-11-11",
@@ -61610,12 +61675,16 @@
 "n": 40
 },
 "web:GADT:2011": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 32
 },
 "web:LOTCHEM:2009": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 24
 },
 "arc:EMCO:2012": {
 "at": "2026-11-11",
@@ -61632,8 +61701,10 @@
 "n": 34
 },
 "web:POML:2022": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 16
 },
 "drive:CFL:2024": {
 "at": "2026-11-11",
@@ -61682,8 +61753,10 @@
 "n": 0
 },
 "arc:CFL:2023": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 19
 },
 "khi:THCCL:2026": {
 "at": "2026-11-11",
@@ -61692,16 +61765,22 @@
 "n": 16
 },
 "drive:FIL:2016": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 12
 },
 "drive:NCML:2016": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 12
 },
 "arc:NONS:2009": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 20
 },
 "web:BGL:2009": {
 "at": "2026-11-11",
@@ -61710,20 +61789,28 @@
 "n": 23
 },
 "drive:NONS:2015": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 26
 },
 "khi:BUXL:2019": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 32
 },
 "drive:MERIT:2014": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"done": true,
+"n": 22
 },
 "khi:BNWM:2016": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 40
 },
 "arc:CHCC:2009": {
 "at": "2026-11-11",
@@ -61733,17 +61820,20 @@
 "why": "company name does not match: Mirpurkhas Sugar Mills Limited (names AABS)"
 },
 "web:WAFI:2011": {
-"at": "2026-11-11",
+"at": "2026-11-12",
 "waits": 1,
 "tries": 1,
 "rev": 5,
-"why": "Company website download failed (0)",
 "retry": 1,
-"second": 1
+"second": 1,
+"done": true,
+"n": 0
 },
 "web:AGIC:2011": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 30
 },
 "drive:MDTL:2014": {
 "at": "2026-11-11",
@@ -61759,18 +61849,18 @@
 "why": "company name does not match: MIRPURKHAS SUGAR MILLS LTD (names AABS)"
 },
 "web:WAFI:2010": {
-"at": "2026-11-11",
-"tries": 1,
+"at": "2026-11-12",
+"tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)",
+"why": "no statement pages found",
 "retry": 1,
 "second": 1
 },
 "web:WAFI:2009": {
-"at": "2026-11-11",
-"tries": 1,
+"at": "2026-11-12",
+"tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)",
+"why": "no statement pages found",
 "retry": 1,
 "second": 1
 },
@@ -61788,19 +61878,26 @@
 "n": 13
 },
 "drive:FSWL:2018": {
-"at": "2026-11-11",
+"at": "2026-11-12",
 "waits": 0,
 "tries": 1,
 "rev": 5,
-"why": "no two models gave a usable read"
+"done": true,
+"n": 10
 },
 "arc:EMCO:2009": {
-"at": "2026-11-11",
-"waits": 2
+"at": "2026-11-12",
+"waits": 2,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: PEL"
 },
 "arc:MDTL:2011": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: FIRST CAPITAL SECURITIES CORPORATION LIMITED (names AKDSL)"
 },
 "web:BGL:2008": {
 "at": "2026-11-11",
@@ -61809,19 +61906,516 @@
 "n": 26
 },
 "arc:JSGCL:2017": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 12
 },
 "drive:STML:2020": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 0
 },
 "drive:RICL:2014": {
-"at": "2026-11-11",
-"waits": 1
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 9
 },
 "drive:BHAT:2014": {
-"at": "2026-11-11",
+"at": "2026-11-12",
+"waits": 1,
+"done": true,
+"n": 34
+},
+"khi:ASC:2019": {
+"at": "2026-11-12",
+"done": true,
+"n": 34
+},
+"khi:ASC:2017": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"khi:ASC:2016": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"drive:STJT:2018": {
+"at": "2026-11-12",
 "waits": 1
+},
+"drive:ASTL:2018": {
+"at": "2026-11-12",
+"done": true,
+"n": 36
+},
+"drive:PRWM:2021": {
+"at": "2026-11-12",
+"waits": 1
+},
+"web:UVIC:2017": {
+"at": "2026-11-12"
+},
+"web:DBCI:2019": {
+"at": "2026-11-12",
+"done": true,
+"n": 14
+},
+"khi:BUXL:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 36
+},
+"web:BAPL:2016": {
+"at": "2026-11-12",
+"done": true,
+"n": 32
+},
+"web:BAPL:2011": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (404)"
+},
+"drive:ASTL:2016": {
+"at": "2026-11-12",
+"done": true,
+"n": 18
+},
+"arc:DBCI:2014": {
+"at": "2026-11-12",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: DADABHOY CONSTRUCTION TECHNOLOGY LIMITED",
+"waits": 1
+},
+"khi:BUXL:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 28
+},
+"drive:MIRKS:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 38
+},
+"arc:BOK:2010": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"arc:BOK:2009": {
+"at": "2026-11-12",
+"waits": 1
+},
+"drive:MIRKS:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 40
+},
+"web:BUXL:2013": {
+"at": "2026-11-12",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: Pak Kuwait Investment Company (Pvt) Limited (names GOC)",
+"waits": 1
+},
+"drive:POML:2019": {
+"at": "2026-11-12",
+"done": true,
+"n": 15
+},
+"drive:MIRKS:2013": {
+"at": "2026-11-12",
+"done": true,
+"n": 13
+},
+"drive:POML:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 22
+},
+"arc:MIRKS:2012": {
+"at": "2026-11-12",
+"done": true,
+"n": 40
+},
+"khi:MIRKS:2010": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: The provided page is only the notes to the financial statements (page 4). The pr"
+},
+"arc:MIRKS:2009": {
+"at": "2026-11-12",
+"done": true,
+"n": 22
+},
+"web:POML:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"drive:POML:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 6
+},
+"arc:TATM:2010": {
+"at": "2026-11-12",
+"done": true,
+"n": 20
+},
+"web:WAFI:2008": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "no statement pages found"
+},
+"arc:BHAT:2011": {
+"at": "2026-11-12",
+"waits": 1
+},
+"khi:TATM:2009": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts: The provided page contains notes to the financial statements rather than the key"
+},
+"drive:FRSM:2019": {
+"at": "2026-11-12",
+"done": true,
+"n": 38
+},
+"khi:FRSM:2017": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "not on KHI Stocks (404)"
+},
+"khi:ZIL:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 38
+},
+"arc:CFL:2022": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"web:ZIL:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 39
+},
+"khi:SIBL:2021": {
+"at": "2026-11-12",
+"done": true,
+"n": 14
+},
+"khi:IGIL:2016": {
+"at": "2026-11-12",
+"done": true,
+"n": 12
+},
+"web:ZIL:2013": {
+"at": "2026-11-12",
+"done": true,
+"n": 40
+},
+"drive:CFL:2021": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Maqbool Textile Mills Limited (names AATM)"
+},
+"drive:IGIL:2013": {
+"at": "2026-11-12",
+"done": true,
+"n": 14
+},
+"drive:HAFL:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"drive:STML:2019": {
+"at": "2026-11-12",
+"done": true,
+"n": 19
+},
+"drive:RICL:2013": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"drive:SIBL:2020": {
+"at": "2026-11-12",
+"done": true,
+"n": 23
+},
+"web:ZIL:2010": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Treet Corporation Ltd. (names FTMM)"
+},
+"drive:FRSM:2016": {
+"at": "2026-11-12",
+"done": true,
+"n": 35
+},
+"arc:IGIL:2009": {
+"at": "2026-11-12",
+"done": true,
+"n": 16
+},
+"drive:SIBL:2018": {
+"at": "2026-11-12",
+"done": true,
+"n": 25
+},
+"drive:STML:2016": {
+"at": "2026-11-12",
+"tries": 1,
+"rev": 5,
+"done": true,
+"n": 18
+},
+"web:RICL:2012": {
+"at": "2026-11-12",
+"done": true,
+"n": 9
+},
+"drive:JSGCL:2016": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"drive:SIBL:2016": {
+"at": "2026-11-12",
+"done": true,
+"n": 30
+},
+"drive:CFL:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 41
+},
+"web:RICL:2011": {
+"at": "2026-11-12",
+"done": true,
+"n": 16
+},
+"khi:ISL:2023": {
+"at": "2026-11-12",
+"done": true,
+"n": 40
+},
+"arc:IGIL:2007": {
+"at": "2026-11-12",
+"done": true,
+"n": 12
+},
+"drive:FRSM:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 14
+},
+"drive:SIBL:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 21
+},
+"drive:ISL:2021": {
+"at": "2026-11-12",
+"done": true,
+"n": 40
+},
+"web:RICL:2009": {
+"at": "2026-11-12",
+"done": true,
+"n": 4
+},
+"drive:ISL:2019": {
+"at": "2026-11-12",
+"done": true,
+"n": 42
+},
+"drive:STML:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 18
+},
+"web:RICL:2007": {
+"at": "2026-11-12",
+"done": true,
+"n": 14
+},
+"khi:ISL:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 40
+},
+"khi:RICL:2005": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "not on KHI Stocks (404)"
+},
+"drive:ISL:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 45
+},
+"drive:STML:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 22
+},
+"drive:ISL:2013": {
+"at": "2026-11-12",
+"done": true,
+"n": 42
+},
+"arc:STML:2013": {
+"at": "2026-11-12",
+"tries": 1,
+"rev": 5,
+"done": true,
+"n": 22
+},
+"web:HALEON:2018": {
+"at": "2026-11-12",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: GlaxoSmithKline Pakistan Limited (names GLAXO)",
+"waits": 1
+},
+"web:SEPL:2022": {
+"at": "2026-11-12",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: Building Trust (names TRSM)",
+"waits": 1
+},
+"drive:CJPL:2020": {
+"at": "2026-11-12",
+"done": true,
+"n": 14
+},
+"drive:CJPL:2019": {
+"at": "2026-11-12",
+"done": true,
+"n": 16
+},
+"arc:CJPL:2012": {
+"at": "2026-11-12",
+"done": true,
+"n": 34
+},
+"drive:PINL:2016": {
+"at": "2026-11-12",
+"done": true,
+"n": 22
+},
+"drive:FIL:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 26
+},
+"drive:PINL:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"khi:TSBL:2007": {
+"at": "2026-11-12"
+},
+"drive:FSWL:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 18
+},
+"arc:NCML:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"drive:FSWL:2016": {
+"at": "2026-11-12",
+"done": true,
+"n": 14
+},
+"drive:FSWL:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 28
+},
+"arc:NCML:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"khi:ITTEFAQ:2023": {
+"at": "2026-11-12",
+"done": true,
+"n": 34
+},
+"drive:SHNI:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 31
+},
+"khi:EMCO:2007": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "not on KHI Stocks (404)"
+},
+"khi:EMCO:2006": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "not on KHI Stocks (404)"
+},
+"khi:EMCO:2005": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "not on KHI Stocks (404)"
+},
+"arc:MDTL:2010": {
+"at": "2026-11-12",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: FIRST CAPITAL SECURITIES CORPORATION LIMITED (names AKDSL)",
+"waits": 1
+},
+"khi:ITTEFAQ:2021": {
+"at": "2026-11-12",
+"done": true,
+"n": 35
+},
+"arc:DFML:2013": {
+"at": "2026-11-12",
+"done": true,
+"n": 37
+},
+"khi:ITTEFAQ:2019": {
+"at": "2026-11-12",
+"waits": 1
+},
+"arc:DFML:2011": {
+"at": "2026-11-12",
+"done": true,
+"n": 19
 }
 }
