@@ -20082,7 +20082,7 @@
 "rev": 5,
 "why": "no figure passed the checks",
 "second": 1,
-"waits": 1
+"waits": 2
 },
 "web:LSEFSL:2021": {
 "at": "2026-11-08",
@@ -62425,7 +62425,7 @@
 },
 "arc:MDTL:2010": {
 "at": "2026-11-12",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: FIRST CAPITAL SECURITIES CORPORATION LIMITED (names AKDSL)",
 "waits": 1
@@ -62491,13 +62491,16 @@
 },
 "arc:STJT:2012": {
 "at": "2026-11-12",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "arc:CFL:2021": {
 "at": "2026-11-12",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "drive:JSGCL:2015": {
 "at": "2026-11-12",
@@ -62569,5 +62572,8 @@
 "at": "2026-11-12",
 "done": true,
 "n": 32
+},
+"drive:HMB:2016": {
+"at": "2026-11-12"
 }
 }
