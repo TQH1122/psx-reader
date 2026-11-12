@@ -1,6 +1,7 @@
 # PSX chat, step 6 (11 Nov 2026): the morning note on his phone before the market opens (toolkit/morning.py in the
 # private tracker). Code finds what changed in his holdings and watchlists; free Gemini, then Groq, writes it in a few
-# plain lines; nothing changed means nothing is sent. No Claude. Weekdays 8:17 am Pakistan time (3:17 UTC).
+# plain lines; nothing changed means nothing is sent. 12 Nov 2026: his watchlist (the 40 lowest expected P/E) is
+# rebuilt first, so the note covers today's members. No Claude. Weekdays 8:17 am Pakistan time (3:17 UTC).
 name: Morning note
 on:
   schedule:
@@ -22,6 +23,8 @@ jobs:
           ref: main
           token: ${{ secrets.TRACKER_TOKEN }}
           persist-credentials: true
+      - name: Rebuild his watchlist (the 40 lowest expected P/E, toolkit/autowatch.py)
+        run: python3 toolkit/autowatch.py | tail -n 1 || true
       - name: Write and send the note
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -31,4 +34,4 @@ jobs:
         if: always()
         run: |
           git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
-          python3 toolkit/savegit.py "Robot: morning note $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/morning/last.json data/files/morning/note.json
+          python3 toolkit/savegit.py "Robot: morning note $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]" data/files/morning/last.json data/files/morning/note.json data/db/watchlists/auto_lowpe.json
