@@ -20077,10 +20077,12 @@
 "at": "2026-11-12",
 "n": 0,
 "retry": 1,
-"tries": 2,
+"tries": 1,
 "redo8": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"second": 1,
+"waits": 1
 },
 "web:LSEFSL:2021": {
 "at": "2026-11-08",
@@ -46811,7 +46813,9 @@
 },
 "drive:PINL:2013": {
 "at": "2026-11-12",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 23
 },
 "web:DEL:2019": {
 "at": "2026-11-09",
@@ -47329,7 +47333,10 @@
 },
 "arc:EFUL:2008": {
 "at": "2026-11-12",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:AHL:2018": {
 "at": "2026-11-10",
@@ -47416,7 +47423,9 @@
 },
 "web:SHNI:2011": {
 "at": "2026-11-12",
-"waits": 2
+"waits": 2,
+"done": true,
+"n": 26
 },
 "web:ZIL:2005": {
 "at": "2026-11-09",
@@ -60348,7 +60357,9 @@
 "waits": 1,
 "tries": 2,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "arc:PAKD:2014": {
 "at": "2026-11-11",
@@ -61938,17 +61949,23 @@
 "at": "2026-11-12",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "khi:ASC:2016": {
 "at": "2026-11-12",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "drive:STJT:2018": {
 "at": "2026-11-12",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 36
 },
 "drive:ASTL:2018": {
 "at": "2026-11-12",
@@ -61957,10 +61974,14 @@
 },
 "drive:PRWM:2021": {
 "at": "2026-11-12",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 40
 },
 "web:UVIC:2017": {
-"at": "2026-11-12"
+"at": "2026-11-12",
+"done": true,
+"n": 26
 },
 "web:DBCI:2019": {
 "at": "2026-11-12",
@@ -61981,7 +62002,9 @@
 "at": "2026-11-12",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (404)"
+"why": "Company website download failed (404)",
+"retry": 1,
+"second": 1
 },
 "drive:ASTL:2016": {
 "at": "2026-11-12",
@@ -62012,7 +62035,9 @@
 },
 "arc:BOK:2009": {
 "at": "2026-11-12",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 0
 },
 "drive:MIRKS:2015": {
 "at": "2026-11-12",
@@ -62076,7 +62101,9 @@
 "at": "2026-11-12",
 "tries": 2,
 "rev": 5,
-"why": "no statement pages found"
+"why": "no statement pages found",
+"retry": 1,
+"second": 1
 },
 "arc:BHAT:2011": {
 "at": "2026-11-12",
@@ -62108,7 +62135,8 @@
 "at": "2026-11-12",
 "tries": 2,
 "rev": 5,
-"why": "broken PDF (download incomplete); tried again next run"
+"why": "broken PDF (download incomplete); tried again next run",
+"second": 1
 },
 "web:ZIL:2015": {
 "at": "2026-11-12",
@@ -62296,12 +62324,13 @@
 "at": "2026-11-12",
 "tries": 1,
 "rev": 5,
-"why": "company name does not match: GlaxoSmithKline Pakistan Limited (names GLAXO)",
-"waits": 1
+"waits": 1,
+"done": true,
+"n": 11
 },
 "web:SEPL:2022": {
 "at": "2026-11-12",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: Building Trust (names TRSM)",
 "waits": 1
@@ -62337,7 +62366,9 @@
 "n": 0
 },
 "khi:TSBL:2007": {
-"at": "2026-11-12"
+"at": "2026-11-12",
+"done": true,
+"n": 18
 },
 "drive:FSWL:2017": {
 "at": "2026-11-12",
@@ -62411,11 +62442,132 @@
 },
 "khi:ITTEFAQ:2019": {
 "at": "2026-11-12",
-"waits": 1
+"waits": 2
 },
 "arc:DFML:2011": {
 "at": "2026-11-12",
 "done": true,
 "n": 19
+},
+"drive:PRWM:2019": {
+"at": "2026-11-12",
+"done": true,
+"n": 39
+},
+"drive:STJT:2016": {
+"at": "2026-11-12",
+"done": true,
+"n": 32
+},
+"drive:PRWM:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 42
+},
+"drive:PRWM:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 46
+},
+"drive:STJT:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"arc:PRWM:2012": {
+"at": "2026-11-12",
+"done": true,
+"n": 41
+},
+"arc:PRWM:2011": {
+"at": "2026-11-12",
+"done": true,
+"n": 36
+},
+"drive:STJT:2013": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"arc:STJT:2012": {
+"at": "2026-11-12",
+"waits": 1
+},
+"arc:CFL:2021": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
+},
+"drive:JSGCL:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"khi:JSGCL:2014": {
+"at": "2026-11-12",
+"done": true,
+"n": 20
+},
+"arc:JSGCL:2012": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "not annual accounts (interim statements)"
+},
+"arc:JSGCL:2011": {
+"at": "2026-11-12",
+"tries": 1,
+"rev": 5,
+"why": "company name does not match: not stated on the provided pages",
+"waits": 1
+},
+"web:SEPL:2021": {
+"at": "2026-11-12",
+"done": true,
+"n": 34
+},
+"web:SEPL:2019": {
+"at": "2026-11-12",
+"done": true,
+"n": 34
+},
+"web:SEPL:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 33
+},
+"web:SEPL:2015": {
+"at": "2026-11-12",
+"done": true,
+"n": 46
+},
+"arc:SEPL:2013": {
+"at": "2026-11-12",
+"done": true,
+"n": 0
+},
+"arc:SEPL:2012": {
+"at": "2026-11-12",
+"done": true,
+"n": 26
+},
+"arc:PINL:2009": {
+"at": "2026-11-12",
+"done": true,
+"n": 32
+},
+"drive:HMB:2017": {
+"at": "2026-11-12",
+"done": true,
+"n": 32
+},
+"khi:TSBL:2006": {
+"at": "2026-11-12"
+},
+"web:SHNI:2009": {
+"at": "2026-11-12",
+"done": true,
+"n": 32
 }
 }
