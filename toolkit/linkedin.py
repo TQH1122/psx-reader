@@ -236,18 +236,27 @@ def norm_text(t):
     return re.sub(r"[^a-z0-9%.]+", " ", t).strip()
 
 
+def slug_in(c):
+    """The page name inside a LinkedIn address: /company/<name>/..., or a post address /posts/<name>_..."""
+    c = urllib.parse.unquote(str(c or "")).lower()
+    m = re.search(r"linkedin\.com/(?:company|showcase|school)/([a-z0-9\-_.%]+)", c)
+    if m:
+        return m.group(1).strip(".")
+    m = re.search(r"linkedin\.com/posts/([a-z0-9\-.%]+?)_", c)
+    if m:
+        return m.group(1)
+    return c.strip("/ ") if c and "/" not in c and " " not in c else ""
+
+
 def page_of(item, slugs):
-    """Which watched page a post came from."""
+    """Which watched page a post came from (the author's page name, else the page name in the post's address)."""
     a = item.get("author") or {}
-    cands = [a.get("publicIdentifier"), a.get("linkedinUrl"), a.get("url"), item.get("companyUrl"),
-             item.get("input"), item.get("query") if isinstance(item.get("query"), str) else None]
-    for c in cands:
-        if not c:
-            continue
-        c = str(c).lower().rstrip("/")
-        for s in slugs:
-            if c == s.split("/", 1)[1].lower() or c.endswith("/" + s.lower()):
-                return s
+    names = {s.split("/", 1)[1].lower(): s for s in slugs}
+    for c in (a.get("universalName"), a.get("publicIdentifier"), a.get("linkedinUrl"), a.get("url"),
+              item.get("companyUrl"), item.get("input"), item.get("linkedinUrl"), item.get("url")):
+        n = slug_in(c)
+        if n and n in names:
+            return names[n]
     return None
 
 
@@ -434,7 +443,7 @@ def main():
         jsave(state_path, state)
         if status_file:
             total = sum(len(v) for v in store.months.values()) if store else 0
-            jsave(status_file, {k: summary.get(k) for k in ("at", "ok", "line", "new", "spent", "creditLeft", "unmatched",
+            jsave(status_file, {k: summary.get(k) for k in ("at", "ok", "line", "new", "spent", "creditLeft", "unmatched", "repaired",
                                                              "pages", "brokers", "companies")}
                   | {"posts": total, "months": len(store.months) if store else 0})
         print(line, flush=True)
@@ -458,6 +467,29 @@ def main():
     tag = ticker_tagger(rows)
     pages = state["pages"]
     slugs = list(pages)
+    # posts already paid for whose page could not be told (first run, 12 Nov 2026): give them their page now
+    fixed = 0
+    for m, lst in store.months.items():
+        for p in lst:
+            if p.get("kind") != "unknown":
+                continue
+            s = page_of({"linkedinUrl": p.get("url")}, slugs)
+            if not s:
+                continue
+            pg = pages[s]
+            p.update(page=s, kind=pg["kind"], owner=pg["owner"])
+            if pg["kind"] == "company":
+                p["tickers"] = sorted(set(p.get("tickers", [])) | {pg["owner"]})
+            if p.get("date") and p["date"] > (pg.get("last") or ""):
+                pg["last"] = p["date"]
+            pg["posts"] = pg.get("posts", 0) + 1
+            pg["dead"] = 0
+            store.dirty.add(m)
+            fixed += 1
+    if fixed:
+        store.save()
+        summary["repaired"] = fixed
+        log(f"gave {fixed} saved posts their page")
 
     def due(slug):
         p = pages[slug]
