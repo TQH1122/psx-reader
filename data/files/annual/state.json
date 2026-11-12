@@ -62013,7 +62013,7 @@
 },
 "arc:DBCI:2014": {
 "at": "2026-11-12",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: DADABHOY CONSTRUCTION TECHNOLOGY LIMITED",
 "waits": 2
@@ -62601,13 +62601,21 @@
 "at": "2026-11-12",
 "tries": 2,
 "rev": 5,
-"why": "Company website download failed (0)"
+"why": "Company website download failed (0)",
+"retry": 1,
+"second": 1
 },
 "drive:ITTEFAQ:2018": {
 "at": "2026-11-12",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "no figure passed the checks",
 "waits": 1
+},
+"web:ITTEFAQ:2018": {
+"at": "2026-11-12",
+"tries": 2,
+"rev": 5,
+"why": "Company website download failed (0)"
 }
 }
