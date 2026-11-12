@@ -62046,9 +62046,9 @@
 },
 "web:BUXL:2013": {
 "at": "2026-11-12",
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "company name does not match: Pak Kuwait Investment Company (Pvt) Limited (names GOC)",
+"why": "not annual accounts: The provided text does not include the balance sheet, profit and loss account, o",
 "waits": 1
 },
 "drive:POML:2019": {
@@ -62635,5 +62635,8 @@
 "tries": 1,
 "rev": 5,
 "why": "no two models gave a usable read"
+},
+"web:BUXL:2012": {
+"at": "2026-11-12"
 }
 }
