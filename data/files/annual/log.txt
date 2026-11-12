@@ -360,7 +360,7 @@ done: read 0 annual reports (6 readers side by side), 0 new figures, 0 skipped, 
 [reader 0] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
 [reader 0] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
 [reader 0] openrouter: paid models off (credit left $0.01)
-[reader 0] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 2 still to read; models used: ; resting until tomorrow: 12 models
+[reader 0] done: read 0 annual reports (0 audit re-reads), 1 skipped, about 2 still to read; models used: @cf/openai/gpt-oss-120b 2, @cf/meta/llama-3.3-70b-instruct-fp8-fast 2; resting until tomorrow: 18 models
 [reader 0] gain: 0 new figures this run
 [reader 1] tracker flags: kept the saved copy
 [reader 1] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
@@ -388,7 +388,7 @@ done: read 0 annual reports (6 readers side by side), 0 new figures, 0 skipped, 
 [reader 4] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
 [reader 4] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
 [reader 4] openrouter: paid models off (credit left $0.01)
-[reader 4] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 2 still to read; models used: ; resting until tomorrow: 10 models
+[reader 4] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 2 still to read; models used: @cf/openai/gpt-oss-120b 2, @cf/meta/llama-3.3-70b-instruct-fp8-fast 2; resting until tomorrow: 8 models
 [reader 4] gain: 0 new figures this run
 [reader 5] tracker flags: kept the saved copy
 [reader 5] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out

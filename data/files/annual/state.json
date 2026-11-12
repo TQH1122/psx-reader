@@ -62631,7 +62631,7 @@
 },
 "drive:HMB:2013": {
 "at": "2026-11-12",
-"waits": 1,
+"waits": 2,
 "tries": 1,
 "rev": 5,
 "why": "no two models gave a usable read"
@@ -62646,7 +62646,10 @@
 },
 "khi:BUXL:2008": {
 "at": "2026-11-12",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "khi:QUICE:2026": {
 "at": "2026-11-12"
