@@ -42,6 +42,7 @@ jobs:
         timeout-minutes: 110
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_CBS_KEY: ${{ secrets.GEMINI_CBS_KEY }}   # 12 Nov 2026: a free key of its own for the briefings, when he adds one
         run: python3 toolkit/cbs.py --minutes ${{ inputs.minutes || '100' }} 2> /tmp/cbs_err.log | tail -n 1 | tee /tmp/cbs_done.txt; tail -n 5 /tmp/cbs_err.log | cut -c1-200 || true
       - name: Save to the private repository
         if: always()
