@@ -62624,7 +62624,10 @@
 },
 "arc:JSGCL:2010": {
 "at": "2026-11-12",
-"waits": 2
+"waits": 0,
+"tries": 1,
+"rev": 5,
+"why": "no two models gave a usable read"
 },
 "drive:HMB:2013": {
 "at": "2026-11-12",
