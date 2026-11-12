@@ -1,0 +1,45 @@
+# One off test (12 Nov 2026): which Gemini models can read briefing session videos through Google's official
+# YouTube link feature, and whether each has its own free daily allowance. Prints counts only.
+# Started by Claude by changing .github/run-ytprobe.
+name: Briefing video test
+on:
+  push:
+    paths: ['.github/run-ytprobe']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Gemini models with their own daily allowance
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, urllib.request, urllib.error
+          k = os.environ["GEMINI_API_KEY"]
+          ms = json.load(urllib.request.urlopen(f"https://generativelanguage.googleapis.com/v1beta/models?key={k}&pageSize=200"))["models"]
+          names = [m["name"].split("/")[1] for m in ms
+                   if "generateContent" in m.get("supportedGenerationMethods", [])
+                   and re.search(r"flash|pro", m["name"]) and not re.search(r"image|tts|live|embed|audio", m["name"])]
+          print("models:", names)
+          for m in names[:12]:
+              body = {"contents": [{"parts": [
+                  {"file_data": {"file_uri": "https://www.youtube.com/watch?v=tav_SF0rv9o"},
+                   "video_metadata": {"start_offset": "60s", "end_offset": "120s"}},
+                  {"text": "Write out every spoken word in this part, in English."}]}],
+                  "generationConfig": {"temperature": 0, "mediaResolution": "MEDIA_RESOLUTION_LOW"}}
+              req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={k}",
+                                           data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
+              try:
+                  j = json.load(urllib.request.urlopen(req, timeout=300))
+                  t = "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
+                  print(m, "ok", len(t), "chars;", j.get("usageMetadata", {}).get("promptTokenCount"), "tokens in")
+              except urllib.error.HTTPError as e:
+                  msg = e.read().decode("utf-8", "ignore")
+                  print(m, "refused", e.code, re.findall(r'"quotaId": "([^"]+)"', msg)[:3], re.sub(r"\s+", " ", msg)[:160] if e.code != 429 else "")
+              except Exception as e:
+                  print(m, "error", type(e).__name__)
+          PY
