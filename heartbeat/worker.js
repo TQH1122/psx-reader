@@ -27,6 +27,7 @@ const CHAINS = {
   "explorer.yml": [30 * MIN, 120 * MIN],   // brain explorer (8 Nov 2026): a restart with no ideas left ends in a minute
   "fulltext.yml": [30 * MIN, 150 * MIN],   // report text library (9 Nov 2026): a restart with no reports left ends in minutes
   "numbers.yml": [30 * MIN, 150 * MIN],    // every number library (10 Nov 2026): a restart with nothing new ends in minutes
+  "linkedin.yml": [26 * HOUR, 120 * MIN],  // LinkedIn feed (12 Nov 2026): daily, so restarted only if a day is skipped
 };
 const ALERT_GAP = 6 * HOUR, STAMP_GAP = 6 * HOUR;
 
@@ -117,7 +118,8 @@ const b64dec = (s) => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\
 const b64enc = (s) => btoa(String.fromCharCode(...new TextEncoder().encode(s)));
 const name = (wf) => ({ "reader.yml": "Report reader", "broker.yml": "Broker reader",
                         "lane-daily.yml": "Daily jobs", "lane-jobs.yml": "Regular jobs", "explorer.yml": "Brain explorer",
-                        "fulltext.yml": "Report text library", "numbers.yml": "Every number library" })[wf] || wf;
+                        "fulltext.yml": "Report text library", "numbers.yml": "Every number library",
+                        "linkedin.yml": "LinkedIn feed" })[wf] || wf;
 const mins = (ms) => `${Math.round(ms / MIN)} minutes`;
 const hrs = (ms) => ms < 2 * HOUR ? mins(ms) : `${Math.round(ms / HOUR)} hours`;
 

@@ -1,0 +1,57 @@
+# LinkedIn feed for the PSX Tracker (12 Nov 2026): broker, data source and listed company LinkedIn posts, free only
+# (Apify's free $5 monthly credit; the robot stops at $4.60). Code: toolkit/linkedin.py. The posts are saved only in
+# the private psx-tracker repository (data/files/linkedin); this public repository keeps a counts only status file.
+# Daily before the market opens; the heartbeat restarts it if a day is ever skipped.
+name: LinkedIn feed
+on:
+  schedule:
+    - cron: '41 1 * * *'     # 6:41 am Pakistan time
+  workflow_dispatch:
+  push:
+    paths: ['toolkit/linkedin.py', '.github/workflows/linkedin.yml']
+permissions:
+  contents: write            # only for the counts only status file in this repository
+concurrency:
+  group: linkedin
+  cancel-in-progress: false
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: TQH1122/psx-tracker
+          ref: main
+          token: ${{ secrets.TRACKER_TOKEN }}
+          path: tracker
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: command -v pdftotext || { sudo apt-get update -q || true; sudo apt-get install -y -q poppler-utils; } > /dev/null 2>&1
+      - name: Fetch new LinkedIn posts
+        timeout-minutes: 100
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python3 toolkit/linkedin.py --tracker tracker --status data/files/linkedin_status.json 2> /tmp/linkedin_err.log; code=$?; tail -n 8 /tmp/linkedin_err.log; exit $code
+      - name: Save the posts to the private repository
+        if: ${{ !cancelled() }}
+        working-directory: tracker
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          git add data/files/linkedin 2>/dev/null || true
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -q -m "Robot: LinkedIn feed $(TZ=Asia/Karachi date '+%d %b %Y %H:%M') [CF-Pages-Skip]"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          exit 1
+      - name: Save the counts only status here
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "psx-robot"; git config user.email "robot@users.noreply.github.com"
+          git add data/files/linkedin_status.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "LinkedIn feed status $(TZ=Asia/Karachi date '+%d %b %Y %H:%M')"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          exit 1
