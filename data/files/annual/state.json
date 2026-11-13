@@ -46896,7 +46896,7 @@
 "why": "not on KHI Stocks (404)"
 },
 "khi:HMB:2010": {
-"at": "2026-11-09"
+"at": "2026-11-13"
 },
 "arc:BOK:2011": {
 "at": "2026-11-09",
@@ -62106,7 +62106,7 @@
 "second": 1
 },
 "arc:BHAT:2011": {
-"at": "2026-11-12",
+"at": "2026-11-13",
 "waits": 1
 },
 "khi:TATM:2009": {
@@ -62623,18 +62623,18 @@
 "second": 1
 },
 "arc:JSGCL:2010": {
-"at": "2026-11-12",
+"at": "2026-11-13",
 "waits": 0,
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "no two models gave a usable read"
+"why": "company name does not match: Financial Service Sector (names SGF)"
 },
 "drive:HMB:2013": {
-"at": "2026-11-12",
+"at": "2026-11-13",
 "waits": 2,
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "no two models gave a usable read"
+"why": "company name does not match: DAWOOD (names DEL)"
 },
 "web:BUXL:2012": {
 "at": "2026-11-12",
@@ -62645,16 +62645,20 @@
 "n": 34
 },
 "khi:BUXL:2008": {
-"at": "2026-11-12",
+"at": "2026-11-13",
 "waits": 0,
-"tries": 1,
+"tries": 2,
 "rev": 5,
-"why": "no two models gave a usable read"
+"why": "not annual accounts: Required financial statements and summary pages are not present in the provided "
 },
 "khi:QUICE:2026": {
-"at": "2026-11-12"
+"at": "2026-11-13",
+"done": true,
+"n": 38
 },
 "khi:PAKD:2026": {
-"at": "2026-11-12"
+"at": "2026-11-13",
+"done": true,
+"n": 34
 }
 }
