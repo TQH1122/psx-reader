@@ -62692,9 +62692,12 @@
 },
 "arc:KEL:2010": {
 "at": "2026-11-14",
-"tries": 1,
+"tries": 2,
 "rev": 5,
 "why": "company name does not match: KESC",
 "waits": 2
+},
+"khi:KEL:2009": {
+"at": "2026-11-14"
 }
 }
