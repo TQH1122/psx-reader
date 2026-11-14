@@ -62674,7 +62674,16 @@
 "why": "company name does not match: Not stated"
 },
 "arc:TPLI:2022": {
-"at": "2026-11-13",
-"waits": 2
+"at": "2026-11-14",
+"waits": 2,
+"tries": 2,
+"rev": 5,
+"why": "company name does not match: Takaful Pakistan Limited (names PAKQATAR)"
+},
+"arc:TPLI:2019": {
+"at": "2026-11-14",
+"tries": 2,
+"rev": 5,
+"why": "broken PDF (download incomplete); tried again next run"
 }
 }
