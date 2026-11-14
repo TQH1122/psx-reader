@@ -374,7 +374,7 @@ done: read 0 annual reports (6 readers side by side), 0 new figures, 0 skipped, 
 [reader 2] sources: company websites give 3609 reports for 398 companies; the Internet Archive 4313 for 402
 [reader 2] audit: 0 company years flagged: 0 to re-read, 0 re-read, 0 waiting for a first read, 0 no usable report
 [reader 2] openrouter: paid models off (credit left $0.01)
-[reader 2] done: read 0 annual reports (0 audit re-reads), 0 skipped, about 0 still to read; models used: ; resting until tomorrow: 5 models
+[reader 2] done: read 0 annual reports (0 audit re-reads), 2 skipped, about 0 still to read; models used: gemini-3.5-flash 1, nvidia/nemotron-3-ultra-550b-a55b:free 1, google/gemma-4-31b-it:free 1, inclusionai/ling-3.2-flash:free 1, baidu/ernie-5.5-flash-preview:free 1, openai/gpt-4.1 2, deepseek/deepseek-v3-0324 2, meta/llama-3.3-70b-instruct 2, xai/grok-3 2, mistral-ai/mistral-medium-2505 2; resting until tomorrow: 5 models
 [reader 2] gain: 0 new figures this run
 [reader 3] tracker flags: kept the saved copy
 [reader 3] universe: 482 companies traded in the last 90 days; 272 delisted, merged or untraded left out
