@@ -60771,9 +60771,11 @@
 },
 "khi:KEL:2010": {
 "at": "2026-11-14",
-"tries": 2,
+"tries": 1,
 "rev": 5,
-"why": "no figure passed the checks"
+"why": "no figure passed the checks",
+"retry": 1,
+"second": 1
 },
 "drive:PAKD:2012": {
 "at": "2026-11-11",
@@ -62693,6 +62695,6 @@
 "tries": 1,
 "rev": 5,
 "why": "company name does not match: KESC",
-"waits": 1
+"waits": 2
 }
 }
